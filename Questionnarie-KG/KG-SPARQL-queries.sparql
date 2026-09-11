@@ -1,0 +1,465 @@
+########################################################################
+# SPARQL queries for KG-Questionnaire.nt
+# Namespace used throughout:
+PREFIX ds: <http://digistrucmed.org/questionnaire#>
+########################################################################
+
+########################################################################
+# 1) MAIN QUERY — count of each answer category ("very_positive",
+#    "positive", "neutral", "negative", "very_negative", "nan" ...)
+#    for every question whose hasQuestionCategory = ds:Quality.
+#
+#    Real chain in this graph:
+#      Answered (X_QuestionId) --hasAnswer--> Answer
+#      Answer --isAnswerTo--> Question
+#      Answer --hasAnswerCategory--> very_positive|positive|neutral|
+#                                     negative|very_negative|nan
+########################################################################
+
+SELECT ?question ?questionDesc ?category (COUNT(DISTINCT ?resp) AS ?numPeople)
+WHERE {
+  ?question a ds:Question ;
+            ds:hasQuestionCategory ds:Quality ;
+            ds:QuestionDescription ?questionDesc .
+
+  ?resp a ds:Answered ;
+        ds:hasAnswer ?answer .
+
+  ?answer ds:isAnswerTo ?question ;
+          ds:hasAnswerCategory ?category .
+}
+GROUP BY ?question ?questionDesc ?category
+ORDER BY ?question ?category
+
+
+########################################################################
+# 1b) SAME QUERY, PIVOTED — one row per question, one column per
+#     category (very_positive / positive / neutral / negative /
+#     very_negative / nan). Easiest to read as a table, matches your
+#     example: "16 said very positive, 10 said very negative" etc.
+########################################################################
+
+SELECT ?questionDesc
+       (COUNT(DISTINCT IF(?category = ds:very_positive, ?resp, UNDEF)) AS ?veryPositive)
+       (COUNT(DISTINCT IF(?category = ds:positive,      ?resp, UNDEF)) AS ?positive)
+       (COUNT(DISTINCT IF(?category = ds:neutral,       ?resp, UNDEF)) AS ?neutral)
+       (COUNT(DISTINCT IF(?category = ds:negative,      ?resp, UNDEF)) AS ?negative)
+       (COUNT(DISTINCT IF(?category = ds:very_negative, ?resp, UNDEF)) AS ?veryNegative)
+       (COUNT(DISTINCT IF(?category = ds:nan,           ?resp, UNDEF)) AS ?noResponse)
+WHERE {
+  ?question a ds:Question ;
+            ds:hasQuestionCategory ds:Quality ;
+            ds:QuestionDescription ?questionDesc .
+
+  ?resp a ds:Answered ;
+        ds:hasAnswer ?answer .
+
+  ?answer ds:isAnswerTo ?question ;
+          ds:hasAnswerCategory ?category .
+}
+GROUP BY ?questionDesc
+ORDER BY ?questionDesc
+
+
+########################################################################
+# 1c) OVERALL total (all Quality questions combined) — a single summary
+#     across the whole Quality category, exactly the "16 people / 10
+#     people" style total you described.
+########################################################################
+
+SELECT ?category (COUNT(DISTINCT ?resp) AS ?numPeople)
+WHERE {
+  ?question a ds:Question ;
+            ds:hasQuestionCategory ds:Quality .
+
+  ?resp a ds:Answered ;
+        ds:hasAnswer ?answer .
+
+  ?answer ds:isAnswerTo ?question ;
+          ds:hasAnswerCategory ?category .
+}
+GROUP BY ?category
+ORDER BY DESC(?numPeople)
+
+
+########################################################################
+# 2) GENERALIZED VERSION — works for any question category, not just
+#    Quality (ds:Agreement, ds:Degree, ds:Preference, ds:Frequency,
+#    ds:Recommendation, ...). ?catType is left as a free variable.
+########################################################################
+
+SELECT ?catType ?questionDesc ?category (COUNT(DISTINCT ?resp) AS ?numPeople)
+WHERE {
+  ?question a ds:Question ;
+            ds:hasQuestionCategory ?catType ;
+            ds:QuestionDescription ?questionDesc .
+
+  ?resp a ds:Answered ;
+        ds:hasAnswer ?answer .
+
+  ?answer ds:isAnswerTo ?question ;
+          ds:hasAnswerCategory ?category .
+}
+GROUP BY ?catType ?questionDesc ?category
+ORDER BY ?catType ?questionDesc ?category
+
+
+########################################################################
+########################################################################
+##  CONNECTIVITY / GRAPH-HEALTH QUERIES
+########################################################################
+########################################################################
+
+########################################################################
+# C1) Class inventory — what types of nodes exist and how many of each
+########################################################################
+
+SELECT ?type (COUNT(?s) AS ?count)
+WHERE {
+  ?s a ?type .
+}
+GROUP BY ?type
+ORDER BY DESC(?count)
+
+
+########################################################################
+# C2) Predicate usage — which relations are used and how often
+#     (a quick map of how densely connected the graph is)
+########################################################################
+
+SELECT ?predicate (COUNT(*) AS ?count)
+WHERE {
+  ?s ?predicate ?o .
+}
+GROUP BY ?predicate
+ORDER BY DESC(?count)
+
+
+########################################################################
+# C3) Orphan questions — questions with NO recorded Answered responses
+#     at all (broken link, or genuinely never answered)
+########################################################################
+
+SELECT ?question ?questionDesc
+WHERE {
+  ?question a ds:Question ;
+            ds:QuestionDescription ?questionDesc .
+  FILTER NOT EXISTS {
+    ?resp a ds:Answered ; ds:hasAnswer/ds:isAnswerTo ?question .
+  }
+}
+ORDER BY ?question
+
+
+########################################################################
+# C4) Orphan users — users who exist as nodes but have no Answered
+#     responses linked via answeredByUser (disconnected participants)
+########################################################################
+
+SELECT ?user
+WHERE {
+  ?user a ds:User .
+  FILTER NOT EXISTS {
+    ?resp ds:answeredByUser ?user .
+  }
+}
+
+
+########################################################################
+# C5) Dangling references — Answered nodes whose hasAnswer target is
+#     not typed as ds:Answer (structural integrity check)
+########################################################################
+
+SELECT ?resp ?answer
+WHERE {
+  ?resp a ds:Answered ;
+        ds:hasAnswer ?answer .
+  FILTER NOT EXISTS { ?answer a ds:Answer }
+}
+
+
+########################################################################
+# C6) Dangling references — Answer nodes whose isAnswerTo target is
+#     not typed as ds:Question
+########################################################################
+
+SELECT ?answer ?question
+WHERE {
+  ?answer a ds:Answer ;
+          ds:isAnswerTo ?question .
+  FILTER NOT EXISTS { ?question a ds:Question }
+}
+
+
+########################################################################
+# C7) Response completeness per user — how many questions each user
+#     answered (participation level / dropout detection)
+########################################################################
+
+SELECT ?user (COUNT(DISTINCT ?resp) AS ?numAnswered)
+WHERE {
+  ?resp a ds:Answered ;
+        ds:answeredByUser ?user .
+}
+GROUP BY ?user
+ORDER BY ?numAnswered
+
+
+########################################################################
+# C8) Response completeness per questionnaire — how many Answered
+#     responses and distinct users per questionnaire (ds:ModuleEvaluation,
+#     ds:SUS, ds:uMARS, etc.), useful to compare questionnaire coverage
+########################################################################
+
+SELECT ?questionnaire (COUNT(?resp) AS ?numResponses) (COUNT(DISTINCT ?user) AS ?numUsers)
+WHERE {
+  ?resp a ds:Answered ;
+        ds:answeredInQuestionnaire ?questionnaire ;
+        ds:answeredByUser ?user .
+}
+GROUP BY ?questionnaire
+ORDER BY DESC(?numResponses)
+
+
+########################################################################
+# C9) Questions per questionnaire/module (belongsTo) — structural
+#     overview of how questionnaires are composed
+########################################################################
+
+SELECT ?questionnaire (COUNT(?question) AS ?numQuestions)
+WHERE {
+  ?question a ds:Question ;
+            ds:belongsTo ?questionnaire .
+}
+GROUP BY ?questionnaire
+ORDER BY DESC(?numQuestions)
+
+
+########################################################################
+# C10) Platform usage — how responses are distributed across
+#      answeredOnPlatform values (device/platform connectivity)
+########################################################################
+
+SELECT ?platform (COUNT(?resp) AS ?numResponses)
+WHERE {
+  ?resp a ds:Answered ;
+        ds:answeredOnPlatform ?platform .
+}
+GROUP BY ?platform
+ORDER BY DESC(?numResponses)
+
+
+########################################################################
+# C11) "NO_RECORDED_RESPONSE" / NullAnswer rate per question —
+#      data-quality check, shows which questions have the most
+#      missing/null answers
+########################################################################
+
+SELECT ?question ?questionDesc (COUNT(?resp) AS ?numNullResponses)
+WHERE {
+  ?question a ds:Question ;
+            ds:QuestionDescription ?questionDesc .
+
+  ?resp a ds:Answered ;
+        ds:hasAnswer ?answer .
+
+  ?answer ds:isAnswerTo ?question ;
+          a ds:NullAnswer .
+}
+GROUP BY ?question ?questionDesc
+ORDER BY DESC(?numNullResponses)
+
+
+########################################################################
+# C12) Full answer chain for one user — trace a single participant's
+#      full response path across the graph (good sanity/debug query)
+########################################################################
+
+SELECT ?questionDesc ?rawResponseValue ?category ?questionnaire
+WHERE {
+  VALUES ?user { ds:48 }    # <-- replace ds:48 with any UserId you want to inspect
+
+  ?resp a ds:Answered ;
+        ds:answeredByUser ?user ;
+        ds:rawResponseValue ?rawResponseValue ;
+        ds:answeredInQuestionnaire ?questionnaire ;
+        ds:hasAnswer ?answer .
+
+  ?answer ds:isAnswerTo ?question ;
+          ds:hasAnswerCategory ?category .
+
+  ?question ds:QuestionDescription ?questionDesc .
+}
+ORDER BY ?questionnaire
+
+
+########################################################################
+########################################################################
+##  BETTER GAP-DETECTION QUERIES (beyond C3-C6)
+##  C3/C4 only catch orphan Questions/Users. These catch gaps in the
+##  questionnaire DESIGN, unused ANSWER OPTIONS, structural INTEGRITY
+##  violations, and per-user/per-questionnaire DROPOUT — the gaps that
+##  actually matter for data quality and survey design review.
+########################################################################
+########################################################################
+
+########################################################################
+# C13) Questions with no possible answers defined — a design gap:
+#      the question exists but no ds:hasPossibleAnswer options were
+#      ever linked to it (codebook/mapping likely missing rows)
+########################################################################
+
+SELECT ?question ?questionDesc
+WHERE {
+  ?question a ds:Question ;
+            ds:QuestionDescription ?questionDesc .
+  FILTER NOT EXISTS { ?question ds:hasPossibleAnswer ?opt }
+}
+ORDER BY ?question
+
+
+########################################################################
+# C14) Unused answer options — Answer nodes that exist (defined as a
+#      possible answer to some question) but were NEVER selected by
+#      any respondent. Coverage gap: either nobody picked that option,
+#      or it's a dead/duplicate entry in the codebook.
+########################################################################
+
+SELECT ?answer ?responseLabel ?question
+WHERE {
+  ?answer a ds:Answer ;
+          ds:ResponseLabel ?responseLabel ;
+          ds:isAnswerTo ?question .
+  FILTER NOT EXISTS { ?resp a ds:Answered ; ds:hasAnswer ?answer . }
+}
+ORDER BY ?question
+
+
+########################################################################
+# C15) Questionnaires with no questions attached — a structural gap
+#      (questionnaire node exists, e.g. from Questionnaire.csv, but
+#      nothing in Questions.csv points ds:belongsTo it)
+########################################################################
+
+SELECT ?questionnaire
+WHERE {
+  ?questionnaire a ds:Questionnaire .
+  FILTER NOT EXISTS { ?question ds:belongsTo ?questionnaire }
+}
+
+
+########################################################################
+# C16) Integrity check — Answered instances missing a required link.
+#      Per the ontology, every ds:Answered must have answeredByUser,
+#      answeredOnPlatform, answeredInQuestionnaire and hasAnswer
+#      (minQualifiedCardinality 1). This finds violations, which point
+#      to broken rows in Answered.csv or a mapping bug.
+########################################################################
+
+SELECT ?resp ?missing
+WHERE {
+  ?resp a ds:Answered .
+  OPTIONAL { ?resp ds:answeredByUser ?u }
+  OPTIONAL { ?resp ds:answeredOnPlatform ?p }
+  OPTIONAL { ?resp ds:answeredInQuestionnaire ?qn }
+  OPTIONAL { ?resp ds:hasAnswer ?a }
+  FILTER (!BOUND(?u) || !BOUND(?p) || !BOUND(?qn) || !BOUND(?a))
+  BIND(CONCAT(
+    IF(!BOUND(?u),  "user; ", ""),
+    IF(!BOUND(?p),  "platform; ", ""),
+    IF(!BOUND(?qn), "questionnaire; ", ""),
+    IF(!BOUND(?a),  "answer; ", "")
+  ) AS ?missing)
+}
+ORDER BY ?resp
+
+
+########################################################################
+# C17) Partial completion / dropout — for each user x questionnaire,
+#      compare how many questions the questionnaire actually has
+#      against how many that user answered. Surfaces respondents who
+#      started but didn't finish, ranked by how much they're missing.
+#      (This is the gap C3/C4 can't see: it's not a fully orphaned
+#      node, just an incomplete one.)
+########################################################################
+
+SELECT ?user ?questionnaire ?numQuestionsInQuestionnaire ?numAnswered ?missing
+WHERE {
+  {
+    SELECT ?questionnaire (COUNT(DISTINCT ?q2) AS ?numQuestionsInQuestionnaire)
+    WHERE { ?q2 a ds:Question ; ds:belongsTo ?questionnaire . }
+    GROUP BY ?questionnaire
+  }
+  {
+    SELECT ?user ?questionnaire (COUNT(DISTINCT ?question) AS ?numAnswered)
+    WHERE {
+      ?resp a ds:Answered ;
+            ds:answeredByUser ?user ;
+            ds:answeredInQuestionnaire ?questionnaire ;
+            ds:hasAnswer/ds:isAnswerTo ?question .
+    }
+    GROUP BY ?user ?questionnaire
+  }
+  BIND(?numQuestionsInQuestionnaire - ?numAnswered AS ?missing)
+  FILTER (?missing > 0)
+}
+ORDER BY DESC(?missing)
+
+
+########################################################################
+# C18) One unified "gap report" — all gap types above tagged and
+#      combined into a single result set, so you get one table instead
+#      of running six separate queries.
+########################################################################
+
+SELECT ?gapType ?entity ?detail
+WHERE {
+  {
+    SELECT ("orphan_question" AS ?gapType) ?entity ?detail
+    WHERE {
+      ?entity a ds:Question ; ds:QuestionDescription ?detail .
+      FILTER NOT EXISTS { ?resp a ds:Answered ; ds:hasAnswer/ds:isAnswerTo ?entity . }
+    }
+  }
+  UNION
+  {
+    SELECT ("question_no_possible_answers" AS ?gapType) ?entity ?detail
+    WHERE {
+      ?entity a ds:Question ; ds:QuestionDescription ?detail .
+      FILTER NOT EXISTS { ?entity ds:hasPossibleAnswer ?opt }
+    }
+  }
+  UNION
+  {
+    SELECT ("unused_answer_option" AS ?gapType) ?entity ?detail
+    WHERE {
+      ?entity a ds:Answer ; ds:ResponseLabel ?detail .
+      FILTER NOT EXISTS { ?resp a ds:Answered ; ds:hasAnswer ?entity . }
+    }
+  }
+  UNION
+  {
+    SELECT ("orphan_user" AS ?gapType) ?entity ("no responses" AS ?detail)
+    WHERE {
+      ?entity a ds:User .
+      FILTER NOT EXISTS { ?resp ds:answeredByUser ?entity . }
+    }
+  }
+  UNION
+  {
+    SELECT ("questionnaire_no_questions" AS ?gapType) ?entity ("no questions" AS ?detail)
+    WHERE {
+      ?entity a ds:Questionnaire .
+      FILTER NOT EXISTS { ?q3 ds:belongsTo ?entity . }
+    }
+  }
+  UNION
+  {
+    SELECT ("dangling_hasAnswer_target" AS ?gapType) ?entity ("hasAnswer target is not typed ds:Answer" AS ?detail)
+    WHERE {
+      ?entity a ds:Answered ; ds:hasAnswer ?answer .
+      FILTER NOT EXISTS { ?answer a ds:Answer }
+    }
+  }
+}
+ORDER BY ?gapType ?entity

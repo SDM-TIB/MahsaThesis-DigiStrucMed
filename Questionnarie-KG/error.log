@@ -1,0 +1,59 @@
+2026-07-02 13:18:49,867 - ERROR: at line 173 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'p [ rml:reference "Type" ; rr:datatype xsd:string ]\n  ] \n   '^b'rr:predicateObjectMap [\n    rr:predicate ds:Polarity ;\n    r'..."
+Traceback (most recent call last):
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdfizer\__init__.py", line 1863, in mapping_parser
+    mapping_graph.parse(mapping_file, format='n3')
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\graph.py", line 1669, in parse
+    raise se
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\graph.py", line 1660, in parse
+    parser.parse(source, self, **args)
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 2068, in parse
+    TurtleParser.parse(self, source, conj_graph, encoding, turtle=False)
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 2034, in parse
+    p.loadStream(stream)
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 492, in loadStream
+    return self.loadBuf(stream.read())  # Not ideal
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 498, in loadBuf
+    self.feed(buf)
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 524, in feed
+    i = self.directiveOrStatement(s, j)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 545, in directiveOrStatement
+    return self.checkDot(argstr, j)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 1227, in checkDot
+    self.BadSyntax(argstr, j, "expected '.' or '}' or ']' at end of statement")
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 1743, in BadSyntax
+    raise BadSyntax(self._thisDoc, self.lines, argstr, i, msg)
+rdflib.plugins.parsers.notation3.BadSyntax: <no detail available>
+2026-07-02 13:18:49,980 - ERROR: Could not parse ./TableVisualization-mappings.ttl as a mapping file. Aborting...
+Traceback (most recent call last):
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdfizer\__init__.py", line 1863, in mapping_parser
+    mapping_graph.parse(mapping_file, format='n3')
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\graph.py", line 1669, in parse
+    raise se
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\graph.py", line 1660, in parse
+    parser.parse(source, self, **args)
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 2068, in parse
+    TurtleParser.parse(self, source, conj_graph, encoding, turtle=False)
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 2034, in parse
+    p.loadStream(stream)
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 492, in loadStream
+    return self.loadBuf(stream.read())  # Not ideal
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 498, in loadBuf
+    self.feed(buf)
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 524, in feed
+    i = self.directiveOrStatement(s, j)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 545, in directiveOrStatement
+    return self.checkDot(argstr, j)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 1227, in checkDot
+    self.BadSyntax(argstr, j, "expected '.' or '}' or ']' at end of statement")
+  File "C:\Users\tehranim.TIB.001\AppData\Local\Programs\Python\Python312\Lib\site-packages\rdflib\plugins\parsers\notation3.py", line 1743, in BadSyntax
+    raise BadSyntax(self._thisDoc, self.lines, argstr, i, msg)
+rdflib.plugins.parsers.notation3.BadSyntax: <no detail available>
+2026-09-07 12:03:09,218 - ERROR: The configuration file C:\Users\tehranim.TIB.001\Desktop\Computer-20260504T112359Z-3-001\Computer\Master does not exist. Aborting...
