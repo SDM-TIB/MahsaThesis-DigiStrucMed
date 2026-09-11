@@ -2,7 +2,7 @@
 
 Master's thesis research by **Mahsa Forghani Tehrani**, exploring how knowledge graphs, symbolic rules, and explicit semantic context can improve large language model (LLM) performance in cardiovascular patient education.
 
-The broader application is **Semantic-Driven Techniques for Enhancing the Quality of LLM-Generated Educational Videos for Cardiovascular Diseases**, as presented in the project poster. This repository contains the supporting semantic modeling, knowledge graph construction, rule mining, fine-tuning, and evaluation work. Educational video generation is the application goal; the repository is not a complete, clinically validated video-generation system.
+The broader application is **Semantic-Driven Techniques for Enhancing the Quality of LLM-Generated Educational Videos for Cardiovascular Diseases**. This repository contains the supporting semantic modeling, knowledge graph construction, rule mining, fine-tuning, and evaluation work. Educational video generation is the application goal; the repository is not a complete, clinically validated video-generation system.
 
 ## Motivation and research questions
 
@@ -40,11 +40,11 @@ The guideline component includes JSON/RML graph construction and enrichment with
 
 Component guides: [Guideline KG](GuideLineKG/kg_build/README.md), [NeSy-CoT](NeSy-CoT/README.md), and [BRINK](BRINK/README.md).
 
-## Results reported in the project poster
+## Experimental results
 
-The following figures are transcribed from `MahsaDigiStruc-poster.pptx.pdf`. They describe the reported experiments, not a fresh execution or independent reproduction of the results.
+The project experiments examine questionnaire graph structure, symbolic rule quality, and model performance with and without rule-based training and semantic context.
 
-| Experiment or artifact | Poster-reported result |
+| Experiment or artifact | Result |
 | --- | --- |
 | Questionnaire knowledge graph | 35,252 triples |
 | Extracted symbolic rules | 2,328 rules |
@@ -55,7 +55,7 @@ The following figures are transcribed from `MahsaDigiStruc-poster.pptx.pdf`. The
 | BRINK Hits@Any: baseline with KG context | 16.3% |
 | BRINK Hits@Any: fine-tuned model with semantic context | 73.3% |
 
-The reported findings suggest that explicit semantic context matters alongside fine-tuning. The cross-format result highlights a generalization limitation. Format-matched accuracy and BRINK Hits@Any measure different tasks and should not be treated as interchangeable measures of clinical correctness. The poster does not provide all run settings or sample counts; consult experiment configurations and prediction outputs when reproducing or comparing these figures.
+The findings suggest that explicit semantic context matters alongside fine-tuning. The cross-format result highlights a generalization limitation. Format-matched accuracy and BRINK Hits@Any measure different tasks and should not be treated as interchangeable measures of clinical correctness. Consult experiment configurations, evaluation splits, sample counts, and prediction outputs when reproducing or comparing these figures.
 
 ## Getting started
 
@@ -129,26 +129,18 @@ These files may exist locally but are not supplied by a normal clone. Other gene
 - Test broader and more diverse clinical questions.
 - Continue reviewing graph connectivity, terminology alignment, rule confidence, and label balance.
 
-The mentoring protocols frame guideline integration and broader generalization as ongoing work. The repository now contains guideline construction code, but its presence alone does not establish completion of downstream model evaluation or clinical validation.
+Guideline integration and broader generalization remain ongoing work. The repository contains guideline construction code; downstream model evaluation and clinical validation remain separate research objectives.
 
 ## Project context and acknowledgements
 
 **Author:** Mahsa Forghani Tehrani, master's student.
 
-**Supervision acknowledged in the poster:** Prof. Dr. Maria-Esther Vidal, Prof. Dr. Sören Auer, Dr. Disha Purohit, and M.Sc. Yashrajsinh Chudasama.
+**Supervision:** Prof. Dr. Maria-Esther Vidal, Prof. Dr. Sören Auer, Dr. Disha Purohit, and M.Sc. Yashrajsinh Chudasama.
 
-The mentoring protocols describe collaboration with the medical project *Structured Digital Learning and AI Optimization for Heart Failure Education*, including Marielle Mudra, Prof. Dr. med. David Duncker, and Dr. med. Henrike Aenne Katrin Hillmann.
+The project collaborates with the medical project *Structured Digital Learning and AI Optimization for Heart Failure Education*, including Marielle Mudra, Prof. Dr. med. David Duncker, and Dr. med. Henrike Aenne Katrin Hillmann.
 
 Supported by the DigiStrucMed Program, Else Kröner Promotionskolleg Hannover, funded by the Else Kröner-Fresenius Foundation (`2020_EKPK.20`).
 
-This overview draws on the project poster and the initial and interim mentoring protocols supplied by the author:
-
-- `MahsaDigiStruc-poster.pptx.pdf`
-- `1-2mon_MForghanil_Initial_Mentoring_Meeting.pdf`
-- `6-7mon_MForghani-Mentoring_Meeting.pdf`
-
-These documents are source material for this overview and are not included in the repository by this README update. Reported results above refer specifically to the poster; implementation details refer to the current repository.
-
 ## License and attribution
 
-The repository includes an [MIT License](LICENSE), copyright 2026 Scientific Data Management Group. The poster separately states a Creative Commons Attribution 4.0 International license. Preserve applicable attribution and licensing for third-party code, models, and datasets; see the [BRINK citation information](BRINK/README.md#citation) when using that component.
+The repository includes an [MIT License](LICENSE), copyright 2026 Scientific Data Management Group. Preserve applicable attribution and licensing for third-party code, models, and datasets; see the [BRINK citation information](BRINK/README.md#citation) when using that component.
