@@ -1,0 +1,16 @@
+Rule 326:
+If response code 6 AND answer_ category NoInfo, then answer id ?b.
+
+Formal Rule:
+Head: ?a  hasAnswerId  ?b
+Body: ?a  ResponseCode  6  ?b  hasAnswer_Category  NoInfo
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.1111
+- Rule Classification: NEGATIVE (PCA Confidence 0.1111 < threshold 0.5)
+- Standard Confidence: 0.1111
+- Head Coverage: 0.0147

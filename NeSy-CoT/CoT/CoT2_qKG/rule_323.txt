@@ -1,0 +1,24 @@
+Rule 323:
+If answer scale_ type Textual AND answer_ category textual, then answer id ?b.
+
+Formal Rule:
+Head: ?a  hasAnswerId  ?b
+Body: ?a  hasAnswerScale_Type  Textual  ?b  hasAnswer_Category  textual
+
+Real Instances from Knowledge Graph (9 found):
+
+30260101, 30260101 has answer scale_ type Textual, 10080101 has answer_ category textual The path is classified as NEGATIVE (PCA Confidence 0.3333 < threshold 0.5) Answer: no
+30260101 has answer id 30260101, 30260101 has answer scale_ type Textual, 30260101 has answer_ category textual The path is classified as NEGATIVE (PCA Confidence 0.3333 < threshold 0.5) Answer: yes
+30260101, 30260101 has answer scale_ type Textual, 10070101 has answer_ category textual The path is classified as NEGATIVE (PCA Confidence 0.3333 < threshold 0.5) Answer: no
+10080101 has answer id 10080101, 10080101 has answer scale_ type Textual, 10080101 has answer_ category textual The path is classified as NEGATIVE (PCA Confidence 0.3333 < threshold 0.5) Answer: yes
+10080101, 10080101 has answer scale_ type Textual, 30260101 has answer_ category textual The path is classified as NEGATIVE (PCA Confidence 0.3333 < threshold 0.5) Answer: no
+10080101, 10080101 has answer scale_ type Textual, 10070101 has answer_ category textual The path is classified as NEGATIVE (PCA Confidence 0.3333 < threshold 0.5) Answer: no
+10070101, 10070101 has answer scale_ type Textual, 10080101 has answer_ category textual The path is classified as NEGATIVE (PCA Confidence 0.3333 < threshold 0.5) Answer: no
+10070101, 10070101 has answer scale_ type Textual, 30260101 has answer_ category textual The path is classified as NEGATIVE (PCA Confidence 0.3333 < threshold 0.5) Answer: no
+10070101 has answer id 10070101, 10070101 has answer scale_ type Textual, 10070101 has answer_ category textual The path is classified as NEGATIVE (PCA Confidence 0.3333 < threshold 0.5) Answer: yes
+
+Rule Statistics:
+- PCA Confidence: 0.3333
+- Rule Classification: NEGATIVE (PCA Confidence 0.3333 < threshold 0.5)
+- Standard Confidence: 0.3333
+- Head Coverage: 0.0110

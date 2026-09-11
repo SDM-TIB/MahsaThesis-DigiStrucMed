@@ -1,0 +1,19 @@
+Rule 600:
+If answer id ?a AND answer_ category NoInfo, then answer scale_ type Nominal.
+
+Formal Rule:
+Head: ?a  hasAnswerScale_Type  Nominal
+Body: ?c  hasAnswerId  ?a  ?c  hasAnswer_Category  NoInfo
+
+Real Instances from Knowledge Graph (4 found):
+
+30120001 has answer scale_ type Nominal, 30120001 has answer id 30120001, 30120001 has answer_ category NoInfo The path is classified as POSITIVE (PCA Confidence 1.0000 >= threshold 0.5) Answer: yes
+30150001 has answer scale_ type Nominal, 30150001 has answer id 30150001, 30150001 has answer_ category NoInfo The path is classified as POSITIVE (PCA Confidence 1.0000 >= threshold 0.5) Answer: yes
+30130001 has answer scale_ type Nominal, 30130001 has answer id 30130001, 30130001 has answer_ category NoInfo The path is classified as POSITIVE (PCA Confidence 1.0000 >= threshold 0.5) Answer: yes
+30140001 has answer scale_ type Nominal, 30140001 has answer id 30140001, 30140001 has answer_ category NoInfo The path is classified as POSITIVE (PCA Confidence 1.0000 >= threshold 0.5) Answer: yes
+
+Rule Statistics:
+- PCA Confidence: 1.0000
+- Rule Classification: POSITIVE (PCA Confidence 1.0000 >= threshold 0.5)
+- Standard Confidence: 1.0000
+- Head Coverage: 0.0147

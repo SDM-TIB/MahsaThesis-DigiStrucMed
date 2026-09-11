@@ -1,0 +1,16 @@
+Rule 499:
+If response code 2 AND answer_ category negative, then answer scale_ type Nominal.
+
+Formal Rule:
+Head: ?a  hasAnswerScale_Type  Nominal
+Body: ?a  ResponseCode  2  ?a  hasAnswer_Category  negative
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7059
+- Rule Classification: POSITIVE (PCA Confidence 0.7059 >= threshold 0.5)
+- Standard Confidence: 0.7059
+- Head Coverage: 0.0879

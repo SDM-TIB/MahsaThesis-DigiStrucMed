@@ -1,0 +1,16 @@
+Rule 635:
+If response code ?d AND type User, then answer scale_ type Ordinal.
+
+Formal Rule:
+Head: ?a  hasAnswerScale_Type  Ordinal
+Body: ?a  ResponseCode  ?d  ?d  type  User
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4405
+- Rule Classification: NEGATIVE (PCA Confidence 0.4405 < threshold 0.5)
+- Standard Confidence: 0.4405
+- Head Coverage: 0.3663

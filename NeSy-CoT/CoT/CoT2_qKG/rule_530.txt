@@ -1,0 +1,16 @@
+Rule 530:
+If response code 2 AND answer id ?d, then answer scale_ type Nominal.
+
+Formal Rule:
+Head: ?a  hasAnswerScale_Type  Nominal
+Body: ?d  ResponseCode  2  ?a  hasAnswerId  ?d
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6250
+- Rule Classification: POSITIVE (PCA Confidence 0.6250 >= threshold 0.5)
+- Standard Confidence: 0.6250
+- Head Coverage: 0.0916

@@ -1,0 +1,21 @@
+Rule 550:
+If answer id ?d AND is_ answer_ to UM18, then answer scale_ type Nominal.
+
+Formal Rule:
+Head: ?a  hasAnswerScale_Type  Nominal
+Body: ?a  hasAnswerId  ?d  ?d  is_Answer_To  UM18
+
+Real Instances from Knowledge Graph (6 found):
+
+30180003 has answer scale_ type Nominal, 30180003 has answer id 30180003, 30180003 has is_ answer_ to UM18 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+30180002 has answer scale_ type Nominal, 30180002 has answer id 30180002, 30180002 has is_ answer_ to UM18 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+30180006, 30180006 has answer id 30180006, 30180006 has is_ answer_ to UM18 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: no
+30180005 has answer scale_ type Nominal, 30180005 has answer id 30180005, 30180005 has is_ answer_ to UM18 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+30180004 has answer scale_ type Nominal, 30180004 has answer id 30180004, 30180004 has is_ answer_ to UM18 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+30180001 has answer scale_ type Nominal, 30180001 has answer id 30180001, 30180001 has is_ answer_ to UM18 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+
+Rule Statistics:
+- PCA Confidence: 0.8333
+- Rule Classification: POSITIVE (PCA Confidence 0.8333 >= threshold 0.5)
+- Standard Confidence: 0.8333
+- Head Coverage: 0.0183

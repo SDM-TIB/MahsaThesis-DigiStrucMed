@@ -1,0 +1,16 @@
+Rule 645:
+If response code ?d AND type User, then answer scale_ type Nominal.
+
+Formal Rule:
+Head: ?a  hasAnswerScale_Type  Nominal
+Body: ?a  ResponseCode  ?d  ?d  type  User
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.5595
+- Rule Classification: POSITIVE (PCA Confidence 0.5595 >= threshold 0.5)
+- Standard Confidence: 0.5595
+- Head Coverage: 0.4652

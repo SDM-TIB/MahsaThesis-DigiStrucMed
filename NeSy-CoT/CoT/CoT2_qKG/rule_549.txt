@@ -1,0 +1,18 @@
+Rule 549:
+If answer id ?d AND answer_ category Format, then answer scale_ type Nominal.
+
+Formal Rule:
+Head: ?a  hasAnswerScale_Type  Nominal
+Body: ?a  hasAnswerId  ?d  ?d  hasAnswer_Category  Format
+
+Real Instances from Knowledge Graph (3 found):
+
+10050002 has answer scale_ type Nominal, 10050002 has answer id 10050002, 10050002 has answer_ category Format The path is classified as POSITIVE (PCA Confidence 1.0000 >= threshold 0.5) Answer: yes
+10050003 has answer scale_ type Nominal, 10050003 has answer id 10050003, 10050003 has answer_ category Format The path is classified as POSITIVE (PCA Confidence 1.0000 >= threshold 0.5) Answer: yes
+10050001 has answer scale_ type Nominal, 10050001 has answer id 10050001, 10050001 has answer_ category Format The path is classified as POSITIVE (PCA Confidence 1.0000 >= threshold 0.5) Answer: yes
+
+Rule Statistics:
+- PCA Confidence: 1.0000
+- Rule Classification: POSITIVE (PCA Confidence 1.0000 >= threshold 0.5)
+- Standard Confidence: 1.0000
+- Head Coverage: 0.0110

@@ -1,0 +1,21 @@
+Rule 502:
+If answer id ?a AND is_ answer_ to SU01 10, then answer scale_ type Ordinal.
+
+Formal Rule:
+Head: ?a  hasAnswerScale_Type  Ordinal
+Body: ?c  hasAnswerId  ?a  ?c  is_Answer_To  SU01_10
+
+Real Instances from Knowledge Graph (6 found):
+
+20011005 has answer scale_ type Ordinal, 20011005 has answer id 20011005, 20011005 has is_ answer_ to SU01 10 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+20011001 has answer scale_ type Ordinal, 20011001 has answer id 20011001, 20011001 has is_ answer_ to SU01 10 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+20011002 has answer scale_ type Ordinal, 20011002 has answer id 20011002, 20011002 has is_ answer_ to SU01 10 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+20011004 has answer scale_ type Ordinal, 20011004 has answer id 20011004, 20011004 has is_ answer_ to SU01 10 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+20011006, 20011006 has answer id 20011006, 20011006 has is_ answer_ to SU01 10 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: no
+20011003 has answer scale_ type Ordinal, 20011003 has answer id 20011003, 20011003 has is_ answer_ to SU01 10 The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+
+Rule Statistics:
+- PCA Confidence: 0.8333
+- Rule Classification: POSITIVE (PCA Confidence 0.8333 >= threshold 0.5)
+- Standard Confidence: 0.8333
+- Head Coverage: 0.0183

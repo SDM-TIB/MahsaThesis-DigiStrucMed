@@ -1,0 +1,45 @@
+# Local API keys and environment variables (at any directory depth).
+# Only put placeholder values in example/template files.
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+
+# Local NeSy-CoT configuration contains a Hugging Face token field.
+/NeSy-CoT/config.json
+/NeSy-CoT/config.json.*
+
+# Credentials and Hugging Face authentication caches.
+.huggingface/
+.cache/huggingface/
+hf_token
+hf_token.txt
+huggingface_token
+huggingface_token.txt
+stored_tokens
+secrets/
+.secrets/
+secrets.json
+secrets.toml
+credentials.json
+.netrc
+_netrc
+
+# Downloaded run bundles may contain configuration copies and credentials.
+/NeSy-CoT/cloudrift-results/
+
+# Generated datasets and local archive (too large for regular Git uploads).
+/NeSy-CoT/outputs/
+/NeSy-CoT/CoT.zip
+
+# Local Python environments, caches, and logs.
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.log
+
+# Git ignores files, not secrets embedded in source code or notebooks.
+# Keep actual keys/tokens in ignored local files or environment variables.
