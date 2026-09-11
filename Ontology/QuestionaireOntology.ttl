@@ -1,0 +1,319 @@
+﻿@prefix : <http://digistrucmed.org/questionnaire/QuestionnaireOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ds: <http://digistrucmed.org/questionnaire#> .
+@base <http://digistrucmed.org/questionnaire/QuestionnaireOntology> .
+
+<http://digistrucmed.org/questionnaire/QuestionnaireOntology> rdf:type owl:Ontology ;
+                                                  rdfs:comment "Ontology for representing questionaries and their machine-readable structure." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://digistrucmed.org/questionnaire#Platform
+<http://digistrucmed.org/questionnaire#Platform> rdf:type owl:Class ;
+                                  rdfs:comment "Platform is an E-Learning platform to help patient to understand their condition and educate them and evaluate their experience." .
+
+###  http://digistrucmed.org/questionnaire#User
+<http://digistrucmed.org/questionnaire#User> rdf:type owl:Class ;
+                                  rdfs:comment "User or patient with heart problems who interacts with the platform to learn about their condition and evaluate their experience." .   
+
+###  http://digistrucmed.org/questionnaire#Response
+<http://digistrucmed.org/questionnaire#Response> rdf:type owl:Class ;
+                                  rdfs:comment "A reified n-ary relationship instance representing that a user Response a question with an answer option on a platform during a visit/session." .
+
+###  http://digistrucmed.org/questionnaire#Question
+<http://digistrucmed.org/questionnaire#Question> rdf:type owl:Class ;
+                                  rdfs:comment "A collection of questions in a Questionnaire." .
+
+###  http://digistrucmed.org/questionnaire#Degree
+<http://digistrucmed.org/questionnaire#Degree> rdf:type owl:NamedIndividual,
+                                           owl:Class,
+                                           <http://digistrucmed.org/questionnaire#Question_Category> ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Question> ;
+                                  rdfs:comment "Degree Question is a question that asks respondents to indicate the level or intensity of an opinion, perception, experience, or attribute using an ordered response scale." .
+
+###  http://digistrucmed.org/questionnaire#Quality
+<http://digistrucmed.org/questionnaire#Quality> rdf:type owl:NamedIndividual,
+                                           owl:Class,
+                                           <http://digistrucmed.org/questionnaire#Question_Category> ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Question> ;
+                                  rdfs:comment "Quality Question is a question that asks respondents to evaluate the quality of a product, service, or experience." .
+
+###  http://digistrucmed.org/questionnaire#Preference
+<http://digistrucmed.org/questionnaire#Preference> rdf:type owl:NamedIndividual,
+                                           owl:Class,
+                                           <http://digistrucmed.org/questionnaire#Question_Category> ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Question> ;
+                                  rdfs:comment "Preference Question is a question that asks respondents to indicate their preference or choice among a set of options." .
+
+###  http://digistrucmed.org/questionnaire#Frequency
+<http://digistrucmed.org/questionnaire#Frequency> rdf:type owl:NamedIndividual,
+                                           owl:Class,
+                                           <http://digistrucmed.org/questionnaire#Question_Category> ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Question> ;
+                                  rdfs:comment "Frequency Question is a question that asks respondents to indicate how often they engage in a particular behavior or experience." .
+
+###  http://digistrucmed.org/questionnaire#Agreement
+<http://digistrucmed.org/questionnaire#Agreement> rdf:type owl:NamedIndividual,
+                                           owl:Class,
+                                           <http://digistrucmed.org/questionnaire#Question_Category> ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Question> ;
+                                  rdfs:comment "Agreement Question is a question that asks respondents to indicate their level of agreement or disagreement with a statement." .
+
+### http://digistrucmed.org/questionnaire#Recommendation
+<http://digistrucmed.org/questionnaire#Recommendation> rdf:type owl:NamedIndividual,
+                                           owl:Class,
+                                           <http://digistrucmed.org/questionnaire#Question_Category> ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Question> ;
+                                  rdfs:comment "Recommendation Question is a question that measures a respondent's willingness or intention to recommend a product, service, system, or experience to others." .
+
+###  http://digistrucmed.org/questionnaire#Answer
+<http://digistrucmed.org/questionnaire#Answer> rdf:type owl:Class ;
+                                  rdfs:comment "A possible coded or textual answer option for a question." .
+
+###  http://digistrucmed.org/questionnaire#Scale_Type
+<http://digistrucmed.org/questionnaire#Scale_Type> rdf:type owl:Class ;
+                                  rdfs:comment "A reusable answer scale/type category, such as nominal, ordinal, textual, or null." .
+                                
+###  http://digistrucmed.org/questionnaire#Nominal
+<http://digistrucmed.org/questionnaire#Nominal> rdf:type owl:NamedIndividual,
+                                           owl:Class,
+                                           <http://digistrucmed.org/questionnaire#Scale_Type> ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Answer> ;
+                                  rdfs:comment "A nominal answer scale/type category." .
+
+###  http://digistrucmed.org/questionnaire#Ordinal
+<http://digistrucmed.org/questionnaire#Ordinal> rdf:type owl:NamedIndividual,
+                                           owl:Class,
+                                           <http://digistrucmed.org/questionnaire#Scale_Type> ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Answer> ;
+                                  rdfs:comment "An ordinal answer scale/type category." .
+
+###  http://digistrucmed.org/questionnaire#Textual
+<http://digistrucmed.org/questionnaire#Textual> rdf:type owl:NamedIndividual,
+                                           owl:Class,
+                                           <http://digistrucmed.org/questionnaire#Scale_Type> ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Answer> ;
+                                  rdfs:comment "A textual answer scale/type category." .
+
+###  http://digistrucmed.org/questionnaire#NullAnswer
+<http://digistrucmed.org/questionnaire#NullAnswer> rdf:type owl:NamedIndividual,
+                                           owl:Class,
+                                           <http://digistrucmed.org/questionnaire#Scale_Type> ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Answer> ;
+                                  rdfs:comment "A null answer scale/type category representing that the user did not provide an answer." .
+
+
+###  http://digistrucmed.org/questionnaire#Questionnaire
+<http://digistrucmed.org/questionnaire#Questionnaire> rdf:type owl:Class ;
+                                  rdfs:comment "A structured set of questions designed to collect information from users." .
+
+###  http://digistrucmed.org/questionnaire#SUS
+<http://digistrucmed.org/questionnaire#SUS> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Questionnaire> ;
+                                  rdfs:comment "A type of questionnaire which is designed to assess system usability." .
+                            
+###  http://digistrucmed.org/questionnaire#uMARS
+<http://digistrucmed.org/questionnaire#uMARS> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Questionnaire> ;
+                                  rdfs:comment "Mobile Anwendungen Rating Skala (uMARS-D) is a questionnaire that measures the quality and perceived impact of a digital learning platform from the user's perspective." .
+
+###  http://digistrucmed.org/questionnaire#ModuleEvaluation
+<http://digistrucmed.org/questionnaire#ModuleEvaluation> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://digistrucmed.org/questionnaire#Questionnaire> ;
+                                  rdfs:comment "Module Evaluation is a questionnaire that measures learners' perceptions of the quality and effectiveness of a completed learning module.".
+
+###  http://digistrucmed.org/questionnaire#Question_Category
+<http://digistrucmed.org/questionnaire#Question_Category> rdf:type owl:Class ;
+                                  rdfs:comment "A category/grouping that a question belongs to (e.g., a thematic or structural grouping of questions)." .
+
+###  http://digistrucmed.org/questionnaire#Answer_Category
+<http://digistrucmed.org/questionnaire#Answer_Category> rdf:type owl:Class ;
+                                  rdfs:comment "A category/grouping that an answer option belongs to." .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://digistrucmed.org/questionnaire#Response_by_User
+<http://digistrucmed.org/questionnaire#Response_by_User> rdf:type rdf:Property,owl:ObjectProperty ;
+                                  rdfs:domain <http://digistrucmed.org/questionnaire#Response> ;
+                                  rdfs:range <http://digistrucmed.org/questionnaire#User> ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+                                  owl:onClass <http://digistrucmed.org/questionnaire#User>;
+                                  rdfs:comment "Associates an Response relationship instance with the user who Response." .
+
+
+###  http://digistrucmed.org/questionnaire#ResponseOnPlatform
+<http://digistrucmed.org/questionnaire#ResponseOnPlatform> rdf:type rdf:Property,owl:ObjectProperty ;
+                                  rdfs:domain <http://digistrucmed.org/questionnaire#Response> ;
+                                  rdfs:range <http://digistrucmed.org/questionnaire#Platform> ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+                                  owl:onClass <http://digistrucmed.org/questionnaire#Platform>;
+                                  rdfs:comment "Associates an Response relationship instance with the platform on which it was Response." .
+
+###  http://digistrucmed.org/questionnaire#ResponseInQuestionnaire
+<http://digistrucmed.org/questionnaire#ResponseInQuestionnaire> rdf:type rdf:Property,owl:ObjectProperty ;
+                                  rdfs:domain <http://digistrucmed.org/questionnaire#Response> ;
+                                  rdfs:range <http://digistrucmed.org/questionnaire#Questionnaire> ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+                                  owl:onClass <http://digistrucmed.org/questionnaire#Questionnaire>;
+                                  rdfs:comment "Associates an Response relationship instance with the questionnaire session/context." .
+
+###  http://digistrucmed.org/questionnaire#hasQuestion
+<http://digistrucmed.org/questionnaire#hasQuestion> rdf:type rdf:Property, owl:ObjectProperty ;
+                                  rdfs:domain <http://digistrucmed.org/questionnaire#Response> ;
+                                  rdfs:range <http://digistrucmed.org/questionnaire#Question> ;
+                                  rdfs:comment "Associates an Response relationship instance with the question that was Response." .
+
+###  http://digistrucmed.org/questionnaire#hasAnswer
+<http://digistrucmed.org/questionnaire#hasAnswer> rdf:type rdf:Property, owl:ObjectProperty ;
+                                  rdfs:domain <http://digistrucmed.org/questionnaire#Response> ;
+                                  rdfs:range <http://digistrucmed.org/questionnaire#Answer> ;
+                                  rdfs:comment "Associates an Response relationship instance with the selected predefined answer option, when one exists." .
+
+###  http://digistrucmed.org/questionnaire#belongsTo
+<http://digistrucmed.org/questionnaire#belongsTo> rdf:type rdf:Property,owl:ObjectProperty ;
+                                  rdfs:domain <http://digistrucmed.org/questionnaire#Question> ;
+                                  rdfs:range <http://digistrucmed.org/questionnaire#Questionnaire> ;
+                                  rdfs:comment "Defines the relationship between a question and its associated questionnaire." .
+
+###  http://digistrucmed.org/questionnaire#hasQuestion_Category
+<http://digistrucmed.org/questionnaire#hasQuestion_Category> rdf:type rdf:Property,owl:ObjectProperty ;
+                                  rdfs:domain <http://digistrucmed.org/questionnaire#Question> ;
+                                  rdfs:range <http://digistrucmed.org/questionnaire#Question_Category> ;
+                                  rdfs:comment "Associates a question with the category/grouping it belongs to." .
+
+###  http://digistrucmed.org/questionnaire#hasAnswer_Category
+<http://digistrucmed.org/questionnaire#hasAnswer_Category> rdf:type rdf:Property,owl:ObjectProperty ;
+                                  rdfs:domain <http://digistrucmed.org/questionnaire#Answer> ;
+                                  rdfs:range <http://digistrucmed.org/questionnaire#Answer_Category> ;
+                                  rdfs:comment "Associates an answer option with the category/grouping it belongs to." .
+
+###  http://digistrucmed.org/questionnaire#has_Possible_Answer
+<http://digistrucmed.org/questionnaire#has_Possible_Answer> rdf:type rdf:Property,owl:ObjectProperty ;
+                                  rdfs:domain <http://digistrucmed.org/questionnaire#Question> ;
+                                  rdfs:range <http://digistrucmed.org/questionnaire#Answer> ;
+                                  owl:inverseOf <http://digistrucmed.org/questionnaire#is_Answer_To> ;
+                                  rdfs:comment "Question has optional answers." .
+
+###  http://digistrucmed.org/questionnaire#is_Answer_To
+<http://digistrucmed.org/questionnaire#is_Answer_To> rdf:type rdf:Property, owl:ObjectProperty ;
+                                  rdfs:domain <http://digistrucmed.org/questionnaire#Answer> ;
+                                  rdfs:range <http://digistrucmed.org/questionnaire#Question> ;
+                                  owl:inverseOf <http://digistrucmed.org/questionnaire#has_Possible_Answer> ;
+                                  rdfs:comment "Associates an answer option with the question it can answer." .
+
+#################################################################
+# Datatype Properties
+#################################################################
+
+### http://digistrucmed.org/questionnaire#UserId
+<http://digistrucmed.org/questionnaire#UserId> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#User> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifier of User which can be Username_{UserId}" .
+
+### http://digistrucmed.org/questionnaire#PlatformId
+<http://digistrucmed.org/questionnaire#PlatformId> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Platform> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifier of Platform." .
+
+### http://digistrucmed.org/questionnaire#PlatformTitle
+<http://digistrucmed.org/questionnaire#PlatformTitle> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Platform> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Title or name of Platform." .
+
+### http://digistrucmed.org/questionnaire#Platform_Description
+<http://digistrucmed.org/questionnaire#Platform_Description> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Platform> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Description of Platform." .
+
+
+### http://digistrucmed.org/questionnaire#QuestionId
+<http://digistrucmed.org/questionnaire#QuestionId> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Question> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifier for the question which is unique within a questionnaire and has a specific meaning and define question's number and questionnaire it belongs to." .
+
+### http://digistrucmed.org/questionnaire#Question_Description
+<http://digistrucmed.org/questionnaire#Question_Description> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Question> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Textual description or content of the question that defines what question is asking." .
+
+
+### http://digistrucmed.org/questionnaire#QuestionnaireId
+<http://digistrucmed.org/questionnaire#QuestionnaireId> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Questionnaire> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifier of a questionnaire which are defined as SUS , uMARS and ME1" .
+
+<http://digistrucmed.org/questionnaire#shortDescription> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Questionnaire> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Short description of a questionnaire." .
+
+### http://digistrucmed.org/questionnaire#AnswerId
+<http://digistrucmed.org/questionnaire#AnswerId> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Answer> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifier of an entity." .
+
+### http://digistrucmed.org/questionnaire#ResponseCode
+<http://digistrucmed.org/questionnaire#ResponseCode> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Answer> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Code used to represent an answer option." .
+
+### http://digistrucmed.org/questionnaire#ResponseLabel
+<http://digistrucmed.org/questionnaire#ResponseLabel> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Answer> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Human-readable label for an answer option." .
+
+
+###  http://digistrucmed.org/questionnaire#Answer_Category
+<http://digistrucmed.org/questionnaire#Answer_Category> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Answer> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates the sentiment of an answer option. The sentiment of an answer option can be very positive, positive, very negative, negative, or neutral." .
+
+### http://digistrucmed.org/questionnaire#VisitId
+<http://digistrucmed.org/questionnaire#VisitId> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Response> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifier of the questionnaire visit/session in which the question was Response." .
+
+### http://digistrucmed.org/questionnaire#chosen_Answer_Code
+<http://digistrucmed.org/questionnaire#chosen_Answer_Code> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Response> ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The code of the answer option chosen by the user." .
+
+
+<http://digistrucmed.org/questionnaire#startTime> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Response> ;
+    rdfs:range xsd:dateTime ;
+    rdfs:comment "Start time of an Response relationship instance." .
+
+<http://digistrucmed.org/questionnaire#endTime> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Response> ;
+    rdfs:range xsd:dateTime ;
+    rdfs:comment "End time of an Response relationship instance." .
+
+<http://digistrucmed.org/questionnaire#speed> rdf:type rdfs:Property, owl:DatatypeProperty ;
+    rdfs:domain <http://digistrucmed.org/questionnaire#Response> ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Speed associated with an Response relationship instance." .
+
