@@ -1,0 +1,528 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "SUSPECTED_CROSS_DOCUMENT_DUPLICATE",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_a8d659f172c05b122e27312303d3c4eaa6ba9016d4e238301602aaafdcfb934c_n0007",
+  "source": {
+    "document_sha256": "a8d659f172c05b122e27312303d3c4eaa6ba9016d4e238301602aaafdcfb934c",
+    "page_ids": [
+      "a8d659f172c05b122e27312303d3c4eaa6ba9016d4e238301602aaafdcfb934c_p0017"
+    ],
+    "page_numbers": [
+      17
+    ],
+    "physical_block_ids": [
+      "pb_a8d659f172c05b122e27312303d3c4eaa6ba9016d4e238301602aaafdcfb934c_p0017_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "**Check off which medications you are already taking and which ones are being added.**"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation of explicit medication entities, administration attributes, indications, outcomes, adverse events, and source-language directives. No terminology identifiers were guessed.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": true,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 37,
+          "char_start": 0,
+          "entity_id": "e_0017",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Mineralocorticoid receptor antagonist"
+        },
+        {
+          "char_end": 177,
+          "char_start": 158,
+          "entity_id": "e_0018",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "eplerenone (Inspra)"
+        },
+        {
+          "char_end": 204,
+          "char_start": 178,
+          "entity_id": "e_0019",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "spironolactone (Aldactone)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Check off which medications you are already taking and which ones are being added.**",
+          "Medications for HFrEF (the 4 pillars)",
+          "Common examples - listed by the generic followed by (brand) name"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive source row; no recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0017",
+            "e_0018",
+            "e_0019"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Mineralocorticoid receptor antagonist\nA type of diuretic that helps the body remove excess water and sodium through the urine but prevents loss of potassium.\neplerenone (Inspra)\nspironolactone (Aldactone)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 59,
+          "char_start": 0,
+          "entity_id": "e_0020",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Angiotensin II receptor blocker neprilysin inhibitor (ARNI)"
+        },
+        {
+          "char_end": 122,
+          "char_start": 65,
+          "entity_id": "e_0021",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Angiotensin-converting enzyme inhibitors (ACE inhibitors)"
+        },
+        {
+          "char_end": 167,
+          "char_start": 128,
+          "entity_id": "e_0022",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Angiotensin II receptor blockers (ARBs)"
+        },
+        {
+          "char_end": 557,
+          "char_start": 526,
+          "entity_id": "e_0023",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "sacubitril/valsartan (Entresto)"
+        },
+        {
+          "char_end": 582,
+          "char_start": 563,
+          "entity_id": "e_0024",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "captopril (Capoten)"
+        },
+        {
+          "char_end": 602,
+          "char_start": 583,
+          "entity_id": "e_0025",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "enalapril (Vasotec)"
+        },
+        {
+          "char_end": 633,
+          "char_start": 603,
+          "entity_id": "e_0026",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "lisinopril (Prinivil, Zestril)"
+        },
+        {
+          "char_end": 651,
+          "char_start": 634,
+          "entity_id": "e_0027",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ramipril (Altace)"
+        },
+        {
+          "char_end": 678,
+          "char_start": 657,
+          "entity_id": "e_0028",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "candesartan (Atacand)"
+        },
+        {
+          "char_end": 696,
+          "char_start": 679,
+          "entity_id": "e_0029",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "losartan (Cozaar)"
+        },
+        {
+          "char_end": 715,
+          "char_start": 697,
+          "entity_id": "e_0030",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "valsartan (Diovan)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Check off which medications you are already taking and which ones are being added.**",
+          "Medications for HFrEF (the 4 pillars)",
+          "Common examples - listed by the generic followed by (brand) name"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive source row; no recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0020",
+            "e_0021",
+            "e_0022",
+            "e_0023",
+            "e_0024",
+            "e_0025",
+            "e_0026",
+            "e_0027",
+            "e_0028",
+            "e_0029",
+            "e_0030"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Angiotensin II receptor blocker neprilysin inhibitor (ARNI)\n-OR-\nAngiotensin-converting enzyme inhibitors (ACE inhibitors)\n-OR-\nAngiotensin II receptor blockers (ARBs)\nACE inhibitors and ARBs widen and relax blood vessels and ease the amount of work the heart has to do to pump blood. They also lower blood pressure. ARNIs work similarly but are stronger due to an additional ingredient. To help decide if an ARNI is right for you, the American College of Cardiology has created a tool to help.\nCardioSmart.org/HFDecisionAids\nsacubitril/valsartan (Entresto)\n-OR-\ncaptopril (Capoten)\nenalapril (Vasotec)\nlisinopril (Prinivil, Zestril)\nramipril (Altace)\n-OR-\ncandesartan (Atacand)\nlosartan (Cozaar)\nvalsartan (Diovan)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0031",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Beta blocker"
+        },
+        {
+          "char_end": 130,
+          "char_start": 111,
+          "entity_id": "e_0032",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "bisoprolol (Zebeta)"
+        },
+        {
+          "char_end": 149,
+          "char_start": 131,
+          "entity_id": "e_0033",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "carvedilol (Coreg)"
+        },
+        {
+          "char_end": 179,
+          "char_start": 150,
+          "entity_id": "e_0034",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "metoprolol succinate (Toprol)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Check off which medications you are already taking and which ones are being added.**",
+          "Medications for HFrEF (the 4 pillars)",
+          "Common examples - listed by the generic followed by (brand) name"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive source row; no recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0031",
+            "e_0032",
+            "e_0033",
+            "e_0034"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Beta blocker\nBeta blockers slow the heart rate, lower blood pressure and may reverse some of the heart damage.\nbisoprolol (Zebeta)\ncarvedilol (Coreg)\nmetoprolol succinate (Toprol)"
+    }
+  ]
+}

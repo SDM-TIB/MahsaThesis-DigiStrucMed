@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "counts": {
+    "semantic_units": 539,
+    "mentions": 55640,
+    "umls_candidates": 176259,
+    "entities": 55640,
+    "assertions": 111280,
+    "umls_relations": 781,
+    "umls_semantic_types": 3
+  },
+  "checks_run": {
+    "uri_existence": 222560,
+    "predicate_exists": 111280,
+    "domain_range": 111280,
+    "non_empty_spo": 111280,
+    "uri_uniqueness": 4,
+    "umls_accepted_has_cui": 55640,
+    "no_sameAs_for_unreviewed": 1,
+    "assertion_has_provenance": 111280,
+    "umls_relation_endpoints": 781,
+    "umls_semantic_type_tui_format": 3
+  },
+  "errors": [],
+  "warnings": [
+    "umls_relations.csv: 31 relation_uri value(s) repeated (harmless, deduplicated by rdfizer's remove_duplicate), e.g. ['http://digistrucmed.org/umls-relation/C0012133_RO_ingredient_of_A9450025_MMSL', 'http://digistrucmed.org/umls-relation/C0012133_RO_ingredient_of_A9450029_MMSL', 'http://digistrucmed.org/umls-relation/C0012133_RO_ingredient_of_A16717830_MMSL']"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "MIXED_CONTENT",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_0074e29f31a1f0feb082e0064bee46f60bf6b5ae3f8703d1231341374ed97e52_n0005",
+  "source": {
+    "document_sha256": "0074e29f31a1f0feb082e0064bee46f60bf6b5ae3f8703d1231341374ed97e52",
+    "page_ids": [
+      "0074e29f31a1f0feb082e0064bee46f60bf6b5ae3f8703d1231341374ed97e52_p0010"
+    ],
+    "page_numbers": [
+      10
+    ],
+    "physical_block_ids": [
+      "pb_0074e29f31a1f0feb082e0064bee46f60bf6b5ae3f8703d1231341374ed97e52_p0010_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "**Table 4 Core Components of cardiac rehabilitation following cardiac surgery – coronary artery or valve heart surgery.**"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review confirms one medication-directed normative assertion for vitamin B12 supplementation. The table predominantly contains non-medication assessment, rehabilitation, counselling, and lifestyle content, so mixed content prevents table-example readiness.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 9,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "vitamin B12"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "Diet/nutritional counselling"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "The source explicitly asks the reader to consider vitamin B12 supplementation.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Consider"
+          ],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Consider vitamin B12 supplementation"
+    }
+  ]
+}

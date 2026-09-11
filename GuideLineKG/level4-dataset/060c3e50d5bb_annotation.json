@@ -1,0 +1,1219 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "MIXED_CONTENT",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_n0089",
+  "source": {
+    "document_sha256": "66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7",
+    "page_ids": [
+      "66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_p0086"
+    ],
+    "page_numbers": [
+      86
+    ],
+    "physical_block_ids": [
+      "pb_66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_p0086_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "**Table 32** Endomyocardial biopsy in patients with suspected myocarditis"
+  },
+  "table_assessment": {
+    "assessment_notes": "The isolated table mixes endomyocardial-biopsy indications, sample and laboratory instructions, descriptive purpose/sensitivity content, and medication-related therapeutic implications. Exact fragments are separated, but the mixed content is not a clean single-purpose table example.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 52,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Progressive or persistent severe cardiac dysfunction"
+        },
+        {
+          "char_end": 100,
+          "char_start": 60,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "life-threatening ventricular arrhythmias"
+        },
+        {
+          "char_end": 154,
+          "char_start": 108,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Mobitz type 2 second-degree or higher AV block"
+        },
+        {
+          "char_end": 236,
+          "char_start": 168,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "short-term (<1–2 weeks) expected response to usual medical treatment"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Indication"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0001",
+            "e_0002",
+            "e_0003",
+            "e_0004"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The Table 32 context supplies endomyocardial biopsy as the procedure indicated by the listed severe findings and lack of expected treatment response.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Indication",
+            "lack of"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Progressive or persistent severe cardiac dysfunction and/or life-threatening ventricular arrhythmias and/or Mobitz type 2 second-degree or higher AV block with lack of short-term (<1–2 weeks) expected response to usual medical treatment."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 32,
+          "char_start": 14,
+          "entity_id": "e_0005",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "identify aetiology"
+        },
+        {
+          "char_end": 67,
+          "char_start": 49,
+          "entity_id": "e_0006",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "specific treatment"
+        },
+        {
+          "char_end": 176,
+          "char_start": 74,
+          "entity_id": "e_0007",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "giant cell myocarditis, eosinophilic myocarditis, cardiac sarcoidosis, systemic inflammatory disorders"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Indication",
+          "Aim"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0007"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "The source explicitly labels these as aims rather than directives.",
+          "operation": null,
+          "outcome_entity_ids": [
+            "e_0005",
+            "e_0006"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "The aim is to identify aetiology and to indicate specific treatment (e.g. giant cell myocarditis, eosinophilic myocarditis, cardiac sarcoidosis, systemic inflammatory disorders). 97,98,917,918,958"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 14,
+          "char_start": 2,
+          "entity_id": "e_0008",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "minimum of 5"
+        },
+        {
+          "char_end": 38,
+          "char_start": 28,
+          "entity_id": "e_0009",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "at least 7"
+        },
+        {
+          "char_end": 63,
+          "char_start": 48,
+          "entity_id": "e_0010",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "3 for pathology"
+        },
+        {
+          "char_end": 92,
+          "char_start": 65,
+          "entity_id": "e_0011",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "2 for infections (DNA, PCR)"
+        },
+        {
+          "char_end": 132,
+          "char_start": 97,
+          "entity_id": "e_0012",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "2 for RNA viruses/viral replication"
+        },
+        {
+          "char_end": 161,
+          "char_start": 134,
+          "entity_id": "e_0013",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Left and/or right ventricle"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Number and sites of the samples"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The biopsy context supplies the sampling action and the fragment specifies sample counts, purposes, and ventricular sites.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0008",
+            "e_0009",
+            "e_0010",
+            "e_0011",
+            "e_0012",
+            "e_0013"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Number and sites of the samples",
+            "minimum",
+            "possibly"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "A minimum of 5 but possibly at least 7 samples, 3 for pathology, 2 for infections (DNA, PCR) and 2 for RNA viruses/viral replication. Left and/or right ventricle."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 26,
+          "char_start": 0,
+          "entity_id": "e_0014",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CMR or PET guided sampling"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Number and sites of the samples"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Image-guided sampling is optional.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0014"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "CMR or PET guided sampling may be considered. 919"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 38,
+          "char_start": 0,
+          "entity_id": "e_0015",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Quantitative PCR viral genome analysis"
+        },
+        {
+          "char_end": 145,
+          "char_start": 43,
+          "entity_id": "e_0016",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "common cardiotropic viruses (parvovirus B19, HHV4, HHV6, enteroviruses, adenovirus and coxsackievirus)"
+        },
+        {
+          "char_end": 154,
+          "char_start": 149,
+          "entity_id": "e_0017",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "rtPCR"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Aetiology"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The aetiology section specifies quantitative viral-genome analysis by rtPCR.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0017"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Aetiology"
+          ],
+          "target_entity_ids": [
+            "e_0015",
+            "e_0016"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Quantitative PCR viral genome analysis for common cardiotropic viruses (parvovirus B19, HHV4, HHV6, enteroviruses, adenovirus and coxsackievirus) by rtPCR."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 39,
+          "char_start": 0,
+          "entity_id": "e_0018",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Viral mRNA for active viral replication"
+        },
+        {
+          "char_end": 87,
+          "char_start": 72,
+          "entity_id": "e_0019",
+          "entity_type": "RATIONALE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "low sensitivity"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Aetiology"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Viral-mRNA assessment is optional; low sensitivity is explicitly noted.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [
+            "e_0019"
+          ],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "may be assessed"
+          ],
+          "target_entity_ids": [
+            "e_0018"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Viral mRNA for active viral replication may be assessed although it has low sensitivity."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 88,
+          "char_start": 26,
+          "entity_id": "e_0020",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CMV, HIV, Borrelia, Coxiella burnetii (Q-fever) and SARS-CoV-2"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Aetiology"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [],
+          "deontic_force": "MANDATORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "The source directs pathogen assessment when indicated.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "On indication, search for"
+          ],
+          "target_entity_ids": [
+            "e_0020"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "On indication, search for CMV, HIV, Borrelia, Coxiella burnetii (Q-fever) and SARS-CoV-2."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 0,
+          "entity_id": "e_0021",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Immunohistochemistry"
+        },
+        {
+          "char_end": 95,
+          "char_start": 39,
+          "entity_id": "e_0022",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "anti-CD3-, CD4-, CD8- or CD45 antibodies for lymphocytes"
+        },
+        {
+          "char_end": 136,
+          "char_start": 100,
+          "entity_id": "e_0023",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "anti-CD68 antibodies for macrophages"
+        },
+        {
+          "char_end": 163,
+          "char_start": 141,
+          "entity_id": "e_0024",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "anti-HLA-DR antibodies"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Diagnosis of inflammation"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The section specifies immunohistochemical staining for inflammation diagnosis.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Diagnosis of inflammation"
+          ],
+          "target_entity_ids": [
+            "e_0021",
+            "e_0022",
+            "e_0023",
+            "e_0024"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Immunohistochemistry with staining for anti-CD3-, CD4-, CD8- or CD45 antibodies for lymphocytes and anti-CD68 antibodies for macrophages and anti-HLA-DR antibodies. 907,917,918,959"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 25,
+          "char_start": 0,
+          "entity_id": "e_0025",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Immunosuppressive therapy"
+        },
+        {
+          "char_end": 70,
+          "char_start": 56,
+          "entity_id": "e_0026",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "results of EMB"
+        },
+        {
+          "char_end": 127,
+          "char_start": 77,
+          "entity_id": "e_0027",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "giant cell myocarditis or eosinophilic myocarditis"
+        },
+        {
+          "char_end": 249,
+          "char_start": 151,
+          "entity_id": "e_0028",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "sarcoidosis, vasculitis or selected patients with increased cardiac inflammation of unknown origin"
+        },
+        {
+          "char_end": 290,
+          "char_start": 261,
+          "entity_id": "e_0029",
+          "entity_type": "RATIONALE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "multidisciplinary counselling"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Therapeutic implications",
+          "Immunosuppressive therapy"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [
+            "e_0026",
+            "e_0027"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Immunosuppression is optional based on biopsy results and the listed disease/selection conditions.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0028"
+          ],
+          "rationale_entity_ids": [
+            "e_0029"
+          ],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "may be indicated",
+            "possibly"
+          ],
+          "target_entity_ids": [
+            "e_0025"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "Immunosuppressive therapy may be indicated based on the results of EMB as in giant cell myocarditis or eosinophilic myocarditis and, possibly, also in sarcoidosis, vasculitis or selected patients with increased cardiac inflammation of unknown origin based upon multidisciplinary counselling. 98,917–919,954"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0030",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Antibiotics"
+        },
+        {
+          "char_end": 36,
+          "char_start": 13,
+          "entity_id": "e_0031",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Borrelia (Lyme disease)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Therapeutic implications",
+          "Antibiotics"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [
+            "e_0031"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The therapeutic-implications section links antibiotic treatment to Borrelia/Lyme disease.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Therapeutic implications",
+            "Antibiotics"
+          ],
+          "target_entity_ids": [
+            "e_0030"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "Antibiotics: Borrelia (Lyme disease)."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 17,
+          "char_start": 0,
+          "entity_id": "e_0032",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Antiviral therapy"
+        },
+        {
+          "char_end": 33,
+          "char_start": 19,
+          "entity_id": "e_0033",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "HIV, CMV, HHV6"
+        },
+        {
+          "char_end": 78,
+          "char_start": 45,
+          "entity_id": "e_0034",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "load and viral replication (mRNA)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Therapeutic implications",
+          "Antiviral therapy"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [
+            "e_0033"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Antiviral therapy is condition dependent on the listed viruses, load, and viral replication.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0034"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Therapeutic implications",
+            "pending on"
+          ],
+          "target_entity_ids": [
+            "e_0032"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0011",
+      "verbatim_text": "Antiviral therapy: HIV, CMV, HHV6 pending on load and viral replication (mRNA)."
+    }
+  ]
+}

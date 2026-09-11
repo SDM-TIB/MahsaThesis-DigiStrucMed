@@ -1,0 +1,4115 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING",
+      "MIXED_CONTENT",
+      "SUSPECTED_DUPLICATE",
+      "OTHER_OPERATION",
+      "ENTITY_BOUNDARY_REQUIRES_HUMAN_REVIEW",
+      "PREDICATE_STRUCTURE_REQUIRES_HUMAN_REVIEW"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_n0096",
+  "source": {
+    "document_sha256": "66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7",
+    "page_ids": [
+      "66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_p0093"
+    ],
+    "page_numbers": [
+      93
+    ],
+    "physical_block_ids": [
+      "pb_66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_p0093_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "Screening for, and treatment of, aetiologies, and CV and non-CV comorbidities is recommended in patients with HFpEF (see relevant sections of this document). I C Diuretics are recommended in congested patients with HFpEF in order to alleviate symptoms and signs. I C Recommendations for the prevention of chronic HF Treatment of hypertension is recommended to prevent or delay the onset of HF, and to prevent HF hospitalizations. I A Treatment with statins is recommended in patients at high risk of "
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation records 25 assertion-bearing table cells. Mixed, duplicate, temporal, inherited-header, and source-style semantics are flagged explicitly and require human adjudication.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": true,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 156,
+          "char_start": 96,
+          "entity_id": "e_0001",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with HFpEF (see relevant sections of this document)"
+        },
+        {
+          "char_end": 115,
+          "char_start": 110,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HFpEF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for the treatment of HFmrEF and HFpEF"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0002"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "Screening"
+          ],
+          "target_entity_ids": [
+            "e_0002"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Screening for, and treatment of, aetiologies, and CV and non-CV comorbidities is recommended in patients with HFpEF (see relevant sections of this document)."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Diuretics"
+        },
+        {
+          "char_end": 99,
+          "char_start": 29,
+          "entity_id": "e_0004",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "congested patients with HFpEF in order to alleviate symptoms and signs"
+        },
+        {
+          "char_end": 58,
+          "char_start": 53,
+          "entity_id": "e_0005",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HFpEF"
+        },
+        {
+          "char_end": 89,
+          "char_start": 81,
+          "entity_id": "e_0006",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "symptoms"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for the treatment of HFmrEF and HFpEF"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0005"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [
+            "e_0006"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0004"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0003"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Diuretics are recommended in congested patients with HFpEF in order to alleviate symptoms and signs."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 25,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Treatment of hypertension"
+        },
+        {
+          "char_end": 76,
+          "char_start": 74,
+          "entity_id": "e_0008",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 112,
+          "char_start": 93,
+          "entity_id": "e_0009",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF hospitalizations"
+        },
+        {
+          "char_end": 95,
+          "char_start": 93,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for the prevention of chronic HF"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0008",
+            "e_0010"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [
+            "e_0009"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.82,
+          "source_grade_record_ids": [
+            "gr_0005",
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Treatment of hypertension is recommended to prevent or delay the onset of HF, and to prevent HF hospitalizations."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 22,
+          "char_start": 15,
+          "entity_id": "e_0011",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "statins"
+        },
+        {
+          "char_end": 49,
+          "char_start": 41,
+          "entity_id": "e_0012",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients"
+        },
+        {
+          "char_end": 140,
+          "char_start": 138,
+          "entity_id": "e_0013",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 176,
+          "char_start": 157,
+          "entity_id": "e_0014",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF hospitalizations"
+        },
+        {
+          "char_end": 159,
+          "char_start": 157,
+          "entity_id": "e_0015",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for the prevention of chronic HF"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0013",
+            "e_0015"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [
+            "e_0014"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0012"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0007",
+            "gr_0008"
+          ],
+          "source_trigger_texts": [
+            "Treatment"
+          ],
+          "target_entity_ids": [
+            "e_0011"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0007",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0008",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Treatment with statins is recommended in patients at high risk of CV disease or with CV disease in order to prevent or delay the onset of HF, and to prevent HF hospitalizations."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 0,
+          "entity_id": "e_0016",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SGLT2 inhibitors"
+        },
+        {
+          "char_end": 31,
+          "char_start": 18,
+          "entity_id": "e_0017",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "canagliflozin"
+        },
+        {
+          "char_end": 46,
+          "char_start": 33,
+          "entity_id": "e_0018",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "dapagliflozin"
+        },
+        {
+          "char_end": 61,
+          "char_start": 48,
+          "entity_id": "e_0019",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "empagliflozin"
+        },
+        {
+          "char_end": 76,
+          "char_start": 63,
+          "entity_id": "e_0020",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ertugliflozin"
+        },
+        {
+          "char_end": 91,
+          "char_start": 78,
+          "entity_id": "e_0021",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "sotagliflozin"
+        },
+        {
+          "char_end": 220,
+          "char_start": 112,
+          "entity_id": "e_0022",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with diabetes at high risk of CV disease or with CV disease in order to prevent HF hospitalizations"
+        },
+        {
+          "char_end": 134,
+          "char_start": 126,
+          "entity_id": "e_0023",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "diabetes"
+        },
+        {
+          "char_end": 220,
+          "char_start": 201,
+          "entity_id": "e_0024",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF hospitalizations"
+        },
+        {
+          "char_end": 203,
+          "char_start": 201,
+          "entity_id": "e_0025",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for the prevention of chronic HF"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [
+            "e_0023",
+            "e_0025"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [
+            "e_0024"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0022"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0009",
+            "gr_0010"
+          ],
+          "source_trigger_texts": [
+            "can"
+          ],
+          "target_entity_ids": [
+            "e_0016",
+            "e_0017",
+            "e_0018",
+            "e_0019",
+            "e_0020",
+            "e_0021"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0009",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0010",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "SGLT2 inhibitors (canagliflozin, dapagliflozin, empagliflozin, ertugliflozin, sotagliflozin) are recommended in patients with diabetes at high risk of CV disease or with CV disease in order to prevent HF hospitalizations."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 82,
+          "char_start": 0,
+          "entity_id": "e_0026",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Counselling against sedentary habit, obesity, cigarette smoking, and alcohol abuse"
+        },
+        {
+          "char_end": 133,
+          "char_start": 131,
+          "entity_id": "e_0027",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for the prevention of chronic HF"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [
+            "e_0027"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0011",
+            "gr_0012"
+          ],
+          "source_trigger_texts": [
+            "Counselling"
+          ],
+          "target_entity_ids": [
+            "e_0026"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0011",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0012",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Counselling against sedentary habit, obesity, cigarette smoking, and alcohol abuse is recommended to prevent or delay the onset of HF."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 25,
+          "char_start": 23,
+          "entity_id": "e_0028",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 34,
+          "char_start": 26,
+          "entity_id": "e_0029",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients"
+        },
+        {
+          "char_end": 73,
+          "char_start": 71,
+          "entity_id": "e_0030",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 135,
+          "char_start": 117,
+          "entity_id": "e_0031",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF hospitalization"
+        },
+        {
+          "char_end": 119,
+          "char_start": 117,
+          "entity_id": "e_0032",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 149,
+          "char_start": 140,
+          "entity_id": "e_0033",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "mortality"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Other recommendations for the management of chronic HF"
+        ],
+        "row_index": 9,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [
+            "e_0028",
+            "e_0030",
+            "e_0032"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [
+            "e_0031",
+            "e_0033"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0029"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0013",
+            "gr_0014"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0028",
+            "e_0030",
+            "e_0032"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0013",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0014",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "It is recommended that HF patients are enrolled in a multidisciplinary HF management programme to reduce the risk of HF hospitalization and mortality."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 83,
+          "char_start": 65,
+          "entity_id": "e_0034",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF hospitalization"
+        },
+        {
+          "char_end": 67,
+          "char_start": 65,
+          "entity_id": "e_0035",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 97,
+          "char_start": 88,
+          "entity_id": "e_0036",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "mortality"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Other recommendations for the management of chronic HF"
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [
+            "e_0035"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [
+            "e_0034",
+            "e_0036"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0015",
+            "gr_0016"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0035"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0015",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0016",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Self-management strategies are recommended to reduce the risk of HF hospitalization and mortality."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 126,
+          "char_start": 108,
+          "entity_id": "e_0037",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF hospitalization"
+        },
+        {
+          "char_end": 110,
+          "char_start": 108,
+          "entity_id": "e_0038",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 140,
+          "char_start": 131,
+          "entity_id": "e_0039",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "mortality"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Other recommendations for the management of chronic HF"
+        ],
+        "row_index": 11,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [
+            "e_0038"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [
+            "e_0037",
+            "e_0039"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0017",
+            "gr_0018"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0038"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0017",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0018",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "Either home-based and/or clinic-based programmes improve outcomes and are recommended to reduce the risk of HF hospitalization and mortality."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 8,
+          "char_start": 0,
+          "entity_id": "e_0040",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Exercise"
+        },
+        {
+          "char_end": 99,
+          "char_start": 28,
+          "entity_id": "e_0041",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "all patients who are able in order to improve exercise capacity and QOL"
+        },
+        {
+          "char_end": 91,
+          "char_start": 74,
+          "entity_id": "e_0042",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "exercise capacity"
+        },
+        {
+          "char_end": 82,
+          "char_start": 74,
+          "entity_id": "e_0043",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "exercise"
+        },
+        {
+          "char_end": 99,
+          "char_start": 96,
+          "entity_id": "e_0044",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "QOL"
+        },
+        {
+          "char_end": 130,
+          "char_start": 112,
+          "entity_id": "e_0045",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF hospitalization"
+        },
+        {
+          "char_end": 114,
+          "char_start": 112,
+          "entity_id": "e_0046",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Other recommendations for the management of chronic HF"
+        ],
+        "row_index": 12,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [
+            "e_0046"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [
+            "e_0042",
+            "e_0044",
+            "e_0045"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0041"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0019",
+            "gr_0020"
+          ],
+          "source_trigger_texts": [
+            "Exercise"
+          ],
+          "target_entity_ids": [
+            "e_0040",
+            "e_0043"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0019",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0020",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "Exercise is recommended for all patients who are able in order to improve exercise capacity and QOL, and reduce HF hospitalization. d"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 69,
+          "char_start": 0,
+          "entity_id": "e_0047",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "Patients being considered for long-term MCS must have good compliance"
+        },
+        {
+          "char_end": 43,
+          "char_start": 40,
+          "entity_id": "e_0048",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "MCS"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with advanced HF"
+        ],
+        "row_index": 14,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [],
+          "deontic_force": "MANDATORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MUST_SHALL"
+          ],
+          "notes": "",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0047"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0021",
+            "gr_0022"
+          ],
+          "source_trigger_texts": [
+            "MCS"
+          ],
+          "target_entity_ids": [
+            "e_0048"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0021",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0022",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0011",
+      "verbatim_text": "Patients being considered for long-term MCS must have good compliance, appropriate capacity for device handling and psychosocial support."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 21,
+          "char_start": 0,
+          "entity_id": "e_0049",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Heart transplantation"
+        },
+        {
+          "char_end": 66,
+          "char_start": 41,
+          "entity_id": "e_0050",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with advanced HF"
+        },
+        {
+          "char_end": 66,
+          "char_start": 64,
+          "entity_id": "e_0051",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 104,
+          "char_start": 90,
+          "entity_id": "e_0052",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "device therapy"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with advanced HF"
+        ],
+        "row_index": 15,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [
+            "e_0051"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [
+            "e_0051"
+          ],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0050"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0023",
+            "gr_0024"
+          ],
+          "source_trigger_texts": [
+            "transplantation"
+          ],
+          "target_entity_ids": [
+            "e_0049",
+            "e_0052"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0023",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0024",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0012",
+      "verbatim_text": "Heart transplantation is recommended for patients with advanced HF, refractory to medical/device therapy and who do not have absolute contraindications."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 6,
+          "char_start": 0,
+          "entity_id": "e_0053",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Oxygen"
+        },
+        {
+          "char_end": 87,
+          "char_start": 25,
+          "entity_id": "e_0054",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with SpO₂ <90% or PaO₂ <60 mmHg to correct hypoxaemia"
+        },
+        {
+          "char_end": 43,
+          "char_start": 39,
+          "entity_id": "e_0055",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SpO₂"
+        },
+        {
+          "char_end": 48,
+          "char_start": 44,
+          "entity_id": "e_0056",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "<90%"
+        },
+        {
+          "char_end": 56,
+          "char_start": 52,
+          "entity_id": "e_0057",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "PaO₂"
+        },
+        {
+          "char_end": 65,
+          "char_start": 57,
+          "entity_id": "e_0058",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "<60 mmHg"
+        },
+        {
+          "char_end": 87,
+          "char_start": 77,
+          "entity_id": "e_0059",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "hypoxaemia"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with acute HF"
+        ],
+        "row_index": 17,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0013",
+          "condition_entity_ids": [
+            "e_0059"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0056",
+            "e_0058"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0054"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0025",
+            "gr_0026"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0053"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0025",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0026",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0013",
+      "verbatim_text": "Oxygen is recommended in patients with SpO₂ <90% or PaO₂ <60 mmHg to correct hypoxaemia."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0060",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Intubation"
+        },
+        {
+          "char_end": 61,
+          "char_start": 42,
+          "entity_id": "e_0061",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "respiratory failure"
+        },
+        {
+          "char_end": 106,
+          "char_start": 85,
+          "entity_id": "e_0062",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "oxygen administration"
+        },
+        {
+          "char_end": 134,
+          "char_start": 110,
+          "entity_id": "e_0063",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "non-invasive ventilation"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with acute HF"
+        ],
+        "row_index": 18,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0014",
+          "condition_entity_ids": [
+            "e_0061"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0027",
+            "gr_0028"
+          ],
+          "source_trigger_texts": [
+            "Intubation"
+          ],
+          "target_entity_ids": [
+            "e_0060",
+            "e_0062",
+            "e_0063"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0027",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0028",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0014",
+      "verbatim_text": "Intubation is recommended for progressive respiratory failure persisting in spite of oxygen administration or non-invasive ventilation."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 26,
+          "char_start": 12,
+          "entity_id": "e_0064",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "loop diuretics"
+        },
+        {
+          "char_end": 135,
+          "char_start": 47,
+          "entity_id": "e_0065",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "all patients with AHF admitted with signs/symptoms of fluid overload to improve symptoms"
+        },
+        {
+          "char_end": 68,
+          "char_start": 65,
+          "entity_id": "e_0066",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "AHF"
+        },
+        {
+          "char_end": 97,
+          "char_start": 89,
+          "entity_id": "e_0067",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "symptoms"
+        },
+        {
+          "char_end": 115,
+          "char_start": 101,
+          "entity_id": "e_0068",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "fluid overload"
+        },
+        {
+          "char_end": 135,
+          "char_start": 127,
+          "entity_id": "e_0069",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "symptoms"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with acute HF"
+        ],
+        "row_index": 19,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0015",
+          "condition_entity_ids": [
+            "e_0066",
+            "e_0068"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [
+            "e_0067",
+            "e_0069"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0065"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0029",
+            "gr_0030"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0064"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0029",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0030",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0015",
+      "verbatim_text": "Intravenous loop diuretics are recommended for all patients with AHF admitted with signs/symptoms of fluid overload to improve symptoms."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 43,
+          "char_start": 39,
+          "entity_id": "e_0070",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "LMWH"
+        },
+        {
+          "char_end": 71,
+          "char_start": 63,
+          "entity_id": "e_0071",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients"
+        },
+        {
+          "char_end": 192,
+          "char_start": 170,
+          "entity_id": "e_0072",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "deep venous thrombosis"
+        },
+        {
+          "char_end": 215,
+          "char_start": 197,
+          "entity_id": "e_0073",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "pulmonary embolism"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with acute HF"
+        ],
+        "row_index": 20,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0016",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [
+            "e_0072",
+            "e_0073"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0071"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0031",
+            "gr_0032"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0070"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0031",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0032",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0016",
+      "verbatim_text": "Thromboembolism prophylaxis (e.g. with LMWH) is recommended in patients not already anticoagulated and with no contraindication to anticoagulation, to reduce the risk of deep venous thrombosis and pulmonary embolism."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 0,
+          "entity_id": "e_0074",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Inotropic agents"
+        },
+        {
+          "char_end": 90,
+          "char_start": 83,
+          "entity_id": "e_0075",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patient"
+        },
+        {
+          "char_end": 118,
+          "char_start": 107,
+          "entity_id": "e_0076",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "hypotension"
+        },
+        {
+          "char_end": 148,
+          "char_start": 135,
+          "entity_id": "e_0077",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "hypoperfusion"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with acute HF"
+        ],
+        "row_index": 21,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0017",
+          "condition_entity_ids": [
+            "e_0076",
+            "e_0077"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [
+            "e_0076",
+            "e_0077"
+          ],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0075"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0033",
+            "gr_0034"
+          ],
+          "source_trigger_texts": [
+            "not recommended"
+          ],
+          "target_entity_ids": [
+            "e_0074"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0033",
+          "grade_source_text": "III",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "III"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0034",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0017",
+      "verbatim_text": "Inotropic agents are not recommended routinely, due to safety concerns, unless the patient has symptomatic hypotension and evidence of hypoperfusion."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 22,
+          "char_start": 15,
+          "entity_id": "e_0078",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "opiates"
+        },
+        {
+          "char_end": 110,
+          "char_start": 53,
+          "entity_id": "e_0079",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "selected patients with severe/intractable pain or anxiety"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with acute HF"
+        ],
+        "row_index": 22,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0018",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0079"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0035",
+            "gr_0036"
+          ],
+          "source_trigger_texts": [
+            "not recommended"
+          ],
+          "target_entity_ids": [
+            "e_0078"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0035",
+          "grade_source_text": "III",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "III"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0036",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0018",
+      "verbatim_text": "Routine use of opiates is not recommended, unless in selected patients with severe/intractable pain or anxiety."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 164,
+          "char_start": 23,
+          "entity_id": "e_0080",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients hospitalized for HF be carefully evaluated to exclude persistent signs of congestion before discharge and to optimize oral treatment"
+        },
+        {
+          "char_end": 51,
+          "char_start": 49,
+          "entity_id": "e_0081",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 116,
+          "char_start": 106,
+          "entity_id": "e_0082",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "congestion"
+        },
+        {
+          "char_end": 133,
+          "char_start": 117,
+          "entity_id": "e_0083",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "before discharge"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for management of patients after HF hospitalization"
+        ],
+        "row_index": 25,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0019",
+          "condition_entity_ids": [
+            "e_0081",
+            "e_0082"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0083"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0080"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0037",
+            "gr_0038"
+          ],
+          "source_trigger_texts": [
+            "evaluated"
+          ],
+          "target_entity_ids": [
+            "e_0081",
+            "e_0082"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0037",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0038",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0019",
+      "verbatim_text": "It is recommended that patients hospitalized for HF be carefully evaluated to exclude persistent signs of congestion before discharge and to optimize oral treatment."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 94,
+          "char_start": 23,
+          "entity_id": "e_0084",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "evidence-based oral medical treatment be administered before discharge."
+        },
+        {
+          "char_end": 93,
+          "char_start": 77,
+          "entity_id": "e_0085",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "before discharge"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for management of patients after HF hospitalization"
+        ],
+        "row_index": 26,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0020",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0085"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.82,
+          "source_grade_record_ids": [
+            "gr_0039",
+            "gr_0040"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0084"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0039",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0040",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0020",
+      "verbatim_text": "It is recommended that evidence-based oral medical treatment be administered before discharge."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 24,
+          "char_start": 0,
+          "entity_id": "e_0086",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "An early follow-up visit"
+        },
+        {
+          "char_end": 52,
+          "char_start": 43,
+          "entity_id": "e_0087",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "1–2 weeks"
+        },
+        {
+          "char_end": 68,
+          "char_start": 53,
+          "entity_id": "e_0088",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "after discharge"
+        },
+        {
+          "char_end": 98,
+          "char_start": 88,
+          "entity_id": "e_0089",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "congestion"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for management of patients after HF hospitalization"
+        ],
+        "row_index": 27,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0021",
+          "condition_entity_ids": [
+            "e_0089"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "INITIATE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0087",
+            "e_0088"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0041",
+            "gr_0042"
+          ],
+          "source_trigger_texts": [
+            "start"
+          ],
+          "target_entity_ids": [
+            "e_0086"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0022",
+          "condition_entity_ids": [
+            "e_0089"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "TITRATE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0087",
+            "e_0088"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0041",
+            "gr_0042"
+          ],
+          "source_trigger_texts": [
+            "uptitrate"
+          ],
+          "target_entity_ids": [
+            "e_0086"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0023",
+          "condition_entity_ids": [
+            "e_0089"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0087",
+            "e_0088"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0041",
+            "gr_0042"
+          ],
+          "source_trigger_texts": [
+            "assess"
+          ],
+          "target_entity_ids": [
+            "e_0086",
+            "e_0089"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0024",
+          "condition_entity_ids": [
+            "e_0089"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0087",
+            "e_0088"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0041",
+            "gr_0042"
+          ],
+          "source_trigger_texts": [
+            "follow-up"
+          ],
+          "target_entity_ids": [
+            "e_0086"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0041",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0042",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0021",
+      "verbatim_text": "An early follow-up visit is recommended at 1–2 weeks after discharge to assess signs of congestion, drug tolerance, and start and/or uptitrate evidence-based therapy."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 46,
+          "char_start": 28,
+          "entity_id": "e_0090",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "oral anticoagulant"
+        },
+        {
+          "char_end": 85,
+          "char_start": 65,
+          "entity_id": "e_0091",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "all patients with AF"
+        },
+        {
+          "char_end": 85,
+          "char_start": 83,
+          "entity_id": "e_0092",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "AF"
+        },
+        {
+          "char_end": 89,
+          "char_start": 87,
+          "entity_id": "e_0093",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 117,
+          "char_start": 114,
+          "entity_id": "e_0094",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": ">2 "
+        },
+        {
+          "char_end": 130,
+          "char_start": 127,
+          "entity_id": "e_0095",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": ">3 "
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with HF and AF"
+        ],
+        "row_index": 29,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0025",
+          "condition_entity_ids": [
+            "e_0092",
+            "e_0093"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0094",
+            "e_0095"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0091"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0043",
+            "gr_0044"
+          ],
+          "source_trigger_texts": [
+            "treatment"
+          ],
+          "target_entity_ids": [
+            "e_0090"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0043",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0044",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0022",
+      "verbatim_text": "Long-term treatment with an oral anticoagulant is recommended in all patients with AF, HF, and CHA₂DS₂-VASc score >2 in men or >3 in women."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0096",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "DOACs"
+        },
+        {
+          "char_end": 43,
+          "char_start": 39,
+          "entity_id": "e_0097",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "VKAs"
+        },
+        {
+          "char_end": 63,
+          "char_start": 47,
+          "entity_id": "e_0098",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with HF"
+        },
+        {
+          "char_end": 63,
+          "char_start": 61,
+          "entity_id": "e_0099",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with HF and AF"
+        ],
+        "row_index": 30,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0026",
+          "condition_entity_ids": [
+            "e_0099"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [
+            "e_0099"
+          ],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0098"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0045",
+            "gr_0046"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0096",
+            "e_0097"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0045",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0046",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0023",
+      "verbatim_text": "DOACs are recommended in preference to VKAs in patients with HF, except in those with moderate or severe mitral stenosis or mechanical prosthetic heart valves."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0100",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Urgent ECV"
+        },
+        {
+          "char_end": 65,
+          "char_start": 63,
+          "entity_id": "e_0101",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 146,
+          "char_start": 69,
+          "entity_id": "e_0102",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients presenting with rapid ventricular rates and haemodynamic instability"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with HF and AF"
+        ],
+        "row_index": 31,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0027",
+          "condition_entity_ids": [
+            "e_0101"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0102"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.82,
+          "source_grade_record_ids": [
+            "gr_0047",
+            "gr_0048"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0100"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0047",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0048",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0024",
+      "verbatim_text": "Urgent ECV is recommended in the setting of acute worsening of HF in patients presenting with rapid ventricular rates and haemodynamic instability."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 41,
+          "char_start": 19,
+          "entity_id": "e_0103",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "anti-arrhythmic agents"
+        },
+        {
+          "char_end": 52,
+          "char_start": 42,
+          "entity_id": "e_0104",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "flecainide"
+        },
+        {
+          "char_end": 105,
+          "char_start": 96,
+          "entity_id": "e_0105",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "D-sotalol"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for treatment of patients with HF and AF"
+        ],
+        "row_index": 32,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0028",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0049",
+            "gr_0050"
+          ],
+          "source_trigger_texts": [
+            "Treatment"
+          ],
+          "target_entity_ids": [
+            "e_0103",
+            "e_0104",
+            "e_0105"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0049",
+          "grade_source_text": "III",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "III"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0050",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0025",
+      "verbatim_text": "Treatment with the anti-arrhythmic agents flecainide, encainide, disopyramide, dronedarone, and D-sotalol is not recommended due to safety concerns."
+    }
+  ]
+}

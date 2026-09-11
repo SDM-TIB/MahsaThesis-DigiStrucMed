@@ -1,0 +1,868 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "terminology_linking_pending"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_c64833b8bc8651d04cc5009d9b0fc443ff1f60cab575c8b000d7e65df7e941ad_n0004",
+  "source": {
+    "document_sha256": "c64833b8bc8651d04cc5009d9b0fc443ff1f60cab575c8b000d7e65df7e941ad",
+    "page_ids": [
+      "c64833b8bc8651d04cc5009d9b0fc443ff1f60cab575c8b000d7e65df7e941ad_p0012"
+    ],
+    "page_numbers": [
+      12
+    ],
+    "physical_block_ids": [
+      "pb_c64833b8bc8651d04cc5009d9b0fc443ff1f60cab575c8b000d7e65df7e941ad_p0012_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "**Table 5** Application limitations of physiotherapeutic procedures in patients with cardiac implantable electronic devices<sup>101,111,112</sup>"
+  },
+  "table_assessment": {
+    "assessment_notes": "Isolated electrotherapy recommendation matrix. Ten procedure rows contain restriction or permission content; the microwave cell is split at its HTML line break into two exact fragments. Procedure names are preserved in locator header paths and all modality-bearing fragments are annotated.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 31,
+          "char_start": 11,
+          "entity_id": "e_0001",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "CIED/electrode field"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Recommendation",
+          "Stable galvanization 1-, 2-, 3-, or 4 cells-bath Stangerbad (full hydrogalvanic bath)"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0001"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Permission applies only outside the stated CIED/electrode field; the procedure is carried by the header path.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "no restrictions"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Out of the CIED/electrode field no restrictions"
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Recommendation",
+          "Impulse galvanization"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Procedure target is carried by the header path.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Should be avoided"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Should be avoided"
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Recommendation",
+          "Diadynamic currents"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Procedure target is carried by the header path.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Should be avoided"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Should be avoided"
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Recommendation",
+          "Shortwave diathermy"
+        ],
+        "row_index": 11,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Procedure target is carried by the header path.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Should be avoided"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Should be avoided"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 14,
+          "char_start": 3,
+          "entity_id": "e_0002",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "extremities"
+        },
+        {
+          "char_end": 43,
+          "char_start": 29,
+          "entity_id": "e_0003",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ECG monitoring"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Recommendation",
+          "Decimeter wave"
+        ],
+        "row_index": 12,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [
+            "e_0002"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Permitted at extremities with ECG monitoring.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0003"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "possible with ECG monitoring"
+          ],
+          "target_entity_ids": []
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Avoidance applies outside the explicitly permitted extremity/monitoring condition.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "otherwise should be avoided"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "At extremities possible with ECG monitoring, otherwise should be avoided"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 14,
+          "char_start": 3,
+          "entity_id": "e_0004",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "extremities"
+        },
+        {
+          "char_end": 23,
+          "char_start": 19,
+          "entity_id": "e_0005",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "head"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Recommendation",
+          "Microwave"
+        ],
+        "row_index": 13,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [
+            "e_0004",
+            "e_0005"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Microwave application is permitted at the two named sites.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "possible"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "At extremities and head possible,"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 3,
+          "entity_id": "e_0006",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "thoracal"
+        },
+        {
+          "char_end": 22,
+          "char_start": 16,
+          "entity_id": "e_0007",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "lumbal"
+        },
+        {
+          "char_end": 42,
+          "char_start": 28,
+          "entity_id": "e_0008",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ECG monitoring"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Recommendation",
+          "Microwave"
+        ],
+        "row_index": 13,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [
+            "e_0006",
+            "e_0007"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Microwave application is permitted at the thoracal/lumbal sites only with ECG monitoring.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0008"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "possible"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "At thoracal and lumbal with ECG monitoring possible"
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Recommendation",
+          "Ultrasound"
+        ],
+        "row_index": 14,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Procedure target is carried by the header path.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "No restrictions"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "No restrictions"
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Recommendation",
+          "Interference current"
+        ],
+        "row_index": 16,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Procedure target is carried by the header path.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Should be avoided"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "Should be avoided"
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Recommendation",
+          "TENS"
+        ],
+        "row_index": 18,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Procedure target is carried by the header path.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Should be avoided"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "Should be avoided"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 26,
+          "char_start": 15,
+          "entity_id": "e_0009",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "extremities"
+        },
+        {
+          "char_end": 35,
+          "char_start": 31,
+          "entity_id": "e_0010",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "head"
+        },
+        {
+          "char_end": 57,
+          "char_start": 49,
+          "entity_id": "e_0011",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "thoracal"
+        },
+        {
+          "char_end": 73,
+          "char_start": 62,
+          "entity_id": "e_0012",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "lumbal area"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Recommendation",
+          "Stimulation current"
+        ],
+        "row_index": 19,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [
+            "e_0009",
+            "e_0010"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Stimulation is permitted at extremities and head.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "possible"
+          ],
+          "target_entity_ids": []
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0013",
+          "condition_entity_ids": [
+            "e_0011",
+            "e_0012"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Stimulation should be avoided at thoracal and lumbal sites.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "should be avoided"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0011",
+      "verbatim_text": "Stimulation at extremities and head possible, at thoracal and lumbal area should be avoided"
+    }
+  ]
+}

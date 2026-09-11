@@ -1,0 +1,288 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING",
+      "HUMAN_CLINICAL_REVIEW_REQUIRED"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_e80862707140014ae554769409bcfb08f392edc24731a64a20993dc20e0edbd7_n0009",
+  "source": {
+    "document_sha256": "e80862707140014ae554769409bcfb08f392edc24731a64a20993dc20e0edbd7",
+    "page_ids": [
+      "e80862707140014ae554769409bcfb08f392edc24731a64a20993dc20e0edbd7_p0015"
+    ],
+    "page_numbers": [
+      15
+    ],
+    "physical_block_ids": [
+      "pb_e80862707140014ae554769409bcfb08f392edc24731a64a20993dc20e0edbd7_p0015_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "**TABLE 5** Recommended Starting Dose of Ivabradine"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content review confirms medication-directed guidance.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 32,
+          "char_start": 20,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "beta-blocker"
+        },
+        {
+          "char_end": 72,
+          "char_start": 62,
+          "entity_id": "e_0002",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "heart rate"
+        },
+        {
+          "char_end": 104,
+          "char_start": 88,
+          "entity_id": "e_0004",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "5 mg twice daily"
+        },
+        {
+          "char_end": 104,
+          "char_start": 93,
+          "entity_id": "e_0005",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "twice daily"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Maximally tolerated beta-blocker dose with persistent resting heart rate ≥70 beats/min",
+          "Initial dose"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0002",
+            "e_0004",
+            "e_0005"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Maximally tolerated beta-blocker dose with persistent resting heart rate ≥70 beats/min; 5 mg twice daily with meals"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 43,
+          "char_start": 34,
+          "entity_id": "e_0006",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "≥75 years"
+        },
+        {
+          "char_end": 43,
+          "char_start": 35,
+          "entity_id": "e_0007",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "75 years"
+        },
+        {
+          "char_end": 63,
+          "char_start": 45,
+          "entity_id": "e_0008",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "2.5 mg twice daily"
+        },
+        {
+          "char_end": 63,
+          "char_start": 52,
+          "entity_id": "e_0009",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "twice daily"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "History of conduction defects Age ≥75 years",
+          "Initial dose"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0006",
+            "e_0007",
+            "e_0008",
+            "e_0009"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "History of conduction defects Age ≥75 years; 2.5 mg twice daily with meals"
+    }
+  ]
+}

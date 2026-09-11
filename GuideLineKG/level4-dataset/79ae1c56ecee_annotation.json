@@ -1,0 +1,314 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "terminology_linking_pending"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_d30b2e95fb9d7d7778de8f39f87fde424e1edcdcec29e5931d37a4644749a1db_n0042",
+  "source": {
+    "document_sha256": "d30b2e95fb9d7d7778de8f39f87fde424e1edcdcec29e5931d37a4644749a1db",
+    "page_ids": [
+      "d30b2e95fb9d7d7778de8f39f87fde424e1edcdcec29e5931d37a4644749a1db_p0031"
+    ],
+    "page_numbers": [
+      31
+    ],
+    "physical_block_ids": [
+      "pb_d30b2e95fb9d7d7778de8f39f87fde424e1edcdcec29e5931d37a4644749a1db_p0031_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Non-competitive (low-intensity recreational skill-related sports) may be considered (when tolerated) in stable, optimally treated individuals with HFrEF. IIb C High-intensity power and endurance sports are not recommended in patients with HFrEF irrespective of symptoms. III C"
+  },
+  "table_assessment": {
+    "assessment_notes": "Isolated two-row recommendation fragment covering permitted low-intensity recreational sport and an against recommendation for high-intensity sport in HFrEF.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 65,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Non-competitive (low-intensity recreational skill-related sports)"
+        },
+        {
+          "char_end": 99,
+          "char_start": 85,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "when tolerated"
+        },
+        {
+          "char_end": 152,
+          "char_start": 104,
+          "entity_id": "e_0003",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "stable, optimally treated individuals with HFrEF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendation",
+          "Class",
+          "Level"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0002"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN",
+            "CONSIDER"
+          ],
+          "notes": "Explicit option semantics conditional on tolerance in the stated population.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0003"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "IIb",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native class.",
+          "raw_grade": "IIb"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native level.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Non-competitive (low-intensity recreational skill-related sports) may be considered (when tolerated) in stable, optimally treated individuals with HFrEF."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 41,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "High-intensity power and endurance sports"
+        },
+        {
+          "char_end": 84,
+          "char_start": 65,
+          "entity_id": "e_0005",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with HFrEF"
+        },
+        {
+          "char_end": 109,
+          "char_start": 85,
+          "entity_id": "e_0006",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "irrespective of symptoms"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendation",
+          "Class",
+          "Level"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0006"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Against recommendation applies irrespective of symptoms.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0005"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "are not recommended"
+          ],
+          "target_entity_ids": [
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "III",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native class.",
+          "raw_grade": "III"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native level.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "High-intensity power and endurance sports are not recommended in patients with HFrEF irrespective of symptoms."
+    }
+  ]
+}

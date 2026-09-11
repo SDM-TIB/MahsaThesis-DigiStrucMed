@@ -1,0 +1,1050 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "terminology_linking_pending",
+      "mixed_content_table",
+      "other_operation_mapping",
+      "semantic_class_corrected_from_source_screening"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_d30b2e95fb9d7d7778de8f39f87fde424e1edcdcec29e5931d37a4644749a1db_n0066",
+  "source": {
+    "document_sha256": "d30b2e95fb9d7d7778de8f39f87fde424e1edcdcec29e5931d37a4644749a1db",
+    "page_ids": [
+      "d30b2e95fb9d7d7778de8f39f87fde424e1edcdcec29e5931d37a4644749a1db_p0051"
+    ],
+    "page_numbers": [
+      51
+    ],
+    "physical_block_ids": [
+      "pb_d30b2e95fb9d7d7778de8f39f87fde424e1edcdcec29e5931d37a4644749a1db_p0051_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Recommendations for exercise in long QT syndrome"
+  },
+  "table_assessment": {
+    "assessment_notes": "Mixed medication and non-medication recommendation table. Exact content includes beta-blocker therapy and avoidance of QT-prolonging drugs alongside shared decision making and sports restrictions; medication-specific normative content warrants corrected medication-recommendation class, while mixed-content readiness remains false.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 59,
+          "char_start": 23,
+          "entity_id": "e_0001",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "all exercising individuals with LQTS"
+        },
+        {
+          "char_end": 79,
+          "char_start": 65,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "prior symptoms"
+        },
+        {
+          "char_end": 96,
+          "char_start": 83,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "prolonged QTc"
+        },
+        {
+          "char_end": 129,
+          "char_start": 116,
+          "entity_id": "e_0004",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "beta-blockers"
+        },
+        {
+          "char_end": 144,
+          "char_start": 133,
+          "entity_id": "e_0005",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "target dose"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations",
+          "Class",
+          "Level"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0002",
+            "e_0003"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Medication-class recommendation at source-stated target dose.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0005"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "It is recommended",
+            "be on therapy with"
+          ],
+          "target_entity_ids": [
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native class.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "B",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native level.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "It is recommended that all exercising individuals with LQTS with prior symptoms or prolonged QTc be on therapy with beta-blockers at target dose."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 55,
+          "char_start": 23,
+          "entity_id": "e_0006",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "exercising individuals with LQTS"
+        },
+        {
+          "char_end": 88,
+          "char_start": 69,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "QT prolonging drugs"
+        },
+        {
+          "char_end": 137,
+          "char_start": 116,
+          "entity_id": "e_0008",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "electrolyte imbalance"
+        },
+        {
+          "char_end": 158,
+          "char_start": 146,
+          "entity_id": "e_0009",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "hypokalaemia"
+        },
+        {
+          "char_end": 178,
+          "char_start": 163,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "hypomagnesaemia"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations",
+          "Class",
+          "Level"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Against medication-class recommendation; the visible website text is retained but no external coding is inferred.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0006"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "It is recommended",
+            "should avoid"
+          ],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "OTHER_OPERATION preserves the source instruction to avoid electrolyte imbalance; the permitted operation vocabulary has no direct prevention/avoidance action for a condition.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0006"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "It is recommended",
+            "should avoid"
+          ],
+          "target_entity_ids": [
+            "e_0008",
+            "e_0009",
+            "e_0010"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native class.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "B",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native level.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "It is recommended that exercising individuals with LQTS should avoid QT prolonging drugs (www.crediblemeds.org) and electrolyte imbalance such as hypokalaemia and hypomagnesaemia."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 22,
+          "char_start": 0,
+          "entity_id": "e_0011",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Shared decision making"
+        },
+        {
+          "char_end": 74,
+          "char_start": 54,
+          "entity_id": "e_0012",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "sports participation"
+        },
+        {
+          "char_end": 133,
+          "char_start": 78,
+          "entity_id": "e_0013",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with genotype-positive/phenotype-negative LQTS"
+        },
+        {
+          "char_end": 164,
+          "char_start": 140,
+          "entity_id": "e_0014",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "<470/480 ms in men/women"
+        },
+        {
+          "char_end": 215,
+          "char_start": 167,
+          "entity_id": "e_0015",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "Type and setting of sports (individual vs. team)"
+        },
+        {
+          "char_end": 233,
+          "char_start": 217,
+          "entity_id": "e_0016",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "type of mutation"
+        },
+        {
+          "char_end": 271,
+          "char_start": 239,
+          "entity_id": "e_0017",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "extent of precautionary measures"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations",
+          "Class",
+          "Level"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0014"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Shared decision making is represented as counselling regarding sports participation.",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0013"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [
+            "gr_0005",
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "should be considered regarding"
+          ],
+          "target_entity_ids": [
+            "e_0011",
+            "e_0012"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [
+            "e_0014"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Second sentence separately directs consideration of sport setting, mutation type, and precautionary measures.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0013"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0005",
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "should be considered in this context"
+          ],
+          "target_entity_ids": [
+            "e_0015",
+            "e_0016",
+            "e_0017"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native class.",
+          "raw_grade": "IIa"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native level.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Shared decision making should be considered regarding sports participation in patients with genotype-positive/phenotype-negative LQTS (i.e. <470/480 ms in men/women). Type and setting of sports (individual vs. team), type of mutation, and extent of precautionary measures should be considered in this context."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 67,
+          "char_start": 0,
+          "entity_id": "e_0018",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Participation in high-intensity recreational and competitive sports"
+        },
+        {
+          "char_end": 95,
+          "char_start": 82,
+          "entity_id": "e_0019",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "beta-blockers"
+        },
+        {
+          "char_end": 227,
+          "char_start": 119,
+          "entity_id": "e_0020",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "individuals with a QTc >500 ms or a genetically confirmed LQTS with a QTc ≥470 ms in men or ≥480 ms in women"
+        },
+        {
+          "char_end": 149,
+          "char_start": 138,
+          "entity_id": "e_0021",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "QTc >500 ms"
+        },
+        {
+          "char_end": 207,
+          "char_start": 189,
+          "entity_id": "e_0022",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "QTc ≥470 ms in men"
+        },
+        {
+          "char_end": 227,
+          "char_start": 211,
+          "entity_id": "e_0023",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "≥480 ms in women"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations",
+          "Class",
+          "Level"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [
+            "e_0019",
+            "e_0021",
+            "e_0022",
+            "e_0023"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Against recommendation applies even under beta-blocker therapy and retains all sex-specific/source-stated QTc thresholds.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0020"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0007",
+            "gr_0008"
+          ],
+          "source_trigger_texts": [
+            "even when on",
+            "is not recommended"
+          ],
+          "target_entity_ids": [
+            "e_0018"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0007",
+          "grade_source_text": "III",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native class.",
+          "raw_grade": "III"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0008",
+          "grade_source_text": "B",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native level.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Participation in high-intensity recreational and competitive sports, even when on beta-blockers, is not recommended in individuals with a QTc >500 ms or a genetically confirmed LQTS with a QTc ≥470 ms in men or ≥480 ms in women."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 35,
+          "char_start": 0,
+          "entity_id": "e_0024",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Participation in competitive sports"
+        },
+        {
+          "char_end": 56,
+          "char_start": 37,
+          "entity_id": "e_0025",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "with or without ICD"
+        },
+        {
+          "char_end": 148,
+          "char_start": 80,
+          "entity_id": "e_0026",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "individuals with LQTS and prior cardiac arrest or arrhythmic syncope"
+        },
+        {
+          "char_end": 126,
+          "char_start": 106,
+          "entity_id": "e_0027",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "prior cardiac arrest"
+        },
+        {
+          "char_end": 148,
+          "char_start": 130,
+          "entity_id": "e_0028",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "arrhythmic syncope"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations",
+          "Class",
+          "Level"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [
+            "e_0025",
+            "e_0027",
+            "e_0028"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT",
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Against recommendation applies regardless of ICD presence in the stated LQTS population.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0026"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0009",
+            "gr_0010"
+          ],
+          "source_trigger_texts": [
+            "with or without",
+            "is not recommended"
+          ],
+          "target_entity_ids": [
+            "e_0024"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0009",
+          "grade_source_text": "III",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native class.",
+          "raw_grade": "III"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0010",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native level.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Participation in competitive sports (with or without ICD) is not recommended in individuals with LQTS and prior cardiac arrest or arrhythmic syncope."
+    }
+  ]
+}

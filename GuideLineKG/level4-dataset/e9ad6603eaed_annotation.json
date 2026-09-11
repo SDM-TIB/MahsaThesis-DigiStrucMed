@@ -1,0 +1,1086 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "CORRECTED_TO_NON_ELIGIBLE",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_n0075",
+  "source": {
+    "document_sha256": "66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d",
+    "page_ids": [
+      "66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_p0061"
+    ],
+    "page_numbers": [
+      61
+    ],
+    "physical_block_ids": [
+      "pb_66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_p0061_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "**Table 16. ESC Definition of Advanced HF**"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review shows a descriptive definition and criteria for advanced HF, not a patient-directed clinical instruction, medication recommendation, or target medication fact. Assertion-bearing criteria are retained for auditability, but the screened class is corrected to non-eligible.",
+    "corrected_semantic_class": "non_eligible",
+    "eligibility": "NOT_ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 79,
+          "char_start": 43,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "optimal guideline-directed treatment"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "ESC Definition of Advanced HF"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "The modal phrase defines necessary membership criteria; it does not direct a clinical action.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0001"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "must be present"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "All these criteria must be present despite optimal guideline-directed treatment:"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 39,
+          "char_start": 3,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Severe and persistent symptoms of HF"
+        },
+        {
+          "char_end": 72,
+          "char_start": 41,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "NYHA class III [advanced] or IV"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "ESC Definition of Advanced HF",
+          "All these criteria must be present despite optimal guideline-directed treatment:"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0002",
+            "e_0003"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "This text states an advanced-HF definition criterion or criterion alternative; it does not direct a clinical action.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0002",
+            "e_0003"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "1. Severe and persistent symptoms of HF (NYHA class III [advanced] or IV)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 29,
+          "char_start": 3,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Severe cardiac dysfunction"
+        },
+        {
+          "char_end": 43,
+          "char_start": 41,
+          "entity_id": "e_0005",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "≥1"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "ESC Definition of Advanced HF",
+          "All these criteria must be present despite optimal guideline-directed treatment:"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0004"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "This text states an advanced-HF definition criterion or criterion alternative; it does not direct a clinical action.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0005"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0004",
+            "e_0005"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "2. Severe cardiac dysfunction defined by ≥1 of these:"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 4,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "LVEF"
+        },
+        {
+          "char_end": 9,
+          "char_start": 5,
+          "entity_id": "e_0007",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "≤30%"
+        },
+        {
+          "char_end": 29,
+          "char_start": 10,
+          "entity_id": "e_0008",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Isolated RV failure"
+        },
+        {
+          "char_end": 68,
+          "char_start": 30,
+          "entity_id": "e_0009",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Nonoperable severe valve abnormalities"
+        },
+        {
+          "char_end": 112,
+          "char_start": 69,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Nonoperable severe congenital heart disease"
+        },
+        {
+          "char_end": 115,
+          "char_start": 113,
+          "entity_id": "e_0011",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "EF"
+        },
+        {
+          "char_end": 120,
+          "char_start": 116,
+          "entity_id": "e_0012",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "≥40%"
+        },
+        {
+          "char_end": 157,
+          "char_start": 131,
+          "entity_id": "e_0013",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "natriuretic peptide levels"
+        },
+        {
+          "char_end": 207,
+          "char_start": 174,
+          "entity_id": "e_0014",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "significant diastolic dysfunction"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "ESC Definition of Advanced HF",
+          "Severe cardiac dysfunction defined by ≥1 of these:"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0008",
+            "e_0009",
+            "e_0010",
+            "e_0014"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "This text states an advanced-HF definition criterion or criterion alternative; it does not direct a clinical action.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0006",
+            "e_0007",
+            "e_0011",
+            "e_0012",
+            "e_0013"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0006",
+            "e_0007",
+            "e_0008",
+            "e_0009",
+            "e_0010",
+            "e_0011",
+            "e_0012",
+            "e_0013",
+            "e_0014"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "LVEF ≤30%\nIsolated RV failure\nNonoperable severe valve abnormalities\nNonoperable severe congenital heart disease\nEF ≥40%, elevated natriuretic peptide levels and evidence of significant diastolic dysfunction"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 39,
+          "char_start": 3,
+          "entity_id": "e_0015",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Hospitalizations or unplanned visits"
+        },
+        {
+          "char_end": 57,
+          "char_start": 47,
+          "entity_id": "e_0016",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "past 12 mo"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "ESC Definition of Advanced HF",
+          "All these criteria must be present despite optimal guideline-directed treatment:"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "This text states an advanced-HF definition criterion or criterion alternative; it does not direct a clinical action.",
+          "operation": null,
+          "outcome_entity_ids": [
+            "e_0015"
+          ],
+          "parameter_entity_ids": [
+            "e_0016"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0015",
+            "e_0016"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "3. Hospitalizations or unplanned visits in the past 12 mo for episodes of:"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0017",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Congestion"
+        },
+        {
+          "char_end": 52,
+          "char_start": 21,
+          "entity_id": "e_0018",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "high-dose intravenous diuretics"
+        },
+        {
+          "char_end": 77,
+          "char_start": 56,
+          "entity_id": "e_0019",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "diuretic combinations"
+        },
+        {
+          "char_end": 88,
+          "char_start": 78,
+          "entity_id": "e_0020",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Low output"
+        },
+        {
+          "char_end": 108,
+          "char_start": 99,
+          "entity_id": "e_0021",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "inotropes"
+        },
+        {
+          "char_end": 134,
+          "char_start": 112,
+          "entity_id": "e_0022",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "vasoactive medications"
+        },
+        {
+          "char_end": 156,
+          "char_start": 135,
+          "entity_id": "e_0023",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Malignant arrhythmias"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "ESC Definition of Advanced HF",
+          "Hospitalizations or unplanned visits in the past 12 mo for episodes of:"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [
+            "e_0017",
+            "e_0020",
+            "e_0023"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "This text states an advanced-HF definition criterion or criterion alternative; it does not direct a clinical action.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0017",
+            "e_0018",
+            "e_0019",
+            "e_0020",
+            "e_0021",
+            "e_0022",
+            "e_0023"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Congestion requiring high-dose intravenous diuretics or diuretic combinations\nLow output requiring inotropes or vasoactive medications\nMalignant arrhythmias"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 41,
+          "char_start": 3,
+          "entity_id": "e_0024",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Severe impairment of exercise capacity"
+        },
+        {
+          "char_end": 103,
+          "char_start": 76,
+          "entity_id": "e_0025",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "6-minute walk test distance"
+        },
+        {
+          "char_end": 111,
+          "char_start": 105,
+          "entity_id": "e_0026",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "<300 m"
+        },
+        {
+          "char_end": 124,
+          "char_start": 116,
+          "entity_id": "e_0027",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "peak VO₂"
+        },
+        {
+          "char_end": 142,
+          "char_start": 126,
+          "entity_id": "e_0028",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "<12–14 mL/kg/min"
+        },
+        {
+          "char_end": 177,
+          "char_start": 163,
+          "entity_id": "e_0029",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "cardiac origin"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "ESC Definition of Advanced HF",
+          "All these criteria must be present despite optimal guideline-directed treatment:"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [
+            "e_0024"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "This text states an advanced-HF definition criterion or criterion alternative; it does not direct a clinical action.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0025",
+            "e_0026",
+            "e_0027",
+            "e_0028"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0024",
+            "e_0025",
+            "e_0026",
+            "e_0027",
+            "e_0028",
+            "e_0029"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "4. Severe impairment of exercise capacity with inability to exercise or low 6-minute walk test distance (<300 m) or peak VO₂ (<12–14 mL/kg/min) estimated to be of cardiac origin"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 64,
+          "char_start": 31,
+          "entity_id": "e_0030",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients with cardiac dysfunction"
+        },
+        {
+          "char_end": 198,
+          "char_start": 174,
+          "entity_id": "e_0031",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "severe pulmonary disease"
+        },
+        {
+          "char_end": 220,
+          "char_start": 200,
+          "entity_id": "e_0032",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "noncardiac cirrhosis"
+        },
+        {
+          "char_end": 235,
+          "char_start": 222,
+          "entity_id": "e_0033",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "renal disease"
+        },
+        {
+          "char_end": 261,
+          "char_start": 242,
+          "entity_id": "e_0034",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "therapeutic options"
+        },
+        {
+          "char_end": 300,
+          "char_start": 288,
+          "entity_id": "e_0035",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "more limited"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The source separately states that therapeutic options may be more limited for the described patients.",
+          "object_entity_id": "e_0035",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.95,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0034",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "ESC Definition of Advanced HF"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Criteria 1 and 4 can be met in patients with cardiac dysfunction (as described in criterion 2) but who also have substantial limitations as a result of other conditions (eg, severe pulmonary disease, noncardiac cirrhosis, renal disease). The therapeutic options for these patients may be more limited."
+    }
+  ]
+}

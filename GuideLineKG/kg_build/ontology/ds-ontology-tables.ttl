@@ -1,0 +1,1091 @@
+@prefix ds: <http://digistrucmed.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+ds: a owl:Ontology ;
+    rdfs:label "DigiStrucMed Clinical Guideline Ontology"@en ;
+    rdfs:comment "A simple and traceable ontology for converting clinical guideline extractions into RDF, with optional UMLS enrichment."@en .
+
+#################################################################
+# Core classes from the supplied ontology
+#################################################################
+
+ds:Guideline a owl:Class ;
+    rdfs:label "Guideline"@en .
+
+ds:Guidlines a owl:Class ;
+    owl:equivalentClass ds:Guideline ;
+    rdfs:label "Guidlines"@en .
+
+ds:Recommendation a owl:Class ;
+    rdfs:label "Recommendation"@en .
+
+ds:ClassOfRecommendation a owl:Class ;
+    rdfs:label "Class of Recommendation"@en ;
+    rdfs:comment "A shared recommendation grade category, such as ClassOfRecommendation_I. Document-specific grade records link to it through hasGradeValue."@en .
+
+ds:LevelOfEvidence a owl:Class ;
+    rdfs:label "Level of Evidence"@en ;
+    rdfs:comment "A shared evidence grade category, such as LevelOfEvidence_B-NR. The source record that reports this value is not an instance of this class."@en .
+
+ds:ScientificResource a owl:Class ;
+    rdfs:label "Scientific Resource"@en .
+
+ds:Comorbidity a owl:Class ;
+    rdfs:label "Comorbidity"@en .
+
+ds:Intervention a owl:Class ;
+    rdfs:label "Intervention"@en .
+
+ds:Device a owl:Class ;
+    rdfs:subClassOf ds:Intervention ;
+    rdfs:label "Device"@en .
+
+ds:Drug a owl:Class ;
+    rdfs:subClassOf ds:Intervention ;
+    rdfs:label "Drug"@en .
+
+ds:ClinicalProcedure a owl:Class ;
+    rdfs:subClassOf ds:Intervention ;
+    rdfs:label "Clinical Procedure"@en .
+
+ds:SideEffect a owl:Class ;
+    rdfs:label "Side Effect"@en .
+
+ds:Disease a owl:Class ;
+    rdfs:label "Disease"@en .
+
+ds:Type a owl:Class ;
+    rdfs:label "Type"@en .
+
+ds:Stage a owl:Class ;
+    rdfs:label "Stage"@en .
+
+ds:Symptom a owl:Class ;
+    rdfs:label "Symptom"@en .
+
+ds:Cause a owl:Class ;
+    rdfs:label "Cause"@en .
+
+ds:Evaluation a owl:Class ;
+    rdfs:label "Evaluation"@en .
+
+#################################################################
+# Extensions for guideline-table semantics
+#################################################################
+
+ds:PatientCondition a owl:Class ;
+    rdfs:label "Patient Condition"@en ;
+    rdfs:comment "A patient status or condition that qualifies when a recommendation applies."@en .
+
+ds:DeviceMode a owl:Class ;
+    rdfs:label "Device Mode"@en ;
+    rdfs:comment "A programmable or operating mode of a medical device, e.g. VVI or DDI."@en .
+
+ds:RiskLevel a owl:Class ;
+    rdfs:label "Risk Level"@en .
+
+ds:TemporalConstraint a owl:Class ;
+    rdfs:label "Temporal Constraint"@en ;
+    rdfs:comment "Timing such as before, immediately before, after, or delayed relative to a procedure."@en .
+
+ds:SemanticUnit a owl:Class ;
+    rdfs:label "Semantic Unit"@en ;
+    rdfs:comment "A traceable source unit such as a guideline paragraph, page fragment, or table transcription."@en .
+
+ds:Mention a owl:Class ;
+    rdfs:label "Extracted Mention"@en .
+
+ds:UMLSConcept a owl:Class ;
+    rdfs:label "UMLS Concept"@en .
+
+ds:ExtractionAssertion a owl:Class ;
+    rdfs:label "Extraction Assertion"@en ;
+    rdfs:comment "Provenance record for a subject-predicate-object assertion extracted from a source semantic unit."@en .
+
+#################################################################
+# Core object properties
+#################################################################
+
+ds:containsRecommendation a owl:ObjectProperty ;
+    rdfs:domain ds:Guideline ;
+    rdfs:range ds:Recommendation ;
+    rdfs:label "contains recommendation"@en .
+
+# Compatibility with the original generic edge label.
+ds:contains a owl:ObjectProperty ;
+    rdfs:subPropertyOf ds:containsRecommendation ;
+    rdfs:label "contains"@en .
+
+ds:recommends a owl:ObjectProperty ;
+    rdfs:domain ds:Recommendation ;
+    rdfs:range ds:Intervention ;
+    rdfs:label "recommends"@en .
+
+ds:recommend a owl:ObjectProperty ;
+    owl:equivalentProperty ds:recommends ;
+    rdfs:label "recommend"@en .
+
+ds:hasClassOfRecommendation a owl:ObjectProperty ;
+    rdfs:domain ds:Recommendation ;
+    rdfs:range ds:ClassOfRecommendation ;
+    rdfs:label "has class of recommendation"@en .
+
+ds:hasLevelOfEvidence a owl:ObjectProperty ;
+    rdfs:domain ds:Recommendation ;
+    rdfs:range ds:LevelOfEvidence ;
+    rdfs:label "has level of evidence"@en .
+
+ds:hasComorbidity a owl:ObjectProperty ;
+    rdfs:domain ds:Disease ;
+    rdfs:range ds:Comorbidity ;
+    rdfs:label "has comorbidity"@en .
+
+ds:hasSideEffect a owl:ObjectProperty ;
+    rdfs:domain ds:Intervention ;
+    rdfs:range ds:SideEffect ;
+    rdfs:label "has side effect"@en .
+
+ds:diagnosedBy a owl:ObjectProperty ;
+    rdfs:domain ds:Disease ;
+    rdfs:range ds:Type ;
+    rdfs:label "diagnosed by"@en .
+
+ds:definedBy a owl:ObjectProperty ;
+    rdfs:domain ds:Disease ;
+    rdfs:range ds:Type ;
+    rdfs:label "defined by"@en .
+
+ds:hasStage a owl:ObjectProperty ;
+    rdfs:domain ds:Disease ;
+    rdfs:range ds:Stage ;
+    rdfs:label "has stage"@en .
+
+ds:hasSymptom a owl:ObjectProperty ;
+    rdfs:domain ds:Disease ;
+    rdfs:range ds:Symptom ;
+    rdfs:label "has symptom"@en .
+
+ds:hasCause a owl:ObjectProperty ;
+    rdfs:domain ds:Disease ;
+    rdfs:range ds:Cause ;
+    rdfs:label "has cause"@en .
+
+ds:hasEvaluation a owl:ObjectProperty ;
+    rdfs:domain ds:Recommendation ;
+    rdfs:range ds:Evaluation ;
+    rdfs:label "has evaluation"@en .
+
+ds:supportedBy a owl:ObjectProperty ;
+    rdfs:domain ds:Recommendation ;
+    rdfs:range ds:ScientificResource ;
+    rdfs:label "supported by"@en .
+
+#################################################################
+# Extended object properties
+#################################################################
+
+ds:appliesToDevice a owl:ObjectProperty ;
+    rdfs:domain ds:Recommendation ;
+    rdfs:range ds:Device ;
+    rdfs:label "applies to device"@en .
+
+ds:hasDeviceMode a owl:ObjectProperty ;
+    rdfs:domain ds:Device ;
+    rdfs:range ds:DeviceMode ;
+    rdfs:label "has device mode"@en .
+
+ds:hasPatientCondition a owl:ObjectProperty ;
+    rdfs:domain ds:Recommendation ;
+    rdfs:range ds:PatientCondition ;
+    rdfs:label "has patient condition"@en .
+
+ds:hasRiskLevel a owl:ObjectProperty ;
+    rdfs:domain ds:Recommendation ;
+    rdfs:range ds:RiskLevel ;
+    rdfs:label "has risk level"@en .
+
+ds:hasTemporalConstraint a owl:ObjectProperty ;
+    rdfs:domain ds:Recommendation ;
+    rdfs:range ds:TemporalConstraint ;
+    rdfs:label "has temporal constraint"@en .
+
+#################################################################
+# UMLS enrichment
+#################################################################
+
+ds:hasUmlsCandidate a owl:ObjectProperty ;
+    rdfs:domain ds:Mention ;
+    rdfs:range ds:UMLSConcept ;
+    rdfs:label "has UMLS candidate"@en .
+
+ds:hasAcceptedUmlsConcept a owl:ObjectProperty ;
+    rdfs:range ds:UMLSConcept ;
+    rdfs:label "has accepted UMLS concept"@en .
+
+#################################################################
+# Provenance and assertion properties
+#################################################################
+
+ds:sourceSemanticUnit a owl:ObjectProperty ;
+    rdfs:range ds:SemanticUnit ;
+    rdfs:label "source semantic unit"@en .
+
+ds:hasMention a owl:ObjectProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range ds:Mention ;
+    rdfs:label "has mention"@en .
+
+ds:derivedEntity a owl:ObjectProperty ;
+    rdfs:domain ds:Mention ;
+    rdfs:label "derived entity"@en .
+
+ds:assertionSubject a owl:ObjectProperty ;
+    rdfs:domain ds:ExtractionAssertion ;
+    rdfs:label "assertion subject"@en .
+
+ds:assertionPredicate a owl:ObjectProperty ;
+    rdfs:domain ds:ExtractionAssertion ;
+    rdfs:label "assertion predicate"@en .
+
+ds:assertionObject a owl:ObjectProperty ;
+    rdfs:domain ds:ExtractionAssertion ;
+    rdfs:label "assertion object"@en .
+
+#################################################################
+# Datatype properties
+#################################################################
+
+ds:id a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "id"@en .
+
+ds:title a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "title"@en .
+
+ds:date a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "date"@en .
+
+ds:doi a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "DOI"@en .
+
+ds:authors a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "authors"@en .
+
+ds:criteria a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "criteria"@en .
+
+ds:typeTitle a owl:DatatypeProperty ;
+    rdfs:domain ds:Type ;
+    rdfs:range xsd:string ;
+    rdfs:label "type title"@en .
+
+ds:stageTitle a owl:DatatypeProperty ;
+    rdfs:domain ds:Stage ;
+    rdfs:range xsd:string ;
+    rdfs:label "stage title"@en .
+
+ds:symptomTitle a owl:DatatypeProperty ;
+    rdfs:domain ds:Symptom ;
+    rdfs:range xsd:string ;
+    rdfs:label "symptom title"@en .
+
+ds:name a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "name"@en .
+
+ds:drugName a owl:DatatypeProperty ;
+    rdfs:domain ds:Drug ;
+    rdfs:range xsd:string ;
+    rdfs:label "drug name"@en .
+
+ds:drugBankId a owl:DatatypeProperty ;
+    rdfs:domain ds:Drug ;
+    rdfs:range xsd:string ;
+    rdfs:label "DrugBank ID"@en .
+
+ds:information a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "information"@en .
+
+ds:semanticUnitId a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "semantic unit id"@en .
+
+ds:documentSha256 a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "document SHA-256"@en .
+
+ds:textSha256 a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "text SHA-256"@en .
+
+ds:sourcePath a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "source path"@en .
+
+ds:surfaceForm a owl:ObjectProperty ;
+    rdfs:domain ds:Mention ;
+    rdfs:range ds:SurfaceForm ;
+    rdfs:label "surface form"@en .
+
+ds:charStart a owl:DatatypeProperty ;
+    rdfs:range xsd:integer ;
+    rdfs:label "character start"@en .
+
+ds:charEnd a owl:DatatypeProperty ;
+    rdfs:range xsd:integer ;
+    rdfs:label "character end"@en .
+
+ds:umlsCui a owl:DatatypeProperty ;
+    rdfs:domain ds:UMLSConcept ;
+    rdfs:range xsd:string ;
+    rdfs:label "UMLS CUI"@en .
+
+ds:umlsCanonicalName a owl:DatatypeProperty ;
+    rdfs:domain ds:UMLSConcept ;
+    rdfs:range xsd:string ;
+    rdfs:label "UMLS canonical name"@en .
+
+ds:linkerScore a owl:DatatypeProperty ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "linker score"@en .
+
+ds:evidenceText a owl:DatatypeProperty ;
+    rdfs:domain ds:ExtractionAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "evidence text"@en .
+
+ds:evidenceCharStart a owl:DatatypeProperty ;
+    rdfs:domain ds:ExtractionAssertion ;
+    rdfs:range xsd:integer ;
+    rdfs:label "evidence character start"@en .
+
+ds:evidenceCharEnd a owl:DatatypeProperty ;
+    rdfs:domain ds:ExtractionAssertion ;
+    rdfs:range xsd:integer ;
+    rdfs:label "evidence character end"@en .
+
+ds:extractionMethod a owl:DatatypeProperty ;
+    rdfs:domain ds:ExtractionAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "extraction method"@en .
+
+ds:confidence a owl:DatatypeProperty ;
+    rdfs:domain ds:ExtractionAssertion ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "confidence"@en .
+
+ds:reviewStatus a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "review status"@en .
+
+#################################################################
+# Table/JSON-direct pipeline extensions (new approach)
+#
+# Covers the lower-left branch of UpdatedGuidlineOnto.drawio, from
+# Guidlines -> hasPage -> Page -> contains -> table -> text unit ->
+# {locators, factual relations, entities, normative assertions,
+# source grade records}. Deliberately excludes the diagram's
+# Page -> mentions -> Entities/candidates subtree (UMLS-benchmark
+# comparison data), which is unrelated to guideline extraction and is
+# out of scope here.
+#
+# Field names below are taken directly from the observed
+# schema_version "1.0" extraction JSON (e.g. level4.json): a
+# top-level record for one semantic unit (quality, schema_version,
+# semantic_unit_id, source, table_assessment) containing an array of
+# text_units, each with a locator, entities, factual_relations,
+# normative_assertions and source_grade_records. Nothing below is
+# invented beyond what that schema contains.
+#################################################################
+
+ds:Page a owl:Class ;
+    rdfs:label "Page"@en ;
+    rdfs:comment "A page of a guideline document, identified by a source page_id (source.page_ids[]/page_numbers[] in the extraction JSON)."@en .
+
+ds:TextUnit a owl:Class ;
+    rdfs:label "Text Unit"@en ;
+    rdfs:comment "One row/paragraph-level unit of extracted text within a semantic unit (text_units[] in the extraction JSON), carrying its own locator, entities, factual relations, normative assertions and source grade records."@en .
+
+ds:Locator a owl:Class ;
+    rdfs:label "Locator"@en ;
+    rdfs:comment "Where a text unit sits in its source table/section (locator in the extraction JSON): header path, row/cell indices."@en .
+
+ds:ExtractedEntity a owl:Class ;
+    rdfs:subClassOf ds:Mention ;
+    rdfs:label "Extracted Entity"@en ;
+    rdfs:comment "An entity span extracted within a text unit (entities[] in the extraction JSON), e.g. a POPULATION, MEDICATION, DEVICE, PROCEDURE_OR_INTERVENTION or TIME span. A kind of ds:Mention, distinct from the SciSpacy-mention/UMLS-candidate pipeline (ds:Mention direct instances, ds:hasUmlsCandidate) used elsewhere in this ontology."@en .
+
+ds:EntityNormalization a owl:Class ;
+    rdfs:label "Entity Normalization"@en ;
+    rdfs:comment "The terminology-linking slot of an extracted entity (normalization in the extraction JSON): candidate codes, mapping method/status/confidence, preferred label."@en .
+
+ds:FactualRelation a owl:Class ;
+    rdfs:label "Factual Relation"@en ;
+    rdfs:comment "A non-normative (purely factual) relation extracted within a text unit (factual_relations[] in the extraction JSON). Present in the ontology for schema completeness per the diagram; no populated example was available to fix its property shape, so no RML mapping is generated for it yet - see mappings/mapping-json.rml.ttl."@en .
+
+ds:NormativeAssertion a owl:Class ;
+    rdfs:subClassOf ds:Recommendation ;
+    rdfs:label "Normative Assertion"@en ;
+    rdfs:comment "A single deontic (should/may/must) statement extracted within a text unit (normative_assertions[] in the extraction JSON) - the fine-grained, assertion-level counterpart of ds:Recommendation. Kept as a subclass of ds:Recommendation so ds:hasClassOfRecommendation/ds:hasLevelOfEvidence and ds:recommends still apply."@en .
+
+ds:SourceGradeRecord a owl:Class ;
+    owl:disjointWith ds:ClassOfRecommendation, ds:LevelOfEvidence ;
+    rdfs:label "Source Grade Record"@en ;
+    rdfs:comment "A source-native evidence grade attached to a text unit/normative assertion (source_grade_records[] in the extraction JSON), e.g. an ACC/AHA class-of-recommendation or level-of-evidence entry, preserved without cross-system normalization. Each record is a document-specific occurrence, identified by semantic-unit scope plus its local grade_record_id. Its hasGradeValue target, not the record itself, is typed ClassOfRecommendation or LevelOfEvidence. Grade values and schema class IRIs are shared across documents."@en .
+
+ds:Population a owl:Class ;
+    rdfs:label "Population"@en ;
+    rdfs:comment "A patient population qualifier for a recommendation/normative assertion. Realized as an ds:ExtractedEntity whose entityType is POPULATION, additionally typed ds:Population (see mapping enrichment step); connected to ds:NormativeAssertion via ds:hasPopulationEntity, matching the diagram's Population node off the recommend/normative-assertion relation."@en .
+
+#################################################################
+# entityType subclasses
+#
+# entities[].entity_type in the extraction JSON is a closed enum, not a
+# free-form label:
+#
+#   POPULATION, CONDITION_OR_FINDING, MEDICATION, PROCEDURE_OR_INTERVENTION,
+#   TEST_OR_MEASUREMENT, DEVICE, ANATOMY, OUTCOME, ADVERSE_EVENT, VALUE,
+#   TIME, DOSE, STRENGTH, ROUTE, FREQUENCY, DURATION, FORM, ACTOR,
+#   RATIONALE, ENTITY_OTHER
+#
+# so - per the modeling correction that prompted this section - each value
+# is its own owl:Class (rdfs:subClassOf ds:ExtractedEntity), not just a
+# string recorded in the ds:entityType object property below. Where an
+# entity type is clearly the same concept as an existing class elsewhere in
+# this ontology (e.g. MEDICATION ~ ds:Drug, ADVERSE_EVENT ~ ds:SideEffect),
+# its class is ALSO rdfs:subClassOf that existing class, so entities picked
+# up this way compose with the rest of the ontology (ds:hasSideEffect,
+# ds:hasComorbidity, ds:appliesToDevice, ...) instead of living in an
+# isolated silo. ds:entityType is kept alongside this (not replaced) as the
+# verbatim source value - see that property's comment for why.
+#
+# ds:hasActorEntity/ds:hasConditionEntity/etc. (NormativeAssertion's role
+# properties, defined above) are unrelated to these classes despite the
+# similar names - those are ds:NormativeAssertion -> ds:ExtractedEntity
+# object properties for a role in one assertion; these are owl:Class
+# declarations for what kind of thing the entity span itself is.
+#
+# No class is minted for ENTITY_OTHER: it is the schema's explicit
+# catch-all for spans that don't fit any other category, so entities with
+# that entity_type are left typed only ds:ExtractedEntity (plus the raw
+# ds:entityType <http://digistrucmed.org/entity-type/ENTITY_OTHER> IRI) rather than inventing a meaningless
+# "OtherEntity" class.
+#################################################################
+
+ds:PopulationEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity, ds:Population ;
+    rdfs:label "Population Entity"@en ;
+    rdfs:comment "entity_type = POPULATION: a patient population/cohort qualifier span."@en .
+
+ds:ConditionOrFindingEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity, ds:PatientCondition ;
+    rdfs:label "Condition or Finding Entity"@en ;
+    rdfs:comment "entity_type = CONDITION_OR_FINDING: a diagnosis, condition, or clinical finding span."@en .
+
+ds:MedicationEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity, ds:Drug ;
+    rdfs:label "Medication Entity"@en ;
+    rdfs:comment "entity_type = MEDICATION: a drug/medication span."@en .
+
+ds:ProcedureOrInterventionEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity, ds:ClinicalProcedure ;
+    rdfs:label "Procedure or Intervention Entity"@en ;
+    rdfs:comment "entity_type = PROCEDURE_OR_INTERVENTION: a clinical procedure or intervention span."@en .
+
+ds:TestOrMeasurementEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity ;
+    rdfs:label "Test or Measurement Entity"@en ;
+    rdfs:comment "entity_type = TEST_OR_MEASUREMENT: a diagnostic test, lab test, or measurement span. Not linked to ds:ClinicalProcedure - a test/measurement mention is often the result or the act of measuring, not itself the recommended procedure - left unconnected rather than guessed."@en .
+
+ds:DeviceEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity, ds:Device ;
+    rdfs:label "Device Entity"@en ;
+    rdfs:comment "entity_type = DEVICE: a medical device span."@en .
+
+ds:AnatomyEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity ;
+    rdfs:label "Anatomy Entity"@en ;
+    rdfs:comment "entity_type = ANATOMY: an anatomical structure/body site span. No existing ds: anatomy class to connect to."@en .
+
+ds:OutcomeEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity ;
+    rdfs:label "Outcome Entity"@en ;
+    rdfs:comment "entity_type = OUTCOME: a clinical outcome span (e.g. mortality, hospitalization). Not linked to ds:Evaluation, which covers diagnostic workup categories (Imaging, Lab Testing, ...), a different concept."@en .
+
+ds:AdverseEventEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity, ds:SideEffect ;
+    rdfs:label "Adverse Event Entity"@en ;
+    rdfs:comment "entity_type = ADVERSE_EVENT: an adverse event/side effect span."@en .
+
+ds:ValueEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity ;
+    rdfs:label "Value Entity"@en ;
+    rdfs:comment "entity_type = VALUE: a bare numeric/qualitative value span (e.g. a lab threshold), not otherwise typed."@en .
+
+ds:TimeEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity, ds:TemporalConstraint ;
+    rdfs:label "Time Entity"@en ;
+    rdfs:comment "entity_type = TIME: a point-in-time/timing span (e.g. 'postpartum period')."@en .
+
+ds:DoseEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity ;
+    rdfs:label "Dose Entity"@en ;
+    rdfs:comment "entity_type = DOSE: a medication dose span (e.g. '81 mg'). Left unconnected to ds:Drug/ds:MedicationEntity - it describes a dose of some medication mention, it is not itself the medication."@en .
+
+ds:StrengthEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity ;
+    rdfs:label "Strength Entity"@en ;
+    rdfs:comment "entity_type = STRENGTH: a medication strength/concentration span (e.g. '50 mg/mL')."@en .
+
+ds:RouteEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity ;
+    rdfs:label "Route Entity"@en ;
+    rdfs:comment "entity_type = ROUTE: a route-of-administration span (e.g. 'oral', 'IV')."@en .
+
+ds:FrequencyEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity ;
+    rdfs:label "Frequency Entity"@en ;
+    rdfs:comment "entity_type = FREQUENCY: a dosing-frequency span (e.g. 'twice daily')."@en .
+
+ds:DurationEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity, ds:TemporalConstraint ;
+    rdfs:label "Duration Entity"@en ;
+    rdfs:comment "entity_type = DURATION: a length-of-time span (e.g. 'for 3 months') - a kind of ds:TemporalConstraint, like ds:TimeEntity, but naming how long rather than when."@en .
+
+ds:FormEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity ;
+    rdfs:label "Form Entity"@en ;
+    rdfs:comment "entity_type = FORM: a dosage-form span (e.g. 'tablet', 'injection')."@en .
+
+ds:ActorEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity ;
+    rdfs:label "Actor Entity"@en ;
+    rdfs:comment "entity_type = ACTOR: who performs/is responsible for an action (e.g. 'the clinician'). Distinct from the ds:hasActorEntity object property, which is the assertion-level role edge pointing at entities like this one."@en .
+
+ds:RationaleEntity a owl:Class ;
+    rdfs:subClassOf ds:ExtractedEntity ;
+    rdfs:label "Rationale Entity"@en ;
+    rdfs:comment "entity_type = RATIONALE: the stated reason/justification span for a normative assertion. Distinct from the ds:hasRationaleEntity object property (the assertion-level role edge)."@en .
+
+#################################################################
+# Table/JSON-direct pipeline: object properties
+#################################################################
+
+ds:hasPage a owl:ObjectProperty ;
+    rdfs:domain ds:Guideline ;
+    rdfs:range ds:Page ;
+    rdfs:label "has page"@en .
+
+ds:containsSemanticUnit a owl:ObjectProperty ;
+    rdfs:domain ds:Page ;
+    rdfs:range ds:SemanticUnit ;
+    rdfs:label "contains semantic unit"@en ;
+    rdfs:comment "Page -> table/block, matching the diagram's Page --contains--> table edge."@en .
+
+ds:onGuideline a owl:ObjectProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range ds:Guideline ;
+    rdfs:label "on guideline"@en ;
+    rdfs:comment "Links a semantic unit back to its guideline document via document_sha256."@en .
+
+ds:hasTextUnit a owl:ObjectProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range ds:TextUnit ;
+    rdfs:label "has text unit"@en ;
+    rdfs:comment "table -> text unit, matching the diagram's table --contains--> text unit edge."@en .
+
+ds:hasLocator a owl:ObjectProperty ;
+    rdfs:domain ds:TextUnit ;
+    rdfs:range ds:Locator ;
+    rdfs:label "has locator"@en .
+
+ds:hasExtractedEntity a owl:ObjectProperty ;
+    rdfs:domain ds:TextUnit ;
+    rdfs:range ds:ExtractedEntity ;
+    rdfs:label "has extracted entity"@en .
+
+ds:hasFactualRelation a owl:ObjectProperty ;
+    rdfs:domain ds:TextUnit ;
+    rdfs:range ds:FactualRelation ;
+    rdfs:label "has factual relation"@en .
+
+ds:hasNormativeAssertion a owl:ObjectProperty ;
+    rdfs:domain ds:TextUnit ;
+    rdfs:range ds:NormativeAssertion ;
+    rdfs:label "has normative assertion"@en .
+
+ds:hasSourceGradeRecord a owl:ObjectProperty ;
+    rdfs:range ds:SourceGradeRecord ;
+    rdfs:label "has source grade record"@en ;
+    rdfs:comment "Used from both ds:TextUnit (all grade records observed in that unit) and ds:NormativeAssertion (only the grade records it cites, via source_grade_record_ids)."@en .
+
+ds:hasNormalization a owl:ObjectProperty ;
+    rdfs:domain ds:ExtractedEntity ;
+    rdfs:range ds:EntityNormalization ;
+    rdfs:label "has normalization"@en .
+
+ds:hasActorEntity a owl:ObjectProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range ds:ExtractedEntity ;
+    rdfs:label "has actor entity"@en .
+
+ds:hasConditionEntity a owl:ObjectProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range ds:ExtractedEntity ;
+    rdfs:label "has condition entity"@en .
+
+ds:hasExceptionEntity a owl:ObjectProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range ds:ExtractedEntity ;
+    rdfs:label "has exception entity"@en .
+
+ds:hasOutcomeEntity a owl:ObjectProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range ds:ExtractedEntity ;
+    rdfs:label "has outcome entity"@en .
+
+ds:hasParameterEntity a owl:ObjectProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range ds:ExtractedEntity ;
+    rdfs:label "has parameter entity"@en .
+
+ds:hasPopulationEntity a owl:ObjectProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range ds:Population ;
+    rdfs:label "has population entity"@en ;
+    rdfs:comment "Matches the diagram's Population node hanging off the recommend/normative-assertion relation."@en .
+
+ds:hasRationaleEntity a owl:ObjectProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range ds:ExtractedEntity ;
+    rdfs:label "has rationale entity"@en .
+
+ds:hasTargetEntity a owl:ObjectProperty ;
+    rdfs:subPropertyOf ds:recommends ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range ds:ExtractedEntity ;
+    rdfs:label "has target entity"@en ;
+    rdfs:comment "The intervention/entity a normative assertion is actually about (target_entity_ids). Sub-property of ds:recommends so it composes with the existing ds:Recommendation/ds:Intervention model."@en .
+
+#################################################################
+# Table/JSON-direct pipeline: datatype properties
+#################################################################
+
+ds:schemaVersion a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "schema version"@en .
+
+ds:requiresHumanReview a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "requires human review"@en .
+
+ds:uncertaintyFlag a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "uncertainty flag"@en ;
+    rdfs:comment "Repeatable, one triple per entry in quality.uncertainty_flags[]."@en .
+
+ds:sourceSemanticClass a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "source semantic class"@en .
+
+ds:titleOrContext a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "title or context"@en .
+
+ds:physicalBlockId a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "physical block id"@en ;
+    rdfs:comment "Repeatable, one triple per entry in source.physical_block_ids[]."@en .
+
+ds:correctedSemanticClass a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "corrected semantic class"@en .
+
+ds:assessmentNotes a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "assessment notes"@en .
+
+ds:eligibility a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "eligibility"@en .
+
+ds:language a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "language"@en ;
+    rdfs:comment "Repeatable, one triple per entry in table_assessment.languages[]."@en .
+
+ds:mixedContent a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "mixed content"@en .
+
+ds:suspectedDuplicate a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "suspected duplicate"@en .
+
+ds:tableExampleReady a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "table example ready"@en .
+
+ds:temporalOrSupersessionContent a owl:DatatypeProperty ;
+    rdfs:domain ds:SemanticUnit ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "temporal or supersession content"@en .
+
+ds:pageId a owl:DatatypeProperty ;
+    rdfs:domain ds:Page ;
+    rdfs:range xsd:string ;
+    rdfs:label "page id"@en .
+
+ds:pageNumber a owl:DatatypeProperty ;
+    rdfs:domain ds:Page ;
+    rdfs:range xsd:integer ;
+    rdfs:label "page number"@en .
+
+ds:textUnitId a owl:DatatypeProperty ;
+    rdfs:domain ds:TextUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "text unit id"@en .
+
+ds:verbatimText a owl:DatatypeProperty ;
+    rdfs:domain ds:TextUnit ;
+    rdfs:range xsd:string ;
+    rdfs:label "verbatim text"@en .
+
+ds:cellIndex a owl:DatatypeProperty ;
+    rdfs:domain ds:Locator ;
+    rdfs:range xsd:integer ;
+    rdfs:label "cell index"@en .
+
+ds:rowIndex a owl:DatatypeProperty ;
+    rdfs:domain ds:Locator ;
+    rdfs:range xsd:integer ;
+    rdfs:label "row index"@en .
+
+ds:headerPath a owl:DatatypeProperty ;
+    rdfs:domain ds:Locator ;
+    rdfs:range xsd:string ;
+    rdfs:label "header path"@en ;
+    rdfs:comment "Repeatable, one triple per entry in locator.header_path[]."@en .
+
+ds:sourcePartIndex a owl:DatatypeProperty ;
+    rdfs:domain ds:Locator ;
+    rdfs:range xsd:integer ;
+    rdfs:label "source part index"@en .
+
+ds:additionalCellIndex a owl:DatatypeProperty ;
+    rdfs:domain ds:Locator ;
+    rdfs:range xsd:integer ;
+    rdfs:label "additional cell index"@en ;
+    rdfs:comment "Repeatable, one triple per entry in locator.additional_cell_indices[]."@en .
+
+ds:entityId a owl:ObjectProperty ;
+    rdfs:domain ds:ExtractedEntity ;
+    rdfs:range ds:ExtractedEntity ;
+    rdfs:label "entity id"@en .
+
+ds:entityType a owl:ObjectProperty ;
+    rdfs:domain ds:ExtractedEntity ;
+    rdfs:range ds:EntityType ;
+    rdfs:label "entity type"@en ;
+    rdfs:comment "An IRI under http://digistrucmed.org/entity-type/ identifying the entity_type enum value from the source JSON (POPULATION, CONDITION_OR_FINDING, MEDICATION, PROCEDURE_OR_INTERVENTION, TEST_OR_MEASUREMENT, DEVICE, ANATOMY, OUTCOME, ADVERSE_EVENT, VALUE, TIME, DOSE, STRENGTH, ROUTE, FREQUENCY, DURATION, FORM, ACTOR, RATIONALE, or ENTITY_OTHER), kept for traceability. This is provenance, not the primary way to query an entity's kind - each recognized value additionally gets a real rdf:type via the entityType subclasses below (ds:PopulationEntity, ds:MedicationEntity, ...), so the type is a class membership, not just a string to string-match on."@en .
+
+ds:spanConfidence a owl:DatatypeProperty ;
+    rdfs:domain ds:ExtractedEntity ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "span confidence"@en .
+
+ds:normalizationCode a owl:DatatypeProperty ;
+    rdfs:domain ds:EntityNormalization ;
+    rdfs:range xsd:string ;
+    rdfs:label "normalization code"@en .
+
+ds:normalizationCodeSystem a owl:DatatypeProperty ;
+    rdfs:domain ds:EntityNormalization ;
+    rdfs:range xsd:string ;
+    rdfs:label "normalization code system"@en .
+
+ds:normalizationMappingConfidence a owl:DatatypeProperty ;
+    rdfs:domain ds:EntityNormalization ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "normalization mapping confidence"@en .
+
+ds:normalizationMappingMethod a owl:DatatypeProperty ;
+    rdfs:domain ds:EntityNormalization ;
+    rdfs:range xsd:string ;
+    rdfs:label "normalization mapping method"@en .
+
+ds:normalizationMappingStatus a owl:DatatypeProperty ;
+    rdfs:domain ds:EntityNormalization ;
+    rdfs:range xsd:string ;
+    rdfs:label "normalization mapping status"@en .
+
+ds:normalizationPreferredLabel a owl:DatatypeProperty ;
+    rdfs:domain ds:EntityNormalization ;
+    rdfs:range xsd:string ;
+    rdfs:label "normalization preferred label"@en .
+
+ds:normalizationTerminologyVersion a owl:DatatypeProperty ;
+    rdfs:domain ds:EntityNormalization ;
+    rdfs:range xsd:string ;
+    rdfs:label "normalization terminology version"@en .
+
+ds:normalizationCandidateCode a owl:DatatypeProperty ;
+    rdfs:domain ds:EntityNormalization ;
+    rdfs:range xsd:string ;
+    rdfs:label "normalization candidate code"@en ;
+    rdfs:comment "Repeatable, one triple per entry in normalization.candidate_codes[]."@en .
+
+ds:assertionId a owl:DatatypeProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "assertion id"@en .
+
+ds:deonticForce a owl:DatatypeProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "deontic force"@en ;
+    rdfs:comment "e.g. ADVISORY, PERMISSIVE."@en .
+
+ds:deonticForceBasis a owl:DatatypeProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "deontic force basis"@en .
+
+ds:direction a owl:DatatypeProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "direction"@en ;
+    rdfs:comment "e.g. FOR, AGAINST."@en .
+
+ds:operation a owl:DatatypeProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "operation"@en ;
+    rdfs:comment "e.g. CONTINUE, PERFORM."@en .
+
+ds:patientApplicability a owl:DatatypeProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "patient applicability"@en .
+
+ds:applicabilityExceptionStatus a owl:DatatypeProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "applicability exception status"@en .
+
+ds:recommendationStatus a owl:DatatypeProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "recommendation status"@en .
+
+ds:relationConfidence a owl:DatatypeProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "relation confidence"@en .
+
+ds:lexicalTriggerFamily a owl:DatatypeProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "lexical trigger family"@en ;
+    rdfs:comment "Repeatable, one triple per entry in lexical_trigger_families[]."@en .
+
+ds:sourceTriggerText a owl:DatatypeProperty ;
+    rdfs:domain ds:NormativeAssertion ;
+    rdfs:range xsd:string ;
+    rdfs:label "source trigger text"@en ;
+    rdfs:comment "Repeatable, one triple per entry in source_trigger_texts[]."@en .
+
+ds:notes a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "notes"@en ;
+    rdfs:comment "Shared by ds:NormativeAssertion and ds:SourceGradeRecord (both have a notes field in the source JSON)."@en .
+
+ds:gradeRecordId a owl:DatatypeProperty ;
+    rdfs:domain ds:SourceGradeRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "grade record id"@en .
+
+ds:gradeDimension a owl:DatatypeProperty ;
+    rdfs:domain ds:SourceGradeRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "grade dimension"@en ;
+    rdfs:comment "e.g. CLASS_OF_RECOMMENDATION, LEVEL_OF_EVIDENCE."@en .
+
+ds:gradeSourceText a owl:DatatypeProperty ;
+    rdfs:domain ds:SourceGradeRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "grade source text"@en .
+
+ds:gradingSystemName a owl:DatatypeProperty ;
+    rdfs:domain ds:SourceGradeRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "grading system name"@en .
+
+ds:gradingSystemVersion a owl:DatatypeProperty ;
+    rdfs:domain ds:SourceGradeRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "grading system version"@en .
+
+ds:normalizationScheme a owl:DatatypeProperty ;
+    rdfs:domain ds:SourceGradeRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "normalization scheme"@en .
+
+ds:normalizedGrade a owl:DatatypeProperty ;
+    rdfs:domain ds:SourceGradeRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "normalized grade"@en .
+
+ds:rawGrade a owl:DatatypeProperty ;
+    rdfs:domain ds:SourceGradeRecord ;
+    rdfs:range xsd:string ;
+    rdfs:label "raw grade"@en .
+
+# Shared resources used by the JSON-direct mapping.
+ds:SurfaceForm a owl:Class ;
+    rdfs:label "Surface form"@en ;
+    rdfs:comment "A shared lexical resource identified by its exact surface text, with rdfs:label retaining that text. Equal spellings share a node; this does not assert concept identity."@en .
+ds:EntityType a owl:Class ;
+    rdfs:label "Entity type code"@en .
+
+# Shared grade vocabulary. A source record preserves document-specific evidence;
+# its hasGradeValue points to a single reusable grade category.
+ds:hasGradeValue a owl:ObjectProperty ;
+    rdfs:domain ds:SourceGradeRecord ;
+    rdfs:range [ a owl:Class ; owl:unionOf (ds:ClassOfRecommendation ds:LevelOfEvidence) ] ;
+    rdfs:label "has shared grade value"@en ;
+    rdfs:comment "Links a source grade occurrence to a reusable grade category, such as ClassOfRecommendation_I or LevelOfEvidence_B-NR. Generated directly by the JSON RML mapping using the controlled raw-grade vocabulary. Unknown codes keep their rawGrade without a guessed category."@en .
+
+<http://digistrucmed.org/ClassOfRecommendation_I> a owl:NamedIndividual, <http://digistrucmed.org/ClassOfRecommendation> ;
+    rdfs:label "I" .
+
+<http://digistrucmed.org/ClassOfRecommendation_IIa> a owl:NamedIndividual, <http://digistrucmed.org/ClassOfRecommendation> ;
+    rdfs:label "IIa" .
+
+<http://digistrucmed.org/ClassOfRecommendation_IIb> a owl:NamedIndividual, <http://digistrucmed.org/ClassOfRecommendation> ;
+    rdfs:label "IIb" .
+
+<http://digistrucmed.org/ClassOfRecommendation_III> a owl:NamedIndividual, <http://digistrucmed.org/ClassOfRecommendation> ;
+    rdfs:label "III" .
+
+<http://digistrucmed.org/ClassOfRecommendation_1> a owl:NamedIndividual, <http://digistrucmed.org/ClassOfRecommendation> ;
+    rdfs:label "1" .
+
+<http://digistrucmed.org/ClassOfRecommendation_2a> a owl:NamedIndividual, <http://digistrucmed.org/ClassOfRecommendation> ;
+    rdfs:label "2a" .
+
+<http://digistrucmed.org/ClassOfRecommendation_2b> a owl:NamedIndividual, <http://digistrucmed.org/ClassOfRecommendation> ;
+    rdfs:label "2b" .
+
+<http://digistrucmed.org/LevelOfEvidence_A> a owl:NamedIndividual, <http://digistrucmed.org/LevelOfEvidence> ;
+    rdfs:label "A" .
+
+<http://digistrucmed.org/LevelOfEvidence_B> a owl:NamedIndividual, <http://digistrucmed.org/LevelOfEvidence> ;
+    rdfs:label "B" .
+
+<http://digistrucmed.org/LevelOfEvidence_B-NR> a owl:NamedIndividual, <http://digistrucmed.org/LevelOfEvidence> ;
+    rdfs:label "B-NR" .
+
+<http://digistrucmed.org/LevelOfEvidence_C> a owl:NamedIndividual, <http://digistrucmed.org/LevelOfEvidence> ;
+    rdfs:label "C" .
+
+<http://digistrucmed.org/LevelOfEvidence_C-EO> a owl:NamedIndividual, <http://digistrucmed.org/LevelOfEvidence> ;
+    rdfs:label "C-EO" .
+
+<http://digistrucmed.org/LevelOfEvidence_C-LD> a owl:NamedIndividual, <http://digistrucmed.org/LevelOfEvidence> ;
+    rdfs:label "C-LD" .
+
+
+# Shared clinical concepts and imported Wikidata resources.
+ds:Actor a owl:Class ; rdfs:label "Actor"@en .
+ds:AdministrationRoute a owl:Class ; rdfs:label "AdministrationRoute"@en .
+ds:Anatomy a owl:Class ; rdfs:label "Anatomy"@en .
+ds:ClinicalConcept a owl:Class ; rdfs:label "ClinicalConcept"@en .
+ds:ClinicalValue a owl:Class ; rdfs:label "ClinicalValue"@en .
+ds:DosageForm a owl:Class ; rdfs:label "DosageForm"@en .
+ds:Dose a owl:Class ; rdfs:label "Dose"@en .
+ds:Frequency a owl:Class ; rdfs:label "Frequency"@en .
+ds:Outcome a owl:Class ; rdfs:label "Outcome"@en .
+ds:Rationale a owl:Class ; rdfs:label "Rationale"@en .
+ds:Strength a owl:Class ; rdfs:label "Strength"@en .
+ds:TestOrMeasurement a owl:Class ; rdfs:label "TestOrMeasurement"@en .
+
+ds:WikidataEntity a owl:Class ; rdfs:label "Wikidata entity"@en .
+ds:wikidataMatch a owl:ObjectProperty ;
+    rdfs:range ds:WikidataEntity ; rdfs:label "Wikidata candidate match"@en ;
+    rdfs:comment "Search-selected link, not owl:sameAs or a verified identity assertion."@en .
+ds:wikidataSource a owl:ObjectProperty ; rdfs:label "Wikidata source IRI"@en .
+ds:wikidataId a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "Wikidata ID"@en .
+ds:wikidataMatchSimilarity a owl:DatatypeProperty ; rdfs:label "lexical match similarity"@en .
+ds:classificationSource a owl:ObjectProperty ; rdfs:label "source of clinical classification"@en ;
+    rdfs:comment "Records which extracted concept supplied a matched item's clinical type. A candidate match may require review."@en .
+ds:label a owl:DatatypeProperty ; rdfs:range rdfs:Literal ; rdfs:label "bilingual label"@en .
+ds:alias a owl:DatatypeProperty ; rdfs:range rdfs:Literal ; rdfs:label "alias"@en .
+ds:hasdescription a owl:DatatypeProperty ; rdfs:range rdfs:Literal ; rdfs:label "description"@en .
+ds:drugbank_id a owl:DatatypeProperty ; owl:equivalentProperty ds:drugBankId ;
+    rdfs:domain ds:Drug ; rdfs:range xsd:string ; rdfs:label "DrugBank ID"@en .
+ds:instance_of a owl:ObjectProperty ; rdfs:label "instance of"@en .
+ds:subclass_of a owl:ObjectProperty ; rdfs:label "subclass of"@en .
+ds:has_effect a owl:ObjectProperty ; rdfs:label "has effect"@en .
+ds:studied_by a owl:ObjectProperty ; rdfs:label "studied by"@en .
+ds:drug_or_therapy_used_for_treatment a owl:ObjectProperty ; rdfs:label "drug or therapy used for treatment"@en .
+ds:medical_condition_treated a owl:ObjectProperty ; rdfs:label "medical condition treated"@en .
+ds:route_of_administration a owl:ObjectProperty ; rdfs:label "route of administration"@en .
+ds:significant_drug_interaction a owl:ObjectProperty ; rdfs:label "significant drug interaction"@en .
+ds:subject_has_role a owl:ObjectProperty ; rdfs:label "subject has role"@en .
+ds:atc_code a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "atc code"@en .
+ds:chemical_formula a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "chemical formula"@en .
+ds:cas_registry_number a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "cas registry number"@en .
+ds:pubchem_cid a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "pubchem cid"@en .
+
+# Explicit reverse navigation: keep each recommendation's grading context.
+ds:matchedJsonConcept a owl:ObjectProperty ;
+    owl:inverseOf ds:wikidataMatch ;
+    rdfs:label "matched JSON concept"@en ;
+    rdfs:comment "Reverse candidate-match link, not an identity assertion."@en .
+ds:hasSourceMention a owl:ObjectProperty ;
+    owl:inverseOf ds:surfaceForm ;
+    rdfs:range ds:Mention ; rdfs:label "has source mention"@en .
+ds:hasReferencedEntity a owl:ObjectProperty ;
+    rdfs:domain ds:NormativeAssertion ; rdfs:range ds:ExtractedEntity ;
+    rdfs:label "references entity"@en .
+ds:occursInAssertion a owl:ObjectProperty ;
+    owl:inverseOf ds:hasReferencedEntity ;
+    rdfs:domain ds:ExtractedEntity ; rdfs:range ds:NormativeAssertion ;
+    rdfs:label "occurs in recommendation assertion"@en .
+ds:hasActorEntity rdfs:subPropertyOf ds:hasReferencedEntity .
+ds:hasConditionEntity rdfs:subPropertyOf ds:hasReferencedEntity .
+ds:hasExceptionEntity rdfs:subPropertyOf ds:hasReferencedEntity .
+ds:hasOutcomeEntity rdfs:subPropertyOf ds:hasReferencedEntity .
+ds:hasParameterEntity rdfs:subPropertyOf ds:hasReferencedEntity .
+ds:hasPopulationEntity rdfs:subPropertyOf ds:hasReferencedEntity .
+ds:hasRationaleEntity rdfs:subPropertyOf ds:hasReferencedEntity .
+ds:hasTargetEntity rdfs:subPropertyOf ds:hasReferencedEntity .

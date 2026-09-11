@@ -1,0 +1,405 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "mixed_content_requires_human_adjudication",
+      "terminology_linking_pending",
+      "other_operation_requires_human_review"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_n0050",
+  "source": {
+    "document_sha256": "66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7",
+    "page_ids": [
+      "66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_p0034"
+    ],
+    "page_numbers": [
+      34
+    ],
+    "physical_block_ids": [
+      "pb_66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_p0034_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Recommendations for the treatment of patients with heart failure with preserved ejection fraction"
+  },
+  "table_assessment": {
+    "assessment_notes": "Mixed two-row table containing a general screening/treatment instruction and a medication-directed diuretic recommendation; row-level modality and content type are separated below.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "Screening"
+        },
+        {
+          "char_end": 28,
+          "char_start": 19,
+          "entity_id": "e_0002",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "treatment"
+        },
+        {
+          "char_end": 44,
+          "char_start": 33,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "aetiologies"
+        },
+        {
+          "char_end": 101,
+          "char_start": 50,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "cardiovascular and non-cardiovascular comorbidities"
+        },
+        {
+          "char_end": 139,
+          "char_start": 120,
+          "entity_id": "e_0005",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with HFpEF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Screening is represented separately from the coordinated treatment instruction.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0001"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0005"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "Screening",
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0003",
+            "e_0004"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The generic treatment wording does not identify an administration or initiation action.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0002"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0005"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "treatment",
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0003",
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "I",
+          "grading_system_name": "Source Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native Class value.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "C",
+          "grading_system_name": "Source Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native Level value.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Screening for, and treatment of, aetiologies, and cardiovascular and non-cardiovascular comorbidities is recommended in patients with HFpEF (see relevant sections of this document)."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Diuretics"
+        },
+        {
+          "char_end": 58,
+          "char_start": 29,
+          "entity_id": "e_0007",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "congested patients with HFpEF"
+        },
+        {
+          "char_end": 89,
+          "char_start": 81,
+          "entity_id": "e_0008",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "symptoms"
+        },
+        {
+          "char_end": 99,
+          "char_start": 94,
+          "entity_id": "e_0009",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "signs"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Medication-directed recommendation is kept separate from the non-medication row.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [
+            "e_0008",
+            "e_0009"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0007"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "are recommended"
+          ],
+          "target_entity_ids": [
+            "e_0006"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "I",
+          "grading_system_name": "Source Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native Class value.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "C",
+          "grading_system_name": "Source Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native Level value.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Diuretics are recommended in congested patients with HFpEF in order to alleviate symptoms and signs. 137"
+    }
+  ]
+}

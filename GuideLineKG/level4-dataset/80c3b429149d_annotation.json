@@ -1,0 +1,428 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "terminology_linking_pending"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba_n0036",
+  "source": {
+    "document_sha256": "768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba",
+    "page_ids": [
+      "768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba_p0020"
+    ],
+    "page_numbers": [
+      20
+    ],
+    "physical_block_ids": [
+      "pb_768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba_p0020_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Recommendations regarding imaging before implantation CMR = cardiovascular magnetic resonance; CT = computed tomography; LV = left ventricular; PET = positron emission tomography. aClass of recommendation. bLevel of evidence."
+  },
+  "table_assessment": {
+    "assessment_notes": "Isolated structured table with two imaging recommendations and explicit source-native class and level values.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 15,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Cardiac imaging"
+        },
+        {
+          "char_end": 95,
+          "char_start": 34,
+          "entity_id": "e_0002",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with suspected or documented symptomatic bradycardia"
+        },
+        {
+          "char_end": 95,
+          "char_start": 72,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "symptomatic bradycardia"
+        },
+        {
+          "char_end": 148,
+          "char_start": 124,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "structural heart disease"
+        },
+        {
+          "char_end": 183,
+          "char_start": 163,
+          "entity_id": "e_0005",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "LV systolic function"
+        },
+        {
+          "char_end": 244,
+          "char_start": 221,
+          "entity_id": "e_0006",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "conduction disturbances"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations",
+          "Class",
+          "Level"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0003"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The three evaluation and diagnostic targets are represented as parameters of the recommended imaging procedure.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0004",
+            "e_0005",
+            "e_0006"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0002"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "I",
+          "grading_system_name": "Source Class column",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native class value; no grading-system version is stated in this payload.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "C",
+          "grading_system_name": "Source Level column",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native level value; no grading-system version is stated in this payload.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Cardiac imaging is recommended in patients with suspected or documented symptomatic bradycardia to evaluate the presence of structural heart disease, to determine LV systolic function, and to diagnose potential causes of conduction disturbances."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 39,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Multimodality imaging (CMR, CT, or PET)"
+        },
+        {
+          "char_end": 99,
+          "char_start": 65,
+          "entity_id": "e_0008",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "myocardial tissue characterization"
+        },
+        {
+          "char_end": 212,
+          "char_start": 120,
+          "entity_id": "e_0009",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "specific pathologies associated with conduction abnormalities needing pacemaker implantation"
+        },
+        {
+          "char_end": 212,
+          "char_start": 190,
+          "entity_id": "e_0010",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "pacemaker implantation"
+        },
+        {
+          "char_end": 260,
+          "char_start": 230,
+          "entity_id": "e_0011",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients younger than 60 years"
+        },
+        {
+          "char_end": 260,
+          "char_start": 252,
+          "entity_id": "e_0012",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "60 years"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations",
+          "Class",
+          "Level"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0009"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "The age phrase is a particularized population qualifier rather than a mandatory threshold stated for every patient.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0008",
+            "e_0010",
+            "e_0012"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0011"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "IIa",
+          "grading_system_name": "Source Class column",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native class value; no grading-system version is stated in this payload.",
+          "raw_grade": "IIa"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "C",
+          "grading_system_name": "Source Level column",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native level value; no grading-system version is stated in this payload.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Multimodality imaging (CMR, CT, or PET) should be considered for myocardial tissue characterization in the diagnosis of specific pathologies associated with conduction abnormalities needing pacemaker implantation, particularly in patients younger than 60 years.83–86,88"
+    }
+  ]
+}

@@ -1,0 +1,4538 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING",
+      "SUSPECTED_DUPLICATE"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_d37603c4873cfeeea6b15a132fe96dd8f9526b7935a7e82dc39d2c1df9b50b75_n0004",
+  "source": {
+    "document_sha256": "d37603c4873cfeeea6b15a132fe96dd8f9526b7935a7e82dc39d2c1df9b50b75",
+    "page_ids": [
+      "d37603c4873cfeeea6b15a132fe96dd8f9526b7935a7e82dc39d2c1df9b50b75_p0009"
+    ],
+    "page_numbers": [
+      9
+    ],
+    "physical_block_ids": [
+      "pb_d37603c4873cfeeea6b15a132fe96dd8f9526b7935a7e82dc39d2c1df9b50b75_p0009_g001",
+      "pb_d37603c4873cfeeea6b15a132fe96dd8f9526b7935a7e82dc39d2c1df9b50b75_p0009_g002"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "**Table 3 Management of oral therapy in AHF in the first 48 hours**"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content review confirms medication-directed guidance. Visual source QC removed the repeated full-table extraction and retained the source-faithful fragment containing the visible Normotension/Hypertension column.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": true,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0140",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I"
+        },
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0141",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I /ARB"
+        },
+        {
+          "char_end": 10,
+          "char_start": 7,
+          "entity_id": "e_0142",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ARB"
+        },
+        {
+          "char_end": 38,
+          "char_start": 26,
+          "entity_id": "e_0143",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Hypertension"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "ACE-I /ARB",
+          "Normotension/ Hypertension"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0042",
+          "condition_entity_ids": [
+            "e_0143"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0140",
+            "e_0141",
+            "e_0142"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0042",
+      "verbatim_text": "ACE-I /ARB; Normotension/ Hypertension; review"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0144",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I"
+        },
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0145",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I /ARB"
+        },
+        {
+          "char_end": 10,
+          "char_start": 7,
+          "entity_id": "e_0146",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ARB"
+        },
+        {
+          "char_end": 38,
+          "char_start": 26,
+          "entity_id": "e_0147",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Hypertension"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "ACE-I /ARB",
+          "Normotension/ Hypertension"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0043",
+          "condition_entity_ids": [
+            "e_0147"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "INCREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "increase"
+          ],
+          "target_entity_ids": [
+            "e_0144",
+            "e_0145",
+            "e_0146"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0043",
+      "verbatim_text": "ACE-I /ARB; Normotension/ Hypertension; increase"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0148",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I"
+        },
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0149",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I /ARB"
+        },
+        {
+          "char_end": 10,
+          "char_start": 7,
+          "entity_id": "e_0150",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ARB"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "ACE-I /ARB",
+          "85–100 mmHg"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0044",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "reduce"
+          ],
+          "target_entity_ids": [
+            "e_0148",
+            "e_0149",
+            "e_0150"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0044",
+      "verbatim_text": "ACE-I /ARB; 85–100 mmHg; reduce"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0151",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I"
+        },
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0152",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I /ARB"
+        },
+        {
+          "char_end": 10,
+          "char_start": 7,
+          "entity_id": "e_0153",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ARB"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "ACE-I /ARB",
+          "85–100 mmHg"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0045",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0151",
+            "e_0152",
+            "e_0153"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0045",
+      "verbatim_text": "ACE-I /ARB; 85–100 mmHg; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0154",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I"
+        },
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0155",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I /ARB"
+        },
+        {
+          "char_end": 10,
+          "char_start": 7,
+          "entity_id": "e_0156",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ARB"
+        },
+        {
+          "char_end": 20,
+          "char_start": 12,
+          "entity_id": "e_0157",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "<85 mmHg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 4,
+        "header_path": [
+          "ACE-I /ARB",
+          "<85 mmHg"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0046",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0157"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0154",
+            "e_0155",
+            "e_0156"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0046",
+      "verbatim_text": "ACE-I /ARB; <85 mmHg; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0158",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I"
+        },
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0159",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I /ARB"
+        },
+        {
+          "char_end": 10,
+          "char_start": 7,
+          "entity_id": "e_0160",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ARB"
+        },
+        {
+          "char_end": 19,
+          "char_start": 13,
+          "entity_id": "e_0162",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "3.5 mg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 7,
+        "header_path": [
+          "ACE-I /ARB",
+          "≤3.5 mg/dl"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0047",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0162"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0158",
+            "e_0159",
+            "e_0160"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0047",
+      "verbatim_text": "ACE-I /ARB; ≤3.5 mg/dl; review"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0163",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I"
+        },
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0164",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I /ARB"
+        },
+        {
+          "char_end": 10,
+          "char_start": 7,
+          "entity_id": "e_0165",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ARB"
+        },
+        {
+          "char_end": 19,
+          "char_start": 13,
+          "entity_id": "e_0167",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "3.5 mg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 7,
+        "header_path": [
+          "ACE-I /ARB",
+          "≤3.5 mg/dl"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0048",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "INCREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0167"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "increase"
+          ],
+          "target_entity_ids": [
+            "e_0163",
+            "e_0164",
+            "e_0165"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0048",
+      "verbatim_text": "ACE-I /ARB; ≤3.5 mg/dl; increase"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0168",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I"
+        },
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0169",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I /ARB"
+        },
+        {
+          "char_end": 10,
+          "char_start": 7,
+          "entity_id": "e_0170",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ARB"
+        },
+        {
+          "char_end": 19,
+          "char_start": 13,
+          "entity_id": "e_0172",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "5.5 mg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 8,
+        "header_path": [
+          "ACE-I /ARB",
+          ">5.5 mg/dl"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0049",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0172"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0168",
+            "e_0169",
+            "e_0170"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0049",
+      "verbatim_text": "ACE-I /ARB; >5.5 mg/dl; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0173",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I"
+        },
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0174",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I /ARB"
+        },
+        {
+          "char_end": 10,
+          "char_start": 7,
+          "entity_id": "e_0175",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ARB"
+        },
+        {
+          "char_end": 20,
+          "char_start": 15,
+          "entity_id": "e_0176",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "< 2.5"
+        },
+        {
+          "char_end": 26,
+          "char_start": 22,
+          "entity_id": "e_0177",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "eGFR"
+        },
+        {
+          "char_end": 31,
+          "char_start": 27,
+          "entity_id": "e_0178",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "> 30"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 9,
+        "header_path": [
+          "ACE-I /ARB",
+          "Cr < 2.5, eGFR > 30"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0050",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0176",
+            "e_0177",
+            "e_0178"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0173",
+            "e_0174",
+            "e_0175"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0050",
+      "verbatim_text": "ACE-I /ARB; Cr < 2.5, eGFR > 30; review"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0179",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I"
+        },
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0180",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ACE-I /ARB"
+        },
+        {
+          "char_end": 10,
+          "char_start": 7,
+          "entity_id": "e_0181",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ARB"
+        },
+        {
+          "char_end": 20,
+          "char_start": 15,
+          "entity_id": "e_0182",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "> 2.5"
+        },
+        {
+          "char_end": 26,
+          "char_start": 22,
+          "entity_id": "e_0183",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "eGFR"
+        },
+        {
+          "char_end": 31,
+          "char_start": 27,
+          "entity_id": "e_0184",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "< 30"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 10,
+        "header_path": [
+          "ACE-I /ARB",
+          "Cr > 2.5, eGFR < 30"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0051",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0182",
+            "e_0183",
+            "e_0184"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0179",
+            "e_0180",
+            "e_0181"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0051",
+      "verbatim_text": "ACE-I /ARB; Cr > 2.5, eGFR < 30; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0185",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Beta-blocker"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Beta-blocker",
+          "85–100 mmHg"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0052",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "reduce"
+          ],
+          "target_entity_ids": [
+            "e_0185"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0052",
+      "verbatim_text": "Beta-blocker; 85–100 mmHg; reduce"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0186",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Beta-blocker"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Beta-blocker",
+          "85–100 mmHg"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0053",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0186"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0053",
+      "verbatim_text": "Beta-blocker; 85–100 mmHg; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0187",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Beta-blocker"
+        },
+        {
+          "char_end": 22,
+          "char_start": 14,
+          "entity_id": "e_0188",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "<85 mmHg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 4,
+        "header_path": [
+          "Beta-blocker",
+          "<85 mmHg"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0054",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0188"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0187"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0054",
+      "verbatim_text": "Beta-blocker; <85 mmHg; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0189",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Beta-blocker"
+        },
+        {
+          "char_end": 18,
+          "char_start": 14,
+          "entity_id": "e_0190",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "<60 "
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 5,
+        "header_path": [
+          "Beta-blocker",
+          "<60 ≥50 bpm"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0055",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0190"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "reduce"
+          ],
+          "target_entity_ids": [
+            "e_0189"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0055",
+      "verbatim_text": "Beta-blocker; <60 ≥50 bpm; reduce"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0192",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Beta-blocker"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 6,
+        "header_path": [
+          "Beta-blocker",
+          "<50 bpm"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0056",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0192"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0056",
+      "verbatim_text": "Beta-blocker; <50 bpm; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 3,
+          "char_start": 0,
+          "entity_id": "e_0194",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "MRA"
+        },
+        {
+          "char_end": 13,
+          "char_start": 5,
+          "entity_id": "e_0195",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "<85 mmHg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 4,
+        "header_path": [
+          "MRA",
+          "<85 mmHg"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0057",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0195"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0194"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0057",
+      "verbatim_text": "MRA; <85 mmHg; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 3,
+          "char_start": 0,
+          "entity_id": "e_0196",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "MRA"
+        },
+        {
+          "char_end": 12,
+          "char_start": 6,
+          "entity_id": "e_0198",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "3.5 mg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 7,
+        "header_path": [
+          "MRA",
+          "≤3.5 mg/dl"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0058",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0198"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0196"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0058",
+      "verbatim_text": "MRA; ≤3.5 mg/dl; review"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 3,
+          "char_start": 0,
+          "entity_id": "e_0199",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "MRA"
+        },
+        {
+          "char_end": 12,
+          "char_start": 6,
+          "entity_id": "e_0201",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "3.5 mg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 7,
+        "header_path": [
+          "MRA",
+          "≤3.5 mg/dl"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0059",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "INCREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0201"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "increase"
+          ],
+          "target_entity_ids": [
+            "e_0199"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0059",
+      "verbatim_text": "MRA; ≤3.5 mg/dl; increase"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 3,
+          "char_start": 0,
+          "entity_id": "e_0202",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "MRA"
+        },
+        {
+          "char_end": 12,
+          "char_start": 6,
+          "entity_id": "e_0204",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "5.5 mg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 8,
+        "header_path": [
+          "MRA",
+          ">5.5 mg/dl"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0060",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0204"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0202"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0060",
+      "verbatim_text": "MRA; >5.5 mg/dl; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 3,
+          "char_start": 0,
+          "entity_id": "e_0205",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "MRA"
+        },
+        {
+          "char_end": 13,
+          "char_start": 8,
+          "entity_id": "e_0206",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "< 2.5"
+        },
+        {
+          "char_end": 19,
+          "char_start": 15,
+          "entity_id": "e_0207",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "eGFR"
+        },
+        {
+          "char_end": 24,
+          "char_start": 20,
+          "entity_id": "e_0208",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "> 30"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 9,
+        "header_path": [
+          "MRA",
+          "Cr < 2.5, eGFR > 30"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0061",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0206",
+            "e_0207",
+            "e_0208"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "reduce"
+          ],
+          "target_entity_ids": [
+            "e_0205"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0061",
+      "verbatim_text": "MRA; Cr < 2.5, eGFR > 30; reduce"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 3,
+          "char_start": 0,
+          "entity_id": "e_0209",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "MRA"
+        },
+        {
+          "char_end": 13,
+          "char_start": 8,
+          "entity_id": "e_0210",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "> 2.5"
+        },
+        {
+          "char_end": 19,
+          "char_start": 15,
+          "entity_id": "e_0211",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "eGFR"
+        },
+        {
+          "char_end": 24,
+          "char_start": 20,
+          "entity_id": "e_0212",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "< 30"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 10,
+        "header_path": [
+          "MRA",
+          "Cr > 2.5, eGFR < 30"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0062",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0210",
+            "e_0211",
+            "e_0212"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0209"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0062",
+      "verbatim_text": "MRA; Cr > 2.5, eGFR < 30; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0213",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Diuretics"
+        },
+        {
+          "char_end": 37,
+          "char_start": 25,
+          "entity_id": "e_0214",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Hypertension"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Diuretics",
+          "Normotension/ Hypertension"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0063",
+          "condition_entity_ids": [
+            "e_0214"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "INCREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "increase"
+          ],
+          "target_entity_ids": [
+            "e_0213"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0063",
+      "verbatim_text": "Diuretics; Normotension/ Hypertension; increase"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0215",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Diuretics"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Diuretics",
+          "85–100 mmHg"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0064",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "reduce"
+          ],
+          "target_entity_ids": [
+            "e_0215"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0064",
+      "verbatim_text": "Diuretics; 85–100 mmHg; reduce"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0216",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Diuretics"
+        },
+        {
+          "char_end": 19,
+          "char_start": 11,
+          "entity_id": "e_0217",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "<85 mmHg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 4,
+        "header_path": [
+          "Diuretics",
+          "<85 mmHg"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0065",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0217"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0216"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0065",
+      "verbatim_text": "Diuretics; <85 mmHg; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0218",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Diuretics"
+        },
+        {
+          "char_end": 18,
+          "char_start": 12,
+          "entity_id": "e_0220",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "3.5 mg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 7,
+        "header_path": [
+          "Diuretics",
+          "≤3.5 mg/dl"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0066",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0220"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0218"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0066",
+      "verbatim_text": "Diuretics; ≤3.5 mg/dl; review"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0221",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Diuretics"
+        },
+        {
+          "char_end": 18,
+          "char_start": 12,
+          "entity_id": "e_0223",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "5.5 mg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 8,
+        "header_path": [
+          "Diuretics",
+          ">5.5 mg/dl"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0067",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0223"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0221"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0067",
+      "verbatim_text": "Diuretics; >5.5 mg/dl; review"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0224",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Diuretics"
+        },
+        {
+          "char_end": 18,
+          "char_start": 12,
+          "entity_id": "e_0226",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "5.5 mg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 8,
+        "header_path": [
+          "Diuretics",
+          ">5.5 mg/dl"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0068",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "INCREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0226"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "increase"
+          ],
+          "target_entity_ids": [
+            "e_0224"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0068",
+      "verbatim_text": "Diuretics; >5.5 mg/dl; increase"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0227",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Diuretics"
+        },
+        {
+          "char_end": 19,
+          "char_start": 14,
+          "entity_id": "e_0228",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "> 2.5"
+        },
+        {
+          "char_end": 25,
+          "char_start": 21,
+          "entity_id": "e_0229",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "eGFR"
+        },
+        {
+          "char_end": 30,
+          "char_start": 26,
+          "entity_id": "e_0230",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "< 30"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 10,
+        "header_path": [
+          "Diuretics",
+          "Cr > 2.5, eGFR < 30"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0069",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0228",
+            "e_0229",
+            "e_0230"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0227"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0069",
+      "verbatim_text": "Diuretics; Cr > 2.5, eGFR < 30; review"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 28,
+          "char_start": 20,
+          "entity_id": "e_0231",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Nitrates"
+        },
+        {
+          "char_end": 57,
+          "char_start": 45,
+          "entity_id": "e_0232",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Hypertension"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Other vasodilators (Nitrates)",
+          "Normotension/ Hypertension"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0070",
+          "condition_entity_ids": [
+            "e_0232"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "INCREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "increase"
+          ],
+          "target_entity_ids": [
+            "e_0231"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0070",
+      "verbatim_text": "Other vasodilators (Nitrates); Normotension/ Hypertension; increase"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 28,
+          "char_start": 20,
+          "entity_id": "e_0233",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Nitrates"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Other vasodilators (Nitrates)",
+          "85–100 mmHg"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0071",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "reduce"
+          ],
+          "target_entity_ids": [
+            "e_0233"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0071",
+      "verbatim_text": "Other vasodilators (Nitrates); 85–100 mmHg; reduce"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 28,
+          "char_start": 20,
+          "entity_id": "e_0234",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Nitrates"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Other vasodilators (Nitrates)",
+          "85–100 mmHg"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0072",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0234"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0072",
+      "verbatim_text": "Other vasodilators (Nitrates); 85–100 mmHg; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 28,
+          "char_start": 20,
+          "entity_id": "e_0235",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Nitrates"
+        },
+        {
+          "char_end": 39,
+          "char_start": 31,
+          "entity_id": "e_0236",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "<85 mmHg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 4,
+        "header_path": [
+          "Other vasodilators (Nitrates)",
+          "<85 mmHg"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0073",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0236"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0235"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0073",
+      "verbatim_text": "Other vasodilators (Nitrates); <85 mmHg; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 6,
+          "entity_id": "e_0237",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "heart rate"
+        },
+        {
+          "char_end": 42,
+          "char_start": 32,
+          "entity_id": "e_0238",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 47,
+          "char_start": 44,
+          "entity_id": "e_0239",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "CCB"
+        },
+        {
+          "char_end": 59,
+          "char_start": 49,
+          "entity_id": "e_0240",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Ivabradine"
+        },
+        {
+          "char_end": 88,
+          "char_start": 76,
+          "entity_id": "e_0241",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Hypertension"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine)",
+          "Normotension/ Hypertension"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0074",
+          "condition_entity_ids": [
+            "e_0241"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0237"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0238",
+            "e_0239",
+            "e_0240"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0074",
+      "verbatim_text": "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine); Normotension/ Hypertension; review"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 6,
+          "entity_id": "e_0242",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "heart rate"
+        },
+        {
+          "char_end": 42,
+          "char_start": 32,
+          "entity_id": "e_0243",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 47,
+          "char_start": 44,
+          "entity_id": "e_0244",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "CCB"
+        },
+        {
+          "char_end": 59,
+          "char_start": 49,
+          "entity_id": "e_0245",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Ivabradine"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine)",
+          "85–100 mmHg"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0075",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0242"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "reduce"
+          ],
+          "target_entity_ids": [
+            "e_0243",
+            "e_0244",
+            "e_0245"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0075",
+      "verbatim_text": "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine); 85–100 mmHg; reduce"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 6,
+          "entity_id": "e_0246",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "heart rate"
+        },
+        {
+          "char_end": 42,
+          "char_start": 32,
+          "entity_id": "e_0247",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 47,
+          "char_start": 44,
+          "entity_id": "e_0248",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "CCB"
+        },
+        {
+          "char_end": 59,
+          "char_start": 49,
+          "entity_id": "e_0249",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Ivabradine"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine)",
+          "85–100 mmHg"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0076",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0246"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0247",
+            "e_0248",
+            "e_0249"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0076",
+      "verbatim_text": "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine); 85–100 mmHg; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 6,
+          "entity_id": "e_0250",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "heart rate"
+        },
+        {
+          "char_end": 42,
+          "char_start": 32,
+          "entity_id": "e_0251",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 47,
+          "char_start": 44,
+          "entity_id": "e_0252",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "CCB"
+        },
+        {
+          "char_end": 59,
+          "char_start": 49,
+          "entity_id": "e_0253",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Ivabradine"
+        },
+        {
+          "char_end": 70,
+          "char_start": 62,
+          "entity_id": "e_0254",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "<85 mmHg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 4,
+        "header_path": [
+          "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine)",
+          "<85 mmHg"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0077",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0250",
+            "e_0254"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0251",
+            "e_0252",
+            "e_0253"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0077",
+      "verbatim_text": "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine); <85 mmHg; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 6,
+          "entity_id": "e_0255",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "heart rate"
+        },
+        {
+          "char_end": 42,
+          "char_start": 32,
+          "entity_id": "e_0256",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 47,
+          "char_start": 44,
+          "entity_id": "e_0257",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "CCB"
+        },
+        {
+          "char_end": 59,
+          "char_start": 49,
+          "entity_id": "e_0258",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Ivabradine"
+        },
+        {
+          "char_end": 66,
+          "char_start": 62,
+          "entity_id": "e_0259",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "<60 "
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 5,
+        "header_path": [
+          "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine)",
+          "<60 ≥50 bpm"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0078",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0255",
+            "e_0259"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "reduce"
+          ],
+          "target_entity_ids": [
+            "e_0256",
+            "e_0257",
+            "e_0258"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0078",
+      "verbatim_text": "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine); <60 ≥50 bpm; reduce"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 6,
+          "entity_id": "e_0261",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "heart rate"
+        },
+        {
+          "char_end": 42,
+          "char_start": 32,
+          "entity_id": "e_0262",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 47,
+          "char_start": 44,
+          "entity_id": "e_0263",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "CCB"
+        },
+        {
+          "char_end": 59,
+          "char_start": 49,
+          "entity_id": "e_0264",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Ivabradine"
+        },
+        {
+          "char_end": 66,
+          "char_start": 62,
+          "entity_id": "e_0265",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "<60 "
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 5,
+        "header_path": [
+          "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine)",
+          "<60 ≥50 bpm"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0079",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0261",
+            "e_0265"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0262",
+            "e_0263",
+            "e_0264"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0079",
+      "verbatim_text": "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine); <60 ≥50 bpm; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 6,
+          "entity_id": "e_0267",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "heart rate"
+        },
+        {
+          "char_end": 42,
+          "char_start": 32,
+          "entity_id": "e_0268",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 47,
+          "char_start": 44,
+          "entity_id": "e_0269",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "CCB"
+        },
+        {
+          "char_end": 59,
+          "char_start": 49,
+          "entity_id": "e_0270",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Ivabradine"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 6,
+        "header_path": [
+          "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine)",
+          "<50 bpm"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0080",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0267"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0268",
+            "e_0269",
+            "e_0270"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0080",
+      "verbatim_text": "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine); <50 bpm; stop"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 6,
+          "entity_id": "e_0272",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "heart rate"
+        },
+        {
+          "char_end": 42,
+          "char_start": 32,
+          "entity_id": "e_0273",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 47,
+          "char_start": 44,
+          "entity_id": "e_0274",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "CCB"
+        },
+        {
+          "char_end": 59,
+          "char_start": 49,
+          "entity_id": "e_0275",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Ivabradine"
+        },
+        {
+          "char_end": 69,
+          "char_start": 63,
+          "entity_id": "e_0277",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "3.5 mg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 7,
+        "header_path": [
+          "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine)",
+          "≤3.5 mg/dl"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0081",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0272",
+            "e_0277"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0273",
+            "e_0274",
+            "e_0275"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0081",
+      "verbatim_text": "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine); ≤3.5 mg/dl; review"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 6,
+          "entity_id": "e_0278",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "heart rate"
+        },
+        {
+          "char_end": 42,
+          "char_start": 32,
+          "entity_id": "e_0279",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 47,
+          "char_start": 44,
+          "entity_id": "e_0280",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "CCB"
+        },
+        {
+          "char_end": 59,
+          "char_start": 49,
+          "entity_id": "e_0281",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Ivabradine"
+        },
+        {
+          "char_end": 69,
+          "char_start": 63,
+          "entity_id": "e_0283",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "3.5 mg"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 7,
+        "header_path": [
+          "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine)",
+          "≤3.5 mg/dl"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0082",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Agent-silver extraction preserves explicit source wording and inherited table context; human adjudication remains required.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0278",
+            "e_0283"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "stop"
+          ],
+          "target_entity_ids": [
+            "e_0279",
+            "e_0280",
+            "e_0281"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0082",
+      "verbatim_text": "Other heart rate slowing drugs (amiodarone, CCB, Ivabradine); ≤3.5 mg/dl; stop (*)"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_n0089",
+  "source": {
+    "document_sha256": "66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d",
+    "page_ids": [
+      "66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_p0070"
+    ],
+    "page_numbers": [
+      70
+    ],
+    "physical_block_ids": [
+      "pb_66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_p0070_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "Recommendation for Parenteral Vasodilation Therapy in Patients Hospitalized With HF Referenced studies that support the recommendations are summarized in the Online Data Supplements."
+  },
+  "table_assessment": {
+    "assessment_notes": "One isolated medication recommendation with two alternative vasodilators, an explicit hypotension condition, adjunctive therapy, outcome, and source-native grades.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 53,
+          "char_start": 6,
+          "entity_id": "e_0001",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients who are admitted with decompensated HF"
+        },
+        {
+          "char_end": 93,
+          "char_start": 62,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "absence of systemic hypotension"
+        },
+        {
+          "char_end": 120,
+          "char_start": 107,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "nitroglycerin"
+        },
+        {
+          "char_end": 137,
+          "char_start": 124,
+          "entity_id": "e_0004",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "nitroprusside"
+        },
+        {
+          "char_end": 106,
+          "char_start": 95,
+          "entity_id": "e_0005",
+          "entity_type": "ROUTE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "intravenous"
+        },
+        {
+          "char_end": 190,
+          "char_start": 174,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "diuretic therapy"
+        },
+        {
+          "char_end": 212,
+          "char_start": 195,
+          "entity_id": "e_0007",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "relief of dyspnea"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Recommendation"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0002"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN",
+            "CONSIDER"
+          ],
+          "notes": "The two named intravenous vasodilators are alternative adjunctive options in the absence of systemic hypotension.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [
+            "e_0007"
+          ],
+          "parameter_entity_ids": [
+            "e_0005",
+            "e_0006"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0003",
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "2b",
+          "grading_system_name": "ACC/AHA Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade.",
+          "raw_grade": "2b"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "B-NR",
+          "grading_system_name": "ACC/AHA Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade.",
+          "raw_grade": "B-NR"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "1. In patients who are admitted with decompensated HF, in the absence of systemic hypotension, intravenous nitroglycerin or nitroprusside may be considered as an adjuvant to diuretic therapy for relief of dyspnea."
+    }
+  ]
+}

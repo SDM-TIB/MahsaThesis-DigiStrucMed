@@ -1,0 +1,355 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_n0073",
+  "source": {
+    "document_sha256": "d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712",
+    "page_ids": [
+      "d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_p0076"
+    ],
+    "page_numbers": [
+      76
+    ],
+    "physical_block_ids": [
+      "pb_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_p0076_g003"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "**Recommendation Table 39 — Recommendations for secondary prevention of sudden cardiac death and treatment of ventricular arrhythmia in congenital heart disease**"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review confirms one structural-lesion evaluation recommendation and one conditional ICD-implantation recommendation with explicit Class and Level cells.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 3,
+          "entity_id": "e_0001",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients with CHD"
+        },
+        {
+          "char_end": 50,
+          "char_start": 37,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "sustained VAs"
+        },
+        {
+          "char_end": 115,
+          "char_start": 52,
+          "entity_id": "e_0003",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "evaluation for residual lesions or new structural abnormalities"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations",
+          "Secondary prevention of SCD and treatment of VA",
+          "All CHD patients",
+          "Classa",
+          "Levelb"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0002"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Evaluation for residual lesions or new structural abnormalities is recommended after sustained VAs in CHD.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0003"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "I",
+          "grading_system_name": "Source class-of-recommendation system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Verbatim Class cell; no normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "B",
+          "grading_system_name": "Source level-of-evidence system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Verbatim Level cell; no normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "In patients with CHD presenting with sustained VAs, evaluation for residual lesions or new structural abnormalities is recommended."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 3,
+          "entity_id": "e_0004",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients with CHD"
+        },
+        {
+          "char_end": 42,
+          "char_start": 26,
+          "entity_id": "e_0005",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "not tolerated VT"
+        },
+        {
+          "char_end": 64,
+          "char_start": 44,
+          "entity_id": "e_0006",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "aborted CA due to VF"
+        },
+        {
+          "char_end": 82,
+          "char_start": 66,
+          "entity_id": "e_0007",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "ICD implantation"
+        },
+        {
+          "char_end": 132,
+          "char_start": 96,
+          "entity_id": "e_0008",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "after exclusion of reversible causes"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations",
+          "Secondary prevention of SCD and treatment of VA",
+          "All CHD patients",
+          "Classa",
+          "Levelb"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0005",
+            "e_0006",
+            "e_0008"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "ICD implantation is indicated for either arrhythmic condition only after reversible causes have been excluded.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0004"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "is indicated",
+            "after exclusion of"
+          ],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "I",
+          "grading_system_name": "Source class-of-recommendation system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Verbatim Class cell; no normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "C",
+          "grading_system_name": "Source level-of-evidence system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Verbatim Level cell; no normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "In patients with CHD with not tolerated VT/ aborted CA due to VF, ICD implantation is indicated after exclusion of reversible causes."
+    }
+  ]
+}

@@ -1,0 +1,783 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_28f957dab7eeeaae1cc0da0c1e8e94b95fff265be5f1ca60a3ffc6bf43254e14_n0007",
+  "source": {
+    "document_sha256": "28f957dab7eeeaae1cc0da0c1e8e94b95fff265be5f1ca60a3ffc6bf43254e14",
+    "page_ids": [
+      "28f957dab7eeeaae1cc0da0c1e8e94b95fff265be5f1ca60a3ffc6bf43254e14_p0025"
+    ],
+    "page_numbers": [
+      25
+    ],
+    "physical_block_ids": [
+      "pb_28f957dab7eeeaae1cc0da0c1e8e94b95fff265be5f1ca60a3ffc6bf43254e14_p0025_g002"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "**Table 8. CAMs That Increase Bleeding Risk With Anticoagulants via Platelet and/or Clotting Factor Effects<sup>320</sup>**"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation of explicit medication entities, administration attributes, indications, outcomes, adverse events, and source-language directives. No terminology identifiers were guessed.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Antiplatelet Effects"
+        },
+        {
+          "char_end": 42,
+          "char_start": 21,
+          "entity_id": "e_0002",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Anticoagulant Effects"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 8. CAMs That Increase Bleeding Risk With Anticoagulants via Platelet and/or Clotting Factor Effects<sup>320</sup>**",
+          "Inherited column-header context"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Inherited table headers encode entity context but contain no directive.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Antiplatelet Effects\nAnticoagulant Effects"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 7,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Danshen"
+        },
+        {
+          "char_end": 17,
+          "char_start": 8,
+          "entity_id": "e_0004",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Dong quai"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Column heading explicitly identifies the listed antiplatelet or anticoagulant effect.",
+          "object_entity_id": "e_0001",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0003",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Column heading explicitly identifies the listed antiplatelet or anticoagulant effect.",
+          "object_entity_id": "e_0002",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0004",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 8. CAMs That Increase Bleeding Risk With Anticoagulants via Platelet and/or Clotting Factor Effects<sup>320</sup>**",
+          "Antiplatelet Effects",
+          "Anticoagulant Effects"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0003",
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Danshen\nDong quai"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 6,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Garlic"
+        },
+        {
+          "char_end": 17,
+          "char_start": 7,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Motherwort"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Column heading explicitly identifies the listed antiplatelet or anticoagulant effect.",
+          "object_entity_id": "e_0001",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0003",
+          "subject_entity_id": "e_0005",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Column heading explicitly identifies the listed antiplatelet or anticoagulant effect.",
+          "object_entity_id": "e_0002",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0004",
+          "subject_entity_id": "e_0006",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 8. CAMs That Increase Bleeding Risk With Anticoagulants via Platelet and/or Clotting Factor Effects<sup>320</sup>**",
+          "Antiplatelet Effects",
+          "Anticoagulant Effects"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0005",
+            "e_0006"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Garlic\nMotherwort"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 6,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Ginkgo"
+        },
+        {
+          "char_end": 16,
+          "char_start": 7,
+          "entity_id": "e_0008",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Liquorice"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Column heading explicitly identifies the listed antiplatelet or anticoagulant effect.",
+          "object_entity_id": "e_0001",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0005",
+          "subject_entity_id": "e_0007",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Column heading explicitly identifies the listed antiplatelet or anticoagulant effect.",
+          "object_entity_id": "e_0002",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0006",
+          "subject_entity_id": "e_0008",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 8. CAMs That Increase Bleeding Risk With Anticoagulants via Platelet and/or Clotting Factor Effects<sup>320</sup>**",
+          "Antiplatelet Effects",
+          "Anticoagulant Effects"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0007",
+            "e_0008"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Ginkgo\nLiquorice"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0009",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Motherwort"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Column heading explicitly identifies the listed antiplatelet or anticoagulant effect.",
+          "object_entity_id": "e_0001",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0007",
+          "subject_entity_id": "e_0009",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 8. CAMs That Increase Bleeding Risk With Anticoagulants via Platelet and/or Clotting Factor Effects<sup>320</sup>**",
+          "Antiplatelet Effects",
+          "Anticoagulant Effects"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0009"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Motherwort"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0010",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Saw palmetto"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Column heading explicitly identifies the listed antiplatelet or anticoagulant effect.",
+          "object_entity_id": "e_0001",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0008",
+          "subject_entity_id": "e_0010",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 8. CAMs That Increase Bleeding Risk With Anticoagulants via Platelet and/or Clotting Factor Effects<sup>320</sup>**",
+          "Antiplatelet Effects",
+          "Anticoagulant Effects"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0010"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Saw palmetto"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 8,
+          "char_start": 0,
+          "entity_id": "e_0011",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Hawthorn"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Column heading explicitly identifies the listed antiplatelet or anticoagulant effect.",
+          "object_entity_id": "e_0001",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0009",
+          "subject_entity_id": "e_0011",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 8. CAMs That Increase Bleeding Risk With Anticoagulants via Platelet and/or Clotting Factor Effects<sup>320</sup>**",
+          "Antiplatelet Effects",
+          "Anticoagulant Effects"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0011"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Hawthorn"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0012",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Liquorice"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Column heading explicitly identifies the listed antiplatelet or anticoagulant effect.",
+          "object_entity_id": "e_0001",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0010",
+          "subject_entity_id": "e_0012",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 8. CAMs That Increase Bleeding Risk With Anticoagulants via Platelet and/or Clotting Factor Effects<sup>320</sup>**",
+          "Antiplatelet Effects",
+          "Anticoagulant Effects"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0012"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Liquorice"
+    }
+  ]
+}

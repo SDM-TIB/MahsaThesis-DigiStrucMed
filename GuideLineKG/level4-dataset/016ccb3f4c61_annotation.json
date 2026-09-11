@@ -1,0 +1,1303 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING",
+      "MIXED_CONTENT",
+      "OTHER_OPERATION",
+      "ENTITY_BOUNDARY_REQUIRES_HUMAN_REVIEW",
+      "PREDICATE_STRUCTURE_REQUIRES_HUMAN_REVIEW"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_n0074",
+  "source": {
+    "document_sha256": "66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7",
+    "page_ids": [
+      "66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_p0062"
+    ],
+    "page_numbers": [
+      62
+    ],
+    "physical_block_ids": [
+      "pb_66f14f762d9ed93be7e45532f52e341584cfa69a96a4b48ae6ab5277a1a358e7_p0062_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "Recommendations for the treatment of atrial fibrillation in patients with heart failure"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation records 8 assertion-bearing table cells. Mixed, duplicate, temporal, inherited-header, and source-style semantics are flagged explicitly and require human adjudication.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 46,
+          "char_start": 28,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "oral anticoagulant"
+        },
+        {
+          "char_end": 85,
+          "char_start": 65,
+          "entity_id": "e_0002",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "all patients with AF"
+        },
+        {
+          "char_end": 85,
+          "char_start": 83,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "AF"
+        },
+        {
+          "char_end": 89,
+          "char_start": 87,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 117,
+          "char_start": 114,
+          "entity_id": "e_0005",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "≥2 "
+        },
+        {
+          "char_end": 130,
+          "char_start": 127,
+          "entity_id": "e_0006",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "≥3 "
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Anticoagulation",
+          "Recommendations"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0003",
+            "e_0004"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0005",
+            "e_0006"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0002"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "treatment"
+          ],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Long-term treatment with an oral anticoagulant is recommended in all patients with AF, HF, and CHA₂DS₂-VASc score ≥2 in men or ≥3 in women. 7"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 5,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "DOACs"
+        },
+        {
+          "char_end": 43,
+          "char_start": 39,
+          "entity_id": "e_0008",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "VKAs"
+        },
+        {
+          "char_end": 63,
+          "char_start": 47,
+          "entity_id": "e_0009",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with HF"
+        },
+        {
+          "char_end": 63,
+          "char_start": 61,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Anticoagulation",
+          "Recommendations"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0010"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [
+            "e_0010"
+          ],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0009"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0007",
+            "e_0008"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "DOACs are recommended in preference to VKAs in patients with HF, except in those with moderate or severe mitral stenosis or mechanical prosthetic heart valves. 528,558"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 46,
+          "char_start": 28,
+          "entity_id": "e_0011",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "oral anticoagulant"
+        },
+        {
+          "char_end": 95,
+          "char_start": 93,
+          "entity_id": "e_0012",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "AF"
+        },
+        {
+          "char_end": 156,
+          "char_start": 96,
+          "entity_id": "e_0013",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with a CHA₂DS₂-VASc score of 1 in men or 2 in women"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Anticoagulation",
+          "Recommendations"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0012"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0013"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0005",
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "treatment"
+          ],
+          "target_entity_ids": [
+            "e_0011"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIa"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "B",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Long-term treatment with an oral anticoagulant should be considered for stroke prevention in AF patients with a CHA₂DS₂-VASc score of 1 in men or 2 in women. 7,559"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0014",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Beta-blockers"
+        },
+        {
+          "char_end": 99,
+          "char_start": 76,
+          "entity_id": "e_0015",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with HF and AF"
+        },
+        {
+          "char_end": 92,
+          "char_start": 90,
+          "entity_id": "e_0016",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 99,
+          "char_start": 97,
+          "entity_id": "e_0017",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "AF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Rate control",
+          "Recommendations"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0016",
+            "e_0017"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0015"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0007",
+            "gr_0008"
+          ],
+          "source_trigger_texts": [
+            "should"
+          ],
+          "target_entity_ids": [
+            "e_0014"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0007",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIa"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0008",
+          "grade_source_text": "B",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Beta-blockers should be considered for short- and long-term rate control in patients with HF and AF. 535"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 7,
+          "char_start": 0,
+          "entity_id": "e_0018",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Digoxin"
+        },
+        {
+          "char_end": 90,
+          "char_start": 77,
+          "entity_id": "e_0019",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "beta-blockers"
+        },
+        {
+          "char_end": 113,
+          "char_start": 100,
+          "entity_id": "e_0020",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "beta-blockers"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Rate control",
+          "Recommendations"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0009",
+            "gr_0010"
+          ],
+          "source_trigger_texts": [
+            "should"
+          ],
+          "target_entity_ids": [
+            "e_0018",
+            "e_0019",
+            "e_0020"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0009",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIa"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0010",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Digoxin should be considered when the ventricular rate remains high, despite beta-blockers, or when beta-blockers are contraindicated or not tolerated. 536"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0021",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Urgent ECV"
+        },
+        {
+          "char_end": 65,
+          "char_start": 63,
+          "entity_id": "e_0022",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 146,
+          "char_start": 69,
+          "entity_id": "e_0023",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients presenting with rapid ventricular rates and haemodynamic instability"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Cardioversion",
+          "Recommendations"
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [
+            "e_0022"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0023"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.82,
+          "source_grade_record_ids": [
+            "gr_0011",
+            "gr_0012"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0021"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0011",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0012",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Urgent ECV is recommended in the setting of acute worsening of HF in patients presenting with rapid ventricular rates and haemodynamic instability."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0024",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Cardioversion"
+        },
+        {
+          "char_end": 43,
+          "char_start": 35,
+          "entity_id": "e_0025",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients"
+        },
+        {
+          "char_end": 86,
+          "char_start": 84,
+          "entity_id": "e_0026",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "AF"
+        },
+        {
+          "char_end": 106,
+          "char_start": 104,
+          "entity_id": "e_0027",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 115,
+          "char_start": 107,
+          "entity_id": "e_0028",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "symptoms"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Cardioversion",
+          "Recommendations"
+        ],
+        "row_index": 11,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [
+            "e_0026",
+            "e_0027"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [
+            "e_0028"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0025"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0013",
+            "gr_0014"
+          ],
+          "source_trigger_texts": [
+            "Cardioversion"
+          ],
+          "target_entity_ids": [
+            "e_0024"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0013",
+          "grade_source_text": "IIb",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIb"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0014",
+          "grade_source_text": "B",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Cardioversion may be considered in patients in whom there is an association between AF and worsening of HF symptoms despite optimal medical treatment. 7,541"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 67,
+          "char_start": 65,
+          "entity_id": "e_0029",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "AF"
+        },
+        {
+          "char_end": 87,
+          "char_start": 85,
+          "entity_id": "e_0030",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 96,
+          "char_start": 88,
+          "entity_id": "e_0031",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "symptoms"
+        },
+        {
+          "char_end": 141,
+          "char_start": 124,
+          "entity_id": "e_0032",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "catheter ablation"
+        },
+        {
+          "char_end": 200,
+          "char_start": 198,
+          "entity_id": "e_0033",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "AF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "AF catheter ablation",
+          "Recommendations"
+        ],
+        "row_index": 13,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [
+            "e_0029",
+            "e_0030",
+            "e_0033"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [
+            "e_0031"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0015",
+            "gr_0016"
+          ],
+          "source_trigger_texts": [
+            "catheter"
+          ],
+          "target_entity_ids": [
+            "e_0032"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0015",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIa"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0016",
+          "grade_source_text": "B",
+          "grading_system_name": "ESC Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "In cases of a clear association between paroxysmal or persistent AF and worsening of HF symptoms, which persist despite MT, catheter ablation should be considered for the prevention or treatment of AF. 552–554,557"
+    }
+  ]
+}

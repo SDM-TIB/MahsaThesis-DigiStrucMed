@@ -1,0 +1,2338 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "ENTITY_BOUNDARY_REVIEW_REQUIRED",
+      "MIXED_NORMATIVE_AND_FACTUAL_CONTENT",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0042",
+  "source": {
+    "document_sha256": "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b",
+    "page_ids": [
+      "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0062"
+    ],
+    "page_numbers": [
+      62
+    ],
+    "physical_block_ids": [
+      "pb_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0062_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "Procainamide Antiarrhythmic (Class IA) C Yes Yes • Unknown (limited experience) • No animal data Propafenone Antiarrhythmic (Class IC) C Yes Unknown Unknown (limited experience) Animal data: • rabbits (3 × MRHD) and rats (6 × MRHD): embryotoxic (decreased survival) • rats (1 × MRHD): increases in maternal deaths, and reductions in neonatal survival, body weight gain, and physiological development at 4 × MRHD Propranolol Beta-blocker (Class II) C Yes Yesb Bradycardia and hypog"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation of explicit medication entities, administration attributes, indications, outcomes, adverse events, and source-language directives. No terminology identifiers were guessed.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Procainamide"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0042: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Procainamide\nAntiarrhythmic (Class IA)\nC\nYes\nYes\n• Unknown (limited experience)\n• No animal data"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0002",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Propafenone"
+        },
+        {
+          "char_end": 105,
+          "char_start": 96,
+          "entity_id": "e_0003",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "rabbits ("
+        },
+        {
+          "char_end": 108,
+          "char_start": 106,
+          "entity_id": "e_0004",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "3×"
+        },
+        {
+          "char_end": 125,
+          "char_start": 109,
+          "entity_id": "e_0005",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD) and rats ("
+        },
+        {
+          "char_end": 128,
+          "char_start": 126,
+          "entity_id": "e_0006",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "6×"
+        },
+        {
+          "char_end": 168,
+          "char_start": 129,
+          "entity_id": "e_0007",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD): embryotoxic (decreased survival)"
+        },
+        {
+          "char_end": 125,
+          "char_start": 119,
+          "entity_id": "e_0008",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "rats ("
+        },
+        {
+          "char_end": 180,
+          "char_start": 178,
+          "entity_id": "e_0009",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "1×"
+        },
+        {
+          "char_end": 216,
+          "char_start": 181,
+          "entity_id": "e_0010",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD): increases in maternal deaths"
+        },
+        {
+          "char_end": 253,
+          "char_start": 218,
+          "entity_id": "e_0011",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "and reductions in neonatal survival"
+        },
+        {
+          "char_end": 271,
+          "char_start": 255,
+          "entity_id": "e_0012",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "body weight gain"
+        },
+        {
+          "char_end": 305,
+          "char_start": 273,
+          "entity_id": "e_0013",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "and physiological development at"
+        },
+        {
+          "char_end": 308,
+          "char_start": 306,
+          "entity_id": "e_0014",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "4×"
+        },
+        {
+          "char_end": 313,
+          "char_start": 309,
+          "entity_id": "e_0015",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0003",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0004",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0005",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0003",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0006",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0004",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0007",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0005",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0008",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0006",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0009",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0007",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0010",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0008",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0011",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0009",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0012",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0010",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0013",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0011",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0014",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0012",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0015",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0013",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0042: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0002"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Propafenone\nAntiarrhythmic (Class IC)\nC\nYes\nUnknown\nUnknown (limited experience)\nAnimal data:\n• rabbits (\n3×\nMRHD) and rats (\n6×\nMRHD): embryotoxic (decreased survival)\n• rats (\n1×\nMRHD): increases in maternal deaths, and reductions in neonatal survival, body weight gain, and physiological development at\n4×\nMRHD"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0016",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Propranolol"
+        },
+        {
+          "char_end": 87,
+          "char_start": 48,
+          "entity_id": "e_0017",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Bradycardia and hypoglycaemia in foetus"
+        },
+        {
+          "char_end": 109,
+          "char_start": 103,
+          "entity_id": "e_0018",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "rats ("
+        },
+        {
+          "char_end": 112,
+          "char_start": 110,
+          "entity_id": "e_0019",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "1×"
+        },
+        {
+          "char_end": 155,
+          "char_start": 113,
+          "entity_id": "e_0020",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD): embryotoxicity (reduced litter size"
+        },
+        {
+          "char_end": 206,
+          "char_start": 157,
+          "entity_id": "e_0021",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "increased resorption rates) and toxicity (deaths)"
+        },
+        {
+          "char_end": 218,
+          "char_start": 209,
+          "entity_id": "e_0022",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "rabbits ("
+        },
+        {
+          "char_end": 221,
+          "char_start": 219,
+          "entity_id": "e_0023",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "5×"
+        },
+        {
+          "char_end": 259,
+          "char_start": 222,
+          "entity_id": "e_0024",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD): no embryo or neonatal toxicity"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0017",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0014",
+          "subject_entity_id": "e_0016",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0018",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0015",
+          "subject_entity_id": "e_0016",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0019",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0016",
+          "subject_entity_id": "e_0016",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0020",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0017",
+          "subject_entity_id": "e_0016",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0021",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0018",
+          "subject_entity_id": "e_0016",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0022",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0019",
+          "subject_entity_id": "e_0016",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0023",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0020",
+          "subject_entity_id": "e_0016",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "NEGATED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0024",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0021",
+          "subject_entity_id": "e_0016",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0042: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0016"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Propranolol\nBeta-blocker (Class II)\nC\nYes\nYes\nb\nBradycardia and hypoglycaemia in foetus\nAnimal data:\n• rats (\n1×\nMRHD): embryotoxicity (reduced litter size, increased resorption rates) and toxicity (deaths)\n• rabbits (\n5×\nMRHD): no embryo or neonatal toxicity"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0025",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Quinidine"
+        },
+        {
+          "char_end": 64,
+          "char_start": 48,
+          "entity_id": "e_0026",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Thrombocytopenia"
+        },
+        {
+          "char_end": 81,
+          "char_start": 66,
+          "entity_id": "e_0027",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "premature birth"
+        },
+        {
+          "char_end": 104,
+          "char_start": 83,
+          "entity_id": "e_0028",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "eighth nerve toxicity"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0026",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0022",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0027",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0023",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0028",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0024",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0042: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0025"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Quinidine\nAntiarrhythmic (Class IA)\nC\nYes\nYes\nb\nThrombocytopenia, premature birth, eighth nerve toxicity"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0029",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Ranolazine"
+        },
+        {
+          "char_end": 139,
+          "char_start": 90,
+          "entity_id": "e_0030",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "signs of embryonal and maternal toxicity at doses"
+        },
+        {
+          "char_end": 144,
+          "char_start": 140,
+          "entity_id": "e_0031",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "<400"
+        },
+        {
+          "char_end": 156,
+          "char_start": 145,
+          "entity_id": "e_0032",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "mg/kg/day ("
+        },
+        {
+          "char_end": 163,
+          "char_start": 157,
+          "entity_id": "e_0033",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "2–2.7×"
+        },
+        {
+          "char_end": 197,
+          "char_start": 164,
+          "entity_id": "e_0034",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD) in rats and 150 mg/kg/day ("
+        },
+        {
+          "char_end": 204,
+          "char_start": 198,
+          "entity_id": "e_0035",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "1.5–2×"
+        },
+        {
+          "char_end": 221,
+          "char_start": 205,
+          "entity_id": "e_0036",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD) in rabbits"
+        },
+        {
+          "char_end": 281,
+          "char_start": 223,
+          "entity_id": "e_0037",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "misshapen sternebrae and reduced ossification in offspring"
+        },
+        {
+          "char_end": 372,
+          "char_start": 283,
+          "entity_id": "e_0038",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "these doses in rats and rabbits were associated with an increased maternal mortality rate"
+        },
+        {
+          "char_end": 154,
+          "char_start": 140,
+          "entity_id": "e_0039",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "<400\nmg/kg/day"
+        },
+        {
+          "char_end": 195,
+          "char_start": 182,
+          "entity_id": "e_0040",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "150 mg/kg/day"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0030",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0025",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0031",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0026",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0032",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0027",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0033",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0028",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0034",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0029",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0035",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0030",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0036",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0031",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0037",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0032",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0038",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0033",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0039",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0034",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0040",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0035",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0042: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0039",
+            "e_0040"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0029"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Ranolazine\nI_{Na}\n-channel blocker\n-\nUnknown\nUnknown\nInadequate human data\nAnimal data:\n• signs of embryonal and maternal toxicity at doses\n<400\nmg/kg/day (\n2–2.7×\nMRHD) in rats and 150 mg/kg/day (\n1.5–2×\nMRHD) in rabbits, misshapen sternebrae and reduced ossification in offspring; these doses in rats and rabbits were associated with an increased maternal mortality rate"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0041",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Riociguat"
+        },
+        {
+          "char_end": 90,
+          "char_start": 75,
+          "entity_id": "e_0042",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Contraindicated"
+        },
+        {
+          "char_end": 139,
+          "char_start": 106,
+          "entity_id": "e_0043",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "rats: teratogenic and embryotoxic"
+        },
+        {
+          "char_end": 195,
+          "char_start": 141,
+          "entity_id": "e_0044",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "increased rate of cardiac ventricular septal defect at"
+        },
+        {
+          "char_end": 198,
+          "char_start": 196,
+          "entity_id": "e_0045",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "8×"
+        },
+        {
+          "char_end": 203,
+          "char_start": 199,
+          "entity_id": "e_0046",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD"
+        },
+        {
+          "char_end": 240,
+          "char_start": 205,
+          "entity_id": "e_0047",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "increased post-implantation loss at"
+        },
+        {
+          "char_end": 243,
+          "char_start": 241,
+          "entity_id": "e_0048",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "2×"
+        },
+        {
+          "char_end": 248,
+          "char_start": 244,
+          "entity_id": "e_0049",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD"
+        },
+        {
+          "char_end": 282,
+          "char_start": 252,
+          "entity_id": "e_0050",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "rabbits: increased abortions ("
+        },
+        {
+          "char_end": 285,
+          "char_start": 283,
+          "entity_id": "e_0051",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "4×"
+        },
+        {
+          "char_end": 313,
+          "char_start": 286,
+          "entity_id": "e_0052",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD) and foetal toxicity ("
+        },
+        {
+          "char_end": 317,
+          "char_start": 314,
+          "entity_id": "e_0053",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "13×"
+        },
+        {
+          "char_end": 323,
+          "char_start": 318,
+          "entity_id": "e_0054",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "MRHD)"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0042",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0036",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0043",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0037",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0044",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0038",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0045",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0039",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0046",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0040",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0047",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0041",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0048",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0042",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0049",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0043",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0050",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0044",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0051",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0045",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0052",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0046",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0053",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0047",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0054",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0048",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0042: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "MANDATORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT"
+          ],
+          "notes": "Explicit lexical directive preserved; applicability requires human adjudication.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Contraindicated"
+          ],
+          "target_entity_ids": [
+            "e_0041"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Riociguat\nGuanylate cyclase stimulator\n-\nUnknown\nYes (present in rat milk)\nContraindicated\nAnimal data:\n• rats: teratogenic and embryotoxic, increased rate of cardiac ventricular septal defect at\n8×\nMRHD, increased post-implantation loss at\n2×\nMRHD;\n• rabbits: increased abortions (\n4×\nMRHD) and foetal toxicity (\n13×\nMRHD)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0055",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Rivaroxaban"
+        },
+        {
+          "char_end": 122,
+          "char_start": 107,
+          "entity_id": "e_0056",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "contraindicated"
+        },
+        {
+          "char_end": 192,
+          "char_start": 138,
+          "entity_id": "e_0057",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "in rats: embryofoetal toxicity (post-implantation loss"
+        },
+        {
+          "char_end": 226,
+          "char_start": 194,
+          "entity_id": "e_0058",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "retarded/progressed ossification"
+        },
+        {
+          "char_end": 270,
+          "char_start": 228,
+          "entity_id": "e_0059",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "and hepatic multiple light-coloured spots)"
+        },
+        {
+          "char_end": 315,
+          "char_start": 272,
+          "entity_id": "e_0060",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "increased incidence of common malformations"
+        },
+        {
+          "char_end": 385,
+          "char_start": 317,
+          "entity_id": "e_0061",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "and placental changes observed at clinically relevant concentrations"
+        },
+        {
+          "char_end": 422,
+          "char_start": 387,
+          "entity_id": "e_0062",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "maternal haemorrhagic complications"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0056",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0049",
+          "subject_entity_id": "e_0055",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0057",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0050",
+          "subject_entity_id": "e_0055",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0058",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0051",
+          "subject_entity_id": "e_0055",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0059",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0052",
+          "subject_entity_id": "e_0055",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0060",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0053",
+          "subject_entity_id": "e_0055",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0061",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0054",
+          "subject_entity_id": "e_0055",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0062",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0055",
+          "subject_entity_id": "e_0055",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0042: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [],
+          "deontic_force": "MANDATORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT"
+          ],
+          "notes": "Explicit lexical directive preserved; applicability requires human adjudication.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "contraindicated"
+          ],
+          "target_entity_ids": [
+            "e_0055"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Rivaroxaban\nAnticoagulant\n-\nYes\nYes (data from animals indicate secretion in milk)\nInadequate human data\n• contraindicated\nAnimal data:\n• in rats: embryofoetal toxicity (post-implantation loss, retarded/progressed ossification, and hepatic multiple light-coloured spots), increased incidence of common malformations, and placental changes observed at clinically relevant concentrations; maternal haemorrhagic complications"
+    }
+  ]
+}

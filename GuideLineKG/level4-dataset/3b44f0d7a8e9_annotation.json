@@ -1,0 +1,324 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "MIXED_CONTENT",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_0074e29f31a1f0feb082e0064bee46f60bf6b5ae3f8703d1231341374ed97e52_n0003",
+  "source": {
+    "document_sha256": "0074e29f31a1f0feb082e0064bee46f60bf6b5ae3f8703d1231341374ed97e52",
+    "page_ids": [
+      "0074e29f31a1f0feb082e0064bee46f60bf6b5ae3f8703d1231341374ed97e52_p0008"
+    ],
+    "page_numbers": [
+      8
+    ],
+    "physical_block_ids": [
+      "pb_0074e29f31a1f0feb082e0064bee46f60bf6b5ae3f8703d1231341374ed97e52_p0008_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "**Table 2** Core components of cardiac rehabilitation post acute coronary syndrome and post primary percutaneous coronary intervention."
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review confirms medication-directed normative assertions for prophylactic nitroglycerine and addition of a PCSK9 inhibitor. The table also contains multiple non-medication rehabilitation instructions, so unresolved mixed content prevents table-example readiness.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 27,
+          "char_start": 13,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "nitroglycerine"
+        },
+        {
+          "char_end": 77,
+          "char_start": 44,
+          "entity_id": "e_0002",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "the start of the training session"
+        },
+        {
+          "char_end": 95,
+          "char_start": 81,
+          "entity_id": "e_0003",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.85,
+          "surface_form": "selected cases"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "Exercise training",
+          "Established/agreed issues"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Permission is explicitly limited to selected cases and administration at the start of the training session.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0002"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0003"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [
+            "gr_9000"
+          ],
+          "source_trigger_texts": [
+            "can be taken"
+          ],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_9000",
+          "grade_source_text": "I (B)",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I (B)"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Prophylactic nitroglycerine can be taken at the start of the training session in selected cases"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 6,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ACS"
+        },
+        {
+          "char_end": 27,
+          "char_start": 17,
+          "entity_id": "e_0005",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "LDL-C goal"
+        },
+        {
+          "char_end": 59,
+          "char_start": 50,
+          "entity_id": "e_0006",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "4–6 weeks"
+        },
+        {
+          "char_end": 92,
+          "char_start": 86,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "statin"
+        },
+        {
+          "char_end": 114,
+          "char_start": 105,
+          "entity_id": "e_0008",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ezetimibe"
+        },
+        {
+          "char_end": 145,
+          "char_start": 130,
+          "entity_id": "e_0009",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "PCSK9 inhibitor"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "Lipid management",
+          "Established/agreed issues"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0004",
+            "e_0005",
+            "e_0007",
+            "e_0008"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Addition is conditional on the LDL-C goal remaining unmet after 4–6 weeks despite maximal tolerated statin therapy and ezetimibe following ACS.",
+          "operation": "ADD",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0006"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "addition of a PCSK9 inhibitor is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0009"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "After ACS if the LDL-C goal is not achieved after 4–6 weeks despite maximal tolerated statin therapy and ezetimibe, addition of a PCSK9 inhibitor is recommended"
+    }
+  ]
+}

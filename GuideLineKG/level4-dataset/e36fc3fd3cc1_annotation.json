@@ -1,0 +1,540 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "MIXED_CONTENT",
+      "ENTITY_OTHER_USED",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac_n0042",
+  "source": {
+    "document_sha256": "1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac",
+    "page_ids": [
+      "1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac_p0047"
+    ],
+    "page_numbers": [
+      47
+    ],
+    "physical_block_ids": [
+      "pb_1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac_p0047_g002"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Recommendations for smoking intervention strategies"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review confirms smoking-cessation instructions plus medication-directed options and two separately asserted factual relations. Medication and non-medication actions coexist, requiring mixed-content adjudication.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 22,
+          "char_start": 4,
+          "entity_id": "e_0001",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "smoking of tobacco"
+        },
+        {
+          "char_end": 56,
+          "char_start": 45,
+          "entity_id": "e_0002",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "tobacco use"
+        },
+        {
+          "char_end": 102,
+          "char_start": 97,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "ASCVD"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The source explicitly says tobacco use is causal of ASCVD.",
+          "object_entity_id": "e_0003",
+          "predicate": "CAUSES",
+          "relation_confidence": 1,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The recommendation is to stop all tobacco smoking; the causal clause is separately represented factually.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [
+            "e_0002",
+            "e_0003"
+          ],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "should be stopped"
+          ],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "I",
+          "grading_system_name": "source class-of-recommendation system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "A",
+          "grading_system_name": "source level-of-evidence system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "All smoking of tobacco should be stopped, as tobacco use is strongly and independently causal of ASCVD."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 3,
+          "entity_id": "e_0004",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "smokers"
+        },
+        {
+          "char_end": 38,
+          "char_start": 21,
+          "entity_id": "e_0005",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "follow-up support"
+        },
+        {
+          "char_end": 68,
+          "char_start": 40,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "nicotine replacement therapy"
+        },
+        {
+          "char_end": 81,
+          "char_start": 70,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "varenicline"
+        },
+        {
+          "char_end": 96,
+          "char_start": 87,
+          "entity_id": "e_0008",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "bupropion"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Follow-up support is one coordinated recommended smoking-cessation option.",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0004"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0005"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "The three medication options may be offered individually or in combination.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0004"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0006",
+            "e_0007",
+            "e_0008"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "IIa",
+          "grading_system_name": "source class-of-recommendation system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "IIa"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "A",
+          "grading_system_name": "source level-of-evidence system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "In smokers, offering follow-up support, nicotine replacement therapy, varenicline, and bupropion individually or in combination should be considered."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 17,
+          "char_start": 0,
+          "entity_id": "e_0009",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Smoking cessation"
+        },
+        {
+          "char_end": 58,
+          "char_start": 47,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "weight gain"
+        },
+        {
+          "char_end": 122,
+          "char_start": 95,
+          "entity_id": "e_0011",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "ASCVD benefits of cessation"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "NEGATED",
+          "notes": "The source explicitly states that weight gain does not lessen the benefits.",
+          "object_entity_id": "e_0011",
+          "predicate": "AFFECTS",
+          "relation_confidence": 1,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0010",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0010"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Smoking cessation remains recommended despite possible weight gain.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [
+            "gr_0005",
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "is recommended regardless of"
+          ],
+          "target_entity_ids": [
+            "e_0009"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "I",
+          "grading_system_name": "source class-of-recommendation system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "B",
+          "grading_system_name": "source level-of-evidence system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Smoking cessation is recommended regardless of weight gain, as weight gain does not lessen the ASCVD benefits of cessation."
+    }
+  ]
+}

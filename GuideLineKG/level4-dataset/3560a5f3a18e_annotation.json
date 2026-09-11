@@ -1,0 +1,657 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING",
+      "MIXED_CONTENT"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_n0042",
+  "source": {
+    "document_sha256": "d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712",
+    "page_ids": [
+      "d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_p0044"
+    ],
+    "page_numbers": [
+      44
+    ],
+    "physical_block_ids": [
+      "pb_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_p0044_g002"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "**Recommendation Table 12 — Recommendations for secondary prevention of sudden cardiac death\\***"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review confirms one or more medication-directed normative assertions.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 3,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 16,
+          "char_start": 0,
+          "entity_id": "e_0002",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ICD implantation"
+        },
+        {
+          "char_end": 43,
+          "char_start": 35,
+          "entity_id": "e_0003",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "patients"
+        },
+        {
+          "char_end": 62,
+          "char_start": 60,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "VF"
+        },
+        {
+          "char_end": 99,
+          "char_start": 97,
+          "entity_id": "e_0006",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "VT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0004",
+            "e_0006"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver interpretation preserves the source trigger, target, conditions, and source-native grade; human adjudication remains required.",
+          "operation": "DOCUMENT",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0003"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0001",
+            "e_0002"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC recommendation grading",
+          "grading_system_version": null,
+          "normalization_scheme": "ESC_CLASS_OF_RECOMMENDATION",
+          "normalized_grade": "I",
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "A",
+          "grading_system_name": "ESC recommendation grading",
+          "grading_system_version": null,
+          "normalization_scheme": "ESC_LEVEL_OF_EVIDENCE",
+          "normalized_grade": "A",
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "ICD implantation is recommended in patients with documented VF or haemodynamically not-tolerated VT in the absence of reversible causes. 349–352"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 3,
+          "entity_id": "e_0008",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "patients"
+        },
+        {
+          "char_end": 19,
+          "char_start": 17,
+          "entity_id": "e_0009",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "VT"
+        },
+        {
+          "char_end": 22,
+          "char_start": 20,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "VF"
+        },
+        {
+          "char_end": 45,
+          "char_start": 42,
+          "entity_id": "e_0011",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 85,
+          "char_start": 75,
+          "entity_id": "e_0012",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 97,
+          "char_start": 87,
+          "entity_id": "e_0014",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 127,
+          "char_start": 124,
+          "entity_id": "e_0016",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 220,
+          "char_start": 213,
+          "entity_id": "e_0018",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "patient"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0009",
+            "e_0010"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Agent-silver interpretation preserves the source trigger, target, conditions, and source-native grade; human adjudication remains required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0008",
+            "e_0018"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0011",
+            "e_0012",
+            "e_0014",
+            "e_0016"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "IIb",
+          "grading_system_name": "ESC recommendation grading",
+          "grading_system_version": null,
+          "normalization_scheme": "ESC_CLASS_OF_RECOMMENDATION",
+          "normalized_grade": "IIb",
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "IIb"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC recommendation grading",
+          "grading_system_version": null,
+          "normalization_scheme": "ESC_LEVEL_OF_EVIDENCE",
+          "normalized_grade": "C",
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "In patients with VT/VF, an indication for ICD, and no contraindication for amiodarone, amiodarone may be considered when an ICD is not available, contraindicated for concurrent medical reasons, or declined by the patient."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 3,
+          "entity_id": "e_0019",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "patients"
+        },
+        {
+          "char_end": 21,
+          "char_start": 17,
+          "entity_id": "e_0020",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "SMVT"
+        },
+        {
+          "char_end": 32,
+          "char_start": 30,
+          "entity_id": "e_0022",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "VF"
+        },
+        {
+          "char_end": 51,
+          "char_start": 48,
+          "entity_id": "e_0023",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "PVC"
+        },
+        {
+          "char_end": 101,
+          "char_start": 98,
+          "entity_id": "e_0025",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 120,
+          "char_start": 103,
+          "entity_id": "e_0026",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "catheter ablation"
+        },
+        {
+          "char_end": 150,
+          "char_start": 147,
+          "entity_id": "e_0027",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 243,
+          "char_start": 236,
+          "entity_id": "e_0029",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "patient"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0020",
+            "e_0022",
+            "e_0023"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Agent-silver interpretation preserves the source trigger, target, conditions, and source-native grade; human adjudication remains required.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0019",
+            "e_0029"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0005",
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0025",
+            "e_0026",
+            "e_0027"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "IIb",
+          "grading_system_name": "ESC recommendation grading",
+          "grading_system_version": null,
+          "normalization_scheme": "ESC_CLASS_OF_RECOMMENDATION",
+          "normalized_grade": "IIb",
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "IIb"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "C",
+          "grading_system_name": "ESC recommendation grading",
+          "grading_system_version": null,
+          "normalization_scheme": "ESC_LEVEL_OF_EVIDENCE",
+          "normalized_grade": "C",
+          "notes": "Source-native grade retained without cross-system inference.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "In patients with SMVT or SPVT/VF triggered by a PVC with similar morphology and an indication for ICD, catheter ablation may be considered when an ICD is not available, contraindicated for concurrent medical reasons, or declined by the patient."
+    }
+  ]
+}

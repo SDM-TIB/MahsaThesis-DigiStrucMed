@@ -1,0 +1,632 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac_n0047",
+  "source": {
+    "document_sha256": "1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac",
+    "page_ids": [
+      "1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac_p0052"
+    ],
+    "page_numbers": [
+      52
+    ],
+    "physical_block_ids": [
+      "pb_1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac_p0052_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "![Figure 13: Intensity of lipid-lowering treatment. A chart showing the average LDL-C reduction for various treatment intensities. The chart is titled 'Intensity of lipid-lowering treatment' and lists treatments from 'Moderate-intensity statin' to 'PCSK9 inhibitor plus high-intensity statin plus ezetimibe' with their respective average LDL-C reductions: ≈30%, ≈50%, ≈65%, ≈60%, ≈75%, and ≈85%.](cda2fc98dbfdd6927c1d7b813263d703_3_img.webp)"
+  },
+  "table_assessment": {
+    "assessment_notes": "Isolated two-column table asserting average LDL-C reduction values for medication classes and combination regimens.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 25,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Moderate-intensity statin"
+        },
+        {
+          "char_end": 30,
+          "char_start": 26,
+          "entity_id": "e_0002",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "≈30%"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The table reports this average LDL-C reduction for the treatment or combination regimen.",
+          "object_entity_id": "e_0002",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Treatment",
+          "Average LDL-C reduction"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive treatment-effect row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Moderate-intensity statin\n≈30%"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 21,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "High-intensity statin"
+        },
+        {
+          "char_end": 26,
+          "char_start": 22,
+          "entity_id": "e_0004",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "≈50%"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The table reports this average LDL-C reduction for the treatment or combination regimen.",
+          "object_entity_id": "e_0004",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0003",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Treatment",
+          "Average LDL-C reduction"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive treatment-effect row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0003"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "High-intensity statin\n≈50%"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 36,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "High-intensity statin plus ezetimibe"
+        },
+        {
+          "char_end": 41,
+          "char_start": 37,
+          "entity_id": "e_0006",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "≈65%"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The table reports this average LDL-C reduction for the treatment or combination regimen.",
+          "object_entity_id": "e_0006",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0003",
+          "subject_entity_id": "e_0005",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Treatment",
+          "Average LDL-C reduction"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive treatment-effect row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0005"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "High-intensity statin plus ezetimibe\n≈65%"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 15,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PCSK9 inhibitor"
+        },
+        {
+          "char_end": 20,
+          "char_start": 16,
+          "entity_id": "e_0008",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "≈60%"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The table reports this average LDL-C reduction for the treatment or combination regimen.",
+          "object_entity_id": "e_0008",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0004",
+          "subject_entity_id": "e_0007",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Treatment",
+          "Average LDL-C reduction"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive treatment-effect row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "PCSK9 inhibitor\n≈60%"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 42,
+          "char_start": 0,
+          "entity_id": "e_0009",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PCSK9 inhibitor plus high-intensity statin"
+        },
+        {
+          "char_end": 47,
+          "char_start": 43,
+          "entity_id": "e_0010",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "≈75%"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The table reports this average LDL-C reduction for the treatment or combination regimen.",
+          "object_entity_id": "e_0010",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0005",
+          "subject_entity_id": "e_0009",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Treatment",
+          "Average LDL-C reduction"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive treatment-effect row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0009"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "PCSK9 inhibitor plus high-intensity statin\n≈75%"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 57,
+          "char_start": 0,
+          "entity_id": "e_0011",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PCSK9 inhibitor plus high-intensity statin plus ezetimibe"
+        },
+        {
+          "char_end": 62,
+          "char_start": 58,
+          "entity_id": "e_0012",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "≈85%"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The table reports this average LDL-C reduction for the treatment or combination regimen.",
+          "object_entity_id": "e_0012",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0006",
+          "subject_entity_id": "e_0011",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Treatment",
+          "Average LDL-C reduction"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive treatment-effect row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0011"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "PCSK9 inhibitor plus high-intensity statin plus ezetimibe\n≈85%"
+    }
+  ]
+}

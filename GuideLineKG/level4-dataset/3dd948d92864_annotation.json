@@ -1,0 +1,1405 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01_n0006",
+  "source": {
+    "document_sha256": "94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01",
+    "page_ids": [
+      "94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01_p0015"
+    ],
+    "page_numbers": [
+      15
+    ],
+    "physical_block_ids": [
+      "pb_94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01_p0015_g002"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "**Table 6.** Society Recommendations for Nutrition Support Therapy in Critically Ill and Perioperative Heart Failure Patients"
+  },
+  "table_assessment": {
+    "assessment_notes": "The isolated two-column table contains ten explicit nutrition-support recommendation paragraphs: five for critically ill adults and five for perioperative patients. Each paragraph is separately represented with conditions, timing, dose/quantity parameters, and negative directions where stated.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 37,
+          "char_start": 21,
+          "entity_id": "e_0001",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "nutritional risk"
+        },
+        {
+          "char_end": 83,
+          "char_start": 38,
+          "entity_id": "e_0002",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "on admission to the intensive care unit (ICU)"
+        },
+        {
+          "char_end": 127,
+          "char_start": 104,
+          "entity_id": "e_0003",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "NUTRIC-ICU score \\leq 5"
+        },
+        {
+          "char_end": 180,
+          "char_start": 149,
+          "entity_id": "e_0004",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "energy and protein requirements"
+        },
+        {
+          "char_end": 245,
+          "char_start": 225,
+          "entity_id": "e_0005",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "indirect calorimetry"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Key Recommendations for Nutrition Support Therapy in the Adult Critically Ill Patient"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Routine nutritional-risk screening is directed at ICU admission.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0002"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Routinely screen"
+          ],
+          "target_entity_ids": [
+            "e_0001",
+            "e_0003"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Energy and protein requirements should be calculated, ideally using indirect calorimetry when available.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "calculate",
+            "ideally with the use of indirect calorimetry if available"
+          ],
+          "target_entity_ids": [
+            "e_0004",
+            "e_0005"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Routinely screen for nutritional risk on admission to the intensive care unit (ICU), for example with a NUTRIC-ICU score \\leq 5 , and calculate both energy and protein requirements to determine goals (ideally with the use of indirect calorimetry if available)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 31,
+          "char_start": 9,
+          "entity_id": "e_0006",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "enteral nutrition (EN)"
+        },
+        {
+          "char_end": 63,
+          "char_start": 32,
+          "entity_id": "e_0007",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "within 24–48 h of ICU admission"
+        },
+        {
+          "char_end": 103,
+          "char_start": 84,
+          "entity_id": "e_0008",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "over the first week"
+        },
+        {
+          "char_end": 134,
+          "char_start": 115,
+          "entity_id": "e_0009",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "25–30 kcal/kg daily"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Key Recommendations for Nutrition Support Therapy in the Adult Critically Ill Patient"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Enteral nutrition should begin within 24–48 hours of ICU admission.",
+          "operation": "INITIATE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0007"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Initiate"
+          ],
+          "target_entity_ids": [
+            "e_0006"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Enteral nutrition should be advanced during the first week to the stated daily energy target.",
+          "operation": "TITRATE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0008",
+            "e_0009"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "advance to goal"
+          ],
+          "target_entity_ids": [
+            "e_0006"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Initiate enteral nutrition (EN) within 24–48 h of ICU admission and advance to goal over the first week to provide 25–30 kcal/kg daily"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 24,
+          "char_start": 4,
+          "entity_id": "e_0010",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "standard ICU bundles"
+        },
+        {
+          "char_end": 51,
+          "char_start": 35,
+          "entity_id": "e_0011",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "aspiration risks"
+        },
+        {
+          "char_end": 91,
+          "char_start": 67,
+          "entity_id": "e_0012",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "gastric residual volumes"
+        },
+        {
+          "char_end": 124,
+          "char_start": 113,
+          "entity_id": "e_0013",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "EN delivery"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Key Recommendations for Nutrition Support Therapy in the Adult Critically Ill Patient"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Standard ICU bundles are directed to reduce aspiration risk.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [
+            "e_0011"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Use",
+            "to reduce"
+          ],
+          "target_entity_ids": [
+            "e_0010"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "MANDATORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT"
+          ],
+          "notes": "Explicit prohibition on routine use of gastric residual volumes to monitor enteral-nutrition delivery.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0013"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "do not use"
+          ],
+          "target_entity_ids": [
+            "e_0012"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Use standard ICU bundles to reduce aspiration risks and do not use gastric residual volumes to routinely monitor EN delivery"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 31,
+          "char_start": 6,
+          "entity_id": "e_0014",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "parenteral nutrition (PN)"
+        },
+        {
+          "char_end": 75,
+          "char_start": 43,
+          "entity_id": "e_0015",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "EN is not feasible or sufficient"
+        },
+        {
+          "char_end": 113,
+          "char_start": 79,
+          "entity_id": "e_0016",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "malnourished or high-risk patients"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Key Recommendations for Nutrition Support Therapy in the Adult Critically Ill Patient"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [
+            "e_0015"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Early parenteral nutrition is directed when enteral nutrition is infeasible or insufficient in malnourished/high-risk patients.",
+          "operation": "INITIATE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0016"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Start",
+            "when"
+          ],
+          "target_entity_ids": [
+            "e_0014"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Start parenteral nutrition (PN) early when EN is not feasible or sufficient in malnourished or high-risk patients"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 35,
+          "char_start": 9,
+          "entity_id": "e_0017",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "immune-modulating formulas"
+        },
+        {
+          "char_end": 113,
+          "char_start": 78,
+          "entity_id": "e_0018",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "postoperative patients requiring EN"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "Key Recommendations for Nutrition Support Therapy in the Adult Critically Ill Patient"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Consideration of arginine/fish-oil-containing immune-modulating formulas is directed for postoperative patients requiring EN.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0018"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Consider"
+          ],
+          "target_entity_ids": [
+            "e_0017"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Consider immune-modulating formulas containing both arginine and fish oil for postoperative patients requiring EN"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 63,
+          "char_start": 35,
+          "entity_id": "e_0019",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "routine preoperative fasting"
+        },
+        {
+          "char_end": 106,
+          "char_start": 67,
+          "entity_id": "e_0020",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients at standard risk of aspiration"
+        },
+        {
+          "char_end": 131,
+          "char_start": 125,
+          "entity_id": "e_0021",
+          "entity_type": "FORM",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "solids"
+        },
+        {
+          "char_end": 152,
+          "char_start": 138,
+          "entity_id": "e_0022",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "6 hours before"
+        },
+        {
+          "char_end": 169,
+          "char_start": 157,
+          "entity_id": "e_0023",
+          "entity_type": "FORM",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "clear fluids"
+        },
+        {
+          "char_end": 201,
+          "char_start": 176,
+          "entity_id": "e_0024",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "2 hours before anesthesia"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "Key Recommendations for Nutrition Support Therapy in Perioperative Patients"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT"
+          ],
+          "notes": "Routine fasting is recommended against in standard aspiration risk.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0020"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "recommend against"
+          ],
+          "target_entity_ids": [
+            "e_0019"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "OTHER"
+          ],
+          "notes": "The alternative intake timing for solids and clear fluids is explicitly advised.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0022",
+            "e_0024"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0020"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "instead advising"
+          ],
+          "target_entity_ids": [
+            "e_0021",
+            "e_0023"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "ESPEN guidelines recommend against routine preoperative fasting in patients at standard risk of aspiration, instead advising solids until 6 hours before and clear fluids until 2 hours before anesthesia"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 28,
+          "char_start": 3,
+          "entity_id": "e_0025",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "800-mL carbohydrate drink"
+        },
+        {
+          "char_end": 76,
+          "char_start": 44,
+          "entity_id": "e_0026",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "on the evening before anesthesia"
+        },
+        {
+          "char_end": 88,
+          "char_start": 82,
+          "entity_id": "e_0027",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "400 mL"
+        },
+        {
+          "char_end": 114,
+          "char_start": 89,
+          "entity_id": "e_0028",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "2 hours before anesthesia"
+        },
+        {
+          "char_end": 167,
+          "char_start": 134,
+          "entity_id": "e_0029",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients undergoing major surgery"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "Key Recommendations for Nutrition Support Therapy in Perioperative Patients"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The 800-mL carbohydrate drink is recommended on the evening before anesthesia.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0026"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0029"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0025"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The 400-mL dose is recommended two hours before anesthesia for major surgery.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0028"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0029"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0027"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "An 800-mL carbohydrate drink is recommended on the evening before anesthesia, and 400 mL 2 hours before anesthesia is recommended for patients undergoing major surgery"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 48,
+          "char_start": 0,
+          "entity_id": "e_0030",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Patients with severely elevated nutritional risk"
+        },
+        {
+          "char_end": 83,
+          "char_start": 64,
+          "entity_id": "e_0031",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "nutritional support"
+        },
+        {
+          "char_end": 104,
+          "char_start": 84,
+          "entity_id": "e_0032",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "before major surgery"
+        },
+        {
+          "char_end": 115,
+          "char_start": 109,
+          "entity_id": "e_0033",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "7–14 d"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "Key Recommendations for Nutrition Support Therapy in Perioperative Patients"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0013",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Seven to fourteen days of preoperative nutritional support is recommended even when surgery must be delayed.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0032",
+            "e_0033"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0030"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "should receive",
+            "even if operations have to be delayed"
+          ],
+          "target_entity_ids": [
+            "e_0031"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Patients with severely elevated nutritional risk should receive nutritional support before major surgery for 7–14 d even if operations have to be delayed"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 28,
+          "char_start": 9,
+          "entity_id": "e_0034",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "nutritional support"
+        },
+        {
+          "char_end": 59,
+          "char_start": 32,
+          "entity_id": "e_0035",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "<50% of energy requirements"
+        },
+        {
+          "char_end": 85,
+          "char_start": 72,
+          "entity_id": "e_0036",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "more than 7 d"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "Key Recommendations for Nutrition Support Therapy in Perioperative Patients"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0014",
+          "condition_entity_ids": [
+            "e_0035"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nutritional support is directed when less than half of energy requirements are met for over seven days.",
+          "operation": "INITIATE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0036"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Initiate",
+            "if"
+          ],
+          "target_entity_ids": [
+            "e_0034"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "Initiate nutritional support if <50% of energy requirements are met for more than 7 d"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 35,
+          "char_start": 9,
+          "entity_id": "e_0037",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "immune-modulating formulas"
+        },
+        {
+          "char_end": 137,
+          "char_start": 61,
+          "entity_id": "e_0038",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "malnourished peri- or postoperative patients undergoing major cancer surgery"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "Key Recommendations for Nutrition Support Therapy in Perioperative Patients"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0015",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Consideration of arginine/fish-oil immune-modulating formulas is directed for malnourished peri-/postoperative major-cancer-surgery patients.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0038"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Consider"
+          ],
+          "target_entity_ids": [
+            "e_0037"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "Consider immune-modulating formulas (arginine, fish oil) for malnourished peri- or postoperative patients undergoing major cancer surgery"
+    }
+  ]
+}

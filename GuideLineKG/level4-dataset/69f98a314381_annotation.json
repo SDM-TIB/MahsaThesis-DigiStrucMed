@@ -1,0 +1,400 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "ENTITY_BOUNDARY_REVIEW_REQUIRED",
+      "MIXED_NORMATIVE_AND_FACTUAL_CONTENT",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0038",
+  "source": {
+    "document_sha256": "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b",
+    "page_ids": [
+      "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0058"
+    ],
+    "page_numbers": [
+      58
+    ],
+    "physical_block_ids": [
+      "pb_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0058_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "Hydralazine Vasodilator C Yes Yes (1%) b ● maternal side effects: lupus-like symptoms, foetal tachyarrhythmia ● see also section 10 on hypertensive disorders Animal data: ● teratogenic in mice (20–30× MRHD) and rabbits (10–15× MRHD): cleft palate, malformations of facial and cranial bones ● no teratogenicity in rats | Hydrochlorothiazide Diuretic (thiazide) B Yes Yes; milk production can be reduced Oligohydramnios ● impaired foetal–placental perfusion, foetal and neonatal effects like icterus, disturbance of electrolyte balance, and thrombocytopenia | Iloprost Prostacyclin analogue C Unknown Unknown Inadequate human data ● use only when benefit outweighs risk Animal data:- rats: shortened digits of the thoracic extremity in foetuses and pups at a dosage of 0.01 mg/kg/day in Han-Wistar rats (these alterations are considered to be haemodynamic alterations in the fetoplacental unit and not teratogenic)No such digital anomalies or other gross structural abnormalities in Sprague-Dawley rats or monkeys. In Sprague-Dawley rats, iloprost clathrate (13% iloprost) significantly increased the number of non-viable foetuses at a maternally toxic oral dosage of 250 mg/kg/day, and in Han-Wistar rats it was found to be embryolethal in 15 of 44 litters at an i.v. dosage of 1 mg/kg/day | Indapamide Diuretic (thiazide) B Yes Unknown Inadequate human data ● use only when benefit outweighs risk Animal data: ● no evidence of impaired fertility or foetal harm in rats, mice, or rabbits (6.25× RHD), and unaffected post-natal development in rats and mice | Isosorbide dinitrate Nitrate B Unknown Unknown BradycardiaAnimal data: ● dose-related increase in embryotoxicity (excess mummified pups) in rabbits at 70 mg/kg (12× MRHD) | Isradipine Calcium channel blocker C Yes Unknown Inadequate human data ● potential synergism with magnesium sulfate may induce hypotension Animal data: ● in rats and rabbits, significant reduction in maternal weight gain; no teratogenicity (up to 150× MRHD)"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation of explicit medication entities, administration attributes, indications, outcomes, adverse events, and source-language directives. No terminology identifiers were guessed.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Hydralazine"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0038: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Hydralazine\nVasodilator\nC\nYes\nYes (1%) b\n● maternal side effects: lupus-like symptoms, foetal tachyarrhythmia\n● see also section 10 on hypertensive disorders\nAnimal data:\n● teratogenic in mice (20–30× MRHD) and rabbits (10–15× MRHD): cleft palate, malformations of facial and cranial bones\n● no teratogenicity in rats"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 19,
+          "char_start": 0,
+          "entity_id": "e_0002",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Hydrochlorothiazide"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0038: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "B",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Hydrochlorothiazide\nDiuretic (thiazide)\nB\nYes\nYes; milk production can be reduced\nOligohydramnios\n● impaired foetal–placental perfusion, foetal and neonatal effects like icterus, disturbance of electrolyte balance, and thrombocytopenia"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 8,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Iloprost"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0038: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Iloprost\nProstacyclin analogue\nC\nUnknown\nUnknown\nInadequate human data\n● use only when benefit outweighs risk\nAnimal data:- rats: shortened digits of the thoracic extremity in foetuses and pups at a dosage of 0.01 mg/kg/day in Han-Wistar rats (these alterations are considered to be haemodynamic alterations in the fetoplacental unit and not teratogenic)\nNo such digital anomalies or other gross structural abnormalities in Sprague-Dawley rats or monkeys. In Sprague-Dawley rats, iloprost clathrate (13% iloprost) significantly increased the number of non-viable foetuses at a maternally toxic oral dosage of 250 mg/kg/day, and in Han-Wistar rats it was found to be embryolethal in 15 of 44 litters at an i.v. dosage of 1 mg/kg/day"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Indapamide"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0038: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "B",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Indapamide\nDiuretic (thiazide)\nB\nYes\nUnknown\nInadequate human data\n● use only when benefit outweighs risk\nAnimal data:\n● no evidence of impaired fertility or foetal harm in rats, mice, or rabbits (6.25× RHD), and unaffected post-natal development in rats and mice"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Isosorbide dinitrate"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0038: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "B",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Isosorbide dinitrate\nNitrate\nB\nUnknown\nUnknown\nBradycardia\nAnimal data:\n● dose-related increase in embryotoxicity (excess mummified pups) in rabbits at 70 mg/kg (12× MRHD)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Isradipine"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0038: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Isradipine\nCalcium channel blocker\nC\nYes\nUnknown\nInadequate human data\n● potential synergism with magnesium sulfate may induce hypotension\nAnimal data:\n● in rats and rabbits, significant reduction in maternal weight gain; no teratogenicity (up to 150× MRHD)"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_5e23f3626c72f5543147dd190725499e8f7d5b2007877737ada2943d4e13be79_n0001",
+  "source": {
+    "document_sha256": "5e23f3626c72f5543147dd190725499e8f7d5b2007877737ada2943d4e13be79",
+    "page_ids": [
+      "5e23f3626c72f5543147dd190725499e8f7d5b2007877737ada2943d4e13be79_p0003"
+    ],
+    "page_numbers": [
+      3
+    ],
+    "physical_block_ids": [
+      "pb_5e23f3626c72f5543147dd190725499e8f7d5b2007877737ada2943d4e13be79_p0003_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "**Table 1** Studies of the natural history of ventricular arrhythmias in chronic heart failure: some examples"
+  },
+  "table_assessment": {
+    "assessment_notes": "The Packer SCD-HeFT row visibly reports a 2.4% incidence of VT-related death on amiodarone; this is a descriptive medication fact, not a recommendation.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 110,
+          "char_start": 100,
+          "entity_id": "e_9000",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 68,
+          "char_start": 52,
+          "entity_id": "e_9001",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "VT-related death"
+        },
+        {
+          "char_end": 96,
+          "char_start": 92,
+          "entity_id": "e_9002",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "2.4%"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Visible outcome associated with amiodarone.",
+          "object_entity_id": "e_9001",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_9000",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Visible incidence value for the amiodarone group.",
+          "object_entity_id": "e_9002",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_9000",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 1 Studies of the natural history of ventricular arrhythmias in chronic heart failure: some examples",
+          "Studies of ventricular tachyarrhythmias in HF-rEF"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive trial follow-up row; no recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_9000"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Packer et al.59\nSCD-HeFT trial FU\n2521\nIncidence of VT-related death 1.2% in the ICD group, 2.4% on amiodarone, and 3.0% on placebo"
+    }
+  ]
+}

@@ -1,0 +1,2802 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING",
+      "MIXED_CONTENT",
+      "OTHER_OPERATION",
+      "ENTITY_BOUNDARY_REQUIRES_HUMAN_REVIEW",
+      "PREDICATE_STRUCTURE_REQUIRES_HUMAN_REVIEW"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_n0021",
+  "source": {
+    "document_sha256": "d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712",
+    "page_ids": [
+      "d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_p0013"
+    ],
+    "page_numbers": [
+      13
+    ],
+    "physical_block_ids": [
+      "pb_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_p0013_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERPi in the presence of a family history of unexplained juvenile SD. IIb Clinical evaluation is not recommended routinely in asymptomatic subjects with ERP. III ICD implantation is not recommended in asymptomatic patients with an isolated ERP. III CPVT Genetic testing and genetic counselling are indicated in patients with clinical suspicion or clinical diagnosis of CPVT. I Beta-blockers, ideal"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation records 18 assertion-bearing table cells. Mixed, duplicate, temporal, inherited-header, and source-style semantics are flagged explicitly and require human adjudication.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ICD implantation"
+        },
+        {
+          "char_end": 3,
+          "char_start": 0,
+          "entity_id": "e_0002",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 29,
+          "char_start": 20,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "quinidine"
+        },
+        {
+          "char_end": 107,
+          "char_start": 104,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ERP"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0004"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0001"
+          ],
+          "source_trigger_texts": [
+            "implantation"
+          ],
+          "target_entity_ids": [
+            "e_0001",
+            "e_0002"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0004"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0001"
+          ],
+          "source_trigger_texts": [
+            "may"
+          ],
+          "target_entity_ids": [
+            "e_0003"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "IIb",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIb"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 19,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Clinical evaluation"
+        },
+        {
+          "char_end": 82,
+          "char_start": 79,
+          "entity_id": "e_0006",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ERP"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0006"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "evaluation"
+          ],
+          "target_entity_ids": [
+            "e_0005",
+            "e_0006"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "III",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "III"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Clinical evaluation is not recommended routinely in asymptomatic subjects with ERP."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ICD implantation"
+        },
+        {
+          "char_end": 3,
+          "char_start": 0,
+          "entity_id": "e_0008",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 81,
+          "char_start": 52,
+          "entity_id": "e_0009",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with an isolated ERP"
+        },
+        {
+          "char_end": 81,
+          "char_start": 78,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ERP"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0010"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0009"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0003"
+          ],
+          "source_trigger_texts": [
+            "implantation"
+          ],
+          "target_entity_ids": [
+            "e_0007",
+            "e_0008"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "III",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "III"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "ICD implantation is not recommended in asymptomatic patients with an isolated ERP."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 15,
+          "char_start": 0,
+          "entity_id": "e_0011",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Genetic testing"
+        },
+        {
+          "char_end": 39,
+          "char_start": 20,
+          "entity_id": "e_0012",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "genetic counselling"
+        },
+        {
+          "char_end": 119,
+          "char_start": 57,
+          "entity_id": "e_0013",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with clinical suspicion or clinical diagnosis of CPVT"
+        },
+        {
+          "char_end": 119,
+          "char_start": 115,
+          "entity_id": "e_0014",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "CPVT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "CPVT",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [
+            "e_0014"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0013"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "testing"
+          ],
+          "target_entity_ids": [
+            "e_0011",
+            "e_0012",
+            "e_0014"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [
+            "e_0014"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0013"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "counselling"
+          ],
+          "target_entity_ids": [
+            "e_0011",
+            "e_0012"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Genetic testing and genetic counselling are indicated in patients with clinical suspicion or clinical diagnosis of CPVT."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0015",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Beta-blockers"
+        },
+        {
+          "char_end": 45,
+          "char_start": 38,
+          "entity_id": "e_0016",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "nadolol"
+        },
+        {
+          "char_end": 60,
+          "char_start": 49,
+          "entity_id": "e_0017",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "propranolol"
+        },
+        {
+          "char_end": 127,
+          "char_start": 81,
+          "entity_id": "e_0018",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "all patients with a clinical diagnosis of CPVT"
+        },
+        {
+          "char_end": 127,
+          "char_start": 123,
+          "entity_id": "e_0019",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "CPVT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "CPVT",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [
+            "e_0019"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0018"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0005"
+          ],
+          "source_trigger_texts": [
+            "diagnosis"
+          ],
+          "target_entity_ids": [
+            "e_0019"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [
+            "e_0019"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0018"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0005"
+          ],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0015",
+            "e_0016",
+            "e_0017"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Beta-blockers, ideally non-selective (nadolol or propranolol) are recommended in all patients with a clinical diagnosis of CPVT."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0020",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Epinephrine"
+        },
+        {
+          "char_end": 28,
+          "char_start": 15,
+          "entity_id": "e_0021",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "isoproterenol"
+        },
+        {
+          "char_end": 82,
+          "char_start": 78,
+          "entity_id": "e_0022",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "CPVT"
+        },
+        {
+          "char_end": 99,
+          "char_start": 91,
+          "entity_id": "e_0023",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "exercise"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "CPVT",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [
+            "e_0022"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "diagnosis"
+          ],
+          "target_entity_ids": [
+            "e_0022",
+            "e_0023"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [
+            "e_0022"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "exercise"
+          ],
+          "target_entity_ids": [
+            "e_0023"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [
+            "e_0022"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "may"
+          ],
+          "target_entity_ids": [
+            "e_0020",
+            "e_0021"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "IIb",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIb"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Epinephrine or isoproterenol challenge may be considered for the diagnosis of CPVT when an exercise test is not possible."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 15,
+          "char_start": 0,
+          "entity_id": "e_0024",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Genetic testing"
+        },
+        {
+          "char_end": 60,
+          "char_start": 32,
+          "entity_id": "e_0025",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients diagnosed with SQTS"
+        },
+        {
+          "char_end": 60,
+          "char_start": 56,
+          "entity_id": "e_0026",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SQTS"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Short QT syndrome",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 9,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [
+            "e_0026"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0025"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0007"
+          ],
+          "source_trigger_texts": [
+            "testing"
+          ],
+          "target_entity_ids": [
+            "e_0024",
+            "e_0026"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0007",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        }
+      ],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Genetic testing is indicated in patients diagnosed with SQTS."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 4,
+          "char_start": 0,
+          "entity_id": "e_0027",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SQTS"
+        },
+        {
+          "char_end": 4,
+          "char_start": 0,
+          "entity_id": "e_0028",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "SQTS"
+        },
+        {
+          "char_end": 62,
+          "char_start": 51,
+          "entity_id": "e_0029",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "\\leq 320 ms"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Short QT syndrome",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0013",
+          "condition_entity_ids": [
+            "e_0027"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0029"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.82,
+          "source_grade_record_ids": [
+            "gr_0008"
+          ],
+          "source_trigger_texts": [
+            "should"
+          ],
+          "target_entity_ids": [
+            "e_0028"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0008",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIa"
+        }
+      ],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "SQTS should be considered in the presence of a QTc \\leq 320 ms."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 4,
+          "char_start": 0,
+          "entity_id": "e_0030",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SQTS"
+        },
+        {
+          "char_end": 4,
+          "char_start": 0,
+          "entity_id": "e_0031",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "SQTS"
+        },
+        {
+          "char_end": 62,
+          "char_start": 51,
+          "entity_id": "e_0032",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "\\geq 320 ms"
+        },
+        {
+          "char_end": 78,
+          "char_start": 67,
+          "entity_id": "e_0033",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "\\leq 360 ms"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Short QT syndrome",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 11,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0014",
+          "condition_entity_ids": [
+            "e_0030"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0032",
+            "e_0033"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.82,
+          "source_grade_record_ids": [
+            "gr_0009"
+          ],
+          "source_trigger_texts": [
+            "should"
+          ],
+          "target_entity_ids": [
+            "e_0031"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0009",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIa"
+        }
+      ],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "SQTS should be considered in the presence of a QTc \\geq 320 ms and \\leq 360 ms and arrhythmic syncope."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 3,
+          "char_start": 0,
+          "entity_id": "e_0034",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ILR"
+        },
+        {
+          "char_end": 38,
+          "char_start": 34,
+          "entity_id": "e_0035",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SQTS"
+        },
+        {
+          "char_end": 47,
+          "char_start": 39,
+          "entity_id": "e_0036",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Short QT syndrome",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 12,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0015",
+          "condition_entity_ids": [
+            "e_0035"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0036"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0010"
+          ],
+          "source_trigger_texts": [
+            "should"
+          ],
+          "target_entity_ids": [
+            "e_0034"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0010",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIa"
+        }
+      ],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "ILR should be considered in young SQTS patients."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 0,
+          "entity_id": "e_0037",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ICD implantation"
+        },
+        {
+          "char_end": 3,
+          "char_start": 0,
+          "entity_id": "e_0038",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 45,
+          "char_start": 41,
+          "entity_id": "e_0039",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SQTS"
+        },
+        {
+          "char_end": 78,
+          "char_start": 46,
+          "entity_id": "e_0040",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with arrhythmic syncope"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Short QT syndrome",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 13,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0016",
+          "condition_entity_ids": [
+            "e_0039"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0040"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0011"
+          ],
+          "source_trigger_texts": [
+            "implantation"
+          ],
+          "target_entity_ids": [
+            "e_0037",
+            "e_0038"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0011",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIa"
+        }
+      ],
+      "text_unit_id": "tu_0011",
+      "verbatim_text": "ICD implantation should be considered in SQTS patients with arrhythmic syncope."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 4,
+          "char_start": 0,
+          "entity_id": "e_0041",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SQTS"
+        },
+        {
+          "char_end": 4,
+          "char_start": 0,
+          "entity_id": "e_0042",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "SQTS"
+        },
+        {
+          "char_end": 59,
+          "char_start": 48,
+          "entity_id": "e_0043",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "\\geq 320 ms"
+        },
+        {
+          "char_end": 75,
+          "char_start": 64,
+          "entity_id": "e_0044",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "\\leq 360 ms"
+        },
+        {
+          "char_end": 115,
+          "char_start": 110,
+          "entity_id": "e_0045",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "< 40 "
+        },
+        {
+          "char_end": 120,
+          "char_start": 112,
+          "entity_id": "e_0046",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "40 years"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Short QT syndrome",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 14,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0017",
+          "condition_entity_ids": [
+            "e_0041"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0043",
+            "e_0044",
+            "e_0045",
+            "e_0046"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.82,
+          "source_grade_record_ids": [
+            "gr_0012"
+          ],
+          "source_trigger_texts": [
+            "may"
+          ],
+          "target_entity_ids": [
+            "e_0042"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0012",
+          "grade_source_text": "IIb",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIb"
+        }
+      ],
+      "text_unit_id": "tu_0012",
+      "verbatim_text": "SQTS may be considered in the presence of a QTc \\geq 320 ms and \\leq 360 ms and a family history of SD at age < 40 years."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0047",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Quinidine"
+        },
+        {
+          "char_end": 39,
+          "char_start": 35,
+          "entity_id": "e_0048",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SQTS"
+        },
+        {
+          "char_end": 126,
+          "char_start": 40,
+          "entity_id": "e_0049",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients who qualify for an ICD but present a contraindication to the ICD or refuse it"
+        },
+        {
+          "char_end": 71,
+          "char_start": 68,
+          "entity_id": "e_0050",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 113,
+          "char_start": 110,
+          "entity_id": "e_0051",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 153,
+          "char_start": 149,
+          "entity_id": "e_0052",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SQTS"
+        },
+        {
+          "char_end": 162,
+          "char_start": 154,
+          "entity_id": "e_0053",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients"
+        },
+        {
+          "char_end": 190,
+          "char_start": 187,
+          "entity_id": "e_0054",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SCD"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Short QT syndrome",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 15,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0018",
+          "condition_entity_ids": [
+            "e_0048",
+            "e_0052",
+            "e_0054"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [
+            "e_0048",
+            "e_0052",
+            "e_0054"
+          ],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0049",
+            "e_0053"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0013"
+          ],
+          "source_trigger_texts": [
+            "may"
+          ],
+          "target_entity_ids": [
+            "e_0047"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0019",
+          "condition_entity_ids": [
+            "e_0048",
+            "e_0052",
+            "e_0054"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [
+            "e_0048",
+            "e_0052",
+            "e_0054"
+          ],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0049",
+            "e_0053"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0013"
+          ],
+          "source_trigger_texts": [
+            "may"
+          ],
+          "target_entity_ids": [
+            "e_0050",
+            "e_0051"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0013",
+          "grade_source_text": "IIb",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIb"
+        }
+      ],
+      "text_unit_id": "tu_0013",
+      "verbatim_text": "Quinidine may be considered in (a) SQTS patients who qualify for an ICD but present a contraindication to the ICD or refuse it, and (b) asymptomatic SQTS patients and a family history of SCD."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0055",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Isoproterenol"
+        },
+        {
+          "char_end": 39,
+          "char_start": 35,
+          "entity_id": "e_0056",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SQTS"
+        },
+        {
+          "char_end": 73,
+          "char_start": 40,
+          "entity_id": "e_0057",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.92,
+          "surface_form": "patients with an electrical storm"
+        },
+        {
+          "char_end": 73,
+          "char_start": 57,
+          "entity_id": "e_0058",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "electrical storm"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Short QT syndrome",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 16,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0020",
+          "condition_entity_ids": [
+            "e_0056",
+            "e_0058"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0057"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0014"
+          ],
+          "source_trigger_texts": [
+            "may"
+          ],
+          "target_entity_ids": [
+            "e_0055"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0014",
+          "grade_source_text": "IIb",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIb"
+        }
+      ],
+      "text_unit_id": "tu_0014",
+      "verbatim_text": "Isoproterenol may be considered in SQTS patients with an electrical storm."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 91,
+          "char_start": 88,
+          "entity_id": "e_0059",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SCD"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Selected populations",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 18,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0021",
+          "condition_entity_ids": [
+            "e_0059"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0015"
+          ],
+          "source_trigger_texts": [
+            "diagnosed"
+          ],
+          "target_entity_ids": [
+            "e_0059"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0015",
+          "grade_source_text": "I",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "I"
+        }
+      ],
+      "text_unit_id": "tu_0015",
+      "verbatim_text": "It is recommended that athletes diagnosed with a cardiovascular disease associated with SCD are managed according to current guidelines for sports eligibility."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 29,
+          "char_start": 16,
+          "entity_id": "e_0060",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "beta-blockers"
+        },
+        {
+          "char_end": 67,
+          "char_start": 51,
+          "entity_id": "e_0061",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "during pregnancy"
+        },
+        {
+          "char_end": 86,
+          "char_start": 82,
+          "entity_id": "e_0062",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "ARVC"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Selected populations",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 19,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0022",
+          "condition_entity_ids": [
+            "e_0062"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0061"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0016"
+          ],
+          "source_trigger_texts": [
+            "should"
+          ],
+          "target_entity_ids": [
+            "e_0060"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0016",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIa"
+        }
+      ],
+      "text_unit_id": "tu_0016",
+      "verbatim_text": "Continuation of beta-blockers should be considered during pregnancy in women with ARVC."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 15,
+          "char_start": 5,
+          "entity_id": "e_0063",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "metoprolol"
+        },
+        {
+          "char_end": 28,
+          "char_start": 17,
+          "entity_id": "e_0064",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "propranolol"
+        },
+        {
+          "char_end": 42,
+          "char_start": 33,
+          "entity_id": "e_0065",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "verapamil"
+        },
+        {
+          "char_end": 115,
+          "char_start": 113,
+          "entity_id": "e_0066",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "VT"
+        },
+        {
+          "char_end": 132,
+          "char_start": 116,
+          "entity_id": "e_0067",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "during pregnancy"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Selected populations",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 20,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0023",
+          "condition_entity_ids": [
+            "e_0066"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0067"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0017"
+          ],
+          "source_trigger_texts": [
+            "should"
+          ],
+          "target_entity_ids": [
+            "e_0063",
+            "e_0064",
+            "e_0065"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0017",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIa"
+        }
+      ],
+      "text_unit_id": "tu_0017",
+      "verbatim_text": "Oral metoprolol, propranolol, or verapamil should be considered for long-term management of idiopathic sustained VT during pregnancy."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 17,
+          "char_start": 0,
+          "entity_id": "e_0068",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "Catheter ablation"
+        },
+        {
+          "char_end": 164,
+          "char_start": 160,
+          "entity_id": "e_0069",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "SMVT"
+        },
+        {
+          "char_end": 205,
+          "char_start": 201,
+          "entity_id": "e_0070",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "AADs"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Selected populations",
+          "ICD implantation or quinidine may be considered in asymptomatic individuals who demonstrate a high-risk ERP i in the presence of a family history of unexplained juvenile SD."
+        ],
+        "row_index": 21,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0024",
+          "condition_entity_ids": [
+            "e_0069"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0018"
+          ],
+          "source_trigger_texts": [
+            "Catheter"
+          ],
+          "target_entity_ids": [
+            "e_0068"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0025",
+          "condition_entity_ids": [
+            "e_0069"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Source-style or compound-cell semantics require human adjudication.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [
+            "gr_0018"
+          ],
+          "source_trigger_texts": [
+            "should"
+          ],
+          "target_entity_ids": [
+            "e_0070"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0018",
+          "grade_source_text": "IIa",
+          "grading_system_name": "ESC Class of Recommendation",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "IIa"
+        }
+      ],
+      "text_unit_id": "tu_0018",
+      "verbatim_text": "Catheter ablation using non-fluoroscopic mapping systems should be considered, preferably after the first trimester, in women with highly symptomatic recurrent SMVT refractory or who are intolerant to AADs."
+    }
+  ]
+}

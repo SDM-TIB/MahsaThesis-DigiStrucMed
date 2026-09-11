@@ -1,0 +1,610 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "terminology_linking_pending",
+      "source_style_inherited_targets"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba_n0079",
+  "source": {
+    "document_sha256": "768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba",
+    "page_ids": [
+      "768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba_p0062"
+    ],
+    "page_numbers": [
+      62
+    ],
+    "physical_block_ids": [
+      "pb_768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba_p0062_g002"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Table 13. Frequency of follow-up for routine pacemaker and cardiac resynchronization therapy, either in person alone or combined with remote device management CRT-P = cardiac resynchronization therapy-pacemaker; HBP = His bundle pacing. aRemote follow-up can only replace in-office visits if automatic capture threshold algorithms perform accurately (and are previously verified in-office). Note: additional in-office follow-up may be required (e.g. to verify the clinical effect of modification of programming, or for follow-up a technical issue). Remote monitoring (i.e. of pre-defined alerts) should be implemented in all instances along with remote follow-ups."
+  },
+  "table_assessment": {
+    "assessment_notes": "Isolated structured follow-up schedule with six assertion-bearing mode-by-device cells; row and column headers supply the inherited device and follow-up-mode targets.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Within 72 h"
+        },
+        {
+          "char_end": 45,
+          "char_start": 16,
+          "entity_id": "e_0002",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "2–12 weeks after implantation"
+        },
+        {
+          "char_end": 45,
+          "char_start": 33,
+          "entity_id": "e_0003",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "implantation"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "All devices",
+          "In-office only"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The all-device and in-office-only target is inherited from the row and column headers.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0001",
+            "e_0002",
+            "e_0003"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Within",
+            "after implantation"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Within 72 h and 2–12 weeks after implantation"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 21,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "In-office within 72 h"
+        },
+        {
+          "char_end": 55,
+          "char_start": 26,
+          "entity_id": "e_0005",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "2–12 weeks after implantation"
+        },
+        {
+          "char_end": 55,
+          "char_start": 43,
+          "entity_id": "e_0006",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "implantation"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "All devices",
+          "In-office + remote"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The all-device and combined in-office/remote target is inherited from the headers.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0004",
+            "e_0005",
+            "e_0006"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "In-office within",
+            "after implantation"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "In-office within 72 h and 2–12 weeks after implantation"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 14,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Every 6 months"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "CRT-P or HBP",
+          "In-office only"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "CRT-P/HBP and in-office-only follow-up are inherited from the headers.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0007"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Every"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Every 6 months"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 21,
+          "char_start": 0,
+          "entity_id": "e_0008",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Remote every 6 months"
+        },
+        {
+          "char_end": 51,
+          "char_start": 26,
+          "entity_id": "e_0009",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "in-office every 12 months"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "CRT-P or HBP",
+          "In-office + remote"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "CRT-P/HBP and combined follow-up are inherited from headers; the terminal 'a' is the visible footnote marker.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0008",
+            "e_0009"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "every"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Remote every 6 months and in-office every 12 monthsa"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 15,
+          "char_start": 0,
+          "entity_id": "e_0010",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Every 12 months"
+        },
+        {
+          "char_end": 37,
+          "char_start": 21,
+          "entity_id": "e_0011",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "every 3–6 months"
+        },
+        {
+          "char_end": 67,
+          "char_start": 41,
+          "entity_id": "e_0012",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "signs of battery depletion"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Single/dual-chamber",
+          "In-office only"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [
+            "e_0012"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Single/dual-chamber and in-office-only follow-up are inherited from headers; frequency increases when battery-depletion signs occur.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0010",
+            "e_0011"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Every",
+            "then",
+            "at signs of"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Every 12 months then every 3–6 months at signs of battery depletion"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 21,
+          "char_start": 0,
+          "entity_id": "e_0013",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Remote every 6 months"
+        },
+        {
+          "char_end": 54,
+          "char_start": 26,
+          "entity_id": "e_0014",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "in-office every 18–24 months"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Single/dual-chamber",
+          "In-office + remote"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Single/dual-chamber and combined follow-up are inherited from headers; the terminal 'a' is the visible footnote marker.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0013",
+            "e_0014"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "every"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Remote every 6 months and in-office every 18–24 monthsa"
+    }
+  ]
+}

@@ -1,0 +1,2487 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "NONISOLATED_PAGE_TARGET",
+      "TABLE_RECONSTRUCTION_REQUIRED",
+      "SOURCE_STYLE_INHERITED_MONITORING",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "su_verified_e5f20076152902f9b102f37b1a83cdc79baea0d42000f6c76a83acfae0e39670_table_4",
+  "source": {
+    "document_sha256": "e5f20076152902f9b102f37b1a83cdc79baea0d42000f6c76a83acfae0e39670",
+    "page_ids": [
+      "e5f20076152902f9b102f37b1a83cdc79baea0d42000f6c76a83acfae0e39670_p0007"
+    ],
+    "page_numbers": [
+      7
+    ],
+    "physical_block_ids": [],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Content for CIED in person or remote monitoring"
+  },
+  "table_assessment": {
+    "assessment_notes": "Non-isolated page payload containing narrative before and after selected Table 4. Five section-level monitoring schedules and all 31 listed monitoring parameters are annotated with null row/cell locators pending target isolation and reconstruction.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 90,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Pacemaker or ICD required parameters: in person or remote monitoring: 3–6 months suggested"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker or ICD required parameters: in person or remote monitoring: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Section heading explicitly supplies device/modality scope and suggested monitoring interval.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0001"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "suggested"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Pacemaker or ICD required parameters: in person or remote monitoring: 3–6 months suggested"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 37,
+          "char_start": 0,
+          "entity_id": "e_0002",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Battery voltage and battery impedance"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker or ICD required parameters: in person or remote monitoring: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0002"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Battery voltage and battery impedance"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 28,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Magnet rate (for pacemakers)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker or ICD required parameters: in person or remote monitoring: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0003"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Magnet rate (for pacemakers)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 22,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Charge time (for ICDs)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker or ICD required parameters: in person or remote monitoring: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Charge time (for ICDs)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 56,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Update current rhythm diagnosis and pacemaker dependency"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker or ICD required parameters: in person or remote monitoring: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0005"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Update current rhythm diagnosis and pacemaker dependency"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 58,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Section heading explicitly supplies device/modality scope and suggested monitoring interval.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0006"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "suggested"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 31,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Battery voltage (and impedance)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Battery voltage (and impedance)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0008",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Magnet rate"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0008"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Magnet rate"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 81,
+          "char_start": 0,
+          "entity_id": "e_0009",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Pacing and sensing threshold(s) for atrium, right and left ventricles (all leads)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0009"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "Pacing and sensing threshold(s) for atrium, right and left ventricles (all leads)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 38,
+          "char_start": 0,
+          "entity_id": "e_0010",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Pacing lead impedance(s) for all leads"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0010"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "Pacing lead impedance(s) for all leads"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 90,
+          "char_start": 0,
+          "entity_id": "e_0011",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Arrhythmias detected by device (e.g., mode switches, high ventricular rate episodes, etc.)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0011"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0011",
+      "verbatim_text": "Arrhythmias detected by device (e.g., mode switches, high ventricular rate episodes, etc.)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 35,
+          "char_start": 0,
+          "entity_id": "e_0012",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "% of pacing/sensing in each chamber"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0012"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0012",
+      "verbatim_text": "% of pacing/sensing in each chamber"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 31,
+          "char_start": 0,
+          "entity_id": "e_0013",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Review of programmed parameters"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0013",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0013"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0013",
+      "verbatim_text": "Review of programmed parameters"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 49,
+          "char_start": 0,
+          "entity_id": "e_0014",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Review of any \"safety\" or automatic device alerts"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0014",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0014"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0014",
+      "verbatim_text": "Review of any \"safety\" or automatic device alerts"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 151,
+          "char_start": 0,
+          "entity_id": "e_0015",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Review of hemodynamic measurements or recordings of any other programmed parameters (e.g., heart rate variability, activity level, etc.) when available"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Pacemaker/CRT-P in person follow-up: 6–12 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0015",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0015"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0015",
+      "verbatim_text": "Review of hemodynamic measurements or recordings of any other programmed parameters (e.g., heart rate variability, activity level, etc.) when available"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 51,
+          "char_start": 0,
+          "entity_id": "e_0016",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0016",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Section heading explicitly supplies device/modality scope and suggested monitoring interval.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0016"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "suggested"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0016",
+      "verbatim_text": "ICD/CRT-D in person follow-up: 3–6 months suggested"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 31,
+          "char_start": 0,
+          "entity_id": "e_0017",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Battery voltage (and impedance)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0017",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0017"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0017",
+      "verbatim_text": "Battery voltage (and impedance)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 21,
+          "char_start": 0,
+          "entity_id": "e_0018",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Capacitor charge time"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0018",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0018"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0018",
+      "verbatim_text": "Capacitor charge time"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 81,
+          "char_start": 0,
+          "entity_id": "e_0019",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Pacing and sensing threshold(s) for atrium, right and left ventricles (all leads)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0019",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0019"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0019",
+      "verbatim_text": "Pacing and sensing threshold(s) for atrium, right and left ventricles (all leads)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 38,
+          "char_start": 0,
+          "entity_id": "e_0020",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Pacing lead impedance(s) for all leads"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0020",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0020"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0020",
+      "verbatim_text": "Pacing lead impedance(s) for all leads"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 44,
+          "char_start": 0,
+          "entity_id": "e_0021",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Shocking impedances for defibrillation leads"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0021",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0021"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0021",
+      "verbatim_text": "Shocking impedances for defibrillation leads"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 30,
+          "char_start": 0,
+          "entity_id": "e_0022",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Arrhythmias detected by device"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0022",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0022"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0022",
+      "verbatim_text": "Arrhythmias detected by device"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 35,
+          "char_start": 0,
+          "entity_id": "e_0023",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "% of pacing/sensing in each chamber"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0023",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0023"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0023",
+      "verbatim_text": "% of pacing/sensing in each chamber"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 47,
+          "char_start": 0,
+          "entity_id": "e_0024",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Therapies required for termination of SVT/VT/VF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0024",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0024"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0024",
+      "verbatim_text": "Therapies required for termination of SVT/VT/VF"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 36,
+          "char_start": 0,
+          "entity_id": "e_0025",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Review of main programmed parameters"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0025",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0025"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0025",
+      "verbatim_text": "Review of main programmed parameters"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 37,
+          "char_start": 0,
+          "entity_id": "e_0026",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Review of any device triggered alerts"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0026",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0026"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0026",
+      "verbatim_text": "Review of any device triggered alerts"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 49,
+          "char_start": 0,
+          "entity_id": "e_0027",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Review of hemodynamic measurements when available"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "ICD/CRT-D in person follow-up: 3–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0027",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0027"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0027",
+      "verbatim_text": "Review of hemodynamic measurements when available"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 78,
+          "char_start": 0,
+          "entity_id": "e_0028",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Implantable loop recorder in person or remote monitoring: 1–6 months suggested"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Implantable loop recorder in person or remote monitoring: 1–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0028",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Section heading explicitly supplies device/modality scope and suggested monitoring interval.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0028"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "suggested"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0028",
+      "verbatim_text": "Implantable loop recorder in person or remote monitoring: 1–6 months suggested"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 27,
+          "char_start": 0,
+          "entity_id": "e_0029",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Integrity of sensing system"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Implantable loop recorder in person or remote monitoring: 1–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0029",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0029"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0029",
+      "verbatim_text": "Integrity of sensing system"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 34,
+          "char_start": 0,
+          "entity_id": "e_0030",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Arrhythmias (symptomatic) recorded"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Implantable loop recorder in person or remote monitoring: 1–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0030",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0030"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0030",
+      "verbatim_text": "Arrhythmias (symptomatic) recorded"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 33,
+          "char_start": 0,
+          "entity_id": "e_0031",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Arrhythmias (asymptomatic) stored"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Implantable loop recorder in person or remote monitoring: 1–6 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0031",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0031"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0031",
+      "verbatim_text": "Arrhythmias (asymptomatic) stored"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 89,
+          "char_start": 0,
+          "entity_id": "e_0032",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "Implantable hemodynamic monitor in person or remote monitoring: 1 week–3 months suggested"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Implantable hemodynamic monitor in person or remote monitoring: 1 week–3 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0032",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Section heading explicitly supplies device/modality scope and suggested monitoring interval.",
+          "operation": "SCHEDULE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0032"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "suggested"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0032",
+      "verbatim_text": "Implantable hemodynamic monitor in person or remote monitoring: 1 week–3 months suggested"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 0,
+          "entity_id": "e_0033",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Battery function"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Implantable hemodynamic monitor in person or remote monitoring: 1 week–3 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0033",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0033"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0033",
+      "verbatim_text": "Battery function"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 17,
+          "char_start": 0,
+          "entity_id": "e_0034",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Integrity of lead"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Implantable hemodynamic monitor in person or remote monitoring: 1 week–3 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0034",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0034"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0034",
+      "verbatim_text": "Integrity of lead"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 55,
+          "char_start": 0,
+          "entity_id": "e_0035",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Hemodynamic measurements of variable(s) being monitored"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Implantable hemodynamic monitor in person or remote monitoring: 1 week–3 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0035",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0035"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0035",
+      "verbatim_text": "Hemodynamic measurements of variable(s) being monitored"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 0,
+          "entity_id": "e_0036",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Arrhythmias detected"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 4",
+          "Content for CIED in person or remote monitoring",
+          "Implantable hemodynamic monitor in person or remote monitoring: 1 week–3 months suggested"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0036",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Nominal parameter inherits the monitoring operation, device scope, modality, and interval from the selected table and section heading.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Content for CIED in person or remote monitoring"
+          ],
+          "target_entity_ids": [
+            "e_0036"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0036",
+      "verbatim_text": "Arrhythmias detected"
+    }
+  ]
+}

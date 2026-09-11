@@ -1,0 +1,218 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_n0089",
+  "source": {
+    "document_sha256": "d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712",
+    "page_ids": [
+      "d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_p0094"
+    ],
+    "page_numbers": [
+      94
+    ],
+    "physical_block_ids": [
+      "pb_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_p0094_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Recommendation Table 50 — Recommendations for implantable cardioverter defibrillator implantation in the elderly"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review confirms one isolated permissive recommendation against ICD implantation for primary prevention under the stated no-expected-benefit condition.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 19,
+          "char_start": 3,
+          "entity_id": "e_0001",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "elderly patients"
+        },
+        {
+          "char_end": 76,
+          "char_start": 30,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "benefit from the defibrillator is not expected"
+        },
+        {
+          "char_end": 119,
+          "char_start": 88,
+          "entity_id": "e_0003",
+          "entity_type": "RATIONALE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patient's age and comorbidities"
+        },
+        {
+          "char_end": 149,
+          "char_start": 133,
+          "entity_id": "e_0004",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "ICD implantation"
+        },
+        {
+          "char_end": 172,
+          "char_start": 154,
+          "entity_id": "e_0005",
+          "entity_type": "RATIONALE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "primary prevention"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations",
+          "Classa",
+          "Levelb"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0002"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN",
+            "CONSIDER",
+            "AVOID_DO_NOT"
+          ],
+          "notes": "Direction is against performing ICD implantation because the source explicitly recommends considering omission; the recommendation is not represented as discontinuation.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [
+            "e_0003",
+            "e_0005"
+          ],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "omission of",
+            "may be considered",
+            "due to"
+          ],
+          "target_entity_ids": [
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "IIb",
+          "grading_system_name": "Source class-of-recommendation system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Verbatim Class cell; no normalization inferred.",
+          "raw_grade": "IIb"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "B",
+          "grading_system_name": "Source level-of-evidence system",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Verbatim Level cell; no normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "In elderly patients in whom a benefit from the defibrillator is not expected due to the patient's age and comorbidities, omission of ICD implantation for primary prevention may be considered."
+    }
+  ]
+}

@@ -1,0 +1,771 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "NONISOLATED_PAGE_TARGET",
+      "TABLE_RECONSTRUCTION_REQUIRED",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "su_verified_1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac_table_14",
+  "source": {
+    "document_sha256": "1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac",
+    "page_ids": [
+      "1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac_p0057"
+    ],
+    "page_numbers": [
+      57
+    ],
+    "physical_block_ids": [],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Considerations in blood pressure measurement"
+  },
+  "table_assessment": {
+    "assessment_notes": "Non-isolated page payload containing surrounding hypertension text and Tables 12–14. The ten exact prose instructions under the selected Table 14 target are annotated with null row/cell locators pending reconstruction and isolation.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 94,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Patients should be seated comfortably in a quiet environment for 5 min before BP measurements."
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 14",
+          "Considerations in blood pressure measurement"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "should be seated"
+          ],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Patients should be seated comfortably in a quiet environment for 5 min before BP measurements."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 189,
+          "char_start": 0,
+          "entity_id": "e_0002",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Three BP measurements should be recorded, 1–2 min apart, and additional measurements if the first two readings differ by >10 mmHg. BP is recorded as the average of the last two BP readings."
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 14",
+          "Considerations in blood pressure measurement"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "DOCUMENT",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "should be recorded"
+          ],
+          "target_entity_ids": [
+            "e_0002"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Three BP measurements should be recorded, 1–2 min apart, and additional measurements if the first two readings differ by >10 mmHg. BP is recorded as the average of the last two BP readings."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 260,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Additional measurements may have to be performed in patients with unstable BP values due to arrhythmias, such as in patients with AF, in whom manual auscultatory methods should be used as most automated devices have not been validated for BP measurement in AF."
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 14",
+          "Considerations in blood pressure measurement"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "may have to be performed",
+            "should be used"
+          ],
+          "target_entity_ids": [
+            "e_0003"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "may have to be performed",
+            "should be used"
+          ],
+          "target_entity_ids": [
+            "e_0003"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Additional measurements may have to be performed in patients with unstable BP values due to arrhythmias, such as in patients with AF, in whom manual auscultatory methods should be used as most automated devices have not been validated for BP measurement in AF."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 207,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Use a standard bladder cuff (12–13 cm wide and 35 cm long) for most patients, but use larger and smaller cuffs for larger (arm circumference >32 cm) and smaller (arm circumference <26 cm) arms, respectively."
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 14",
+          "Considerations in blood pressure measurement"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Use"
+          ],
+          "target_entity_ids": [
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Use a standard bladder cuff (12–13 cm wide and 35 cm long) for most patients, but use larger and smaller cuffs for larger (arm circumference >32 cm) and smaller (arm circumference <26 cm) arms, respectively."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 166,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "The cuff should be positioned at the level of the heart with the back and arm supported, to avoid muscle contraction and isometric-exercise-dependant increases in BP."
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 14",
+          "Considerations in blood pressure measurement"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "should be positioned"
+          ],
+          "target_entity_ids": [
+            "e_0005"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "The cuff should be positioned at the level of the heart with the back and arm supported, to avoid muscle contraction and isometric-exercise-dependant increases in BP."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 139,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "When using auscultatory methods, use phase I and V (sudden reduction/disappearance) Korotkoff sounds to identify SBP and DBP, respectively."
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 14",
+          "Considerations in blood pressure measurement"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "use"
+          ],
+          "target_entity_ids": [
+            "e_0006"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "When using auscultatory methods, use phase I and V (sudden reduction/disappearance) Korotkoff sounds to identify SBP and DBP, respectively."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 138,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Measure BP in both arms at the first visit to detect possible between-arm differences. Use the arm with the higher value as the reference."
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 14",
+          "Considerations in blood pressure measurement"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Measure",
+            "Use"
+          ],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Measure BP in both arms at the first visit to detect possible between-arm differences. Use the arm with the higher value as the reference."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 143,
+          "char_start": 0,
+          "entity_id": "e_0008",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Measure BP 1 min and 3 min after standing from the seated position in all patients at the first measurement to exclude orthostatic hypotension."
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 14",
+          "Considerations in blood pressure measurement"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Measure"
+          ],
+          "target_entity_ids": [
+            "e_0008"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Measure BP 1 min and 3 min after standing from the seated position in all patients at the first measurement to exclude orthostatic hypotension."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 333,
+          "char_start": 0,
+          "entity_id": "e_0009",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Lying and standing BP measurements should also be considered in subsequent visits in older people, in people with DM, and in other conditions in which orthostatic hypotension may frequently occur. Initial orthostatic hypotension may occur <1 min after standing and may be difficult to detect with conventional measurement techniques."
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 14",
+          "Considerations in blood pressure measurement"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "should also be considered"
+          ],
+          "target_entity_ids": [
+            "e_0009"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "Lying and standing BP measurements should also be considered in subsequent visits in older people, in people with DM, and in other conditions in which orthostatic hypotension may frequently occur. Initial orthostatic hypotension may occur <1 min after standing and may be difficult to detect with conventional measurement techniques."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 64,
+          "char_start": 0,
+          "entity_id": "e_0010",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Record heart rate and use pulse palpation to exclude arrhythmia."
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table 14",
+          "Considerations in blood pressure measurement"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "DOCUMENT",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Record",
+            "use"
+          ],
+          "target_entity_ids": [
+            "e_0010"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Exact Table 14 instruction; conditions and measurement parameters remain verbatim in the broad procedural span.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Record",
+            "use"
+          ],
+          "target_entity_ids": [
+            "e_0010"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "Record heart rate and use pulse palpation to exclude arrhythmia."
+    }
+  ]
+}

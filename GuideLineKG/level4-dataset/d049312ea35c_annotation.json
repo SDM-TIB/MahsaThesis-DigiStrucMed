@@ -1,0 +1,796 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "ENTITY_BOUNDARY_REVIEW_REQUIRED",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01_n0005",
+  "source": {
+    "document_sha256": "94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01",
+    "page_ids": [
+      "94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01_p0015"
+    ],
+    "page_numbers": [
+      15
+    ],
+    "physical_block_ids": [
+      "pb_94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01_p0015_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "**Table 5.** Appetite Simulants and Their Suitability in Heart Failure (HF)"
+  },
+  "table_assessment": {
+    "assessment_notes": "Visual QC reconstructed each medication/adverse-effect row and preserved the visible suitability and discontinuation modalities.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 68,
+          "char_start": 57,
+          "entity_id": "e_9000",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Mirtazapine"
+        },
+        {
+          "char_end": 43,
+          "char_start": 41,
+          "entity_id": "e_9001",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 56,
+          "char_start": 48,
+          "entity_id": "e_9002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "anorexia"
+        },
+        {
+          "char_end": 107,
+          "char_start": 99,
+          "entity_id": "e_9003",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "15–30 mg"
+        },
+        {
+          "char_end": 277,
+          "char_start": 119,
+          "entity_id": "e_9004",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Drowsiness (54%), dry mouth (25%), constipation (13%), asthenia (8%), dizziness (7%), flu syndrome, (5%) nausea (1.5%), edema (1%), rare QT prolongation (<1%)"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Visible dose range.",
+          "object_entity_id": "e_9003",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_9000",
+          "subject_entity_id": "e_9000",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Visible adverse-effects cell.",
+          "object_entity_id": "e_9004",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_9001",
+          "subject_entity_id": "e_9000",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 5. Appetite Simulants and Their Suitability in Heart Failure (HF)",
+          "May be appropriate in some patients with HF and anorexia"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_9000",
+          "condition_entity_ids": [
+            "e_9001",
+            "e_9002"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Visual-source QC correction based only on directly visible wording.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "May be appropriate"
+          ],
+          "target_entity_ids": [
+            "e_9000"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "May be appropriate in some patients with HF and anorexia\nMirtazapine† (off-label use)\nOral tablet, 15–30 mg at bedtime\nDrowsiness (54%), dry mouth (25%), constipation (13%), asthenia (8%), dizziness (7%), flu syndrome, (5%) nausea (1.5%), edema (1%), rare QT prolongation (<1%)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 17,
+          "char_start": 0,
+          "entity_id": "e_9005",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Megestrol acetate"
+        },
+        {
+          "char_end": 90,
+          "char_start": 80,
+          "entity_id": "e_9006",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "160–800 mg"
+        },
+        {
+          "char_end": 196,
+          "char_start": 97,
+          "entity_id": "e_9007",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Hypertension (4%–8%), thromboembolic events (1%–3%), volume retention (1%–3%), palpitations (1%–3%)"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Visible dose range.",
+          "object_entity_id": "e_9006",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_9002",
+          "subject_entity_id": "e_9005",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Visible adverse-effects cell.",
+          "object_entity_id": "e_9007",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_9003",
+          "subject_entity_id": "e_9005",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          3,
+          4
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Table 5. Appetite Simulants and Their Suitability in Heart Failure (HF)",
+          "May be appropriate in some patients with HF and anorexia"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_9001",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Visual-source QC correction based only on directly visible wording.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "May be appropriate"
+          ],
+          "target_entity_ids": [
+            "e_9005"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Megestrol acetate‡ (off-label use, approved for AIDS cachexia)\nOral suspension, 160–800 mg daily\nHypertension (4%–8%), thromboembolic events (1%–3%), volume retention (1%–3%), palpitations (1%–3%)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_9008",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Dronabinol"
+        },
+        {
+          "char_end": 123,
+          "char_start": 115,
+          "entity_id": "e_9009",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "2.5–5 mg"
+        },
+        {
+          "char_end": 264,
+          "char_start": 128,
+          "entity_id": "e_9010",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Drowsiness (3%–10%), tachycardia (>1%), hypotension (<1%), orthostatic hypotension (<1%), confusion (>1%), lower seizure threshold (<1%)"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Visible dose range.",
+          "object_entity_id": "e_9009",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_9004",
+          "subject_entity_id": "e_9008",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Visible adverse-effects cell.",
+          "object_entity_id": "e_9010",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_9005",
+          "subject_entity_id": "e_9008",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          3,
+          4
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Table 5. Appetite Simulants and Their Suitability in Heart Failure (HF)",
+          "May be appropriate in some patients with HF and anorexia"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_9002",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Visual-source QC correction based only on directly visible wording.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "May be appropriate"
+          ],
+          "target_entity_ids": [
+            "e_9008"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Dronabinol§ (off-label use, approved for AIDS cachexia and nausea/vomiting in chemotherapy patients)\nOral capsule, 2.5–5 mg bid\nDrowsiness (3%–10%), tachycardia (>1%), hypotension (<1%), orthostatic hypotension (<1%), confusion (>1%), lower seizure threshold (<1%)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 55,
+          "char_start": 46,
+          "entity_id": "e_9011",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Fish oils"
+        },
+        {
+          "char_end": 32,
+          "char_start": 30,
+          "entity_id": "e_9012",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "HF"
+        },
+        {
+          "char_end": 45,
+          "char_start": 37,
+          "entity_id": "e_9013",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "anorexia"
+        },
+        {
+          "char_end": 93,
+          "char_start": 88,
+          "entity_id": "e_9014",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "1–4 g"
+        },
+        {
+          "char_end": 148,
+          "char_start": 100,
+          "entity_id": "e_9015",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Diarrhea (7%–15%), nausea (4%–6%), belching (3%)"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Visible dose range.",
+          "object_entity_id": "e_9014",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_9006",
+          "subject_entity_id": "e_9011",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Visible adverse-effects cell.",
+          "object_entity_id": "e_9015",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_9007",
+          "subject_entity_id": "e_9011",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 5. Appetite Simulants and Their Suitability in Heart Failure (HF)",
+          "Consider in all patients with HF and anorexia"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_9003",
+          "condition_entity_ids": [
+            "e_9012",
+            "e_9013"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "The source heading explicitly says 'Consider in all patients with HF and anorexia'.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Consider"
+          ],
+          "target_entity_ids": [
+            "e_9011"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Consider in all patients with HF and anorexia\nFish oils|| (off-label use)\nOral capsule, 1–4 g daily\nDiarrhea (7%–15%), nausea (4%–6%), belching (3%)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 78,
+          "char_start": 71,
+          "entity_id": "e_9016",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "digoxin"
+        },
+        {
+          "char_end": 90,
+          "char_start": 80,
+          "entity_id": "e_9017",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "amiodarone"
+        },
+        {
+          "char_end": 102,
+          "char_start": 92,
+          "entity_id": "e_9018",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "mexilitine"
+        },
+        {
+          "char_end": 134,
+          "char_start": 109,
+          "entity_id": "e_9019",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "oral diabetes medications"
+        },
+        {
+          "char_end": 156,
+          "char_start": 139,
+          "entity_id": "e_9020",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "antihypertensives"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Table 5. Appetite Simulants and Their Suitability in Heart Failure (HF)",
+          "Consider in all patients with HF and anorexia"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_9004",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Visual-source QC correction based only on directly visible wording.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Where possible, discontinuation"
+          ],
+          "target_entity_ids": [
+            "e_9016",
+            "e_9017",
+            "e_9018",
+            "e_9019",
+            "e_9020"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Where possible, discontinuation of anorexigenic medications, including digoxin, amiodarone, mexilitine, some oral diabetes medications and antihypertensives"
+    }
+  ]
+}

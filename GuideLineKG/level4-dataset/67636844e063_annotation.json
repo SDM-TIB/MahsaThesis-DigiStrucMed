@@ -1,0 +1,792 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING",
+      "OTHER_OPERATION"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_58f849907b52e99bd23af800f8d763a8229c9f259761916e6f9cd2caf9fafd1d_n0042",
+  "source": {
+    "document_sha256": "58f849907b52e99bd23af800f8d763a8229c9f259761916e6f9cd2caf9fafd1d",
+    "page_ids": [
+      "58f849907b52e99bd23af800f8d763a8229c9f259761916e6f9cd2caf9fafd1d_p0045"
+    ],
+    "page_numbers": [
+      45
+    ],
+    "physical_block_ids": [
+      "pb_58f849907b52e99bd23af800f8d763a8229c9f259761916e6f9cd2caf9fafd1d_p0045_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "References that support the recommendations are summarized in **Online Data Supplement 30**."
+  },
+  "table_assessment": {
+    "assessment_notes": "The three isolated rows contain clinical screening, genetic counseling/testing, cardiac MRI, and ICD recommendations. The ICD row recommends a device without explicitly naming implantation, so its operation remains pilot-only OTHER_OPERATION pending human review.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 102,
+          "char_start": 6,
+          "entity_id": "e_0001",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "selected first-degree relatives of patients with arrhythmogenic right ventricular cardiomyopathy"
+        },
+        {
+          "char_end": 102,
+          "char_start": 55,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "arrhythmogenic right ventricular cardiomyopathy"
+        },
+        {
+          "char_end": 138,
+          "char_start": 104,
+          "entity_id": "e_0003",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "clinical screening for the disease"
+        },
+        {
+          "char_end": 183,
+          "char_start": 165,
+          "entity_id": "e_0004",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "genetic counseling"
+        },
+        {
+          "char_end": 203,
+          "char_start": 188,
+          "entity_id": "e_0005",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "genetic testing"
+        },
+        {
+          "char_end": 250,
+          "char_start": 212,
+          "entity_id": "e_0006",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "proband has a disease causing mutation"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "RECOMMENDATIONS",
+          "COR",
+          "LOE"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0002",
+            "e_0006"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Clinical screening is recommended for the stated relatives when the proband mutation condition holds.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "clinical screening for the disease is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0003"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0002",
+            "e_0006"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Counseling is a coordinated recommended action.",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "is recommended along with genetic counseling"
+          ],
+          "target_entity_ids": [
+            "e_0004"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0002",
+            "e_0006"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Genetic testing is represented separately from counseling and screening.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "is recommended along with genetic counseling and genetic testing"
+          ],
+          "target_entity_ids": [
+            "e_0005"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "I",
+          "grading_system_name": "COR",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact source-native COR value.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "B-NR",
+          "grading_system_name": "LOE",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact source-native LOE value.",
+          "raw_grade": "B-NR"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "1. In selected first-degree relatives of patients with arrhythmogenic right ventricular cardiomyopathy, clinical screening for the disease is recommended along with genetic counseling and genetic testing, if the proband has a disease causing mutation (S7.3-1–S7.3-4)."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 122,
+          "char_start": 6,
+          "entity_id": "e_0007",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with suspected arrhythmogenic right ventricular cardiomyopathy and VA or electrocardiographic abnormalities"
+        },
+        {
+          "char_end": 77,
+          "char_start": 20,
+          "entity_id": "e_0008",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "suspected arrhythmogenic right ventricular cardiomyopathy"
+        },
+        {
+          "char_end": 84,
+          "char_start": 82,
+          "entity_id": "e_0009",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "VA"
+        },
+        {
+          "char_end": 122,
+          "char_start": 88,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "electrocardiographic abnormalities"
+        },
+        {
+          "char_end": 135,
+          "char_start": 124,
+          "entity_id": "e_0011",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "cardiac MRI"
+        },
+        {
+          "char_end": 174,
+          "char_start": 165,
+          "entity_id": "e_0012",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "diagnosis"
+        },
+        {
+          "char_end": 202,
+          "char_start": 183,
+          "entity_id": "e_0013",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "risk stratification"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "RECOMMENDATIONS",
+          "COR",
+          "LOE"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0008",
+            "e_0009",
+            "e_0010"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The displayed imaging test is recommended for both diagnosis and risk stratification.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [
+            "e_0012"
+          ],
+          "parameter_entity_ids": [
+            "e_0013"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0007"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "is useful for establishing a diagnosis and for risk stratification"
+          ],
+          "target_entity_ids": [
+            "e_0011"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "I",
+          "grading_system_name": "COR",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact source-native COR value.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "B-NR",
+          "grading_system_name": "LOE",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact source-native LOE value.",
+          "raw_grade": "B-NR"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "2. In patients with suspected arrhythmogenic right ventricular cardiomyopathy and VA or electrocardiographic abnormalities, cardiac MRI is useful for establishing a diagnosis and for risk stratification (S7.3-5–S7.3-8)."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 117,
+          "char_start": 6,
+          "entity_id": "e_0014",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with arrhythmogenic right ventricular cardiomyopathy and an additional marker of increased risk of SCD"
+        },
+        {
+          "char_end": 67,
+          "char_start": 20,
+          "entity_id": "e_0015",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "arrhythmogenic right ventricular cardiomyopathy"
+        },
+        {
+          "char_end": 117,
+          "char_start": 96,
+          "entity_id": "e_0016",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "increased risk of SCD"
+        },
+        {
+          "char_end": 135,
+          "char_start": 119,
+          "entity_id": "e_0017",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "resuscitated SCA"
+        },
+        {
+          "char_end": 149,
+          "char_start": 137,
+          "entity_id": "e_0018",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "sustained VT"
+        },
+        {
+          "char_end": 186,
+          "char_start": 151,
+          "entity_id": "e_0019",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "significant ventricular dysfunction"
+        },
+        {
+          "char_end": 209,
+          "char_start": 192,
+          "entity_id": "e_0020",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "RVEF or LVEF ≤35%"
+        },
+        {
+          "char_end": 218,
+          "char_start": 215,
+          "entity_id": "e_0021",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 276,
+          "char_start": 237,
+          "entity_id": "e_0022",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "meaningful survival greater than 1 year"
+        },
+        {
+          "char_end": 276,
+          "char_start": 257,
+          "entity_id": "e_0023",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "greater than 1 year"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "RECOMMENDATIONS",
+          "COR",
+          "LOE"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [
+            "e_0015",
+            "e_0017",
+            "e_0018",
+            "e_0019"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The source recommends the ICD device but does not explicitly state implantation or another allowed operation; OTHER_OPERATION avoids inventing that action.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [
+            "e_0016",
+            "e_0022"
+          ],
+          "parameter_entity_ids": [
+            "e_0020",
+            "e_0023"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0014"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0005",
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "an ICD is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0021"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "I",
+          "grading_system_name": "COR",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact source-native COR value.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "B-NR",
+          "grading_system_name": "LOE",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact source-native LOE value.",
+          "raw_grade": "B-NR"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "3. In patients with arrhythmogenic right ventricular cardiomyopathy and an additional marker of increased risk of SCD (resuscitated SCA, sustained VT, significant ventricular dysfunction with RVEF or LVEF ≤35%), an ICD is recommended if meaningful survival greater than 1 year is expected (S7.3-9–S7.3-13)."
+    }
+  ]
+}

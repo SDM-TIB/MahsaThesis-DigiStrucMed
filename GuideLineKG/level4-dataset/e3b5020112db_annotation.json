@@ -1,0 +1,421 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "CORRECTED_SEMANTIC_CLASS",
+      "MIXED_CONTENT",
+      "OCR_ROW_ALIGNMENT_UNCERTAIN",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0031",
+  "source": {
+    "document_sha256": "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b",
+    "page_ids": [
+      "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0051"
+    ],
+    "page_numbers": [
+      51
+    ],
+    "physical_block_ids": [
+      "pb_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0051_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "Abciximab Monoclonal antibody with antiplatelet effects C Unknown Unknown Inadequate human studies • use only if potential benefit outweighs potential risk Animal data: • no animal reproduction studies | ACE inhibitors a ACE inhibitor D Yes Yes b (maximum of 1.6%) Contraindicated • renal or tubular dysplasia, oligohydramnios, growth retardation, ossification disorders of skull, lung hypoplasia, contractures, large joints, anaemia, intrauterine foetal death | Acenocoumarol Vitamin K antagonist D Yes Yes (no adverse effects reported) Embryopathy (mainly first trimester), bleeding (see discussion in section 5) | Acetylsalicylic acid (low dose) Antiplatelet drug B Yes Well tolerated No teratogenic effects • there is insufficient clinical experience regarding the use of doses between 100–500 mg/day | Adenosine c Antiarrhythmic C No No No foetal adverse effects reported (limited human data) | Alirocumab Lipid-lowering drug (monoclonal antibody) - Yes Unknown No human data: not recommended Animal data: • no adverse effects on foetal growth or development in rats and monkeys • maternal toxicity in rats • weaker secondary response to antigen challenge in the offspring of monkeys | Aliskiren Renin inhibitor D Unknown Yes (secreted in rat milk) No use in first trimester; contraindicated in second and third trimesters • see other RAAS blockers Animal data: • no evidence of embryofoetal toxicity or teratogenicity at doses ≤600 mg/kg/day in rats or 100 mg/kg/day in rabbits • fertility, pre-natal development, and post-natal development were unaffected in rats at doses ≤250 mg/kg/day. The doses in rats and rabbits provided systemic exposures of 1–4× and 5× MRHD"
+  },
+  "table_assessment": {
+    "assessment_notes": "The table is primarily descriptive safety information, but several rows contain explicit directive fragments such as 'Contraindicated', 'not recommended', or trimester-specific non-use instructions. Some adjacent rows appear cross-contaminated, so only clear directive fragments are retained.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Abciximab"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 7 Drugs and safety data",
+          "Abciximab",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Abciximab\nMonoclonal antibody with antiplatelet effects\nC\nUnknown\nUnknown\nInadequate human studies\n• use only if potential benefit outweighs potential risk\nAnimal data:\n• no animal reproduction studies"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 14,
+          "char_start": 0,
+          "entity_id": "e_0002",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ACE inhibitors"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 7 Drugs and safety data",
+          "ACE inhibitors",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "D",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "D"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "ACE inhibitors a\nACE inhibitor\nD\nYes\nYes b (maximum of 1.6%)\nContraindicated\n• renal or tubular dysplasia, oligohydramnios, growth retardation, ossification disorders of skull, lung hypoplasia, contractures, large joints, anaemia, intrauterine foetal death"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Acenocoumarol"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 7 Drugs and safety data",
+          "Acenocoumarol",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "D",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "D"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Acenocoumarol\nVitamin K antagonist\nD\nYes\nYes (no adverse effects reported)\nEmbryopathy (mainly first trimester), bleeding (see discussion in section 5)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 31,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Acetylsalicylic acid (low dose)"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 7 Drugs and safety data",
+          "Acetylsalicylic acid (low dose)",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "B",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Acetylsalicylic acid (low dose)\nAntiplatelet drug\nB\nYes\nWell tolerated\nNo teratogenic effects\n• there is insufficient clinical experience regarding the use of doses between 100–500 mg/day"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Adenosine"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 7 Drugs and safety data",
+          "Adenosine",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Adenosine c\nAntiarrhythmic\nC\nNo\nNo\nNo foetal adverse effects reported (limited human data)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Alirocumab"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 7 Drugs and safety data",
+          "Alirocumab",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Alirocumab\nLipid-lowering drug (monoclonal antibody)\n-\nYes\nUnknown\nNo human data: not recommended\nAnimal data:\n• no adverse effects on foetal growth or development in rats and monkeys\n• maternal toxicity in rats\n• weaker secondary response to antigen challenge in the offspring of monkeys"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Aliskiren"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 7 Drugs and safety data",
+          "Aliskiren",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0007",
+          "grade_source_text": "D",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "D"
+        }
+      ],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Aliskiren\nRenin inhibitor\nD\nUnknown\nYes (secreted in rat milk)\nNo use in first trimester; contraindicated in second and third trimesters\n• see other RAAS blockers\nAnimal data:\n• no evidence of embryofoetal toxicity or teratogenicity at doses ≤600 mg/kg/day in rats or 100 mg/kg/day in rabbits\n• fertility, pre-natal development, and post-natal development were unaffected in rats at doses ≤250 mg/kg/day. The doses in rats and rabbits provided systemic exposures of 1–4× and 5× MRHD"
+    }
+  ]
+}

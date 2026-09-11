@@ -1,0 +1,1913 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "MIXED_CONTENT",
+      "SOURCE_STYLE_MODALITY",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01_n0002",
+  "source": {
+    "document_sha256": "94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01",
+    "page_ids": [
+      "94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01_p0005",
+      "94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01_p0006"
+    ],
+    "page_numbers": [
+      5,
+      6
+    ],
+    "physical_block_ids": [
+      "pb_94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01_p0005_g001",
+      "pb_94c1ad49868f6541828541d0dbd53ab18e6779a1e11d420fa2164ab6120c5d01_p0006_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "**Table 2.** Suggestions for HF Clinicians When Screening for Nutritional Inadequacies and Deficiencies"
+  },
+  "table_assessment": {
+    "assessment_notes": "The two-part structured table mixes clinician-facing assessment suggestions and one explicit recommendation against vitamin-D screening with descriptive signs, thresholds, tool properties, and biomarker associations. Assertion-bearing cells are retained separately, but row-level modality is mixed and therefore not immediately evaluation-ready.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 38,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Medical history and disease chronicity"
+        },
+        {
+          "char_end": 82,
+          "char_start": 70,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "malnutrition"
+        },
+        {
+          "char_end": 99,
+          "char_start": 87,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "inflammation"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The source uses 'can indicate'; no causal claim is made.",
+          "object_entity_id": "e_0002",
+          "predicate": "ASSOCIATED_WITH",
+          "relation_confidence": 0.95,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The source uses 'can indicate'; no causal claim is made.",
+          "object_entity_id": "e_0003",
+          "predicate": "ASSOCIATED_WITH",
+          "relation_confidence": 0.95,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "History",
+          "Metrics"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Medical history and disease chronicity can indicate the likelihood of malnutrition and inflammation"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 30,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Identify malabsorption history"
+        },
+        {
+          "char_end": 65,
+          "char_start": 32,
+          "entity_id": "e_0005",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "previous gastrointestinal surgery"
+        },
+        {
+          "char_end": 140,
+          "char_start": 115,
+          "entity_id": "e_0006",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "gastrointestinal symptoms"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "History",
+          "Tools and Resources"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0005",
+            "e_0006"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The table is explicitly framed as clinician suggestions, and this cell gives an imperative history-assessment action followed by examples.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Identify"
+          ],
+          "target_entity_ids": [
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Identify malabsorption history: previous gastrointestinal surgery, including bariatric surgery or bowel resection, gastrointestinal symptoms, including ageusia (loss of taste), dysgeusia (distorted taste), or anorexia (loss of appetite), nausea, vomiting, diarrhea, constipation, dysphagia; dental health; history of aspiration events; history of diabetes and gastroparesis; medication history, including allergies, herbs, and supplements; social history, including food insecurity due to finances, assistance required with activities of daily living (shopping, cooking, eating), ethnic or social dietary preferences, substance abuse"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 50,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Wasting of subcutaneous fat and/or skeletal muscle"
+        },
+        {
+          "char_end": 105,
+          "char_start": 52,
+          "entity_id": "e_0008",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "physical signs specific to micronutrient deficiencies"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Physical examination",
+          "Metrics"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive metric list rather than a deontic instruction.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0007",
+            "e_0008"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Wasting of subcutaneous fat and/or skeletal muscle; physical signs specific to micronutrient deficiencies"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 263,
+          "char_start": 240,
+          "entity_id": "e_0009",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Muehrcke lines in nails"
+        },
+        {
+          "char_end": 287,
+          "char_start": 272,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "hypoalbuminemia"
+        },
+        {
+          "char_end": 297,
+          "char_start": 289,
+          "entity_id": "e_0011",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "alopecia"
+        },
+        {
+          "char_end": 332,
+          "char_start": 314,
+          "entity_id": "e_0012",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "protein deficiency"
+        },
+        {
+          "char_end": 354,
+          "char_start": 338,
+          "entity_id": "e_0013",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "scaling of scalp"
+        },
+        {
+          "char_end": 391,
+          "char_start": 360,
+          "entity_id": "e_0014",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "essential fatty acid deficiency"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The source says the nail lines suggest hypoalbuminemia; association, not causality, is recorded.",
+          "object_entity_id": "e_0010",
+          "predicate": "ASSOCIATED_WITH",
+          "relation_confidence": 0.97,
+          "relation_id": "fr_0003",
+          "subject_entity_id": "e_0009",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Explicitly stated association.",
+          "object_entity_id": "e_0012",
+          "predicate": "ASSOCIATED_WITH",
+          "relation_confidence": 1.0,
+          "relation_id": "fr_0004",
+          "subject_entity_id": "e_0011",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Explicitly stated association.",
+          "object_entity_id": "e_0014",
+          "predicate": "ASSOCIATED_WITH",
+          "relation_confidence": 1.0,
+          "relation_id": "fr_0005",
+          "subject_entity_id": "e_0013",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 4,
+        "header_path": [
+          "Physical examination",
+          "Macronutrients"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Cachexia: loss of subcutaneous fat in orbital, triceps regions and overlying the ribs; cachexia/sarcopenia: loss of temporalis, pectoralis, deltoids, interosseous muscles, latissimus dorsi, trapezius, quadriceps, gastrocnemius muscle mass; Muehrcke lines in nails suggest hypoalbuminemia, alopecia associated with protein deficiency, and scaling of scalp with essential fatty acid deficiency"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 28,
+          "char_start": 0,
+          "entity_id": "e_0015",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Nail, hair, and skin changes"
+        },
+        {
+          "char_end": 103,
+          "char_start": 47,
+          "entity_id": "e_0016",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "vitamins A, B (any), C, or K, zinc, or iron deficiencies"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The source states that the changes are characteristic of the listed deficiencies.",
+          "object_entity_id": "e_0016",
+          "predicate": "ASSOCIATED_WITH",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0006",
+          "subject_entity_id": "e_0015",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 5,
+        "header_path": [
+          "Physical examination",
+          "Micronutrients"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Nail, hair, and skin changes characteristic of vitamins A, B (any), C, or K, zinc, or iron deficiencies"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 15,
+          "char_start": 0,
+          "entity_id": "e_0017",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Body mass index"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Anthropometric data",
+          "Metrics"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive anthropometric metric and formula.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0017"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Body mass index (kg/m 2 )"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 130,
+          "char_start": 82,
+          "entity_id": "e_0019",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "use dry weight for patients with volume overload"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Anthropometric data",
+          "Tools and Resources"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Clinician-facing imperative in a suggestions table.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "use dry weight"
+          ],
+          "target_entity_ids": [
+            "e_0019"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Calculator: https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm —use dry weight for patients with volume overload"
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 4,
+        "header_path": [
+          "Anthropometric data",
+          "Macronutrients"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_9002",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive source statement in the anthropometric BMI row.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_9002",
+      "verbatim_text": "May reflect inadequate or excessive calorie intake"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 24,
+          "char_start": 0,
+          "entity_id": "e_0018",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Percentage weight change"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Anthropometric data",
+          "Metrics"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_9000",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive anthropometric metric and formula.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0018"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_9000",
+      "verbatim_text": "Percentage weight change: ((usual weight – current weight)/usual weight) × 100"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 170,
+          "char_start": 73,
+          "entity_id": "e_0020",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "review with patient to determine if weight loss is unintentional and whether diuresis contributed"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Anthropometric data",
+          "Tools and Resources"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The clinician is directed to adjudicate whether weight loss was unintentional and whether diuresis contributed.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "review with patient"
+          ],
+          "target_entity_ids": [
+            "e_0020"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_9001",
+      "verbatim_text": "Calculator: https://www.fitwatch.com/calculator/weight-loss-percentage/ —review with patient to determine if weight loss is unintentional and whether diuresis contributed. See also Supplemental Table S1 for diagnostic criteria for malnutrition."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 58,
+          "char_start": 0,
+          "entity_id": "e_0021",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "5%, 7.5%, 10%, or 20% unintentional weight loss thresholds"
+        },
+        {
+          "char_end": 102,
+          "char_start": 70,
+          "entity_id": "e_0022",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "malnutrition diagnostic criteria"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The source states that these thresholds feature in malnutrition diagnostic criteria.",
+          "object_entity_id": "e_0022",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.94,
+          "relation_id": "fr_0007",
+          "subject_entity_id": "e_0021",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 4,
+        "header_path": [
+          "Anthropometric data",
+          "Macronutrients"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "5%, 7.5%, 10%, or 20% unintentional weight loss thresholds feature in malnutrition diagnostic criteria"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 74,
+          "char_start": 0,
+          "entity_id": "e_0023",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Screening for inflammation, prognostic markers, markers of iron deficiency"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Laboratory data",
+          "Metrics"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Metric listed under clinician suggestions; source-style context supports an assessment instruction, though no modal verb is present.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Screening"
+          ],
+          "target_entity_ids": [
+            "e_0023"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "Screening for inflammation, prognostic markers, markers of iron deficiency"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 36,
+          "char_start": 0,
+          "entity_id": "e_0024",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Scores incorporating laboratory data"
+        },
+        {
+          "char_end": 75,
+          "char_start": 48,
+          "entity_id": "e_0025",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "malnutrition identification"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The source says laboratory-data scores 'may aid' identification; causality is not inferred.",
+          "object_entity_id": "e_0025",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.92,
+          "relation_id": "fr_0008",
+          "subject_entity_id": "e_0024",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Laboratory data",
+          "Tools and Resources"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "Scores incorporating laboratory data may aid in malnutrition identification: Geriatric Nutritional Risk Index, using albumin, weight, and height: http://touchcalc.com/calculators/gnri —a simple tool with some data for prognostic utility in HF cohorts (Kaneko 2015) Controlling Nutritional Status Nutrition Risk in the Critically Ill Prognostic Nutritional Index —less established in HF cohorts Sze S, Pellicori P, Kazmi S, Rigby A, Cleland JGF, Wong K, Clark AL. Prevalence and"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 22,
+          "char_start": 0,
+          "entity_id": "e_0026",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Albumin and prealbumin"
+        },
+        {
+          "char_end": 70,
+          "char_start": 46,
+          "entity_id": "e_0027",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "prognostic utility in HF"
+        },
+        {
+          "char_end": 253,
+          "char_start": 204,
+          "entity_id": "e_0028",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "C-reactive protein or neutrophil-lymphocyte ratio"
+        },
+        {
+          "char_end": 287,
+          "char_start": 258,
+          "entity_id": "e_0029",
+          "entity_type": "RATIONALE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "inflammatory state assessment"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The source explicitly states prognostic utility in HF.",
+          "object_entity_id": "e_0027",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 1.0,
+          "relation_id": "fr_0009",
+          "subject_entity_id": "e_0026",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 4,
+        "header_path": [
+          "Laboratory data",
+          "Macronutrients"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Source-style suggestion to use CRP or neutrophil-lymphocyte ratio for inflammatory-state assessment.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [
+            "e_0029"
+          ],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "for inflammatory state assessment"
+          ],
+          "target_entity_ids": [
+            "e_0028"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0011",
+      "verbatim_text": "Albumin and prealbumin: these biomarkers have prognostic utility in HF, but though related to nutritional status, there is insufficient evidence that they change in response to nutritional interventions; C-reactive protein or neutrophil-lymphocyte ratio for inflammatory state assessment"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 43,
+          "char_start": 0,
+          "entity_id": "e_0030",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Hemoglobin, % iron saturation, and ferritin"
+        },
+        {
+          "char_end": 86,
+          "char_start": 58,
+          "entity_id": "e_0031",
+          "entity_type": "RATIONALE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "intravenous iron eligibility"
+        },
+        {
+          "char_end": 134,
+          "char_start": 88,
+          "entity_id": "e_0032",
+          "entity_type": "ACTOR",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "United States Preventative Services Task force"
+        },
+        {
+          "char_end": 188,
+          "char_start": 154,
+          "entity_id": "e_0033",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "screening for vitamin D deficiency"
+        },
+        {
+          "char_end": 211,
+          "char_start": 192,
+          "entity_id": "e_0034",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "asymptomatic adults"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 5,
+        "header_path": [
+          "Laboratory data",
+          "Micronutrients"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Source-style suggestion to use the listed laboratory measurements to assess IV-iron eligibility.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [
+            "e_0031"
+          ],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.92,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "to screen for"
+          ],
+          "target_entity_ids": [
+            "e_0030"
+          ]
+        },
+        {
+          "actor_entity_ids": [
+            "e_0032"
+          ],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT"
+          ],
+          "notes": "Explicit recommendation against vitamin-D-deficiency screening in asymptomatic adults.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0034"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "recommends against"
+          ],
+          "target_entity_ids": [
+            "e_0033"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0012",
+      "verbatim_text": "Hemoglobin, % iron saturation, and ferritin to screen for intravenous iron eligibility; United States Preventative Services Task force recommends against screening for vitamin D deficiency in asymptomatic adults"
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "Laboratory data",
+          "Tools and Resources",
+          "continued"
+        ],
+        "row_index": 2,
+        "source_part_index": 2
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_9003",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Bibliographic continuation of the preceding laboratory-data resource cell.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_9003",
+      "verbatim_text": "prognostic significance of malnutrition using 3 scoring systems among outpatients with heart failure: a comparison with body mass index. JACC Heart Fail 2018;6:476–86."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 42,
+          "char_start": 0,
+          "entity_id": "e_0035",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Short Nutritional Assessment Questionnaire"
+        },
+        {
+          "char_end": 199,
+          "char_start": 120,
+          "entity_id": "e_0036",
+          "entity_type": "RATIONALE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "quick screening tool incorporating weight change, appetite, and supplementation"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Dietary assessment",
+          "Nutritional risk assessment tools",
+          "Tools and Resources"
+        ],
+        "row_index": 3,
+        "source_part_index": 2
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive tool property and resource list, not a deontic instruction.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [
+            "e_0036"
+          ],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0035"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0013",
+      "verbatim_text": "Short Nutritional Assessment Questionnaire: http://www.fightmalnutrition.eu/wp-content/uploads/2017/04/SNAQ_Engels.jpg —quick screening tool incorporating weight change, appetite, and supplementation; unlike MUST and MNA (below), does not incorporate medical diagnoses or inpatient status Malnutrition Universal Screening Tool (MUST): https://www.bapen.org.uk/screening-and-must/must-calculator Mini Nutritional Assessment (MNA): https://www.mna-elderly.com/mna_forms.html"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 51,
+          "char_start": 0,
+          "entity_id": "e_0037",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Patient dietary intake self-collection and analysis"
+        },
+        {
+          "char_end": 120,
+          "char_start": 74,
+          "entity_id": "e_0038",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "mobile-health application such as MyFitnessPal"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Dietary assessment",
+          "Assessment of dietary intake",
+          "Tools and Resources"
+        ],
+        "row_index": 4,
+        "source_part_index": 2
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "The source explicitly permits dietary-intake self-collection and analysis through a mobile-health application.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0038"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "can be performed"
+          ],
+          "target_entity_ids": [
+            "e_0037"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0014",
+      "verbatim_text": "Patient dietary intake self-collection and analysis can be performed on a mobile-health application such as MyFitnessPal for food record Predominantly research tools: inpatient nutrient intake analysis, daily food record or diary (typically at least 3–4 days), food frequency questionnaire: https://sharedresources.fredhutch.org/content/ffq-sample-booklets 24-hour recall https://epi.grants.cancer.gov/asa24/"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 142,
+          "char_start": 0,
+          "entity_id": "e_0039",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Consult Institute of Medicine macronutrient (total calories, protein, carbohydrates, and fat) and micronutrient reference intakes for adequacy"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Dietary assessment",
+          "Assessment of dietary intake",
+          "Macronutrients"
+        ],
+        "row_index": 4,
+        "source_part_index": 2
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Imperative clinician-facing instruction to consult reference intakes for adequacy.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Consult"
+          ],
+          "target_entity_ids": [
+            "e_0039"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0015",
+      "verbatim_text": "Consult Institute of Medicine macronutrient (total calories, protein, carbohydrates, and fat) and micronutrient reference intakes for adequacy: https://ods.od.nih.gov/Health_Information/Dietary_Reference_Intakes.aspx"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 44,
+          "char_start": 0,
+          "entity_id": "e_0040",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Handgrip thresholds <27 kg men, <16 kg women"
+        },
+        {
+          "char_end": 272,
+          "char_start": 125,
+          "entity_id": "e_0041",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Subjective global assessment—weight change, intake change, gastrointestinal symptoms, functional status, metabolic demand, and physical examination"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Functional assessment",
+          "Handgrip strength",
+          "Tools and Resources"
+        ],
+        "row_index": 5,
+        "source_part_index": 2
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0013",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive thresholds and assessment components rather than a deontic instruction.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0040",
+            "e_0041"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0016",
+      "verbatim_text": "Handgrip thresholds <27 kg men, <16 kg women (European Working Group on Sarcopenia in Older People 2; Supplemental Table S6) Subjective global assessment—weight change, intake change, gastrointestinal symptoms, functional status, metabolic demand, and physical examination"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 21,
+          "char_start": 0,
+          "entity_id": "e_0042",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Low handgrip strength"
+        },
+        {
+          "char_end": 132,
+          "char_start": 97,
+          "entity_id": "e_0043",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "insufficient calorie/protein intake"
+        },
+        {
+          "char_end": 185,
+          "char_start": 136,
+          "entity_id": "e_0044",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "abnormalities of nutrient absorption/assimilation"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Explicit possible association; no causality inferred.",
+          "object_entity_id": "e_0043",
+          "predicate": "ASSOCIATED_WITH",
+          "relation_confidence": 1.0,
+          "relation_id": "fr_0010",
+          "subject_entity_id": "e_0042",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Explicit possible association; no causality inferred.",
+          "object_entity_id": "e_0044",
+          "predicate": "ASSOCIATED_WITH",
+          "relation_confidence": 1.0,
+          "relation_id": "fr_0011",
+          "subject_entity_id": "e_0042",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 4,
+        "header_path": [
+          "Functional assessment",
+          "Handgrip strength",
+          "Macronutrients"
+        ],
+        "row_index": 5,
+        "source_part_index": 2
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0017",
+      "verbatim_text": "Low handgrip strength is not a direct indicator of nutritional status but may be associated with insufficient calorie/protein intake or abnormalities of nutrient absorption/assimilation"
+    }
+  ]
+}

@@ -1,0 +1,918 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING",
+      "OCR_GRADE_GLYPH_AMBIGUITY"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_n0017",
+  "source": {
+    "document_sha256": "66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d",
+    "page_ids": [
+      "66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_p0017"
+    ],
+    "page_numbers": [
+      17
+    ],
+    "physical_block_ids": [
+      "pb_66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_p0017_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Referenced studies that support the recommendations are summarized in the Online Data Supplements."
+  },
+  "table_assessment": {
+    "assessment_notes": "Five isolated rows direct BNP/NT-proBNP measurement or screening and, in one row, subsequent team-based care for diagnosis/exclusion, risk stratification, prognosis, and prevention outcomes.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 38,
+          "char_start": 6,
+          "entity_id": "e_0001",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients presenting with dyspnea"
+        },
+        {
+          "char_end": 38,
+          "char_start": 31,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "dyspnea"
+        },
+        {
+          "char_end": 87,
+          "char_start": 40,
+          "entity_id": "e_0003",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "measurement of B-type natriuretic peptide (BNP)"
+        },
+        {
+          "char_end": 154,
+          "char_start": 91,
+          "entity_id": "e_0004",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "N-terminal prohormone of B-type natriuretic peptide (NT-proBNP)"
+        },
+        {
+          "char_end": 206,
+          "char_start": 178,
+          "entity_id": "e_0005",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "diagnosis or exclusion of HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Recommendations",
+          "COR",
+          "LOE"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0002"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Either biomarker measurement is directed for diagnostic support/exclusion in dyspnea.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [
+            "e_0005"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "is useful to support a diagnosis or exclusion of HF"
+          ],
+          "target_entity_ids": [
+            "e_0003",
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "1",
+          "grading_system_name": "COR",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact OCR-visible COR value; not normalized to Roman numeral I.",
+          "raw_grade": "1"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "A",
+          "grading_system_name": "LOE",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact source-native LOE value.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "1. In patients presenting with dyspnea, measurement of B-type natriuretic peptide (BNP) or N-terminal prohormone of B-type natriuretic peptide (NT-proBNP) is useful to support a diagnosis or exclusion of HF."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 30,
+          "char_start": 6,
+          "entity_id": "e_0006",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with chronic HF"
+        },
+        {
+          "char_end": 30,
+          "char_start": 20,
+          "entity_id": "e_0007",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "chronic HF"
+        },
+        {
+          "char_end": 71,
+          "char_start": 32,
+          "entity_id": "e_0008",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "measurements of BNP or NT-proBNP levels"
+        },
+        {
+          "char_end": 111,
+          "char_start": 92,
+          "entity_id": "e_0009",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "risk stratification"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Recommendations",
+          "COR",
+          "LOE"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0007"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The biomarker measurements are explicitly recommended for risk stratification.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0009"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0006"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "are recommended for risk stratification"
+          ],
+          "target_entity_ids": [
+            "e_0008"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "1",
+          "grading_system_name": "COR",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact OCR-visible COR value.",
+          "raw_grade": "1"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "A",
+          "grading_system_name": "LOE",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact source-native LOE value.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "2. In patients with chronic HF, measurements of BNP or NT-proBNP levels are recommended for risk stratification."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 34,
+          "char_start": 6,
+          "entity_id": "e_0010",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients hospitalized for HF"
+        },
+        {
+          "char_end": 74,
+          "char_start": 36,
+          "entity_id": "e_0011",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "measurement of BNP or NT-proBNP levels"
+        },
+        {
+          "char_end": 87,
+          "char_start": 78,
+          "entity_id": "e_0012",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "admission"
+        },
+        {
+          "char_end": 125,
+          "char_start": 116,
+          "entity_id": "e_0013",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "prognosis"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Recommendations",
+          "COR",
+          "LOE"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The source specifies admission timing and prognostic purpose.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [
+            "e_0013"
+          ],
+          "parameter_entity_ids": [
+            "e_0012"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0010"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [
+            "gr_0005",
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "at admission is recommended to establish prognosis"
+          ],
+          "target_entity_ids": [
+            "e_0011"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "1",
+          "grading_system_name": "COR",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact OCR-visible COR value.",
+          "raw_grade": "1"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "A",
+          "grading_system_name": "LOE",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact source-native LOE value.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "3. In patients hospitalized for HF, measurement of BNP or NT-proBNP levels at admission is recommended to establish prognosis."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 39,
+          "char_start": 6,
+          "entity_id": "e_0014",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients at risk of developing HF"
+        },
+        {
+          "char_end": 73,
+          "char_start": 41,
+          "entity_id": "e_0015",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "BNP or NT-proBNP-based screening"
+        },
+        {
+          "char_end": 101,
+          "char_start": 86,
+          "entity_id": "e_0016",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "team-based care"
+        },
+        {
+          "char_end": 140,
+          "char_start": 115,
+          "entity_id": "e_0017",
+          "entity_type": "ACTOR",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "cardiovascular specialist"
+        },
+        {
+          "char_end": 200,
+          "char_start": 171,
+          "entity_id": "e_0018",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "development of LV dysfunction"
+        },
+        {
+          "char_end": 216,
+          "char_start": 204,
+          "entity_id": "e_0019",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "new-onset HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Recommendations",
+          "COR",
+          "LOE"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [
+            "e_0017"
+          ],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Biomarker screening is the first coordinated action.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [
+            "e_0018",
+            "e_0019"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0014"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0007",
+            "gr_0008"
+          ],
+          "source_trigger_texts": [
+            "BNP or NT-proBNP-based screening ... can be useful"
+          ],
+          "target_entity_ids": [
+            "e_0015"
+          ]
+        },
+        {
+          "actor_entity_ids": [
+            "e_0017"
+          ],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Team-based care is the required follow-on component of the optional strategy.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [
+            "e_0018",
+            "e_0019"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0014"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0007",
+            "gr_0008"
+          ],
+          "source_trigger_texts": [
+            "followed by team-based care ... can be useful"
+          ],
+          "target_entity_ids": [
+            "e_0016"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0007",
+          "grade_source_text": "2a",
+          "grading_system_name": "COR",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact OCR-visible COR value; not normalized to IIa.",
+          "raw_grade": "2a"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0008",
+          "grade_source_text": "B-R",
+          "grading_system_name": "LOE",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact source-native LOE value.",
+          "raw_grade": "B-R"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "4. In patients at risk of developing HF, BNP or NT-proBNP-based screening followed by team-based care, including a cardiovascular specialist, can be useful to prevent the development of LV dysfunction or new-onset HF."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 34,
+          "char_start": 6,
+          "entity_id": "e_0020",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients hospitalized for HF"
+        },
+        {
+          "char_end": 73,
+          "char_start": 38,
+          "entity_id": "e_0021",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "predischarge BNP or NT-proBNP level"
+        },
+        {
+          "char_end": 127,
+          "char_start": 102,
+          "entity_id": "e_0022",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "trajectory of the patient"
+        },
+        {
+          "char_end": 167,
+          "char_start": 144,
+          "entity_id": "e_0023",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "postdischarge prognosis"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1,
+          2
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Recommendations",
+          "COR",
+          "LOE"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "The predischarge biomarker measurement is optional for trajectory and postdischarge prognosis information.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [
+            "e_0022",
+            "e_0023"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0020"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [
+            "gr_0009",
+            "gr_0010"
+          ],
+          "source_trigger_texts": [
+            "can be useful to inform ... and establish"
+          ],
+          "target_entity_ids": [
+            "e_0021"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0009",
+          "grade_source_text": "2a",
+          "grading_system_name": "COR",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact OCR-visible COR value.",
+          "raw_grade": "2a"
+        },
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0010",
+          "grade_source_text": "B-NR",
+          "grading_system_name": "LOE",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Exact source-native LOE value.",
+          "raw_grade": "B-NR"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "5. In patients hospitalized for HF, a predischarge BNP or NT-proBNP level can be useful to inform the trajectory of the patient and establish a postdischarge prognosis."
+    }
+  ]
+}

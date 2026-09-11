@@ -1,0 +1,412 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "ENTITY_BOUNDARY_REVIEW_REQUIRED",
+      "MIXED_NORMATIVE_AND_FACTUAL_CONTENT",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0035",
+  "source": {
+    "document_sha256": "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b",
+    "page_ids": [
+      "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0055"
+    ],
+    "page_numbers": [
+      55
+    ],
+    "physical_block_ids": [
+      "pb_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0055_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "Disopyramide Antiarrhythmic (Class IA) C Yes Yes b Uterine contractions • use only when benefit outweighs risk Animal data: • no teratogenicity • decreased implantation sites, decreased pup growth and survival (20× RHD) | Dronedarone Antiarrhythmic (Class III) - Yes (data from animals; no human data available) Yes (data from animals; no human data available) Not recommended: limited human dataAnimal data: • reproductive toxicity (post-implantation losses, reduced foetal and placental weights, and external, visceral and skeletal malformations) | Edoxaban Anticoagulant - Unknown Animal studies show excretion in breast milk; contraindicated in breastfeeding Contraindicated: • human data: Hokusai-VTE study: 10 cases with exposure in first trimester, for up to 6 weeks. Results: six live births (four full term and two pre-term), one first trimester spontaneous abortion, and three elective terminations Animal data: • reproductive toxicity (gallbladder variations, increased post-implantation losses (49–65× MRHD)) • vaginal haemorrhage at higher doses in rats/rabbits | Enoximone Phosphodiesterase inhibitor - Unknown Unknown Inadequate human studies • use only if necessary | Eplerenone Aldosterone antagonist B Unknown Yes (data from animals; no human data available) Inadequate human data • should be used during pregnancy only if clearly needed Animal data: • no teratogenic effects in rats or rabbits (exposures up to 32 and 31 times the human AUC, respectively); • decreased body weight in maternal rabbits • increased rabbit foetal resorptions and post-implantation loss at the highest administered dose | Epoprostenol Prostacyclin analogue B Unknown Unknown Inadequate human dataAnimal data: • no impaired fertility or foetal harm in rats (2.5× RHD) and rabbits (4.8× RHD) | Evolocumab Lipid-lowering drug (monoclonal antibody) - Yes (data in monkeys; no human data available) Unknown Inadequate human data • not recommended Animal data: • no adverse effects on foetal growth or development in monkeys • reduced T cell-dependent antibody response in monkeys immunized with KLH"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation of explicit medication entities, administration attributes, indications, outcomes, adverse events, and source-language directives. No terminology identifiers were guessed.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Disopyramide"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0035: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Disopyramide\nAntiarrhythmic (Class IA)\nC\nYes\nYes b\nUterine contractions\n• use only when benefit outweighs risk\nAnimal data:\n• no teratogenicity\n• decreased implantation sites, decreased pup growth and survival (20× RHD)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0002",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Dronedarone"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0035: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Dronedarone\nAntiarrhythmic (Class III)\n-\nYes (data from animals; no human data available)\nYes (data from animals; no human data available)\nNot recommended: limited human data\nAnimal data:\n• reproductive toxicity (post-implantation losses, reduced foetal and placental weights, and external, visceral and skeletal malformations)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 8,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Edoxaban"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0035: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Edoxaban\nAnticoagulant\n-\nUnknown\nAnimal studies show excretion in breast milk; contraindicated in breastfeeding\nContraindicated:\n• human data: Hokusai-VTE study: 10 cases with exposure in first trimester, for up to 6 weeks. Results: six live births (four full term and two pre-term), one first trimester spontaneous abortion, and three elective terminations\nAnimal data:\n• reproductive toxicity (gallbladder variations, increased post-implantation losses (49–65× MRHD))\n• vaginal haemorrhage at higher doses in rats/rabbits"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Enoximone"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0035: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Enoximone\nPhosphodiesterase inhibitor\n-\nUnknown\nUnknown\nInadequate human studies\n• use only if necessary"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Eplerenone"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0035: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "B",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Eplerenone\nAldosterone antagonist\nB\nUnknown\nYes (data from animals; no human data available)\nInadequate human data\n• should be used during pregnancy only if clearly needed\nAnimal data:\n• no teratogenic effects in rats or rabbits (exposures up to 32 and 31 times the human AUC, respectively);\n• decreased body weight in maternal rabbits\n• increased rabbit foetal resorptions and post-implantation loss at the highest administered dose"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Epoprostenol"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0035: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "B",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Epoprostenol\nProstacyclin analogue\nB\nUnknown\nUnknown\nInadequate human data\nAnimal data:\n• no impaired fertility or foetal harm in rats (2.5× RHD) and rabbits (4.8× RHD)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Evolocumab"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0035: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Evolocumab\nLipid-lowering drug (monoclonal antibody)\n-\nYes (data in monkeys; no human data available)\nUnknown\nInadequate human data\n• not recommended\nAnimal data:\n• no adverse effects on foetal growth or development in monkeys\n• reduced T cell-dependent antibody response in monkeys immunized with KLH"
+    }
+  ]
+}

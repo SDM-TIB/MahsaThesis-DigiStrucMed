@@ -1,0 +1,2285 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TEMPORAL_OR_SUPERSESSION_CONTENT",
+      "SUSPECTED_DUPLICATE",
+      "OTHER_OPERATION",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_3756890c1e5fc6e4f303d0d69c5e6674192365d99b5559676ac7dc7c72e24ed8_n0022",
+  "source": {
+    "document_sha256": "3756890c1e5fc6e4f303d0d69c5e6674192365d99b5559676ac7dc7c72e24ed8",
+    "page_ids": [
+      "3756890c1e5fc6e4f303d0d69c5e6674192365d99b5559676ac7dc7c72e24ed8_p0018"
+    ],
+    "page_numbers": [
+      18
+    ],
+    "physical_block_ids": [
+      "pb_3756890c1e5fc6e4f303d0d69c5e6674192365d99b5559676ac7dc7c72e24ed8_p0018_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Appendix A. (continued)"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review confirms the hospice, electrophysiology, ICD, and biventricular-pacing recommendations in a near-duplicate source. OCR differences affect percent-sign escaping and one LVEF phrase; temporal and duplicate semantics require adjudication.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": true,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": true
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 44,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Patients with HF undergoing end-of-life care"
+        },
+        {
+          "char_end": 83,
+          "char_start": 67,
+          "entity_id": "e_0002",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "hospice services"
+        },
+        {
+          "char_end": 164,
+          "char_start": 106,
+          "entity_id": "e_0003",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "in the home, a hospital setting, or a special hospice unit"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "8.17",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Hospice services may be considered for patients with HF undergoing end-of-life care.",
+          "operation": "REFER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0003"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0001"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0002"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Patients with HF undergoing end-of-life care may be considered for hospice services that can be delivered in the home, a hospital setting, or a special hospice unit. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 43,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Patients with HF receiving end-of-life care"
+        },
+        {
+          "char_end": 90,
+          "char_start": 69,
+          "entity_id": "e_0005",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "enrollment in hospice"
+        },
+        {
+          "char_end": 167,
+          "char_start": 113,
+          "entity_id": "e_0006",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "in the home, a nursing home, or a special hospice unit"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "8.17",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Hospice enrollment should be considered for patients receiving end-of-life care.",
+          "operation": "REFER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0006"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0004"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0005"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Patients with HF receiving end-of-life care should be considered for enrollment in hospice that can be delivered in the home, a nursing home, or a special hospice unit. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 80,
+          "char_start": 49,
+          "entity_id": "e_0007",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "electrophysiologic intervention"
+        },
+        {
+          "char_end": 191,
+          "char_start": 101,
+          "entity_id": "e_0008",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "functional status and prognosis based on severity of underlying HF and comorbid conditions"
+        },
+        {
+          "char_end": 284,
+          "char_start": 273,
+          "entity_id": "e_0009",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "LV function"
+        },
+        {
+          "char_end": 271,
+          "char_start": 196,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "LV dysfunction is a reason for recommending electrophysiologic intervention"
+        },
+        {
+          "char_end": 332,
+          "char_start": 316,
+          "entity_id": "e_0011",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "after 3–6 months"
+        },
+        {
+          "char_end": 359,
+          "char_start": 336,
+          "entity_id": "e_0012",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "optimal medical therapy"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "9.1",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0008"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The decision on electrophysiologic intervention should account for functional status, prognosis, HF severity, and comorbidity.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0003"
+          ],
+          "source_trigger_texts": [
+            "It is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0010"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "LV function should be reassessed after 3–6 months of optimal medical therapy when LV dysfunction motivates intervention.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0011",
+            "e_0012"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "should be re-assessed"
+          ],
+          "target_entity_ids": [
+            "e_0009"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "It is recommended that the decision to undertake electrophysiologic intervention be made in light of functional status and prognosis based on severity of underlying HF and comorbid conditions. If LV dysfunction is a reason for recommending electrophysiologic intervention, LV function should be re-assessed, ideally after 3–6 months of optimal medical therapy. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 108,
+          "char_start": 49,
+          "entity_id": "e_0013",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "electrophysiologic intervention, including ICD implantation"
+        },
+        {
+          "char_end": 220,
+          "char_start": 130,
+          "entity_id": "e_0014",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "functional status and prognosis based on severity of underlying HF and comorbid conditions"
+        },
+        {
+          "char_end": 305,
+          "char_start": 294,
+          "entity_id": "e_0015",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "LV function"
+        },
+        {
+          "char_end": 292,
+          "char_start": 225,
+          "entity_id": "e_0016",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "an ICD is considered due to LV dysfunction which is of recent onset"
+        },
+        {
+          "char_end": 352,
+          "char_start": 336,
+          "entity_id": "e_0017",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "after 3-6 months"
+        },
+        {
+          "char_end": 379,
+          "char_start": 356,
+          "entity_id": "e_0018",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "optimal medical therapy"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "9.1",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [
+            "e_0014"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The intervention decision, including ICD implantation, should account for functional status and prognosis.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0005"
+          ],
+          "source_trigger_texts": [
+            "It is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0013"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [
+            "e_0016"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Recent-onset LV dysfunction prompting ICD consideration should be reassessed after optimal medical therapy.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0017",
+            "e_0018"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "should be reassessed"
+          ],
+          "target_entity_ids": [
+            "e_0015"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "It is recommended that the decision to undertake electrophysiologic intervention, including ICD implantation, be made in light of functional status and prognosis based on severity of underlying HF and comorbid conditions. If an ICD is considered due to LV dysfunction which is of recent onset, LV function should be reassessed, ideally after 3-6 months of optimal medical therapy. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 0,
+          "entity_id": "e_0019",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Immediate evaluation"
+        },
+        {
+          "char_end": 80,
+          "char_start": 39,
+          "entity_id": "e_0020",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients with HF who present with syncope"
+        },
+        {
+          "char_end": 200,
+          "char_start": 171,
+          "entity_id": "e_0021",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "electrophysiologic evaluation"
+        },
+        {
+          "char_end": 137,
+          "char_start": 82,
+          "entity_id": "e_0022",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "In the absence of a clear identifiable noncardiac cause"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "9.2",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Immediate evaluation is recommended for HF patients presenting with syncope.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0020"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0007"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0019"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [
+            "e_0022"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Electrophysiologic referral is advised when no clear noncardiac cause exists.",
+          "operation": "REFER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0020"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0008"
+          ],
+          "source_trigger_texts": [
+            "should be referred"
+          ],
+          "target_entity_ids": [
+            "e_0021"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0007",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0008",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Immediate evaluation is recommended in patients with HF who present with syncope. In the absence of a clear identifiable noncardiac cause, patients should be referred for electrophysiologic evaluation. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 0,
+          "entity_id": "e_0023",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Immediate evaluation"
+        },
+        {
+          "char_end": 80,
+          "char_start": 39,
+          "entity_id": "e_0024",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients with HF who present with syncope"
+        },
+        {
+          "char_end": 173,
+          "char_start": 139,
+          "entity_id": "e_0025",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "consultation with an EP specialist"
+        },
+        {
+          "char_end": 137,
+          "char_start": 82,
+          "entity_id": "e_0026",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "In the absence of a clear identifiable noncardiac cause"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "9.2",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Immediate evaluation is recommended for HF patients presenting with syncope.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0024"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0009"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0023"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [
+            "e_0026"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "EP-specialist consultation should be obtained absent a clear noncardiac cause.",
+          "operation": "REFER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0024"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0010"
+          ],
+          "source_trigger_texts": [
+            "should be obtained"
+          ],
+          "target_entity_ids": [
+            "e_0025"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0009",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0010",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Immediate evaluation is recommended in patients with HF who present with syncope. In the absence of a clear identifiable noncardiac cause, consultation with an EP specialist should be obtained. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 131,
+          "char_start": 105,
+          "entity_id": "e_0027",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Prophylactic ICD placement"
+        },
+        {
+          "char_end": 163,
+          "char_start": 154,
+          "entity_id": "e_0028",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "LVEF ≤30%"
+        },
+        {
+          "char_end": 199,
+          "char_start": 188,
+          "entity_id": "e_0029",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "LVEF 31–35%"
+        },
+        {
+          "char_end": 258,
+          "char_start": 205,
+          "entity_id": "e_0030",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "those with mild to moderate HF symptoms (NYHA II-III)"
+        },
+        {
+          "char_end": 363,
+          "char_start": 338,
+          "entity_id": "e_0031",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Concomitant ICD placement"
+        },
+        {
+          "char_end": 453,
+          "char_start": 388,
+          "entity_id": "e_0032",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients undergoing implantation of a biventricular pacing device"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "9.4",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [
+            "e_0028"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Prophylactic ICD placement should be considered at LVEF ≤30% for mild-to-moderate HF symptoms.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0030"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0011"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0027"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [
+            "e_0029"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Prophylactic ICD placement may be considered at LVEF 31–35% for the same symptom group.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0030"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0012"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0027"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0013",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Concomitant ICD placement should be considered with biventricular pacing-device implantation.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0032"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0013"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0031"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0011",
+          "grade_source_text": "(Strength of Evidence = A)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0012",
+          "grade_source_text": "(Strength of Evidence = A)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0013",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "In patients with or without concomitant coronary artery disease (including a prior MI > 1 month ago): a) Prophylactic ICD placement should be considered (LVEF ≤30%) and may be considered (LVEF 31–35%) for those with mild to moderate HF symptoms (NYHA II-III). (Strength of Evidence = A) See Recommendation 9.1 for additional criteria. b) Concomitant ICD placement should be considered in patients undergoing implantation of a biventricular pacing device according to the criteria in Recommendations 9.7–9.8. (Strength of Evidence = B) See Recommendation 9.1 for additional criteria."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 29,
+          "char_start": 3,
+          "entity_id": "e_0033",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Prophylactic ICD placement"
+        },
+        {
+          "char_end": 113,
+          "char_start": 54,
+          "entity_id": "e_0034",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients with an LVEF ≤35% and mild to moderate HF symptoms"
+        },
+        {
+          "char_end": 134,
+          "char_start": 117,
+          "entity_id": "e_0035",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Ischemic etiology"
+        },
+        {
+          "char_end": 185,
+          "char_start": 164,
+          "entity_id": "e_0036",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Non-ischemic etiology"
+        },
+        {
+          "char_end": 439,
+          "char_start": 395,
+          "entity_id": "e_0037",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "use of a device that provides defibrillation"
+        },
+        {
+          "char_end": 340,
+          "char_start": 267,
+          "entity_id": "e_0038",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients who are undergoing implantation of a biventricular pacing device"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "9.4",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0014",
+          "condition_entity_ids": [
+            "e_0035"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Prophylactic ICD placement should be considered for ischemic etiology with LVEF ≤35% and mild-to-moderate symptoms.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0034"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0014"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0033"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0015",
+          "condition_entity_ids": [
+            "e_0036"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "The same consideration is graded separately for non-ischemic etiology.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0034"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0015"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0033"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0016",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "A device providing defibrillation should be considered during biventricular pacing-device implantation.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0038"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0016"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0037"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0014",
+          "grade_source_text": "(Strength of Evidence = A)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0015",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0016",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "a. Prophylactic ICD placement should be considered in patients with an LVEF ≤35% and mild to moderate HF symptoms: • Ischemic etiology (Strength of Evidence = A) • Non-ischemic etiology (Strength of Evidence = B) See Recommendation 9.1 for additional criteria. b. In patients who are undergoing implantation of a biventricular pacing device according to the criteria in recommendations 9.7-9.8, use of a device that provides defibrillation should be considered. (Strength of Evidence = B) See Recommendation 9.1 for additional criteria."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0039",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "ICD placement"
+        },
+        {
+          "char_end": 121,
+          "char_start": 36,
+          "entity_id": "e_0040",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "chronic, severe refractory HF when there is no reasonable expectation for improvement"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "9.5",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 9,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0017",
+          "condition_entity_ids": [
+            "e_0040"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT"
+          ],
+          "notes": "ICD placement is advised against in severe refractory HF without reasonable improvement expectation.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0017"
+          ],
+          "source_trigger_texts": [
+            "is not recommended"
+          ],
+          "target_entity_ids": [
+            "e_0039"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0017",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "ICD placement is not recommended in chronic, severe refractory HF when there is no reasonable expectation for improvement. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0041",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "ICD placement"
+        },
+        {
+          "char_end": 121,
+          "char_start": 36,
+          "entity_id": "e_0042",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "chronic, severe refractory HF when there is no reasonable expectation for improvement"
+        },
+        {
+          "char_end": 179,
+          "char_start": 128,
+          "entity_id": "e_0043",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients with a life expectancy of less than 1 year"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "9.5",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 9,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0018",
+          "condition_entity_ids": [
+            "e_0042"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT"
+          ],
+          "notes": "The against recommendation also covers patients with life expectancy under one year.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0043"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0018"
+          ],
+          "source_trigger_texts": [
+            "is not recommended"
+          ],
+          "target_entity_ids": [
+            "e_0041"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0018",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "ICD placement is not recommended in chronic, severe refractory HF when there is no reasonable expectation for improvement or in patients with a life expectancy of less than 1 year. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 0,
+          "entity_id": "e_0044",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "ICD implantation"
+        },
+        {
+          "char_end": 155,
+          "char_start": 36,
+          "entity_id": "e_0045",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "survivors of cardiac arrest from ventricular fibrillation or hemodynamically unstable sustained ventricular tachycardia"
+        },
+        {
+          "char_end": 301,
+          "char_start": 156,
+          "entity_id": "e_0046",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "without evidence of acute MI or if the event occurs more than 48 hours after the onset of infarction in the absence of a recurrent ischemic event"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "9.6",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0019",
+          "condition_entity_ids": [
+            "e_0046"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "ICD implantation is recommended for the specified cardiac-arrest survivors under the stated MI timing/exclusion conditions.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0045"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0019"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0044"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0019",
+          "grade_source_text": "(Strength of Evidence = A)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0011",
+      "verbatim_text": "ICD implantation is recommended for survivors of cardiac arrest from ventricular fibrillation or hemodynamically unstable sustained ventricular tachycardia without evidence of acute MI or if the event occurs more than 48 hours after the onset of infarction in the absence of a recurrent ischemic event. (Strength of Evidence = A)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 0,
+          "entity_id": "e_0047",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "ICD implantation"
+        },
+        {
+          "char_end": 134,
+          "char_start": 36,
+          "entity_id": "e_0048",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "survivors of cardiac arrest from ventricular fibrillation or hemodynamically unstable sustained VT"
+        },
+        {
+          "char_end": 213,
+          "char_start": 143,
+          "entity_id": "e_0049",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "not due to a transient, potentially reversible cause, such as acute MI"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "9.6",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0020",
+          "condition_entity_ids": [
+            "e_0049"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "ICD implantation is recommended when the arrest/tachycardia is not due to a transient reversible cause.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0048"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0020"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0047"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0020",
+          "grade_source_text": "(Strength of Evidence = A)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0012",
+      "verbatim_text": "ICD implantation is recommended for survivors of cardiac arrest from ventricular fibrillation or hemodynamically unstable sustained VT that is not due to a transient, potentially reversible cause, such as acute MI. (Strength of Evidence = A)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 28,
+          "char_start": 0,
+          "entity_id": "e_0050",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Biventricular pacing therapy"
+        },
+        {
+          "char_end": 275,
+          "char_start": 54,
+          "entity_id": "e_0051",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients with sinus rhythm, a widened QRS interval (≥120 ms) and severe LV systolic dysfunction (LVEF ≤35% with LV dilatation > 5.5 cm) who have persistent, moderate to severe HF (NYHA III) despite optimal medical therapy"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "9.7",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 11,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0021",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Biventricular pacing should be considered for the stated rhythm, QRS, LVEF, LV-dimension, symptom, and therapy context.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0051"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0021"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0050"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0021",
+          "grade_source_text": "(Strength of Evidence = A)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0013",
+      "verbatim_text": "Biventricular pacing therapy should be considered for patients with sinus rhythm, a widened QRS interval (≥120 ms) and severe LV systolic dysfunction (LVEF ≤35% with LV dilatation > 5.5 cm) who have persistent, moderate to severe HF (NYHA III) despite optimal medical therapy. (Strength of Evidence = A)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 28,
+          "char_start": 0,
+          "entity_id": "e_0052",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Biventricular pacing therapy"
+        },
+        {
+          "char_end": 243,
+          "char_start": 48,
+          "entity_id": "e_0053",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients in sinus rhythm with a widened QRS interval (≥120 ms) and severe LV systolic dysfunction LVEF (≤35%) who have persistent, moderate to severe HF (NYHA III) despite optimal medical therapy"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "9.7",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 11,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0022",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Biventricular pacing is recommended for the stated rhythm, QRS, LVEF, symptom, and therapy context.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0053"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [
+            "gr_0022"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0052"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0022",
+          "grade_source_text": "(Strength of Evidence = A)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0014",
+      "verbatim_text": "Biventricular pacing therapy is recommended for patients in sinus rhythm with a widened QRS interval (≥120 ms) and severe LV systolic dysfunction LVEF (≤35%) who have persistent, moderate to severe HF (NYHA III) despite optimal medical therapy. (Strength of Evidence = A)"
+    }
+  ]
+}

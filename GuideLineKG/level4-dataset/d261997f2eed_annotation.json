@@ -1,0 +1,528 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "terminology_linking_pending"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_cbed980053d149349ef9ddc5219c97148442615cb0a07dfe6cb4571bf22fad4e_n0023",
+  "source": {
+    "document_sha256": "cbed980053d149349ef9ddc5219c97148442615cb0a07dfe6cb4571bf22fad4e",
+    "page_ids": [
+      "cbed980053d149349ef9ddc5219c97148442615cb0a07dfe6cb4571bf22fad4e_p0028"
+    ],
+    "page_numbers": [
+      28
+    ],
+    "physical_block_ids": [
+      "pb_cbed980053d149349ef9ddc5219c97148442615cb0a07dfe6cb4571bf22fad4e_p0028_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "**Advice Table 9** Informing the patient, end-of-life issues, and psychological counselling"
+  },
+  "table_assessment": {
+    "assessment_notes": "Isolated TO DO advice table with three counselling/information-sharing instructions. All rows are annotated and source-native OPN/OBS evidence codes are retained without hierarchical interpretation.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 19,
+          "char_start": 12,
+          "entity_id": "e_0001",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patient"
+        },
+        {
+          "char_end": 45,
+          "char_start": 25,
+          "entity_id": "e_0002",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "detailed information"
+        },
+        {
+          "char_end": 128,
+          "char_start": 106,
+          "entity_id": "e_0003",
+          "entity_type": "RATIONALE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "shared decision-making"
+        },
+        {
+          "char_end": 151,
+          "char_start": 149,
+          "entity_id": "e_0004",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "CA"
+        },
+        {
+          "char_end": 177,
+          "char_start": 159,
+          "entity_id": "e_0005",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "invasive treatment"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Advice TO DO"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Information about procedural aspects, risks and outcomes should precede CA/invasive treatment when possible to support shared decisions.",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0004",
+            "e_0005"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [
+            "e_0003"
+          ],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0001"
+          ],
+          "source_trigger_texts": [
+            "Provide",
+            "before undertaking",
+            "if possible",
+            "Advice TO DO"
+          ],
+          "target_entity_ids": [
+            "e_0002"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "OPN",
+          "grading_system_name": "Source advice-table evidence code",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native code retained without hierarchy inference.",
+          "raw_grade": "OPN"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Provide the patient with detailed information on the procedural aspects, risks, and expected outcomes for shared decision-making, before undertaking CA or any invasive treatment, if possible"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 25,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Psychological counselling"
+        },
+        {
+          "char_end": 77,
+          "char_start": 54,
+          "entity_id": "e_0007",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "multi-disciplinary care"
+        },
+        {
+          "char_end": 93,
+          "char_start": 82,
+          "entity_id": "e_0008",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "ES patients"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Advice TO DO"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Counselling is advised as part of multidisciplinary care for ES patients.",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0007"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [
+            "e_0008"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "is advised",
+            "Advice TO DO"
+          ],
+          "target_entity_ids": [
+            "e_0006"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "OBS",
+          "grading_system_name": "Source advice-table evidence code",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native code retained without hierarchy inference.",
+          "raw_grade": "OBS"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Psychological counselling is advised as a part of the multi-disciplinary care for ES patients"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 44,
+          "char_start": 19,
+          "entity_id": "e_0009",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "significant comorbidities"
+        },
+        {
+          "char_end": 86,
+          "char_start": 74,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "recurrent ES"
+        },
+        {
+          "char_end": 116,
+          "char_start": 91,
+          "entity_id": "e_0011",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "intractable, end-stage HF"
+        },
+        {
+          "char_end": 137,
+          "char_start": 118,
+          "entity_id": "e_0012",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "informed discussion"
+        },
+        {
+          "char_end": 154,
+          "char_start": 147,
+          "entity_id": "e_0013",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patient"
+        },
+        {
+          "char_end": 165,
+          "char_start": 159,
+          "entity_id": "e_0014",
+          "entity_type": "ACTOR",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "family"
+        },
+        {
+          "char_end": 203,
+          "char_start": 187,
+          "entity_id": "e_0015",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ICD deactivation"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Advice TO DO"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [
+            "e_0014"
+          ],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0009",
+            "e_0010",
+            "e_0011"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND",
+            "SOURCE_DEFINED"
+          ],
+          "notes": "Informed discussion with patient and family about ICD deactivation options is conditional on the stated comorbidity/advanced-disease context.",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0013"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [
+            "gr_0003"
+          ],
+          "source_trigger_texts": [
+            "should be undertaken",
+            "Advice TO DO"
+          ],
+          "target_entity_ids": [
+            "e_0012",
+            "e_0015"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "OPN",
+          "grading_system_name": "Source advice-table evidence code",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native code retained without hierarchy inference.",
+          "raw_grade": "OPN"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "In the presence of significant comorbidities, particularly in the case of recurrent ES and intractable, end-stage HF, informed discussion with the patient and family about the options of ICD deactivation should be undertaken"
+    }
+  ]
+}

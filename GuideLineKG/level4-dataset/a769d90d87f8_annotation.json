@@ -1,0 +1,293 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "ENTITY_OTHER",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_2d4596bf5a2293bce12bde125c4c909f40ffa7b4a195087dba8cfc4861260a7d_n0008",
+  "source": {
+    "document_sha256": "2d4596bf5a2293bce12bde125c4c909f40ffa7b4a195087dba8cfc4861260a7d",
+    "page_ids": [
+      "2d4596bf5a2293bce12bde125c4c909f40ffa7b4a195087dba8cfc4861260a7d_p0072"
+    ],
+    "page_numbers": [
+      72
+    ],
+    "physical_block_ids": [
+      "pb_2d4596bf5a2293bce12bde125c4c909f40ffa7b4a195087dba8cfc4861260a7d_p0072_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "1. **1. There are now many heart healthy eating plans.** Low salt is best for heart failure. But if you are like many people with heart failure, you may have other existing conditions that may require you to follow additional dietary advice for what to eat. It can be hard to balance all of the information you receive, so be sure to ask questions."
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review confirms a compact, isolated condition-by-dietary-focus table. The low-component phrasing conveys direction but does not state deontic force; structural row and header alignment is clear.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 4,
+          "entity_id": "e_0001",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "sugar"
+        },
+        {
+          "char_end": 27,
+          "char_start": 15,
+          "entity_id": "e_0002",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "carbohydrate"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Dietary focus is often on:",
+          "Diabetes"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "OTHER"
+          ],
+          "notes": "The table associates Diabetes with a low-sugar dietary focus; force is not stated.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Dietary focus is often on"
+          ],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "OTHER"
+          ],
+          "notes": "The table associates Diabetes with a low-carbohydrate dietary focus; force is not stated.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Dietary focus is often on"
+          ],
+          "target_entity_ids": [
+            "e_0002"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "low sugar, low carbohydrate"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 15,
+          "char_start": 4,
+          "entity_id": "e_0003",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "cholesterol"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Dietary focus is often on:",
+          "Coronary artery disease (blockages in the heart's arteries)"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "OTHER"
+          ],
+          "notes": "The table associates Coronary artery disease (blockages in the heart's arteries) with a low-cholesterol dietary focus; force is not stated.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Dietary focus is often on"
+          ],
+          "target_entity_ids": [
+            "e_0003"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "low cholesterol"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 8,
+          "char_start": 4,
+          "entity_id": "e_0004",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "salt"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Dietary focus is often on:",
+          "Heart failure"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "OTHER"
+          ],
+          "notes": "The table associates Heart failure with a low-salt dietary focus; force is not stated.",
+          "operation": "DECREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Dietary focus is often on"
+          ],
+          "target_entity_ids": [
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "low salt"
+    }
+  ]
+}

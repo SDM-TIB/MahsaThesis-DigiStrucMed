@@ -1,0 +1,817 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "terminology_linking_pending",
+      "mixed_content_adjudication_required",
+      "entity_other_requires_schema_review",
+      "other_operation_requires_human_review",
+      "ambiguous_relation_requires_human_review"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_a8d659f172c05b122e27312303d3c4eaa6ba9016d4e238301602aaafdcfb934c_n0002",
+  "source": {
+    "document_sha256": "a8d659f172c05b122e27312303d3c4eaa6ba9016d4e238301602aaafdcfb934c",
+    "page_ids": [
+      "a8d659f172c05b122e27312303d3c4eaa6ba9016d4e238301602aaafdcfb934c_p0005"
+    ],
+    "page_numbers": [
+      5
+    ],
+    "physical_block_ids": [
+      "pb_a8d659f172c05b122e27312303d3c4eaa6ba9016d4e238301602aaafdcfb934c_p0005_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Treatment at each stage may involve lifestyle changes, changes to medications (adding another medicine or adjusting the dose) and devices. The goal is to slow the disease and keep you from moving to the next stage for as long as possible."
+  },
+  "table_assessment": {
+    "assessment_notes": "Four-stage patient table mixing descriptive findings with monitoring, dietary, exercise, medication, device, transplant and palliative-care instructions/options. Every stage description cell is annotated; mixed modality and treatment types require human adjudication.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 37,
+          "char_start": 10,
+          "entity_id": "e_0001",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "causes of heart dysfunction"
+        },
+        {
+          "char_end": 65,
+          "char_start": 46,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "high blood pressure"
+        },
+        {
+          "char_end": 78,
+          "char_start": 70,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "diabetes"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "STAGE A"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0001",
+            "e_0002",
+            "e_0003"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "ADMINISTER represents unspecified treatment of the causes, with hypertension and diabetes as examples.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Treat"
+          ],
+          "target_entity_ids": [
+            "e_0001",
+            "e_0002",
+            "e_0003"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Treat the causes of heart dysfunction, such a high blood pressure and diabetes."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 61,
+          "char_start": 18,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "early changes to the structure of the heart"
+        },
+        {
+          "char_end": 119,
+          "char_start": 105,
+          "entity_id": "e_0005",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "echocardiogram"
+        },
+        {
+          "char_end": 144,
+          "char_start": 123,
+          "entity_id": "e_0006",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "other cardiac testing"
+        },
+        {
+          "char_end": 169,
+          "char_start": 161,
+          "entity_id": "e_0007",
+          "entity_type": "ACTOR",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "provider"
+        },
+        {
+          "char_end": 203,
+          "char_start": 192,
+          "entity_id": "e_0008",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "medications"
+        },
+        {
+          "char_end": 237,
+          "char_start": 218,
+          "entity_id": "e_0009",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "stress on the heart"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The changes may be found on echocardiogram; AFFECTS is an imperfect schema proxy for detection.",
+          "object_entity_id": "e_0004",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0005",
+          "temporality": "PRESENT"
+        },
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The changes may be found on other cardiac testing; AFFECTS is an imperfect schema proxy for detection.",
+          "object_entity_id": "e_0004",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.86,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0006",
+          "temporality": "PRESENT"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "STAGE B"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [
+            "e_0007"
+          ],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0004"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE",
+            "MAY_CAN"
+          ],
+          "notes": "The patient is directed to discuss possible medication use with the provider.",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [
+            "e_0009"
+          ],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.94,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Talk with",
+            "possibly taking"
+          ],
+          "target_entity_ids": [
+            "e_0008"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "There may be some early changes to the structure of the heart that you have not noticed but are found on echocardiogram or other cardiac testing. Talk with your provider about possibly taking medications that ease the stress on the heart."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 27,
+          "char_start": 5,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "heart is weak or stiff"
+        },
+        {
+          "char_end": 77,
+          "char_start": 65,
+          "entity_id": "e_0011",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "daily weight"
+        },
+        {
+          "char_end": 100,
+          "char_start": 87,
+          "entity_id": "e_0012",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "sodium (salt)"
+        },
+        {
+          "char_end": 110,
+          "char_start": 102,
+          "entity_id": "e_0013",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "exercise"
+        },
+        {
+          "char_end": 136,
+          "char_start": 125,
+          "entity_id": "e_0014",
+          "entity_type": "ACTOR",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "health team"
+        },
+        {
+          "char_end": 166,
+          "char_start": 155,
+          "entity_id": "e_0015",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "medications"
+        },
+        {
+          "char_end": 215,
+          "char_start": 193,
+          "entity_id": "e_0016",
+          "entity_type": "RATIONALE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "workload on your heart"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "STAGE C"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0010"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Daily weight is the monitoring target.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "should keep a close eye"
+          ],
+          "target_entity_ids": [
+            "e_0011"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0010"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Cut out is represented as discontinuing sodium intake; the substance span requires schema review.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "cut out"
+          ],
+          "target_entity_ids": [
+            "e_0012"
+          ]
+        },
+        {
+          "actor_entity_ids": [
+            "e_0014"
+          ],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [
+            "e_0010"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Exercise is conditioned on the health team's advice.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "exercise based on your health team's advice"
+          ],
+          "target_entity_ids": [
+            "e_0013"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [
+            "e_0010"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "Medication administration is directed to reduce cardiac workload.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [
+            "e_0016"
+          ],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "take medications as directed"
+          ],
+          "target_entity_ids": [
+            "e_0015"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Your heart is weak or stiff. You should keep a close eye on your daily weight, cut out sodium (salt), exercise based on your health team's advice and take medications as directed to reduce the workload on your heart."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 22,
+          "char_start": 14,
+          "entity_id": "e_0017",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "symptoms"
+        },
+        {
+          "char_end": 39,
+          "char_start": 23,
+          "entity_id": "e_0018",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "most of the time"
+        },
+        {
+          "char_end": 55,
+          "char_start": 46,
+          "entity_id": "e_0019",
+          "entity_type": "ACTOR",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "care team"
+        },
+        {
+          "char_end": 158,
+          "char_start": 121,
+          "entity_id": "e_0020",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "left ventricular assist device (LVAD)"
+        },
+        {
+          "char_end": 176,
+          "char_start": 160,
+          "entity_id": "e_0021",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "heart transplant"
+        },
+        {
+          "char_end": 208,
+          "char_start": 178,
+          "entity_id": "e_0022",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "palliative or end-of-life care"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "STAGE D"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [
+            "e_0019"
+          ],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [
+            "e_0017"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The care team is stated to discuss strategies including the three named options.",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "will talk with you"
+          ],
+          "target_entity_ids": [
+            "e_0020",
+            "e_0021",
+            "e_0022"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [
+            "e_0017"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "The interventions are presented as possible options, not as unconditional treatment recommendations; no one operation covers device, transplant, and palliative care.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.89,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "may include"
+          ],
+          "target_entity_ids": [
+            "e_0020",
+            "e_0021",
+            "e_0022"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "You will have symptoms most of the time. Your care team will talk with you about strategies to help. These may include a left ventricular assist device (LVAD), heart transplant, palliative or end-of-life care."
+    }
+  ]
+}

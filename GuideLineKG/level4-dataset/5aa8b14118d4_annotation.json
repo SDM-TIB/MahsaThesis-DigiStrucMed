@@ -1,0 +1,539 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_e80862707140014ae554769409bcfb08f392edc24731a64a20993dc20e0edbd7_n0004",
+  "source": {
+    "document_sha256": "e80862707140014ae554769409bcfb08f392edc24731a64a20993dc20e0edbd7",
+    "page_ids": [
+      "e80862707140014ae554769409bcfb08f392edc24731a64a20993dc20e0edbd7_p0012"
+    ],
+    "page_numbers": [
+      12
+    ],
+    "physical_block_ids": [
+      "pb_e80862707140014ae554769409bcfb08f392edc24731a64a20993dc20e0edbd7_p0012_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "**TABLE 2** Indications for ARNI, Ivabradine, and SGLT2 Inhibitor Use"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation of explicit medication entities, administration attributes, indications, outcomes, adverse events, and source-language directives. No terminology identifiers were guessed.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 2,
+          "entity_id": "e_0001",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "HFrEF (EF"
+        },
+        {
+          "char_end": 16,
+          "char_start": 12,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "≤40%"
+        },
+        {
+          "char_end": 40,
+          "char_start": 21,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "NYHA class II–IV HF"
+        },
+        {
+          "char_end": 130,
+          "char_start": 43,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Administered in conjunction with a background of GDMT for HF in place of an ACEI or ARB"
+        },
+        {
+          "char_end": 37,
+          "char_start": 35,
+          "entity_id": "e_0005",
+          "entity_type": "ROUTE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "IV"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "**TABLE 2** Indications for ARNI, Ivabradine, and SGLT2 Inhibitor Use",
+          "Indications for Use of an ARNI",
+          "Indications for Use of an SGLT2 Inhibitor"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0001",
+            "e_0002",
+            "e_0003",
+            "e_0004"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0005"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "■ HFrEF (EF\n≤40%\n)\n■ NYHA class II–IV HF\n■ Administered in conjunction with a background of GDMT for HF in place of an ACEI or ARB"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 2,
+          "entity_id": "e_0006",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "HFrEF (EF"
+        },
+        {
+          "char_end": 16,
+          "char_start": 12,
+          "entity_id": "e_0007",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "≤35%"
+        },
+        {
+          "char_end": 62,
+          "char_start": 21,
+          "entity_id": "e_0008",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "On maximum tolerated dose of beta-blocker"
+        },
+        {
+          "char_end": 103,
+          "char_start": 65,
+          "entity_id": "e_0009",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Sinus rhythm with a resting heart rate"
+        },
+        {
+          "char_end": 107,
+          "char_start": 104,
+          "entity_id": "e_0010",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "≥70"
+        },
+        {
+          "char_end": 117,
+          "char_start": 108,
+          "entity_id": "e_0011",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "beats/min"
+        },
+        {
+          "char_end": 143,
+          "char_start": 120,
+          "entity_id": "e_0012",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "NYHA class II or III HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "**TABLE 2** Indications for ARNI, Ivabradine, and SGLT2 Inhibitor Use",
+          "Indications for Use of Ivabradine",
+          "Indications for Use of an SGLT2 Inhibitor"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0006",
+            "e_0007",
+            "e_0008",
+            "e_0009",
+            "e_0010",
+            "e_0011",
+            "e_0012"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "■ HFrEF (EF\n≤35%\n)\n■ On maximum tolerated dose of beta-blocker\n■ Sinus rhythm with a resting heart rate\n≥70\nbeats/min\n■ NYHA class II or III HF"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 2,
+          "entity_id": "e_0013",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "HFrEF (EF"
+        },
+        {
+          "char_end": 16,
+          "char_start": 12,
+          "entity_id": "e_0014",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "≤40%"
+        },
+        {
+          "char_end": 43,
+          "char_start": 17,
+          "entity_id": "e_0015",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": ") with or without diabetes"
+        },
+        {
+          "char_end": 65,
+          "char_start": 46,
+          "entity_id": "e_0016",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "NYHA class II–IV HF"
+        },
+        {
+          "char_end": 128,
+          "char_start": 68,
+          "entity_id": "e_0017",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Administered in conjunction with a background of GDMT for HF"
+        },
+        {
+          "char_end": 62,
+          "char_start": 60,
+          "entity_id": "e_0018",
+          "entity_type": "ROUTE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "IV"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 1,
+        "header_path": [
+          "**TABLE 2** Indications for ARNI, Ivabradine, and SGLT2 Inhibitor Use",
+          "Indications for Use of an SGLT2 Inhibitor"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0013",
+            "e_0014",
+            "e_0015",
+            "e_0016",
+            "e_0017"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0018"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "■ HFrEF (EF\n≤40%\n) with or without diabetes\n■ NYHA class II–IV HF\n■ Administered in conjunction with a background of GDMT for HF"
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Table abbreviations"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "ACEI = angiotensin-converting-enzyme inhibitor; ARB = angiotensin receptor blocker; ARNI = angiotensin receptor-neprilysin inhibitor; EF = ejection fraction; GDMT = guideline-directed medical therapy; HF = heart failure; HFrEF = heart failure with reduced ejection fraction; NYHA = New York Heart Association; SGLT2 = sodium-glucose cotransporter-2."
+    }
+  ]
+}

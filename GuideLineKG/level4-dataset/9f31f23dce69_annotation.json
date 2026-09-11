@@ -1,0 +1,2795 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "ENTITY_BOUNDARY_REVIEW_REQUIRED",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_n0040",
+  "source": {
+    "document_sha256": "d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712",
+    "page_ids": [
+      "d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_p0041"
+    ],
+    "page_numbers": [
+      41
+    ],
+    "physical_block_ids": [
+      "pb_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_p0041_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "Quinidine Increases sinus node frequency and prolongs PR interval, QRS duration, and QT intervala (VFc, BrS, SQTS) 600–1600 mg Loading dose: Start 200 mg every 3 h until effect, max. 3 g in first 24 h Cardiac: Hypotension, TdPd Extracardiac: Gastrointestinal disturbances, auditory and visual disturbances, confusion, leukopenia, haemolytic anaemia, thrombocytopenia, anaphylaxis Contraindications: Severe sinus node dysfunction, severe AV or intraventricular conduction disturbances, previous MI, si"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation of explicit medication entities, administration attributes, indications, outcomes, adverse events, and source-language directives. No terminology identifiers were guessed.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Quinidine"
+        },
+        {
+          "char_end": 96,
+          "char_start": 10,
+          "entity_id": "e_0002",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Increases sinus node frequency and prolongs PR interval, QRS duration, and QT interval"
+        },
+        {
+          "char_end": 102,
+          "char_start": 99,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "(VF"
+        },
+        {
+          "char_end": 117,
+          "char_start": 105,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": ", BrS, SQTS)"
+        },
+        {
+          "char_end": 129,
+          "char_start": 118,
+          "entity_id": "e_0005",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "600–1600 mg"
+        },
+        {
+          "char_end": 156,
+          "char_start": 150,
+          "entity_id": "e_0006",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "200 mg"
+        },
+        {
+          "char_end": 189,
+          "char_start": 186,
+          "entity_id": "e_0007",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "3 g"
+        },
+        {
+          "char_end": 166,
+          "char_start": 163,
+          "entity_id": "e_0008",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "3 h"
+        },
+        {
+          "char_end": 203,
+          "char_start": 199,
+          "entity_id": "e_0009",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "24 h"
+        },
+        {
+          "char_end": 224,
+          "char_start": 213,
+          "entity_id": "e_0010",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Hypotension"
+        },
+        {
+          "char_end": 229,
+          "char_start": 226,
+          "entity_id": "e_0011",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "TdP"
+        },
+        {
+          "char_end": 275,
+          "char_start": 246,
+          "entity_id": "e_0012",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Gastrointestinal disturbances"
+        },
+        {
+          "char_end": 309,
+          "char_start": 277,
+          "entity_id": "e_0013",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "auditory and visual disturbances"
+        },
+        {
+          "char_end": 320,
+          "char_start": 311,
+          "entity_id": "e_0014",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "confusion"
+        },
+        {
+          "char_end": 332,
+          "char_start": 322,
+          "entity_id": "e_0015",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "leukopenia"
+        },
+        {
+          "char_end": 352,
+          "char_start": 334,
+          "entity_id": "e_0016",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "haemolytic anaemia"
+        },
+        {
+          "char_end": 370,
+          "char_start": 354,
+          "entity_id": "e_0017",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "thrombocytopenia"
+        },
+        {
+          "char_end": 383,
+          "char_start": 372,
+          "entity_id": "e_0018",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "anaphylaxis"
+        },
+        {
+          "char_end": 432,
+          "char_start": 403,
+          "entity_id": "e_0019",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Severe sinus node dysfunction"
+        },
+        {
+          "char_end": 487,
+          "char_start": 434,
+          "entity_id": "e_0020",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "severe AV or intraventricular conduction disturbances"
+        },
+        {
+          "char_end": 500,
+          "char_start": 489,
+          "entity_id": "e_0021",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "previous MI"
+        },
+        {
+          "char_end": 517,
+          "char_start": 502,
+          "entity_id": "e_0022",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "significant SHD"
+        },
+        {
+          "char_end": 530,
+          "char_start": 519,
+          "entity_id": "e_0023",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "hypotension"
+        },
+        {
+          "char_end": 536,
+          "char_start": 532,
+          "entity_id": "e_0024",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "LQTS"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Outcome/effect column explicitly reports this outcome for the medication or intervention.",
+          "object_entity_id": "e_0002",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Indication/specific-use column explicitly links the medication to this condition.",
+          "object_entity_id": "e_0003",
+          "predicate": "TREATS",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Indication/specific-use column explicitly links the medication to this condition.",
+          "object_entity_id": "e_0004",
+          "predicate": "TREATS",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0003",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0005",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0004",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0006",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0005",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0007",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0006",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0008",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0007",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0009",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0008",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0010",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0009",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0011",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0010",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0012",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0011",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0013",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0012",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0014",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0013",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0015",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0014",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0016",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0015",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0017",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0016",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0018",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0017",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0019",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0018",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0020",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0019",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0021",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0020",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0022",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0021",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0023",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0022",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0024",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0023",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_n0040: inherited source-table context (see source.title_or_context)",
+          "Anti-arrhythmic drug",
+          "Effects on ECG",
+          "Indications (specific indication)",
+          "Oral dose per day (i.v. dose)",
+          "Side effects",
+          "Contraindications, precautions, other considerations"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0003",
+            "e_0004",
+            "e_0019",
+            "e_0020",
+            "e_0021",
+            "e_0022",
+            "e_0023",
+            "e_0024"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [
+            "e_0002"
+          ],
+          "parameter_entity_ids": [
+            "e_0005",
+            "e_0006",
+            "e_0007",
+            "e_0008",
+            "e_0009"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Quinidine\nIncreases sinus node frequency and prolongs PR interval, QRS duration, and QT interval\na\n(VF\nc\n, BrS, SQTS)\n600–1600 mg\nLoading dose:\nStart 200 mg every 3 h until effect, max. 3 g in first 24 h\nCardiac:\nHypotension, TdP\nd\nExtracardiac:\nGastrointestinal disturbances, auditory and visual disturbances, confusion, leukopenia, haemolytic anaemia, thrombocytopenia, anaphylaxis\nContraindications:\nSevere sinus node dysfunction, severe AV or intraventricular conduction disturbances, previous MI, significant SHD, hypotension, LQTS"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0025",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Ranolazine"
+        },
+        {
+          "char_end": 63,
+          "char_start": 11,
+          "entity_id": "e_0026",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Decreases sinus node frequency, prolongs QT interval"
+        },
+        {
+          "char_end": 76,
+          "char_start": 66,
+          "entity_id": "e_0027",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "VT (LQTS3)"
+        },
+        {
+          "char_end": 88,
+          "char_start": 77,
+          "entity_id": "e_0028",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "750–2000 mg"
+        },
+        {
+          "char_end": 115,
+          "char_start": 98,
+          "entity_id": "e_0029",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Sinus bradycardia"
+        },
+        {
+          "char_end": 128,
+          "char_start": 117,
+          "entity_id": "e_0030",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "hypotension"
+        },
+        {
+          "char_end": 152,
+          "char_start": 143,
+          "entity_id": "e_0031",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Dizziness"
+        },
+        {
+          "char_end": 160,
+          "char_start": 154,
+          "entity_id": "e_0032",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "nausea"
+        },
+        {
+          "char_end": 174,
+          "char_start": 162,
+          "entity_id": "e_0033",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "constipation"
+        },
+        {
+          "char_end": 204,
+          "char_start": 176,
+          "entity_id": "e_0034",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "gastrointestinal disturbance"
+        },
+        {
+          "char_end": 214,
+          "char_start": 206,
+          "entity_id": "e_0035",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "headache"
+        },
+        {
+          "char_end": 220,
+          "char_start": 216,
+          "entity_id": "e_0036",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "rash"
+        },
+        {
+          "char_end": 269,
+          "char_start": 240,
+          "entity_id": "e_0037",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Severe sinus node dysfunction"
+        },
+        {
+          "char_end": 291,
+          "char_start": 271,
+          "entity_id": "e_0038",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "severe heart failure"
+        },
+        {
+          "char_end": 316,
+          "char_start": 293,
+          "entity_id": "e_0039",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "LQTS (other than LQTS3)"
+        },
+        {
+          "char_end": 393,
+          "char_start": 330,
+          "entity_id": "e_0040",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Concomitant treatments associated with QT interval prolongation"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Outcome/effect column explicitly reports this outcome for the medication or intervention.",
+          "object_entity_id": "e_0026",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0024",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Indication/specific-use column explicitly links the medication to this condition.",
+          "object_entity_id": "e_0027",
+          "predicate": "TREATS",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0025",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0028",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0026",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0029",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0027",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0030",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0028",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0031",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0029",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0032",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0030",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0033",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0031",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0034",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0032",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0035",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0033",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0036",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0034",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0037",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0035",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0038",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0036",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0039",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0037",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0040",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0038",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_n0040: inherited source-table context (see source.title_or_context)",
+          "Anti-arrhythmic drug",
+          "Effects on ECG",
+          "Indications (specific indication)",
+          "Oral dose per day (i.v. dose)",
+          "Side effects",
+          "Contraindications, precautions, other considerations"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0027",
+            "e_0037",
+            "e_0038",
+            "e_0039",
+            "e_0040"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [
+            "e_0026"
+          ],
+          "parameter_entity_ids": [
+            "e_0028"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0025"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Ranolazine\nDecreases sinus node frequency, prolongs QT interval\na\nVT (LQTS3)\n750–2000 mg\nCardiac:\nSinus bradycardia, hypotension\nExtracardiac:\nDizziness, nausea, constipation, gastrointestinal disturbance, headache, rash\nContraindications:\nSevere sinus node dysfunction, severe heart failure, LQTS (other than LQTS3)\nPrecautions:\nConcomitant treatments associated with QT interval prolongation"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 7,
+          "char_start": 0,
+          "entity_id": "e_0041",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Sotalol"
+        },
+        {
+          "char_end": 60,
+          "char_start": 8,
+          "entity_id": "e_0042",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Decreases sinus node frequency, prolongs QT interval"
+        },
+        {
+          "char_end": 76,
+          "char_start": 66,
+          "entity_id": "e_0043",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "160–640 mg"
+        },
+        {
+          "char_end": 91,
+          "char_start": 78,
+          "entity_id": "e_0044",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "0.5–1.5 mg/kg"
+        },
+        {
+          "char_end": 101,
+          "char_start": 95,
+          "entity_id": "e_0045",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "10 min"
+        },
+        {
+          "char_end": 142,
+          "char_start": 139,
+          "entity_id": "e_0046",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "6 h"
+        },
+        {
+          "char_end": 161,
+          "char_start": 144,
+          "entity_id": "e_0047",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "See beta-blockers"
+        },
+        {
+          "char_end": 166,
+          "char_start": 163,
+          "entity_id": "e_0048",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "TdP"
+        },
+        {
+          "char_end": 185,
+          "char_start": 169,
+          "entity_id": "e_0049",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "(>2% of patients"
+        },
+        {
+          "char_end": 228,
+          "char_start": 187,
+          "entity_id": "e_0050",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "close monitoring of QT interval and CrCl)"
+        },
+        {
+          "char_end": 277,
+          "char_start": 248,
+          "entity_id": "e_0051",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Severe sinus node dysfunction"
+        },
+        {
+          "char_end": 312,
+          "char_start": 279,
+          "entity_id": "e_0052",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "severe AV conduction disturbances"
+        },
+        {
+          "char_end": 352,
+          "char_start": 314,
+          "entity_id": "e_0053",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "severe heart failure with reduced LVEF"
+        },
+        {
+          "char_end": 369,
+          "char_start": 354,
+          "entity_id": "e_0054",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "significant LVH"
+        },
+        {
+          "char_end": 386,
+          "char_start": 371,
+          "entity_id": "e_0055",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "CrCl <30 ml/min"
+        },
+        {
+          "char_end": 406,
+          "char_start": 388,
+          "entity_id": "e_0056",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "coronary vasospasm"
+        },
+        {
+          "char_end": 412,
+          "char_start": 408,
+          "entity_id": "e_0057",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "LQTS"
+        },
+        {
+          "char_end": 489,
+          "char_start": 426,
+          "entity_id": "e_0058",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Concomitant treatments associated with QT interval prolongation"
+        },
+        {
+          "char_end": 503,
+          "char_start": 491,
+          "entity_id": "e_0059",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "hypokalaemia"
+        },
+        {
+          "char_end": 605,
+          "char_start": 526,
+          "entity_id": "e_0060",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Potassium channel blocker effects require higher dose than beta-blocker effects"
+        },
+        {
+          "char_end": 386,
+          "char_start": 377,
+          "entity_id": "e_0061",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "30 ml/min"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Outcome/effect column explicitly reports this outcome for the medication or intervention.",
+          "object_entity_id": "e_0042",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0039",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0043",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0040",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0044",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0041",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0045",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0042",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0046",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0043",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0047",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0044",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0048",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0045",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0049",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0046",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0050",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0047",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0051",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0048",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0052",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0049",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0053",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0050",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0054",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0051",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0055",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0052",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0056",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0053",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0057",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0054",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0058",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0055",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0059",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0056",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0060",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0057",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0061",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0058",
+          "subject_entity_id": "e_0041",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_n0040: inherited source-table context (see source.title_or_context)",
+          "Anti-arrhythmic drug",
+          "Effects on ECG",
+          "Indications (specific indication)",
+          "Oral dose per day (i.v. dose)",
+          "Side effects",
+          "Contraindications, precautions, other considerations"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0051",
+            "e_0052",
+            "e_0053",
+            "e_0054",
+            "e_0055",
+            "e_0056",
+            "e_0057",
+            "e_0058",
+            "e_0059",
+            "e_0060"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [
+            "e_0042"
+          ],
+          "parameter_entity_ids": [
+            "e_0043",
+            "e_0044",
+            "e_0045",
+            "e_0046",
+            "e_0061"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0041"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Sotalol\nDecreases sinus node frequency, prolongs QT interval\na\nVT\n160–640 mg (0.5–1.5 mg/kg in 10 min. If necessary, can be repeated after 6 h)\nSee beta-blockers, TdP\nd\n(>2% of patients, close monitoring of QT interval and CrCl)\nContraindications:\nSevere sinus node dysfunction, severe AV conduction disturbances, severe heart failure with reduced LVEF, significant LVH, CrCl <30 ml/min, coronary vasospasm, LQTS\nPrecautions:\nConcomitant treatments associated with QT interval prolongation, hypokalaemia\nOther considerations:\nPotassium channel blocker effects require higher dose than beta-blocker effects"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0062",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Verapamil"
+        },
+        {
+          "char_end": 30,
+          "char_start": 10,
+          "entity_id": "e_0063",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "Prolongs PR interval"
+        },
+        {
+          "char_end": 58,
+          "char_start": 31,
+          "entity_id": "e_0064",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.9,
+          "surface_form": "(LV fascicular tachycardia)"
+        },
+        {
+          "char_end": 69,
+          "char_start": 59,
+          "entity_id": "e_0065",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "120–480 mg"
+        },
+        {
+          "char_end": 78,
+          "char_start": 71,
+          "entity_id": "e_0066",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "5–10 mg"
+        },
+        {
+          "char_end": 133,
+          "char_start": 127,
+          "entity_id": "e_0067",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "30 min"
+        },
+        {
+          "char_end": 187,
+          "char_start": 144,
+          "entity_id": "e_0068",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Sinus bradycardia in sinus node dysfunction"
+        },
+        {
+          "char_end": 197,
+          "char_start": 189,
+          "entity_id": "e_0069",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "AV block"
+        },
+        {
+          "char_end": 216,
+          "char_start": 199,
+          "entity_id": "e_0070",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "negative inotrope"
+        },
+        {
+          "char_end": 229,
+          "char_start": 218,
+          "entity_id": "e_0071",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "hypotension"
+        },
+        {
+          "char_end": 273,
+          "char_start": 244,
+          "entity_id": "e_0072",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Gastrointestinal disturbances"
+        },
+        {
+          "char_end": 292,
+          "char_start": 275,
+          "entity_id": "e_0073",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "peripheral oedema"
+        },
+        {
+          "char_end": 302,
+          "char_start": 294,
+          "entity_id": "e_0074",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "flushing"
+        },
+        {
+          "char_end": 353,
+          "char_start": 322,
+          "entity_id": "e_0075",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Heart failure with reduced LVEF"
+        },
+        {
+          "char_end": 384,
+          "char_start": 355,
+          "entity_id": "e_0076",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "severe sinus node dysfunction"
+        },
+        {
+          "char_end": 423,
+          "char_start": 386,
+          "entity_id": "e_0077",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "and severe AV conduction disturbances"
+        },
+        {
+          "char_end": 445,
+          "char_start": 425,
+          "entity_id": "e_0078",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "VT of unknown origin"
+        },
+        {
+          "char_end": 450,
+          "char_start": 447,
+          "entity_id": "e_0079",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "ACS"
+        },
+        {
+          "char_end": 464,
+          "char_start": 452,
+          "entity_id": "e_0080",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "WPW syndrome"
+        },
+        {
+          "char_end": 539,
+          "char_start": 487,
+          "entity_id": "e_0081",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.82,
+          "surface_form": "Increase the risk of myopathy when used with statins"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Outcome/effect column explicitly reports this outcome for the medication or intervention.",
+          "object_entity_id": "e_0063",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0059",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Indication/specific-use column explicitly links the medication to this condition.",
+          "object_entity_id": "e_0064",
+          "predicate": "TREATS",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0060",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0065",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0061",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0066",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0062",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0067",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0063",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0068",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0064",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0069",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0065",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0070",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0066",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0071",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0067",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0072",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0068",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0073",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0069",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Adverse-effect/risk column explicitly associates the medication with this event.",
+          "object_entity_id": "e_0074",
+          "predicate": "ASSOCIATED_WITH_ADVERSE_EVENT",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0070",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0075",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0071",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0076",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0072",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0077",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0073",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0078",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0074",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0079",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0075",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0080",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0076",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Contraindication/precaution is recorded as an explicit medication attribute; no causal claim inferred.",
+          "object_entity_id": "e_0081",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0077",
+          "subject_entity_id": "e_0062",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_d1710bde778e9e1be7f11ed2fef05ae0e7ef558d8677a37c27ae7f454230f712_n0040: inherited source-table context (see source.title_or_context)",
+          "Anti-arrhythmic drug",
+          "Effects on ECG",
+          "Indications (specific indication)",
+          "Oral dose per day (i.v. dose)",
+          "Side effects",
+          "Contraindications, precautions, other considerations"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0064",
+            "e_0075",
+            "e_0076",
+            "e_0077",
+            "e_0078",
+            "e_0079",
+            "e_0080",
+            "e_0081"
+          ],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [
+            "e_0063"
+          ],
+          "parameter_entity_ids": [
+            "e_0065",
+            "e_0066",
+            "e_0067"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0062"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Verapamil\nProlongs PR interval\n(LV fascicular tachycardia)\n120–480 mg (5–10 mg in slow bolus. If necessary, can be repeated in 30 min)\nCardiac:\nSinus bradycardia in sinus node dysfunction, AV block, negative inotrope, hypotension\nExtracardiac:\nGastrointestinal disturbances, peripheral oedema, flushing\nContraindications:\nHeart failure with reduced LVEF, severe sinus node dysfunction, and severe AV conduction disturbances, VT of unknown origin, ACS, WPW syndrome\nOther considerations:\nIncrease the risk of myopathy when used with statins"
+    }
+  ]
+}

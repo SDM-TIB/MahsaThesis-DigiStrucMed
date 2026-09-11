@@ -1,0 +1,1790 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_n0042",
+  "source": {
+    "document_sha256": "66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d",
+    "page_ids": [
+      "66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_p0034"
+    ],
+    "page_numbers": [
+      34
+    ],
+    "physical_block_ids": [
+      "pb_66b005a6484e5a6e96e40015102d69efc8bc0d0cc9a2a807f86d748d49b3068d_p0034_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "**Table 12. Commonly Used Oral Diuretics in Treatment of Congestion for Chronic HF**"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation of explicit medication entities, administration attributes, indications, outcomes, adverse events, and source-language directives. No terminology identifiers were guessed.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Bumetanide"
+        },
+        {
+          "char_end": 21,
+          "char_start": 11,
+          "entity_id": "e_0002",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "0.5–1.0 mg"
+        },
+        {
+          "char_end": 26,
+          "char_start": 22,
+          "entity_id": "e_0003",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "once"
+        },
+        {
+          "char_end": 35,
+          "char_start": 30,
+          "entity_id": "e_0004",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "twice"
+        },
+        {
+          "char_end": 41,
+          "char_start": 36,
+          "entity_id": "e_0005",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "10 mg"
+        },
+        {
+          "char_end": 47,
+          "char_start": 42,
+          "entity_id": "e_0006",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "4–6 h"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0002",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0003",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0004",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0003",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0005",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0004",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0006",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0005",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 12. Commonly Used Oral Diuretics in Treatment of Congestion for Chronic HF**",
+          "Loop diuretics",
+          "Drug",
+          "Initial Daily Dose",
+          "Maximum Total Daily Dose",
+          "Duration of Action"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0002",
+            "e_0003",
+            "e_0004",
+            "e_0005",
+            "e_0006"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Bumetanide\n0.5–1.0 mg once or twice\n10 mg\n4–6 h"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Furosemide"
+        },
+        {
+          "char_end": 19,
+          "char_start": 11,
+          "entity_id": "e_0008",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "20–40 mg"
+        },
+        {
+          "char_end": 24,
+          "char_start": 20,
+          "entity_id": "e_0009",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "once"
+        },
+        {
+          "char_end": 33,
+          "char_start": 28,
+          "entity_id": "e_0010",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "twice"
+        },
+        {
+          "char_end": 40,
+          "char_start": 34,
+          "entity_id": "e_0011",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "600 mg"
+        },
+        {
+          "char_end": 46,
+          "char_start": 41,
+          "entity_id": "e_0012",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "6–8 h"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0008",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0006",
+          "subject_entity_id": "e_0007",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0009",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0007",
+          "subject_entity_id": "e_0007",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0010",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0008",
+          "subject_entity_id": "e_0007",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0011",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0009",
+          "subject_entity_id": "e_0007",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0012",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0010",
+          "subject_entity_id": "e_0007",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 12. Commonly Used Oral Diuretics in Treatment of Congestion for Chronic HF**",
+          "Loop diuretics",
+          "Drug",
+          "Initial Daily Dose",
+          "Maximum Total Daily Dose",
+          "Duration of Action"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0008",
+            "e_0009",
+            "e_0010",
+            "e_0011",
+            "e_0012"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Furosemide\n20–40 mg once or twice\n600 mg\n6–8 h"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0013",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Torsemide"
+        },
+        {
+          "char_end": 18,
+          "char_start": 10,
+          "entity_id": "e_0014",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "10–20 mg"
+        },
+        {
+          "char_end": 23,
+          "char_start": 19,
+          "entity_id": "e_0015",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "once"
+        },
+        {
+          "char_end": 30,
+          "char_start": 24,
+          "entity_id": "e_0016",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "200 mg"
+        },
+        {
+          "char_end": 38,
+          "char_start": 31,
+          "entity_id": "e_0017",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "12–16 h"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0014",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0011",
+          "subject_entity_id": "e_0013",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0015",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0012",
+          "subject_entity_id": "e_0013",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0016",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0013",
+          "subject_entity_id": "e_0013",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0017",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0014",
+          "subject_entity_id": "e_0013",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 12. Commonly Used Oral Diuretics in Treatment of Congestion for Chronic HF**",
+          "Loop diuretics",
+          "Drug",
+          "Initial Daily Dose",
+          "Maximum Total Daily Dose",
+          "Duration of Action"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0014",
+            "e_0015",
+            "e_0016",
+            "e_0017"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0013"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Torsemide\n10–20 mg once\n200 mg\n12–16 h"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0018",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Chlorthiazide"
+        },
+        {
+          "char_end": 24,
+          "char_start": 14,
+          "entity_id": "e_0019",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "250–500 mg"
+        },
+        {
+          "char_end": 29,
+          "char_start": 25,
+          "entity_id": "e_0020",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "once"
+        },
+        {
+          "char_end": 38,
+          "char_start": 33,
+          "entity_id": "e_0021",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "twice"
+        },
+        {
+          "char_end": 46,
+          "char_start": 39,
+          "entity_id": "e_0022",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "1000 mg"
+        },
+        {
+          "char_end": 53,
+          "char_start": 47,
+          "entity_id": "e_0023",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "6–12 h"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0019",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0015",
+          "subject_entity_id": "e_0018",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0020",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0016",
+          "subject_entity_id": "e_0018",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0021",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0017",
+          "subject_entity_id": "e_0018",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0022",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0018",
+          "subject_entity_id": "e_0018",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0023",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0019",
+          "subject_entity_id": "e_0018",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 12. Commonly Used Oral Diuretics in Treatment of Congestion for Chronic HF**",
+          "Thiazide diuretics",
+          "Drug",
+          "Initial Daily Dose",
+          "Maximum Total Daily Dose",
+          "Duration of Action"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0019",
+            "e_0020",
+            "e_0021",
+            "e_0022",
+            "e_0023"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0018"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Chlorthiazide\n250–500 mg once or twice\n1000 mg\n6–12 h"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 14,
+          "char_start": 0,
+          "entity_id": "e_0024",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Chlorthalidone"
+        },
+        {
+          "char_end": 25,
+          "char_start": 15,
+          "entity_id": "e_0025",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "12.5–25 mg"
+        },
+        {
+          "char_end": 30,
+          "char_start": 26,
+          "entity_id": "e_0026",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "once"
+        },
+        {
+          "char_end": 37,
+          "char_start": 31,
+          "entity_id": "e_0027",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "100 mg"
+        },
+        {
+          "char_end": 45,
+          "char_start": 38,
+          "entity_id": "e_0028",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "24–72 h"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0025",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0020",
+          "subject_entity_id": "e_0024",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0026",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0021",
+          "subject_entity_id": "e_0024",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0027",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0022",
+          "subject_entity_id": "e_0024",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0028",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0023",
+          "subject_entity_id": "e_0024",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 12. Commonly Used Oral Diuretics in Treatment of Congestion for Chronic HF**",
+          "Thiazide diuretics",
+          "Drug",
+          "Initial Daily Dose",
+          "Maximum Total Daily Dose",
+          "Duration of Action"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0025",
+            "e_0026",
+            "e_0027",
+            "e_0028"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0024"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Chlorthalidone\n12.5–25 mg once\n100 mg\n24–72 h"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 19,
+          "char_start": 0,
+          "entity_id": "e_0029",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Hydrochlorothiazide"
+        },
+        {
+          "char_end": 25,
+          "char_start": 20,
+          "entity_id": "e_0030",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "25 mg"
+        },
+        {
+          "char_end": 30,
+          "char_start": 26,
+          "entity_id": "e_0031",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "once"
+        },
+        {
+          "char_end": 39,
+          "char_start": 34,
+          "entity_id": "e_0032",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "twice"
+        },
+        {
+          "char_end": 46,
+          "char_start": 40,
+          "entity_id": "e_0033",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "200 mg"
+        },
+        {
+          "char_end": 53,
+          "char_start": 47,
+          "entity_id": "e_0034",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "6–12 h"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0030",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0024",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0031",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0025",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0032",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0026",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0033",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0027",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0034",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0028",
+          "subject_entity_id": "e_0029",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 12. Commonly Used Oral Diuretics in Treatment of Congestion for Chronic HF**",
+          "Thiazide diuretics",
+          "Drug",
+          "Initial Daily Dose",
+          "Maximum Total Daily Dose",
+          "Duration of Action"
+        ],
+        "row_index": 9,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0030",
+            "e_0031",
+            "e_0032",
+            "e_0033",
+            "e_0034"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0029"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Hydrochlorothiazide\n25 mg once or twice\n200 mg\n6–12 h"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0035",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Indapamide"
+        },
+        {
+          "char_end": 17,
+          "char_start": 11,
+          "entity_id": "e_0036",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "2.5 mg"
+        },
+        {
+          "char_end": 22,
+          "char_start": 18,
+          "entity_id": "e_0037",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "once"
+        },
+        {
+          "char_end": 27,
+          "char_start": 23,
+          "entity_id": "e_0038",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "5 mg"
+        },
+        {
+          "char_end": 32,
+          "char_start": 28,
+          "entity_id": "e_0039",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "36 h"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0036",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0029",
+          "subject_entity_id": "e_0035",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0037",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0030",
+          "subject_entity_id": "e_0035",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0038",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0031",
+          "subject_entity_id": "e_0035",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0039",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0032",
+          "subject_entity_id": "e_0035",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 12. Commonly Used Oral Diuretics in Treatment of Congestion for Chronic HF**",
+          "Thiazide diuretics",
+          "Drug",
+          "Initial Daily Dose",
+          "Maximum Total Daily Dose",
+          "Duration of Action"
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0036",
+            "e_0037",
+            "e_0038",
+            "e_0039"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0035"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Indapamide\n2.5 mg once\n5 mg\n36 h"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0040",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "Metolazone"
+        },
+        {
+          "char_end": 17,
+          "char_start": 11,
+          "entity_id": "e_0041",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "2.5 mg"
+        },
+        {
+          "char_end": 22,
+          "char_start": 18,
+          "entity_id": "e_0042",
+          "entity_type": "FREQUENCY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "once"
+        },
+        {
+          "char_end": 28,
+          "char_start": 23,
+          "entity_id": "e_0043",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.97,
+          "surface_form": "20 mg"
+        },
+        {
+          "char_end": 36,
+          "char_start": 29,
+          "entity_id": "e_0044",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "12–24 h"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0041",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0033",
+          "subject_entity_id": "e_0040",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0042",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0034",
+          "subject_entity_id": "e_0040",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0043",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0035",
+          "subject_entity_id": "e_0040",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Quantitative or administration attribute is explicitly listed in the same medication row.",
+          "object_entity_id": "e_0044",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.88,
+          "relation_id": "fr_0036",
+          "subject_entity_id": "e_0040",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "**Table 12. Commonly Used Oral Diuretics in Treatment of Congestion for Chronic HF**",
+          "Thiazide diuretics",
+          "Drug",
+          "Initial Daily Dose",
+          "Maximum Total Daily Dose",
+          "Duration of Action"
+        ],
+        "row_index": 11,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive row with no explicit recommendation trigger.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0041",
+            "e_0042",
+            "e_0043",
+            "e_0044"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0040"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Metolazone\n2.5 mg once\n20 mg\n12–24 h"
+    }
+  ]
+}

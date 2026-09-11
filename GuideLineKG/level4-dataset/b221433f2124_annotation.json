@@ -1,0 +1,2806 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING",
+      "MIXED_CONTENT",
+      "OTHER_OPERATION_REQUIRES_SCHEMA_REVIEW"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac_n0083",
+  "source": {
+    "document_sha256": "1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac",
+    "page_ids": [
+      "1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac_p0083"
+    ],
+    "page_numbers": [
+      83
+    ],
+    "physical_block_ids": [
+      "pb_1d4ae21bdadbacafa8087e019976dde180c346c5d4626772c2b286528336efac_p0083_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "Recommendations for patients with coronary artery disease Aspirin 75–100 mg daily is recommended for patients with a previous myocardial infarction or revascularization. I A In ACS, DAPT with a P2Y12 inhibitor in addition to aspirin is recommended for 12 months, unless there are contraindications such as excessive risk of bleeding. I A In patients with CCS, clopidogrel 75 mg daily is recommended, in addition to aspirin, for 6 months following coronary stenting, irrespective of stent type, unless"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent review found 15 medication-directed and 15 other normative text units; classification remains agent silver pending human adjudication.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 7,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "Aspirin"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with coronary artery disease",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Aspirin 75–100 mg daily is recommended for patients with a previous myocardial infarction or revascularization."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 59,
+          "char_start": 52,
+          "entity_id": "e_0002",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "aspirin"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with coronary artery disease",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADD",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0003",
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0002"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "In ACS, DAPT with a P2Y 12 inhibitor in addition to aspirin is recommended for 12 months, unless there are contraindications such as excessive risk of bleeding."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 33,
+          "char_start": 22,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "clopidogrel"
+        },
+        {
+          "char_end": 84,
+          "char_start": 77,
+          "entity_id": "e_0004",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "aspirin"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with coronary artery disease",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADD",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0005",
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0003",
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "In patients with CCS, clopidogrel 75 mg daily is recommended, in addition to aspirin, for 6 months following coronary stenting, irrespective of stent type, unless a shorter duration (1–3 months) is indicated due to risk or the occurrence of life-threatening bleeding."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 14,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ACE inhibitors"
+        },
+        {
+          "char_end": 22,
+          "char_start": 19,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ARB"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with coronary artery disease",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0007",
+            "gr_0008"
+          ],
+          "source_trigger_texts": [
+            "are recommended"
+          ],
+          "target_entity_ids": [
+            "e_0005",
+            "e_0006"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0007",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0008",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "ACE inhibitors (or ARB) are recommended if a patient has other conditions (e.g. HF, hypertension, or DM)."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "Beta-blockers"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with coronary artery disease",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0009",
+            "gr_0010"
+          ],
+          "source_trigger_texts": [
+            "are recommended"
+          ],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0009",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0010",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Beta-blockers are recommended in patients with LV dysfunction or systolic HF."
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with coronary artery disease",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0011",
+            "gr_0012"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0011",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0012",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "In patients with established ASCVD, oral lipid-lowering treatment with an ultimate LDL-C goal of <1.4 mmol/L (55 mg/dL) and a ≥50% reduction in LDL-C vs. baseline is recommended."
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations regarding pharmacological and nonpharmacological interventions for patients with symptomatic (New York Heart Association class II-IV) heart failure with reduced ejection fraction (left ventricular ejection fraction <40%) with proven benefits on clinical outcomes, including cardiovascular morbidity and mortality",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 9,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0013",
+            "gr_0014"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0013",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0014",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "It is recommended that patients with HF are enrolled in a comprehensive CR programme to reduce the risk of HF hospitalization and death."
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations regarding pharmacological and nonpharmacological interventions for patients with symptomatic (New York Heart Association class II-IV) heart failure with reduced ejection fraction (left ventricular ejection fraction <40%) with proven benefits on clinical outcomes, including cardiovascular morbidity and mortality",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0015",
+            "gr_0016"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0015",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0016",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "EBCR is recommended in stable symptomatic patients with HFrEF to reduce the risk of HF hospitalization."
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations regarding pharmacological and nonpharmacological interventions for patients with symptomatic (New York Heart Association class II-IV) heart failure with reduced ejection fraction (left ventricular ejection fraction <40%) with proven benefits on clinical outcomes, including cardiovascular morbidity and mortality",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 11,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ASSESS",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0017",
+            "gr_0018"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0017",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0018",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "It is recommended to screen patients with HF for both CV and non-CV comorbidities, which, if present, should be treated, provided safe and effective interventions exist, not only to alleviate symptoms but also to improve prognosis."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 3,
+          "entity_id": "e_0008",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ACE inhibitor"
+        },
+        {
+          "char_end": 62,
+          "char_start": 50,
+          "entity_id": "e_0009",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "beta-blocker"
+        },
+        {
+          "char_end": 73,
+          "char_start": 70,
+          "entity_id": "e_0010",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "MRA"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations regarding pharmacological and nonpharmacological interventions for patients with symptomatic (New York Heart Association class II-IV) heart failure with reduced ejection fraction (left ventricular ejection fraction <40%) with proven benefits on clinical outcomes, including cardiovascular morbidity and mortality",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 12,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADD",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0019",
+            "gr_0020"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0008",
+            "e_0009",
+            "e_0010"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0019",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0020",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0011",
+      "verbatim_text": "An ACE inhibitor is recommended, in addition to a beta-blocker and an MRA, for patients with symptomatic HFrEF to reduce the risk of HF hospitalization and death."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 14,
+          "char_start": 2,
+          "entity_id": "e_0011",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "beta-blocker"
+        },
+        {
+          "char_end": 62,
+          "char_start": 49,
+          "entity_id": "e_0012",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ACE inhibitor"
+        },
+        {
+          "char_end": 74,
+          "char_start": 70,
+          "entity_id": "e_0013",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ARNI"
+        },
+        {
+          "char_end": 86,
+          "char_start": 83,
+          "entity_id": "e_0014",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "MRA"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations regarding pharmacological and nonpharmacological interventions for patients with symptomatic (New York Heart Association class II-IV) heart failure with reduced ejection fraction (left ventricular ejection fraction <40%) with proven benefits on clinical outcomes, including cardiovascular morbidity and mortality",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 13,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADD",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0021",
+            "gr_0022"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0011",
+            "e_0012",
+            "e_0013",
+            "e_0014"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0021",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0022",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0012",
+      "verbatim_text": "A beta-blocker is recommended, in addition to an ACE inhibitor (or an ARNI) and an MRA, for patients with stable, symptomatic HFrEF to reduce the risk of HF hospitalization and death."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 6,
+          "char_start": 3,
+          "entity_id": "e_0015",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "MRA"
+        },
+        {
+          "char_end": 83,
+          "char_start": 70,
+          "entity_id": "e_0016",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ACE inhibitor"
+        },
+        {
+          "char_end": 95,
+          "char_start": 91,
+          "entity_id": "e_0017",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ARNI"
+        },
+        {
+          "char_end": 115,
+          "char_start": 103,
+          "entity_id": "e_0018",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "beta-blocker"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations regarding pharmacological and nonpharmacological interventions for patients with symptomatic (New York Heart Association class II-IV) heart failure with reduced ejection fraction (left ventricular ejection fraction <40%) with proven benefits on clinical outcomes, including cardiovascular morbidity and mortality",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 14,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0013",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0023",
+            "gr_0024"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0015",
+            "e_0016",
+            "e_0017",
+            "e_0018"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0023",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0024",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0013",
+      "verbatim_text": "An MRA is recommended for patients with HFrEF already treated with an ACE inhibitor (or an ARNI) and a beta-blocker, to reduce the risk of HF hospitalization and death."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 0,
+          "entity_id": "e_0019",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "Sacubitril/valsartan"
+        },
+        {
+          "char_end": 73,
+          "char_start": 60,
+          "entity_id": "e_0020",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ACE inhibitor"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations regarding pharmacological and nonpharmacological interventions for patients with symptomatic (New York Heart Association class II-IV) heart failure with reduced ejection fraction (left ventricular ejection fraction <40%) with proven benefits on clinical outcomes, including cardiovascular morbidity and mortality",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: B"
+        ],
+        "row_index": 15,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0014",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "SWITCH",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0025",
+            "gr_0026"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0019",
+            "e_0020"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0025",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0026",
+          "grade_source_text": "B",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0014",
+      "verbatim_text": "Sacubitril/valsartan is recommended as a replacement for an ACE inhibitor to reduce the risk of HF hospitalization and death in patients with HFrEF."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 6,
+          "char_start": 3,
+          "entity_id": "e_0021",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ARB"
+        },
+        {
+          "char_end": 153,
+          "char_start": 140,
+          "entity_id": "e_0022",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ACE inhibitor"
+        },
+        {
+          "char_end": 165,
+          "char_start": 161,
+          "entity_id": "e_0023",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ARNI"
+        },
+        {
+          "char_end": 210,
+          "char_start": 198,
+          "entity_id": "e_0024",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "beta-blocker"
+        },
+        {
+          "char_end": 221,
+          "char_start": 218,
+          "entity_id": "e_0025",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "MRA"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations regarding pharmacological and nonpharmacological interventions for patients with symptomatic (New York Heart Association class II-IV) heart failure with reduced ejection fraction (left ventricular ejection fraction <40%) with proven benefits on clinical outcomes, including cardiovascular morbidity and mortality",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: B"
+        ],
+        "row_index": 16,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0015",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0027",
+            "gr_0028"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0021",
+            "e_0022",
+            "e_0023",
+            "e_0024",
+            "e_0025"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0027",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0028",
+          "grade_source_text": "B",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0015",
+      "verbatim_text": "An ARB is recommended to reduce the risk of HF hospitalization or CV death in symptomatic patients with HFrEF who are unable to tolerate an ACE inhibitor and/or ARNI (patients should also receive a beta-blocker and an MRA)."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 30,
+          "char_start": 17,
+          "entity_id": "e_0026",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "empagliflozin"
+        },
+        {
+          "char_end": 100,
+          "char_start": 87,
+          "entity_id": "e_0027",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ACE inhibitor"
+        },
+        {
+          "char_end": 109,
+          "char_start": 105,
+          "entity_id": "e_0028",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "ARNI"
+        },
+        {
+          "char_end": 126,
+          "char_start": 114,
+          "entity_id": "e_0029",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "beta-blocker"
+        },
+        {
+          "char_end": 138,
+          "char_start": 135,
+          "entity_id": "e_0030",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "MRA"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations regarding pharmacological and nonpharmacological interventions for patients with symptomatic (New York Heart Association class II-IV) heart failure with reduced ejection fraction (left ventricular ejection fraction <40%) with proven benefits on clinical outcomes, including cardiovascular morbidity and mortality",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 17,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0016",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADD",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0029",
+            "gr_0030"
+          ],
+          "source_trigger_texts": [
+            "are recommended"
+          ],
+          "target_entity_ids": [
+            "e_0026",
+            "e_0027",
+            "e_0028",
+            "e_0029",
+            "e_0030"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0029",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0030",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0016",
+      "verbatim_text": "Dapagliflozin or empagliflozin are recommended, in addition to optimal treatment of an ACE inhibitor (or ARNI), a beta-blocker, and an MRA, for patients with HFrEF to reduce the risk of HF hospitalization and death."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0031",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "Diuretics"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations regarding pharmacological and nonpharmacological interventions for patients with symptomatic (New York Heart Association class II-IV) heart failure with reduced ejection fraction (left ventricular ejection fraction <40%) with proven benefits on clinical outcomes, including cardiovascular morbidity and mortality",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: C"
+        ],
+        "row_index": 18,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0017",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0031",
+            "gr_0032"
+          ],
+          "source_trigger_texts": [
+            "are recommended"
+          ],
+          "target_entity_ids": [
+            "e_0031"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0031",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0032",
+          "grade_source_text": "C",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0017",
+      "verbatim_text": "Diuretics are recommended in patients with HFrEF with signs and/or symptoms of congestion to reduce the risk of HF hospitalization."
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with cerebrovascular disease",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 20,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0019",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADD",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0033",
+            "gr_0034"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0033",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0034",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0019",
+      "verbatim_text": "In patients with a cerebrovascular event, improvement of lifestyle factors in addition to appropriate pharmacological management is recommended."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 276,
+          "char_start": 263,
+          "entity_id": "e_0032",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "anticoagulant"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with cerebrovascular disease",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 21,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0020",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0035",
+            "gr_0036"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0032"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0035",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0036",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0020",
+      "verbatim_text": "In patients with ischaemic stroke or TIA, prevention with antithrombotics is recommended; choice of antithrombotic depends on the mechanism of event. Use of an antiplatelet is recommended for patients with non-cardioembolic ischaemic stroke or TIA, and use of an anticoagulant is recommended in patients with cardioembolic ischaemic stroke or TIA."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 83,
+          "char_start": 76,
+          "entity_id": "e_0033",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "aspirin"
+        },
+        {
+          "char_end": 118,
+          "char_start": 111,
+          "entity_id": "e_0034",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "aspirin"
+        },
+        {
+          "char_end": 134,
+          "char_start": 123,
+          "entity_id": "e_0035",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "clopidogrel"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with cerebrovascular disease",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 22,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0021",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0037",
+            "gr_0038"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0033",
+            "e_0034",
+            "e_0035"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0037",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0038",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0021",
+      "verbatim_text": "In patients with non-cardioembolic ischaemic stroke or TIA, prevention with aspirin only, or dipyridamole plus aspirin, or clopidogrel alone is recommended."
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with cerebrovascular disease",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 23,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0022",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0039",
+            "gr_0040"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0039",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0040",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0022",
+      "verbatim_text": "In patients with stroke or TIA who have BP of 140/90 mmHg or higher, BP lowering is recommended."
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with lower extremity artery disease: best medical therapy",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: B"
+        ],
+        "row_index": 25,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0024",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0041",
+            "gr_0042"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0041",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0042",
+          "grade_source_text": "B",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0024",
+      "verbatim_text": "Smoking cessation is recommended in all patients with LEAD."
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with lower extremity artery disease: best medical therapy",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: C"
+        ],
+        "row_index": 26,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0025",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0043",
+            "gr_0044"
+          ],
+          "source_trigger_texts": [
+            "are recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0043",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0044",
+          "grade_source_text": "C",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0025",
+      "verbatim_text": "Healthy diet and PA are recommended for all patients with LEAD."
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with lower extremity artery disease: best medical therapy",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 27,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0026",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0045",
+            "gr_0046"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0045",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0046",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0026",
+      "verbatim_text": "In patients with intermittent claudication: • Supervised exercise training is recommended"
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with lower extremity artery disease: best medical therapy",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: C"
+        ],
+        "row_index": 28,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0027",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0047",
+            "gr_0048"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0047",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0048",
+          "grade_source_text": "C",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0027",
+      "verbatim_text": "• Non-supervised exercise training is recommended when supervised exercise training is not feasible or available."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 0,
+          "entity_id": "e_0036",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.95,
+          "surface_form": "Antiplatelet therapy"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with lower extremity artery disease: best medical therapy",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: C"
+        ],
+        "row_index": 29,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0028",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0049",
+            "gr_0050"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0036"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0049",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0050",
+          "grade_source_text": "C",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0028",
+      "verbatim_text": "Antiplatelet therapy is recommended in patients with symptomatic LEAD."
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with lower extremity artery disease: best medical therapy",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 30,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0029",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0051",
+            "gr_0052"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0051",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0052",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0029",
+      "verbatim_text": "In patients with LEAD and hypertension, it is recommended to control BP at <140/90 mmHg."
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Recommendations for patients with lower extremity artery disease: best medical therapy",
+          "SOURCE_DEFINED_OTHER: I",
+          "SOURCE_DEFINED_OTHER: A"
+        ],
+        "row_index": 31,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0030",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Agent-silver normative structure derived from exact source wording; human adjudication is required.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.8,
+          "source_grade_record_ids": [
+            "gr_0053",
+            "gr_0054"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0053",
+          "grade_source_text": "I",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "I"
+        },
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0054",
+          "grade_source_text": "A",
+          "grading_system_name": "Source guideline grading",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0030",
+      "verbatim_text": "In patients with LEAD and DM, strict glycaemic control is recommended."
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "CORRECTED_SEMANTIC_CLASS",
+      "MIXED_CONTENT",
+      "OCR_ROW_ALIGNMENT_UNCERTAIN",
+      "CONTINUATION_ROW_INHERITANCE",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0039",
+  "source": {
+    "document_sha256": "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b",
+    "page_ids": [
+      "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0059"
+    ],
+    "page_numbers": [
+      59
+    ],
+    "physical_block_ids": [
+      "pb_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0059_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "Ivabradine If-channel blocker - Yes (transferred to placenta in rats) Yes (animal studies show excretion in breast milk; contraindicated in breastfeeding) Inadequate human data • contraindicated Animal data: • exposure close to therapeutic doses showed a higher incidence of foetal cardiac defects in the rat and a small number of foetuses with ectrodactyly in the rabbit drug of choice for hypertension • intrauterine growth retardation (second and third trimesters), neonatal bradycardia and hypotension (used near term), hypoglycaemia | Labetalol α/β-blocker C Yes Yes b Animal data: • rats and rabbits (4× or 6× MRHD): no foetal malformations | Levosimendan Calcium sensitizer - Unknown Yes (animal studies show excretion in breast milk) Inadequate human data Animal data: • generalized reduction in the degree of ossification in rat and rabbit foetuses, with anomalous development of the supraoccipital bone in the rabbit • administration before and during early pregnancy decreased the number of corpora lutea, implantations, and pups per litter, and increased the number of early resorptions and post-implantation losses in the female rat (effects were seen at clinical exposure levels) | Lidocaine Antiarrhythmic (Class IB) C Yes Yes b Foetal bradycardia, acidosis, central nervous system toxicity Animal data: • reproduction studies in rats (6× RHD): no evidence of harm to the foetus | Macitentan Endothelin receptor antagonist X Unknown Yes (animal studies show excretion in breast milk) Contraindicated • no human data Animal data: • teratogenic in rabbits and rats at all doses tested, cardiovascular and mandibular arch fusion abnormalities • reduced pup survival and impairment of reproductive capability of offspring (6× RHD during late pregnancy/lactation) | Methyldopa Central alpha-agonist B Yes Yes b Mild neonatal hypotension • no teratogenic effects in recently published prospective observational cohort study (first trimester exposure, n = 261), but higher risk of pre-term birth 389 Animal data • mice (16.6× MRHD), rats (1.7× MRHD), and rabbits (3.3× MRHD): no evidence of foetal harm"
+  },
+  "table_assessment": {
+    "assessment_notes": "The table is primarily descriptive safety data but contains explicit directive fragments for ivabradine, labetalol, and a likely misaligned methyldopa row. Blank continuation rows and cross-row contamination require human review.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Ivabradine"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Drugs and safety data",
+          "Ivabradine",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Ivabradine\nIf-channel blocker\n-\nYes (transferred to placenta in rats)\nYes (animal studies show excretion in breast milk; contraindicated in breastfeeding)\nInadequate human data\n• contraindicated\nAnimal data:\n• exposure close to therapeutic doses showed a higher incidence of foetal cardiac defects in the rat and a small number of foetuses with ectrodactyly in the rabbit\ndrug of choice for hypertension\n• intrauterine growth retardation (second and third trimesters), neonatal bradycardia and hypotension (used near term), hypoglycaemia"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0002",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Labetalol"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Drugs and safety data",
+          "Labetalol",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Labetalol\nα/β-blocker\nC\nYes\nYes b\nAnimal data:\n• rats and rabbits (4× or 6× MRHD): no foetal malformations"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Levosimendan"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Drugs and safety data",
+          "Levosimendan",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Levosimendan\nCalcium sensitizer\n-\nUnknown\nYes (animal studies show excretion in breast milk)\nInadequate human data\nAnimal data:\n• generalized reduction in the degree of ossification in rat and rabbit foetuses, with anomalous development of the supraoccipital bone in the rabbit\n• administration before and during early pregnancy decreased the number of corpora lutea, implantations, and pups per litter, and increased the number of early resorptions and post-implantation losses in the female rat (effects were seen at clinical exposure levels)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Lidocaine"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Drugs and safety data",
+          "Lidocaine",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Lidocaine\nAntiarrhythmic (Class IB)\nC\nYes\nYes b\nFoetal bradycardia, acidosis, central nervous system toxicity\nAnimal data:\n• reproduction studies in rats (6× RHD): no evidence of harm to the foetus"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Macitentan"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Drugs and safety data",
+          "Macitentan",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "X",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "X"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Macitentan\nEndothelin receptor antagonist\nX\nUnknown\nYes (animal studies show excretion in breast milk)\nContraindicated\n• no human data\nAnimal data:\n• teratogenic in rabbits and rats at all doses tested, cardiovascular and mandibular arch fusion abnormalities\n• reduced pup survival and impairment of reproductive capability of offspring (6× RHD during late pregnancy/lactation)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Methyldopa"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Drugs and safety data",
+          "Methyldopa",
+          "Pre-clinical/clinical safety data"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "B",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Methyldopa\nCentral alpha-agonist\nB\nYes\nYes b\nMild neonatal hypotension\n• no teratogenic effects in recently published prospective observational cohort study (first trimester exposure, n = 261), but higher risk of pre-term birth 389\nAnimal data\n• mice (16.6× MRHD), rats (1.7× MRHD), and rabbits (3.3× MRHD): no evidence of foetal harm"
+    }
+  ]
+}

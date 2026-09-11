@@ -1,0 +1,1680 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TEMPORAL_OR_SUPERSESSION_CONTENT",
+      "SUSPECTED_DUPLICATE",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_3756890c1e5fc6e4f303d0d69c5e6674192365d99b5559676ac7dc7c72e24ed8_n0017",
+  "source": {
+    "document_sha256": "3756890c1e5fc6e4f303d0d69c5e6674192365d99b5559676ac7dc7c72e24ed8",
+    "page_ids": [
+      "3756890c1e5fc6e4f303d0d69c5e6674192365d99b5559676ac7dc7c72e24ed8_p0014"
+    ],
+    "page_numbers": [
+      14
+    ],
+    "physical_block_ids": [
+      "pb_3756890c1e5fc6e4f303d0d69c5e6674192365d99b5559676ac7dc7c72e24ed8_p0014_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "Appendix A. (continued)"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review confirms digoxin, warfarin, aspirin, clopidogrel, and antithrombotic recommendation rows in a two-version comparison table. A sibling document contains the same section with separate materialization, so temporal comparison and duplicate adjudication remain required.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": true,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": true
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 7,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Digoxin"
+        },
+        {
+          "char_end": 192,
+          "char_start": 33,
+          "entity_id": "e_0002",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with LV systolic dysfunction (LVEF ≤40%) who have signs or symptoms of HF while receiving standard therapy, including ACE inhibitors and beta blockers"
+        },
+        {
+          "char_end": 211,
+          "char_start": 194,
+          "entity_id": "e_0003",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "NYHA class II-III"
+        },
+        {
+          "char_end": 252,
+          "char_start": 239,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "NYHA class IV"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "7.29",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0003"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Digoxin is considered for NYHA II-III symptomatic reduced-LVEF HF despite standard therapy.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0002"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0001"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0004"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Digoxin is considered for NYHA IV symptomatic reduced-LVEF HF despite standard therapy.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0002"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "(Strength of Evidence = A)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Digoxin should be considered for patients with LV systolic dysfunction (LVEF ≤40%) who have signs or symptoms of HF while receiving standard therapy, including ACE inhibitors and beta blockers: NYHA class II-III (Strength of Evidence = A) NYHA class IV (Strength of Evidence = B)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 7,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Digoxin"
+        },
+        {
+          "char_end": 197,
+          "char_start": 49,
+          "entity_id": "e_0006",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with reduced LVEF (LVEF ≤40%) who have signs or symptoms of HF while receiving standard therapy, including ACE inhibitors and beta blockers"
+        },
+        {
+          "char_end": 218,
+          "char_start": 201,
+          "entity_id": "e_0007",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "NYHA class II-III"
+        },
+        {
+          "char_end": 261,
+          "char_start": 248,
+          "entity_id": "e_0008",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "NYHA class IV"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "7.29",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0007"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Digoxin is considered for NYHA II-III symptomatic reduced-LVEF HF despite standard therapy.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0006"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0003"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0005"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0008"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Digoxin is considered for NYHA IV symptomatic reduced-LVEF HF despite standard therapy.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0006"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0005"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Digoxin may be considered to improve symptoms in patients with reduced LVEF (LVEF ≤40%) who have signs or symptoms of HF while receiving standard therapy, including ACE inhibitors and beta blockers: • NYHA class II-III (Strength of Evidence = B) • NYHA class IV (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 42,
+          "char_start": 35,
+          "entity_id": "e_0009",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "digoxin"
+        },
+        {
+          "char_end": 153,
+          "char_start": 139,
+          "entity_id": "e_0010",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "0.125 mg daily"
+        },
+        {
+          "char_end": 231,
+          "char_start": 220,
+          "entity_id": "e_0011",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "< 1.0 ng/mL"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "7.30",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The recommended maintenance digoxin dose is 0.125 mg daily in most patients.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0010"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0005"
+          ],
+          "source_trigger_texts": [
+            "should be"
+          ],
+          "target_entity_ids": [
+            "e_0009"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Recommended serum digoxin targets are stated explicitly in the source.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0011"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0005"
+          ],
+          "source_trigger_texts": [
+            "should be"
+          ],
+          "target_entity_ids": [
+            "e_0009"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "It is recommended that the dose of digoxin, which should be based on lean body mass, renal function and concomitant medications, should be 0.125 mg daily in the majority of patients and the serum digoxin level should be < 1.0 ng/mL. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 42,
+          "char_start": 35,
+          "entity_id": "e_0012",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "digoxin"
+        },
+        {
+          "char_end": 154,
+          "char_start": 140,
+          "entity_id": "e_0013",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "0.125 mg daily"
+        },
+        {
+          "char_end": 232,
+          "char_start": 221,
+          "entity_id": "e_0014",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "< 1.0 ng/mL"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "7.30",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The recommended maintenance digoxin dose is 0.125 mg daily in most patients.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0013"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "should be"
+          ],
+          "target_entity_ids": [
+            "e_0012"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Recommended serum digoxin targets are stated explicitly in the source.",
+          "operation": "MONITOR",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0014"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "should be"
+          ],
+          "target_entity_ids": [
+            "e_0012"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "It is recommended that the dose of digoxin, which should be based on lean body mass, renal function, and concomitant medications, should be 0.125 mg daily in the majority of patients and the serum digoxin level should be < 1.0 ng/mL, generally 0.7-0.9 ng/mL. (Strength of Evidence = B)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 67,
+          "char_start": 0,
+          "entity_id": "e_0015",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Adequate control of the ventricular response to atrial fibrillation"
+        },
+        {
+          "char_end": 87,
+          "char_start": 71,
+          "entity_id": "e_0016",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "7.31",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Adequate control of ventricular response in atrial fibrillation is recommended for HF patients.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0016"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0007"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0015"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "LEVEL_OF_EVIDENCE",
+          "grade_record_id": "gr_0007",
+          "grade_source_text": "(Level of Evidence = B)",
+          "grading_system_name": "HFSA Level of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Adequate control of the ventricular response to atrial fibrillation in patients with HF is recommended. (Level of Evidence = B)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 7,
+          "char_start": 0,
+          "entity_id": "e_0017",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Digoxin"
+        },
+        {
+          "char_end": 130,
+          "char_start": 114,
+          "entity_id": "e_0018",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with HF"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "7.31",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Digoxin should be considered to achieve ventricular-rate control in atrial fibrillation for HF patients.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0018"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0008"
+          ],
+          "source_trigger_texts": [
+            "should be considered"
+          ],
+          "target_entity_ids": [
+            "e_0017"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0008",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Digoxin should be considered for achieving adequate control of the ventricular response to atrial fibrillation in patients with HF. (Strength of Evidence = B)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 23,
+          "char_start": 15,
+          "entity_id": "e_0019",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "warfarin"
+        },
+        {
+          "char_end": 139,
+          "char_start": 66,
+          "entity_id": "e_0020",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with HF and chronic or documented paroxysmal atrial fibrillation"
+        },
+        {
+          "char_end": 258,
+          "char_start": 170,
+          "entity_id": "e_0021",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "a history of systemic or pulmonary emboli, including stroke or transient ischemic attack"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "7.33",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Warfarin is recommended for HF patients with chronic or documented atrial fibrillation.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0020"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0009"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0019"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Warfarin is recommended for HF patients with prior systemic or pulmonary embolic events, unless contraindicated.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0021"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0010"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0019"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0009",
+          "grade_source_text": "(Strength of Evidence = A)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0010",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Treatment with warfarin (goal INR 2.0–3.0) is recommended for all patients with HF and chronic or documented paroxysmal atrial fibrillation (Strength of Evidence = A) or a history of systemic or pulmonary emboli, including stroke or transient ischemic attack, (Strength of Evidence = C) unless contraindicated."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 23,
+          "char_start": 15,
+          "entity_id": "e_0022",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "warfarin"
+        },
+        {
+          "char_end": 202,
+          "char_start": 99,
+          "entity_id": "e_0023",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with HF and chronic or documented paroxysmal, persistent, or long-standing atrial fibrillation"
+        },
+        {
+          "char_end": 321,
+          "char_start": 233,
+          "entity_id": "e_0024",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "a history of systemic or pulmonary emboli, including stroke or transient ischemic attack"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "7.33",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0013",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Warfarin is recommended for HF patients with chronic or documented atrial fibrillation.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0023"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0011"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0022"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0014",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Warfarin is recommended for HF patients with prior systemic or pulmonary embolic events, unless contraindicated.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0024"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0012"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0022"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0011",
+          "grade_source_text": "(Strength of Evidence = A)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0012",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Treatment with warfarin (goal international normalized ratio [INR] 2.0-3.0) is recommended for all patients with HF and chronic or documented paroxysmal, persistent, or long-standing atrial fibrillation (Strength of Evidence = A) or a history of systemic or pulmonary emboli, including stroke or transient ischemic attack (Strength of Evidence = C), unless contraindicated."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 48,
+          "char_start": 25,
+          "entity_id": "e_0025",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "an antithrombotic agent"
+        },
+        {
+          "char_end": 199,
+          "char_start": 192,
+          "entity_id": "e_0026",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Aspirin"
+        },
+        {
+          "char_end": 434,
+          "char_start": 423,
+          "entity_id": "e_0027",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "75 or 81 mg"
+        },
+        {
+          "char_end": 571,
+          "char_start": 563,
+          "entity_id": "e_0028",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Warfarin"
+        },
+        {
+          "char_end": 606,
+          "char_start": 595,
+          "entity_id": "e_0029",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "clopidogrel"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "7.35",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 13,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0015",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Long-term antithrombotic therapy is recommended for HF with ischemic cardiomyopathy.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0013"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0025"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0016",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Aspirin is recommended when anticoagulation is not otherwise indicated.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0027"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0014"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0026"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0017",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Warfarin and clopidogrel may be considered as alternatives to aspirin.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0015"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0028",
+            "e_0029"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0013",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0014",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0015",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "Long-term treatment with an antithrombotic agent is recommended for patients with HF from ischemic cardiomyopathy, whether or not they are receiving ACE inhibitors. (Strength of Evidence = B) Aspirin is recommended in most patients for whom anticoagulation is not specifically indicated because of its proven efficacy in non-HF patients with ischemic heart disease, its convenience, and lower cost. Lower doses of aspirin (75 or 81 mg) may be preferable because data from 2 trials suggest more frequent worsening of HF at higher doses. (Strength of Evidence = C) Warfarin (goal INR 2.0–3.5) and clopidogrel (75 mg) have also prevented vascular events in post MI patients and may be considered as alternatives to aspirin. (Strength of Evidence = B)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 46,
+          "char_start": 25,
+          "entity_id": "e_0030",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "an antiplatelet agent"
+        },
+        {
+          "char_end": 65,
+          "char_start": 58,
+          "entity_id": "e_0031",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "aspirin"
+        },
+        {
+          "char_end": 89,
+          "char_start": 78,
+          "entity_id": "e_0032",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "75 to 81 mg"
+        },
+        {
+          "char_end": 244,
+          "char_start": 236,
+          "entity_id": "e_0033",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Warfarin"
+        },
+        {
+          "char_end": 279,
+          "char_start": 268,
+          "entity_id": "e_0034",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "clopidogrel"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "7.35",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 13,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0018",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Long-term antiplatelet therapy, generally aspirin 75 to 81 mg, is recommended for HF due to ischemic cardiomyopathy.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0032"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0016"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0030"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0019",
+          "condition_entity_ids": [],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Warfarin and clopidogrel may be considered as alternatives to aspirin.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [
+            "gr_0017"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0033",
+            "e_0034"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0016",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        },
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0017",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "Long-term treatment with an antiplatelet agent, generally aspirin in doses of 75 to 81 mg, is recommended for patients with HF due to ischemic cardiomyopathy, whether or not they are receiving ACE inhibitors. (Strength of Evidence = B) Warfarin (goal INR 2.0-3.0) and clopidogrel (75 mg) also have prevented vascular events in post-MI patients and may be considered as alternatives to aspirin. (Strength of Evidence = B)"
+    }
+  ]
+}

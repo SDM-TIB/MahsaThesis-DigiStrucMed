@@ -1,0 +1,1103 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING",
+      "TEMPORAL_OR_SUPERSESSION_CONTENT",
+      "SUSPECTED_DUPLICATE"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_2b6290b9ec9e0199863d75426f4eb32800b1dbc4c89274d4f3da3dea703a1dad_n0049",
+  "source": {
+    "document_sha256": "2b6290b9ec9e0199863d75426f4eb32800b1dbc4c89274d4f3da3dea703a1dad",
+    "page_ids": [
+      "2b6290b9ec9e0199863d75426f4eb32800b1dbc4c89274d4f3da3dea703a1dad_p0058"
+    ],
+    "page_numbers": [
+      58
+    ],
+    "physical_block_ids": [
+      "pb_2b6290b9ec9e0199863d75426f4eb32800b1dbc4c89274d4f3da3dea703a1dad_p0058_g001"
+    ],
+    "source_semantic_class": "normative_medication_recommendation",
+    "title_or_context": "Appendix A. (continued)"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent review found 6 medication-directed text units across the historical/current recommendation columns. Temporal comparison semantics and a near-duplicate lu_3756890c... copy require human adjudication.",
+    "corrected_semantic_class": "normative_medication_recommendation",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": true,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": true
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 28,
+          "char_start": 14,
+          "entity_id": "e_0001",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "> 130/80 mm Hg"
+        },
+        {
+          "char_end": 60,
+          "char_start": 50,
+          "entity_id": "e_0002",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "a diuretic"
+        },
+        {
+          "char_end": 109,
+          "char_start": 89,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "a calcium antagonist"
+        },
+        {
+          "char_end": 141,
+          "char_start": 113,
+          "entity_id": "e_0004",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "other antihypertensive drugs"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "14.4 (previous 14.5)",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0001"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "A diuretic is recommended when blood pressure remains above the stated threshold.",
+          "operation": "ADD",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [
+            "gr_0001"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0002"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0001"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "OTHER"
+          ],
+          "notes": "A calcium antagonist or another antihypertensive drug may be added after the diuretic step if additional blood-pressure lowering is needed.",
+          "operation": "ADD",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0001"
+          ],
+          "source_trigger_texts": [
+            "followed by"
+          ],
+          "target_entity_ids": [
+            "e_0003",
+            "e_0004"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "If BP remains > 130/80 mm Hg then the addition of a diuretic is recommended, followed by a calcium antagonist or other antihypertensive drugs. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 40,
+          "char_start": 26,
+          "entity_id": "e_0005",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "> 130/80 mm Hg"
+        },
+        {
+          "char_end": 81,
+          "char_start": 62,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "a thiazide diuretic"
+        },
+        {
+          "char_end": 146,
+          "char_start": 110,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "a dihydropyridine calcium antagonist"
+        },
+        {
+          "char_end": 162,
+          "char_start": 152,
+          "entity_id": "e_0008",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "amlodipine"
+        },
+        {
+          "char_end": 176,
+          "char_start": 166,
+          "entity_id": "e_0009",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "felodipine"
+        },
+        {
+          "char_end": 209,
+          "char_start": 181,
+          "entity_id": "e_0010",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "other antihypertensive drugs"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "14.4 (previous 14.5)",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0005"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "A thiazide diuretic is recommended when blood pressure remains above the stated threshold.",
+          "operation": "ADD",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "is recommended"
+          ],
+          "target_entity_ids": [
+            "e_0006"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [
+            "e_0005"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "OTHER"
+          ],
+          "notes": "A dihydropyridine calcium antagonist such as amlodipine or felodipine, or another antihypertensive drug, may be added after the thiazide step if needed.",
+          "operation": "ADD",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0008",
+            "e_0009"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.9,
+          "source_grade_record_ids": [
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "followed by"
+          ],
+          "target_entity_ids": [
+            "e_0007",
+            "e_0010"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "If blood pressure remains > 130/80 mm Hg then the addition of a thiazide diuretic is recommended, followed by a dihydropyridine calcium antagonist (eg, amlodipine or felodipine) or other antihypertensive drugs. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 40,
+          "char_start": 26,
+          "entity_id": "e_0011",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "> 130/80 mm Hg"
+        },
+        {
+          "char_end": 84,
+          "char_start": 42,
+          "entity_id": "e_0012",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "a noncardiac-depressing calcium antagonist"
+        },
+        {
+          "char_end": 100,
+          "char_start": 90,
+          "entity_id": "e_0013",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "amlodipine"
+        },
+        {
+          "char_end": 162,
+          "char_start": 123,
+          "entity_id": "e_0014",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "other antihypertensive medication doses"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 2,
+        "header_path": [
+          "14.6 (previous 14.7)",
+          "2006 Guideline Recommendation"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [
+            "e_0011"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "A noncardiac-depressing calcium antagonist such as amlodipine may be considered if blood pressure remains elevated.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0013"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [
+            "gr_0003"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0012"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [
+            "e_0011"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Existing antihypertensive medication doses may be increased if blood pressure remains elevated.",
+          "operation": "INCREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [
+            "gr_0003"
+          ],
+          "source_trigger_texts": [
+            "doses increased"
+          ],
+          "target_entity_ids": [
+            "e_0014"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "If blood pressure remains > 130/80 mm Hg, a noncardiac-depressing calcium antagonist (eg, amlodipine) may be considered or other antihypertensive medication doses increased. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 40,
+          "char_start": 26,
+          "entity_id": "e_0015",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "> 130/80 mm Hg"
+        },
+        {
+          "char_end": 78,
+          "char_start": 42,
+          "entity_id": "e_0016",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "a dihydropyridine calcium antagonist"
+        },
+        {
+          "char_end": 94,
+          "char_start": 84,
+          "entity_id": "e_0017",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "amlodipine"
+        },
+        {
+          "char_end": 108,
+          "char_start": 98,
+          "entity_id": "e_0018",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "felodipine"
+        },
+        {
+          "char_end": 170,
+          "char_start": 131,
+          "entity_id": "e_0019",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "other antihypertensive medication doses"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "14.6 (previous 14.7)",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [
+            "e_0015"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "A dihydropyridine calcium antagonist such as amlodipine or felodipine may be considered if blood pressure remains elevated.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0017",
+            "e_0018"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0016"
+          ]
+        },
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [
+            "e_0015"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "Existing antihypertensive medication doses may be increased if blood pressure remains elevated.",
+          "operation": "INCREASE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [
+            "gr_0004"
+          ],
+          "source_trigger_texts": [
+            "doses increased"
+          ],
+          "target_entity_ids": [
+            "e_0019"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "(Strength of Evidence = C)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "If blood pressure remains > 130/80 mm Hg, a dihydropyridine calcium antagonist (eg, amlodipine or felodipine) may be considered or other antihypertensive medication doses increased. (Strength of Evidence = C)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 4,
+          "char_start": 0,
+          "entity_id": "e_0020",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ARBs"
+        },
+        {
+          "char_end": 77,
+          "char_start": 43,
+          "entity_id": "e_0021",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "symptomatic and asymptomatic women"
+        },
+        {
+          "char_end": 99,
+          "char_start": 86,
+          "entity_id": "e_0022",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "LVEF \\leq 40%"
+        },
+        {
+          "char_end": 136,
+          "char_start": 122,
+          "entity_id": "e_0023",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ACE inhibitors"
+        },
+        {
+          "char_end": 172,
+          "char_start": 160,
+          "entity_id": "e_0024",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "hyperkalemia"
+        },
+        {
+          "char_end": 195,
+          "char_start": 176,
+          "entity_id": "e_0025",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "renal insufficiency"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "15.6",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 14,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [
+            "e_0022",
+            "e_0023"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [
+            "e_0024",
+            "e_0025"
+          ],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "ARBs are recommended for women with LVEF ≤40% who are ACE-inhibitor intolerant for reasons other than hyperkalemia or renal insufficiency.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0021"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [
+            "gr_0005"
+          ],
+          "source_trigger_texts": [
+            "are recommended for administration"
+          ],
+          "target_entity_ids": [
+            "e_0020"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "(Strength of Evidence = A)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "A"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "ARBs are recommended for administration to symptomatic and asymptomatic women with an LVEF \\leq 40% who are intolerant to ACE inhibitors for reasons other than hyperkalemia or renal insufficiency. (Strength of Evidence = A)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 51,
+          "char_start": 19,
+          "entity_id": "e_0026",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "hydralazine/isosorbide dinitrate"
+        },
+        {
+          "char_end": 113,
+          "char_start": 91,
+          "entity_id": "e_0027",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "African American women"
+        },
+        {
+          "char_end": 149,
+          "char_start": 119,
+          "entity_id": "e_0028",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "moderate to severe HF symptoms"
+        },
+        {
+          "char_end": 196,
+          "char_start": 161,
+          "entity_id": "e_0029",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "background neurohormonal inhibition"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": 3,
+        "header_path": [
+          "15.7",
+          "2010 Guideline Recommendation"
+        ],
+        "row_index": 15,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [
+            "e_0028",
+            "e_0029"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "The hydralazine/isosorbide dinitrate combination is recommended as standard therapy for the stated population.",
+          "operation": "ADMINISTER",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0027"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [
+            "gr_0006"
+          ],
+          "source_trigger_texts": [
+            "is recommended as standard therapy"
+          ],
+          "target_entity_ids": [
+            "e_0026"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CERTAINTY_OF_EVIDENCE",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "(Strength of Evidence = B)",
+          "grading_system_name": "HFSA Strength of Evidence",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Source-native evidence-strength grade preserved without cross-system normalization.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "The combination of hydralazine/isosorbide dinitrate is recommended as standard therapy for African American women with moderate to severe HF symptoms who are on background neurohormonal inhibition. (Strength of Evidence = B)"
+    }
+  ]
+}

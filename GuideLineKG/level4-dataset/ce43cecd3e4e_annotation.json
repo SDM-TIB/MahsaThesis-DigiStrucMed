@@ -1,0 +1,1774 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "OTHER_OPERATION",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_14674ef2d4b3549e6e37c8d0c252638c908c429685fd1e0b21eee935b6731acf_n0001",
+  "source": {
+    "document_sha256": "14674ef2d4b3549e6e37c8d0c252638c908c429685fd1e0b21eee935b6731acf",
+    "page_ids": [
+      "14674ef2d4b3549e6e37c8d0c252638c908c429685fd1e0b21eee935b6731acf_p0007"
+    ],
+    "page_numbers": [
+      7
+    ],
+    "physical_block_ids": [
+      "pb_14674ef2d4b3549e6e37c8d0c252638c908c429685fd1e0b21eee935b6731acf_p0007_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "**Tab. 1** Empfehlungen zur HSM- und ICD-Programmierung bei kardialen MRT-Untersuchungen. Es ist zu betonen, dass Patienten-individuelle Faktoren ein Abweichen vom vorgeschlagenen Vorgehen begründen können und ggf. sachkundiges ärztliches Fachpersonal in die Entscheidungsfindung über Ort und Zeit der Um- und Rückprogrammierung eingebunden werden soll"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review confirms a structurally isolated device-programming instruction table for conventional and MR-conditional pacemakers/ICDs, stratified by dependency/risk, with explicit settings and pre-/post-MRI timing. Routine procedural timing is not treated as temporal supersession content.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "de"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 18,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "HSM, konventionell"
+        },
+        {
+          "char_end": 39,
+          "char_start": 19,
+          "entity_id": "e_0002",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Absolut HSM-abhängig"
+        },
+        {
+          "char_end": 55,
+          "char_start": 40,
+          "entity_id": "e_0003",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "D00, V00 70/min"
+        },
+        {
+          "char_end": 116,
+          "char_start": 56,
+          "entity_id": "e_0004",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT"
+        },
+        {
+          "char_end": 137,
+          "char_start": 117,
+          "entity_id": "e_0005",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar post MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "HSM, konventionell"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0004",
+            "e_0005"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0002"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0001",
+            "e_0003"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "HSM, konventionell Absolut HSM-abhängig D00, V00 70/min Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT Unmittelbar post MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 67,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Nicht HSM-abhängig, instabiler Eigenrhythmus, stattgehabte Synkopen"
+        },
+        {
+          "char_end": 83,
+          "char_start": 68,
+          "entity_id": "e_0007",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "D00, V00 70/min"
+        },
+        {
+          "char_end": 144,
+          "char_start": 84,
+          "entity_id": "e_0008",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT"
+        },
+        {
+          "char_end": 165,
+          "char_start": 145,
+          "entity_id": "e_0009",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar post MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "HSM, konventionell",
+          "continued"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0008",
+            "e_0009"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0006"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Nicht HSM-abhängig, instabiler Eigenrhythmus, stattgehabte Synkopen D00, V00 70/min Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT Unmittelbar post MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 42,
+          "char_start": 0,
+          "entity_id": "e_0010",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Nicht HSM-abhängig, stabiler Eigenrhythmus"
+        },
+        {
+          "char_end": 61,
+          "char_start": 43,
+          "entity_id": "e_0011",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Option A: 0D0, 000"
+        },
+        {
+          "char_end": 81,
+          "char_start": 62,
+          "entity_id": "e_0012",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar prä MRT"
+        },
+        {
+          "char_end": 102,
+          "char_start": 82,
+          "entity_id": "e_0013",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar post MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "HSM, konventionell",
+          "continued"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0012",
+            "e_0013"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0010"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0011"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Nicht HSM-abhängig, stabiler Eigenrhythmus Option A: 0D0, 000 Unmittelbar prä MRT Unmittelbar post MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 18,
+          "char_start": 0,
+          "entity_id": "e_0014",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Option B: VVI, DDI"
+        },
+        {
+          "char_end": 84,
+          "char_start": 19,
+          "entity_id": "e_0015",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Orts- und zeitversetzt möglich, jedoch innerhalb 48 h vor der MRT"
+        },
+        {
+          "char_end": 105,
+          "char_start": 85,
+          "entity_id": "e_0016",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar post MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "HSM, konventionell",
+          "Nicht HSM-abhängig, stabiler Eigenrhythmus",
+          "continued"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0015",
+            "e_0016"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0014"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Option B: VVI, DDI Orts- und zeitversetzt möglich, jedoch innerhalb 48 h vor der MRT Unmittelbar post MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 23,
+          "char_start": 0,
+          "entity_id": "e_0017",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "HSM, bedingt MRT-sicher"
+        },
+        {
+          "char_end": 44,
+          "char_start": 24,
+          "entity_id": "e_0018",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Absolut HSM-abhängig"
+        },
+        {
+          "char_end": 60,
+          "char_start": 45,
+          "entity_id": "e_0019",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "D00, V00 70/min"
+        },
+        {
+          "char_end": 182,
+          "char_start": 122,
+          "entity_id": "e_0020",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT"
+        },
+        {
+          "char_end": 121,
+          "char_start": 61,
+          "entity_id": "e_0021",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "HSM, bedingt MRT-sicher"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0020",
+            "e_0021"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0018"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0017",
+            "e_0019"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "HSM, bedingt MRT-sicher Absolut HSM-abhängig D00, V00 70/min Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 67,
+          "char_start": 0,
+          "entity_id": "e_0022",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Nicht HSM-abhängig, instabiler Eigenrhythmus, stattgehabte Synkopen"
+        },
+        {
+          "char_end": 83,
+          "char_start": 68,
+          "entity_id": "e_0023",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "D00, V00 70/min"
+        },
+        {
+          "char_end": 144,
+          "char_start": 84,
+          "entity_id": "e_0024",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT"
+        },
+        {
+          "char_end": 205,
+          "char_start": 145,
+          "entity_id": "e_0025",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "HSM, bedingt MRT-sicher",
+          "continued"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0024",
+            "e_0025"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0022"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0023"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Nicht HSM-abhängig, instabiler Eigenrhythmus, stattgehabte Synkopen D00, V00 70/min Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT Orts- und zeitversetzt möglich, jedoch am selben Tag wie MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 42,
+          "char_start": 0,
+          "entity_id": "e_0026",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Nicht HSM-abhängig, stabiler Eigenrhythmus"
+        },
+        {
+          "char_end": 63,
+          "char_start": 43,
+          "entity_id": "e_0027",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Option A: 0D0, 000 a"
+        },
+        {
+          "char_end": 83,
+          "char_start": 64,
+          "entity_id": "e_0028",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar prä MRT"
+        },
+        {
+          "char_end": 104,
+          "char_start": 84,
+          "entity_id": "e_0029",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar post MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "HSM, bedingt MRT-sicher",
+          "continued"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0028",
+            "e_0029"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0026"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0027"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Nicht HSM-abhängig, stabiler Eigenrhythmus Option A: 0D0, 000 a Unmittelbar prä MRT Unmittelbar post MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 15,
+          "char_start": 0,
+          "entity_id": "e_0030",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Option B: VVI b"
+        },
+        {
+          "char_end": 81,
+          "char_start": 16,
+          "entity_id": "e_0031",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Orts- und zeitversetzt möglich, jedoch innerhalb 48 h vor der MRT"
+        },
+        {
+          "char_end": 148,
+          "char_start": 82,
+          "entity_id": "e_0032",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Orts- und zeitversetzt möglich, jedoch innerhalb 48 h nach der MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "HSM, bedingt MRT-sicher",
+          "Nicht HSM-abhängig, stabiler Eigenrhythmus",
+          "continued"
+        ],
+        "row_index": 9,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0031",
+            "e_0032"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0030"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Option B: VVI b Orts- und zeitversetzt möglich, jedoch innerhalb 48 h vor der MRT Orts- und zeitversetzt möglich, jedoch innerhalb 48 h nach der MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 42,
+          "char_start": 0,
+          "entity_id": "e_0033",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "ICD, konventionell ICD, bedingt MRT-sicher"
+        },
+        {
+          "char_end": 112,
+          "char_start": 43,
+          "entity_id": "e_0034",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Risiko sehr hoch (Konventioneller ICD plus absolute HSM-Abhängigkeit)"
+        },
+        {
+          "char_end": 118,
+          "char_start": 113,
+          "entity_id": "e_0035",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "D00 c"
+        },
+        {
+          "char_end": 138,
+          "char_start": 119,
+          "entity_id": "e_0036",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar prä MRT"
+        },
+        {
+          "char_end": 159,
+          "char_start": 139,
+          "entity_id": "e_0037",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar post MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "ICD, konventionell / ICD, bedingt MRT-sicher"
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0036",
+            "e_0037"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0034"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0033",
+            "e_0035"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "ICD, konventionell ICD, bedingt MRT-sicher Risiko sehr hoch (Konventioneller ICD plus absolute HSM-Abhängigkeit) D00 c Unmittelbar prä MRT Unmittelbar post MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 90,
+          "char_start": 0,
+          "entity_id": "e_0038",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Risiko hoch (Konventioneller ICD plus stattgehabte VT/VF; keine absolute HSM-Abhängigkeit)"
+        },
+        {
+          "char_end": 107,
+          "char_start": 91,
+          "entity_id": "e_0039",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "0D0 oder D00 c,d"
+        },
+        {
+          "char_end": 127,
+          "char_start": 108,
+          "entity_id": "e_0040",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar prä MRT"
+        },
+        {
+          "char_end": 148,
+          "char_start": 128,
+          "entity_id": "e_0041",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar post MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "ICD, konventionell / ICD, bedingt MRT-sicher",
+          "continued"
+        ],
+        "row_index": 11,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0040",
+            "e_0041"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0038"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0039"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "Risiko hoch (Konventioneller ICD plus stattgehabte VT/VF; keine absolute HSM-Abhängigkeit) 0D0 oder D00 c,d Unmittelbar prä MRT Unmittelbar post MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 92,
+          "char_start": 0,
+          "entity_id": "e_0042",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Risiko mittel (Konventioneller ICD ohne stattgehabte VT/VF; keine absolute HSM-Abhängigkeit)"
+        },
+        {
+          "char_end": 109,
+          "char_start": 93,
+          "entity_id": "e_0043",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "0D0 oder D00 c,d"
+        },
+        {
+          "char_end": 129,
+          "char_start": 110,
+          "entity_id": "e_0044",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar prä MRT"
+        },
+        {
+          "char_end": 150,
+          "char_start": 130,
+          "entity_id": "e_0045",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar post MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "ICD, konventionell / ICD, bedingt MRT-sicher",
+          "continued"
+        ],
+        "row_index": 12,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0044",
+            "e_0045"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0042"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0043"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0011",
+      "verbatim_text": "Risiko mittel (Konventioneller ICD ohne stattgehabte VT/VF; keine absolute HSM-Abhängigkeit) 0D0 oder D00 c,d Unmittelbar prä MRT Unmittelbar post MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 72,
+          "char_start": 0,
+          "entity_id": "e_0046",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Risiko niedrig (Bedingt MRT-sicherer ICD plus absolute HSM-Abhängigkeit)"
+        },
+        {
+          "char_end": 78,
+          "char_start": 73,
+          "entity_id": "e_0047",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "D00 c"
+        },
+        {
+          "char_end": 98,
+          "char_start": 79,
+          "entity_id": "e_0048",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar prä MRT"
+        },
+        {
+          "char_end": 119,
+          "char_start": 99,
+          "entity_id": "e_0049",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar post MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "ICD, konventionell / ICD, bedingt MRT-sicher",
+          "continued"
+        ],
+        "row_index": 13,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0048",
+            "e_0049"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0046"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0047"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0012",
+      "verbatim_text": "Risiko niedrig (Bedingt MRT-sicherer ICD plus absolute HSM-Abhängigkeit) D00 c Unmittelbar prä MRT Unmittelbar post MRT"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 103,
+          "char_start": 0,
+          "entity_id": "e_0050",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Risiko sehr niedrig (Bedingt MRT-sicherer ICD ohne stattgehabte VT/VF; keine absolute HSM-Abhängigkeit)"
+        },
+        {
+          "char_end": 120,
+          "char_start": 104,
+          "entity_id": "e_0051",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "0D0 oder D00 c,d"
+        },
+        {
+          "char_end": 140,
+          "char_start": 121,
+          "entity_id": "e_0052",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar prä MRT"
+        },
+        {
+          "char_end": 161,
+          "char_start": 141,
+          "entity_id": "e_0053",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Unmittelbar post MRT"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "ICD, konventionell / ICD, bedingt MRT-sicher",
+          "continued"
+        ],
+        "row_index": 14,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0013",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SOURCE_DEFINED"
+          ],
+          "notes": "The source table specifies device programming mode and pre-/post-MRI programming timing for this device/patient-status row; programming has no narrower allowed operation.",
+          "operation": "OTHER_OPERATION",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0052",
+            "e_0053"
+          ],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0050"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Geräteeinstellungen für die MRT-Untersuchung",
+            "Umprogrammierung prä MRT",
+            "Rückprogrammierung post MRT"
+          ],
+          "target_entity_ids": [
+            "e_0051"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0013",
+      "verbatim_text": "Risiko sehr niedrig (Bedingt MRT-sicherer ICD ohne stattgehabte VT/VF; keine absolute HSM-Abhängigkeit) 0D0 oder D00 c,d Unmittelbar prä MRT Unmittelbar post MRT"
+    }
+  ]
+}

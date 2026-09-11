@@ -1,0 +1,3097 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING",
+      "ENTITY_OTHER_SCHEMA_REVIEW"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_09ac95762f6d1123e025abc480455ce3be54b1a04b2b6ffd7375f9b73d0a4eee_n0005",
+  "source": {
+    "document_sha256": "09ac95762f6d1123e025abc480455ce3be54b1a04b2b6ffd7375f9b73d0a4eee",
+    "page_ids": [
+      "09ac95762f6d1123e025abc480455ce3be54b1a04b2b6ffd7375f9b73d0a4eee_p0015"
+    ],
+    "page_numbers": [
+      15
+    ],
+    "physical_block_ids": [
+      "pb_09ac95762f6d1123e025abc480455ce3be54b1a04b2b6ffd7375f9b73d0a4eee_p0015_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "**Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS**"
+  },
+  "table_assessment": {
+    "assessment_notes": "Isolated descriptive table with row-level infusion-dose, receptor-binding, mechanism, and hemodynamic-effect assertions. No recommendation language is present.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 8,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Dopamine"
+        },
+        {
+          "char_end": 65,
+          "char_start": 9,
+          "entity_id": "e_0002",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "0.5–2 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}"
+        },
+        {
+          "char_end": 67,
+          "char_start": 66,
+          "entity_id": "e_0003",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "–"
+        },
+        {
+          "char_end": 69,
+          "char_start": 68,
+          "entity_id": "e_0004",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "+"
+        },
+        {
+          "char_end": 71,
+          "char_start": 70,
+          "entity_id": "e_0005",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "–"
+        },
+        {
+          "char_end": 75,
+          "char_start": 72,
+          "entity_id": "e_0006",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "+++"
+        },
+        {
+          "char_end": 92,
+          "char_start": 90,
+          "entity_id": "e_0007",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CO"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Usual infusion dose.",
+          "object_entity_id": "e_0002",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Alpha-1 receptor-binding value.",
+          "object_entity_id": "e_0003",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-1 receptor-binding value.",
+          "object_entity_id": "e_0004",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0003",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-2 receptor-binding value.",
+          "object_entity_id": "e_0005",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0004",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Dopamine-receptor-binding value.",
+          "object_entity_id": "e_0006",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0005",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Upward arrow denotes increased cardiac output.",
+          "object_entity_id": "e_0007",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0006",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Vasopressor/inotropes"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive table row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Dopamine\n0.5–2 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}\n–\n+\n–\n+++\n\\uparrow\\text{CO}"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 55,
+          "char_start": 0,
+          "entity_id": "e_0008",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "5–10 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}"
+        },
+        {
+          "char_end": 57,
+          "char_start": 56,
+          "entity_id": "e_0009",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "+"
+        },
+        {
+          "char_end": 61,
+          "char_start": 58,
+          "entity_id": "e_0010",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "+++"
+        },
+        {
+          "char_end": 63,
+          "char_start": 62,
+          "entity_id": "e_0011",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "+"
+        },
+        {
+          "char_end": 66,
+          "char_start": 64,
+          "entity_id": "e_0012",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "++"
+        },
+        {
+          "char_end": 91,
+          "char_start": 89,
+          "entity_id": "e_0013",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CO"
+        },
+        {
+          "char_end": 111,
+          "char_start": 108,
+          "entity_id": "e_0014",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "SVR"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Vasopressor/inotropes",
+          "Dopamine"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive dose-level continuation; Dopamine is inherited from the exact header path, so no non-local entity reference is asserted.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "5–10 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}\n+\n+++\n+\n++\n\\uparrow\\uparrow\\text{CO}, \\uparrow\\text{SVR}"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 56,
+          "char_start": 0,
+          "entity_id": "e_0015",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "10–20 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}"
+        },
+        {
+          "char_end": 60,
+          "char_start": 57,
+          "entity_id": "e_0016",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "+++"
+        },
+        {
+          "char_end": 63,
+          "char_start": 61,
+          "entity_id": "e_0017",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "++"
+        },
+        {
+          "char_end": 65,
+          "char_start": 64,
+          "entity_id": "e_0018",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "–"
+        },
+        {
+          "char_end": 68,
+          "char_start": 66,
+          "entity_id": "e_0019",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "++"
+        },
+        {
+          "char_end": 94,
+          "char_start": 91,
+          "entity_id": "e_0020",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "SVR"
+        },
+        {
+          "char_end": 113,
+          "char_start": 111,
+          "entity_id": "e_0021",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CO"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Vasopressor/inotropes",
+          "Dopamine"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive dose-level continuation; Dopamine is inherited from the exact header path, so no non-local entity reference is asserted.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": []
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "10–20 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}\n+++\n++\n–\n++\n\\uparrow\\uparrow\\text{SVR}, \\uparrow\\text{CO}"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 14,
+          "char_start": 0,
+          "entity_id": "e_0022",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Norepinephrine"
+        },
+        {
+          "char_end": 74,
+          "char_start": 15,
+          "entity_id": "e_0023",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "0.05–0.4 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}"
+        },
+        {
+          "char_end": 79,
+          "char_start": 75,
+          "entity_id": "e_0024",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "++++"
+        },
+        {
+          "char_end": 82,
+          "char_start": 80,
+          "entity_id": "e_0025",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "++"
+        },
+        {
+          "char_end": 84,
+          "char_start": 83,
+          "entity_id": "e_0026",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "+"
+        },
+        {
+          "char_end": 86,
+          "char_start": 85,
+          "entity_id": "e_0027",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "–"
+        },
+        {
+          "char_end": 112,
+          "char_start": 109,
+          "entity_id": "e_0028",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "SVR"
+        },
+        {
+          "char_end": 131,
+          "char_start": 129,
+          "entity_id": "e_0029",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CO"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Usual infusion dose.",
+          "object_entity_id": "e_0023",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0021",
+          "subject_entity_id": "e_0022",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Alpha-1 receptor-binding value.",
+          "object_entity_id": "e_0024",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0022",
+          "subject_entity_id": "e_0022",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-1 receptor-binding value.",
+          "object_entity_id": "e_0025",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0023",
+          "subject_entity_id": "e_0022",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-2 receptor-binding value.",
+          "object_entity_id": "e_0026",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0024",
+          "subject_entity_id": "e_0022",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Dopamine receptor-binding value.",
+          "object_entity_id": "e_0027",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0025",
+          "subject_entity_id": "e_0022",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Double upward arrow denotes increased systemic vascular resistance.",
+          "object_entity_id": "e_0028",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0026",
+          "subject_entity_id": "e_0022",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Upward arrow denotes increased cardiac output.",
+          "object_entity_id": "e_0029",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0027",
+          "subject_entity_id": "e_0022",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Vasopressor/inotropes"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive table row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0022"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Norepinephrine\n0.05–0.4 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}\n++++\n++\n+\n–\n\\uparrow\\uparrow\\text{SVR}, \\uparrow\\text{CO}"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0030",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Epinephrine"
+        },
+        {
+          "char_end": 71,
+          "char_start": 12,
+          "entity_id": "e_0031",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "0.01–0.5 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}"
+        },
+        {
+          "char_end": 76,
+          "char_start": 72,
+          "entity_id": "e_0032",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "++++"
+        },
+        {
+          "char_end": 81,
+          "char_start": 77,
+          "entity_id": "e_0033",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "++++"
+        },
+        {
+          "char_end": 85,
+          "char_start": 82,
+          "entity_id": "e_0034",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "+++"
+        },
+        {
+          "char_end": 87,
+          "char_start": 86,
+          "entity_id": "e_0035",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "–"
+        },
+        {
+          "char_end": 112,
+          "char_start": 110,
+          "entity_id": "e_0036",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CO"
+        },
+        {
+          "char_end": 140,
+          "char_start": 137,
+          "entity_id": "e_0037",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "SVR"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Usual infusion dose.",
+          "object_entity_id": "e_0031",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0028",
+          "subject_entity_id": "e_0030",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Alpha-1 receptor-binding value.",
+          "object_entity_id": "e_0032",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0029",
+          "subject_entity_id": "e_0030",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-1 receptor-binding value.",
+          "object_entity_id": "e_0033",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0030",
+          "subject_entity_id": "e_0030",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-2 receptor-binding value.",
+          "object_entity_id": "e_0034",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0031",
+          "subject_entity_id": "e_0030",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Dopamine receptor-binding value.",
+          "object_entity_id": "e_0035",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0032",
+          "subject_entity_id": "e_0030",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Double upward arrow denotes increased cardiac output.",
+          "object_entity_id": "e_0036",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0033",
+          "subject_entity_id": "e_0030",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Double upward arrow denotes increased systemic vascular resistance.",
+          "object_entity_id": "e_0037",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0034",
+          "subject_entity_id": "e_0030",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Vasopressor/inotropes"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive table row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0030"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Epinephrine\n0.01–0.5 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}\n++++\n++++\n+++\n–\n\\uparrow\\uparrow\\text{CO}, \\uparrow\\uparrow\\text{SVR}"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0038",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Phenylephrine"
+        },
+        {
+          "char_end": 71,
+          "char_start": 14,
+          "entity_id": "e_0039",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "0.1–10 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}"
+        },
+        {
+          "char_end": 75,
+          "char_start": 72,
+          "entity_id": "e_0040",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "+++"
+        },
+        {
+          "char_end": 77,
+          "char_start": 76,
+          "entity_id": "e_0041",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "–"
+        },
+        {
+          "char_end": 79,
+          "char_start": 78,
+          "entity_id": "e_0042",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "–"
+        },
+        {
+          "char_end": 81,
+          "char_start": 80,
+          "entity_id": "e_0043",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "–"
+        },
+        {
+          "char_end": 107,
+          "char_start": 104,
+          "entity_id": "e_0044",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "SVR"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Usual infusion dose.",
+          "object_entity_id": "e_0039",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0035",
+          "subject_entity_id": "e_0038",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Alpha-1 receptor-binding value.",
+          "object_entity_id": "e_0040",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0036",
+          "subject_entity_id": "e_0038",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-1 receptor-binding value.",
+          "object_entity_id": "e_0041",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0037",
+          "subject_entity_id": "e_0038",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-2 receptor-binding value.",
+          "object_entity_id": "e_0042",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0038",
+          "subject_entity_id": "e_0038",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Dopamine receptor-binding value.",
+          "object_entity_id": "e_0043",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0039",
+          "subject_entity_id": "e_0038",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Double upward arrow denotes increased systemic vascular resistance.",
+          "object_entity_id": "e_0044",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0040",
+          "subject_entity_id": "e_0038",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Vasopressor/inotropes"
+        ],
+        "row_index": 9,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive table row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0038"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Phenylephrine\n0.1–10 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}\n+++\n–\n–\n–\n\\uparrow\\uparrow\\text{SVR}"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0045",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Vasopressin"
+        },
+        {
+          "char_end": 27,
+          "char_start": 12,
+          "entity_id": "e_0046",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "0.02–0.04 U/min"
+        },
+        {
+          "char_end": 52,
+          "char_start": 39,
+          "entity_id": "e_0047",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "V_1 receptors"
+        },
+        {
+          "char_end": 78,
+          "char_start": 56,
+          "entity_id": "e_0048",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "vascular smooth muscle"
+        },
+        {
+          "char_end": 104,
+          "char_start": 101,
+          "entity_id": "e_0049",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "SVR"
+        },
+        {
+          "char_end": 131,
+          "char_start": 128,
+          "entity_id": "e_0050",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PVR"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Usual infusion dose.",
+          "object_entity_id": "e_0046",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0041",
+          "subject_entity_id": "e_0045",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Source explicitly states stimulation of V_1 receptors; AFFECTS is the closest allowed predicate.",
+          "object_entity_id": "e_0047",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0042",
+          "subject_entity_id": "e_0045",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Source localizes receptor stimulation to vascular smooth muscle.",
+          "object_entity_id": "e_0048",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0043",
+          "subject_entity_id": "e_0045",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Double upward arrow denotes increased systemic vascular resistance.",
+          "object_entity_id": "e_0049",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0044",
+          "subject_entity_id": "e_0045",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Horizontal arrow denotes unchanged pulmonary vascular resistance.",
+          "object_entity_id": "e_0050",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0045",
+          "subject_entity_id": "e_0045",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Vasopressor/inotropes"
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0007",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive table row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0045"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Vasopressin\n0.02–0.04 U/min\nStimulates V_1 receptors in vascular smooth muscle\n\\uparrow\\uparrow\\text{SVR}, \\leftrightarrow\\text{PVR}"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0051",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Dobutamine"
+        },
+        {
+          "char_end": 68,
+          "char_start": 11,
+          "entity_id": "e_0052",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "2.5–20 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}"
+        },
+        {
+          "char_end": 70,
+          "char_start": 69,
+          "entity_id": "e_0053",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "+"
+        },
+        {
+          "char_end": 75,
+          "char_start": 71,
+          "entity_id": "e_0054",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "++++"
+        },
+        {
+          "char_end": 78,
+          "char_start": 76,
+          "entity_id": "e_0055",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "++"
+        },
+        {
+          "char_end": 80,
+          "char_start": 79,
+          "entity_id": "e_0056",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "–"
+        },
+        {
+          "char_end": 105,
+          "char_start": 103,
+          "entity_id": "e_0057",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CO"
+        },
+        {
+          "char_end": 127,
+          "char_start": 124,
+          "entity_id": "e_0058",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "SVR"
+        },
+        {
+          "char_end": 149,
+          "char_start": 146,
+          "entity_id": "e_0059",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PVR"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Usual infusion dose.",
+          "object_entity_id": "e_0052",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0046",
+          "subject_entity_id": "e_0051",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Alpha-1 receptor-binding value.",
+          "object_entity_id": "e_0053",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0047",
+          "subject_entity_id": "e_0051",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-1 receptor-binding value.",
+          "object_entity_id": "e_0054",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0048",
+          "subject_entity_id": "e_0051",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-2 receptor-binding value.",
+          "object_entity_id": "e_0055",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0049",
+          "subject_entity_id": "e_0051",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Dopamine receptor-binding value.",
+          "object_entity_id": "e_0056",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0050",
+          "subject_entity_id": "e_0051",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Double upward arrow denotes increased cardiac output.",
+          "object_entity_id": "e_0057",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0051",
+          "subject_entity_id": "e_0051",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Downward arrow denotes decreased systemic vascular resistance.",
+          "object_entity_id": "e_0058",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0052",
+          "subject_entity_id": "e_0051",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Downward arrow denotes decreased pulmonary vascular resistance.",
+          "object_entity_id": "e_0059",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0053",
+          "subject_entity_id": "e_0051",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Inodilators"
+        ],
+        "row_index": 12,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0008",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive table row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0051"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Dobutamine\n2.5–20 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}\n+\n++++\n++\n–\n\\uparrow\\uparrow\\text{CO}, \\downarrow\\text{SVR}, \\downarrow\\text{PVR}"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0060",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Isoproterenol"
+        },
+        {
+          "char_end": 43,
+          "char_start": 14,
+          "entity_id": "e_0061",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "2.0–20 \\mu\\text{g}/\\text{min}"
+        },
+        {
+          "char_end": 45,
+          "char_start": 44,
+          "entity_id": "e_0062",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "–"
+        },
+        {
+          "char_end": 50,
+          "char_start": 46,
+          "entity_id": "e_0063",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "++++"
+        },
+        {
+          "char_end": 54,
+          "char_start": 51,
+          "entity_id": "e_0064",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "+++"
+        },
+        {
+          "char_end": 56,
+          "char_start": 55,
+          "entity_id": "e_0065",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "–"
+        },
+        {
+          "char_end": 81,
+          "char_start": 79,
+          "entity_id": "e_0066",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CO"
+        },
+        {
+          "char_end": 103,
+          "char_start": 100,
+          "entity_id": "e_0067",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "SVR"
+        },
+        {
+          "char_end": 125,
+          "char_start": 122,
+          "entity_id": "e_0068",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PVR"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Usual infusion dose.",
+          "object_entity_id": "e_0061",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0054",
+          "subject_entity_id": "e_0060",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Alpha-1 receptor-binding value.",
+          "object_entity_id": "e_0062",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0055",
+          "subject_entity_id": "e_0060",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-1 receptor-binding value.",
+          "object_entity_id": "e_0063",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0056",
+          "subject_entity_id": "e_0060",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Beta-2 receptor-binding value.",
+          "object_entity_id": "e_0064",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0057",
+          "subject_entity_id": "e_0060",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Dopamine receptor-binding value.",
+          "object_entity_id": "e_0065",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0058",
+          "subject_entity_id": "e_0060",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Double upward arrow denotes increased cardiac output.",
+          "object_entity_id": "e_0066",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0059",
+          "subject_entity_id": "e_0060",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Downward arrow denotes decreased systemic vascular resistance.",
+          "object_entity_id": "e_0067",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0060",
+          "subject_entity_id": "e_0060",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Downward arrow denotes decreased pulmonary vascular resistance.",
+          "object_entity_id": "e_0068",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0061",
+          "subject_entity_id": "e_0060",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Inodilators"
+        ],
+        "row_index": 13,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0009",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive table row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0060"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "Isoproterenol\n2.0–20 \\mu\\text{g}/\\text{min}\n–\n++++\n+++\n–\n\\uparrow\\uparrow\\text{CO}, \\downarrow\\text{SVR}, \\downarrow\\text{PVR}"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0069",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Milrinone"
+        },
+        {
+          "char_end": 71,
+          "char_start": 10,
+          "entity_id": "e_0070",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "0.125–0.75 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}"
+        },
+        {
+          "char_end": 76,
+          "char_start": 72,
+          "entity_id": "e_0071",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PD-3"
+        },
+        {
+          "char_end": 103,
+          "char_start": 101,
+          "entity_id": "e_0072",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CO"
+        },
+        {
+          "char_end": 125,
+          "char_start": 122,
+          "entity_id": "e_0073",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "SVR"
+        },
+        {
+          "char_end": 147,
+          "char_start": 144,
+          "entity_id": "e_0074",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PVR"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Usual infusion dose.",
+          "object_entity_id": "e_0070",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0062",
+          "subject_entity_id": "e_0069",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Source labels the medication as a PD-3 inhibitor; identifier is preserved verbatim.",
+          "object_entity_id": "e_0071",
+          "predicate": "INHIBITS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0063",
+          "subject_entity_id": "e_0069",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Upward arrow denotes increased cardiac output.",
+          "object_entity_id": "e_0072",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0064",
+          "subject_entity_id": "e_0069",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Downward arrow denotes decreased systemic vascular resistance.",
+          "object_entity_id": "e_0073",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0065",
+          "subject_entity_id": "e_0069",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Downward arrow denotes decreased pulmonary vascular resistance.",
+          "object_entity_id": "e_0074",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0066",
+          "subject_entity_id": "e_0069",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Inodilators"
+        ],
+        "row_index": 14,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0010",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive table row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0069"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "Milrinone\n0.125–0.75 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}\nPD-3 inhibitor\n\\uparrow\\text{CO}, \\downarrow\\text{SVR}, \\downarrow\\text{PVR}"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0075",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Enoximone"
+        },
+        {
+          "char_end": 65,
+          "char_start": 10,
+          "entity_id": "e_0076",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "2–10 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}"
+        },
+        {
+          "char_end": 70,
+          "char_start": 66,
+          "entity_id": "e_0077",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PD-3"
+        },
+        {
+          "char_end": 97,
+          "char_start": 95,
+          "entity_id": "e_0078",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CO"
+        },
+        {
+          "char_end": 119,
+          "char_start": 116,
+          "entity_id": "e_0079",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "SVR"
+        },
+        {
+          "char_end": 141,
+          "char_start": 138,
+          "entity_id": "e_0080",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PVR"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Usual infusion dose.",
+          "object_entity_id": "e_0076",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0067",
+          "subject_entity_id": "e_0075",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Source labels the medication as a PD-3 inhibitor; identifier is preserved verbatim.",
+          "object_entity_id": "e_0077",
+          "predicate": "INHIBITS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0068",
+          "subject_entity_id": "e_0075",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Upward arrow denotes increased cardiac output.",
+          "object_entity_id": "e_0078",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0069",
+          "subject_entity_id": "e_0075",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Downward arrow denotes decreased systemic vascular resistance.",
+          "object_entity_id": "e_0079",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0070",
+          "subject_entity_id": "e_0075",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Downward arrow denotes decreased pulmonary vascular resistance.",
+          "object_entity_id": "e_0080",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0071",
+          "subject_entity_id": "e_0075",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Inodilators"
+        ],
+        "row_index": 15,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0011",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive table row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0075"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0011",
+      "verbatim_text": "Enoximone\n2–10 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}\nPD-3 inhibitor\n\\uparrow\\text{CO}, \\downarrow\\text{SVR}, \\downarrow\\text{PVR}"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 0,
+          "entity_id": "e_0081",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Levosimendan"
+        },
+        {
+          "char_end": 72,
+          "char_start": 13,
+          "entity_id": "e_0082",
+          "entity_type": "DOSE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "0.05–0.2 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}"
+        },
+        {
+          "char_end": 84,
+          "char_start": 73,
+          "entity_id": "e_0083",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Myofilament"
+        },
+        {
+          "char_end": 99,
+          "char_start": 85,
+          "entity_id": "e_0084",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "\\text{Ca}^{2+}"
+        },
+        {
+          "char_end": 116,
+          "char_start": 112,
+          "entity_id": "e_0085",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PD-3"
+        },
+        {
+          "char_end": 143,
+          "char_start": 141,
+          "entity_id": "e_0086",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "CO"
+        },
+        {
+          "char_end": 165,
+          "char_start": 162,
+          "entity_id": "e_0087",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "SVR"
+        },
+        {
+          "char_end": 187,
+          "char_start": 184,
+          "entity_id": "e_0088",
+          "entity_type": "TEST_OR_MEASUREMENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "PVR"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Usual infusion dose.",
+          "object_entity_id": "e_0082",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0072",
+          "subject_entity_id": "e_0081",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Source describes myofilament sensitization.",
+          "object_entity_id": "e_0083",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0073",
+          "subject_entity_id": "e_0081",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Source describes calcium sensitization; AFFECTS is the closest allowed predicate.",
+          "object_entity_id": "e_0084",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0074",
+          "subject_entity_id": "e_0081",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Source labels the medication as a PD-3 inhibitor; identifier is preserved verbatim.",
+          "object_entity_id": "e_0085",
+          "predicate": "INHIBITS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0075",
+          "subject_entity_id": "e_0081",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Upward arrow denotes increased cardiac output.",
+          "object_entity_id": "e_0086",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0076",
+          "subject_entity_id": "e_0081",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Downward arrow denotes decreased systemic vascular resistance.",
+          "object_entity_id": "e_0087",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0077",
+          "subject_entity_id": "e_0081",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Downward arrow denotes decreased pulmonary vascular resistance.",
+          "object_entity_id": "e_0088",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0078",
+          "subject_entity_id": "e_0081",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Table 4. Mechanism of Action and Hemodynamic Effects of Common Vasoactive Medications in CS",
+          "Inodilators"
+        ],
+        "row_index": 16,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0012",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive table row; no directive or recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0081"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0012",
+      "verbatim_text": "Levosimendan\n0.05–0.2 \\mu\\text{g}\\cdot\\text{kg}^{-1}\\cdot\\text{min}^{-1}\nMyofilament \\text{Ca}^{2+} sensitizer, PD-3 inhibitor\n\\uparrow\\text{CO}, \\downarrow\\text{SVR}, \\downarrow\\text{PVR}"
+    }
+  ]
+}

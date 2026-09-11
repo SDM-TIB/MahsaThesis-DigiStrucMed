@@ -1,0 +1,196 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TEMPORAL_OR_SUPERSESSION_CONTENT",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba_n0021",
+  "source": {
+    "document_sha256": "768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba",
+    "page_ids": [
+      "768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba_p0013"
+    ],
+    "page_numbers": [
+      13
+    ],
+    "physical_block_ids": [
+      "pb_768e18f1eeabdbc60efa436a98e404979a7b66e6f8b22133183e14bad0dcbfba_p0013_g002"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Table 5. Changes in cardiac pacing and cardiac resynchronization therapy guideline recommendations since 2013"
+  },
+  "table_assessment": {
+    "assessment_notes": "The isolated row contains an explicit pacing recommendation but compares its class between 2013 and 2021. The unresolved temporal/supersession interpretation prevents table-example readiness.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": true
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 24,
+          "char_start": 3,
+          "entity_id": "e_0001",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "patients with syncope"
+        },
+        {
+          "char_end": 40,
+          "char_start": 26,
+          "entity_id": "e_0002",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "cardiac pacing"
+        },
+        {
+          "char_end": 86,
+          "char_start": 69,
+          "entity_id": "e_0003",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "recurrent syncope"
+        },
+        {
+          "char_end": 138,
+          "char_start": 92,
+          "entity_id": "e_0004",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "asymptomatic pause(s) >6 s due to sinus arrest"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "Cardiac pacing for bradycardia and conduction system disease",
+          "2013 class: IIa",
+          "2021 class: IIb"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [
+            "e_0004"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "CONSIDER"
+          ],
+          "notes": "The recommendation text is shared across the temporal comparison; the two class records remain distinct.",
+          "operation": "PERFORM",
+          "outcome_entity_ids": [
+            "e_0003"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0001"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.95,
+          "source_grade_record_ids": [
+            "gr_0001",
+            "gr_0002"
+          ],
+          "source_trigger_texts": [
+            "may be considered"
+          ],
+          "target_entity_ids": [
+            "e_0002"
+          ]
+        }
+      ],
+      "source_grade_records": [
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "IIa",
+          "grading_system_name": "Source class of recommendation",
+          "grading_system_version": "2013",
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Class in the explicit 2013 column.",
+          "raw_grade": "IIa"
+        },
+        {
+          "grade_dimension": "CLASS_OF_RECOMMENDATION",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "IIb",
+          "grading_system_name": "Source class of recommendation",
+          "grading_system_version": "2021",
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Class in the explicit 2021 column.",
+          "raw_grade": "IIb"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "In patients with syncope, cardiac pacing may be considered to reduce recurrent syncope when asymptomatic pause(s) >6 s due to sinus arrest are documented."
+    }
+  ]
+}

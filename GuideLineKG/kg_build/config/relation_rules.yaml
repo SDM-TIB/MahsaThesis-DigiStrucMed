@@ -1,0 +1,312 @@
+# Ontology-constrained normalization and extraction rules for the DigiStrucMed
+# guideline KG pipeline. Every rule here maps to a class/predicate that actually
+# exists in ontology/ds-ontology.ttl. build_tables.py, extract_assertions.py and
+# validate_tables.py all read this file; nothing here is enforced automatically,
+# so keep it in sync with the ontology by hand.
+
+namespace: "http://digistrucmed.org/"
+
+# --- Entity normalization (mentions/candidates -> ds: classes) --------------
+#
+# Rule precedence (highest confidence first). A mention is classified by the
+# first matching rule in this order. If nothing matches, the entity is kept
+# (never dropped) with ontology_class_uri empty and review_status=review_required.
+#
+# 1. lexical_rules       - guideline-specific vocabulary UMLS types can't see
+#                           (Class of Recommendation, Level of Evidence, device
+#                           mode codes, Risk Level phrases, Guideline/Recommendation
+#                           header terms). Matched against surface_form AND
+#                           predicted_canonical_name.
+# 2. semantic_type_rules - UMLS Semantic Type (T-code) of the accepted
+#                           predicted_cui's matching candidate entry, mapped to
+#                           the closest ds: class. Only includes T-codes with an
+#                           unambiguous, defensible ds: class in this ontology.
+
+lexical_rules:
+  - name: class_of_recommendation
+    ds_class: ds:ClassOfRecommendation
+    match_type: regex
+    case_sensitive: true
+    patterns:
+      - '^Class\s+I{1,3}a?b?\b'
+      - '^Class\s+IV\b'
+    normalization_confidence: high
+
+  - name: level_of_evidence
+    ds_class: ds:LevelOfEvidence
+    match_type: regex
+    case_sensitive: false
+    patterns:
+      - '^(Level|LOE)\s*[-:]?\s*[ABC]\b'
+    normalization_confidence: high
+
+  - name: risk_level
+    ds_class: ds:RiskLevel
+    match_type: regex
+    case_sensitive: false
+    patterns:
+      - '\b(high|low|intermediate|moderate)\s+risk\b'
+    normalization_confidence: high
+
+  - name: device_mode_code
+    ds_class: ds:DeviceMode
+    match_type: exact
+    case_sensitive: true
+    # Known pacing-mode style abbreviations (NASPE/BPEG generic codes). Kept as
+    # an explicit allowlist per the skill's guidance on abbreviations like DDI -
+    # never inferred from context or from the SciSpacy canonical name.
+    values:
+      - AAI
+      - AAIR
+      - VVI
+      - VVIR
+      - DDD
+      - DDDR
+      - DDI
+      - DDIR
+      - VDD
+      - VOO
+      - AOO
+      - DOO
+    normalization_confidence: high
+
+  - name: recommendation_header_term
+    ds_class: ds:Recommendation
+    match_type: exact
+    case_sensitive: false
+    values:
+      - Recommendation
+      - Recommendations
+    # Corroborated by UMLS type T078 (Idea or Concept) on the accepted candidate.
+    requires_semantic_type: ["T078"]
+    normalization_confidence: medium
+
+  - name: guideline_header_term
+    ds_class: ds:Guideline
+    match_type: exact
+    case_sensitive: false
+    values:
+      - Guideline
+      - Guidelines
+    normalization_confidence: medium
+
+  # --- Rules below added from frequency analysis of the 539-unit
+  # predictions_compact (1).jsonl run (55,640 mentions; see kg_build/README.md).
+  # Each was verified against data/mentions.csv + data/umls_candidates.csv
+  # before being added - not guessed. Several catch a mislinked bare
+  # abbreviation UMLS resolves to something unrelated (same trap as DDI ->
+  # didanosine above): COR/IIa/IIb -> Heart / Multiple Endocrine Neoplasia
+  # 2a / 2b; ARNI -> "Arnia" (plant genus); ARB -> "Arbitrary (property)";
+  # SGLT2 -> "SLC5A2 gene"; MRAs -> "MRAS protein, human". Others
+  # (LOE, HFrEF/HFpEF/HFmEF/HFimpEF, GDMT, ACEI/ACE-I) are simply unlinked by
+  # the SciSpacy linker (predicted_cui is null) rather than mislinked.
+
+  - name: class_of_recommendation_bare_token
+    ds_class: ds:ClassOfRecommendation
+    match_type: exact
+    case_sensitive: true
+    # Bare recommendation-table-cell tokens, without the "Class " prefix the
+    # class_of_recommendation regex rule above requires. COR is the column
+    # abbreviation itself (114 occurrences, 100% mislinked to Heart/T023);
+    # IIa/IIb/III are bare class values (495/118/2 occurrences, IIa/IIb 100%
+    # mislinked to T191 Neoplastic Process CUIs for Multiple Endocrine
+    # Neoplasia 2a/2b).
+    values:
+      - COR
+      - IIa
+      - IIb
+      - III
+    normalization_confidence: high
+
+  - name: level_of_evidence_bare_token
+    ds_class: ds:LevelOfEvidence
+    match_type: exact
+    case_sensitive: true
+    # Bare "LOE" (130 occurrences, always unlinked) without a trailing A/B/C
+    # letter, which the level_of_evidence regex rule above requires.
+    values:
+      - LOE
+    normalization_confidence: high
+
+  - name: drug_class_abbreviation
+    ds_class: ds:Drug
+    match_type: exact
+    case_sensitive: true
+    # Guideline-standard HF pharmacotherapy class abbreviations. Explicit
+    # allowlist per the device_mode_code rule's precedent above - never
+    # inferred from the SciSpacy canonical name, since several of these are
+    # confirmed UMLS mislinks (see comment block above).
+    values:
+      - ACEI
+      - ACEIs
+      - ACE-I
+      - ARB
+      - ARBs
+      - ARNI
+      - ARNIs
+      - MRA
+      - MRAs
+      - SGLT2
+      - SGLT2i
+    normalization_confidence: high
+
+  - name: hf_type_abbreviation
+    ds_class: ds:Type
+    match_type: exact
+    case_sensitive: true
+    # Heart-failure-by-ejection-fraction subtype labels (HFrEF 178, HFpEF 37,
+    # HFmEF/HFimpEF rare in this corpus but same closed vocabulary) - a
+    # ds:Type of ds:Disease, per the ontology's diagnosedBy/definedBy pattern.
+    # All unlinked by the SciSpacy linker, so no mislink risk.
+    values:
+      - HFrEF
+      - HFpEF
+      - HFmEF
+      - HFimpEF
+    normalization_confidence: high
+
+  - name: guideline_directed_therapy
+    ds_class: ds:Intervention
+    match_type: exact
+    case_sensitive: true
+    # GDMT ("guideline-directed medical therapy", 72 occurrences, always
+    # unlinked) is an umbrella term for the bundle of recommended
+    # pharmacologic/device therapies, not a single named drug/device - closer
+    # to ds:Intervention than ds:Drug.
+    values:
+      - GDMT
+    normalization_confidence: medium
+
+# UMLS Semantic Type (T-code, from the candidate whose cui == predicted_cui) ->
+# ds: class. Only T-codes that map cleanly onto a single ontology class are
+# listed; everything else is intentionally left unmapped rather than guessed.
+semantic_type_rules:
+  T047: {ds_class: ds:Disease, normalization_confidence: high}        # Disease or Syndrome
+  T121: {ds_class: ds:Drug, normalization_confidence: high}           # Pharmacologic Substance
+  T195: {ds_class: ds:Drug, normalization_confidence: high}           # Antibiotic
+  T074: {ds_class: ds:Device, normalization_confidence: high}         # Medical Device
+  T061: {ds_class: ds:ClinicalProcedure, normalization_confidence: high}  # Therapeutic or Preventive Procedure
+  T060: {ds_class: ds:ClinicalProcedure, normalization_confidence: medium} # Diagnostic Procedure
+  T079: {ds_class: ds:TemporalConstraint, normalization_confidence: medium} # Temporal Concept
+  T037: {ds_class: ds:SideEffect, normalization_confidence: low}      # Injury or Poisoning
+  # Added from predictions_compact (1).jsonl frequency analysis (see comment
+  # block above the lexical rules for methodology):
+  T184: {ds_class: ds:Symptom, normalization_confidence: high}        # Sign or Symptom - clean signal in this corpus (syncope, dyspnea, nausea, angina, fatigue, dizziness)
+  T056: {ds_class: ds:Intervention, normalization_confidence: medium} # Daily or Recreational Activity (exercise, physical activity, sports, rest, self-care) - lifestyle interventions
+  T059: {ds_class: ds:ClinicalProcedure, normalization_confidence: medium} # Laboratory Procedure, mirrors T060 - majority genuine (genetic testing, lab tests) but ~13% noise from "CR"/"section" mislinks in this corpus, hence not "high"
+
+# T-codes deliberately NOT mapped (seen frequently in this corpus but too
+# ambiguous to assign a single ds: class without source-text/table context):
+# T033 Finding, T046 Pathologic Function, T078 Idea or Concept (generic),
+# T080/T081/T082 Qualitative/Quantitative/Spatial Concept, T101 Patient or
+# Disabled Group, T109 Organic Chemical, T123 Biologically Active Substance,
+# T125 Hormone, T129 Immunologic Factor, T131 Hazardous or Poisonous Substance,
+# T169 Functional Concept, T170 Intellectual Product, T185 Classification.
+#
+# Also considered and rejected: T191 Neoplastic Process - 830 occurrences in
+# this corpus, but a majority (IIa/IIb/MCS/CS, ~750) are mislinked
+# abbreviations rather than genuine neoplasms ("cancer" is only 16 of 830);
+# the IIa/IIb majority is now correctly caught by the higher-priority
+# class_of_recommendation_bare_token lexical rule above instead. T023 Body
+# Part/Organ/Organ Component - no anatomical-structure class exists in this
+# ontology at all, and the corpus's T023 hits are dominated by mislinked
+# abbreviations (B, COR, PES, RPE) rather than real anatomy terms anyway.
+
+# --- UMLS candidate acceptance policy ----------------------------------------
+# Applied per mention against the candidate whose cui == predicted_cui.
+# threshold_field is read per-semantic-unit from the prediction record
+# ("linker_threshold"), never hard-coded, so it stays correct if the linker
+# config changes.
+umls_acceptance:
+  threshold_field: linker_threshold
+  accepted:
+    # -> ds:hasAcceptedUmlsConcept + skos:exactMatch
+    min_score: threshold_field
+    require_no_review_flags: true
+    require_label_status: predicted_umls_link
+  close_match:
+    # -> skos:closeMatch only (no ds:hasAcceptedUmlsConcept)
+    min_score: 0.85
+  # Anything below close_match stays a plain ds:hasUmlsCandidate link with no
+  # skos relation - i.e. candidate/provenance only, per the skill's rule that
+  # unreviewed predictions must never become owl:sameAs.
+
+# --- Relation (assertion) extraction -----------------------------------------
+# Clinical relations such as ds:recommends, ds:hasComorbidity, ds:hasSideEffect,
+# ds:hasClassOfRecommendation, ds:appliesToDevice, etc. require knowing which
+# entities co-occur in the same sentence/table row/column - i.e. the source
+# text/HTML structure. When SOURCE_ROOT=NONE (as in this run) that structure is
+# unavailable, so no clinical relation is fabricated. Only structural
+# provenance edges - which are fully determined by the prediction JSON itself,
+# with no interpretation - are emitted directly as assertions.
+structural_provenance_predicates:
+  - predicate: ds:hasMention
+    subject_class: ds:SemanticUnit
+    object_class: ds:Mention
+    extraction_method: structural_provenance
+    confidence: 1.0
+  - predicate: ds:derivedEntity
+    subject_class: ds:Mention
+    object_class: null   # object class is whatever the entity was normalized to (may be unmapped)
+    extraction_method: structural_provenance
+    confidence: 1.0
+
+# Clinical relation predicates recognized by this pipeline's ontology-constrained
+# extractor once SOURCE_ROOT provides real text/table structure. Listed here so
+# extract_assertions.py can validate domain/range even though none are emitted
+# in a no-source-text run; also mirrors mapping.rml.ttl's clinical TriplesMaps.
+clinical_relation_predicates:
+  - predicate: ds:containsRecommendation
+    domain: ds:Guideline
+    range: ds:Recommendation
+  - predicate: ds:recommends
+    domain: ds:Recommendation
+    range: ds:Intervention
+  - predicate: ds:hasClassOfRecommendation
+    domain: ds:Recommendation
+    range: ds:ClassOfRecommendation
+  - predicate: ds:hasLevelOfEvidence
+    domain: ds:Recommendation
+    range: ds:LevelOfEvidence
+  - predicate: ds:hasComorbidity
+    domain: ds:Disease
+    range: ds:Comorbidity
+  - predicate: ds:hasSideEffect
+    domain: ds:Intervention
+    range: ds:SideEffect
+  - predicate: ds:diagnosedBy
+    domain: ds:Disease
+    range: ds:Type
+  - predicate: ds:definedBy
+    domain: ds:Disease
+    range: ds:Type
+  - predicate: ds:hasStage
+    domain: ds:Disease
+    range: ds:Stage
+  - predicate: ds:hasSymptom
+    domain: ds:Disease
+    range: ds:Symptom
+  - predicate: ds:hasCause
+    domain: ds:Disease
+    range: ds:Cause
+  - predicate: ds:hasEvaluation
+    domain: ds:Recommendation
+    range: ds:Evaluation
+  - predicate: ds:supportedBy
+    domain: ds:Recommendation
+    range: ds:ScientificResource
+  - predicate: ds:appliesToDevice
+    domain: ds:Recommendation
+    range: ds:Device
+  - predicate: ds:hasDeviceMode
+    domain: ds:Device
+    range: ds:DeviceMode
+  - predicate: ds:hasPatientCondition
+    domain: ds:Recommendation
+    range: ds:PatientCondition
+  - predicate: ds:hasRiskLevel
+    domain: ds:Recommendation
+    range: ds:RiskLevel
+  - predicate: ds:hasTemporalConstraint
+    domain: ds:Recommendation
+    range: ds:TemporalConstraint

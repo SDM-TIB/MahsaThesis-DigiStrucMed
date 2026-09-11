@@ -1,0 +1,6 @@
+PREFIX ds: <http://digistrucmed.org/>
+SELECT DISTINCT ?mention ?assertion ?grade WHERE {
+ <http://digistrucmed.org/wikidata/entity/Q816759> ds:matchedJsonConcept/ds:hasSourceMention ?mention .
+ ?mention ds:occursInAssertion ?assertion .
+ ?assertion ds:hasSourceGradeRecord/ds:hasGradeValue ?grade .
+}

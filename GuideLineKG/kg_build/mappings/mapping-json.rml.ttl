@@ -1,0 +1,630 @@
+@prefix rr:      <http://www.w3.org/ns/r2rml#> .
+@prefix rml:     <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:      <http://semweb.mmlab.be/ns/ql#> .
+@prefix ds:      <http://digistrucmed.org/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Identity: gr_0002 is a local SourceGradeRecord ID, not an evidence level.
+# Only shared grade-value resources are typed as grade categories.
+# For multiple documents use run_json_batch.py: it scopes every occurrence
+# and reference by semantic_unit_id BEFORE merging. Schema/value IRIs stay global.
+# Standalone RDFizer output is per-file and must not be merged unscoped.
+#
+# entityId/entityType/surfaceForm are IRI-valued. Occurrences use
+# entity-mention/{entity_id}; shared lexical resources use entity/{surface_form}.
+# See SurfaceFormMap for the literal rdfs:label used by Wikidata lookup.
+#
+# New-approach RML mapping: reads a schema_version "1.0" extraction
+# JSON file (one semantic unit per file, e.g. kg_build\mappings\level4_2.json) directly
+# with ql:JSONPath - no CSV intermediate tables, unlike
+# mappings/mapping.rml.ttl (the older SciSpacy-mentions pipeline,
+# left untouched). Maps to the classes/properties added to
+# ontology/ds-ontology-tables.ttl under "Table/JSON-direct pipeline
+# extensions". Covers Guideline -> hasPage -> Page -> ... -> TextUnit
+# -> {Locator, ExtractedEntity, NormativeAssertion, SourceGradeRecord}.
+# FactualRelation is intentionally not mapped (see ontology comment -
+# no populated example exists yet to fix its shape), and the
+# diagram's "mentions"/UMLS-benchmark subtree is out of scope.
+#
+# rml:source below points at a staging file, mappings/level4_2.json (relative
+# to kg_build/, since that's the working directory rdfizer is run from).
+# To run this mapping over a new file: copy it to that path (or edit
+# rml:source in every TriplesMap below) and re-run RDFizer - see
+# config/rdfizer-json.ini. Every subject IRI in this file is built only
+# from fields inside a TriplesMap's own iterated row; see the "JSON
+# fan-out/scoping rules" note at the bottom for why, and what that
+# means for merging output from multiple files.
+#
+# JSON fan-out/scoping rules this mapping relies on (verified against
+# the installed rdfizer 4.7.5.14 + jsonpath_ng, not assumed):
+#   - A dot path may reach into nested objects for a SCALAR value from
+#     any iterator depth, e.g. "source.document_sha256" (also fine
+#     inside rr:template).
+#   - A dot path into a nested ARRAY only resolves - and fans out one
+#     triple per element - when suffixed with "[*]", e.g.
+#     "locator.header_path[*]" as an rml:reference. Without "[*]" nested
+#     arrays silently produce nothing (rml:reference) or a garbled
+#     stringified-list IRI (rr:template) - never use bare nested arrays.
+#   - A TOP-LEVEL array field of the current row (not nested through a
+#     parent object) fans out correctly inside rr:template with NO
+#     "[*]" suffix, e.g. rr:template ".../{population_entity_ids}" -
+#     one IRI per array element. This is how every *_entity_ids /
+#     source_grade_record_ids join below works.
+#   - A nested-iterator row (e.g. one matched by
+#     "$.text_units[*].entities[*]") cannot see any field of its
+#     ancestor objects (confirmed: text_unit_id and semantic_unit_id
+#     both resolve to nothing from inside entities[*]/
+#     normative_assertions[*]/source_grade_records[*]). Consequently
+#     ExtractedEntity/NormativeAssertion/SourceGradeRecord URIs below
+#     are built from entity_id/assertion_id/grade_record_id ALONE.
+#     Those ids are only guaranteed unique within one source JSON file
+#     (one semantic unit); merging RDFizer output from many files
+#     as-is would collide same-named ids from different files onto one
+#     resource. Guideline/Page/SemanticUnit URIs do not have this
+#     problem (built from document_sha256/page_id/semantic_unit_id,
+#     which are already globally unique), so provenance back to the
+#     right document survives even if a future revision needs to
+#     re-scope the finer-grained ids (e.g. by asking the extraction
+#     tool to emit globally unique ids instead of per-file counters).
+#   - JSONPath filters are unsupported. Conditional rdf:type now uses
+#     rr:parentTriplesMap joins to mappings/ontology-class-lookup.json.
+#     Grade records remain SourceGradeRecord; grade VALUES carry grade classes.
+#     The lookup IRIs are existing classes in ds-ontology-tables.ttl.
+#     Specific entity classes and domain classes have separate lookups
+#     because this RDFizer keeps only one parent subject per join key.
+#     src/enrich_json_types.py remains compatible and adds assertion
+#     hasClassOfRecommendation/hasLevelOfEvidence shortcut edges.
+#################################################################
+
+#################################################################
+# Guideline / Page / SemanticUnit
+#################################################################
+
+<#SemanticUnitMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$"
+    ] ;
+    rr:subjectMap [
+        rr:template "http://digistrucmed.org/semantic-unit/{semantic_unit_id}" ;
+        rr:class ds:SemanticUnit
+    ] ;
+    rr:predicateObjectMap [ rr:predicate ds:semanticUnitId ; rr:objectMap [ rml:reference "semantic_unit_id" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:documentSha256 ; rr:objectMap [ rml:reference "source.document_sha256" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:sourceSemanticClass ; rr:objectMap [ rml:reference "source.source_semantic_class" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:titleOrContext ; rr:objectMap [ rml:reference "source.title_or_context" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:physicalBlockId ; rr:objectMap [ rml:reference "source.physical_block_ids[*]" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:schemaVersion ; rr:objectMap [ rml:reference "schema_version" ; rr:datatype xsd:string ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:uncertaintyFlag ; rr:objectMap [ rml:reference "quality.uncertainty_flags[*]" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:correctedSemanticClass ; rr:objectMap [ rml:reference "table_assessment.corrected_semantic_class" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:eligibility ; rr:objectMap [ rml:reference "table_assessment.eligibility" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:assessmentNotes ; rr:objectMap [ rml:reference "table_assessment.assessment_notes" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:language ; rr:objectMap [ rml:reference "table_assessment.languages[*]" ] ] ;
+    # ds:requiresHumanReview, ds:mixedContent, ds:suspectedDuplicate,
+    # ds:tableExampleReady, ds:temporalOrSupersessionContent (all JSON
+    # booleans: quality.requires_human_review, table_assessment.mixed_content/
+    # suspected_duplicate/table_example_ready/temporal_or_supersession_content)
+    # are deliberately NOT mapped here. Verified crash, not a style choice:
+    # rdfizer 4.7.5.14's JSON reference resolution (functions.py
+    # string_substitution_json) stringifies int/float values but not bool,
+    # so any predicateObjectMap referencing a raw JSON true/false value
+    # crashes semantify_json() with "TypeError: expected string or
+    # bytes-like object, got 'bool'" regardless of rr:datatype. The
+    # properties remain in the ontology for schema completeness; populate
+    # them from a future engine/version without this bug, or by
+    # pre-stringifying booleans to "true"/"false" before running RDFizer.
+    rr:predicateObjectMap [
+        rr:predicate ds:onGuideline ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/guideline/{source.document_sha256}" ; rr:termType rr:IRI ]
+    ] .
+
+# Guideline + its pages, both minted from the "source" sub-object so
+# document_sha256 (top-level of this row) and page_ids (also top-level
+# of this row) can be combined in the same rr:template fan-out - see
+# the scoping note above for why this can't be done from the root row.
+<#GuidelinePageMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.source"
+    ] ;
+    rr:subjectMap [
+        rr:template "http://digistrucmed.org/guideline/{document_sha256}" ;
+        rr:class ds:Guideline
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasPage ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/page/{page_ids}" ; rr:termType rr:IRI ]
+    ] .
+
+# A subjectMap-only TriplesMap (rr:class with no predicateObjectMap) turned
+# out to be unreliable in the installed rdfizer: it emitted rdf:type
+# ds:Page in an isolated single-TriplesMap test but silently emitted
+# NOTHING for it across all 6 files of a real level4_2-dataset/ batch run
+# (confirmed - src/run_json_batch.py's output had 0 ds:Page instances
+# despite 8 correct ds:hasPage edges from GuidelinePageMap above). Giving
+# it a real predicateObjectMap fixed it, so keep one here even though
+# ds:pageId is otherwise redundant with the URI's own {page_ids} segment.
+<#PageMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.source"
+    ] ;
+    rr:subjectMap [
+        rr:template "http://digistrucmed.org/page/{page_ids}" ;
+        rr:class ds:Page
+    ] ;
+    rr:predicateObjectMap [ rr:predicate ds:pageId ; rr:objectMap [ rml:reference "page_ids[*]" ] ] .
+
+# ds:pageNumber is intentionally not populated here: source.page_ids[]
+# and source.page_numbers[] are two parallel top-level arrays, and this
+# JSON/RML engine has no reliable index-zip mechanism across two
+# independent arrays - emitting it would risk pairing the wrong page
+# number to the wrong page id on a multi-page unit. Left as an ontology
+# property only, for a future source shape that pairs them explicitly
+# (e.g. one {page_id, page_number} object per page).
+#
+# ds:containsSemanticUnit (Page -> SemanticUnit, the diagram's Page
+# --contains--> table edge) is likewise not populated: building it needs
+# both page_ids[*] (top-level of the $.source row) and semantic_unit_id
+# (top-level of the $ root row, not visible from $.source) in the same
+# rr:template, which the ancestor-scoping rule above rules out. Guideline
+# and SemanticUnit both linking to the same ds:Guideline node
+# (hasPage / onGuideline, below and in SemanticUnitMap above) still lets
+# a query join Page -> Guideline -> SemanticUnit; only the direct edge is
+# missing.
+
+#################################################################
+# Text units
+#################################################################
+
+<#TextUnitMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*]"
+    ] ;
+    rr:subjectMap [
+        rr:template "http://digistrucmed.org/text-unit/{text_unit_id}" ;
+        rr:class ds:TextUnit
+    ] ;
+    rr:predicateObjectMap [ rr:predicate ds:textUnitId ; rr:objectMap [ rml:reference "text_unit_id" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:verbatimText ; rr:objectMap [ rml:reference "verbatim_text" ] ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasLocator ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/text-unit/{text_unit_id}/locator" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasExtractedEntity ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{entities[*].entity_id}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasNormativeAssertion ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/normative-assertion/{normative_assertions[*].assertion_id}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasSourceGradeRecord ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/grade-record/{source_grade_records[*].grade_record_id}" ; rr:termType rr:IRI ]
+    ] .
+
+# Note: hasExtractedEntity/hasNormativeAssertion/hasSourceGradeRecord
+# above reference a NESTED array-of-objects field ("entities[*].entity_id"
+# etc., nested one level under this row's own text_units[*] match) inside
+# rr:template - confirmed working end-to-end against kg_build\mappings\level4_2_2.json (every
+# entity/assertion/grade record in each text unit is correctly linked,
+# nothing extra/missing). This "arrayField[*].subfield" shape fans out
+# fine even though the different-shaped "objectField.arrayField[*]" used
+# for source.page_ids[*] earlier in this file does not (see GuidelinePageMap
+# and the scoping note above) - both were verified by running RDFizer, not
+# assumed from one working and generalized to the other.
+
+<#LocatorMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*]"
+    ] ;
+    rr:subjectMap [
+        rr:template "http://digistrucmed.org/text-unit/{text_unit_id}/locator" ;
+        rr:class ds:Locator
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:cellIndex ;
+        rr:objectMap [ rml:reference "locator.cell_index" ; rr:datatype xsd:integer ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:rowIndex ;
+        rr:objectMap [ rml:reference "locator.row_index" ; rr:datatype xsd:integer ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:sourcePartIndex ;
+        rr:objectMap [ rml:reference "locator.source_part_index" ; rr:datatype xsd:integer ]
+    ] ;
+    rr:predicateObjectMap [ rr:predicate ds:headerPath ; rr:objectMap [ rml:reference "locator.header_path[*]" ] ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:additionalCellIndex ;
+        rr:objectMap [ rml:reference "locator.additional_cell_indices[*]" ; rr:datatype xsd:integer ]
+    ] .
+
+#################################################################
+# Extracted entities (specific classes are assigned by lookup joins)
+# Includes domain classes such as ds:Drug for MEDICATION.
+#################################################################
+
+<#EntityMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].entities[*]"
+    ] ;
+    rr:subjectMap [
+        rr:template "http://digistrucmed.org/entity-mention/{entity_id}" ;
+        rr:class ds:ExtractedEntity
+    ] ;
+    # Join the JSON enum to existing ontology class IRIs (not invented classes).
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:parentTriplesMap <#EntityClassLookupMap> ;
+            rr:joinCondition [ rr:child "entity_type" ; rr:parent "code" ]
+        ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:parentTriplesMap <#EntityDomainClassLookupMap> ;
+            rr:joinCondition [ rr:child "entity_type" ; rr:parent "code" ]
+        ]
+    ] ;
+    rr:predicateObjectMap [ rr:predicate ds:entityId ; rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{entity_id}" ; rr:termType rr:IRI ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:entityType ; rr:objectMap [ rr:template "http://digistrucmed.org/entity-type/{entity_type}" ; rr:termType rr:IRI ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:surfaceForm ; rr:objectMap [ rr:template "http://digistrucmed.org/entity/{surface_form}" ; rr:termType rr:IRI ] ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:charStart ;
+        rr:objectMap [ rml:reference "char_start" ; rr:datatype xsd:integer ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:charEnd ;
+        rr:objectMap [ rml:reference "char_end" ; rr:datatype xsd:integer ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:spanConfidence ;
+        rr:objectMap [ rml:reference "span_confidence" ; rr:datatype xsd:decimal ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasNormalization ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{entity_id}/normalization" ; rr:termType rr:IRI ]
+    ] .
+
+<#EntityNormalizationMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].entities[*]"
+    ] ;
+    rr:subjectMap [
+        rr:template "http://digistrucmed.org/entity-mention/{entity_id}/normalization" ;
+        rr:class ds:EntityNormalization
+    ] ;
+    rr:predicateObjectMap [ rr:predicate ds:normalizationCode ; rr:objectMap [ rml:reference "normalization.code" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:normalizationCodeSystem ; rr:objectMap [ rml:reference "normalization.code_system" ] ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:normalizationMappingConfidence ;
+        rr:objectMap [ rml:reference "normalization.mapping_confidence" ; rr:datatype xsd:decimal ]
+    ] ;
+    rr:predicateObjectMap [ rr:predicate ds:normalizationMappingMethod ; rr:objectMap [ rml:reference "normalization.mapping_method" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:normalizationMappingStatus ; rr:objectMap [ rml:reference "normalization.mapping_status" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:normalizationPreferredLabel ; rr:objectMap [ rml:reference "normalization.preferred_label" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:normalizationTerminologyVersion ; rr:objectMap [ rml:reference "normalization.terminology_version" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:normalizationCandidateCode ; rr:objectMap [ rml:reference "normalization.candidate_codes[*]" ] ] .
+
+#################################################################
+# Source grade occurrences: local IDs; grade classes belong to shared values.
+#################################################################
+
+<#SourceGradeRecordMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].source_grade_records[*]"
+    ] ;
+    rr:subjectMap [
+        rr:template "http://digistrucmed.org/grade-record/{grade_record_id}" ;
+        rr:class ds:SourceGradeRecord
+    ] ;
+    # A document-local record is only a SourceGradeRecord.
+    # Its shared hasGradeValue target carries ClassOfRecommendation/LevelOfEvidence.
+    # Match a controlled grade code to its shared ontology resource.
+    # Grade codes in this vocabulary are unique across the two categories.
+    rr:predicateObjectMap [
+        rr:predicate ds:hasGradeValue ;
+        rr:objectMap [
+            rr:parentTriplesMap <#GradeValueLookupMap> ;
+            rr:joinCondition [ rr:child "raw_grade" ; rr:parent "value" ]
+        ]
+    ] ;
+    rr:predicateObjectMap [ rr:predicate ds:gradeRecordId ; rr:objectMap [ rml:reference "grade_record_id" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:gradeDimension ; rr:objectMap [ rml:reference "grade_dimension" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:gradeSourceText ; rr:objectMap [ rml:reference "grade_source_text" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:gradingSystemName ; rr:objectMap [ rml:reference "grading_system_name" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:gradingSystemVersion ; rr:objectMap [ rml:reference "grading_system_version" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:normalizationScheme ; rr:objectMap [ rml:reference "normalization_scheme" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:normalizedGrade ; rr:objectMap [ rml:reference "normalized_grade" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:rawGrade ; rr:objectMap [ rml:reference "raw_grade" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:notes ; rr:objectMap [ rml:reference "notes" ] ] .
+
+#################################################################
+# Normative assertions: the fine-grained recommendation-level
+# statements, joined out to their entities/grade records via
+# top-level-array-in-rr:template fan-out (verified pattern - see
+# file header).
+#################################################################
+
+<#NormativeAssertionMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].normative_assertions[*]"
+    ] ;
+    rr:subjectMap [
+        rr:template "http://digistrucmed.org/normative-assertion/{assertion_id}" ;
+        rr:class ds:NormativeAssertion
+    ] ;
+    rr:predicateObjectMap [ rr:predicate ds:assertionId ; rr:objectMap [ rml:reference "assertion_id" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:deonticForce ; rr:objectMap [ rml:reference "deontic_force" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:deonticForceBasis ; rr:objectMap [ rml:reference "deontic_force_basis" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:direction ; rr:objectMap [ rml:reference "direction" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:operation ; rr:objectMap [ rml:reference "operation" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:patientApplicability ; rr:objectMap [ rml:reference "patient_applicability" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:applicabilityExceptionStatus ; rr:objectMap [ rml:reference "applicability_exception_status" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:recommendationStatus ; rr:objectMap [ rml:reference "recommendation_status" ] ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:relationConfidence ;
+        rr:objectMap [ rml:reference "relation_confidence" ; rr:datatype xsd:decimal ]
+    ] ;
+    rr:predicateObjectMap [ rr:predicate ds:notes ; rr:objectMap [ rml:reference "notes" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:lexicalTriggerFamily ; rr:objectMap [ rml:reference "lexical_trigger_families" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:sourceTriggerText ; rr:objectMap [ rml:reference "source_trigger_texts" ] ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasActorEntity ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{actor_entity_ids}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasConditionEntity ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{condition_entity_ids}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasExceptionEntity ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{exception_entity_ids}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasOutcomeEntity ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{outcome_entity_ids}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasParameterEntity ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{parameter_entity_ids}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasPopulationEntity ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{population_entity_ids}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasRationaleEntity ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{rationale_entity_ids}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasTargetEntity ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{target_entity_ids}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasSourceGradeRecord ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/grade-record/{source_grade_record_ids}" ; rr:termType rr:IRI ]
+    ] .
+
+# lexical_trigger_families/source_trigger_texts are top-level string
+# arrays of this row; unlike the *_entity_ids joins above they are
+# mapped with plain rml:reference (literal, not IRI) - both forms fan
+# out per the top-level-array rule.
+
+# FactualRelationMap intentionally omitted: factual_relations[] is
+# always empty in every example seen so far, so its per-field shape
+# (relation type? subject/object entity ids? confidence?) cannot be
+# fixed without inventing fields that may not match the real schema.
+# Add a TriplesMap here, mirroring NormativeAssertionMap's join style,
+# once a populated example is available.
+
+# Shared lexical resources; occurrence IDs and text offsets stay on entity-mention/.
+<#SurfaceFormMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].entities[*]"
+    ] ;
+    rr:subjectMap [ rr:template "http://digistrucmed.org/entity/{surface_form}" ; rr:class ds:SurfaceForm ] ;
+    rr:predicateObjectMap [ rr:predicate rdfs:label ; rr:objectMap [ rml:reference "surface_form" ] ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:hasSourceMention ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity-mention/{entity_id}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [ rr:predicate ds:name ; rr:objectMap [ rml:reference "surface_form" ] ] ;
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [ rr:parentTriplesMap <#ClinicalConceptClassLookupMap> ;
+            rr:joinCondition [ rr:child "entity_type" ; rr:parent "code" ] ]
+    ] .
+
+<#EntityTypeMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].entities[*]"
+    ] ;
+    rr:subjectMap [ rr:template "http://digistrucmed.org/entity-type/{entity_type}" ; rr:class ds:EntityType ] ;
+    rr:predicateObjectMap [ rr:predicate rdfs:label ; rr:objectMap [ rml:reference "entity_type" ] ] .
+
+#################################################################
+# Enum-to-class lookup. Each class IRI already exists in
+# ontology/ds-ontology-tables.ttl. Separate lookups give each entity
+# both its specific class and its domain class (e.g. Drug).
+# A join avoids JSONPath filters, unsupported by this RDFizer build.
+#################################################################
+<#EntityClassLookupMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/ontology-class-lookup.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.entity_types[*]"
+    ] ;
+    rr:subjectMap [ rml:reference "class_iri" ; rr:termType rr:IRI ; rr:class owl:Class ] ;
+    rr:predicateObjectMap [ rr:predicate rdfs:label ; rr:objectMap [ rml:reference "label" ] ] .
+
+<#GradeClassLookupMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/ontology-class-lookup.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.grade_dimensions[*]"
+    ] ;
+    rr:subjectMap [ rml:reference "class_iri" ; rr:termType rr:IRI ; rr:class owl:Class ] ;
+    rr:predicateObjectMap [ rr:predicate rdfs:label ; rr:objectMap [ rml:reference "label" ] ] .
+
+# Separate lookup because this RDFizer keeps only one subject per join key.
+<#EntityDomainClassLookupMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/ontology-class-lookup.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.entity_domain_types[*]"
+    ] ;
+    rr:subjectMap [ rml:reference "class_iri" ; rr:termType rr:IRI ; rr:class owl:Class ] ;
+    rr:predicateObjectMap [ rr:predicate rdfs:label ; rr:objectMap [ rml:reference "label" ] ] .
+
+# Shared grades are vocabulary resources, not per-document grade records.
+<#GradeValueLookupMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/ontology-class-lookup.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.grade_values[*]"
+    ] ;
+    rr:subjectMap [ rml:reference "iri" ; rr:termType rr:IRI ; rr:class owl:NamedIndividual ] ;
+    rr:predicateObjectMap [ rr:predicate rdf:type ; rr:objectMap [ rr:template "{class_iri}" ; rr:termType rr:IRI ] ] ;
+    rr:predicateObjectMap [ rr:predicate rdfs:label ; rr:objectMap [ rml:reference "value" ] ] .
+
+# Shared clinical classes also used by Wikidata enrichment. Mention-specific
+# classes (MedicationEntity, etc.) stay on document-local occurrences.
+<#ClinicalConceptClassLookupMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/ontology-class-lookup.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.entity_concept_types[*]"
+    ] ;
+    rr:subjectMap [ rml:reference "class_iri" ; rr:termType rr:IRI ; rr:class owl:Class ] ;
+    rr:predicateObjectMap [ rr:predicate rdfs:label ; rr:objectMap [ rml:reference "label" ] ] .
+
+# Reverse of hasActorEntity: local entity -> its exact assertion.
+<#EntityInActorAssertionMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].normative_assertions[*]"
+    ] ;
+    rr:subjectMap [ rr:template "http://digistrucmed.org/entity-mention/{actor_entity_ids[*]}" ; rr:termType rr:IRI ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:occursInAssertion ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/normative-assertion/{assertion_id}" ; rr:termType rr:IRI ]
+    ] .
+
+# Reverse of hasConditionEntity: local entity -> its exact assertion.
+<#EntityInConditionAssertionMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].normative_assertions[*]"
+    ] ;
+    rr:subjectMap [ rr:template "http://digistrucmed.org/entity-mention/{condition_entity_ids[*]}" ; rr:termType rr:IRI ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:occursInAssertion ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/normative-assertion/{assertion_id}" ; rr:termType rr:IRI ]
+    ] .
+
+# Reverse of hasExceptionEntity: local entity -> its exact assertion.
+<#EntityInExceptionAssertionMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].normative_assertions[*]"
+    ] ;
+    rr:subjectMap [ rr:template "http://digistrucmed.org/entity-mention/{exception_entity_ids[*]}" ; rr:termType rr:IRI ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:occursInAssertion ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/normative-assertion/{assertion_id}" ; rr:termType rr:IRI ]
+    ] .
+
+# Reverse of hasOutcomeEntity: local entity -> its exact assertion.
+<#EntityInOutcomeAssertionMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].normative_assertions[*]"
+    ] ;
+    rr:subjectMap [ rr:template "http://digistrucmed.org/entity-mention/{outcome_entity_ids[*]}" ; rr:termType rr:IRI ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:occursInAssertion ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/normative-assertion/{assertion_id}" ; rr:termType rr:IRI ]
+    ] .
+
+# Reverse of hasParameterEntity: local entity -> its exact assertion.
+<#EntityInParameterAssertionMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].normative_assertions[*]"
+    ] ;
+    rr:subjectMap [ rr:template "http://digistrucmed.org/entity-mention/{parameter_entity_ids[*]}" ; rr:termType rr:IRI ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:occursInAssertion ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/normative-assertion/{assertion_id}" ; rr:termType rr:IRI ]
+    ] .
+
+# Reverse of hasPopulationEntity: local entity -> its exact assertion.
+<#EntityInPopulationAssertionMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].normative_assertions[*]"
+    ] ;
+    rr:subjectMap [ rr:template "http://digistrucmed.org/entity-mention/{population_entity_ids[*]}" ; rr:termType rr:IRI ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:occursInAssertion ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/normative-assertion/{assertion_id}" ; rr:termType rr:IRI ]
+    ] .
+
+# Reverse of hasRationaleEntity: local entity -> its exact assertion.
+<#EntityInRationaleAssertionMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].normative_assertions[*]"
+    ] ;
+    rr:subjectMap [ rr:template "http://digistrucmed.org/entity-mention/{rationale_entity_ids[*]}" ; rr:termType rr:IRI ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:occursInAssertion ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/normative-assertion/{assertion_id}" ; rr:termType rr:IRI ]
+    ] .
+
+# Reverse of hasTargetEntity: local entity -> its exact assertion.
+<#EntityInTargetAssertionMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "mappings/level4_2.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$.text_units[*].normative_assertions[*]"
+    ] ;
+    rr:subjectMap [ rr:template "http://digistrucmed.org/entity-mention/{target_entity_ids[*]}" ; rr:termType rr:IRI ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:occursInAssertion ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/normative-assertion/{assertion_id}" ; rr:termType rr:IRI ]
+    ] .

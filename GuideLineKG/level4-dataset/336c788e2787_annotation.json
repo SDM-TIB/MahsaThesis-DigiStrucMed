@@ -1,0 +1,466 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "CROSS_PAYLOAD_CONTINUATION_CONTEXT_UNRESOLVED",
+      "ENTITY_BOUNDARY_REVIEW_REQUIRED",
+      "MIXED_NORMATIVE_AND_FACTUAL_CONTENT",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0034",
+  "source": {
+    "document_sha256": "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b",
+    "page_ids": [
+      "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0054"
+    ],
+    "page_numbers": [
+      54
+    ],
+    "physical_block_ids": [
+      "pb_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0054_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "• treated with ≥10× MRHD last trimester through day 22 of lactation) • increased post-implantation loss in rabbits (25× MRHD). No developmental toxicity in rabbits at 5× MRHD | Clopidogrel Antiplatelet drug B Unknown Yes (secreted in rat milk) No adequate human dataAnimal data: • no impaired fertility or foetotoxicity in rats (65× MRHD) and rabbits (78× MRHD) | Colestipol, cholestyramine Lipid-lowering drugs C Unknown Yes (lowering fat-soluble vitamins) May impair absorption of fat-soluble vitamins, e.g. vitamin K → cerebral bleeding (neonatal) | Dabigatran Anticoagulant - Transplacental passage in ex vivo studies of placental transfer Unknown No human data • use not recommend during pregnancy unless clearly necessary Animal data: • female fertility: decrease in implantations/increase in pre-implantation loss (plasma exposure five-fold higher compared with patients) • decrease in foetal body weight and embryofoetal viability in rodents (plasma exposure 5- to 10-fold higher compared with patients) • increased maternal bleeding (vaginal/uterine) in rodents | Danaparoid Anticoagulant B No No Limited human dataAnimal data: • no impaired fertility or foetotoxicity in rats (8.7× RHD) and rabbits (6× RHD) | Digoxin e Cardiac glycoside C Yes Yes b Serum levels unreliable, safe | Dihydralazine Vasodilator - Unknown Yes Maternal side effects: reflex tachycardia, headache, tachyphylaxis • lupus-like symptoms (maternal/ foetal) | Diltiazem Calcium channel blocker (Class IV) C No Yes b • possible teratogenic effects • use only when benefit outweighs risk Animal data: • embryo and foetal lethality in mice, rats, and rabbits (4–6× RHD), and abnormalities of the skeleton, heart, retina, and tongue • mice, rats, or rabbits: reductions in early individual pup weights and pup survival, prolonged delivery, and increased incidence of stillbirths"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation of explicit medication entities, administration attributes, indications, outcomes, adverse events, and source-language directives. No terminology identifiers were guessed.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0034: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "• treated with ≥10× MRHD last trimester through day 22 of lactation)\n• increased post-implantation loss in rabbits (25× MRHD). No developmental toxicity in rabbits at 5× MRHD"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 11,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Clopidogrel"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0034: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0002",
+          "grade_source_text": "B",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Clopidogrel\nAntiplatelet drug\nB\nUnknown\nYes (secreted in rat milk)\nNo adequate human data\nAnimal data:\n• no impaired fertility or foetotoxicity in rats (65× MRHD) and rabbits (78× MRHD)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 26,
+          "char_start": 0,
+          "entity_id": "e_0002",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Colestipol, cholestyramine"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0034: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Colestipol, cholestyramine\nLipid-lowering drugs\nC\nUnknown\nYes (lowering fat-soluble vitamins)\nMay impair absorption of fat-soluble vitamins, e.g. vitamin K → cerebral bleeding (neonatal)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Dabigatran"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0034: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Dabigatran\nAnticoagulant\n-\nTransplacental passage in ex vivo studies of placental transfer\nUnknown\nNo human data\n• use not recommend during pregnancy unless clearly necessary\nAnimal data:\n• female fertility: decrease in implantations/increase in pre-implantation loss (plasma exposure five-fold higher compared with patients)\n• decrease in foetal body weight and embryofoetal viability in rodents (plasma exposure 5- to 10-fold higher compared with patients)\n• increased maternal bleeding (vaginal/uterine) in rodents"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Danaparoid"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0034: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "B",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "B"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Danaparoid\nAnticoagulant\nB\nNo\nNo\nLimited human data\nAnimal data:\n• no impaired fertility or foetotoxicity in rats (8.7× RHD) and rabbits (6× RHD)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 7,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Digoxin"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0034: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Digoxin e\nCardiac glycoside\nC\nYes\nYes b\nSerum levels unreliable, safe"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Dihydralazine"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0034: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Dihydralazine\nVasodilator\n-\nUnknown\nYes\nMaternal side effects: reflex tachycardia, headache, tachyphylaxis\n• lupus-like symptoms (maternal/ foetal)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Diltiazem"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0034: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0008",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Diltiazem\nCalcium channel blocker (Class IV)\nC\nNo\nYes b\n• possible teratogenic effects\n• use only when benefit outweighs risk\nAnimal data:\n• embryo and foetal lethality in mice, rats, and rabbits (4–6× RHD), and abnormalities of the skeleton, heart, retina, and tongue\n• mice, rats, or rabbits: reductions in early individual pup weights and pup survival, prolonged delivery, and increased incidence of stillbirths"
+    }
+  ]
+}

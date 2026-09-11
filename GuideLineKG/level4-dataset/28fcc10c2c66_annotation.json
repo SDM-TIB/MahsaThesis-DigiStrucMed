@@ -1,0 +1,508 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "ENTITY_BOUNDARY_REVIEW_REQUIRED",
+      "MIXED_NORMATIVE_AND_FACTUAL_CONTENT",
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0033",
+  "source": {
+    "document_sha256": "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b",
+    "page_ids": [
+      "43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0053"
+    ],
+    "page_numbers": [
+      53
+    ],
+    "physical_block_ids": [
+      "pb_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_p0053_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "Atenolol d Beta-blocker (Class II) D Yes Yes Hypospadias (first trimester), birth defects, low birth weight, bradycardia and hypoglycaemia in foetus (second and third trimesters) | Beraprost Prostacyclin analogue - Unknown Unknown No human data Animal data: • no lethal or teratogenic effects in rats (<2.0 mg/kg/day) or rabbits (<1 mg/kg/day) | Bendroflumethiazide Diuretic (thiazide) C Yes Yes Inadequate human data | Bisoprolol Beta-blocker (Class II) C Yes Yes Foetal bradycardia and hypoglycaemia | Bosentan Endothelin receptor antagonist X Unknown Unknown Contraindicated • no human data Animal data: • teratogenic in rats (≥60 mg/kg/day; 2× MRHD), malformations of the head, mouth, face, and large blood vessels; increased stillbirths and pup mortality (60/300 mg/kg/day; 2× and 10× MRHD) • no birth defects in rabbits (<1500 mg/kg/day) | Bumetanide Diuretic (loop) C Unknown Unknown Inadequate human data Animal data: • in rodents, no teratogenicity with oral application • no teratogenic effects with i.v. application (rats/mice: 140× MRHD) • moderate growth retardation and increased incidence of delayed ossification of sternebrae in rats (at 3400× oral MRHD; not seen at 1000× oral MRHD) | Cangrelor Antiplatelet drug C Unknown Unknown No human data Animal data: • no malformations in rat or rabbit, no teratogenicity • foetal growth retardation in rats (at 5× less than the MRHD) • increased incidence of abortion and intrauterine losses, and foetal growth retardation in rabbits (12× MRHD) | Carvedilol Aλπηα/βετα-blocker C Yes (data from rats; no human data available) Yes • (data in rats, increased, no human data) • (increased mortality at 1 week post-partum in neonates from rats) No adequate human data • bradycardia and hypoglycaemia in foetus • use only if potential benefit outweighs potential risk Animal data: • increased post-implantation loss, decrease in foetal body weight, and delayed skeletal development in rats (50× MRHD). No developmental toxicity in rats at 10× MRHD"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation of explicit medication entities, administration attributes, indications, outcomes, adverse events, and source-language directives. No terminology identifiers were guessed.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 8,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Atenolol"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0033: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 1,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0001",
+          "grade_source_text": "D",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "D"
+        }
+      ],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Atenolol d\nBeta-blocker (Class II)\nD\nYes\nYes\nHypospadias (first trimester), birth defects, low birth weight, bradycardia and hypoglycaemia in foetus (second and third trimesters)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0002",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Beraprost"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0033: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Beraprost\nProstacyclin analogue\n-\nUnknown\nUnknown\nNo human data\nAnimal data:\n• no lethal or teratogenic effects in rats (<2.0 mg/kg/day) or rabbits (<1 mg/kg/day)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 19,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Bendroflumethiazide"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0033: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0003",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Bendroflumethiazide\nDiuretic (thiazide)\nC\nYes\nYes\nInadequate human data"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0004",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Bisoprolol"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0033: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0004",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Bisoprolol\nBeta-blocker (Class II)\nC\nYes\nYes\nFoetal bradycardia and hypoglycaemia"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 8,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Bosentan"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0033: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0005",
+          "grade_source_text": "X",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "X"
+        }
+      ],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Bosentan\nEndothelin receptor antagonist\nX\nUnknown\nUnknown\nContraindicated\n• no human data\nAnimal data:\n• teratogenic in rats (≥60 mg/kg/day; 2× MRHD), malformations of the head, mouth, face, and large blood vessels; increased stillbirths and pup mortality (60/300 mg/kg/day; 2× and 10× MRHD)\n• no birth defects in rabbits (<1500 mg/kg/day)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0006",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Bumetanide"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0033: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0006",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Bumetanide\nDiuretic (loop)\nC\nUnknown\nUnknown\nInadequate human data\nAnimal data:\n• in rodents, no teratogenicity with oral application\n• no teratogenic effects with i.v. application (rats/mice: 140× MRHD)\n• moderate growth retardation and increased incidence of delayed ossification of sternebrae in rats (at 3400× oral MRHD; not seen at 1000× oral MRHD)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 9,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Cangrelor"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0033: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0007",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Cangrelor\nAntiplatelet drug\nC\nUnknown\nUnknown\nNo human data\nAnimal data:\n• no malformations in rat or rabbit, no teratogenicity\n• foetal growth retardation in rats (at 5× less than the MRHD)\n• increased incidence of abortion and intrauterine losses, and foetal growth retardation in rabbits (12× MRHD)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0008",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Carvedilol"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_43204eb005113090db3476895a76cc14f70698fd23b8582928d6dd3b8f43e10b_n0033: inherited source-table context (see source.title_or_context)",
+          "Medication",
+          "Therapeutic class",
+          "Legacy FDA pregnancy category",
+          "Placental transfer",
+          "Breastfeeding",
+          "Pregnancy and reproductive evidence"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [
+        {
+          "grade_dimension": "SOURCE_DEFINED_OTHER",
+          "grade_record_id": "gr_0008",
+          "grade_source_text": "C",
+          "grading_system_name": "Legacy FDA pregnancy category",
+          "grading_system_version": null,
+          "normalization_scheme": null,
+          "normalized_grade": null,
+          "notes": "Preserved verbatim; no cross-system normalization inferred.",
+          "raw_grade": "C"
+        }
+      ],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "Carvedilol\nAλπηα/βετα-blocker\nC\nYes (data from rats; no human data available)\nYes\n• (data in rats, increased, no human data)\n• (increased mortality at 1 week post-partum in neonates from rats)\nNo adequate human data\n• bradycardia and hypoglycaemia in foetus\n• use only if potential benefit outweighs potential risk\nAnimal data:\n• increased post-implantation loss, decrease in foetal body weight, and delayed skeletal development in rats (50× MRHD). No developmental toxicity in rats at 10× MRHD"
+    }
+  ]
+}

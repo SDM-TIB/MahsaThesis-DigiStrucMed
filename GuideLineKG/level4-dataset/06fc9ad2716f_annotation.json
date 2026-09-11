@@ -1,0 +1,482 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "CORRECTED_TO_NON_ELIGIBLE",
+      "ENTITY_OTHER_SCHEMA_REVIEW"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_0a5b07262fb6deaea1305147b46e84b8a0e692c3bf4e3b142d88ada7ab765548_n0007",
+  "source": {
+    "document_sha256": "0a5b07262fb6deaea1305147b46e84b8a0e692c3bf4e3b142d88ada7ab765548",
+    "page_ids": [
+      "0a5b07262fb6deaea1305147b46e84b8a0e692c3bf4e3b142d88ada7ab765548_p0024"
+    ],
+    "page_numbers": [
+      24
+    ],
+    "physical_block_ids": [
+      "pb_0a5b07262fb6deaea1305147b46e84b8a0e692c3bf4e3b142d88ada7ab765548_p0024_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "Easy-to-read food labels can help you find foods low in sodium. This will help you keep track of the number of grams (g) or milligrams (mg) you consume each day. According to Food and Drug Administration regulations, no manufacturer can say that their product is “low-sodium” unless they can prove that claim. Learning to read food labels is a good first step in a sensible eating plan."
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact review shows a food-label terminology/threshold table, not a patient-directed clinical instruction, medication fact, or medication recommendation. Row assertions are retained as non-clinical HAS_ATTRIBUTE relations for auditability, but the unit is corrected to non-eligible.",
+    "corrected_semantic_class": "non_eligible",
+    "eligibility": "NOT_ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 35,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Sodium-free, salt-free or no sodium"
+        },
+        {
+          "char_end": 98,
+          "char_start": 36,
+          "entity_id": "e_0002",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Less than 5 mg of sodium and no sodium chloride in ingredients"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Non-clinical food-label descriptor and its source-stated sodium attribute; ENTITY_OTHER is used because the schema has no food-label-claim type.",
+          "object_entity_id": "e_0002",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "If the label says...",
+          "One serving of the product has..."
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Sodium-free, salt-free or no sodium Less than 5 mg of sodium and no sodium chloride in ingredients"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 15,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Very low sodium"
+        },
+        {
+          "char_end": 39,
+          "char_start": 16,
+          "entity_id": "e_0004",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "35 mg or less of sodium"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Non-clinical food-label descriptor and its source-stated sodium attribute; ENTITY_OTHER is used because the schema has no food-label-claim type.",
+          "object_entity_id": "e_0004",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0003",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "If the label says...",
+          "One serving of the product has..."
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Very low sodium 35 mg or less of sodium"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 25,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "No added salt or unsalted"
+        },
+        {
+          "char_end": 108,
+          "char_start": 26,
+          "entity_id": "e_0006",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "No salt added to the product during processing (this is not a sodium-free product)"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Non-clinical food-label descriptor and its source-stated sodium attribute; ENTITY_OTHER is used because the schema has no food-label-claim type.",
+          "object_entity_id": "e_0006",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0003",
+          "subject_entity_id": "e_0005",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "If the label says...",
+          "One serving of the product has..."
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "No added salt or unsalted No salt added to the product during processing (this is not a sodium-free product)"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 10,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Low sodium"
+        },
+        {
+          "char_end": 35,
+          "char_start": 11,
+          "entity_id": "e_0008",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "140 mg or less of sodium"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Non-clinical food-label descriptor and its source-stated sodium attribute; ENTITY_OTHER is used because the schema has no food-label-claim type.",
+          "object_entity_id": "e_0008",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0004",
+          "subject_entity_id": "e_0007",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "If the label says...",
+          "One serving of the product has..."
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Low sodium 140 mg or less of sodium"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 22,
+          "char_start": 0,
+          "entity_id": "e_0009",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Reduced or less sodium"
+        },
+        {
+          "char_end": 79,
+          "char_start": 23,
+          "entity_id": "e_0010",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "At least 25 percent less sodium than the regular product"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Non-clinical food-label descriptor and its source-stated sodium attribute; ENTITY_OTHER is used because the schema has no food-label-claim type.",
+          "object_entity_id": "e_0010",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0005",
+          "subject_entity_id": "e_0009",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "If the label says...",
+          "One serving of the product has..."
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Reduced or less sodium At least 25 percent less sodium than the regular product"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 15,
+          "char_start": 0,
+          "entity_id": "e_0011",
+          "entity_type": "ENTITY_OTHER",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "Light in sodium"
+        },
+        {
+          "char_end": 63,
+          "char_start": 16,
+          "entity_id": "e_0012",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1,
+          "surface_form": "50 percent less sodium than the regular product"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Non-clinical food-label descriptor and its source-stated sodium attribute; ENTITY_OTHER is used because the schema has no food-label-claim type.",
+          "object_entity_id": "e_0012",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0006",
+          "subject_entity_id": "e_0011",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "If the label says...",
+          "One serving of the product has..."
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Light in sodium 50 percent less sodium than the regular product"
+    },
+    {
+      "entities": [],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [],
+        "cell_index": null,
+        "header_path": [
+          "Food-label table note"
+        ],
+        "row_index": null,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Always compare the sodium content for several similar products and choose the food or beverage with the lowest amount of sodium."
+    }
+  ]
+}

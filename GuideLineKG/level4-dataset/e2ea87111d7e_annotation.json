@@ -1,0 +1,548 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "TERMINOLOGY_LINKING_PENDING"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_325ce048dd4af110372529dfd9eacb1e168336399abd7ab60dd9026525c6e157_n0004",
+  "source": {
+    "document_sha256": "325ce048dd4af110372529dfd9eacb1e168336399abd7ab60dd9026525c6e157",
+    "page_ids": [
+      "325ce048dd4af110372529dfd9eacb1e168336399abd7ab60dd9026525c6e157_p0008"
+    ],
+    "page_numbers": [
+      8
+    ],
+    "physical_block_ids": [
+      "pb_325ce048dd4af110372529dfd9eacb1e168336399abd7ab60dd9026525c6e157_p0008_g001"
+    ],
+    "source_semantic_class": "descriptive_medication_fact",
+    "title_or_context": "Die Behandlungsleitlinien für die klinische Praxis der ESC empfehlen vier Arten von Arzneimitteln für Menschen mit HF<sub>r</sub>EF: Angiotensin-Converting-Enzym-Inhibitoren (ACE-I) oder Angiotensin-Rezeptor-Neprilysin-Inhibitoren (ARNI), Betablocker (BB), Mineralocorticoid-Rezeptor-Antagonisten (MRA) und Natrium-Glucose-Cotransporter-2 (SGLT2)-Inhibitoren. In der nachstehenden Tabelle wird die Wirkungsweise der verschiedenen Arzneimittel erläutert:"
+  },
+  "table_assessment": {
+    "assessment_notes": "Exact-content agent-silver annotation of explicit medication entities, administration attributes, indications, outcomes, adverse events, and source-language directives. No terminology identifiers were guessed.",
+    "corrected_semantic_class": "descriptive_medication_fact",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "de"
+    ],
+    "mixed_content": false,
+    "suspected_duplicate": false,
+    "table_example_ready": true,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 48,
+          "char_start": 0,
+          "entity_id": "e_0001",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Angiotensin-Converting-Enzym-Inhibitoren (ACE-I)"
+        },
+        {
+          "char_end": 115,
+          "char_start": 49,
+          "entity_id": "e_0002",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Erweitern die Blutgefäße und verringern die Belastung für das Herz"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The adjacent source cell states the medication-class effect.",
+          "object_entity_id": "e_0002",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_325ce048dd4af110372529dfd9eacb1e168336399abd7ab60dd9026525c6e157_n0004: inherited source-table context (see source.title_or_context)",
+          "Arzneimittel",
+          "Funktionsweise"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive source row; no recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [
+            "e_0002"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0001"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "Angiotensin-Converting-Enzym-Inhibitoren (ACE-I)\nErweitern die Blutgefäße und verringern die Belastung für das Herz"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 50,
+          "char_start": 0,
+          "entity_id": "e_0003",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Angiotensin-Rezeptor-Neprilysin-Inhibitoren (ARNI)"
+        },
+        {
+          "char_end": 135,
+          "char_start": 51,
+          "entity_id": "e_0004",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Wirken ähnlich wie ACE-I (siehe oben) und haben zusätzliche herzschützende Wirkungen"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The adjacent source cell states the medication-class effect.",
+          "object_entity_id": "e_0004",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0003",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_325ce048dd4af110372529dfd9eacb1e168336399abd7ab60dd9026525c6e157_n0004: inherited source-table context (see source.title_or_context)",
+          "Arzneimittel",
+          "Funktionsweise"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive source row; no recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [
+            "e_0004"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0003"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Angiotensin-Rezeptor-Neprilysin-Inhibitoren (ARNI)\nWirken ähnlich wie ACE-I (siehe oben) und haben zusätzliche herzschützende Wirkungen"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 16,
+          "char_start": 0,
+          "entity_id": "e_0005",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Betablocker (BB)"
+        },
+        {
+          "char_end": 130,
+          "char_start": 17,
+          "entity_id": "e_0006",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Senken die Schlagfolge des Herzens, sodass der Herzmuskel entlastet wird, und schützen das Herz vor Herzinfarkten"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The adjacent source cell states the medication-class effect.",
+          "object_entity_id": "e_0006",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0003",
+          "subject_entity_id": "e_0005",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_325ce048dd4af110372529dfd9eacb1e168336399abd7ab60dd9026525c6e157_n0004: inherited source-table context (see source.title_or_context)",
+          "Arzneimittel",
+          "Funktionsweise"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive source row; no recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [
+            "e_0006"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0005"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "Betablocker (BB)\nSenken die Schlagfolge des Herzens, sodass der Herzmuskel entlastet wird, und schützen das Herz vor Herzinfarkten"
+    },
+    {
+      "entities": [
+        {
+          "char_end": 45,
+          "char_start": 0,
+          "entity_id": "e_0007",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Mineralokortikoid-Rezeptor-Antagonisten (MRA)"
+        },
+        {
+          "char_end": 162,
+          "char_start": 46,
+          "entity_id": "e_0008",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Verringern die Ansammlung von Wasser und Salzen, verringern die Vernarbung des Herzmuskels und schützen so das Herz."
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The adjacent source cell states the medication-class effect.",
+          "object_entity_id": "e_0008",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0004",
+          "subject_entity_id": "e_0007",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_325ce048dd4af110372529dfd9eacb1e168336399abd7ab60dd9026525c6e157_n0004: inherited source-table context (see source.title_or_context)",
+          "Arzneimittel",
+          "Funktionsweise"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive source row; no recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [
+            "e_0008"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0007"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "Mineralokortikoid-Rezeptor-Antagonisten (MRA)\nVerringern die Ansammlung von Wasser und Salzen, verringern die Vernarbung des Herzmuskels und schützen so das Herz."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 51,
+          "char_start": 0,
+          "entity_id": "e_0009",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Natrium-Glukose-Cotransporter-2 (SGLT2)-Inhibitoren"
+        },
+        {
+          "char_end": 145,
+          "char_start": 52,
+          "entity_id": "e_0010",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Tragen zur Ausscheidung von Wasser und Salzen (Elektrolyten) bei und schützen Herz und Nieren"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The adjacent source cell states the medication-class effect.",
+          "object_entity_id": "e_0010",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0005",
+          "subject_entity_id": "e_0009",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          2
+        ],
+        "cell_index": 1,
+        "header_path": [
+          "lu_325ce048dd4af110372529dfd9eacb1e168336399abd7ab60dd9026525c6e157_n0004: inherited source-table context (see source.title_or_context)",
+          "Arzneimittel",
+          "Funktionsweise"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "Descriptive source row; no recommendation trigger is present.",
+          "operation": null,
+          "outcome_entity_ids": [
+            "e_0010"
+          ],
+          "parameter_entity_ids": [],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 1.0,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [],
+          "target_entity_ids": [
+            "e_0009"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Natrium-Glukose-Cotransporter-2 (SGLT2)-Inhibitoren\nTragen zur Ausscheidung von Wasser und Salzen (Elektrolyten) bei und schützen Herz und Nieren\n2"
+    }
+  ]
+}

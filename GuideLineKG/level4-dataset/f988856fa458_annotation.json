@@ -1,0 +1,2216 @@
+{
+  "quality": {
+    "requires_human_review": true,
+    "uncertainty_flags": [
+      "terminology_linking_pending",
+      "mixed_content_adjudication_required",
+      "ambiguous_relation_requires_human_review",
+      "operation_mapping_requires_human_review"
+    ]
+  },
+  "schema_version": "1.0",
+  "semantic_unit_id": "lu_a87408716214d53d13c9ba8e0a71ed128e432427b9fd19f3db741ec2ad3ae9e5_n0002",
+  "source": {
+    "document_sha256": "a87408716214d53d13c9ba8e0a71ed128e432427b9fd19f3db741ec2ad3ae9e5",
+    "page_ids": [
+      "a87408716214d53d13c9ba8e0a71ed128e432427b9fd19f3db741ec2ad3ae9e5_p0006"
+    ],
+    "page_numbers": [
+      6
+    ],
+    "physical_block_ids": [
+      "pb_a87408716214d53d13c9ba8e0a71ed128e432427b9fd19f3db741ec2ad3ae9e5_p0006_g001"
+    ],
+    "source_semantic_class": "other_normative_clinical_instruction",
+    "title_or_context": "In Summary"
+  },
+  "table_assessment": {
+    "assessment_notes": "ICD decision-aid table containing descriptive device placement, outcome and adverse-event facts alongside medication continuation, counselling, device-removal and deactivation instructions. Sixteen non-decorative response cells are annotated; the two 'Does not apply' cells are non-assertive and omitted.",
+    "corrected_semantic_class": "other_normative_clinical_instruction",
+    "eligibility": "ELIGIBLE",
+    "languages": [
+      "en"
+    ],
+    "mixed_content": true,
+    "suspected_duplicate": false,
+    "table_example_ready": false,
+    "temporal_or_supersession_content": false
+  },
+  "text_units": [
+    {
+      "entities": [
+        {
+          "char_end": 6,
+          "char_start": 3,
+          "entity_id": "e_0001",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 40,
+          "char_start": 18,
+          "entity_id": "e_0002",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "dangerous heart rhythm"
+        },
+        {
+          "char_end": 70,
+          "char_start": 58,
+          "entity_id": "e_0003",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "sudden death"
+        },
+        {
+          "char_end": 100,
+          "char_start": 84,
+          "entity_id": "e_0004",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "electrical shock"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The ICD may stop the dangerous rhythm.",
+          "object_entity_id": "e_0002",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.97,
+          "relation_id": "fr_0001",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The rhythm is stated as potentially causing sudden death.",
+          "object_entity_id": "e_0003",
+          "predicate": "CAUSES",
+          "relation_confidence": 0.97,
+          "relation_id": "fr_0002",
+          "subject_entity_id": "e_0002",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Electrical shock is the stated ICD mechanism.",
+          "object_entity_id": "e_0004",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.94,
+          "relation_id": "fr_0003",
+          "subject_entity_id": "e_0001",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Implant an ICD",
+          "What does an ICD do?"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0001",
+      "verbatim_text": "An ICD may stop a dangerous heart rhythm that could cause sudden death by giving an electrical shock to the heart."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 14,
+          "char_start": 11,
+          "entity_id": "e_0005",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 61,
+          "char_start": 47,
+          "entity_id": "e_0006",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "dying suddenly"
+        },
+        {
+          "char_end": 89,
+          "char_start": 67,
+          "entity_id": "e_0007",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "dangerous heart rhythm"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "CONDITIONAL",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Sudden death risk is conditional on a dangerous rhythm occurring.",
+          "object_entity_id": "e_0006",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.96,
+          "relation_id": "fr_0004",
+          "subject_entity_id": "e_0007",
+          "temporality": "FUTURE"
+        },
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Inference directly licensed by the explicit higher-risk-without-ICD comparison; human review should confirm predicate choice.",
+          "object_entity_id": "e_0006",
+          "predicate": "PREVENTS",
+          "relation_confidence": 0.9,
+          "relation_id": "fr_0005",
+          "subject_entity_id": "e_0005",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Do not implant an ICD",
+          "What does an ICD do?"
+        ],
+        "row_index": 2,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0002",
+      "verbatim_text": "Without an ICD, you will have a higher risk of dying suddenly if a dangerous heart rhythm happens."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 6,
+          "char_start": 3,
+          "entity_id": "e_0008",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 28,
+          "char_start": 24,
+          "entity_id": "e_0009",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "skin"
+        },
+        {
+          "char_end": 52,
+          "char_start": 47,
+          "entity_id": "e_0010",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "wires"
+        },
+        {
+          "char_end": 81,
+          "char_start": 76,
+          "entity_id": "e_0011",
+          "entity_type": "ANATOMY",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "heart"
+        },
+        {
+          "char_end": 115,
+          "char_start": 106,
+          "entity_id": "e_0012",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "one night"
+        },
+        {
+          "char_end": 152,
+          "char_start": 142,
+          "entity_id": "e_0013",
+          "entity_type": "TIME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "5-10 years"
+        },
+        {
+          "char_end": 170,
+          "char_start": 163,
+          "entity_id": "e_0014",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "battery"
+        },
+        {
+          "char_end": 217,
+          "char_start": 189,
+          "entity_id": "e_0015",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "ICD will need to be replaced"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The ICD is placed under the skin.",
+          "object_entity_id": "e_0009",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.92,
+          "relation_id": "fr_0006",
+          "subject_entity_id": "e_0008",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The leads are described as going into the heart.",
+          "object_entity_id": "e_0011",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.92,
+          "relation_id": "fr_0007",
+          "subject_entity_id": "e_0010",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Replacement timing is stated as about 5-10 years and battery-dependent.",
+          "object_entity_id": "e_0013",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.9,
+          "relation_id": "fr_0008",
+          "subject_entity_id": "e_0015",
+          "temporality": "FUTURE"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Implant an ICD",
+          "What is involved?"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NOT_APPLICABLE",
+          "assertion_id": "na_0001",
+          "condition_entity_ids": [],
+          "deontic_force": "NOT_STATED",
+          "deontic_force_basis": "NONE",
+          "direction": "NOT_STATED",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "NONE"
+          ],
+          "notes": "This is future device-course information, not an instruction to the reader.",
+          "operation": null,
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0013",
+            "e_0014"
+          ],
+          "patient_applicability": "NOT_STATED",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "NOT_A_RECOMMENDATION",
+          "relation_confidence": 0.97,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "will need to be replaced"
+          ],
+          "target_entity_ids": [
+            "e_0015"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0003",
+      "verbatim_text": "An ICD is put under the skin on your chest and wires (\"leads\") go into your heart. You will probably stay one night in the hospital. In about 5-10 years, when the battery runs out, and the ICD will need to be replaced."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 32,
+          "char_start": 24,
+          "entity_id": "e_0016",
+          "entity_type": "MEDICATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "medicine"
+        },
+        {
+          "char_end": 60,
+          "char_start": 47,
+          "entity_id": "e_0017",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "heart problem"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The source explicitly says medicine treats the heart problem.",
+          "object_entity_id": "e_0017",
+          "predicate": "TREATS",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0009",
+          "subject_entity_id": "e_0016",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Do not implant an ICD",
+          "What is involved?"
+        ],
+        "row_index": 3,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0002",
+          "condition_entity_ids": [
+            "e_0017"
+          ],
+          "deontic_force": "PERMISSIVE",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "MAY_CAN"
+          ],
+          "notes": "Explicit permission to continue medicine.",
+          "operation": "CONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "can continue"
+          ],
+          "target_entity_ids": [
+            "e_0016"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0004",
+      "verbatim_text": "You can continue to use medicine to treat your heart problem."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 20,
+          "char_start": 0,
+          "entity_id": "e_0018",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Patients with an ICD"
+        },
+        {
+          "char_end": 52,
+          "char_start": 40,
+          "entity_id": "e_0019",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "die suddenly"
+        },
+        {
+          "char_end": 80,
+          "char_start": 58,
+          "entity_id": "e_0020",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "dangerous heart rhythm"
+        },
+        {
+          "char_end": 108,
+          "char_start": 95,
+          "entity_id": "e_0021",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "29 out of 100"
+        },
+        {
+          "char_end": 136,
+          "char_start": 109,
+          "entity_id": "e_0022",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with heart failure"
+        },
+        {
+          "char_end": 166,
+          "char_start": 153,
+          "entity_id": "e_0023",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "5-year period"
+        },
+        {
+          "char_end": 190,
+          "char_start": 176,
+          "entity_id": "e_0024",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "7 fewer deaths"
+        },
+        {
+          "char_end": 166,
+          "char_start": 142,
+          "entity_id": "e_0071",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "die over a 5-year period"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "ICD recipients are stated to be less likely to die suddenly from the rhythm.",
+          "object_entity_id": "e_0019",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0010",
+          "subject_entity_id": "e_0018",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The quantitative sentence states death over five years; it does not label that numeric outcome as sudden death. Corrected in independent second-pass source-fidelity adjudication.",
+          "object_entity_id": "e_0071",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.96,
+          "relation_id": "fr_0011",
+          "subject_entity_id": "e_0022",
+          "temporality": "FUTURE"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Implant an ICD",
+          "Will I live longer with an ICD?"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0005",
+      "verbatim_text": "Patients with an ICD are less likely to die suddenly of a dangerous heart rhythm. With an ICD, 29 out of 100 patients with heart failure will die over a 5-year period. This is 7 fewer deaths than if they did not have an ICD."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 23,
+          "char_start": 0,
+          "entity_id": "e_0025",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "Patients without an ICD"
+        },
+        {
+          "char_end": 55,
+          "char_start": 43,
+          "entity_id": "e_0026",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "die suddenly"
+        },
+        {
+          "char_end": 85,
+          "char_start": 63,
+          "entity_id": "e_0027",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "dangerous heart rhythm"
+        },
+        {
+          "char_end": 116,
+          "char_start": 103,
+          "entity_id": "e_0028",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "36 out of 100"
+        },
+        {
+          "char_end": 144,
+          "char_start": 117,
+          "entity_id": "e_0029",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients with heart failure"
+        },
+        {
+          "char_end": 174,
+          "char_start": 161,
+          "entity_id": "e_0030",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "5-year period"
+        },
+        {
+          "char_end": 174,
+          "char_start": 150,
+          "entity_id": "e_0072",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "die over a 5-year period"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Patients without ICD are more likely to die suddenly from the rhythm.",
+          "object_entity_id": "e_0026",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0012",
+          "subject_entity_id": "e_0025",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The quantitative sentence states death over five years; it does not label that numeric outcome as sudden death. Corrected in independent second-pass source-fidelity adjudication.",
+          "object_entity_id": "e_0072",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.95,
+          "relation_id": "fr_0013",
+          "subject_entity_id": "e_0029",
+          "temporality": "FUTURE"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Do not implant an ICD",
+          "Will I live longer with an ICD?"
+        ],
+        "row_index": 4,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0006",
+      "verbatim_text": "Patients without an ICD are more likely to die suddenly from a dangerous heart rhythm. Without an ICD, 36 out of 100 patients with heart failure will die over a 5-year period."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 5,
+          "entity_id": "e_0031",
+          "entity_type": "DURATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "5 years"
+        },
+        {
+          "char_end": 33,
+          "char_start": 14,
+          "entity_id": "e_0032",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "20 out of every 100"
+        },
+        {
+          "char_end": 58,
+          "char_start": 34,
+          "entity_id": "e_0033",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients who have an ICD"
+        },
+        {
+          "char_end": 75,
+          "char_start": 70,
+          "entity_id": "e_0034",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "shock"
+        },
+        {
+          "char_end": 90,
+          "char_start": 77,
+          "entity_id": "e_0035",
+          "entity_type": "VALUE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "80 out of 100"
+        },
+        {
+          "char_end": 190,
+          "char_start": 165,
+          "entity_id": "e_0036",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.96,
+          "surface_form": "being kicked in the chest"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Shock probability is reported as 20/100 over five years; 80/100 are reported not shocked.",
+          "object_entity_id": "e_0034",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0014",
+          "subject_entity_id": "e_0033",
+          "temporality": "FUTURE"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Patients describe the shock sensation with the stated comparison.",
+          "object_entity_id": "e_0036",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.94,
+          "relation_id": "fr_0015",
+          "subject_entity_id": "e_0034",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Implant an ICD",
+          "Will I get shocked by the ICD? What will that feel like?"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0007",
+      "verbatim_text": "Over 5 years, 20 out of every 100 patients who have an ICD will get a shock. 80 out of 100 patients will not get shocked. Patients say that getting shocked is like \"being kicked in the chest.\""
+    },
+    {
+      "entities": [
+        {
+          "char_end": 24,
+          "char_start": 19,
+          "entity_id": "e_0037",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "shock"
+        },
+        {
+          "char_end": 36,
+          "char_start": 33,
+          "entity_id": "e_0038",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ICD"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "CONDITIONAL",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "NEGATED",
+          "notes": "Negation is conditional on not receiving the ICD; the schema cannot directly encode absence of exposure.",
+          "object_entity_id": "e_0037",
+          "predicate": "CAUSES_ADVERSE_EVENT",
+          "relation_confidence": 0.9,
+          "relation_id": "fr_0016",
+          "subject_entity_id": "e_0038",
+          "temporality": "FUTURE"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Do not implant an ICD",
+          "Will I get shocked by the ICD? What will that feel like?"
+        ],
+        "row_index": 5,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0008",
+      "verbatim_text": "You will not get a shock from an ICD if you don't get an ICD."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 27,
+          "char_start": 19,
+          "entity_id": "e_0039",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "patients"
+        },
+        {
+          "char_end": 51,
+          "char_start": 43,
+          "entity_id": "e_0040",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "bleeding"
+        },
+        {
+          "char_end": 108,
+          "char_start": 93,
+          "entity_id": "e_0041",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "serious problem"
+        },
+        {
+          "char_end": 136,
+          "char_start": 118,
+          "entity_id": "e_0042",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "damage to the lung"
+        },
+        {
+          "char_end": 152,
+          "char_start": 140,
+          "entity_id": "e_0043",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "heart attack"
+        },
+        {
+          "char_end": 165,
+          "char_start": 159,
+          "entity_id": "e_0044",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "stroke"
+        },
+        {
+          "char_end": 216,
+          "char_start": 207,
+          "entity_id": "e_0045",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "infection"
+        },
+        {
+          "char_end": 252,
+          "char_start": 236,
+          "entity_id": "e_0046",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "removing the ICD"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Bleeding is reported for 4/100 patients.",
+          "object_entity_id": "e_0040",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0017",
+          "subject_entity_id": "e_0039",
+          "temporality": "FUTURE"
+        },
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "A serious problem is reported for 2/100, with examples retained as adverse-event entities.",
+          "object_entity_id": "e_0041",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0018",
+          "subject_entity_id": "e_0039",
+          "temporality": "FUTURE"
+        },
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Infection is reported for 1/100 patients.",
+          "object_entity_id": "e_0045",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.98,
+          "relation_id": "fr_0019",
+          "subject_entity_id": "e_0039",
+          "temporality": "FUTURE"
+        },
+        {
+          "epistemic_status": "POSSIBLE",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "Infection may require ICD removal.",
+          "object_entity_id": "e_0046",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.96,
+          "relation_id": "fr_0020",
+          "subject_entity_id": "e_0045",
+          "temporality": "FUTURE"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Implant an ICD",
+          "What are the risks of getting an ICD?"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0009",
+      "verbatim_text": "4 out of every 100 patients will have some bleeding. 2 out of every 100 patients will have a serious problem, such as damage to the lung, a heart attack, or a stroke. 1 out of every 100 patients will get an infection, which may require removing the ICD."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 27,
+          "char_start": 22,
+          "entity_id": "e_0047",
+          "entity_type": "ADVERSE_EVENT",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.93,
+          "surface_form": "risks"
+        },
+        {
+          "char_end": 45,
+          "char_start": 31,
+          "entity_id": "e_0048",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "placing an ICD"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "CONDITIONAL",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "NEGATED",
+          "notes": "The absence of placement is stated to avoid placement risks; the condition is carried by the decision-aid column.",
+          "object_entity_id": "e_0047",
+          "predicate": "HAS_OUTCOME",
+          "relation_confidence": 0.94,
+          "relation_id": "fr_0021",
+          "subject_entity_id": "e_0048",
+          "temporality": "FUTURE"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Do not implant an ICD",
+          "What are the risks of getting an ICD?"
+        ],
+        "row_index": 6,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0010",
+      "verbatim_text": "You will not have the risks of placing an ICD."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 10,
+          "entity_id": "e_0049",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 44,
+          "char_start": 36,
+          "entity_id": "e_0050",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "symptoms"
+        },
+        {
+          "char_end": 71,
+          "char_start": 58,
+          "entity_id": "e_0051",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "heart problem"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "NEGATED",
+          "notes": "The source explicitly negates symptom improvement.",
+          "object_entity_id": "e_0050",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0022",
+          "subject_entity_id": "e_0049",
+          "temporality": "GENERAL"
+        },
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "NEGATED",
+          "notes": "The source explicitly says the ICD does not cure the heart problem.",
+          "object_entity_id": "e_0051",
+          "predicate": "TREATS",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0023",
+          "subject_entity_id": "e_0049",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Implant an ICD",
+          "Will an ICD improve my symptoms?"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0011",
+      "verbatim_text": "Having an ICD will not improve your symptoms or cure your heart problem."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 13,
+          "char_start": 5,
+          "entity_id": "e_0052",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "symptoms"
+        },
+        {
+          "char_end": 54,
+          "char_start": 41,
+          "entity_id": "e_0053",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "heart problem"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "AFFIRMED",
+          "notes": "The heart problem is stated to influence symptoms.",
+          "object_entity_id": "e_0052",
+          "predicate": "AFFECTS",
+          "relation_confidence": 0.99,
+          "relation_id": "fr_0024",
+          "subject_entity_id": "e_0053",
+          "temporality": "FUTURE"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Do not implant an ICD",
+          "Will an ICD improve my symptoms?"
+        ],
+        "row_index": 7,
+        "source_part_index": 1
+      },
+      "normative_assertions": [],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0012",
+      "verbatim_text": "Your symptoms will be influenced by your heart problem."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 34,
+          "char_start": 21,
+          "entity_id": "e_0054",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "heart problem"
+        },
+        {
+          "char_end": 55,
+          "char_start": 49,
+          "entity_id": "e_0055",
+          "entity_type": "ACTOR",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "doctor"
+        },
+        {
+          "char_end": 81,
+          "char_start": 62,
+          "entity_id": "e_0056",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "driving limitations"
+        },
+        {
+          "char_end": 102,
+          "char_start": 86,
+          "entity_id": "e_0057",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "other activities"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Implant an ICD",
+          "Are there things I cannot do?"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [
+            "e_0055"
+          ],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0003",
+          "condition_entity_ids": [
+            "e_0054"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "The reader is directed to discuss activity limitations with a doctor.",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.96,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "Talk to"
+          ],
+          "target_entity_ids": [
+            "e_0056",
+            "e_0057"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0013",
+      "verbatim_text": "This depends on your heart problem. Talk to your doctor about driving limitations and other activities."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 19,
+          "char_start": 16,
+          "entity_id": "e_0058",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 42,
+          "char_start": 36,
+          "entity_id": "e_0059",
+          "entity_type": "ACTOR",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "doctor"
+        },
+        {
+          "char_end": 68,
+          "char_start": 49,
+          "entity_id": "e_0060",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "driving limitations"
+        },
+        {
+          "char_end": 89,
+          "char_start": 73,
+          "entity_id": "e_0061",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.94,
+          "surface_form": "other activities"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 3,
+        "header_path": [
+          "Do not implant an ICD",
+          "Are there things I cannot do?"
+        ],
+        "row_index": 8,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [
+            "e_0059"
+          ],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0004",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "SOURCE_STYLE_RULE",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "IMPERATIVE"
+          ],
+          "notes": "The counselling instruction applies even without ICD implantation.",
+          "operation": "COUNSEL",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [
+            "e_0058"
+          ],
+          "patient_applicability": "UNCONDITIONAL_WITHIN_STATED_POPULATION",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "talk with"
+          ],
+          "target_entity_ids": [
+            "e_0060",
+            "e_0061"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0014",
+      "verbatim_text": "Even without an ICD, talk with your doctor about driving limitations and other activities."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 32,
+          "char_start": 18,
+          "entity_id": "e_0062",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "remove the ICD"
+        },
+        {
+          "char_end": 56,
+          "char_start": 48,
+          "entity_id": "e_0063",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.98,
+          "surface_form": "infected"
+        },
+        {
+          "char_end": 116,
+          "char_start": 100,
+          "entity_id": "e_0064",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "battery runs out"
+        }
+      ],
+      "factual_relations": [],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Implant an ICD",
+          "Can the ICD be taken out?"
+        ],
+        "row_index": 9,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "PRESENT",
+          "assertion_id": "na_0005",
+          "condition_entity_ids": [],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "AGAINST",
+          "exception_entity_ids": [
+            "e_0063",
+            "e_0064"
+          ],
+          "lexical_trigger_families": [
+            "AVOID_DO_NOT"
+          ],
+          "notes": "Removal is discouraged except for infection or battery-depletion replacement timing.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.99,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "best not to remove",
+            "unless"
+          ],
+          "target_entity_ids": [
+            "e_0062"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0015",
+      "verbatim_text": "It is best not to remove the ICD unless it gets infected or it is time to have it replaced when the battery runs out."
+    },
+    {
+      "entities": [
+        {
+          "char_end": 12,
+          "char_start": 9,
+          "entity_id": "e_0065",
+          "entity_type": "DEVICE",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "ICD"
+        },
+        {
+          "char_end": 30,
+          "char_start": 20,
+          "entity_id": "e_0066",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "turned off"
+        },
+        {
+          "char_end": 46,
+          "char_start": 39,
+          "entity_id": "e_0067",
+          "entity_type": "PROCEDURE_OR_INTERVENTION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "surgery"
+        },
+        {
+          "char_end": 79,
+          "char_start": 73,
+          "entity_id": "e_0068",
+          "entity_type": "POPULATION",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "person"
+        },
+        {
+          "char_end": 96,
+          "char_start": 83,
+          "entity_id": "e_0069",
+          "entity_type": "OUTCOME",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 0.99,
+          "surface_form": "likely to die"
+        },
+        {
+          "char_end": 117,
+          "char_start": 102,
+          "entity_id": "e_0070",
+          "entity_type": "CONDITION_OR_FINDING",
+          "normalization": {
+            "candidate_codes": [],
+            "code": null,
+            "code_system": null,
+            "mapping_confidence": null,
+            "mapping_method": "NONE",
+            "mapping_status": "UNMAPPED",
+            "preferred_label": null,
+            "terminology_version": null
+          },
+          "span_confidence": 1.0,
+          "surface_form": "another illness"
+        }
+      ],
+      "factual_relations": [
+        {
+          "epistemic_status": "ASSERTED",
+          "external_predicate_id": null,
+          "external_predicate_system": null,
+          "negation": "NEGATED",
+          "notes": "The source states deactivation can occur without surgery.",
+          "object_entity_id": "e_0067",
+          "predicate": "HAS_ATTRIBUTE",
+          "relation_confidence": 0.96,
+          "relation_id": "fr_0025",
+          "subject_entity_id": "e_0066",
+          "temporality": "GENERAL"
+        }
+      ],
+      "locator": {
+        "additional_cell_indices": [
+          1
+        ],
+        "cell_index": 2,
+        "header_path": [
+          "Implant an ICD",
+          "Can the ICD be turned off?"
+        ],
+        "row_index": 10,
+        "source_part_index": 1
+      },
+      "normative_assertions": [
+        {
+          "actor_entity_ids": [],
+          "applicability_exception_status": "NONE_STATED",
+          "assertion_id": "na_0006",
+          "condition_entity_ids": [
+            "e_0069",
+            "e_0070"
+          ],
+          "deontic_force": "ADVISORY",
+          "deontic_force_basis": "EXPLICIT_LEXICAL",
+          "direction": "FOR",
+          "exception_entity_ids": [],
+          "lexical_trigger_families": [
+            "SHOULD_RECOMMEND"
+          ],
+          "notes": "Turning the ICD off is mapped to DISCONTINUE and is recommended under the stated terminal-illness condition.",
+          "operation": "DISCONTINUE",
+          "outcome_entity_ids": [],
+          "parameter_entity_ids": [],
+          "patient_applicability": "CONDITION_DEPENDENT",
+          "population_entity_ids": [
+            "e_0068"
+          ],
+          "rationale_entity_ids": [],
+          "recommendation_status": "PRESENT",
+          "relation_confidence": 0.98,
+          "source_grade_record_ids": [],
+          "source_trigger_texts": [
+            "recommended"
+          ],
+          "target_entity_ids": [
+            "e_0065",
+            "e_0066"
+          ]
+        }
+      ],
+      "source_grade_records": [],
+      "text_unit_id": "tu_0016",
+      "verbatim_text": "Yes, the ICD can be turned off without surgery. This is recommended if a person is likely to die from another illness."
+    }
+  ]
+}
