@@ -1,0 +1,150 @@
+id	rule_index	rule	grounding
+658	Rule_54	?a Response_by_User ?d ?d type User => ?a type Response	302_M005 Response_by_User 302 | 302 type User => 302_M005 type Response
+1221	Rule_73	?d belongsTo SUS ?a hasQuestion ?d => ?a type Response	SU01_02 belongsTo SUS | 369_SU01_02 hasQuestion SU01_02 => 369_SU01_02 type Response
+1019	Rule_68	?d belongsTo ME1 ?a hasQuestion ?d => ?a type Response	M007_01 belongsTo ME1 | 175_M007_01 hasQuestion M007_01 => 175_M007_01 type Response
+1251	Rule_74	?a Response_by_User ?d ?a hasVisitId ?d => ?a ResponseOnPlatform 1	221_M007_01 Response_by_User 221 | 221_M007_01 hasVisitId 221 => 221_M007_01 ResponseOnPlatform 1
+959	Rule_66	?d belongsTo uMARS ?a hasQuestion ?d => ?a type Response	UM03 belongsTo uMARS | 420_UM03 hasQuestion UM03 => 420_UM03 type Response
+1404	Rule_82	?b hasUserId ?f ?a hasVisitId ?f => ?a Response_by_User ?b	407 hasUserId 407 | 407_UM04 hasVisitId 407 => 407_UM04 Response_by_User 407
+283	Rule_19	?a ResponseCode ?d ?d type User => ?a hasAnswerScale_Type Nominal	10050003 ResponseCode 3 | 3 type User => 10050003 hasAnswerScale_Type Nominal
+797	Rule_58	?d belongsTo uMARS ?a hasQuestion ?d => ?a ResponseOnPlatform 1	UM03 belongsTo uMARS | 413_UM03 hasQuestion UM03 => 413_UM03 ResponseOnPlatform 1
+225	Rule_17	?d hasAnswerId ?a ?a hasAnswerId ?d => ?a hasAnswerScale_Type Nominal	30030004 hasAnswerId 30030004 | 30030004 hasAnswerId 30030004 => 30030004 hasAnswerScale_Type Nominal
+26	Rule_0	?a type Answer => ?a hasAnswerScale_Type Nominal	30250005 type Answer => 30250005 hasAnswerScale_Type Nominal
+437	Rule_28	?a ResponseCode ?d ?d type User => ?a hasAnswerScale_Type Ordinal	20010603 ResponseCode 3 | 3 type User => 20010603 hasAnswerScale_Type Ordinal
+1452	Rule_8	?a chosen_Answer_Code 5 => ?a type Response	249_M004_01 chosen_Answer_Code 5 => 249_M004_01 type Response
+229	Rule_17	?d hasAnswerId ?a ?a hasAnswerId ?d => ?a hasAnswerScale_Type Nominal	30090002 hasAnswerId 30090002 | 30090002 hasAnswerId 30090002 => 30090002 hasAnswerScale_Type Nominal
+37	Rule_10	?a ResponseOnPlatform 1 => ?a type Response	420_UM17 ResponseOnPlatform 1 => 420_UM17 type Response
+749	Rule_57	?a Response_by_User ?d ?d type User => ?a ResponseOnPlatform 1	448_UM19 Response_by_User 448 | 448 type User => 448_UM19 ResponseOnPlatform 1
+1045	Rule_68	?d belongsTo ME1 ?a hasQuestion ?d => ?a type Response	M007_01 belongsTo ME1 | 124_M007_01 hasQuestion M007_01 => 124_M007_01 type Response
+469	Rule_35	?a label ?f ?b label ?f => ?a hasUserId ?b	391 label Username_391 | 391 label Username_391 => 391 hasUserId 391
+1273	Rule_75	?a chosen_Answer_Code ?d ?d type User => ?a ResponseOnPlatform 1	99_M010_01 chosen_Answer_Code 9 | 9 type User => 99_M010_01 ResponseOnPlatform 1
+1467	Rule_9	?a chosen_Answer_Code 4 => ?a type Response	432_UM03 chosen_Answer_Code 4 => 432_UM03 type Response
+687	Rule_54	?a Response_by_User ?d ?d type User => ?a type Response	405_UM06 Response_by_User 405 | 405 type User => 405_UM06 type Response
+1373	Rule_7	?a chosen_Answer_Code NO_RECORDED_RESPONSE => ?a type Response	354_SU01_02 chosen_Answer_Code NO_RECORDED_RESPONSE => 354_SU01_02 type Response
+639	Rule_53	?a hasVisitId ?d ?d type User => ?a ResponseOnPlatform 1	183_M003_01 hasVisitId 183 | 183 type User => 183_M003_01 ResponseOnPlatform 1
+1289	Rule_76	?a Response_by_User ?d ?a hasVisitId ?d => ?a type Response	438_UM24 Response_by_User 438 | 438_UM24 hasVisitId 438 => 438_UM24 type Response
+1218	Rule_73	?d belongsTo SUS ?a hasQuestion ?d => ?a type Response	SU01_02 belongsTo SUS | 389_SU01_02 hasQuestion SU01_02 => 389_SU01_02 type Response
+1158	Rule_71	?a hasQuestion ?d ?d type Question => ?a ResponseOnPlatform 1	386_SU01_07 hasQuestion SU01_07 | SU01_07 type Question => 386_SU01_07 ResponseOnPlatform 1
+1245	Rule_74	?a Response_by_User ?d ?a hasVisitId ?d => ?a ResponseOnPlatform 1	102_M008_01 Response_by_User 102 | 102_M008_01 hasVisitId 102 => 102_M008_01 ResponseOnPlatform 1
+1358	Rule_7	?a chosen_Answer_Code NO_RECORDED_RESPONSE => ?a type Response	490_UM26_01 chosen_Answer_Code NO_RECORDED_RESPONSE => 490_UM26_01 type Response
+800	Rule_58	?d belongsTo uMARS ?a hasQuestion ?d => ?a ResponseOnPlatform 1	UM03 belongsTo uMARS | 407_UM03 hasQuestion UM03 => 407_UM03 ResponseOnPlatform 1
+160	Rule_15	?d hasQuestion_Category Quality ?a is_Answer_To ?d => ?a hasAnswerScale_Type Nominal	UM12 hasQuestion_Category Quality | 30120002 is_Answer_To UM12 => 30120002 hasAnswerScale_Type Nominal
+956	Rule_66	?d belongsTo uMARS ?a hasQuestion ?d => ?a type Response	UM03 belongsTo uMARS | 428_UM03 hasQuestion UM03 => 428_UM03 type Response
+1186	Rule_72	?a hasQuestion ?d ?d hasQuestion_Category Preference => ?a ResponseOnPlatform 1	100_M007_01 hasQuestion M007_01 | M007_01 hasQuestion_Category Preference => 100_M007_01 ResponseOnPlatform 1
+821	Rule_5	?a chosen_Answer_Code 5 => ?a ResponseOnPlatform 1	326_SU01_03 chosen_Answer_Code 5 => 326_SU01_03 ResponseOnPlatform 1
+1265	Rule_75	?a chosen_Answer_Code ?d ?d type User => ?a ResponseOnPlatform 1	12_M002_01 chosen_Answer_Code 6 | 6 type User => 12_M002_01 ResponseOnPlatform 1
+877	Rule_61	?a hasQuestion ?d ?d hasQuestion_Category Degree => ?a type Response	85_M004_01 hasQuestion M004_01 | M004_01 hasQuestion_Category Degree => 85_M004_01 type Response
+913	Rule_62	?d belongsTo ME1 ?a hasQuestion ?d => ?a ResponseOnPlatform 1	M007_01 belongsTo ME1 | 192_M007_01 hasQuestion M007_01 => 192_M007_01 ResponseOnPlatform 1
+152	Rule_15	?d hasQuestion_Category Quality ?a is_Answer_To ?d => ?a hasAnswerScale_Type Nominal	UM03 hasQuestion_Category Quality | 30030005 is_Answer_To UM03 => 30030005 hasAnswerScale_Type Nominal
+1368	Rule_7	?a chosen_Answer_Code NO_RECORDED_RESPONSE => ?a type Response	466_UM26_01 chosen_Answer_Code NO_RECORDED_RESPONSE => 466_UM26_01 type Response
+509	Rule_3	?a type Response => ?a ResponseOnPlatform 1	404_UM06 type Response => 404_UM06 ResponseOnPlatform 1
+1135	Rule_70	?a hasQuestion ?d ?d type Question => ?a type Response	105_M004_01 hasQuestion M004_01 | M004_01 type Question => 105_M004_01 type Response
+1252	Rule_74	?a Response_by_User ?d ?a hasVisitId ?d => ?a ResponseOnPlatform 1	173_M004_01 Response_by_User 173 | 173_M004_01 hasVisitId 173 => 173_M004_01 ResponseOnPlatform 1
+103	Rule_13	?a hasAnswerId ?d ?d type Answer => ?a hasAnswerScale_Type Nominal	30020005 hasAnswerId 30020005 | 30020005 type Answer => 30020005 hasAnswerScale_Type Nominal
+586	Rule_50	?a hasQuestion ?d ?d hasQuestion_Category Quality => ?a ResponseOnPlatform 1	460_UM15 hasQuestion UM15 | UM15 hasQuestion_Category Quality => 460_UM15 ResponseOnPlatform 1
+1323	Rule_77	?a chosen_Answer_Code ?d ?d type User => ?a type Response	184_M006_01 chosen_Answer_Code 10 | 10 type User => 184_M006_01 type Response
+1143	Rule_71	?a hasQuestion ?d ?d type Question => ?a ResponseOnPlatform 1	428_UM03 hasQuestion UM03 | UM03 type Question => 428_UM03 ResponseOnPlatform 1
+53	Rule_10	?a ResponseOnPlatform 1 => ?a type Response	474_UM03 ResponseOnPlatform 1 => 474_UM03 type Response
+151	Rule_15	?d hasQuestion_Category Quality ?a is_Answer_To ?d => ?a hasAnswerScale_Type Nominal	UM03 hasQuestion_Category Quality | 30030003 is_Answer_To UM03 => 30030003 hasAnswerScale_Type Nominal
+403	Rule_27	?d belongsTo SUS ?a is_Answer_To ?d => ?a hasAnswerScale_Type Ordinal	SU01_10 belongsTo SUS | 20011004 is_Answer_To SU01_10 => 20011004 hasAnswerScale_Type Ordinal
+1449	Rule_8	?a chosen_Answer_Code 5 => ?a type Response	326_SU01_03 chosen_Answer_Code 5 => 326_SU01_03 type Response
+207	Rule_16	?d belongsTo uMARS ?a is_Answer_To ?d => ?a hasAnswerScale_Type Nominal	UM12 belongsTo uMARS | 30120001 is_Answer_To UM12 => 30120001 hasAnswerScale_Type Nominal
+1412	Rule_87	?f hasUserId ?b ?a hasVisitId ?f => ?a Response_by_User ?b	179 hasUserId 179 | 179_M007_01 hasVisitId 179 => 179_M007_01 Response_by_User 179
+1122	Rule_70	?a hasQuestion ?d ?d type Question => ?a type Response	152_M002_01 hasQuestion M002_01 | M002_01 type Question => 152_M002_01 type Response
+8	Rule_0	?a type Answer => ?a hasAnswerScale_Type Nominal	30100003 type Answer => 30100003 hasAnswerScale_Type Nominal
+1014	Rule_67	?d belongsTo SUS ?a hasQuestion ?d => ?a ResponseOnPlatform 1	SU01_02 belongsTo SUS | 383_SU01_02 hasQuestion SU01_02 => 383_SU01_02 ResponseOnPlatform 1
+1338	Rule_77	?a chosen_Answer_Code ?d ?d type User => ?a type Response	149_M003_01 chosen_Answer_Code 8 | 8 type User => 149_M003_01 type Response
+1060	Rule_69	?a hasQuestion ?d ?d hasQuestion_Category Agreement => ?a type Response	442_UM20 hasQuestion UM20 | UM20 hasQuestion_Category Agreement => 442_UM20 type Response
+452	Rule_35	?a label ?f ?b label ?f => ?a hasUserId ?b	104 label Username_104 | 104 label Username_104 => 104 hasUserId 104
+253	Rule_18	?a is_Answer_To ?d ?d type Question => ?a hasAnswerScale_Type Nominal	30220005 is_Answer_To UM22 | UM22 type Question => 30220005 hasAnswerScale_Type Nominal
+896	Rule_61	?a hasQuestion ?d ?d hasQuestion_Category Degree => ?a type Response	8_M010_01 hasQuestion M010_01 | M010_01 hasQuestion_Category Degree => 8_M010_01 type Response
+1303	Rule_76	?a Response_by_User ?d ?a hasVisitId ?d => ?a type Response	98_M008_01 Response_by_User 98 | 98_M008_01 hasVisitId 98 => 98_M008_01 type Response
+880	Rule_61	?a hasQuestion ?d ?d hasQuestion_Category Degree => ?a type Response	32_M004_01 hasQuestion M004_01 | M004_01 hasQuestion_Category Degree => 32_M004_01 type Response
+1408	Rule_87	?f hasUserId ?b ?a hasVisitId ?f => ?a Response_by_User ?b	179 hasUserId 179 | 179_M010_01 hasVisitId 179 => 179_M010_01 Response_by_User 179
+623	Rule_52	?e hasVisitId ?a ?e hasVisitId ?b => ?a hasUserId ?b	259_M004_01 hasVisitId 259 | 259_M004_01 hasVisitId 259 => 259 hasUserId 259
+345	Rule_25	?d hasQuestion_Category Degree ?a is_Answer_To ?d => ?a hasAnswerScale_Type Ordinal	M004_01 hasQuestion_Category Degree | 10040104 is_Answer_To M004_01 => 10040104 hasAnswerScale_Type Ordinal
+1281	Rule_75	?a chosen_Answer_Code ?d ?d type User => ?a ResponseOnPlatform 1	136_M010_01 chosen_Answer_Code 8 | 8 type User => 136_M010_01 ResponseOnPlatform 1
+262	Rule_18	?a is_Answer_To ?d ?d type Question => ?a hasAnswerScale_Type Nominal	30090002 is_Answer_To UM09 | UM09 type Question => 30090002 hasAnswerScale_Type Nominal
+150	Rule_15	?d hasQuestion_Category Quality ?a is_Answer_To ?d => ?a hasAnswerScale_Type Nominal	UM03 hasQuestion_Category Quality | 30030001 is_Answer_To UM03 => 30030001 hasAnswerScale_Type Nominal
+472	Rule_35	?a label ?f ?b label ?f => ?a hasUserId ?b	87 label Username_87 | 87 label Username_87 => 87 hasUserId 87
+640	Rule_53	?a hasVisitId ?d ?d type User => ?a ResponseOnPlatform 1	463_UM22 hasVisitId 463 | 463 type User => 463_UM22 ResponseOnPlatform 1
+1479	Rule_9	?a chosen_Answer_Code 4 => ?a type Response	328_SU01_07 chosen_Answer_Code 4 => 328_SU01_07 type Response
+1405	Rule_87	?f hasUserId ?b ?a hasVisitId ?f => ?a Response_by_User ?b	179 hasUserId 179 | 179_M002_01 hasVisitId 179 => 179_M002_01 Response_by_User 179
+550	Rule_4	?a chosen_Answer_Code NO_RECORDED_RESPONSE => ?a ResponseOnPlatform 1	164_M007_01 chosen_Answer_Code NO_RECORDED_RESPONSE => 164_M007_01 ResponseOnPlatform 1
+928	Rule_65	?a hasQuestion ?d ?d hasQuestion_Category Quality => ?a type Response	487_UM04 hasQuestion UM04 | UM04 hasQuestion_Category Quality => 487_UM04 type Response
+488	Rule_3	?a type Response => ?a ResponseOnPlatform 1	433_UM02 type Response => 433_UM02 ResponseOnPlatform 1
+1351	Rule_7	?a chosen_Answer_Code NO_RECORDED_RESPONSE => ?a type Response	405_UM12 chosen_Answer_Code NO_RECORDED_RESPONSE => 405_UM12 type Response
+1171	Rule_72	?a hasQuestion ?d ?d hasQuestion_Category Preference => ?a ResponseOnPlatform 1	178_M005 hasQuestion M005 | M005 hasQuestion_Category Preference => 178_M005 ResponseOnPlatform 1
+146	Rule_14	?c hasAnswerId ?a ?c type Answer => ?a hasAnswerScale_Type Nominal	30080001 hasAnswerId 30080001 | 30080001 type Answer => 30080001 hasAnswerScale_Type Nominal
+402	Rule_27	?d belongsTo SUS ?a is_Answer_To ?d => ?a hasAnswerScale_Type Ordinal	SU01_10 belongsTo SUS | 20011002 is_Answer_To SU01_10 => 20011002 hasAnswerScale_Type Ordinal
+954	Rule_65	?a hasQuestion ?d ?d hasQuestion_Category Quality => ?a type Response	408_UM08 hasQuestion UM08 | UM08 hasQuestion_Category Quality => 408_UM08 type Response
+1400	Rule_82	?b hasUserId ?f ?a hasVisitId ?f => ?a Response_by_User ?b	407 hasUserId 407 | 407_UM11 hasVisitId 407 => 407_UM11 Response_by_User 407
+659	Rule_54	?a Response_by_User ?d ?d type User => ?a type Response	448_UM19 Response_by_User 448 | 448 type User => 448_UM19 type Response
+463	Rule_35	?a label ?f ?b label ?f => ?a hasUserId ?b	39 label Username_39 | 39 label Username_39 => 39 hasUserId 39
+186	Rule_16	?d belongsTo uMARS ?a is_Answer_To ?d => ?a hasAnswerScale_Type Nominal	UM22 belongsTo uMARS | 30220003 is_Answer_To UM22 => 30220003 hasAnswerScale_Type Nominal
+1147	Rule_71	?a hasQuestion ?d ?d type Question => ?a ResponseOnPlatform 1	304_M003_01 hasQuestion M003_01 | M003_01 type Question => 304_M003_01 ResponseOnPlatform 1
+1224	Rule_73	?d belongsTo SUS ?a hasQuestion ?d => ?a type Response	SU01_02 belongsTo SUS | 383_SU01_02 hasQuestion SU01_02 => 383_SU01_02 type Response
+608	Rule_52	?e hasVisitId ?a ?e hasVisitId ?b => ?a hasUserId ?b	445_UM25 hasVisitId 445 | 445_UM25 hasVisitId 445 => 445 hasUserId 445
+143	Rule_14	?c hasAnswerId ?a ?c type Answer => ?a hasAnswerScale_Type Nominal	30060005 hasAnswerId 30060005 | 30060005 type Answer => 30060005 hasAnswerScale_Type Nominal
+751	Rule_57	?a Response_by_User ?d ?d type User => ?a ResponseOnPlatform 1	269_M010_01 Response_by_User 269 | 269 type User => 269_M010_01 ResponseOnPlatform 1
+981	Rule_66	?d belongsTo uMARS ?a hasQuestion ?d => ?a type Response	UM03 belongsTo uMARS | 452_UM03 hasQuestion UM03 => 452_UM03 type Response
+197	Rule_16	?d belongsTo uMARS ?a is_Answer_To ?d => ?a hasAnswerScale_Type Nominal	UM21 belongsTo uMARS | 30210002 is_Answer_To UM21 => 30210002 hasAnswerScale_Type Nominal
+883	Rule_61	?a hasQuestion ?d ?d hasQuestion_Category Degree => ?a type Response	160_M003_01 hasQuestion M003_01 | M003_01 hasQuestion_Category Degree => 160_M003_01 type Response
+279	Rule_19	?a ResponseCode ?d ?d type User => ?a hasAnswerScale_Type Nominal	30090002 ResponseCode 2 | 2 type User => 30090002 hasAnswerScale_Type Nominal
+293	Rule_19	?a ResponseCode ?d ?d type User => ?a hasAnswerScale_Type Nominal	30020005 ResponseCode 5 | 5 type User => 30020005 hasAnswerScale_Type Nominal
+1359	Rule_7	?a chosen_Answer_Code NO_RECORDED_RESPONSE => ?a type Response	242_M008_01 chosen_Answer_Code NO_RECORDED_RESPONSE => 242_M008_01 type Response
+400	Rule_27	?d belongsTo SUS ?a is_Answer_To ?d => ?a hasAnswerScale_Type Ordinal	SU01_10 belongsTo SUS | 20011005 is_Answer_To SU01_10 => 20011005 hasAnswerScale_Type Ordinal
+122	Rule_14	?c hasAnswerId ?a ?c type Answer => ?a hasAnswerScale_Type Nominal	30030002 hasAnswerId 30030002 | 30030002 type Answer => 30030002 hasAnswerScale_Type Nominal
+1207	Rule_73	?d belongsTo SUS ?a hasQuestion ?d => ?a type Response	SU01_02 belongsTo SUS | 376_SU01_02 hasQuestion SU01_02 => 376_SU01_02 type Response
+202	Rule_16	?d belongsTo uMARS ?a is_Answer_To ?d => ?a hasAnswerScale_Type Nominal	UM13 belongsTo uMARS | 30130004 is_Answer_To UM13 => 30130004 hasAnswerScale_Type Nominal
+835	Rule_5	?a chosen_Answer_Code 5 => ?a ResponseOnPlatform 1	418_UM04 chosen_Answer_Code 5 => 418_UM04 ResponseOnPlatform 1
+246	Rule_18	?a is_Answer_To ?d ?d type Question => ?a hasAnswerScale_Type Nominal	30140004 is_Answer_To UM14 | UM14 type Question => 30140004 hasAnswerScale_Type Nominal
+1417	Rule_87	?f hasUserId ?b ?a hasVisitId ?f => ?a Response_by_User ?b	407 hasUserId 407 | 407_UM16 hasVisitId 407 => 407_UM16 Response_by_User 407
+1403	Rule_82	?b hasUserId ?f ?a hasVisitId ?f => ?a Response_by_User ?b	407 hasUserId 407 | 407_UM01 hasVisitId 407 => 407_UM01 Response_by_User 407
+1153	Rule_71	?a hasQuestion ?d ?d type Question => ?a ResponseOnPlatform 1	339_SU01_07 hasQuestion SU01_07 | SU01_07 type Question => 339_SU01_07 ResponseOnPlatform 1
+384	Rule_26	?d belongsTo ME1 ?a is_Answer_To ?d => ?a hasAnswerScale_Type Ordinal	M006_01 belongsTo ME1 | 10060109 is_Answer_To M006_01 => 10060109 hasAnswerScale_Type Ordinal
+1317	Rule_77	?a chosen_Answer_Code ?d ?d type User => ?a type Response	330_SU01_03 chosen_Answer_Code 5 | 5 type User => 330_SU01_03 type Response
+854	Rule_60	?a hasQuestion ?d ?d hasQuestion_Category Preference => ?a type Response	291_M007_01 hasQuestion M007_01 | M007_01 hasQuestion_Category Preference => 291_M007_01 type Response
+219	Rule_17	?d hasAnswerId ?a ?a hasAnswerId ?d => ?a hasAnswerScale_Type Nominal	30170005 hasAnswerId 30170005 | 30170005 hasAnswerId 30170005 => 30170005 hasAnswerScale_Type Nominal
+641	Rule_53	?a hasVisitId ?d ?d type User => ?a ResponseOnPlatform 1	332_SU01_04 hasVisitId 332 | 332 type User => 332_SU01_04 ResponseOnPlatform 1
+1	Rule_0	?a type Answer => ?a hasAnswerScale_Type Nominal	30070004 type Answer => 30070004 hasAnswerScale_Type Nominal
+112	Rule_13	?a hasAnswerId ?d ?d type Answer => ?a hasAnswerScale_Type Nominal	30240005 hasAnswerId 30240005 | 30240005 type Answer => 30240005 hasAnswerScale_Type Nominal
+698	Rule_55	?a hasVisitId ?d ?d type User => ?a type Response	416_UM15 hasVisitId 416 | 416 type User => 416_UM15 type Response
+1426	Rule_87	?f hasUserId ?b ?a hasVisitId ?f => ?a Response_by_User ?b	407 hasUserId 407 | 407_UM17 hasVisitId 407 => 407_UM17 Response_by_User 407
+951	Rule_65	?a hasQuestion ?d ?d hasQuestion_Category Quality => ?a type Response	268_M006_01 hasQuestion M006_01 | M006_01 hasQuestion_Category Quality => 268_M006_01 type Response
+1312	Rule_76	?a Response_by_User ?d ?a hasVisitId ?d => ?a type Response	173_M004_01 Response_by_User 173 | 173_M004_01 hasVisitId 173 => 173_M004_01 type Response
+1291	Rule_76	?a Response_by_User ?d ?a hasVisitId ?d => ?a type Response	458_UM20 Response_by_User 458 | 458_UM20 hasVisitId 458 => 458_UM20 type Response
+1348	Rule_7	?a chosen_Answer_Code NO_RECORDED_RESPONSE => ?a type Response	199_M004_01 chosen_Answer_Code NO_RECORDED_RESPONSE => 199_M004_01 type Response
+441	Rule_28	?a ResponseCode ?d ?d type User => ?a hasAnswerScale_Type Ordinal	10100109 ResponseCode 9 | 9 type User => 10100109 hasAnswerScale_Type Ordinal
+1136	Rule_71	?a hasQuestion ?d ?d type Question => ?a ResponseOnPlatform 1	406_UM18 hasQuestion UM18 | UM18 type Question => 406_UM18 ResponseOnPlatform 1
+1256	Rule_75	?a chosen_Answer_Code ?d ?d type User => ?a ResponseOnPlatform 1	407_UM17 chosen_Answer_Code 5 | 5 type User => 407_UM17 ResponseOnPlatform 1
+663	Rule_54	?a Response_by_User ?d ?d type User => ?a type Response	443_UM01 Response_by_User 443 | 443 type User => 443_UM01 type Response
+1391	Rule_82	?b hasUserId ?f ?a hasVisitId ?f => ?a Response_by_User ?b	407 hasUserId 407 | 407_UM03 hasVisitId 407 => 407_UM03 Response_by_User 407
+1257	Rule_75	?a chosen_Answer_Code ?d ?d type User => ?a ResponseOnPlatform 1	330_SU01_03 chosen_Answer_Code 5 | 5 type User => 330_SU01_03 ResponseOnPlatform 1
+1326	Rule_77	?a chosen_Answer_Code ?d ?d type User => ?a type Response	326_SU01_08 chosen_Answer_Code 5 | 5 type User => 326_SU01_08 type Response
+317	Rule_24	?d hasQuestion_Category Agreement ?a is_Answer_To ?d => ?a hasAnswerScale_Type Ordinal	SU01_01 hasQuestion_Category Agreement | 20010103 is_Answer_To SU01_01 => 20010103 hasAnswerScale_Type Ordinal
+648	Rule_53	?a hasVisitId ?d ?d type User => ?a ResponseOnPlatform 1	26_M006_01 hasVisitId 26 | 26 type User => 26_M006_01 ResponseOnPlatform 1
+709	Rule_55	?a hasVisitId ?d ?d type User => ?a type Response	55_M007_01 hasVisitId 55 | 55 type User => 55_M007_01 type Response
+1282	Rule_75	?a chosen_Answer_Code ?d ?d type User => ?a ResponseOnPlatform 1	426_UM12 chosen_Answer_Code 3 | 3 type User => 426_UM12 ResponseOnPlatform 1
+972	Rule_66	?d belongsTo uMARS ?a hasQuestion ?d => ?a type Response	UM03 belongsTo uMARS | 489_UM03 hasQuestion UM03 => 489_UM03 type Response
+627	Rule_52	?e hasVisitId ?a ?e hasVisitId ?b => ?a hasUserId ?b	466_UM19 hasVisitId 466 | 466_UM19 hasVisitId 466 => 466 hasUserId 466
+632	Rule_53	?a hasVisitId ?d ?d type User => ?a ResponseOnPlatform 1	178_M003_01 hasVisitId 178 | 178 type User => 178_M003_01 ResponseOnPlatform 1
+1306	Rule_76	?a Response_by_User ?d ?a hasVisitId ?d => ?a type Response	411_UM17 Response_by_User 411 | 411_UM17 hasVisitId 411 => 411_UM17 type Response
+1248	Rule_74	?a Response_by_User ?d ?a hasVisitId ?d => ?a ResponseOnPlatform 1	25_M007_01 Response_by_User 25 | 25_M007_01 hasVisitId 25 => 25_M007_01 ResponseOnPlatform 1
+1456	Rule_8	?a chosen_Answer_Code 5 => ?a type Response	487_UM16 chosen_Answer_Code 5 => 487_UM16 type Response
+1254	Rule_74	?a Response_by_User ?d ?a hasVisitId ?d => ?a ResponseOnPlatform 1	405_UM06 Response_by_User 405 | 405_UM06 hasVisitId 405 => 405_UM06 ResponseOnPlatform 1
+1378	Rule_82	?b hasUserId ?f ?a hasVisitId ?f => ?a Response_by_User ?b	179 hasUserId 179 | 179_M010_01 hasVisitId 179 => 179_M010_01 Response_by_User 179
+795	Rule_58	?d belongsTo uMARS ?a hasQuestion ?d => ?a ResponseOnPlatform 1	UM03 belongsTo uMARS | 467_UM03 hasQuestion UM03 => 467_UM03 ResponseOnPlatform 1
+645	Rule_53	?a hasVisitId ?d ?d type User => ?a ResponseOnPlatform 1	115_M004_01 hasVisitId 115 | 115 type User => 115_M004_01 ResponseOnPlatform 1
+1012	Rule_67	?d belongsTo SUS ?a hasQuestion ?d => ?a ResponseOnPlatform 1	SU01_02 belongsTo SUS | 391_SU01_02 hasQuestion SU01_02 => 391_SU01_02 ResponseOnPlatform 1
+556	Rule_4	?a chosen_Answer_Code NO_RECORDED_RESPONSE => ?a ResponseOnPlatform 1	466_UM18 chosen_Answer_Code NO_RECORDED_RESPONSE => 466_UM18 ResponseOnPlatform 1
+681	Rule_54	?a Response_by_User ?d ?d type User => ?a type Response	25_M007_01 Response_by_User 25 | 25 type User => 25_M007_01 type Response
+577	Rule_50	?a hasQuestion ?d ?d hasQuestion_Category Quality => ?a ResponseOnPlatform 1	409_UM02 hasQuestion UM02 | UM02 hasQuestion_Category Quality => 409_UM02 ResponseOnPlatform 1
+1109	Rule_70	?a hasQuestion ?d ?d type Question => ?a type Response	41_M002_01 hasQuestion M002_01 | M002_01 type Question => 41_M002_01 type Response
+1266	Rule_75	?a chosen_Answer_Code ?d ?d type User => ?a ResponseOnPlatform 1	326_SU01_08 chosen_Answer_Code 5 | 5 type User => 326_SU01_08 ResponseOnPlatform 1
+1183	Rule_72	?a hasQuestion ?d ?d hasQuestion_Category Preference => ?a ResponseOnPlatform 1	291_M007_01 hasQuestion M007_01 | M007_01 hasQuestion_Category Preference => 291_M007_01 ResponseOnPlatform 1
+524	Rule_49	?a hasQuestion ?d ?d hasQuestion_Category Degree => ?a ResponseOnPlatform 1	147_M003_01 hasQuestion M003_01 | M003_01 hasQuestion_Category Degree => 147_M003_01 ResponseOnPlatform 1
+1059	Rule_69	?a hasQuestion ?d ?d hasQuestion_Category Agreement => ?a type Response	326_SU01_06 hasQuestion SU01_06 | SU01_06 hasQuestion_Category Agreement => 326_SU01_06 type Response
+540	Rule_4	?a chosen_Answer_Code NO_RECORDED_RESPONSE => ?a ResponseOnPlatform 1	60_M007_01 chosen_Answer_Code NO_RECORDED_RESPONSE => 60_M007_01 ResponseOnPlatform 1
+1194	Rule_72	?a hasQuestion ?d ?d hasQuestion_Category Preference => ?a ResponseOnPlatform 1	71_M007_01 hasQuestion M007_01 | M007_01 hasQuestion_Category Preference => 71_M007_01 ResponseOnPlatform 1
+748	Rule_57	?a Response_by_User ?d ?d type User => ?a ResponseOnPlatform 1	302_M005 Response_by_User 302 | 302 type User => 302_M005 ResponseOnPlatform 1
+1381	Rule_82	?b hasUserId ?f ?a hasVisitId ?f => ?a Response_by_User ?b	179 hasUserId 179 | 179_M006_01 hasVisitId 179 => 179_M006_01 Response_by_User 179

@@ -1,0 +1,560 @@
+{
+  "total_rules_processed": 92,
+  "rules_with_groundings": 56,
+  "files_created": 56,
+  "rules_skipped": 36,
+  "results": [
+    {
+      "rule_index": 0,
+      "rule": "?a type Answer => ?a hasAnswerScale_Type Nominal",
+      "num_groundings": 127,
+      "files_created": true
+    },
+    {
+      "rule_index": 1,
+      "rule": "?b hasAnswerId ?a => ?a hasAnswerId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 2,
+      "rule": "?b hasUserId ?a => ?a hasUserId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 3,
+      "rule": "?a type Response => ?a ResponseOnPlatform 1",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 4,
+      "rule": "?a chosen_Answer_Code NO_RECORDED_RESPONSE => ?a ResponseOnPlatform 1",
+      "num_groundings": 1121,
+      "files_created": true
+    },
+    {
+      "rule_index": 5,
+      "rule": "?a chosen_Answer_Code 5 => ?a ResponseOnPlatform 1",
+      "num_groundings": 924,
+      "files_created": true
+    },
+    {
+      "rule_index": 6,
+      "rule": "?a chosen_Answer_Code 4 => ?a ResponseOnPlatform 1",
+      "num_groundings": 963,
+      "files_created": true
+    },
+    {
+      "rule_index": 7,
+      "rule": "?a chosen_Answer_Code NO_RECORDED_RESPONSE => ?a type Response",
+      "num_groundings": 1121,
+      "files_created": true
+    },
+    {
+      "rule_index": 8,
+      "rule": "?a chosen_Answer_Code 5 => ?a type Response",
+      "num_groundings": 924,
+      "files_created": true
+    },
+    {
+      "rule_index": 9,
+      "rule": "?a chosen_Answer_Code 4 => ?a type Response",
+      "num_groundings": 963,
+      "files_created": true
+    },
+    {
+      "rule_index": 10,
+      "rule": "?a ResponseOnPlatform 1 => ?a type Response",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 11,
+      "rule": "?a hasVisitId ?b => ?a Response_by_User ?b",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 12,
+      "rule": "?a Response_by_User ?b => ?a hasVisitId ?b",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 13,
+      "rule": "?a hasAnswerId ?d ?d type Answer => ?a hasAnswerScale_Type Nominal",
+      "num_groundings": 127,
+      "files_created": true
+    },
+    {
+      "rule_index": 14,
+      "rule": "?c hasAnswerId ?a ?c type Answer => ?a hasAnswerScale_Type Nominal",
+      "num_groundings": 127,
+      "files_created": true
+    },
+    {
+      "rule_index": 15,
+      "rule": "?d hasQuestion_Category Quality ?a is_Answer_To ?d => ?a hasAnswerScale_Type Nominal",
+      "num_groundings": 79,
+      "files_created": true
+    },
+    {
+      "rule_index": 16,
+      "rule": "?d belongsTo uMARS ?a is_Answer_To ?d => ?a hasAnswerScale_Type Nominal",
+      "num_groundings": 124,
+      "files_created": true
+    },
+    {
+      "rule_index": 17,
+      "rule": "?d hasAnswerId ?a ?a hasAnswerId ?d => ?a hasAnswerScale_Type Nominal",
+      "num_groundings": 127,
+      "files_created": true
+    },
+    {
+      "rule_index": 18,
+      "rule": "?a is_Answer_To ?d ?d type Question => ?a hasAnswerScale_Type Nominal",
+      "num_groundings": 127,
+      "files_created": true
+    },
+    {
+      "rule_index": 19,
+      "rule": "?a ResponseCode ?d ?d type User => ?a hasAnswerScale_Type Nominal",
+      "num_groundings": 127,
+      "files_created": true
+    },
+    {
+      "rule_index": 20,
+      "rule": "?a hasAnswerId ?f ?b hasAnswerId ?f => ?a hasAnswerId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 21,
+      "rule": "?a hasAnswerId ?e ?e hasAnswer_Category ?b => ?a hasAnswer_Category ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 22,
+      "rule": "?e hasAnswerId ?a ?e hasAnswer_Category ?b => ?a hasAnswer_Category ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 23,
+      "rule": "?f hasAnswerId ?b ?a hasAnswerId ?f => ?a hasAnswerId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 24,
+      "rule": "?d hasQuestion_Category Agreement ?a is_Answer_To ?d => ?a hasAnswerScale_Type Ordinal",
+      "num_groundings": 50,
+      "files_created": true
+    },
+    {
+      "rule_index": 25,
+      "rule": "?d hasQuestion_Category Degree ?a is_Answer_To ?d => ?a hasAnswerScale_Type Ordinal",
+      "num_groundings": 40,
+      "files_created": true
+    },
+    {
+      "rule_index": 26,
+      "rule": "?d belongsTo ME1 ?a is_Answer_To ?d => ?a hasAnswerScale_Type Ordinal",
+      "num_groundings": 50,
+      "files_created": true
+    },
+    {
+      "rule_index": 27,
+      "rule": "?d belongsTo SUS ?a is_Answer_To ?d => ?a hasAnswerScale_Type Ordinal",
+      "num_groundings": 50,
+      "files_created": true
+    },
+    {
+      "rule_index": 28,
+      "rule": "?a ResponseCode ?d ?d type User => ?a hasAnswerScale_Type Ordinal",
+      "num_groundings": 100,
+      "files_created": true
+    },
+    {
+      "rule_index": 29,
+      "rule": "?e hasAnswerId ?a ?e hasAnswerId ?b => ?a hasAnswerId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 30,
+      "rule": "?e hasAnswerId ?a ?b hasAnswerId ?e => ?a hasAnswerId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 31,
+      "rule": "?f ResponseLabel ?b ?a hasAnswerId ?f => ?a ResponseLabel ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 32,
+      "rule": "?a hasAnswerId ?e ?e hasAnswerScale_Type ?b => ?a hasAnswerScale_Type ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 33,
+      "rule": "?e hasAnswerId ?a ?e hasAnswerScale_Type ?b => ?a hasAnswerScale_Type ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 34,
+      "rule": "?e ResponseLabel ?b ?e hasAnswerId ?a => ?a ResponseLabel ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 35,
+      "rule": "?a label ?f ?b label ?f => ?a hasUserId ?b",
+      "num_groundings": 491,
+      "files_created": true
+    },
+    {
+      "rule_index": 36,
+      "rule": "?a hasUserId ?f ?f label ?b => ?a label ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 37,
+      "rule": "?e hasUserId ?a ?e label ?b => ?a label ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 38,
+      "rule": "?f hasUserId ?a ?b hasUserId ?f => ?a hasUserId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 39,
+      "rule": "?f hasUserId ?b ?a hasUserId ?f => ?a hasUserId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 40,
+      "rule": "?b hasQuestionId ?f ?a is_Answer_To ?f => ?a is_Answer_To ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 41,
+      "rule": "?e hasUserId ?a ?e hasUserId ?b => ?a hasUserId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 42,
+      "rule": "?a hasAnswerId ?f ?f is_Answer_To ?b => ?a is_Answer_To ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 43,
+      "rule": "?a hasUserId ?f ?b hasUserId ?f => ?a hasUserId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 44,
+      "rule": "?f hasQuestionId ?b ?a is_Answer_To ?f => ?a is_Answer_To ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 45,
+      "rule": "?e ResponseCode ?b ?a hasAnswerId ?e => ?a ResponseCode ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 46,
+      "rule": "?e hasAnswerId ?a ?e is_Answer_To ?b => ?a is_Answer_To ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 47,
+      "rule": "?a ResponseCode ?f ?b hasUserId ?f => ?a ResponseCode ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 48,
+      "rule": "?e ResponseCode ?b ?e hasAnswerId ?a => ?a ResponseCode ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 49,
+      "rule": "?a hasQuestion ?d ?d hasQuestion_Category Degree => ?a ResponseOnPlatform 1",
+      "num_groundings": 1320,
+      "files_created": true
+    },
+    {
+      "rule_index": 50,
+      "rule": "?a hasQuestion ?d ?d hasQuestion_Category Quality => ?a ResponseOnPlatform 1",
+      "num_groundings": 1628,
+      "files_created": true
+    },
+    {
+      "rule_index": 51,
+      "rule": "?e Response_by_User ?a ?e hasVisitId ?b => ?a hasUserId ?b",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 52,
+      "rule": "?e hasVisitId ?a ?e hasVisitId ?b => ?a hasUserId ?b",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 53,
+      "rule": "?a hasVisitId ?d ?d type User => ?a ResponseOnPlatform 1",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 54,
+      "rule": "?a Response_by_User ?d ?d type User => ?a type Response",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 55,
+      "rule": "?a hasVisitId ?d ?d type User => ?a type Response",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 56,
+      "rule": "?a hasQuestion ?d ?d hasQuestion_Category Agreement => ?a ResponseOnPlatform 1",
+      "num_groundings": 1478,
+      "files_created": true
+    },
+    {
+      "rule_index": 57,
+      "rule": "?a Response_by_User ?d ?d type User => ?a ResponseOnPlatform 1",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 58,
+      "rule": "?d belongsTo uMARS ?a hasQuestion ?d => ?a ResponseOnPlatform 1",
+      "num_groundings": 2200,
+      "files_created": true
+    },
+    {
+      "rule_index": 59,
+      "rule": "?e Response_by_User ?a ?e Response_by_User ?b => ?a hasUserId ?b",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 60,
+      "rule": "?a hasQuestion ?d ?d hasQuestion_Category Preference => ?a type Response",
+      "num_groundings": 924,
+      "files_created": true
+    },
+    {
+      "rule_index": 61,
+      "rule": "?a hasQuestion ?d ?d hasQuestion_Category Degree => ?a type Response",
+      "num_groundings": 1320,
+      "files_created": true
+    },
+    {
+      "rule_index": 62,
+      "rule": "?d belongsTo ME1 ?a hasQuestion ?d => ?a ResponseOnPlatform 1",
+      "num_groundings": 2464,
+      "files_created": true
+    },
+    {
+      "rule_index": 63,
+      "rule": "?e Response_by_User ?b ?e hasVisitId ?a => ?a hasUserId ?b",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 64,
+      "rule": "?a ResponseCode ?f ?f hasUserId ?b => ?a ResponseCode ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 65,
+      "rule": "?a hasQuestion ?d ?d hasQuestion_Category Quality => ?a type Response",
+      "num_groundings": 1628,
+      "files_created": true
+    },
+    {
+      "rule_index": 66,
+      "rule": "?d belongsTo uMARS ?a hasQuestion ?d => ?a type Response",
+      "num_groundings": 2200,
+      "files_created": true
+    },
+    {
+      "rule_index": 67,
+      "rule": "?d belongsTo SUS ?a hasQuestion ?d => ?a ResponseOnPlatform 1",
+      "num_groundings": 950,
+      "files_created": true
+    },
+    {
+      "rule_index": 68,
+      "rule": "?d belongsTo ME1 ?a hasQuestion ?d => ?a type Response",
+      "num_groundings": 2464,
+      "files_created": true
+    },
+    {
+      "rule_index": 69,
+      "rule": "?a hasQuestion ?d ?d hasQuestion_Category Agreement => ?a type Response",
+      "num_groundings": 1478,
+      "files_created": true
+    },
+    {
+      "rule_index": 70,
+      "rule": "?a hasQuestion ?d ?d type Question => ?a type Response",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 71,
+      "rule": "?a hasQuestion ?d ?d type Question => ?a ResponseOnPlatform 1",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 72,
+      "rule": "?a hasQuestion ?d ?d hasQuestion_Category Preference => ?a ResponseOnPlatform 1",
+      "num_groundings": 924,
+      "files_created": true
+    },
+    {
+      "rule_index": 73,
+      "rule": "?d belongsTo SUS ?a hasQuestion ?d => ?a type Response",
+      "num_groundings": 950,
+      "files_created": true
+    },
+    {
+      "rule_index": 74,
+      "rule": "?a Response_by_User ?d ?a hasVisitId ?d => ?a ResponseOnPlatform 1",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 75,
+      "rule": "?a chosen_Answer_Code ?d ?d type User => ?a ResponseOnPlatform 1",
+      "num_groundings": 4248,
+      "files_created": true
+    },
+    {
+      "rule_index": 76,
+      "rule": "?a Response_by_User ?d ?a hasVisitId ?d => ?a type Response",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 77,
+      "rule": "?a chosen_Answer_Code ?d ?d type User => ?a type Response",
+      "num_groundings": 4248,
+      "files_created": true
+    },
+    {
+      "rule_index": 78,
+      "rule": "?a chosen_Answer_Code ?f ?b hasUserId ?f => ?a chosen_Answer_Code ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 79,
+      "rule": "?a Response_by_User ?f ?b hasUserId ?f => ?a Response_by_User ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 80,
+      "rule": "?a chosen_Answer_Code ?f ?f hasUserId ?b => ?a chosen_Answer_Code ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 81,
+      "rule": "?b hasUserId ?f ?a hasVisitId ?f => ?a hasVisitId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 82,
+      "rule": "?b hasUserId ?f ?a hasVisitId ?f => ?a Response_by_User ?b",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 83,
+      "rule": "?a Response_by_User ?f ?f hasUserId ?b => ?a Response_by_User ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 84,
+      "rule": "?f hasUserId ?b ?a hasVisitId ?f => ?a hasVisitId ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 85,
+      "rule": "?a Response_by_User ?f ?f hasUserId ?b => ?a hasVisitId ?b",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 86,
+      "rule": "?a Response_by_User ?f ?b hasUserId ?f => ?a hasVisitId ?b",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 87,
+      "rule": "?f hasUserId ?b ?a hasVisitId ?f => ?a Response_by_User ?b",
+      "num_groundings": 5614,
+      "files_created": true
+    },
+    {
+      "rule_index": 88,
+      "rule": "?a hasQuestion ?f ?b hasQuestionId ?f => ?a hasQuestion ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 89,
+      "rule": "?a hasQuestion ?f ?f hasQuestionId ?b => ?a hasQuestion ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 90,
+      "rule": "?a ResponseOnPlatform ?f ?b hasUserId ?f => ?a ResponseOnPlatform ?b",
+      "num_groundings": 0,
+      "files_created": false
+    },
+    {
+      "rule_index": 91,
+      "rule": "?a ResponseOnPlatform ?f ?f hasUserId ?b => ?a ResponseOnPlatform ?b",
+      "num_groundings": 0,
+      "files_created": false
+    }
+  ]
+}
