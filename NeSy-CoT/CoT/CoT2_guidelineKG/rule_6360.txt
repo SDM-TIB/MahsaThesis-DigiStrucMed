@@ -1,0 +1,15 @@
+Rule 6360:
+If applicability exception status NONE STATED AND relation confidence 0.8, then patient applicability UNCONDITIONAL WITHIN STATED POPULATION.
+
+Formal Rule:
+Head: ?a  patientApplicability  UNCONDITIONAL_WITHIN_STATED_POPULATION
+Body: ?a  applicabilityExceptionStatus  NONE_STATED  ?a  relationConfidence  0.8
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4202
+- Rule Classification: NEGATIVE (PCA Confidence 0.4202 < threshold 0.5)
+- Head Coverage: 0.0186

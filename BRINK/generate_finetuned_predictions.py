@@ -14,10 +14,10 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
 DEFAULT_BASE_MODEL = "meta-llama/Llama-3.2-1B-Instruct"
-DEFAULT_ADAPTER = Path("model/qKG/finetuned_LLaMA_3.2_1B_with_rules_CoT2")
-DEFAULT_GOLD = Path("data/qKG/question/val_cleaned_final_gold.json")
-DEFAULT_QUESTIONS = Path("data/qKG/question/val_cleaned_final.tsv")
-DEFAULT_OUTPUT = Path("data/qKG/question/val_cleaned_final_pred.json")
+DEFAULT_ADAPTER = Path("model/GuidelineKG/finetuned_LLaMA_3.2_1B_with_rules_CoT2")
+DEFAULT_GOLD = Path("data/GuidelineKG/question/val_cleaned_final_gold.json")
+DEFAULT_QUESTIONS = Path("data/GuidelineKG/question/val_cleaned_final.tsv")
+DEFAULT_OUTPUT = Path("data/GuidelineKG/question/val_cleaned_final_pred.json")
 PROMPT_INSTRUCTION = (
     "Answer the question directly and concisely. Return all possible answers."
 )

@@ -1,0 +1,15 @@
+Rule 3029:
+If entity type PROCEDURE OR INTERVENTION AND occurs in assertion ?a, then recommendation status PRESENT.
+
+Formal Rule:
+Head: ?a  recommendationStatus  PRESENT
+Body: ?c  entityType  PROCEDURE_OR_INTERVENTION  ?c  occursInAssertion  ?a
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9786
+- Rule Classification: POSITIVE (PCA Confidence 0.9786 >= threshold 0.5)
+- Head Coverage: 0.3823

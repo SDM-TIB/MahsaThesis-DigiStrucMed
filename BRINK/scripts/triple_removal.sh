@@ -2,11 +2,11 @@
 set -e
 
 # Generate incomplete knowledge graph by removing head triples
-DATASET="qKG"  # or "qKG" or "fb15k-237"
+DATASET="GuidelineKG"  # or "GuidelineKg" or "fb15k-237"
 N_INSTANCES=30
 
-if [ "$DATASET" = "qKG" ]; then
-    BASE_DIR="data/qKG"
+if [ "$DATASET" = "GuidelineKG" ]; then
+    BASE_DIR="data/GuidelineKG"
     KG_FILE="${BASE_DIR}/facts.tsv"
     GROUNDING_FILE="${BASE_DIR}/grounding_output/filtered_grounding_output_${N_INSTANCES}_instance_before_question_generation.tsv"
     OUTPUT_FILE="${BASE_DIR}/grounding_output/grounding_splits/incomplete_facts_string_of_${N_INSTANCES}_instance.tsv"
@@ -16,7 +16,7 @@ elif [ "$DATASET" = "family" ]; then
     GROUNDING_FILE="${BASE_DIR}/grounding_output/filtered_grounding_output_${N_INSTANCES}_instance_before_question_generation.tsv"
     OUTPUT_FILE="${BASE_DIR}/grounding_output/grounding_splits/incomplete_facts_string_of_${N_INSTANCES}_instance.tsv"
 else
-    echo "Error: Unsupported dataset '${DATASET}'. Use 'qKG' or 'fb15k-237'."
+    echo "Error: Unsupported dataset '${DATASET}'. Use 'GuidelineKG' or 'fb15k-237'."
     exit 1
 fi
 

@@ -1,0 +1,15 @@
+Rule 7133:
+If entity type PROCEDURE OR INTERVENTION AND occurs in assertion ?a, then patient applicability CONDITION DEPENDENT.
+
+Formal Rule:
+Head: ?a  patientApplicability  CONDITION_DEPENDENT
+Body: ?c  entityType  PROCEDURE_OR_INTERVENTION  ?c  occursInAssertion  ?a
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7312
+- Rule Classification: POSITIVE (PCA Confidence 0.7312 >= threshold 0.5)
+- Head Coverage: 0.2857

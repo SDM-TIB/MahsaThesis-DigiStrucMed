@@ -1,0 +1,15 @@
+Rule 3038:
+If source grade record ?d AND notes Source-native, then notes Agent-silver.
+
+Formal Rule:
+Head: ?a  notes  Agent-silver interpretation preserves the source trigger, target, conditions, and source-native grade; human adjudication remains required
+Body: ?a  hasSourceGradeRecord  ?d  ?d  notes  Source-native grade retained without cross-system inference
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6921
+- Rule Classification: POSITIVE (PCA Confidence 0.6921 >= threshold 0.5)
+- Head Coverage: 0.0246

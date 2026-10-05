@@ -24,6 +24,11 @@ Generates SEPARATE datasets for each experiment:
   3. train_data_with_rules_CoT3.csv / test_shared_CoT3.csv
   4. test_eval_clean.csv           (shared cross-format eval, used by all steps)
 
+CSV format: prompts contain commas, quotes, and embedded newlines. Fields are
+quoted and internal quotes are doubled; a physical line is not a CSV record.
+Read outputs with pandas.read_csv or csv.reader, never split(',')/splitlines().
+Exports validate record structure, labels, and exact text before publication.
+
 Config keys used:
   "kg_files": {
     "train_nt":       "kg.nt"          # optional: raw RDF input -> triggers NT conversion
@@ -40,6 +45,7 @@ Usage:
 """
 
 import argparse
+from pathlib import Path
 import json
 import os
 import re
@@ -48,6 +54,7 @@ import shutil
 from collections import Counter
 
 import pandas as pd
+from dataset_io import audit_dataset_csv, copy_dataset_csv, write_dataset_csv
 
 from utils import (
     load_config,
@@ -211,7 +218,7 @@ def _generate_and_save(label, graph, node_list, relation2id, rules,
     )
 
     train_path = os.path.join(output_dir, train_filename)
-    train_df.to_csv(train_path, index=False)
+    write_dataset_csv(train_df, train_path)
 
     print(f"\n  {label}:")
     print(f"    Train: {len(train_df)} samples -> {train_path}")
@@ -232,12 +239,15 @@ def _generate_and_save(label, graph, node_list, relation2id, rules,
 
 
 def _get_first_relation(text: str) -> str:
-    """Extract the first relation token from an input_text string."""
-    m = re.search(r'\bhas (\w+)\b', str(text))
+    """Extract the queried relation; body facts can have different predicates."""
+    m = re.search(r'is this (\S+) relationship supported\?\s*$', str(text))
+    if not m:
+        m = re.search(r'Does .+ have (\S+) with .+\?\s*$', str(text))
     return m.group(1) if m else 'unknown'
 
 
-def filter_skewed_relations(output_dir: str, threshold: float) -> set:
+def filter_skewed_relations(output_dir: str, threshold: float,
+                           fresh_inputs: bool = False, csv_files=None) -> set:
     """
     Detect and remove relations with >threshold% label skew from ALL
     generated CSVs in output_dir.
@@ -251,12 +261,16 @@ def filter_skewed_relations(output_dir: str, threshold: float) -> set:
     Saves filtered_relations.json for reproducibility.
 
     Returns the set of filtered relation names (empty set = nothing filtered).
+
+    fresh_inputs=True uses this run's generated files and refreshes backups;
+    the default permits standalone re-filtering of saved original datasets.
     """
     train_path = os.path.join(output_dir, 'train_data_with_rules_CoT2.csv')
     # Always compute skew from the ORIGINAL unfiltered data so that
     # re-runs at different thresholds see the full relation distribution
     unfiltered_path = train_path.replace('.csv', '_unfiltered.csv')
-    source_path = unfiltered_path if os.path.exists(unfiltered_path) else train_path
+    source_path = (unfiltered_path if not fresh_inputs and os.path.exists(unfiltered_path)
+                   else train_path)
     if not os.path.exists(source_path):
         print(f"  WARNING: {source_path} not found -- skipping relation filter.")
         return set()
@@ -282,9 +296,12 @@ def filter_skewed_relations(output_dir: str, threshold: float) -> set:
 
     del train_df  # free RAM immediately
 
-    skewed = {r for r, y, n, _ in stats if max(y, n) >= threshold}
+    # Unknown question formats must not be mistaken for one shared relation.
+    skewed = {r for r, y, n, _ in stats if r != 'unknown' and max(y, n) >= threshold}
     total_samples  = sum(c for _, _, _, c in stats)
     skewed_samples = sum(c for r, _, _, c in stats if r in skewed)
+    if total_samples == 0:
+        raise ValueError("Cannot calculate relation skew from an empty training dataset")
 
     print(f"  Relations analysed:      {len(stats)}")
     print(f"  Skewed (>={threshold}%): {len(skewed)} relations, "
@@ -309,7 +326,7 @@ def filter_skewed_relations(output_dir: str, threshold: float) -> set:
     # IMPORTANT: always restore from *_unfiltered.csv backup first so that
     # re-runs at a different threshold always filter the original data,
     # never a previously filtered version.
-    csv_files = [
+    csv_files = csv_files if csv_files is not None else [
         'train_data_with_rules_CoT2.csv',
         'train_data_with_rules_CoT3.csv',
         'train_data_without_rules.csv',
@@ -323,8 +340,8 @@ def filter_skewed_relations(output_dir: str, threshold: float) -> set:
     for fname in csv_files:
         fpath  = os.path.join(output_dir, fname)
         backup = fpath.replace('.csv', '_unfiltered.csv')
-        if os.path.exists(backup):
-            shutil.copy(backup, fpath)
+        if not fresh_inputs and os.path.exists(backup):
+            copy_dataset_csv(backup, fpath)
             print(f"    Restored: {fname}")
 
     print(f"\n  Filtering CSVs in {output_dir} (threshold={threshold}%):")
@@ -342,10 +359,14 @@ def filter_skewed_relations(output_dir: str, threshold: float) -> set:
 
         # Create backup from original if not already present
         backup = fpath.replace('.csv', '_unfiltered.csv')
-        if not os.path.exists(backup):
-            shutil.copy(fpath, backup)
+        if fresh_inputs or not os.path.exists(backup):
+            copy_dataset_csv(fpath, backup)
 
-        filtered.to_csv(fpath, index=False)
+        write_dataset_csv(filtered, fpath)
+        yes = int((filtered['Label'] == 1).sum())
+        no = int((filtered['Label'] == 0).sum())
+        print(f"    After relation filtering: yes={yes:,}, no={no:,}. "
+              "Removing relations can change the class balance.")
         print(f"    {fname}: {original:,} -> {len(filtered):,} "
               f"(removed {removed:,} = {removed/original*100:.1f}%)")
 
@@ -371,9 +392,24 @@ def main():
     parser = argparse.ArgumentParser(description="NeSyKGLLM Data Preparation")
     parser.add_argument("--config", type=str, required=True,
                         help="Path to config JSON")
+    parser.add_argument("--skip-cot3", action="store_true",
+                        help="Prepare Baseline and CoT2 only, ignoring rules_dir_cot3")
     args = parser.parse_args()
 
     cfg = load_config(args.config)
+    if args.skip_cot3:
+        cfg["rules_dir_cot3"] = None
+    # Validate configured rule inputs before the expensive KG conversion.
+    for key, directory in (
+        ("rules_dir_cot2", cfg.get("rules_dir_cot2", cfg.get("rules_dir"))),
+        ("rules_dir_cot3", cfg.get("rules_dir_cot3")),
+    ):
+        if directory and not any(Path(directory).glob("rule_*.txt")):
+            raise FileNotFoundError(
+                f"{key}: no rule_*.txt files found in {Path(directory).resolve()}. "
+                "Generate the rules or correct this config path. "
+                "Use --skip-cot3 if you intend to prepare only Baseline and CoT2."
+            )
     set_all_seeds(cfg["seed"])
 
     data_dir = cfg["data_dir"]
@@ -486,11 +522,11 @@ def main():
                 imbalance_threshold=dg.get("imbalance_threshold", 1.5),
                 max_rules_in_context=dg.get("max_rules_in_context", 3),
             )
-        test_baseline_df.to_csv(os.path.join(output_dir, "test_shared_baseline.csv"), index=False)
-        test_cot2_df.to_csv(    os.path.join(output_dir, "test_shared_CoT2.csv"),     index=False)
-        test_eval_df.to_csv(    os.path.join(output_dir, "test_eval_clean.csv"),      index=False)
+        write_dataset_csv(test_baseline_df, os.path.join(output_dir, "test_shared_baseline.csv"))
+        write_dataset_csv(test_cot2_df, os.path.join(output_dir, "test_shared_CoT2.csv"))
+        write_dataset_csv(test_eval_df, os.path.join(output_dir, "test_eval_clean.csv"))
         if rules_cot3:
-            test_cot3_df.to_csv(os.path.join(output_dir, "test_shared_CoT3.csv"), index=False)
+            write_dataset_csv(test_cot3_df, os.path.join(output_dir, "test_shared_CoT3.csv"))
         print(f"  Saved: test_shared_baseline.csv ({len(test_baseline_df)} samples)")
         print(f"  Saved: test_shared_CoT2.csv     ({len(test_cot2_df)} samples)")
         if rules_cot3:
@@ -560,7 +596,12 @@ def main():
     # Enable by setting data_generation.relation_skew_threshold in config.
     skew_threshold = dg.get("relation_skew_threshold", None)
     if skew_threshold is not None:
-        filter_skewed_relations(output_dir, threshold=float(skew_threshold))
+        active_csvs = ["train_data_without_rules.csv", "train_data_with_rules_CoT2.csv",
+                       "test_shared_baseline.csv", "test_shared_CoT2.csv", "test_eval_clean.csv"]
+        if rules_cot3:
+            active_csvs += ["train_data_with_rules_CoT3.csv", "test_shared_CoT3.csv"]
+        filter_skewed_relations(output_dir, threshold=float(skew_threshold),
+                               fresh_inputs=True, csv_files=active_csvs)
     else:
         print("\n  Relation skew filter: disabled "
               "(set data_generation.relation_skew_threshold in config to enable)")
@@ -571,23 +612,15 @@ def main():
     print(f"\n{'=' * 70}")
     print("DATA GENERATION COMPLETE — OUTPUT FILES")
     print(f"{'=' * 70}")
-    import pandas as pd
     for fname in sorted(os.listdir(output_dir)):
         if fname.endswith(".csv"):
             fpath = os.path.join(output_dir, fname)
-            df = pd.read_csv(fpath)
-            parts = [f"{len(df)} samples"]
-            # Use Label column (canonical) when available, fall back to output_text
-            if "Label" in df.columns:
-                n_yes = (df["Label"] == 1).sum()
-                n_no  = (df["Label"] == 0).sum()
-                parts.append(f"yes={n_yes} no={n_no} (from Label col)")
-            elif "output_text" in df.columns:
-                n_yes = df["output_text"].str.contains("yes", case=False, na=False).sum()
-                n_no  = df["output_text"].str.contains("The answer is no", case=False, na=False).sum()
-                parts.append(f"yes={n_yes} no={n_no} (from output_text)")
+            audit = audit_dataset_csv(fpath)
+            parts = [f"{audit['rows']} samples",
+                     f"yes={audit['yes']} no={audit['no']} (from Label col)"]
+            if fname.endswith("_unfiltered.csv"):
+                parts.append("backup; not a training input")
             print(f"  {fname}: {', '.join(parts)}")
-    print(f"  Columns: {list(df.columns)}")
 
     print(f"\nAll files saved to: {output_dir}")
 

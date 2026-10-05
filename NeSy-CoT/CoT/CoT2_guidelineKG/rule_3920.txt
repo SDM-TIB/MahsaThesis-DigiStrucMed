@@ -1,0 +1,15 @@
+Rule 3920:
+If parameter entity ?d AND span confidence 0.96, then deontic force NOT STATED.
+
+Formal Rule:
+Head: ?a  deonticForce  NOT_STATED
+Body: ?a  hasParameterEntity  ?d  ?d  spanConfidence  0.96
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6897
+- Rule Classification: POSITIVE (PCA Confidence 0.6897 >= threshold 0.5)
+- Head Coverage: 0.0409

@@ -1,0 +1,15 @@
+Rule 5229:
+If instance_of symptom or sign AND subclass_of ?d, then instance_of type of disease.
+
+Formal Rule:
+Head: ?a  instance_of  type_of_disease
+Body: ?d  instance_of  symptom_or_sign  ?a  subclass_of  ?d
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4468
+- Rule Classification: NEGATIVE (PCA Confidence 0.4468 < threshold 0.5)
+- Head Coverage: 0.0101

@@ -1,0 +1,15 @@
+Rule 5235:
+If health_specialty ?d AND subclass_of clinical sciences, then instance_of type of disease.
+
+Formal Rule:
+Head: ?a  instance_of  type_of_disease
+Body: ?a  health_specialty  ?d  ?d  subclass_of  clinical_sciences
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.5983
+- Rule Classification: POSITIVE (PCA Confidence 0.5983 >= threshold 0.5)
+- Head Coverage: 0.0169

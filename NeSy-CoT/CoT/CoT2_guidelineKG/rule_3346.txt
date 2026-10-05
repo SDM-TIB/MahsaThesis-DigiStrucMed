@@ -1,0 +1,15 @@
+Rule 3346:
+If condition entity ?a AND patient applicability CONDITION DEPENDENT, then type PatientCondition.
+
+Formal Rule:
+Head: ?a  type  PatientCondition
+Body: ?c  hasConditionEntity  ?a  ?c  patientApplicability  CONDITION_DEPENDENT
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.8471
+- Rule Classification: POSITIVE (PCA Confidence 0.8471 >= threshold 0.5)
+- Head Coverage: 0.0190

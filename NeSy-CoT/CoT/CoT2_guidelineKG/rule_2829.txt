@@ -1,0 +1,15 @@
+Rule 2829:
+If source grade record ?d AND raw grade 1, then recommendation status PRESENT.
+
+Formal Rule:
+Head: ?a  recommendationStatus  PRESENT
+Body: ?a  hasSourceGradeRecord  ?d  ?d  rawGrade  1
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 1.0000
+- Rule Classification: POSITIVE (PCA Confidence 1.0000 >= threshold 0.5)
+- Head Coverage: 0.0236

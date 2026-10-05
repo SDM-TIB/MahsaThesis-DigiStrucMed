@@ -1,0 +1,15 @@
+Rule 5060:
+If target entity ?a AND relation confidence 0.98, then entity type PROCEDURE OR INTERVENTION.
+
+Formal Rule:
+Head: ?a  entityType  PROCEDURE_OR_INTERVENTION
+Body: ?c  hasTargetEntity  ?a  ?c  relationConfidence  0.98
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.5986
+- Rule Classification: POSITIVE (PCA Confidence 0.5986 >= threshold 0.5)
+- Head Coverage: 0.0140

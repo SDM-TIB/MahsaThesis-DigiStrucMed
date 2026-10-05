@@ -30,9 +30,49 @@ _netrc
 /NeSy-CoT/cloudrift-results/
 /NeSy-CoT/qKG_cloudrift-results/
 
+# Pipeline interface run logs/status and the remote-run pointer index —
+# regenerated per run, not source. VM credentials are never written here
+# (entered fresh each Streamlit session), but materialized configs and
+# training logs are, so treat the whole tree as local-only.
+/NeSy-CoT/interface/runs/
+
 # Generated datasets and local archive (too large for regular Git uploads).
-/NeSy-CoT/outputs/
+# Keep generated data ignored, but allow final adapter packages below.
+/NeSy-CoT/outputs/**
+!/NeSy-CoT/outputs/**/
+!/NeSy-CoT/outputs/**/finetuned_*/adapter_config.json
+!/NeSy-CoT/outputs/**/finetuned_*/adapter_model.safetensors
+!/NeSy-CoT/outputs/**/finetuned_*/README.md
+!/NeSy-CoT/outputs/**/finetuned_*/tokenizer*.json
+!/NeSy-CoT/outputs/**/finetuned_*/special_tokens_map.json
+!/NeSy-CoT/outputs/**/finetuned_*/added_tokens.json
+!/NeSy-CoT/outputs/**/finetuned_*/vocab.json
+!/NeSy-CoT/outputs/**/finetuned_*/merges.txt
 /NeSy-CoT/CoT.zip
+
+# Private/source datasets stay local.
+/GuideLineKG/01-abbreviation-extraction/data/input_md/
+/GuideLineKG/03-json-knowledge-graph/data/level4-dataset/
+
+# Publish final adapters, excluding intermediate training checkpoints/state.
+checkpoint-*/
+optimizer.pt
+scheduler.pt
+rng_state*.pth
+
+# Gitignore cannot filter by size. Explicitly exclude graphs over 100 MB.
+# Add new oversized graph paths here when generating additional exports.
+/BRINK/data/GuidelineKG/guidelineKG.nt
+/GuideLineKG/03-json-knowledge-graph/output_json/knowledge_graph_json.nt
+/GuideLineKG/04-merge-knowledge-graphs/output/knowledge_graph_merged.nt
+/GuideLineKG/04-merge-knowledge-graphs/output/knowledge_graph_merged_clean.nt
+/GuideLineKG/kg_build/output_json/knowledge_graph_json.nt
+/GuideLineKG/kg_build/output_json/knowledge_graph_json_wikidata.nt
+/NeSy-CoT/KG/guidelineKG/guidelineKG.nt
+
+# Large generated training data is not part of the adapter package.
+/BRINK/model/guidelineKG/test_shared_CoT2.csv
+/BRINK/model/guidelineKG/train_data_with_rules_CoT2.csv
 
 # Generated guideline knowledge graph exceeds GitHub's file size limit.
 /GuideLineKG/kg_build/output/knowledge_graph.nt

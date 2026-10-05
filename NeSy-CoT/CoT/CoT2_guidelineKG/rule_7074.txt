@@ -1,0 +1,15 @@
+Rule 7074:
+If entity type PROCEDURE OR INTERVENTION AND parameter entity ?d, then patient applicability CONDITION DEPENDENT.
+
+Formal Rule:
+Head: ?a  patientApplicability  CONDITION_DEPENDENT
+Body: ?d  entityType  PROCEDURE_OR_INTERVENTION  ?a  hasParameterEntity  ?d
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6514
+- Rule Classification: POSITIVE (PCA Confidence 0.6514 >= threshold 0.5)
+- Head Coverage: 0.0132

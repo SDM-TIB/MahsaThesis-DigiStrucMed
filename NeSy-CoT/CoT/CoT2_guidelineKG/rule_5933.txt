@@ -1,0 +1,15 @@
+Rule 5933:
+If target entity ?a AND patient applicability NOT STATED, then span confidence 0.94.
+
+Formal Rule:
+Head: ?a  spanConfidence  0.94
+Body: ?c  hasTargetEntity  ?a  ?c  patientApplicability  NOT_STATED
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6008
+- Rule Classification: POSITIVE (PCA Confidence 0.6008 >= threshold 0.5)
+- Head Coverage: 0.0342

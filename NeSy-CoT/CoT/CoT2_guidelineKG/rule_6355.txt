@@ -1,0 +1,15 @@
+Rule 6355:
+If label ICD AND occurs in assertion ?a, then class of recommendation ClassOfRecommendation IIa.
+
+Formal Rule:
+Head: ?a  hasClassOfRecommendation  ClassOfRecommendation_IIa
+Body: ?c  label  ICD  ?c  occursInAssertion  ?a
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4247
+- Rule Classification: NEGATIVE (PCA Confidence 0.4247 < threshold 0.5)
+- Head Coverage: 0.0189

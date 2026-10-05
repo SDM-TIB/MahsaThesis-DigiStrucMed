@@ -1,0 +1,15 @@
+Rule 2877:
+If population entity ?d AND label patients, then recommendation status PRESENT.
+
+Formal Rule:
+Head: ?a  recommendationStatus  PRESENT
+Body: ?a  hasPopulationEntity  ?d  ?d  label  patients
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9895
+- Rule Classification: POSITIVE (PCA Confidence 0.9895 >= threshold 0.5)
+- Head Coverage: 0.0524

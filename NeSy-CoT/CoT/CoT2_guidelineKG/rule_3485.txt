@@ -1,0 +1,15 @@
+Rule 3485:
+If source mention ?d AND occurs in assertion page-2016-drugs-that-may-cause-or-exacerbate-heart-failure n0005/na 0004, then hasdescription chemical.
+
+Formal Rule:
+Head: ?a  hasdescription  chemical compound
+Body: ?a  hasSourceMention  ?d  ?d  occursInAssertion  page-2016-drugs-that-may-cause-or-exacerbate-heart-failure_n0005/na_0004
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6429
+- Rule Classification: POSITIVE (PCA Confidence 0.6429 >= threshold 0.5)
+- Head Coverage: 0.0175

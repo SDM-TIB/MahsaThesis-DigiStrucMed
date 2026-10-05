@@ -1,0 +1,15 @@
+Rule 7006:
+If target entity ?d AND span confidence 1, then patient applicability CONDITION DEPENDENT.
+
+Formal Rule:
+Head: ?a  patientApplicability  CONDITION_DEPENDENT
+Body: ?a  hasTargetEntity  ?d  ?d  spanConfidence  1
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6869
+- Rule Classification: POSITIVE (PCA Confidence 0.6869 >= threshold 0.5)
+- Head Coverage: 0.1725

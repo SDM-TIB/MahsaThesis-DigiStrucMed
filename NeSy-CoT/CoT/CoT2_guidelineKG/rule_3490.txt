@@ -1,0 +1,15 @@
+Rule 3490:
+If drug_or_therapy_used_for_treatment ?a AND subclass_of artery disease, then hasdescription chemical.
+
+Formal Rule:
+Head: ?a  hasdescription  chemical compound
+Body: ?c  drug_or_therapy_used_for_treatment  ?a  ?c  subclass_of  artery_disease
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.5659
+- Rule Classification: POSITIVE (PCA Confidence 0.5659 >= threshold 0.5)
+- Head Coverage: 0.0129

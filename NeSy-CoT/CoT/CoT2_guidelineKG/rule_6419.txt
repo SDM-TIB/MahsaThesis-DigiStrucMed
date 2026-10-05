@@ -1,0 +1,15 @@
+Rule 6419:
+If notes Source-style AND relation confidence 0.94, then class of recommendation ClassOfRecommendation I.
+
+Formal Rule:
+Head: ?a  hasClassOfRecommendation  ClassOfRecommendation_I
+Body: ?a  notes  Source-style or compound-cell semantics require human adjudication  ?a  relationConfidence  0.94
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4388
+- Rule Classification: NEGATIVE (PCA Confidence 0.4388 < threshold 0.5)
+- Head Coverage: 0.0103

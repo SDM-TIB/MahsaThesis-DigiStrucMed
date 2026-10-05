@@ -1,0 +1,15 @@
+Rule 5396:
+If drug_or_therapy_used_for_treatment ?a AND health_specialty cardiology, then instance_of type of chemical entity.
+
+Formal Rule:
+Head: ?a  instance_of  type_of_chemical_entity
+Body: ?c  drug_or_therapy_used_for_treatment  ?a  ?c  health_specialty  cardiology
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.8081
+- Rule Classification: POSITIVE (PCA Confidence 0.8081 >= threshold 0.5)
+- Head Coverage: 0.0386

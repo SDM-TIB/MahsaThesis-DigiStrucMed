@@ -1,0 +1,15 @@
+Rule 5404:
+If drug_or_therapy_used_for_treatment ?a AND symptoms chest pain, then instance_of type of chemical entity.
+
+Formal Rule:
+Head: ?a  instance_of  type_of_chemical_entity
+Body: ?c  drug_or_therapy_used_for_treatment  ?a  ?c  symptoms  chest_pain
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7037
+- Rule Classification: POSITIVE (PCA Confidence 0.7037 >= threshold 0.5)
+- Head Coverage: 0.0138

@@ -1,0 +1,15 @@
+Rule 5978:
+If parameter entity ?a AND recommendation status NOT A RECOMMENDATION, then span confidence 0.96.
+
+Formal Rule:
+Head: ?a  spanConfidence  0.96
+Body: ?c  hasParameterEntity  ?a  ?c  recommendationStatus  NOT_A_RECOMMENDATION
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4473
+- Rule Classification: NEGATIVE (PCA Confidence 0.4473 < threshold 0.5)
+- Head Coverage: 0.0320

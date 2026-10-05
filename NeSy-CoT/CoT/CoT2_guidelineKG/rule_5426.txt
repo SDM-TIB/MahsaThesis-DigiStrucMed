@@ -1,0 +1,15 @@
+Rule 5426:
+If hasdescription pharmaceutical AND label ?a, then instance_of type of chemical entity.
+
+Formal Rule:
+Head: ?a  instance_of  type_of_chemical_entity
+Body: ?c  hasdescription  pharmaceutical drug  ?c  label  ?a
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9403
+- Rule Classification: POSITIVE (PCA Confidence 0.9403 >= threshold 0.5)
+- Head Coverage: 0.0152

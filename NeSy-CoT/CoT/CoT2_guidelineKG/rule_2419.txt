@@ -1,0 +1,15 @@
+Rule 2419:
+If source grade record ?d AND notes Preserved, then applicability exception status NONE STATED.
+
+Formal Rule:
+Head: ?a  applicabilityExceptionStatus  NONE_STATED
+Body: ?a  hasSourceGradeRecord  ?d  ?d  notes  Preserved verbatim; no cross-system normalization inferred
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9302
+- Rule Classification: POSITIVE (PCA Confidence 0.9302 >= threshold 0.5)
+- Head Coverage: 0.0545

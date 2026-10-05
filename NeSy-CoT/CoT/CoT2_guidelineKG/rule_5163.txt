@@ -1,0 +1,15 @@
+Rule 5163:
+If label ?d AND type PatientCondition, then entity type CONDITION OR FINDING.
+
+Formal Rule:
+Head: ?a  entityType  CONDITION_OR_FINDING
+Body: ?a  label  ?d  ?d  type  PatientCondition
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7209
+- Rule Classification: POSITIVE (PCA Confidence 0.7209 >= threshold 0.5)
+- Head Coverage: 0.0167

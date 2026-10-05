@@ -1,0 +1,19 @@
+bitsandbytes
+transformers
+peft
+accelerate
+datasets
+sentencepiece
+scikit-learn
+trl
+matplotlib
+pandas
+numpy
+huggingface_hub
+rdflib
+
+# torch is intentionally excluded — install it separately with the wheel
+# that matches your hardware/CUDA version. On a fresh CloudRift V100 VM
+# (CUDA 12.6, sm_70), use:
+#   pip install "torch==2.14.0+cu126" --index-url https://download.pytorch.org/whl/cu126
+# See NeSy-CoT/README_VM.md section 3 for details/troubleshooting.

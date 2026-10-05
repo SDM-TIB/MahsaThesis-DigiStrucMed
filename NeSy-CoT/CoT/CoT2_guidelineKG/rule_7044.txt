@@ -1,0 +1,15 @@
+Rule 7044:
+If parameter entity ?d AND span confidence 0.95, then patient applicability CONDITION DEPENDENT.
+
+Formal Rule:
+Head: ?a  patientApplicability  CONDITION_DEPENDENT
+Body: ?a  hasParameterEntity  ?d  ?d  spanConfidence  0.95
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7442
+- Rule Classification: POSITIVE (PCA Confidence 0.7442 >= threshold 0.5)
+- Head Coverage: 0.0119

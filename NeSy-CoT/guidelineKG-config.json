@@ -1,0 +1,80 @@
+{
+    "huggingface_token": "HF_TOKEN",
+    "model_key": "Qwen2.5-0.5B",
+    "available_models": {
+        "Qwen2.5-0.5B": "Qwen/Qwen2.5-0.5B-Instruct",
+        "LLaMA-3.2-1B": "meta-llama/Llama-3.2-1B-Instruct",
+        "EuroLLM-9B": "utter-project/EuroLLM-9B"
+    },
+    "data_dir": "KG/guidelineKG",
+    "rules_dir_cot2": "CoT/CoT2_guidelineKG",
+    "rules_dir_cot3": "CoT/CoT3_guidelineKG",
+    "output_dir": "./outputs/guidelineKG/",
+    "kg_files": {
+        "train_nt":       "guidelineKG.nt",
+        "train":          "train2id.txt",
+        "train_processed":"train2id.txt",
+        "entity2id":      "entity2id.txt",
+        "relation2id":    "relation2id.txt"
+    },
+    "preprocess_kg": false,
+    "pregenerated_data": {
+        "use_pregenerated": true,
+        "train_with_rules_cot2_csv": "outputs/guidelineKG/train_data_with_rules_CoT2.csv",
+        "train_with_rules_cot3_csv": "outputs/guidelineKG/train_data_with_rules_CoT3.csv",
+        "test_eval_clean_csv":       "outputs/guidelineKG/test_eval_clean.csv"
+    },
+    "data_generation": {
+        "train_ratio": 0.8,
+        "baseline_samples": 12000,
+        "max_path_length": 5,
+        "include_reasoning": true,
+        "max_rules_in_context": 3,
+        "pca_threshold": 0.5,
+        "imbalance_threshold": 1.1,
+        "relation_skew_threshold": 65
+    },
+    "training": {
+        "num_steps": 2000,
+        "per_device_train_batch_size": 1,
+        "gradient_accumulation_steps": 4,
+        "learning_rate": 0.0002,
+        "warmup_steps": 100,
+        "logging_steps": 20,
+        "save_steps": 200,
+        "max_length": 1024,
+        "fp16": true
+    },
+    "lora": {
+        "r": 16,
+        "lora_alpha": 32,
+        "lora_dropout": 0.05
+    },
+    "quantization": {
+        "load_in_4bit": true,
+        "bnb_4bit_use_double_quant": true,
+        "bnb_4bit_quant_type": "nf4",
+        "bnb_4bit_compute_dtype": "float16"
+    },
+    "evaluation": {
+        "max_samples": 500,
+        "max_new_tokens": 256,
+        "max_input_tokens": 1024
+    },
+    "negative_mining": {
+        "enable": true,
+        "enable_weighting": true,
+        "base_weight": 1.0,
+        "max_weight": 3.0
+    },
+    "strip_shacl_from_input": false,
+    "gpu_max_memory_mb": 14000,
+    "seed": 42,
+    "kg_sparql": {
+        "kg_file": "KG/guidelineKG/guidelineKG.nt",
+        "rules_csv": "rules/guidelineKG.csv",
+        "namespace": "http://digistrucmed.org/",
+        "namespace_prefix": "ds",
+        "shacl_report": "constraints/guidelineKG/result_guidelineKG/validationReport.ttl"
+    }
+}

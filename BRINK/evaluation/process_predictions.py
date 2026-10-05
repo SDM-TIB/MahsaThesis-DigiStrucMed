@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import time
 from pathlib import Path
 
 import torch
@@ -20,9 +21,9 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
 DEFAULT_BASE_MODEL = "meta-llama/Llama-3.2-1B-Instruct"
-DEFAULT_ADAPTER = Path("model/qKG/finetuned_LLaMA_3.2_1B_with_rules_CoT2")
-DEFAULT_GOLD = Path("data/qKG/question/val_cleaned_final_gold.json")
-DEFAULT_OUTPUT = Path("data/qKG/question/val_cleaned_final_brink_pred.json")
+DEFAULT_ADAPTER = Path("model/GuidelineKG/finetuned_LLaMA_3.2_1B_with_rules_CoT2")
+DEFAULT_GOLD = Path("data/GuidelineKG/question/val_cleaned_final_gold.json")
+DEFAULT_OUTPUT = Path("data/GuidelineKG/question/val_cleaned_final_brink_pred.json")
 
 
 def save_predictions(path: Path, predictions: list[dict[str, str]]) -> None:
@@ -32,7 +33,24 @@ def save_predictions(path: Path, predictions: list[dict[str, str]]) -> None:
     with temporary_path.open("w", encoding="utf-8", newline="\n") as file:
         json.dump(predictions, file, ensure_ascii=False, indent=2)
         file.write("\n")
-    temporary_path.replace(path)
+    # Windows: a cloud-sync client (OneDrive/Google Drive), antivirus, or an
+    # open viewer can briefly lock the destination, making os.replace raise
+    # PermissionError (WinError 5). Retry through transient locks; if they all
+    # fail the data is still intact in the .tmp file.
+    last_error: Exception | None = None
+    for _attempt in range(10):
+        try:
+            temporary_path.replace(path)
+            return
+        except PermissionError as exc:
+            last_error = exc
+            time.sleep(0.5)
+    raise PermissionError(
+        f"Could not replace {path} after retries - it is locked by another "
+        f"process (cloud sync like OneDrive/Google Drive, an open viewer, or "
+        f"antivirus). Your data is safe in {temporary_path}; close/pause that "
+        f"process (or move the project out of a synced folder) and retry."
+    ) from last_error
 
 
 def load_existing_predictions(path: Path) -> list[dict[str, str]]:

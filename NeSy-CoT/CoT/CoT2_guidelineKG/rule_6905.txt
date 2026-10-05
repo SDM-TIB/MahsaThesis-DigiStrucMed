@@ -1,0 +1,15 @@
+Rule 6905:
+If recommendation status PRESENT AND relation confidence 0.98, then patient applicability CONDITION DEPENDENT.
+
+Formal Rule:
+Head: ?a  patientApplicability  CONDITION_DEPENDENT
+Body: ?a  recommendationStatus  PRESENT  ?a  relationConfidence  0.98
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7757
+- Rule Classification: POSITIVE (PCA Confidence 0.7757 >= threshold 0.5)
+- Head Coverage: 0.0546

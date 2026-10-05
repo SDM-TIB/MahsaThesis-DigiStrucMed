@@ -1,0 +1,15 @@
+Rule 7049:
+If entity type CONDITION OR FINDING AND condition entity ?d, then patient applicability CONDITION DEPENDENT.
+
+Formal Rule:
+Head: ?a  patientApplicability  CONDITION_DEPENDENT
+Body: ?d  entityType  CONDITION_OR_FINDING  ?a  hasConditionEntity  ?d
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9002
+- Rule Classification: POSITIVE (PCA Confidence 0.9002 >= threshold 0.5)
+- Head Coverage: 0.2851

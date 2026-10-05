@@ -1,0 +1,15 @@
+Rule 2100:
+If parameter entity ?d AND span confidence 0.85, then recommendation status NOT A RECOMMENDATION.
+
+Formal Rule:
+Head: ?a  recommendationStatus  NOT_A_RECOMMENDATION
+Body: ?a  hasParameterEntity  ?d  ?d  spanConfidence  0.85
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 1.0000
+- Rule Classification: POSITIVE (PCA Confidence 1.0000 >= threshold 0.5)
+- Head Coverage: 0.0110

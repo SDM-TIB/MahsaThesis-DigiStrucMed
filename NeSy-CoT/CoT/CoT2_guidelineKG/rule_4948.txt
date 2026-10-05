@@ -1,0 +1,15 @@
+Rule 4948:
+If source mention ?a AND instance_of symptom or sign, then entity type ADVERSE EVENT.
+
+Formal Rule:
+Head: ?a  entityType  ADVERSE_EVENT
+Body: ?c  hasSourceMention  ?a  ?c  instance_of  symptom_or_sign
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.5027
+- Rule Classification: POSITIVE (PCA Confidence 0.5027 >= threshold 0.5)
+- Head Coverage: 0.0104

@@ -1,0 +1,15 @@
+Rule 2113:
+If entity type ROUTE AND parameter entity ?d, then recommendation status NOT A RECOMMENDATION.
+
+Formal Rule:
+Head: ?a  recommendationStatus  NOT_A_RECOMMENDATION
+Body: ?d  entityType  ROUTE  ?a  hasParameterEntity  ?d
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6242
+- Rule Classification: POSITIVE (PCA Confidence 0.6242 >= threshold 0.5)
+- Head Coverage: 0.0173

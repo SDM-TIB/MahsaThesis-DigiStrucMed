@@ -1,0 +1,15 @@
+Rule 1041:
+If source grade record ?a AND relation confidence 0.8, then grade dimension SOURCE DEFINED OTHER.
+
+Formal Rule:
+Head: ?a  gradeDimension  SOURCE_DEFINED_OTHER
+Body: ?c  hasSourceGradeRecord  ?a  ?c  relationConfidence  0.8
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.5719
+- Rule Classification: POSITIVE (PCA Confidence 0.5719 >= threshold 0.5)
+- Head Coverage: 0.0346

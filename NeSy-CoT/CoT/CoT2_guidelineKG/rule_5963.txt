@@ -1,0 +1,15 @@
+Rule 5963:
+If condition entity ?a AND notes Descriptive, then span confidence 0.9.
+
+Formal Rule:
+Head: ?a  spanConfidence  0.9
+Body: ?c  hasConditionEntity  ?a  ?c  notes  Descriptive row with no explicit recommendation trigger
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7704
+- Rule Classification: POSITIVE (PCA Confidence 0.7704 >= threshold 0.5)
+- Head Coverage: 0.0138

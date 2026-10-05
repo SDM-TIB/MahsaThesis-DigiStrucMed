@@ -1,0 +1,15 @@
+Rule 5960:
+If condition entity ?a AND patient applicability NOT STATED, then span confidence 0.9.
+
+Formal Rule:
+Head: ?a  spanConfidence  0.9
+Body: ?c  hasConditionEntity  ?a  ?c  patientApplicability  NOT_STATED
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6960
+- Rule Classification: POSITIVE (PCA Confidence 0.6960 >= threshold 0.5)
+- Head Coverage: 0.0138

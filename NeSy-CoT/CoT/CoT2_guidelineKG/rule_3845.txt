@@ -1,0 +1,15 @@
+Rule 3845:
+If normalization ?d AND normalization mapping status UNMAPPED, then type ExtractedEntity.
+
+Formal Rule:
+Head: ?a  type  ExtractedEntity
+Body: ?a  hasNormalization  ?d  ?d  normalizationMappingStatus  UNMAPPED
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 1.0000
+- Rule Classification: POSITIVE (PCA Confidence 1.0000 >= threshold 0.5)
+- Head Coverage: 0.1536

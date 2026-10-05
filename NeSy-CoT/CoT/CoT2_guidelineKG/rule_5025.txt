@@ -1,0 +1,15 @@
+Rule 5025:
+If target entity ?a AND notes Descriptive, then entity type MEDICATION.
+
+Formal Rule:
+Head: ?a  entityType  MEDICATION
+Body: ?c  hasTargetEntity  ?a  ?c  notes  Descriptive row with no explicit recommendation trigger
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9971
+- Rule Classification: POSITIVE (PCA Confidence 0.9971 >= threshold 0.5)
+- Head Coverage: 0.0386

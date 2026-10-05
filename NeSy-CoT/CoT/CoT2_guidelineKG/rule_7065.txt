@@ -1,0 +1,15 @@
+Rule 7065:
+If entity type TEST OR MEASUREMENT AND parameter entity ?d, then patient applicability CONDITION DEPENDENT.
+
+Formal Rule:
+Head: ?a  patientApplicability  CONDITION_DEPENDENT
+Body: ?d  entityType  TEST_OR_MEASUREMENT  ?a  hasParameterEntity  ?d
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7810
+- Rule Classification: POSITIVE (PCA Confidence 0.7810 >= threshold 0.5)
+- Head Coverage: 0.0305

@@ -1,0 +1,15 @@
+Rule 4900:
+If parameter entity ?a AND recommendation status NOT A RECOMMENDATION, then entity type DOSE.
+
+Formal Rule:
+Head: ?a  entityType  DOSE
+Body: ?c  hasParameterEntity  ?a  ?c  recommendationStatus  NOT_A_RECOMMENDATION
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4245
+- Rule Classification: NEGATIVE (PCA Confidence 0.4245 < threshold 0.5)
+- Head Coverage: 0.0304

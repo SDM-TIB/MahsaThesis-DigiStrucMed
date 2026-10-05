@@ -1,0 +1,15 @@
+Rule 3491:
+If drug_or_therapy_used_for_treatment ?a AND hasdescription human, then hasdescription chemical.
+
+Formal Rule:
+Head: ?a  hasdescription  chemical compound
+Body: ?c  drug_or_therapy_used_for_treatment  ?a  ?c  hasdescription  human disease
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6324
+- Rule Classification: POSITIVE (PCA Confidence 0.6324 >= threshold 0.5)
+- Head Coverage: 0.0206

@@ -1,0 +1,15 @@
+Rule 3122:
+If source grade record ?a AND relation confidence 0.94, then notes Source-native.
+
+Formal Rule:
+Head: ?a  notes  Source-native grade preserved without cross-system normalization
+Body: ?c  hasSourceGradeRecord  ?a  ?c  relationConfidence  0.94
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9719
+- Rule Classification: POSITIVE (PCA Confidence 0.9719 >= threshold 0.5)
+- Head Coverage: 0.0412

@@ -2,6 +2,17 @@
 
 To upload only the required files to CloudRift and run Steps 1?3, follow [README_VM.md](README_VM.md). It labels each command for **local Windows PowerShell** or **remote SSH on the VM**.
 
+For a point-and-click alternative to running these scripts and the
+`README_VM.md` commands by hand, see [interface/](interface/) — a Streamlit
+app that runs each stage (install libs, upload rules, CoT generation,
+prepare data, fine-tune steps 1-3) locally or on one of three CloudRift V100
+profiles, with live logs, ETA, and automatic file staging for VM runs:
+
+```bash
+pip install -r interface/requirements.txt
+streamlit run interface/app.py
+```
+
 Modular scripts for **Neuro-Symbolic Knowledge Graph Link Prediction with LLMs**
 ## Project Structure
 
@@ -40,7 +51,7 @@ Key fields to change:
 ### 3. Prepare data (run once)
 
 ```bash
-python prepare_data.py --config config.json
+python prepare_data.py --config guidelineKG-config.json
 ```
 
 This generates:
@@ -52,18 +63,18 @@ This generates:
 
 ```bash
 # Step 1: Generating chain-of-thoughts 
-python NL-instances-CoT2.py --config config.json
+python NL-instances-CoT2.py --config guidelineKG-config.json
 
 python NL-instances-CoT3.py --config config.json
 
 # Step 2: Evaluate base model
-python step1_evaluate_base.py --config config.json
+python step1_evaluate_base.py --config guidelineKG-config.json
 
 # Step 3: Fine-tune without rules
-python step2_finetune_no_rules.py --config config.json
+python step2_finetune_no_rules.py --config guidelineKG-config.json
 
 # Step 4: Fine-tune with rules
-python step3_finetune_with_rules.py --config config.json
+python step3_finetune_with_rules.py --config guidelineKG-config.json
 ```
 
 Each step saves its results JSON and model checkpoints into `output_dir`.

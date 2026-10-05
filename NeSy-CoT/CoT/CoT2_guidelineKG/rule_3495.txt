@@ -1,0 +1,15 @@
+Rule 3495:
+If drug_or_therapy_used_for_treatment ?a AND health_specialty psychiatry, then hasdescription chemical.
+
+Formal Rule:
+Head: ?a  hasdescription  chemical compound
+Body: ?c  drug_or_therapy_used_for_treatment  ?a  ?c  health_specialty  psychiatry
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4889
+- Rule Classification: NEGATIVE (PCA Confidence 0.4889 < threshold 0.5)
+- Head Coverage: 0.0116

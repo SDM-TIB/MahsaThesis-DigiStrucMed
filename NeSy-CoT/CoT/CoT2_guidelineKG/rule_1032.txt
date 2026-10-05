@@ -1,0 +1,15 @@
+Rule 1032:
+If grade value LevelOfEvidence B AND notes Preserved, then grade dimension SOURCE DEFINED OTHER.
+
+Formal Rule:
+Head: ?a  gradeDimension  SOURCE_DEFINED_OTHER
+Body: ?a  hasGradeValue  LevelOfEvidence_B  ?a  notes  Preserved verbatim; no cross-system normalization inferred
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6146
+- Rule Classification: POSITIVE (PCA Confidence 0.6146 >= threshold 0.5)
+- Head Coverage: 0.0128

@@ -1,0 +1,15 @@
+Rule 5065:
+If target entity ?a AND operation PERFORM, then entity type PROCEDURE OR INTERVENTION.
+
+Formal Rule:
+Head: ?a  entityType  PROCEDURE_OR_INTERVENTION
+Body: ?c  hasTargetEntity  ?a  ?c  operation  PERFORM
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6799
+- Rule Classification: POSITIVE (PCA Confidence 0.6799 >= threshold 0.5)
+- Head Coverage: 0.0585

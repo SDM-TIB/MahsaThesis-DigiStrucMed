@@ -1,0 +1,15 @@
+Rule 1259:
+If source grade record ?a AND patient applicability CONDITION DEPENDENT, then grade dimension CLASS OF RECOMMENDATION.
+
+Formal Rule:
+Head: ?a  gradeDimension  CLASS_OF_RECOMMENDATION
+Body: ?c  hasSourceGradeRecord  ?a  ?c  patientApplicability  CONDITION_DEPENDENT
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4560
+- Rule Classification: NEGATIVE (PCA Confidence 0.4560 < threshold 0.5)
+- Head Coverage: 0.3508

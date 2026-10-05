@@ -2,12 +2,12 @@
 set -e
 
 # Multi-file joint downsampling for global fairness
-DATASET="qKG"  # or "family" or "fb15k-237"
+DATASET="GuidelineKG"  # or "family" or "fb15k-237"
 MAX_RATIO=0.01
 QUESTION_DIR_SUFFIX="question"
 
-if [ "$DATASET" = "qKG" ]; then
-    BASE_DIR="data/qKG"
+if [ "$DATASET" = "GuidelineKG" ]; then
+    BASE_DIR="data/GuidelineKG"
     QUESTION_BASE=$(find "$BASE_DIR" -name "*${QUESTION_DIR_SUFFIX}" -type d | head -1)
 elif [ "$DATASET" = "family" ]; then
     BASE_DIR="data/family"

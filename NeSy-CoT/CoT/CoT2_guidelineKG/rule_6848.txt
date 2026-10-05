@@ -1,0 +1,15 @@
+Rule 6848:
+If class of recommendation ClassOfRecommendation I AND relation confidence 0.96, then patient applicability CONDITION DEPENDENT.
+
+Formal Rule:
+Head: ?a  patientApplicability  CONDITION_DEPENDENT
+Body: ?a  hasClassOfRecommendation  ClassOfRecommendation_I  ?a  relationConfidence  0.96
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9407
+- Rule Classification: POSITIVE (PCA Confidence 0.9407 >= threshold 0.5)
+- Head Coverage: 0.0206

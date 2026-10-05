@@ -51,6 +51,7 @@ try:
         BitsAndBytesConfig,
         DataCollatorForLanguageModeling,
     )
+    from transformers.trainer_utils import get_last_checkpoint
     from peft import (
         LoraConfig,
         get_peft_model,
@@ -78,7 +79,7 @@ def load_config(config_path: str) -> dict:
       2. cfg["huggingface_token"], if explicitly set in the file (legacy;
          avoid committing real tokens here)
     """
-    with open(config_path, "r") as f:
+    with open(config_path, "r", encoding="utf-8") as f:
         cfg = json.load(f)
 
     env_token = os.environ.get("HF_TOKEN")
@@ -123,9 +124,9 @@ def login_huggingface(token: str):
 
 def preprocess_kg_file(input_file: str, output_file: str):
     """Convert tab-separated KG file to space-separated with line count header."""
-    with open(input_file, "r") as f:
+    with open(input_file, "r", encoding="utf-8") as f:
         lines = f.readlines()
-    with open(output_file, "w") as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         f.write(f"{len(lines)}\n")
         for line in lines:
             parts = line.strip().split("\t")
@@ -137,13 +138,13 @@ def preprocess_kg_file(input_file: str, output_file: str):
 def generate_relation2id(processed_kg_path: str, output_path: str):
     """Extract unique relations and write relation2id mapping."""
     relations = set()
-    with open(processed_kg_path, "r") as f:
+    with open(processed_kg_path, "r", encoding="utf-8") as f:
         n = int(f.readline())
         for line in f:
             parts = line.strip().split()
             if len(parts) == 3:
                 relations.add(parts[2])
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write(f"{len(relations)}\n")
         for i, rel in enumerate(sorted(relations)):
             f.write(f"relation_{rel}\t{rel}\n")
@@ -163,7 +164,7 @@ def load_entity_mapping(file_path: str) -> dict:
     (e.g. 'ALK_Positive>.' -> 'ALK Positive').
     """
     id2entity = {}
-    with open(file_path, "r") as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         first = f.readline().strip()
         # First line is the entity count if it's a bare integer
         if not first.isdigit():
@@ -227,7 +228,7 @@ def load_knowledge_graph(file_path: str,
             rel = rel_tok
         return head, tail, rel
 
-    with open(file_path, "r") as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         first = f.readline().strip()
         # Skip bare integer count header (standard KGE benchmark format)
         if not first.isdigit():
@@ -260,7 +261,7 @@ def load_relation_mapping(file_path: str) -> dict:
     Cleans trailing '>.' suffixes for consistency with entity names.
     """
     id2relation = {}
-    with open(file_path, "r") as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         first = f.readline().strip()
         if not first.isdigit():
             f.seek(0)
@@ -298,7 +299,7 @@ def parse_rule_file(file_path: str) -> dict:
       rule_id, rule_text, head, body, instances (list of parsed instance dicts),
       pca_confidence, classification, cot_format
     """
-    with open(file_path, "r") as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
     rule_info = {
@@ -336,10 +337,22 @@ def parse_rule_file(file_path: str) -> dict:
         re.DOTALL,
     )
     if instances_section:
+        pending = []
         for line in instances_section.group(1).strip().split("\n"):
             line = line.strip()
-            if line:
-                rule_info["raw_instances"].append(line)
+            if not line or line == "No matching instances found in the Knowledge Graph.":
+                continue
+            pending.append(line)
+            # RDF literal labels may contain newlines. Only the terminal
+            # answer tag marks a complete generated instance.
+            if re.search(r'Answer:\s*(yes|no)\s*$', line, re.IGNORECASE):
+                rule_info["raw_instances"].append(" ".join(pending))
+                pending = []
+        if pending:
+            raise ValueError(
+                f"{file_path}: unfinished instance without a terminal Answer: yes/no. "
+                "Regenerate this rule file before preparing data."
+            )
 
     # Parse rule statistics
     pca_match = re.search(r"PCA Confidence:\s*([\d.]+)", content)
@@ -457,6 +470,12 @@ def load_all_rules(rules_directory: str) -> list:
     rules = []
     skipped = []
     rule_files = sorted(Path(rules_directory).glob("rule_*.txt"))
+    if not rule_files:
+        raise FileNotFoundError(
+            f"No rule_*.txt files found in {Path(rules_directory).resolve()}. "
+            "Generate the rules or correct the configured directory. "
+            "For a CoT2-only run, set rules_dir_cot3 to null."
+        )
     for file_path in rule_files:
         try:
             rule_info = parse_rule_file(str(file_path))
@@ -483,7 +502,7 @@ def load_all_rules(rules_directory: str) -> list:
                 f"({n_inst} instances: {n_pos} pos, {n_neg} neg)"
             )
         except Exception as e:
-            print(f"  Error loading {file_path}: {e}")
+            raise ValueError(f"Cannot load rule file {file_path}: {e}") from e
 
     if skipped:
         print(f"\n  SKIPPED {len(skipped)} rule files — no 'Answer: yes/no' tags found.")
@@ -552,12 +571,13 @@ def generate_shared_test_set(
 
     all_df = pd.DataFrame(all_rows)
 
-    # Warn and fill if answer tag missing (old-format rule files)
+    # Missing ground truth must never be replaced with an invented label.
     missing = all_df["_answer"].isna().sum()
     if missing > 0:
-        print(f"  WARNING: {missing} instances missing 'Answer: yes/no' tag. "
-              f"Re-run NL-instances scripts to regenerate CoT files.")
-        all_df["_answer"] = all_df["_answer"].fillna("yes")
+        raise ValueError(
+            f"{missing} instances missing 'Answer: yes/no'; cannot assign ground truth. "
+            "Regenerate the affected CoT files."
+        )
 
     # Stratified split on answer (yes/no)
     train_parts, test_parts = [], []
@@ -1206,16 +1226,12 @@ def _build_cot_sample(inst, rule, rule_context, cot_format,
     if answer_match:
         label = answer_match.group(1).lower()
     else:
-        # Fallback for old-format rule files without embedded answer
-        # (POSITIVE/NEGATIVE is rule reliability, not ground truth — log a warning)
-        import warnings
-        warnings.warn(
+        # POSITIVE/NEGATIVE describes rule reliability, not ground truth.
+        raise ValueError(
             f"No 'Answer: yes/no' found in instance text. "
-            f"Falling back to POSITIVE→yes / NEGATIVE→no which may be incorrect. "
-            f"Please regenerate CoT files with updated NL-instances scripts.",
-            UserWarning, stacklevel=2
+            f"Rule classification cannot be used as ground truth. "
+            f"Please regenerate CoT files with updated NL-instances scripts."
         )
-        label = "yes" if classification == "POSITIVE" else "no"
 
     # Clean the instance text: strip classification/PCA leaks, keep path facts
     path_text = _clean_instance_text(
@@ -1979,8 +1995,15 @@ def fine_tune_model(model, tokenizer, train_dataset, output_dir: str,
         )
 
     model.config.use_cache = False
-    print("Starting training...")
-    trainer.train()
+
+    # Resume from the latest checkpoint in output_dir if one exists (e.g. after
+    # a stopped/interrupted run) — otherwise this is None and training starts fresh.
+    last_checkpoint = get_last_checkpoint(output_dir) if os.path.isdir(output_dir) else None
+    if last_checkpoint:
+        print(f"Found existing checkpoint — resuming training from {last_checkpoint}")
+    else:
+        print("Starting training...")
+    trainer.train(resume_from_checkpoint=last_checkpoint)
 
     print(f"Saving model to {output_dir}...")
     os.makedirs(output_dir, exist_ok=True)
@@ -2012,6 +2035,6 @@ def save_results_json(path: str, results: dict):
             clean[k] = float(v)
         else:
             clean[k] = v
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(clean, f, indent=2)
     print(f"Results saved to {path}")

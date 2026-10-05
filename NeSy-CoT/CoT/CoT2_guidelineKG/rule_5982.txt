@@ -1,0 +1,15 @@
+Rule 5982:
+If target entity ?a AND notes Source-style, then span confidence 0.96.
+
+Formal Rule:
+Head: ?a  spanConfidence  0.96
+Body: ?c  hasTargetEntity  ?a  ?c  notes  Source-style or compound-cell semantics require human adjudication
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.8648
+- Rule Classification: POSITIVE (PCA Confidence 0.8648 >= threshold 0.5)
+- Head Coverage: 0.0137

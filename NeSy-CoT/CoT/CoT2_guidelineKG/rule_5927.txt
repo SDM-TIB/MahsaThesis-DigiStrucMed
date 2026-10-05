@@ -1,0 +1,15 @@
+Rule 5927:
+If source mention ?a AND subclass_of chemical compound, then span confidence 0.94.
+
+Formal Rule:
+Head: ?a  spanConfidence  0.94
+Body: ?c  hasSourceMention  ?a  ?c  subclass_of  chemical_compound
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4242
+- Rule Classification: NEGATIVE (PCA Confidence 0.4242 < threshold 0.5)
+- Head Coverage: 0.0102

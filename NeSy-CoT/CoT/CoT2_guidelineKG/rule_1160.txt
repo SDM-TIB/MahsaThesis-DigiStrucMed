@@ -1,0 +1,15 @@
+Rule 1160:
+If source grade record ?a AND relation confidence 1, then grade dimension LEVEL OF EVIDENCE.
+
+Formal Rule:
+Head: ?a  gradeDimension  LEVEL_OF_EVIDENCE
+Body: ?c  hasSourceGradeRecord  ?a  ?c  relationConfidence  1
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4346
+- Rule Classification: NEGATIVE (PCA Confidence 0.4346 < threshold 0.5)
+- Head Coverage: 0.0246

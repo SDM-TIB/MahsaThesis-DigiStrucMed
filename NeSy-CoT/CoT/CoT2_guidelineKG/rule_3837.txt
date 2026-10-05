@@ -1,0 +1,15 @@
+Rule 3837:
+If instance_of type of chemical entity AND label ?a, then subclass_of chemical compound.
+
+Formal Rule:
+Head: ?a  subclass_of  chemical_compound
+Body: ?c  instance_of  type_of_chemical_entity  ?c  label  ?a
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4237
+- Rule Classification: NEGATIVE (PCA Confidence 0.4237 < threshold 0.5)
+- Head Coverage: 0.0592

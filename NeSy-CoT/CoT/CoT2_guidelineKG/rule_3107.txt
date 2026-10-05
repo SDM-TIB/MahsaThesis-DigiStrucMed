@@ -1,0 +1,15 @@
+Rule 3107:
+If target entity ?d AND span confidence 0.95, then notes Agent-silver.
+
+Formal Rule:
+Head: ?a  notes  Agent-silver normative structure derived from exact source wording; human adjudication is required
+Body: ?a  hasTargetEntity  ?d  ?d  spanConfidence  0.95
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4573
+- Rule Classification: NEGATIVE (PCA Confidence 0.4573 < threshold 0.5)
+- Head Coverage: 0.0180

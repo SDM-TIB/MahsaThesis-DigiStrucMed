@@ -1,0 +1,15 @@
+Rule 3068:
+If recommendation status NOT A RECOMMENDATION AND relation confidence 1.0, then notes Descriptive.
+
+Formal Rule:
+Head: ?a  notes  Descriptive row with no explicit recommendation trigger
+Body: ?a  recommendationStatus  NOT_A_RECOMMENDATION  ?a  relationConfidence  1.0
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.8724
+- Rule Classification: POSITIVE (PCA Confidence 0.8724 >= threshold 0.5)
+- Head Coverage: 0.0495

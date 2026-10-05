@@ -1,0 +1,15 @@
+Rule 6947:
+If grading system name ESC AND source grade record ?d, then patient applicability CONDITION DEPENDENT.
+
+Formal Rule:
+Head: ?a  patientApplicability  CONDITION_DEPENDENT
+Body: ?d  gradingSystemName  ESC Level of Evidence  ?a  hasSourceGradeRecord  ?d
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7114
+- Rule Classification: POSITIVE (PCA Confidence 0.7114 >= threshold 0.5)
+- Head Coverage: 0.0454

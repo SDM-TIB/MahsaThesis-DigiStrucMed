@@ -2,7 +2,7 @@
 set -e
 
 # Convert AMIE output and assign global indices
-DATASET="qKG"  # or "family" or "fb15k-237"
+DATASET="GuidelineKG"  # or "family" or "fb15k-237"
 MAXAD="3"
 
 BASE_DIR="data/${DATASET}"

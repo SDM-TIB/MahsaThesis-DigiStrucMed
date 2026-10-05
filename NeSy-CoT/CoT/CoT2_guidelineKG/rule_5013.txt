@@ -1,0 +1,15 @@
+Rule 5013:
+If applicability exception status PRESENT AND target entity ?a, then entity type MEDICATION.
+
+Formal Rule:
+Head: ?a  entityType  MEDICATION
+Body: ?c  applicabilityExceptionStatus  PRESENT  ?c  hasTargetEntity  ?a
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4733
+- Rule Classification: NEGATIVE (PCA Confidence 0.4733 < threshold 0.5)
+- Head Coverage: 0.0105

@@ -1,0 +1,15 @@
+Rule 5010:
+If direction NOT STATED AND target entity ?a, then entity type MEDICATION.
+
+Formal Rule:
+Head: ?a  entityType  MEDICATION
+Body: ?c  direction  NOT_STATED  ?c  hasTargetEntity  ?a
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.8215
+- Rule Classification: POSITIVE (PCA Confidence 0.8215 >= threshold 0.5)
+- Head Coverage: 0.0476

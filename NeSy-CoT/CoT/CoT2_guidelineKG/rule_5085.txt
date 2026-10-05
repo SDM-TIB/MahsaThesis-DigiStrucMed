@@ -1,0 +1,15 @@
+Rule 5085:
+If patient applicability ?b AND patient applicability NOT STATED, then deontic force ?b.
+
+Formal Rule:
+Head: ?a  deonticForce  ?b
+Body: ?a  patientApplicability  ?b  ?a  patientApplicability  NOT_STATED
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9054
+- Rule Classification: POSITIVE (PCA Confidence 0.9054 >= threshold 0.5)
+- Head Coverage: 0.1316

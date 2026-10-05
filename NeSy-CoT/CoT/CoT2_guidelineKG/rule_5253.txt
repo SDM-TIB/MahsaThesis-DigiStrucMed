@@ -1,0 +1,15 @@
+Rule 5253:
+If drug_or_therapy_used_for_treatment ?d AND hasdescription pharmaceutical, then instance_of type of disease.
+
+Formal Rule:
+Head: ?a  instance_of  type_of_disease
+Body: ?a  drug_or_therapy_used_for_treatment  ?d  ?d  hasdescription  pharmaceutical drug
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.8197
+- Rule Classification: POSITIVE (PCA Confidence 0.8197 >= threshold 0.5)
+- Head Coverage: 0.0121

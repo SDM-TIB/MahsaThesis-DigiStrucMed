@@ -1,0 +1,15 @@
+Rule 5234:
+If health_specialty ?d AND instance_of academic discipline, then instance_of type of disease.
+
+Formal Rule:
+Head: ?a  instance_of  type_of_disease
+Body: ?a  health_specialty  ?d  ?d  instance_of  academic_discipline
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6860
+- Rule Classification: POSITIVE (PCA Confidence 0.6860 >= threshold 0.5)
+- Head Coverage: 0.0485

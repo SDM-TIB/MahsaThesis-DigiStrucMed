@@ -159,7 +159,11 @@ def run_finetune_for_cot_version(cot_version, cfg, train_path):
     #   2. Clean eval set           (fair cross-format comparison — NO rule
     #      context, NO tags; same file used for Baseline, CoT2, CoT3)
     # ------------------------------------------------------------------
-    eval_clean_path = os.path.join(output_dir, "test_eval_clean.csv")
+    pregen = cfg.get("pregenerated_data", {})
+    eval_clean_path = (
+        pregen.get("test_eval_clean_csv")
+        or os.path.join(output_dir, "test_eval_clean.csv")
+    )
     if not os.path.exists(eval_clean_path):
         raise FileNotFoundError(
             f"Clean eval file not found: {eval_clean_path}\n"

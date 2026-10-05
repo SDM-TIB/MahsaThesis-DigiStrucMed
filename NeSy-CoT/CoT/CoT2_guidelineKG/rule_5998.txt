@@ -1,0 +1,15 @@
+Rule 5998:
+If target entity ?a AND relation confidence 0.95, then span confidence 1.
+
+Formal Rule:
+Head: ?a  spanConfidence  1
+Body: ?c  hasTargetEntity  ?a  ?c  relationConfidence  0.95
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.8000
+- Rule Classification: POSITIVE (PCA Confidence 0.8000 >= threshold 0.5)
+- Head Coverage: 0.0283

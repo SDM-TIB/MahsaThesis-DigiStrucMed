@@ -1,0 +1,15 @@
+Rule 6210:
+If population entity ?a AND relation confidence 1.0, then span confidence 1.0.
+
+Formal Rule:
+Head: ?a  spanConfidence  1.0
+Body: ?c  hasPopulationEntity  ?a  ?c  relationConfidence  1.0
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9938
+- Rule Classification: POSITIVE (PCA Confidence 0.9938 >= threshold 0.5)
+- Head Coverage: 0.0179

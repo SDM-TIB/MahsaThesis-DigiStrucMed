@@ -1,0 +1,15 @@
+Rule 3135:
+If source grade record ?a AND relation confidence 0.8, then notes Preserved.
+
+Formal Rule:
+Head: ?a  notes  Preserved verbatim; no cross-system normalization inferred
+Body: ?c  hasSourceGradeRecord  ?a  ?c  relationConfidence  0.8
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7950
+- Rule Classification: POSITIVE (PCA Confidence 0.7950 >= threshold 0.5)
+- Head Coverage: 0.0239

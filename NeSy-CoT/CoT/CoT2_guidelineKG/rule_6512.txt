@@ -1,0 +1,15 @@
+Rule 6512:
+If applicability exception status NOT APPLICABLE AND recommendation status NOT A RECOMMENDATION, then patient applicability NOT STATED.
+
+Formal Rule:
+Head: ?a  patientApplicability  NOT_STATED
+Body: ?a  applicabilityExceptionStatus  NOT_APPLICABLE  ?a  recommendationStatus  NOT_A_RECOMMENDATION
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9213
+- Rule Classification: POSITIVE (PCA Confidence 0.9213 >= threshold 0.5)
+- Head Coverage: 0.1262

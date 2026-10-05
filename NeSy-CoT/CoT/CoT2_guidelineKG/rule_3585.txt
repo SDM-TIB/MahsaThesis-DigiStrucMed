@@ -1,0 +1,15 @@
+Rule 3585:
+If target entity ?d AND span confidence 0.95, then relation confidence 0.9.
+
+Formal Rule:
+Head: ?a  relationConfidence  0.9
+Body: ?a  hasTargetEntity  ?d  ?d  spanConfidence  0.95
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6923
+- Rule Classification: POSITIVE (PCA Confidence 0.6923 >= threshold 0.5)
+- Head Coverage: 0.0468

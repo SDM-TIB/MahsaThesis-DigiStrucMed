@@ -1,0 +1,48 @@
+Rule 6014:
+If alias ?f AND health_specialty ?f, then health_specialty ?b.
+
+Formal Rule:
+Head: ?a  health_specialty  ?b
+Body: ?b  alias  ?f  ?a  health_specialty  ?f
+
+Real Instances from Knowledge Graph (34 found):
+
+pain, emergency treatment has alias emergency medicine, pain has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+cardiac arrest, emergency treatment has alias emergency medicine, cardiac arrest has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+influenza, emergency treatment has alias emergency medicine, influenza has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+hypokalemia, emergency treatment has alias emergency medicine, hypokalemia has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+intracranial hemorrhage, emergency treatment has alias emergency medicine, intracranial hemorrhage has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+bleeding, emergency treatment has alias emergency medicine, bleeding has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+pacemaker failure, emergency treatment has alias emergency medicine, pacemaker failure has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+COVID-19, emergency treatment has alias emergency medicine, COVID-19 has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+idiosyncratic drug reaction, emergency treatment has alias emergency medicine, idiosyncratic drug reaction has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+angioedema, emergency treatment has alias emergency medicine, angioedema has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+anaphylaxis, emergency treatment has alias emergency medicine, anaphylaxis has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+hypersensitivity, emergency treatment has alias emergency medicine, hypersensitivity has health_specialty emergency medicine The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+cyanotic heart defect, medical diagnosis has alias diagnosis, cyanotic heart defect has health_specialty diagnosis The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+cyanotic heart defect, medical diagnostics has alias diagnosis, cyanotic heart defect has health_specialty diagnosis The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: no
+viral pneumonia has health_specialty infectious disease, infectious disease has alias infectious disease, viral pneumonia has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+staphylococcal infection has health_specialty infectious disease, infectious disease has alias infectious disease, staphylococcal infection has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+endocarditis has health_specialty infectious disease, infectious disease has alias infectious disease, endocarditis has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+influenza has health_specialty infectious disease, infectious disease has alias infectious disease, influenza has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+chills has health_specialty infectious disease, infectious disease has alias infectious disease, chills has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+necrotizing fasciitis has health_specialty infectious disease, infectious disease has alias infectious disease, necrotizing fasciitis has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+diarrhea has health_specialty infectious disease, infectious disease has alias infectious disease, diarrhea has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+hepatitis has health_specialty infectious disease, infectious disease has alias infectious disease, hepatitis has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+emerging communicable disease has health_specialty infectious disease, infectious disease has alias infectious disease, emerging communicable disease has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+Fournier gangrene has health_specialty infectious disease, infectious disease has alias infectious disease, Fournier gangrene has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+Chagas cardiomyopathy has health_specialty infectious disease, infectious disease has alias infectious disease, Chagas cardiomyopathy has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+COVID-19 has health_specialty infectious disease, infectious disease has alias infectious disease, COVID-19 has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+Chagas disease has health_specialty infectious disease, infectious disease has alias infectious disease, Chagas disease has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+bacterial infectious disease has health_specialty infectious disease, infectious disease has alias infectious disease, bacterial infectious disease has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+enanthem has health_specialty infectious disease, infectious disease has alias infectious disease, enanthem has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+pneumonia has health_specialty infectious disease, infectious disease has alias infectious disease, pneumonia has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+coronavirus disease has health_specialty infectious disease, infectious disease has alias infectious disease, coronavirus disease has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+zoonosis has health_specialty infectious disease, infectious disease has alias infectious disease, zoonosis has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+infectious disease has health_specialty infectious disease, infectious disease has alias infectious disease, infectious disease has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+infection has health_specialty infectious disease, infectious disease has alias infectious disease, infection has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.5882 >= threshold 0.5) Answer: yes
+
+Rule Statistics:
+- PCA Confidence: 0.5882
+- Rule Classification: POSITIVE (PCA Confidence 0.5882 >= threshold 0.5)
+- Head Coverage: 0.0350

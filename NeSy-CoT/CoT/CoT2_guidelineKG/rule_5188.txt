@@ -1,0 +1,15 @@
+Rule 5188:
+If direction NOT STATED AND condition entity ?a, then entity type CONDITION OR FINDING.
+
+Formal Rule:
+Head: ?a  entityType  CONDITION_OR_FINDING
+Body: ?c  direction  NOT_STATED  ?c  hasConditionEntity  ?a
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6223
+- Rule Classification: POSITIVE (PCA Confidence 0.6223 >= threshold 0.5)
+- Head Coverage: 0.0147

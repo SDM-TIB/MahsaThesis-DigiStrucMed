@@ -1,0 +1,15 @@
+Rule 5230:
+If health_specialty cardiology AND subclass_of ?d, then instance_of type of disease.
+
+Formal Rule:
+Head: ?a  instance_of  type_of_disease
+Body: ?d  health_specialty  cardiology  ?a  subclass_of  ?d
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7590
+- Rule Classification: POSITIVE (PCA Confidence 0.7590 >= threshold 0.5)
+- Head Coverage: 0.0152

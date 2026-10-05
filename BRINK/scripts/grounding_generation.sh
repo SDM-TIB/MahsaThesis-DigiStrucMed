@@ -2,7 +2,7 @@
 set -e
 
 # Single file grounding generation
-BASE_DIR="data/qKG"  # or "data/family" or "data/fb15k-237"
+BASE_DIR="data/GuidelineKG"  # or "data/family" or "data/fb15k-237"
 FACTS_PATH="$BASE_DIR/facts.tsv"
 RULES_PATH="$BASE_DIR/rules_with_global_index.json"
 OUTPUT_DIR="$BASE_DIR/grounding_output"

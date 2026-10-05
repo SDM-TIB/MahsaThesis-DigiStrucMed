@@ -11,10 +11,10 @@ from typing import Any
 
 
 DEFAULT_INPUT = Path(
-    "data/qKG/question/val_cleaned_final.tsv"
+    "data/GuidelineKG/question/val_cleaned_final.tsv"
 )
 DEFAULT_OUTPUT = Path(
-    "data/qKG/question/val_cleaned_final_gold.json"
+    "data/GuidelineKG/question/val_cleaned_final_gold.json"
 )
 REQUIRED_COLUMNS = {"id", "question", "answer"}
 

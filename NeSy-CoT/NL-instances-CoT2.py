@@ -78,7 +78,7 @@ def format_predicate(predicate: str) -> str:
 
 
 def format_entity(entity: str) -> str:
-    return entity.replace('_', ' ') if entity else ''
+    return ' '.join(entity.replace('_', ' ').split()) if entity else ''
 
 
 def local_name(uri_str: str) -> str:

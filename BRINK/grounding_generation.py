@@ -12,7 +12,7 @@ def load_facts(fact_file):
     fact_list = []
     pred_to_facts = {}
     facts_set = set()
-    with open(fact_file, "r") as f:
+    with open(fact_file, "r", encoding="utf-8") as f:
         for line in f:
             parts = line.strip().split("\t")
             if len(parts) != 3:
@@ -35,7 +35,7 @@ def parse_rule_tokens(rule_str):
 
 def load_rules(rules_file):
     rules = []
-    with open(rules_file, "r") as f:
+    with open(rules_file, "r", encoding="utf-8") as f:
         raw = json.load(f)
     for entry in raw:
         if not isinstance(entry, dict) or "rule" not in entry:
@@ -121,12 +121,12 @@ def process_single_rule(rule_obj, pred_to_facts, facts_set, output_dir):
         "groundings": [{"body": b, "head": h} for b, h in valid_groundings]
     }
     json_path = os.path.join(output_dir, f"rule_{rule_index}_groundings.json")
-    with open(json_path, "w") as f:
+    with open(json_path, "w", encoding="utf-8") as f:
         json.dump(rule_output, f, indent=2)
 
     # TSV output
     tsv_path = os.path.join(output_dir, f"rule_{rule_index}_groundings.tsv")
-    with open(tsv_path, "w") as f:
+    with open(tsv_path, "w", encoding="utf-8") as f:
         f.write("rule_index\trule\tgrounding\n")
         for b, h in valid_groundings:
             f.write(f"Rule_{rule_index}\t{rule_str}\t{atoms_to_str(b)} => {atoms_to_str(h)}\n")
@@ -184,7 +184,7 @@ def main():
         "results": results
     }
 
-    with open(os.path.join(args.output, "grounding_summary.json"), "w") as f:
+    with open(os.path.join(args.output, "grounding_summary.json"), "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2)
 
     print(f"\nSummary:")

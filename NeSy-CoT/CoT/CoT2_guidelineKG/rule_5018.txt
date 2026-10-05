@@ -1,0 +1,15 @@
+Rule 5018:
+If target entity ?a AND relation confidence 0.9, then entity type MEDICATION.
+
+Formal Rule:
+Head: ?a  entityType  MEDICATION
+Body: ?c  hasTargetEntity  ?a  ?c  relationConfidence  0.9
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.6280
+- Rule Classification: POSITIVE (PCA Confidence 0.6280 >= threshold 0.5)
+- Head Coverage: 0.0402

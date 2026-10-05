@@ -1,0 +1,15 @@
+Rule 1174:
+If source grade record ?a AND operation PERFORM, then grade dimension LEVEL OF EVIDENCE.
+
+Formal Rule:
+Head: ?a  gradeDimension  LEVEL_OF_EVIDENCE
+Body: ?c  hasSourceGradeRecord  ?a  ?c  operation  PERFORM
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4093
+- Rule Classification: NEGATIVE (PCA Confidence 0.4093 < threshold 0.5)
+- Head Coverage: 0.1478

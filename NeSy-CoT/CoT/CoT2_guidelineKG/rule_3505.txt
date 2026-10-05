@@ -1,0 +1,15 @@
+Rule 3505:
+If drug_or_therapy_used_for_treatment ?a AND symptoms nausea, then hasdescription chemical.
+
+Formal Rule:
+Head: ?a  hasdescription  chemical compound
+Body: ?c  drug_or_therapy_used_for_treatment  ?a  ?c  symptoms  nausea
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.5379
+- Rule Classification: POSITIVE (PCA Confidence 0.5379 >= threshold 0.5)
+- Head Coverage: 0.0125

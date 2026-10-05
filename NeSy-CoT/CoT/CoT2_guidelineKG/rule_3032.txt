@@ -1,0 +1,15 @@
+Rule 3032:
+If entity type CONDITION OR FINDING AND occurs in assertion ?a, then recommendation status PRESENT.
+
+Formal Rule:
+Head: ?a  recommendationStatus  PRESENT
+Body: ?c  entityType  CONDITION_OR_FINDING  ?c  occursInAssertion  ?a
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9352
+- Rule Classification: POSITIVE (PCA Confidence 0.9352 >= threshold 0.5)
+- Head Coverage: 0.3217

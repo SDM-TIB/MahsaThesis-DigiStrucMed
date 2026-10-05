@@ -1,0 +1,15 @@
+Rule 2033:
+If patient applicability NOT STATED AND relation confidence 0.94, then recommendation status NOT A RECOMMENDATION.
+
+Formal Rule:
+Head: ?a  recommendationStatus  NOT_A_RECOMMENDATION
+Body: ?a  patientApplicability  NOT_STATED  ?a  relationConfidence  0.94
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 1.0000
+- Rule Classification: POSITIVE (PCA Confidence 1.0000 >= threshold 0.5)
+- Head Coverage: 0.0121

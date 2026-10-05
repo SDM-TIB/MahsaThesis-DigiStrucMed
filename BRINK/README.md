@@ -165,6 +165,8 @@ java -jar amie3.5.1.jar -maxad 3 -minhc 0.1 -minc 0.3 -minpca 0.4 -const data\qK
 java -jar amie3.5.1.jar -const data\qKG\facts.tsv > amie_output_qKG.txt  
  java -jar amie3.5.1.jar -const data\qKG\facts.tsv > qKG-questionnaire.txt 
 
+java -jar amie3.5.1.jar -const data\GuidelineKG\guidelineKG.tsv > amie_output_guidelineKG.txt
+
 ### Rule Processing
 
 Convert AMIE output to structured format and assign global unique indices to rules:

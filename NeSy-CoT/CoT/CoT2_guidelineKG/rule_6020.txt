@@ -1,0 +1,49 @@
+Rule 6020:
+If alias ?f AND health_specialty ?b, then health_specialty ?b.
+
+Formal Rule:
+Head: ?a  health_specialty  ?b
+Body: ?a  alias  ?f  ?f  health_specialty  ?b
+
+Real Instances from Knowledge Graph (35 found):
+
+rhinitis, rhinitis has alias runny nose, runny nose has health_specialty pulmonology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+substance intoxication, substance intoxication has alias intoxication, intoxication has health_specialty toxicology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+major depressive disorder has health_specialty psychiatry, major depressive disorder has alias depression, depression has health_specialty psychiatry The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+recurrent airway obstruction, recurrent airway obstruction has alias chronic obstructive pulmonary disease, chronic obstructive pulmonary disease has health_specialty pulmonology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+vasculitis has health_specialty angiology, vasculitis has alias angiitis, angiitis has health_specialty angiology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+earthquake, earthquake has alias tremor, tremor has health_specialty neurology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+earthquake, earthquake has alias tremor, tremor has health_specialty psychiatry The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+tremor has health_specialty neurology, tremor has alias tremor, tremor has health_specialty neurology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+tremor has health_specialty psychiatry, tremor has alias tremor, tremor has health_specialty psychiatry The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+anxiety disorder has health_specialty psychiatry, anxiety disorder has alias anxiety, anxiety has health_specialty psychiatry The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+anxiety disorder, anxiety disorder has alias anxiety, anxiety has health_specialty psychotherapy The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+anxiety disorder has health_specialty clinical psychology, anxiety disorder has alias anxiety, anxiety has health_specialty clinical psychology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+hypertensive disease of pregnancy, hypertensive disease of pregnancy has alias gestational hypertension, gestational hypertension has health_specialty obstetrics The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+pre-eclampsia has health_specialty obstetrics, pre-eclampsia has alias gestational hypertension, gestational hypertension has health_specialty obstetrics The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+hormone replacement therapy, hormone replacement therapy has alias menopausal hormone therapy, menopausal hormone therapy has health_specialty gynaecology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+hormone replacement therapy, hormone replacement therapy has alias menopausal hormone therapy, menopausal hormone therapy has health_specialty urology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+dizziness, dizziness has alias vertigo, vertigo has health_specialty audiologist The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+dizziness has health_specialty otolaryngology, dizziness has alias vertigo, vertigo has health_specialty otolaryngology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+dizziness, dizziness has alias vertigo, vertigo has health_specialty speech and language therapist The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+dizziness, dizziness has alias vertigo, vertigo has health_specialty neurology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+intoxication, intoxication has alias poisoning, poisoning has health_specialty medical toxicology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+mental disorder has health_specialty clinical psychology, mental disorder has alias mental disorder, mental disorder has health_specialty clinical psychology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+mental disorder has health_specialty psychiatry, mental disorder has alias mental disorder, mental disorder has health_specialty psychiatry The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+mental disorder has health_specialty psychotherapy, mental disorder has alias mental disorder, mental disorder has health_specialty psychotherapy The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+infectious disease has health_specialty infectious disease, infectious disease has alias infectious disease, infectious disease has health_specialty infectious disease The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+urinary tract infection has health_specialty urology, urinary tract infection has alias urinary tract infection, urinary tract infection has health_specialty urology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+ulcer, ulcer has alias stress ulcer, stress ulcer has health_specialty intensive care medicine The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+nutritional deficiency disease, nutritional deficiency disease has alias malnutrition, malnutrition has health_specialty endocrinology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+nutritional deficiency disease, nutritional deficiency disease has alias malnutrition, malnutrition has health_specialty intensive care medicine The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+nutritional deficiency disease has health_specialty nutrition, nutritional deficiency disease has alias malnutrition, malnutrition has health_specialty nutrition The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+peripheral neuropathy has health_specialty neurology, peripheral neuropathy has alias neuropathy, neuropathy has health_specialty neurology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+heart failure has health_specialty cardiology, heart failure has alias congestive heart failure, congestive heart failure has health_specialty cardiology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+anorexia nervosa has health_specialty psychiatry, anorexia nervosa has alias anorexia, anorexia has health_specialty psychiatry The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: yes
+anorexia nervosa, anorexia nervosa has alias anorexia, anorexia has health_specialty psychology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+asthenia, asthenia has alias weakness, weakness has health_specialty neurology The path is classified as POSITIVE (PCA Confidence 0.6296 >= threshold 0.5) Answer: no
+
+Rule Statistics:
+- PCA Confidence: 0.6296
+- Rule Classification: POSITIVE (PCA Confidence 0.6296 >= threshold 0.5)
+- Head Coverage: 0.0297

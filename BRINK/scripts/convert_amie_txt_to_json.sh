@@ -8,12 +8,12 @@
 set -e
 
 # 配置参数 - 根据需要修改
-DATASET="qKG"  # 或 "fb15k-237"
+DATASET="GuidelineKG"  # 或 "fb15k-237"
 MAXAD="3"         # 或 "4"
 
 # 自动构建路径
 BASE_DIR="data/${DATASET}"
-AMIE_TXT_FILE="amie_output_qKG.txt"
+AMIE_TXT_FILE="amie_output_guidelineKG.txt"
 TEMP_JSON_FILE="${BASE_DIR}/rules_string.json"
 FINAL_JSON_FILE="${BASE_DIR}/rules_with_global_index.json"
 

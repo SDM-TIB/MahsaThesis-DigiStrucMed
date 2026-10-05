@@ -1,0 +1,15 @@
+Rule 5062:
+If target entity ?a AND operation COUNSEL, then entity type PROCEDURE OR INTERVENTION.
+
+Formal Rule:
+Head: ?a  entityType  PROCEDURE_OR_INTERVENTION
+Body: ?c  hasTargetEntity  ?a  ?c  operation  COUNSEL
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.8665
+- Rule Classification: POSITIVE (PCA Confidence 0.8665 >= threshold 0.5)
+- Head Coverage: 0.0164

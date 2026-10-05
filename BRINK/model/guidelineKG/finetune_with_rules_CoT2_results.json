@@ -1,0 +1,48 @@
+{
+  "model": "LLaMA-3.2-1B",
+  "model_name": "meta-llama/Llama-3.2-1B-Instruct",
+  "step": "finetune_with_rules_CoT2",
+  "cot_version": "CoT2",
+  "model_saved_to": "./outputs/guidelineKG/finetuned_LLaMA_3.2_1B_with_rules_CoT2",
+  "train_data": "outputs/guidelineKG/train_data_with_rules_CoT2.csv",
+  "test_data_format_matched": "./outputs/guidelineKG/test_shared_CoT2.csv",
+  "test_data_clean_eval": "outputs/guidelineKG/test_eval_clean.csv",
+  "train_samples": 9600,
+  "test_samples": 130785,
+  "metrics_format_matched": {
+    "accuracy": 0.998,
+    "f1_score": 0.9982046678635548,
+    "precision": 1.0,
+    "recall": 0.996415770609319,
+    "resolution_counts": {
+      "explicit": 494,
+      "bare_word": 3,
+      "tiebreak": 3,
+      "tiebreak_default_no": 0
+    }
+  },
+  "metrics_clean_eval": {
+    "accuracy": 0.536,
+    "f1_score": 0.30120481927710846,
+    "precision": 0.9433962264150944,
+    "recall": 0.17921146953405018,
+    "resolution_counts": {
+      "explicit": 127,
+      "bare_word": 114,
+      "tiebreak": 163,
+      "tiebreak_default_no": 96
+    }
+  },
+  "metrics": {
+    "accuracy": 0.536,
+    "f1_score": 0.30120481927710846,
+    "precision": 0.9433962264150944,
+    "recall": 0.17921146953405018,
+    "resolution_counts": {
+      "explicit": 127,
+      "bare_word": 114,
+      "tiebreak": 163,
+      "tiebreak_default_no": 96
+    }
+  }
+}

@@ -1,0 +1,15 @@
+Rule 5017:
+If applicability exception status NOT APPLICABLE AND target entity ?a, then entity type MEDICATION.
+
+Formal Rule:
+Head: ?a  entityType  MEDICATION
+Body: ?c  applicabilityExceptionStatus  NOT_APPLICABLE  ?c  hasTargetEntity  ?a
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.8332
+- Rule Classification: POSITIVE (PCA Confidence 0.8332 >= threshold 0.5)
+- Head Coverage: 0.0475

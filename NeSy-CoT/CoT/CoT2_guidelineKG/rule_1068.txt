@@ -1,0 +1,15 @@
+Rule 1068:
+If grade value LevelOfEvidence C AND notes Source-native, then grade dimension CERTAINTY OF EVIDENCE.
+
+Formal Rule:
+Head: ?a  gradeDimension  CERTAINTY_OF_EVIDENCE
+Body: ?a  hasGradeValue  LevelOfEvidence_C  ?a  notes  Source-native grade preserved without cross-system normalization
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.4188
+- Rule Classification: NEGATIVE (PCA Confidence 0.4188 < threshold 0.5)
+- Head Coverage: 0.0107

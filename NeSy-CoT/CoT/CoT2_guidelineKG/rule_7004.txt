@@ -1,0 +1,15 @@
+Rule 7004:
+If target entity ?d AND surface form beta blocker, then patient applicability CONDITION DEPENDENT.
+
+Formal Rule:
+Head: ?a  patientApplicability  CONDITION_DEPENDENT
+Body: ?a  hasTargetEntity  ?d  ?d  surfaceForm  beta_blocker
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.7378
+- Rule Classification: POSITIVE (PCA Confidence 0.7378 >= threshold 0.5)
+- Head Coverage: 0.0225

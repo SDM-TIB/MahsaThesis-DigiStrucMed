@@ -1,0 +1,29 @@
+Rule 6019:
+If health_specialty ?b AND matched surface form ?f, then health_specialty ?b.
+
+Formal Rule:
+Head: ?a  health_specialty  ?b
+Body: ?f  health_specialty  ?b  ?a  matchedSurfaceForm  ?f
+
+Real Instances from Knowledge Graph (15 found):
+
+major depressive disorder has health_specialty psychiatry, depression has health_specialty psychiatry, major depressive disorder has matched surface form depression The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+anxiety disorder has health_specialty psychiatry, anxiety has health_specialty psychiatry, anxiety disorder has matched surface form anxiety The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+anxiety disorder, anxiety has health_specialty psychotherapy, anxiety disorder has matched surface form anxiety The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: no
+anxiety disorder has health_specialty clinical psychology, anxiety has health_specialty clinical psychology, anxiety disorder has matched surface form anxiety The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+anorexia nervosa has health_specialty psychiatry, anorexia has health_specialty psychiatry, anorexia nervosa has matched surface form anorexia The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+anorexia nervosa, anorexia has health_specialty psychology, anorexia nervosa has matched surface form anorexia The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: no
+urinary tract infection has health_specialty urology, urinary tract infection has health_specialty urology, urinary tract infection has matched surface form urinary tract infection The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+earthquake, tremor has health_specialty neurology, earthquake has matched surface form tremor The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: no
+earthquake, tremor has health_specialty psychiatry, earthquake has matched surface form tremor The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: no
+tremor has health_specialty neurology, tremor has health_specialty neurology, tremor has matched surface form tremor The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+tremor has health_specialty psychiatry, tremor has health_specialty psychiatry, tremor has matched surface form tremor The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+asthenia, weakness has health_specialty neurology, asthenia has matched surface form weakness The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: no
+mental disorder has health_specialty clinical psychology, mental disorder has health_specialty clinical psychology, mental disorder has matched surface form mental disorder The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+mental disorder has health_specialty psychiatry, mental disorder has health_specialty psychiatry, mental disorder has matched surface form mental disorder The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+mental disorder has health_specialty psychotherapy, mental disorder has health_specialty psychotherapy, mental disorder has matched surface form mental disorder The path is classified as POSITIVE (PCA Confidence 0.8333 >= threshold 0.5) Answer: yes
+
+Rule Statistics:
+- PCA Confidence: 0.8333
+- Rule Classification: POSITIVE (PCA Confidence 0.8333 >= threshold 0.5)
+- Head Coverage: 0.0175

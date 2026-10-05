@@ -1,0 +1,15 @@
+Rule 6946:
+If entity type POPULATION AND population entity ?d, then patient applicability CONDITION DEPENDENT.
+
+Formal Rule:
+Head: ?a  patientApplicability  CONDITION_DEPENDENT
+Body: ?d  entityType  POPULATION  ?a  hasPopulationEntity  ?d
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.8027
+- Rule Classification: POSITIVE (PCA Confidence 0.8027 >= threshold 0.5)
+- Head Coverage: 0.3138

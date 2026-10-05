@@ -1,0 +1,15 @@
+Rule 2573:
+If entity type TEST OR MEASUREMENT AND occurs in assertion ?a, then applicability exception status NONE STATED.
+
+Formal Rule:
+Head: ?a  applicabilityExceptionStatus  NONE_STATED
+Body: ?c  entityType  TEST_OR_MEASUREMENT  ?c  occursInAssertion  ?a
+
+Real Instances from Knowledge Graph (0 found):
+
+No matching instances found in the Knowledge Graph.
+
+Rule Statistics:
+- PCA Confidence: 0.9491
+- Rule Classification: POSITIVE (PCA Confidence 0.9491 >= threshold 0.5)
+- Head Coverage: 0.1489
