@@ -1,0 +1,93 @@
+{
+  "runtime": "Docker Linux amd64, llama.cpp b11429, CPU Q8_0, 4 threads; no concurrent conversion or image build",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "max_tokens": 128,
+  "questions": [
+    {
+      "question": "What is heart failure?",
+      "elapsed_seconds": 9.6773,
+      "first_text_seconds": 3.5326,
+      "output_tokens": 128,
+      "tokens_per_second": 13.23,
+      "finish_reason": "length",
+      "answer": "Heart failure, also known as congestive cardiac dysfunction or cardiogenic shock in severe cases, occurs when the heart becomes unable to pump enough blood throughout the body. This can lead to a range of symptoms and complications.\n\nThe most common cause of heart failure is high blood pressure (hypertension), which puts extra strain on the heart muscle over time. As the years go by, this stress causes damage to the heart tissue, leading to its inability to function properly.\n\nOther factors that contribute to heart failure include:\n\n1. Coronary artery disease: Narrowing or blockage of coronary arteries reduces blood flow to the heart.\n2. Cardi",
+      "usage": {
+        "completion_tokens": 128,
+        "prompt_tokens": 40,
+        "total_tokens": 168,
+        "prompt_tokens_details": {
+          "cached_tokens": 32
+        }
+      },
+      "server_timings": {
+        "cache_n": 32,
+        "prompt_n": 8,
+        "prompt_ms": 3375.26,
+        "prompt_per_token_ms": 421.9075,
+        "prompt_per_second": 2.3701877781267218,
+        "predicted_n": 128,
+        "predicted_ms": 6147.955,
+        "predicted_per_token_ms": 48.40909448818898,
+        "predicted_per_second": 20.657275468021478
+      }
+    },
+    {
+      "question": "What does a Class I recommendation mean?",
+      "elapsed_seconds": 5.8688,
+      "first_text_seconds": 0.1242,
+      "output_tokens": 128,
+      "tokens_per_second": 21.81,
+      "finish_reason": "length",
+      "answer": "In the context of medical or health-related contexts, \"Class I\" is not typically used as it's commonly associated with vehicle classification systems. However, in some cases, particularly when discussing clinical practice guidelines and patient care recommendations:\n\n- **Clinical Practice Guideline (CPG) Level IIa** refers to class III non-RS classifications.\n  \nHowever, if you are referring to something else based on your query, could be related to an International Classification for Clinical Use Based on Specific Populations has level C-ClassOfRecommendation which can have different labels.\n\nFor instance:\n \n1. No benefit - no change recommended; may need further evaluation",
+      "usage": {
+        "completion_tokens": 128,
+        "prompt_tokens": 43,
+        "total_tokens": 171,
+        "prompt_tokens_details": {
+          "cached_tokens": 42
+        }
+      },
+      "server_timings": {
+        "cache_n": 42,
+        "prompt_n": 1,
+        "prompt_ms": 60.708,
+        "prompt_per_token_ms": 60.708,
+        "prompt_per_second": 16.472293602161166,
+        "predicted_n": 128,
+        "predicted_ms": 5745.113,
+        "predicted_per_token_ms": 45.237110236220474,
+        "predicted_per_second": 22.105744482310445
+      }
+    },
+    {
+      "question": "What is the difference between HFrEF and HFpEF?",
+      "elapsed_seconds": 5.7437,
+      "first_text_seconds": 0.0747,
+      "output_tokens": 128,
+      "tokens_per_second": 22.29,
+      "finish_reason": "length",
+      "answer": "HFrEF (Heart Failure with Reduced Ejection Fraction) and HFpEF (Heart Failure with Preserved Ejection Fraction) are two types of heart failure, which means that they both affect the functioning of the left ventricle. However, there's a key distinction:\n\n**HFref**: This type of heart failure has reduced ejection fraction (<35%), meaning that less than one-third of blood leaves the right side of the heart each beat.\n\n**HFpEF**, on the other hand, also known as isolated systolic dysfunction or non-compensated heart failure, typically does not have an abnormal ejection fraction (>40%).",
+      "usage": {
+        "completion_tokens": 128,
+        "prompt_tokens": 48,
+        "total_tokens": 176,
+        "prompt_tokens_details": {
+          "cached_tokens": 47
+        }
+      },
+      "server_timings": {
+        "cache_n": 47,
+        "prompt_n": 1,
+        "prompt_ms": 42.729,
+        "prompt_per_token_ms": 42.729,
+        "prompt_per_second": 23.40330922792483,
+        "predicted_n": 128,
+        "predicted_ms": 5667.82,
+        "predicted_per_token_ms": 44.62850393700787,
+        "predicted_per_second": 22.407204180796143
+      }
+    }
+  ],
+  "note": "Actual local measurements, not a guarantee for other CPUs. These examples test operation, not clinical accuracy. Runtime and decoding differ from Transformers."
+}

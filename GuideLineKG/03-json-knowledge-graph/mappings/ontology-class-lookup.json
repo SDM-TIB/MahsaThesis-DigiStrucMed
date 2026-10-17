@@ -1,0 +1,340 @@
+{
+  "entity_types": [
+    {
+      "code": "POPULATION",
+      "class_iri": "http://digistrucmed.org/PopulationEntity",
+      "label": "Population Entity"
+    },
+    {
+      "code": "CONDITION_OR_FINDING",
+      "class_iri": "http://digistrucmed.org/ConditionOrFindingEntity",
+      "label": "Condition or Finding Entity"
+    },
+    {
+      "code": "MEDICATION",
+      "class_iri": "http://digistrucmed.org/MedicationEntity",
+      "label": "Medication Entity"
+    },
+    {
+      "code": "PROCEDURE_OR_INTERVENTION",
+      "class_iri": "http://digistrucmed.org/ProcedureOrInterventionEntity",
+      "label": "Procedure or Intervention Entity"
+    },
+    {
+      "code": "TEST_OR_MEASUREMENT",
+      "class_iri": "http://digistrucmed.org/TestOrMeasurementEntity",
+      "label": "Test or Measurement Entity"
+    },
+    {
+      "code": "DEVICE",
+      "class_iri": "http://digistrucmed.org/DeviceEntity",
+      "label": "Device Entity"
+    },
+    {
+      "code": "ANATOMY",
+      "class_iri": "http://digistrucmed.org/AnatomyEntity",
+      "label": "Anatomy Entity"
+    },
+    {
+      "code": "OUTCOME",
+      "class_iri": "http://digistrucmed.org/OutcomeEntity",
+      "label": "Outcome Entity"
+    },
+    {
+      "code": "ADVERSE_EVENT",
+      "class_iri": "http://digistrucmed.org/AdverseEventEntity",
+      "label": "Adverse Event Entity"
+    },
+    {
+      "code": "VALUE",
+      "class_iri": "http://digistrucmed.org/ValueEntity",
+      "label": "Value Entity"
+    },
+    {
+      "code": "TIME",
+      "class_iri": "http://digistrucmed.org/TimeEntity",
+      "label": "Time Entity"
+    },
+    {
+      "code": "DOSE",
+      "class_iri": "http://digistrucmed.org/DoseEntity",
+      "label": "Dose Entity"
+    },
+    {
+      "code": "STRENGTH",
+      "class_iri": "http://digistrucmed.org/StrengthEntity",
+      "label": "Strength Entity"
+    },
+    {
+      "code": "ROUTE",
+      "class_iri": "http://digistrucmed.org/RouteEntity",
+      "label": "Route Entity"
+    },
+    {
+      "code": "FREQUENCY",
+      "class_iri": "http://digistrucmed.org/FrequencyEntity",
+      "label": "Frequency Entity"
+    },
+    {
+      "code": "DURATION",
+      "class_iri": "http://digistrucmed.org/DurationEntity",
+      "label": "Duration Entity"
+    },
+    {
+      "code": "FORM",
+      "class_iri": "http://digistrucmed.org/FormEntity",
+      "label": "Form Entity"
+    },
+    {
+      "code": "ACTOR",
+      "class_iri": "http://digistrucmed.org/ActorEntity",
+      "label": "Actor Entity"
+    },
+    {
+      "code": "RATIONALE",
+      "class_iri": "http://digistrucmed.org/RationaleEntity",
+      "label": "Rationale Entity"
+    },
+    {
+      "code": "ENTITY_OTHER",
+      "class_iri": "http://digistrucmed.org/ExtractedEntity",
+      "label": "Extracted Entity"
+    }
+  ],
+  "grade_dimensions": [
+    {
+      "code": "CLASS_OF_RECOMMENDATION",
+      "class_iri": "http://digistrucmed.org/ClassOfRecommendation",
+      "label": "Class of Recommendation"
+    },
+    {
+      "code": "LEVEL_OF_EVIDENCE",
+      "class_iri": "http://digistrucmed.org/LevelOfEvidence",
+      "label": "Level of Evidence"
+    }
+  ],
+  "entity_domain_types": [
+    {
+      "code": "POPULATION",
+      "class_iri": "http://digistrucmed.org/Population",
+      "label": "Population"
+    },
+    {
+      "code": "CONDITION_OR_FINDING",
+      "class_iri": "http://digistrucmed.org/PatientCondition",
+      "label": "Patient Condition"
+    },
+    {
+      "code": "MEDICATION",
+      "class_iri": "http://digistrucmed.org/Drug",
+      "label": "Drug"
+    },
+    {
+      "code": "PROCEDURE_OR_INTERVENTION",
+      "class_iri": "http://digistrucmed.org/ClinicalProcedure",
+      "label": "Clinical Procedure"
+    },
+    {
+      "code": "DEVICE",
+      "class_iri": "http://digistrucmed.org/Device",
+      "label": "Device"
+    },
+    {
+      "code": "ADVERSE_EVENT",
+      "class_iri": "http://digistrucmed.org/SideEffect",
+      "label": "Side Effect"
+    },
+    {
+      "code": "TIME",
+      "class_iri": "http://digistrucmed.org/TemporalConstraint",
+      "label": "Temporal Constraint"
+    },
+    {
+      "code": "DURATION",
+      "class_iri": "http://digistrucmed.org/TemporalConstraint",
+      "label": "Temporal Constraint"
+    }
+  ],
+  "grade_values": [
+    {
+      "dimension": "CLASS_OF_RECOMMENDATION",
+      "value": "I",
+      "iri": "http://digistrucmed.org/ClassOfRecommendation_I",
+      "class_iri": "http://digistrucmed.org/ClassOfRecommendation"
+    },
+    {
+      "dimension": "CLASS_OF_RECOMMENDATION",
+      "value": "IIa",
+      "iri": "http://digistrucmed.org/ClassOfRecommendation_IIa",
+      "class_iri": "http://digistrucmed.org/ClassOfRecommendation"
+    },
+    {
+      "dimension": "CLASS_OF_RECOMMENDATION",
+      "value": "IIb",
+      "iri": "http://digistrucmed.org/ClassOfRecommendation_IIb",
+      "class_iri": "http://digistrucmed.org/ClassOfRecommendation"
+    },
+    {
+      "dimension": "CLASS_OF_RECOMMENDATION",
+      "value": "III",
+      "iri": "http://digistrucmed.org/ClassOfRecommendation_III",
+      "class_iri": "http://digistrucmed.org/ClassOfRecommendation"
+    },
+    {
+      "dimension": "CLASS_OF_RECOMMENDATION",
+      "value": "1",
+      "iri": "http://digistrucmed.org/ClassOfRecommendation_1",
+      "class_iri": "http://digistrucmed.org/ClassOfRecommendation"
+    },
+    {
+      "dimension": "CLASS_OF_RECOMMENDATION",
+      "value": "2a",
+      "iri": "http://digistrucmed.org/ClassOfRecommendation_2a",
+      "class_iri": "http://digistrucmed.org/ClassOfRecommendation"
+    },
+    {
+      "dimension": "CLASS_OF_RECOMMENDATION",
+      "value": "2b",
+      "iri": "http://digistrucmed.org/ClassOfRecommendation_2b",
+      "class_iri": "http://digistrucmed.org/ClassOfRecommendation"
+    },
+    {
+      "dimension": "LEVEL_OF_EVIDENCE",
+      "value": "A",
+      "iri": "http://digistrucmed.org/LevelOfEvidence_A",
+      "class_iri": "http://digistrucmed.org/LevelOfEvidence"
+    },
+    {
+      "dimension": "LEVEL_OF_EVIDENCE",
+      "value": "B",
+      "iri": "http://digistrucmed.org/LevelOfEvidence_B",
+      "class_iri": "http://digistrucmed.org/LevelOfEvidence"
+    },
+    {
+      "dimension": "LEVEL_OF_EVIDENCE",
+      "value": "B-NR",
+      "iri": "http://digistrucmed.org/LevelOfEvidence_B-NR",
+      "class_iri": "http://digistrucmed.org/LevelOfEvidence"
+    },
+    {
+      "dimension": "LEVEL_OF_EVIDENCE",
+      "value": "C",
+      "iri": "http://digistrucmed.org/LevelOfEvidence_C",
+      "class_iri": "http://digistrucmed.org/LevelOfEvidence"
+    },
+    {
+      "dimension": "LEVEL_OF_EVIDENCE",
+      "value": "C-EO",
+      "iri": "http://digistrucmed.org/LevelOfEvidence_C-EO",
+      "class_iri": "http://digistrucmed.org/LevelOfEvidence"
+    },
+    {
+      "dimension": "LEVEL_OF_EVIDENCE",
+      "value": "C-LD",
+      "iri": "http://digistrucmed.org/LevelOfEvidence_C-LD",
+      "class_iri": "http://digistrucmed.org/LevelOfEvidence"
+    }
+  ],
+  "entity_concept_types": [
+    {
+      "code": "POPULATION",
+      "class_iri": "http://digistrucmed.org/Population",
+      "label": "Population"
+    },
+    {
+      "code": "CONDITION_OR_FINDING",
+      "class_iri": "http://digistrucmed.org/PatientCondition",
+      "label": "PatientCondition"
+    },
+    {
+      "code": "MEDICATION",
+      "class_iri": "http://digistrucmed.org/Drug",
+      "label": "Drug"
+    },
+    {
+      "code": "PROCEDURE_OR_INTERVENTION",
+      "class_iri": "http://digistrucmed.org/ClinicalProcedure",
+      "label": "ClinicalProcedure"
+    },
+    {
+      "code": "TEST_OR_MEASUREMENT",
+      "class_iri": "http://digistrucmed.org/TestOrMeasurement",
+      "label": "TestOrMeasurement"
+    },
+    {
+      "code": "DEVICE",
+      "class_iri": "http://digistrucmed.org/Device",
+      "label": "Device"
+    },
+    {
+      "code": "ANATOMY",
+      "class_iri": "http://digistrucmed.org/Anatomy",
+      "label": "Anatomy"
+    },
+    {
+      "code": "OUTCOME",
+      "class_iri": "http://digistrucmed.org/Outcome",
+      "label": "Outcome"
+    },
+    {
+      "code": "ADVERSE_EVENT",
+      "class_iri": "http://digistrucmed.org/SideEffect",
+      "label": "SideEffect"
+    },
+    {
+      "code": "VALUE",
+      "class_iri": "http://digistrucmed.org/ClinicalValue",
+      "label": "ClinicalValue"
+    },
+    {
+      "code": "TIME",
+      "class_iri": "http://digistrucmed.org/TemporalConstraint",
+      "label": "TemporalConstraint"
+    },
+    {
+      "code": "DOSE",
+      "class_iri": "http://digistrucmed.org/Dose",
+      "label": "Dose"
+    },
+    {
+      "code": "STRENGTH",
+      "class_iri": "http://digistrucmed.org/Strength",
+      "label": "Strength"
+    },
+    {
+      "code": "ROUTE",
+      "class_iri": "http://digistrucmed.org/AdministrationRoute",
+      "label": "AdministrationRoute"
+    },
+    {
+      "code": "FREQUENCY",
+      "class_iri": "http://digistrucmed.org/Frequency",
+      "label": "Frequency"
+    },
+    {
+      "code": "DURATION",
+      "class_iri": "http://digistrucmed.org/TemporalConstraint",
+      "label": "TemporalConstraint"
+    },
+    {
+      "code": "FORM",
+      "class_iri": "http://digistrucmed.org/DosageForm",
+      "label": "DosageForm"
+    },
+    {
+      "code": "ACTOR",
+      "class_iri": "http://digistrucmed.org/Actor",
+      "label": "Actor"
+    },
+    {
+      "code": "RATIONALE",
+      "class_iri": "http://digistrucmed.org/Rationale",
+      "label": "Rationale"
+    },
+    {
+      "code": "ENTITY_OTHER",
+      "class_iri": "http://digistrucmed.org/ClinicalConcept",
+      "label": "ClinicalConcept"
+    }
+  ]
+}

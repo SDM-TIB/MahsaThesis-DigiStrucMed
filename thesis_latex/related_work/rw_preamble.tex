@@ -1,0 +1,20 @@
+% =====================================================================
+%  rw_preamble.tex  --  extra box used in Chapter 3 (Related Work)
+%  Put   \input{related_work/rw_preamble}   in the PREAMBLE,
+%  directly AFTER  \input{background/bg_preamble}.
+% =====================================================================
+
+% "Research gap" box: light grey background, coloured left bar.
+\newtcolorbox{rwgap}[1][Research Gap]{%
+  enhanced, breakable,
+  colback=bgGreyLight, colframe=bgBlue,
+  boxrule=0pt, leftrule=1.6mm, sharp corners,
+  left=3mm, right=3mm, top=2mm, bottom=2mm,
+  fonttitle=\bfseries, coltitle=bgBlue,
+  attach title to upper={\par\smallskip},
+  title={#1}}
+
+% symbols for the comparison table
+\newcommand{\rwyes}{\checkmark}
+\newcommand{\rwpart}{(\checkmark)}
+\newcommand{\rwno}{--}

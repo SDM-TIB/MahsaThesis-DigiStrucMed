@@ -1,0 +1,71 @@
+% =====================================================================
+%  bg_preamble.tex  --  packages and boxes used by the Background additions
+%  Put   \input{background/bg_preamble}   in your main.tex PREAMBLE
+%  -- best as the LAST line before \begin{document}.
+%
+%  If your template ALREADY defines a definition box and an example box
+%  (it does: "Definition 1: Directed Edge-Labelled Graph" and "Example 1"),
+%  you can delete the two \newtcolorbox blocks below and simply rename
+%      bgdefinition  ->  <your definition environment>
+%      bgexample     ->  <your example environment>
+%  in the bg_*.tex files (Find & Replace in Overleaf). Then numbering will
+%  continue from your existing Definition 1 / Example 1 automatically.
+% =====================================================================
+
+% --- packages (most are probably already loaded by your template; loading
+%     them twice is harmless) ---------------------------------------------
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\tcbuselibrary{most}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,backgrounds,calc,shapes.geometric,shapes.misc}
+
+% --- colours used in the figures (print-friendly, muted) -------------
+\definecolor{bgBlue}{HTML}{2F5D8C}
+\definecolor{bgBlueLight}{HTML}{DCE7F3}
+\definecolor{bgGreen}{HTML}{3D7A4E}
+\definecolor{bgGreenLight}{HTML}{DFF0E3}
+\definecolor{bgOrange}{HTML}{B5651D}
+\definecolor{bgOrangeLight}{HTML}{FBE8D6}
+\definecolor{bgPurple}{HTML}{6A4C93}
+\definecolor{bgPurpleLight}{HTML}{ECE4F5}
+\definecolor{bgGrey}{HTML}{5A5A5A}
+\definecolor{bgGreyLight}{HTML}{F2F2F2}
+
+% --- Definition box (dark header, like "Definition 1" in your PDF) ----
+\newtcolorbox[auto counter]{bgdefinition}[1]{%
+  enhanced, breakable,
+  colback=white, colframe=black!85,
+  coltitle=white, fonttitle=\bfseries,
+  arc=1.2mm, boxrule=0.6pt,
+  left=2mm, right=2mm, top=1.5mm, bottom=1.5mm,
+  title={Definition~\thetcbcounter:~#1}}
+
+% --- Example box (thin grey frame, bold "Example N" first line) ------
+\newtcolorbox[auto counter]{bgexample}[1][]{%
+  enhanced, breakable,
+  colback=white, colframe=black!45,
+  sharp corners, boxrule=0.5pt,
+  left=3mm, right=3mm, top=2mm, bottom=2mm,
+  before upper={\textbf{Example~\thetcbcounter}%
+                \if\relax\detokenize{#1}\relax\else\textbf{:~#1}\fi\par\smallskip}}
+
+% --- Continue numbering after the boxes you already have -------------
+% Your Background chapter already contains "Definition 1" and "Example 1",
+% so the new boxes start at 2. If you add more of your own boxes before
+% these files, raise the numbers below (or delete the three lines).
+\makeatletter
+\setcounter{tcb@cnt@bgdefinition}{1}\setcounter{tcb@cnt@bgexample}{1}
+\makeatother
+
+% --- code style for SPARQL / Turtle / JSON inside example boxes ------
+\lstdefinestyle{bgcode}{%
+  basicstyle=\ttfamily\footnotesize,
+  columns=fullflexible, keepspaces=true,
+  breaklines=true, breakatwhitespace=false,
+  showstringspaces=false, frame=none,
+  aboveskip=4pt, belowskip=2pt,
+  literate={→}{{$\rightarrow$}}1 {≥}{{$\geq$}}1 {ä}{{\"a}}1 {ö}{{\"o}}1 {ü}{{\"u}}1}

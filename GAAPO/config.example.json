@@ -1,0 +1,19 @@
+{
+  "gaapo": {"population_size": 20, "generations": 10, "parents_per_generation": 5, "random_seed": 42},
+  "generation_methods": {
+    "opro": {"enabled": true, "candidates_per_generation": 4, "dropout": 0.2},
+    "apo": {"enabled": true, "candidates_per_generation": 4, "batch_size": 8, "error_threshold": 0.8},
+    "mutation": {"enabled": true, "candidates_per_generation": 4},
+    "crossover": {"enabled": true, "candidates_per_generation": 4},
+    "fewshot": {"enabled": true, "candidates_per_generation": 4, "min_examples": 1, "max_examples": 3}
+  },
+  "evaluation": {"method": "complete"},
+  "datasets": {"train": "GAAPO/data/train.json", "validation": "GAAPO/data/validation.json", "test": "GAAPO/data/test.json"},
+  "target_model": {
+    "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+    "adapter": "BRINK/model/guidelineKG/finetuned_LLaMA_3.2_1B_with_rules_CoT2",
+    "dtype": "float32", "device": "cpu", "max_new_tokens": 1024
+  },
+  "optimizer_llm": {"model": "REPLACE_WITH_OPTIMIZER_MODEL", "api_key_env": "OPENAI_API_KEY"},
+  "storyboard_evaluation": {"weights": {"format_validity": 1.0}, "rubrics": {}}
+}

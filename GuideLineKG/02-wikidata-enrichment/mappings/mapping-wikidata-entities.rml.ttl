@@ -1,0 +1,140 @@
+@prefix rr:   <http://www.w3.org/ns/r2rml#> .
+@prefix rml:  <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:   <http://semweb.mmlab.be/ns/ql#> .
+@prefix ds:   <http://digistrucmed.org/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Maps wikidata_search/wikidata_entities.json (src/expand_wikidata_entities.py,
+# step 3b of the Wikidata-sourcing pipeline - see ../README.md) into RDF.
+# One row = one label-keyed concept, e.g.:
+#   {"iri": "http://digistrucmed.org/entity/antiarrhythmic%20agent",
+#    "label": "antiarrhythmic agent", "wikidata_ids": ["Q241549"],
+#    "also_known_as": ["antiarrhythmic drug", ...], "hop": 2, "stub": true,
+#    "discovered_via": ["reference"], "instance_of": [...], ...}
+#
+# The subject is built from the raw "label" field via rr:template, NOT from
+# the JSON's own precomputed "iri" string - same convention
+# mapping-json.rml.ttl uses for entity/{surface_form} (rr:template
+# auto-escapes the substituted text into a valid IRI). This mints the exact
+# same http://digistrucmed.org/entity/{text} node a same-text extracted
+# entity mention would - the actual mechanism that connects this graph to
+# the rest of the knowledge graph, per explicit request.
+#
+# Relationship fields (instance_of, subclass_of, main_subject,
+# health_specialty, symptoms, drug_or_therapy) are raw LABEL TEXT in the
+# JSON, not pre-built IRIs (see expand_wikidata_entities.py's header
+# comment and its resolve_label()/merge_into_groups() - by explicit
+# design, to avoid a second, independently-escaped IRI-building path).
+# So these use rr:template "http://digistrucmed.org/entity/{field}",
+# same as the subject map above, letting the RDFizer auto-escape the
+# label text into a valid IRI - NOT rml:reference + rr:termType rr:IRI,
+# which would wrap the raw label text in <...> unescaped and unresolved
+# (e.g. <medication>, not a valid absolute IRI - breaks N-Triples
+# parsing).
+#
+# ds:alias (also_known_as) uses the same rr:template-as-IRI shape, NOT a
+# plain rml:reference literal - each alias is minted as its own
+# entity/{text} node, so a guideline that later spells this concept using
+# one of these alternate names (e.g. "dyclocaine" rather than "dyclonine")
+# lands on the exact same node this alias edge already points at, the same
+# same-text-merges mechanism the subject map above relies on. A literal
+# alias string is inert - invisible to everything else in the graph, and
+# the class of duplicate/disconnected-entity problem this ontology exists
+# to avoid. Ontology: ds:alias is rdfs:label "alias"@en, declared
+# owl:ObjectProperty (03-json-knowledge-graph/ontology/ds-ontology-tables.ttl).
+#
+# ds:matchedSurfaceForm (matched_surface_forms) is the same IRI shape again,
+# for a different gap: search_wikidata_candidates.py (step 3a) often
+# matches via abbreviation-expansion/connector-splitting, so the ORIGINAL
+# text it searched for can differ a lot from the matched item's own label -
+# e.g. surface_form "all individuals with HF" matched wikidata_label "heart
+# failure" (see wikidata_search/wikidata_matches.json). Before this field
+# existed, expand_wikidata_entities.py's main() reduced every matched row
+# straight to a bare QID set, so that original search text was silently
+# dropped - the resulting graph only ever minted entity/heart%20failure,
+# never anything for "all individuals with HF", and nothing connected them
+# even though step 3a already proved they're the same concept. This edge
+# is that missing bridge back to whatever a guideline actually said.
+# matched_surface_forms values are pre-folded (casefold + collapsed
+# whitespace, expand_wikidata_entities.py's _normalized_key) before this
+# template runs - NOT the original casing - so the resulting IRI
+# (entity/all%20individuals%20with%20hf, lowercase) is the exact same one
+# 03-json-knowledge-graph/src/normalize_surface_forms.py's own fold
+# converges a matching extracted mention to. Getting this wrong doesn't
+# error, it silently mints a second, disconnected, empty node next to the
+# real one - reproduced live before this note was added.
+# All arrays here are top-level fields of the current "$[*]" row, so - per
+# this RDFizer's confirmed behavior (see mapping-json.rml.ttl's header
+# note) - every rr:template field reference below uses NO "[*]" suffix
+# (that suffix is only for rml:reference / nested arrays; a top-level
+# array fans out correctly inside rr:template without it, e.g.
+# ".../{subclass_of}", one IRI per array element).
+#
+# "stub" (a raw JSON boolean) is deliberately NOT mapped: this RDFizer
+# crashes its JSON reference resolver on raw booleans (same documented
+# issue mapping-json.rml.ttl works around for quality.requires_human_review
+# etc.) - ds:discoveryHop (0/1/2) carries the same information numerically.
+#################################################################
+
+<#WikidataEntityMap> a rr:TriplesMap ;
+    rml:logicalSource [
+        rml:source "wikidata_search/wikidata_entities.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$[*]"
+    ] ;
+    rr:subjectMap [
+        rr:template "http://digistrucmed.org/entity/{label}" ;
+        rr:class ds:WikidataEntity
+    ] ;
+    rr:predicateObjectMap [ rr:predicate rdf:type ; rr:objectMap [ rr:constant ds:SurfaceForm ] ] ;
+    rr:predicateObjectMap [ rr:predicate rdfs:label ; rr:objectMap [ rml:reference "label" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:name ; rr:objectMap [ rml:reference "label" ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:hasdescription ; rr:objectMap [ rml:reference "description" ] ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:alias ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity/{also_known_as}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:matchedSurfaceForm ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity/{matched_surface_forms}" ; rr:termType rr:IRI ]
+    ] ;
+    # wikidataId/umls_cui/drugbank_id stay plain rml:reference LITERALS,
+    # unlike alias/matchedSurfaceForm above - a QID/CUI/DrugBank ID is an
+    # external identifier, never text a guideline would actually contain,
+    # so there is no same-text-merge benefit to gain from minting it as an
+    # entity/{id} IRI (and doing so under this row's own "wikidata_ids[*]"
+    # array field needs the "[*]" suffix rml:reference requires for nested/
+    # array fields - rr:template does not use "[*]" here, a different rule;
+    # mixing the two up silently drops the whole predicateObjectMap, since
+    # this RDFizer skips a predicateObjectMap it can't parse rather than
+    # erroring the whole mapping).
+    rr:predicateObjectMap [ rr:predicate ds:wikidataId ; rr:objectMap [ rr:template "http://digistrucmed.org/entity/{wikidata_ids[*]}" ; rr:termType rr:IRI ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:umls_cui ; rr:objectMap [ rr:template "http://digistrucmed.org/entity/{umls_cuis[*]}" ; rr:termType rr:IRI ] ] ;
+    rr:predicateObjectMap [ rr:predicate ds:drugbank_id ; rr:objectMap [ rr:template "http://digistrucmed.org/entity/{drugbank_ids[*]}" ; rr:termType rr:IRI ] ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:instance_of ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity/{instance_of}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:subclass_of ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity/{subclass_of}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:main_subject ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity/{main_subject}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:health_specialty ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity/{health_specialty}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:symptoms ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity/{symptoms}" ; rr:termType rr:IRI ]
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate ds:drug_or_therapy_used_for_treatment ;
+        rr:objectMap [ rr:template "http://digistrucmed.org/entity/{drug_or_therapy}" ; rr:termType rr:IRI ]
+    ] .

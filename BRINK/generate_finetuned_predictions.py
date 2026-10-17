@@ -8,9 +8,10 @@ import csv
 import json
 from pathlib import Path
 
-import torch
-from peft import PeftModel
-from transformers import AutoModelForCausalLM, AutoTokenizer
+try:
+    from .model_inference import load_fixed_model, generate_fixed
+except ImportError:  # Direct script execution from BRINK/.
+    from model_inference import load_fixed_model, generate_fixed
 
 
 DEFAULT_BASE_MODEL = "meta-llama/Llama-3.2-1B-Instruct"
@@ -141,24 +142,11 @@ def main() -> None:
         print(f"Nothing to generate; all {len(predictions)} IDs are complete.")
         return
 
-    model_dtype = {
-        "float16": torch.float16,
-        "bfloat16": torch.bfloat16,
-        "float32": torch.float32,
-    }[args.dtype]
     print(
         f"Loading model once for {len(pending)} pending question(s) "
         f"using {args.dtype}..."
     )
-    tokenizer = AutoTokenizer.from_pretrained(args.base_model)
-    base_model = AutoModelForCausalLM.from_pretrained(
-        args.base_model,
-        dtype=model_dtype,
-        device_map={"": "cpu"},
-        low_cpu_mem_usage=True,
-    )
-    model = PeftModel.from_pretrained(base_model, args.adapter)
-    model.eval()
+    tokenizer, model = load_fixed_model(args.base_model, args.adapter, args.dtype)
 
     for index, item in enumerate(pending, start=1):
         question_id = str(item["id"])
@@ -168,25 +156,7 @@ def main() -> None:
                 "content": build_user_prompt(item["question"], contexts[question_id]),
             }
         ]
-        prompt = tokenizer.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True
-        )
-        inputs = tokenizer(prompt, return_tensors="pt").to("cpu")
-
-        with torch.inference_mode():
-            output = model.generate(
-                **inputs,
-                max_new_tokens=args.max_new_tokens,
-                do_sample=False,
-                pad_token_id=tokenizer.eos_token_id,
-            )
-
-        generated_tokens = output[0, inputs["input_ids"].shape[1] :]
-        raw_output = tokenizer.decode(
-            generated_tokens,
-            skip_special_tokens=True,
-            clean_up_tokenization_spaces=False,
-        ).strip()
+        raw_output = generate_fixed(tokenizer, model, messages, args.max_new_tokens)
         predictions.append({"id": question_id, "raw_output": raw_output})
         save_predictions(args.output, predictions)
         print(

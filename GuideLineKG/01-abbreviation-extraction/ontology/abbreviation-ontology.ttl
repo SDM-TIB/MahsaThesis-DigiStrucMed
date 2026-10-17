@@ -1,0 +1,50 @@
+@prefix ds:   <http://digistrucmed.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# ds:Abbreviation extends ds:SurfaceForm from
+# ../03-json-knowledge-graph/ontology/ds-ontology-tables.ttl. Every IRI minted by
+# mapping-abbreviations.rml.ttl (abbreviation, expansion, plural forms)
+# lives under http://digistrucmed.org/entity/{text} - the exact same
+# label-keyed namespace ../03-json-knowledge-graph/mappings/mapping-json.rml.ttl's
+# SurfaceFormMap uses for entity/{surface_form}, and
+# mapping-wikidata-entities.rml.ttl uses for its subject IRIs. That shared
+# namespace IS the integration mechanism: no bridging/sameAs step is
+# needed for an abbreviation, an extracted entity mention, and a
+# Wikidata-sourced concept with identical surface text to land on one
+# node once all three pipelines' .nt outputs are loaded together (e.g. in
+# rdflib) - same collapsing behavior the root README.md documents between
+# the JSON and Wikidata pipelines (entity/beta%20blocker).
+#################################################################
+
+ds:hasExpansion a owl:ObjectProperty ;
+    rdfs:domain ds:Abbreviation ;
+    rdfs:range ds:SurfaceForm ;
+    rdfs:label "has expansion"@en ;
+    rdfs:comment "Links an abbreviation to its long-form expansion, itself an IRI (http://digistrucmed.org/entity/{expansion}), not a literal."@en .
+
+ds:hasPluralForm a owl:ObjectProperty ;
+    rdfs:domain ds:Abbreviation ;
+    rdfs:range ds:Abbreviation ;
+    rdfs:label "has plural form"@en ;
+    rdfs:comment "Links the singular/base abbreviation to a plural spelling seen in the source text (e.g. VA -> VAs), matching extract_abbreviations.py's plural_forms_seen."@en .
+
+ds:pluralFormOf a owl:ObjectProperty ;
+    owl:inverseOf ds:hasPluralForm ;
+    rdfs:domain ds:Abbreviation ;
+    rdfs:range ds:Abbreviation ;
+    rdfs:label "plural form of"@en .
+
+ds:abbreviationMethod a owl:DatatypeProperty ;
+    rdfs:domain ds:Abbreviation ;
+    rdfs:range xsd:string ;
+    rdfs:label "abbreviation extraction method"@en ;
+    rdfs:comment "table, footnote, or inline - which extract_abbreviations.py detector found this definition."@en .
+
+ds:sourceDocument a owl:DatatypeProperty ;
+    rdfs:domain ds:Abbreviation ;
+    rdfs:range xsd:string ;
+    rdfs:label "source document"@en ;
+    rdfs:comment "Document folder name(s) (merge_abbreviations.py's source_documents) this definition was found in. A lightweight string, not yet resolved to ds:Guideline - that would need the document_sha256 this pipeline doesn't have."@en .

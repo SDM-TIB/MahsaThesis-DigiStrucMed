@@ -25,6 +25,10 @@ import pandas as pd
 import torch
 from datasets import Dataset
 from torch.utils.data import WeightedRandomSampler
+from transformers import AutoTokenizer
+from dataset_io import audit_dataset_csv
+from finetune_data import (audit_frame, assert_disjoint, stratified_group_split,
+                           tokenize_responses, audit_token_budgets, write_audit)
 
 from utils import (
     load_config,
@@ -94,7 +98,8 @@ def run_finetune_for_cot_version(cot_version, cfg, train_path):
     grad_accum  = tcfg.get("gradient_accumulation_steps", 8)
     rows_needed = num_steps * batch_size * grad_accum   # effective steps * samples/step
     # Add 20% buffer so the sampler has room to shuffle without running dry
-    rows_to_load = min(len(train_df), int(rows_needed * 1.2))
+    rows_to_load = (len(train_df) if tcfg.get("load_all_data", False) or num_steps <= 0
+                    else min(len(train_df), int(rows_needed * 1.2)))
     n_total = len(train_df)
     if rows_to_load < n_total:
         train_df = train_df.sample(n=rows_to_load, random_state=cfg.get("seed", 42)) \
@@ -110,6 +115,41 @@ def run_finetune_for_cot_version(cot_version, cfg, train_path):
     test_df = pd.read_csv(shared_test_path)
     print(f"Train samples: {len(train_df)}, Test samples: {len(test_df)} (shared)")
 
+    pregen = cfg.get("pregenerated_data", {})
+    eval_clean_path = (pregen.get("test_eval_clean_csv")
+                       or os.path.join(output_dir, "test_eval_clean.csv"))
+    eval_clean_df = pd.read_csv(eval_clean_path)
+    validation_df = None
+    audit = {}
+    if tcfg.get("strict_data_checks", False):
+        for path in (train_path, shared_test_path, eval_clean_path):
+            audit_dataset_csv(path)
+        audit["source_train"] = audit_frame(train_df, "Source training", require_targets=True)
+        audit["matched_test"] = audit_frame(test_df, "Matched test", require_targets=True)
+        audit["clean_test"] = audit_frame(eval_clean_df, "Clean test")
+        assert_disjoint(training=train_df, test=test_df)
+        assert_disjoint(training=train_df, clean_test=eval_clean_df)
+        if list(test_df["Label"]) != list(eval_clean_df["Label"]) or list(test_df["input_text"]) != list(eval_clean_df["input_text"]):
+            raise ValueError("Matched and clean test sets must contain identical questions and labels")
+    if tcfg.get("validation_fraction", 0):
+        train_df, validation_df = stratified_group_split(
+            train_df, tcfg["validation_fraction"], seed=cfg.get("seed", 42))
+        assert_disjoint(training=train_df, validation=validation_df, test=test_df)
+        audit["train"] = audit_frame(train_df, "Training", require_targets=True)
+        audit["validation"] = audit_frame(validation_df, "Validation", require_targets=True)
+        audit["validation_fraction"] = tcfg["validation_fraction"]
+        audit["question_overlap"] = 0
+
+    if tcfg.get("fail_on_truncation", False):
+        if validation_df is None:
+            raise ValueError("Strict token audit requires a validation split")
+        audit_tokenizer = AutoTokenizer.from_pretrained(cfg["model_name"], use_fast=True)
+        audit["token_budgets"] = audit_token_budgets(
+            audit_tokenizer, cfg, train_df, validation_df, test_df, eval_clean_df)
+        write_audit(os.path.join(output_dir, f"data_audit_{cot_version}.json"), audit)
+        print("  All examples and reference answers fit the token budgets.")
+        del audit_tokenizer
+
     # Print distribution info
     if "classification" in train_df.columns:
         print(f"  Classification: {dict(train_df['classification'].value_counts())}")
@@ -119,7 +159,7 @@ def run_finetune_for_cot_version(cot_version, cfg, train_path):
             print(f"  Validity: {dict(vc)}")
 
     # Build sampler BEFORE dropping the weight column
-    sampler = _build_weighted_sampler(train_df)
+    sampler = None if tcfg.get("load_all_data", False) else _build_weighted_sampler(train_df)
 
     # ------------------------------------------------------------------
     # Load model (fresh for each CoT version)
@@ -133,13 +173,17 @@ def run_finetune_for_cot_version(cot_version, cfg, train_path):
     # ------------------------------------------------------------------
     # Prepare dataset — drop weight column, it is not a model input
     # ------------------------------------------------------------------
-    train_df_hf = train_df.drop(columns=["weight"], errors="ignore")
-    train_dataset = Dataset.from_pandas(train_df_hf)
     max_length = tcfg.get("max_length", 512)
-    train_dataset = train_dataset.map(
-        lambda batch: preprocess_batch(batch, tokenizer, max_length=max_length),
-        batched=True,
-    )
+    def make_dataset(frame):
+        dataset = Dataset.from_pandas(frame.drop(columns=["weight"], errors="ignore"),
+                                      preserve_index=False)
+        return dataset.map(
+            lambda batch: (tokenize_responses(batch, tokenizer, max_length)
+                           if tcfg.get("response_only_loss", False)
+                           else preprocess_batch(batch, tokenizer, max_length=max_length)),
+            batched=True, remove_columns=dataset.column_names)
+    train_dataset = make_dataset(train_df)
+    validation_dataset = make_dataset(validation_df) if validation_df is not None else None
 
     # ------------------------------------------------------------------
     # Fine-tune
@@ -149,7 +193,7 @@ def run_finetune_for_cot_version(cot_version, cfg, train_path):
     )
     model = fine_tune_model(
         model, tokenizer, train_dataset, model_output_dir, cfg,
-        sampler=sampler,
+        sampler=sampler, validation_dataset=validation_dataset,
     )
 
     # ------------------------------------------------------------------
@@ -177,6 +221,13 @@ def run_finetune_for_cot_version(cot_version, cfg, train_path):
         max_samples=eval_cfg.get("max_samples", 2000),
         max_new_tokens=eval_cfg.get("max_new_tokens", 150),
         max_input_tokens=eval_cfg.get("max_input_tokens", 2048),
+        sampling=eval_cfg.get("sampling", "head"),
+        seed=cfg.get("seed", 42),
+        require_explicit_answer=eval_cfg.get("require_explicit_answer", False),
+        fail_on_truncation=eval_cfg.get("fail_on_truncation", False),
+        generation_batch_size=eval_cfg.get("generation_batch_size", 1),
+        log_path=(os.path.join(output_dir, f"eval_{cot_version}_format_matched.csv")
+                  if eval_cfg.get("log_generations", False) else None),
     )
     print_results(f"Format-matched results ({cot_version}):", results_matched)
 
@@ -186,6 +237,13 @@ def run_finetune_for_cot_version(cot_version, cfg, train_path):
         max_samples=eval_cfg.get("max_samples", 2000),
         max_new_tokens=eval_cfg.get("max_new_tokens", 150),
         max_input_tokens=eval_cfg.get("max_input_tokens", 2048),
+        sampling=eval_cfg.get("sampling", "head"),
+        seed=cfg.get("seed", 42),
+        require_explicit_answer=eval_cfg.get("require_explicit_answer", False),
+        fail_on_truncation=eval_cfg.get("fail_on_truncation", False),
+        generation_batch_size=eval_cfg.get("generation_batch_size", 1),
+        log_path=(os.path.join(output_dir, f"eval_{cot_version}_clean.csv")
+                  if eval_cfg.get("log_generations", False) else None),
     )
     print_results(f"Clean eval results ({cot_version}):", results_clean)
 
@@ -208,6 +266,8 @@ def run_finetune_for_cot_version(cot_version, cfg, train_path):
         "test_data_format_matched": shared_test_path,
         "test_data_clean_eval": eval_clean_path,
         "train_samples": len(train_df),
+        "validation_samples": len(validation_df) if validation_df is not None else 0,
+        "data_audit": audit,
         "test_samples": len(test_df),
         "metrics_format_matched": results_matched,
         "metrics_clean_eval": results_clean,

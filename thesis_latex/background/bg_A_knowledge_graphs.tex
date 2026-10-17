@@ -1,0 +1,146 @@
+% =====================================================================
+%  bg_A_knowledge_graphs.tex
+%  WHERE:  inside Section 2.2 "Knowledge Graphs",
+%          directly AFTER your "Example 1" box (KG_1 = (N_1, E_1, L_1))
+%          and BEFORE  \section{Language Models}.
+%  ADDS:   2.2.1 SPARQL, 2.2.2 Open-World Assumption, 2.2.3 KG Enrichment
+% =====================================================================
+
+\subsection{Querying Knowledge Graphs with SPARQL}
+\label{sec:bg-sparql}
+
+Once knowledge is stored as RDF triples, a dedicated language is needed to
+retrieve it. The \emph{SPARQL Protocol and RDF Query Language} (SPARQL) is
+the W3C standard for querying RDF data~\cite{harris2013sparql}. A SPARQL query
+describes a small graph pattern, that is, a set of triples in which some
+positions are replaced by variables (written with a leading \texttt{?}). The
+query engine then searches the Knowledge Graph for all sub-graphs that match
+this pattern and returns the values bound to the variables. In addition to
+simple look-ups, SPARQL supports filtering (\texttt{FILTER}), optional
+patterns (\texttt{OPTIONAL}), aggregation (\texttt{COUNT}, \texttt{GROUP BY})
+and federated queries over several endpoints (\texttt{SERVICE}). SPARQL is
+therefore the natural interface between a Knowledge Graph and the
+applications built on top of it, including the data preparation steps for
+language models described later in this chapter.
+
+\begin{bgdefinition}{Basic Graph Pattern}
+Let $V$ be an infinite set of variables disjoint from $Con$. A \emph{triple
+pattern} is a tuple $t \in (Con \cup V) \times (Con \cup V) \times (Con \cup V)$,
+and a \emph{basic graph pattern} $P$ is a finite set of triple patterns.
+A \emph{solution} of $P$ over a Knowledge Graph $KG=(N,E,L)$ is a mapping
+$\mu : V \rightarrow Con$ such that replacing every variable $v$ in $P$ by
+$\mu(v)$ yields a set of triples that is contained in $E$, i.e.\
+$\mu(P) \subseteq E$~\cite{harris2013sparql,hogan2021knowledge}.
+\end{bgdefinition}
+
+\begin{bgexample}[SPARQL over the questionnaire Knowledge Graph]
+In the DigiStrucMed questionnaire Knowledge Graph, every patient answer is
+linked to the question it answers and to an answer category (e.g.\
+\emph{very\_positive}, \emph{neutral}, \emph{negative}). The following query
+counts, for every question of the category \emph{Quality}, how many
+participants selected each answer category.
+\begin{lstlisting}[style=bgcode]
+PREFIX ds: <http://digistrucmed.org/questionnaire#>
+SELECT ?questionDesc ?category (COUNT(DISTINCT ?resp) AS ?numPeople)
+WHERE {
+  ?question a ds:Question ;
+            ds:hasQuestionCategory ds:Quality ;
+            ds:QuestionDescription ?questionDesc .
+  ?resp     a ds:Answered ;
+            ds:hasAnswer ?answer .
+  ?answer   ds:isAnswerTo ?question ;
+            ds:hasAnswerCategory ?category .
+}
+GROUP BY ?questionDesc ?category
+ORDER BY ?questionDesc ?category
+\end{lstlisting}
+The \texttt{WHERE} clause is a basic graph pattern with seven triple
+patterns; each result row is one solution $\mu$, aggregated by
+\texttt{GROUP BY}.
+\end{bgexample}
+
+\subsection{Open-World Assumption and Knowledge Graph Incompleteness}
+\label{sec:bg-owa}
+
+Knowledge Graphs are almost never complete: guidelines are updated, sources
+disagree, and automatic extraction misses facts. How a system interprets a
+\emph{missing} triple is therefore an important design decision. Relational
+databases usually follow the \emph{Closed-World Assumption} (CWA), under
+which every fact that is not stored is considered false. Semantic Web
+standards such as RDF and OWL instead follow the \emph{Open-World Assumption}
+(OWA)~\cite{hogan2021knowledge}.
+
+\begin{bgdefinition}{Open-World Assumption}
+Under the Open-World Assumption, a triple $\langle s, p, o\rangle \notin E$
+is \emph{unknown} rather than false: the Knowledge Graph
+$KG=(N,E,L)$ is regarded as an incomplete description of the domain, and the
+absence of a triple neither confirms nor refutes the corresponding
+statement~\cite{hogan2021knowledge}.
+\end{bgdefinition}
+
+\begin{bgexample}[Missing is not false]
+Assume a guideline Knowledge Graph contains the triple
+\texttt{(sacubitril/valsartan, recommendedFor, HFrEF)}, but no triple that
+connects sacubitril/valsartan to arterial hypertension. Under the CWA, a system would conclude that
+the drug is \emph{not} related to hypertension. Under the OWA, the system can
+only conclude that the graph \emph{does not state} such a relation. For a
+patient-facing assistant this difference matters: an answer such as
+``this drug has nothing to do with blood pressure'' would be an unjustified
+claim derived from incomplete data.
+\end{bgexample}
+
+The OWA has two direct consequences for this thesis. First, it motivates
+\emph{reasoning} over Knowledge Graphs, i.e.\ deriving facts that are not
+stated explicitly but follow from other facts (Section~\ref{sec:bg-nesy}).
+Second, it complicates the evaluation of such reasoning, because a predicted
+fact that is missing from the graph is not necessarily wrong. Rule-mining
+systems therefore introduce intermediate assumptions, such as the
+Partial Completeness Assumption discussed in
+Section~\ref{sec:bg-rule-mining}.
+
+\subsection{Knowledge Graph Enrichment with External Resources}
+\label{sec:bg-enrichment}
+
+A Knowledge Graph that is built from a single type of source, for example the
+text of clinical guidelines, typically contains surface forms such as
+abbreviations (\emph{MRA}, \emph{SGLT2i}) or spelling variants
+(\emph{beta-blocker}, \emph{beta blockers}) without any further description.
+\emph{Knowledge Graph enrichment} links such entities to external,
+curated resources and imports additional facts about them. In the
+biomedical domain, three resources are particularly relevant:
+
+\begin{itemize}
+  \item \textbf{Wikidata}, a free, collaboratively edited, multilingual
+        Knowledge Graph that provides structured statements, synonyms
+        (aliases) and identifiers for millions of entities, including
+        diseases and drugs, through a public SPARQL endpoint~\cite{vrandecic2014wikidata}.
+  \item \textbf{The Unified Medical Language System (UMLS)}, which integrates
+        more than one hundred biomedical vocabularies (e.g.\ SNOMED~CT,
+        MeSH, ICD) under shared concept identifiers~\cite{bodenreider2004umls}.
+  \item \textbf{DrugBank}, a curated knowledge base that combines detailed
+        chemical, pharmacological and drug-target information~\cite{wishart2018drugbank}.
+\end{itemize}
+
+\begin{bgexample}[Enriching a guideline abbreviation]
+The guideline Knowledge Graph of this thesis stores the abbreviation
+\emph{MRA} as a surface form extracted from guideline text. Enrichment adds
+its expansion and links the drug class to a Wikidata entity:
+\begin{lstlisting}[style=bgcode]
+ds:entity/MRA  a ds:Abbreviation, ds:SurfaceForm ;
+    ds:hasExpansion ds:entity/Mineralocorticoid%20receptor%20antagonist .
+
+ds:entity/beta%20blocker  a ds:WikidataEntity, ds:SurfaceForm, ds:Drug ;
+    ds:subclass_of ds:entity/medication .
+\end{lstlisting}
+Because all pipelines mint IRIs in the same namespace, a guideline mention
+and a Wikidata concept with identical text become \emph{one} node. This is
+what allows facts from different sources to be combined in a single query.
+\end{bgexample}
+
+Enrichment increases the coverage and connectivity of the graph, which is
+important both for answering patient questions and for mining rules that
+generalise across documents. At the same time, imported facts inherit the
+quality and the licence of their source, and automatic entity linking can
+introduce errors. Enriched facts should therefore keep their provenance
+(e.g.\ the source document or the Wikidata identifier), so that they can be
+traced back and verified by medical experts.

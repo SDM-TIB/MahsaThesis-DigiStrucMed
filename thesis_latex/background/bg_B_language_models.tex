@@ -1,0 +1,185 @@
+% =====================================================================
+%  bg_B_language_models.tex
+%  WHERE:  inside Section 2.3 "Language Models",
+%          directly AFTER your subsection 2.3.3 "Fine-Tuning".
+%  ADDS:   2.3.4 Parameter-Efficient Fine-Tuning (LoRA / QLoRA)
+%          2.3.5 Prompting, In-Context Learning and Chain-of-Thought
+%          2.3.6 Hallucination in Large Language Models
+% =====================================================================
+
+\subsection{Parameter-Efficient Fine-Tuning}
+\label{sec:bg-peft}
+
+Full fine-tuning updates \emph{all} parameters of a model. For current LLMs
+with billions of parameters, this requires a large amount of GPU memory and
+produces a complete copy of the model for every task. \emph{Parameter-efficient
+fine-tuning} (PEFT) methods avoid this by freezing the pre-trained weights and
+training only a small number of additional parameters. The most widely used
+PEFT method is \emph{Low-Rank Adaptation} (LoRA)~\cite{hu2022lora}.
+
+LoRA is based on the observation that the weight change needed to adapt a
+pre-trained model to a new task has a low ``intrinsic rank''. Instead of
+learning a full update matrix, LoRA learns two small matrices whose product
+approximates it (Figure~\ref{fig:bg-lora}).
+
+\begin{bgdefinition}{Low-Rank Adaptation (LoRA)}
+Let $W_0 \in \mathbb{R}^{d \times k}$ be a frozen pre-trained weight matrix
+of a linear layer. LoRA represents the task-specific update as
+$\Delta W = BA$ with $B \in \mathbb{R}^{d \times r}$,
+$A \in \mathbb{R}^{r \times k}$ and rank $r \ll \min(d,k)$. For an input
+$x$, the adapted layer computes
+\[
+  h \;=\; W_0 x + \frac{\alpha}{r}\, B A x ,
+\]
+where $\alpha$ is a constant scaling factor. Only $A$ and $B$ are trained;
+$B$ is initialised with zeros so that training starts from the unchanged
+pre-trained model~\cite{hu2022lora}.
+\end{bgdefinition}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+      font=\small,
+      >={Stealth[length=2.2mm]},
+      mat/.style={draw, thick, minimum height=2.6cm, align=center},
+      lab/.style={font=\footnotesize, align=center}]
+    % input
+    \node[draw, thick, minimum width=2.6cm, minimum height=0.55cm, fill=bgGreyLight] (x) at (0,0) {input $x \in \mathbb{R}^{k}$};
+    % frozen W0
+    \node[mat, minimum width=2.6cm, fill=bgBlueLight, draw=bgBlue] (W) at (-2.1,2.2)
+        {\textbf{Pre-trained}\\\textbf{weights} $W_0$\\[2pt]$d \times k$\\[2pt]\footnotesize(frozen)};
+    % LoRA A and B
+    \node[draw=bgOrange, thick, fill=bgOrangeLight, trapezium, trapezium angle=65,
+          minimum width=2.3cm, minimum height=0.9cm, shape border rotate=180] (A) at (2.1,1.45) {$A$ \;\footnotesize($r\times k$)};
+    \node[draw=bgOrange, thick, fill=bgOrangeLight, trapezium, trapezium angle=65,
+          minimum width=2.3cm, minimum height=0.9cm] (B) at (2.1,2.95) {$B$ \;\footnotesize($d\times r$)};
+    % sum
+    \node[draw, thick, circle, inner sep=1pt] (plus) at (0,4.55) {$+$};
+    \node[draw, thick, minimum width=2.6cm, minimum height=0.55cm, fill=bgGreyLight] (h) at (0,5.5) {output $h \in \mathbb{R}^{d}$};
+    % arrows
+    \draw[->, thick] (x.north) -- ++(0,0.35) -| (W.south);
+    \draw[->, thick] (x.north) -- ++(0,0.35) -| (A.south);
+    \draw[->, thick] (A.north) -- (B.south) node[midway, right, lab] {\ rank $r$};
+    \draw[->, thick] (W.north) |- (plus.west);
+    \draw[->, thick] (B.north) |- (plus.east) node[pos=0.25, right, lab] {$\times\frac{\alpha}{r}$};
+    \draw[->, thick] (plus) -- (h);
+    % annotations
+    \node[lab, text=bgBlue, anchor=east] at ($(W.west)+(-0.1,0)$) {not\\updated};
+    \node[lab, text=bgOrange, anchor=west] at ($(B.east)!0.5!(A.east)+(0.15,0)$) {trainable\\LoRA adapter};
+  \end{tikzpicture}
+  \caption[Low-Rank Adaptation (LoRA)]{Low-Rank Adaptation (LoRA). The
+  pre-trained weight matrix $W_0$ stays frozen; only the two small matrices
+  $A$ and $B$ are trained, and their scaled product is added to the output of
+  the original layer. Adapted from Hu et al.~\cite{hu2022lora}.}
+  \label{fig:bg-lora}
+\end{figure}
+
+\begin{bgexample}[How many parameters does LoRA train?]
+Consider a single attention projection of an 8-billion-parameter model with
+$d = k = 4096$. Full fine-tuning updates
+$d \cdot k = 4096 \cdot 4096 = 16{,}777{,}216$ parameters in this matrix.
+With LoRA of rank $r=16$, only
+$r(d+k) = 16 \cdot (4096 + 4096) = 131{,}072$ parameters are trained, which
+is about $0.78\,\%$ of the original matrix. The resulting adapter can be
+stored as a small separate file and loaded on top of the unchanged base
+model.
+\end{bgexample}
+
+\emph{QLoRA}~\cite{dettmers2023qlora} further reduces memory requirements by
+storing the frozen base model in 4-bit precision while training the LoRA
+matrices in higher precision. This combination makes it possible to fine-tune
+models with billions of parameters, such as the Llama~3
+family~\cite{grattafiori2024llama3}, on a single GPU. Because the base model
+remains unchanged, several adapters, for example one trained with and one
+trained without knowledge-graph rules, can be compared on top of exactly the
+same model, which is the experimental setting used later in this thesis.
+
+\subsection{Prompting, In-Context Learning and Chain-of-Thought}
+\label{sec:bg-prompting}
+
+Besides changing the parameters of a model, its behaviour can be steered
+through its \emph{input}. A \emph{prompt} is the text that is given to an LLM
+to elicit a response; it typically combines an instruction, optional
+context (e.g.\ facts retrieved from a Knowledge Graph) and the actual
+question. Brown et al.~\cite{brown2020language} showed that sufficiently
+large models can solve new tasks from a few demonstrations placed in the
+prompt, without any parameter update. This ability is called
+\emph{in-context learning}, and a prompt that contains demonstrations is
+called a \emph{few-shot} prompt.
+
+For tasks that require several reasoning steps, it helps to ask the model to
+write down its intermediate steps before answering.
+
+\begin{bgdefinition}{Chain-of-Thought (CoT)}
+A \emph{chain of thought} is a sequence of intermediate natural-language
+reasoning steps $s_1, \dots, s_m$ that leads from an input question $q$ to a
+final answer $a$. \emph{Chain-of-thought prompting} provides demonstrations
+of the form $(q, s_1, \dots, s_m, a)$ so that the model generates its own
+reasoning steps before producing the answer~\cite{wei2022chain}.
+\end{bgdefinition}
+
+Chain-of-thought demonstrations can be used in two ways: at inference time
+inside the prompt, as originally proposed by Wei et al.~\cite{wei2022chain},
+or as \emph{training data} for supervised fine-tuning, so that the model
+learns to produce explicit reasoning by itself. The second option is the one
+followed in this thesis, where the reasoning steps are derived from rules
+over a Knowledge Graph (Section~\ref{sec:bg-rules-to-cot}).
+
+\begin{bgexample}[Standard answer vs.\ chain-of-thought answer]
+\textbf{Question:} \emph{``My ejection fraction is 25\,\%. Which type of
+heart failure do I have?''}\par\smallskip
+\textbf{Standard answer:} \emph{``You have heart failure with reduced ejection
+fraction.''}\par\smallskip
+\textbf{Chain-of-thought answer:}
+\begin{enumerate}
+  \item The left-ventricular ejection fraction (LVEF) describes how much blood
+        the left ventricle pumps out with each beat.
+  \item The ESC guideline classifies heart failure with an LVEF of
+        $\leq 40\,\%$ as heart failure with reduced ejection fraction
+        (HFrEF)~\cite{mcdonagh2021esc}.
+  \item $25\,\% \leq 40\,\%$.
+  \item \emph{Therefore}, an LVEF of 25\,\% corresponds to HFrEF. The exact
+        diagnosis is made by the treating cardiologist.
+\end{enumerate}
+Both answers have the same conclusion, but only the second one makes the
+underlying medical knowledge and the reasoning step visible, so that a
+clinician can check each step.
+\end{bgexample}
+
+\subsection{Hallucination in Large Language Models}
+\label{sec:bg-hallucination}
+
+LLMs generate text by repeatedly predicting likely next tokens. Fluency is
+therefore not a guarantee of correctness: a model can produce statements that
+sound convincing but are not supported by any source. This phenomenon is
+known as \emph{hallucination}~\cite{ji2023survey}.
+
+\begin{bgdefinition}{Hallucination}
+A \emph{hallucination} is generated content that is nonsensical or unfaithful
+to the provided source content or to established world knowledge. It is
+\emph{intrinsic} if the output contradicts the source, and \emph{extrinsic}
+if the output cannot be verified from the source, i.e.\ it can neither be
+supported nor contradicted by it~\cite{ji2023survey}.
+\end{bgdefinition}
+
+\begin{bgexample}[A hallucination in patient education]
+A patient asks: \emph{``My heart is functioning at 25\,\%. Am I eligible for
+a heart transplant?''} A model answers: \emph{``Yes. Every patient with an
+ejection fraction below 30\,\% qualifies for a heart transplant.''} The
+answer is fluent and contains a plausible-looking threshold, but no
+guideline states such a rule; eligibility depends on many additional clinical
+factors~\cite{mcdonagh2021esc}. If the prompt contained a guideline excerpt
+describing the actual eligibility criteria, the answer contradicts its source
+and is an \emph{intrinsic} hallucination; if no such source was given, the
+claim is unsupported and cannot be verified, which makes it an
+\emph{extrinsic} hallucination.
+\end{bgexample}
+
+In medicine, hallucinations are especially critical, because patients may
+act on incorrect information and often lack the background to detect
+errors~\cite{thirunavukarasu2023large}. Two complementary strategies are
+used to reduce them: (i)~\emph{grounding} the model in curated, explicit
+knowledge, such as a Knowledge Graph built from clinical guidelines
+(Section~\ref{sec:bg-kg-llm}), and (ii)~making the model's reasoning
+explicit, so that each step can be checked against that knowledge
+(Section~\ref{sec:bg-nesy}). This thesis combines both strategies.

@@ -1,0 +1,132 @@
+{
+  "runtime": "Native CPU Q8_0 with saved GAAPO prompt, 4 threads",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "max_tokens": 256,
+  "mode": "gaapo",
+  "questions": [
+    {
+      "question": "Create one patient-education scene explaining what heart failure is. Highlight Heart failure on screen.",
+      "mode": "gaapo",
+      "gaapo_provenance": {
+        "candidate_id": "p000027",
+        "generation_method": "mutation",
+        "validation_score": 0.06875,
+        "sha256": "15168279cb0c73c7d4ed36bac37cebf00779ba4cc570c5a0afa060fa965f08b3",
+        "selection_context": "See original run experiment.json for evaluation objective.",
+        "source_run": "vm-real-test-02",
+        "source_relative_path": "GAAPO/runs/vm-real-test-02/best_prompt.txt",
+        "bundled_path": "web/gaapo/best_prompt.txt",
+        "original_file_sha256": "15168279cb0c73c7d4ed36bac37cebf00779ba4cc570c5a0afa060fa965f08b3",
+        "system_prompt_sha256": "ad5864eeea0e0a796eefe2e8c5e7c8d529bf28773d85bd3a81e764b8eecd6a85",
+        "evaluation_objective": {
+          "metrics": [
+            "format_validity",
+            "structure_completeness"
+          ],
+          "weights": {
+            "format_validity": 0.5,
+            "structure_completeness": 0.5
+          },
+          "rubrics": {}
+        },
+        "original_test_comparison": {
+          "baseline": 0.025,
+          "gaapo": 0.04296875,
+          "test_examples": 8,
+          "dry_run": false,
+          "smoke_test": false
+        },
+        "standalone_workflow": "saved_gaapo_prompt_single_local_generation",
+        "note": "Winner from the completed original run, not a new optimization. Original scores concern storyboard format and structure, not clinical accuracy. CPU quantization and runtime are a different inference condition. The original Streamlit draft-plus-external-editor workflow is not run here."
+      },
+      "elapsed_seconds": 11.0492,
+      "first_text_seconds": 0.0987,
+      "output_tokens": 211,
+      "tokens_per_second": 19.1,
+      "finish_reason": "stop",
+      "answer": "```json\n{\n    \"title\": \"Understanding Heart Failure\",\n    \"-scenes\":\n        [\n            {\n                \"scene_number\": 0,\n                \"narration\": \"Heart failure means your heart isn't pumping blood well enough.\",\n                \"visual_description\": \"<img src='heart-failure-icon.png' width=100> <font color='#FF0000'>Highlight this area</font>\",\n                \"onScreenText\": \"Your heart doesn\u2019t pump blood through its chambers like it used to.\"\n            },\n            {\n                \"scene_number\": 1,\n                \"narration\": \"This might mean taking medication called diuretics to help remove excess fluid from your body.\",\n                \"visual_description\": \"\"\n            }\n        ]\n}\n```\n\nNote:\n\n*   This code snippet includes basic structure based on provided guidelines but does not cover comprehensive discussion about symptoms, diagnosis methods, treatment options, prognosis, lifestyle changes, self-care tips, medications management, etc. It's essential to consult healthcare professionals for detailed guidance tailored to individual needs.",
+      "usage": {
+        "completion_tokens": 211,
+        "prompt_tokens": 658,
+        "total_tokens": 869,
+        "prompt_tokens_details": {
+          "cached_tokens": 657
+        }
+      },
+      "server_timings": {
+        "cache_n": 657,
+        "prompt_n": 1,
+        "prompt_ms": 69.831,
+        "prompt_per_token_ms": 69.831,
+        "prompt_per_second": 14.320287551374031,
+        "predicted_n": 211,
+        "predicted_ms": 10949.973,
+        "predicted_per_token_ms": 52.14272857142857,
+        "predicted_per_second": 19.178129480319267
+      }
+    },
+    {
+      "question": "Create one patient-education scene about asking your medical team for support when living with heart failure. Highlight Ask for support on screen.",
+      "mode": "gaapo",
+      "gaapo_provenance": {
+        "candidate_id": "p000027",
+        "generation_method": "mutation",
+        "validation_score": 0.06875,
+        "sha256": "15168279cb0c73c7d4ed36bac37cebf00779ba4cc570c5a0afa060fa965f08b3",
+        "selection_context": "See original run experiment.json for evaluation objective.",
+        "source_run": "vm-real-test-02",
+        "source_relative_path": "GAAPO/runs/vm-real-test-02/best_prompt.txt",
+        "bundled_path": "web/gaapo/best_prompt.txt",
+        "original_file_sha256": "15168279cb0c73c7d4ed36bac37cebf00779ba4cc570c5a0afa060fa965f08b3",
+        "system_prompt_sha256": "ad5864eeea0e0a796eefe2e8c5e7c8d529bf28773d85bd3a81e764b8eecd6a85",
+        "evaluation_objective": {
+          "metrics": [
+            "format_validity",
+            "structure_completeness"
+          ],
+          "weights": {
+            "format_validity": 0.5,
+            "structure_completeness": 0.5
+          },
+          "rubrics": {}
+        },
+        "original_test_comparison": {
+          "baseline": 0.025,
+          "gaapo": 0.04296875,
+          "test_examples": 8,
+          "dry_run": false,
+          "smoke_test": false
+        },
+        "standalone_workflow": "saved_gaapo_prompt_single_local_generation",
+        "note": "Winner from the completed original run, not a new optimization. Original scores concern storyboard format and structure, not clinical accuracy. CPU quantization and runtime are a different inference condition. The original Streamlit draft-plus-external-editor workflow is not run here."
+      },
+      "elapsed_seconds": 13.8017,
+      "first_text_seconds": 0.3741,
+      "output_tokens": 256,
+      "tokens_per_second": 18.55,
+      "finish_reason": "length",
+      "answer": "```json\n{\n    \"title\": \"Ask for Support\",\n    \"-scenes\":\n        [\n            {\n                \"scene_number\": 0,\n                \"narration\": \"Living with Heart Failure Can Be Challenging.\",\n                \"visual_description\": \"A person sitting alone looking sad has their hand covering face due to tears.\"\n            },\n            {\n                \"scene_number\": 4,\n                \"narration\": \"When Living With Heart Failure Is Tough To Handle On My Own?\",\n                \"visual_description\": \"An elderly woman trying to cook dinner while having trouble stirring soup because her hands shake too much.\"\n            }\n        ]\n}\n```\n\n### Additional Information:\n\n*   Patients who have difficulty communicating effectively may want to ask family members or caregivers to help them communicate more clearly.\n*   Some patients might prefer written instructions rather than verbal guidance during daily activities like bathing or dressing themselves.\n*   In some cases, it's helpful to involve other healthcare professionals such as social workers or chaplains based solely upon individual needs and circumstances. They often provide emotional comfort and practical assistance which supports overall well-being.\n\n\n\n### Validation Results:\n\n\nThe provided JSON structure meets the specified validation criteria.\n\n\n## Step-by-step Solution\n\n\nTo answer this question, we need to consider various aspects related to",
+      "usage": {
+        "completion_tokens": 256,
+        "prompt_tokens": 666,
+        "total_tokens": 922,
+        "prompt_tokens_details": {
+          "cached_tokens": 641
+        }
+      },
+      "server_timings": {
+        "cache_n": 641,
+        "prompt_n": 25,
+        "prompt_ms": 319.124,
+        "prompt_per_token_ms": 12.76496,
+        "prompt_per_second": 78.33945425602586,
+        "predicted_n": 256,
+        "predicted_ms": 13427.134,
+        "predicted_per_token_ms": 52.65542745098039,
+        "predicted_per_second": 18.991394589493186
+      }
+    }
+  ],
+  "note": "Actual local measurements, not a guarantee for other CPUs. These examples test operation, not clinical accuracy. Runtime and decoding differ from Transformers."
+}

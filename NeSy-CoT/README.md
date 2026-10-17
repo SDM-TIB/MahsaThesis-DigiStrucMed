@@ -51,7 +51,7 @@ Key fields to change:
 ### 3. Prepare data (run once)
 
 ```bash
-python prepare_data.py --config guidelineKG-config.json
+python prepare_data.py --config T4B-config.json
 ```
 
 This generates:
@@ -63,7 +63,7 @@ This generates:
 
 ```bash
 # Step 1: Generating chain-of-thoughts 
-python NL-instances-CoT2.py --config guidelineKG-config.json
+python NL-instances-CoT2.py --config T4B-config.json
 
 python NL-instances-CoT3.py --config config.json
 

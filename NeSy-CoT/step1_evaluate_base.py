@@ -78,6 +78,10 @@ def main():
         max_samples=eval_cfg.get("max_samples", 2000),
         max_new_tokens=eval_cfg.get("max_new_tokens", 150),
         max_input_tokens=eval_cfg.get("max_input_tokens", 2048),
+        sampling=eval_cfg.get("sampling", "head"),
+        seed=cfg.get("seed", 42),
+        require_explicit_answer=eval_cfg.get("require_explicit_answer", False),
+        fail_on_truncation=eval_cfg.get("fail_on_truncation", False),
     )
 
     print_results("BASE MODEL RESULTS:", results)

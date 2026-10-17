@@ -50,6 +50,10 @@ try:
         TrainingArguments,
         BitsAndBytesConfig,
         DataCollatorForLanguageModeling,
+        DataCollatorForSeq2Seq,
+        EarlyStoppingCallback,
+        StoppingCriteria,
+        StoppingCriteriaList,
     )
     from transformers.trainer_utils import get_last_checkpoint
     from peft import (
@@ -113,6 +117,9 @@ def set_all_seeds(seed: int):
 
 def login_huggingface(token: str):
     """Login to HuggingFace hub."""
+    if not token or token == "HF_TOKEN":
+        print("No HuggingFace token configured; accessing public models anonymously.")
+        return
     from huggingface_hub import login
     login(token=token)
     print("Logged in to HuggingFace.")
@@ -522,6 +529,7 @@ def generate_shared_test_set(
     include_reasoning: bool = True,
     imbalance_threshold: float = 1.5,
     max_rules_in_context: int = 3,
+    preserve_all_instances: bool = False,
 ) -> tuple:
     """
     Generate a single shared test set from CoT3 instances, rendered in
@@ -579,18 +587,28 @@ def generate_shared_test_set(
             "Regenerate the affected CoT files."
         )
 
-    # Stratified split on answer (yes/no)
-    train_parts, test_parts = [], []
-    for key, group in all_df.groupby("_answer"):
-        group = group.sample(frac=1).reset_index(drop=True)
-        n_train = max(1, round(len(group) * train_ratio))
-        if n_train == len(group) and len(group) >= 2:
-            n_train = len(group) - 1
-        train_parts.append(group.iloc[:n_train])
-        test_parts.append(group.iloc[n_train:])
-
-    train_pool = pd.concat(train_parts, ignore_index=True)
-    test_pool  = pd.concat(test_parts,  ignore_index=True)
+    # Group duplicate questions into one split so test instances cannot leak.
+    if preserve_all_instances:
+        from finetune_data import stratified_group_split
+        all_df["_question_key"] = [
+            _build_cot_sample(row["_inst"], row["_rule"], "", "Baseline",
+                              include_reasoning=False)["input_text"]
+            for row in all_rows
+        ]
+        all_df["Label"] = all_df["_answer"].map({"no": 0, "yes": 1})
+        train_pool, test_pool = stratified_group_split(
+            all_df, 1 - train_ratio, key_column="_question_key")
+    else:
+        train_parts, test_parts = [], []
+        for key, group in all_df.groupby("_answer"):
+            group = group.sample(frac=1).reset_index(drop=True)
+            n_train = max(1, round(len(group) * train_ratio))
+            if n_train == len(group) and len(group) >= 2:
+                n_train = len(group) - 1
+            train_parts.append(group.iloc[:n_train])
+            test_parts.append(group.iloc[n_train:])
+        train_pool = pd.concat(train_parts, ignore_index=True)
+        test_pool = pd.concat(test_parts, ignore_index=True)
 
     test_keys  = set(zip(test_pool["_rule_id"],  test_pool["_inst_key"]))
     train_keys = set(zip(train_pool["_rule_id"], train_pool["_inst_key"]))
@@ -608,7 +626,7 @@ def generate_shared_test_set(
     is_imbalanced, ratio, n_yes, n_no = _check_and_report_imbalance(
         test_pool, label="shared test pool", imbalance_threshold=imbalance_threshold
     )
-    if is_imbalanced:
+    if is_imbalanced and not preserve_all_instances:
         minority_n = min(n_yes, n_no)
         yes_pool = test_pool[test_pool["_answer"] == "yes"].sample(
             n=minority_n, random_state=42
@@ -830,6 +848,7 @@ def generate_training_data_with_rules(
     strip_shacl_from_input=False,
     excluded_keys=None,
     imbalance_threshold=1.5,
+    preserve_all_instances=False,
 ):
     """
     Generate training data from pre-computed CoT rule instances.
@@ -940,13 +959,19 @@ def generate_training_data_with_rules(
     all_df["_strat_key"] = all_df["_answer"]
 
     # --- Stratified split ---
-    train_df, test_df = _stratified_split(
-        all_df, strat_col="_strat_key", train_ratio=train_ratio,
-    )
+    if preserve_all_instances and excluded_keys is not None:
+        # The shared test set already owns the held-out rows. Do not discard
+        # another 20% into an unused second test set.
+        train_df, test_df = all_df.copy(), all_df.iloc[:0].copy()
+    else:
+        train_df, test_df = _stratified_split(
+            all_df, strat_col="_strat_key", train_ratio=train_ratio,
+        )
 
     # --- Balance classes via oversampling if imbalanced ---
-    train_df = _balance_classes(train_df, cot_format, imbalance_threshold)
-    test_df  = _balance_classes(test_df,  cot_format, imbalance_threshold)
+    if not preserve_all_instances:
+        train_df = _balance_classes(train_df, cot_format, imbalance_threshold)
+        test_df = _balance_classes(test_df, cot_format, imbalance_threshold)
 
     # --- Final shuffle ---
     train_df = train_df.sample(frac=1).reset_index(drop=True)
@@ -1662,11 +1687,56 @@ def preprocess_batch(batch, tokenizer, max_length=512):
 # Evaluation
 # ---------------------------------------------------------------------------
 
+def _select_evaluation_rows(test_df, max_samples, sampling="head", seed=42):
+    """Select a reproducible subset, optionally giving both labels equal room."""
+    if max_samples is None:
+        max_samples = len(test_df)
+    if max_samples < 0:
+        raise ValueError("evaluation.max_samples must be nonnegative")
+    n = min(len(test_df), max_samples)
+    if sampling == "head":
+        return test_df.head(n)
+    if sampling != "balanced":
+        raise ValueError("evaluation.sampling must be 'head' or 'balanced'")
+    if "Label" not in test_df or not test_df["Label"].isin([0, 1]).all():
+        raise ValueError("Balanced evaluation requires binary Label values (0/1)")
+    rng = np.random.default_rng(seed)
+    selected = []
+    labels = test_df["Label"].to_numpy()
+    for label in (0, 1):
+        positions = np.flatnonzero(labels == label)
+        selected.extend(rng.choice(positions, size=min(n // 2, len(positions)),
+                                   replace=False).tolist())
+    remaining = np.setdiff1d(np.arange(len(test_df)), selected)
+    selected.extend(rng.choice(remaining, size=n - len(selected), replace=False).tolist())
+    rng.shuffle(selected)
+    return test_df.iloc[selected]
+
+
+def _resolve_yes_no_answer(answer, require_explicit=False):
+    """Resolve answer words; substrings such as 'knowledge' are not 'no'."""
+    answer = answer.lower()
+    if require_explicit:
+        answers = re.findall(r'\bthe answer is (yes|no)\b', answer)
+        return (answers[-1] == "yes", "explicit") if answers else (-1, "unresolved")
+    explicit = re.search(r'\bthe answer is (yes|no)\b', answer)
+    if explicit:
+        return explicit.group(1) == "yes", "explicit"
+    words = re.findall(r'\b(?:yes|no)\b', answer)
+    if not words:
+        return False, "tiebreak_default_no"
+    if len(set(words)) == 1:
+        return words[0] == "yes", "bare_word"
+    return words[-1] == "yes", "tiebreak"
+
+
 def evaluate_model(
     model, tokenizer, test_df, max_samples=200, max_new_tokens=50,
     device="cuda", log_path=None,
     repetition_penalty=1.15, no_repeat_ngram_size=4,
-    max_input_tokens=None,
+    max_input_tokens=None, sampling="head", seed=42,
+    require_explicit_answer=False, fail_on_truncation=False,
+    generation_batch_size=1,
 ) -> dict:
     """
     Evaluate a model on the test set. Returns metrics dict.
@@ -1691,15 +1761,20 @@ def evaluate_model(
     suspicious (e.g. exactly 1.0, or a collapse to one class) without
     guessing from aggregate statistics -- inspect what the model actually
     generated instead of inferring it indirectly.
+
+    sampling: 'head' preserves the original selection; 'balanced' samples
+    both binary labels with a fixed seed for short smoke evaluations.
     """
     _check_ml_available()
     model.eval()
     y_true = []
     y_pred = []
     raw_records = [] if log_path else None
-    resolution_counts = {"explicit": 0, "bare_word": 0, "tiebreak": 0, "tiebreak_default_no": 0}
+    resolution_counts = {"explicit": 0, "bare_word": 0, "tiebreak": 0, "tiebreak_default_no": 0,
+                         "unresolved": 0}
 
-    n = min(len(test_df), max_samples)
+    selected_rows = _select_evaluation_rows(test_df, max_samples, sampling, seed)
+    n = len(selected_rows)
     print(f"Evaluating on {n} samples...")
 
     # Check whether Label column is present and warn once if not
@@ -1730,7 +1805,131 @@ def evaluate_model(
     if tok_max <= 0:
         raise ValueError("Generation budget leaves no room for the input prompt")
 
-    for idx, row in test_df.head(n).iterrows():
+    if not isinstance(generation_batch_size, int) or generation_batch_size <= 0:
+        raise ValueError("generation_batch_size must be a positive integer")
+
+    # Batched generation keeps the GPU occupied during full evaluations. Stop
+    # each sequence as soon as it has produced the explicit classification;
+    # continuing to generate after "The answer is yes/no" cannot affect the
+    # metric and was the dominant evaluation cost for small decoder models.
+    if generation_batch_size > 1:
+        pending = []
+        for idx, row in selected_rows.iterrows():
+            prompt = row["Prompt"]
+            if "###Response:" in prompt:
+                eval_prompt = prompt[:prompt.index("###Response:") + len("###Response:")]
+            else:
+                eval_prompt = prompt
+
+            if has_label_col and pd.notna(row.get("Label")):
+                if row["Label"] not in (0, 1):
+                    raise ValueError(f"Invalid binary ground truth at test row {idx}")
+                expected_yes = int(row["Label"]) == 1
+            else:
+                gt_match = re.search(
+                    r'The answer is (yes|no)', str(row.get("output_text", "")),
+                    re.IGNORECASE,
+                )
+                if gt_match:
+                    expected_yes = gt_match.group(1).lower() == "yes"
+                    n_fallback += 1
+                else:
+                    n_skipped += 1
+                    continue
+
+            prompt_tokens = len(tokenizer(eval_prompt, truncation=False)["input_ids"])
+            if fail_on_truncation and prompt_tokens > tok_max:
+                raise ValueError(f"Evaluation row {idx} exceeds {tok_max} input tokens")
+            if prompt_tokens > tok_max:
+                n_truncated += 1
+            pending.append((idx, eval_prompt, expected_yes))
+
+        answer_token_patterns = []
+        for answer_text in (
+            "The answer is yes", "The answer is no",
+            " The answer is yes", " The answer is no",
+        ):
+            pattern = tokenizer.encode(answer_text, add_special_tokens=False)
+            if pattern and pattern not in answer_token_patterns:
+                answer_token_patterns.append(pattern)
+
+        class _ExplicitAnswerStop(StoppingCriteria):
+            def __init__(self, start_index):
+                self.start_index = start_index
+
+            def __call__(self, input_ids, scores, **kwargs):
+                stopped = torch.zeros(
+                    input_ids.shape[0], dtype=torch.bool, device=input_ids.device
+                )
+                generated = input_ids.shape[1] - self.start_index
+                for pattern in answer_token_patterns:
+                    if generated >= len(pattern):
+                        pattern_tensor = torch.as_tensor(
+                            pattern, dtype=input_ids.dtype, device=input_ids.device
+                        )
+                        stopped |= (input_ids[:, -len(pattern):] == pattern_tensor).all(dim=1)
+                return stopped
+
+        old_padding_side = tokenizer.padding_side
+        tokenizer.padding_side = "left"
+        try:
+            for start in range(0, len(pending), generation_batch_size):
+                batch = pending[start:start + generation_batch_size]
+                prompts = [item[1] for item in batch]
+                inputs = tokenizer(
+                    prompts,
+                    return_tensors="pt",
+                    padding=True,
+                    truncation=True,
+                    max_length=tok_max,
+                ).to(device)
+                input_width = inputs["input_ids"].shape[1]
+                with torch.no_grad():
+                    outputs = model.generate(
+                        input_ids=inputs["input_ids"],
+                        attention_mask=inputs["attention_mask"],
+                        max_new_tokens=max_new_tokens,
+                        use_cache=True,
+                        pad_token_id=tokenizer.eos_token_id,
+                        do_sample=False,
+                        repetition_penalty=repetition_penalty,
+                        no_repeat_ngram_size=no_repeat_ngram_size,
+                        stopping_criteria=StoppingCriteriaList([
+                            _ExplicitAnswerStop(input_width)
+                        ]),
+                    )
+
+                answers = tokenizer.batch_decode(
+                    outputs[:, input_width:], skip_special_tokens=True
+                )
+                for (idx, eval_prompt, expected_yes), model_answer in zip(batch, answers):
+                    model_has_yes, resolution_type = _resolve_yes_no_answer(
+                        model_answer, require_explicit=require_explicit_answer
+                    )
+                    resolution_counts[resolution_type] += 1
+                    if raw_records is not None:
+                        raw_records.append({
+                            "idx": idx,
+                            "expected_yes": expected_yes,
+                            "predicted_yes": model_has_yes,
+                            "correct": expected_yes == model_has_yes,
+                            "resolution_type": resolution_type,
+                            "prompt_tail": eval_prompt[-500:],
+                            "raw_generation": model_answer,
+                        })
+                    y_true.append(expected_yes)
+                    y_pred.append(model_has_yes)
+
+                if len(y_true) % 100 < len(batch) or len(y_true) == len(pending):
+                    print(f"  Processed {len(y_true)}/{n} samples...")
+        finally:
+            tokenizer.padding_side = old_padding_side
+
+        # The common diagnostics and metrics code below consumes the batched
+        # predictions. Empty the frame to bypass the legacy single-row loop.
+        selected_rows = selected_rows.iloc[0:0]
+
+    for idx, row in selected_rows.iterrows():
 
         # ------------------------------------------------------------------
         # 1. Build eval prompt (everything up to and including ###Response:)
@@ -1745,6 +1944,8 @@ def evaluate_model(
         # 2. Resolve ground truth
         # ------------------------------------------------------------------
         if has_label_col and pd.notna(row.get("Label")):
+            if row["Label"] not in (0, 1):
+                raise ValueError(f"Invalid binary ground truth at test row {idx}")
             expected_yes = int(row["Label"]) == 1
         else:
             # Fallback: parse "The answer is yes/no" from output_text
@@ -1764,6 +1965,8 @@ def evaluate_model(
         # 3. Tokenise with truncation guard
         #    Truncate from the LEFT so ###Response: is always at the end.
         # ------------------------------------------------------------------
+        if fail_on_truncation and len(tokenizer(eval_prompt, truncation=False)["input_ids"]) > tok_max:
+            raise ValueError(f"Evaluation row {idx} exceeds {tok_max} input tokens")
         inputs = tokenizer(
             eval_prompt,
             return_tensors="pt",
@@ -1785,6 +1988,7 @@ def evaluate_model(
                 input_ids=inputs["input_ids"],
                 attention_mask=inputs["attention_mask"],
                 max_new_tokens=max_new_tokens,
+                use_cache=True,
                 pad_token_id=tokenizer.eos_token_id,
                 do_sample=False,
                 # Pure greedy decoding with no repetition guard was found to
@@ -1821,25 +2025,8 @@ def evaluate_model(
         # 5. Extract yes/no from model output
         #    Priority: "The answer is X" pattern → word-boundary match → last occurrence
         # ------------------------------------------------------------------
-        ans_match = re.search(r'the answer is (yes|no)', model_answer.lower())
-        if ans_match:
-            model_has_yes = ans_match.group(1) == "yes"
-            resolution_type = "explicit"
-        else:
-            has_yes = bool(re.search(r'\byes\b', model_answer.lower()))
-            has_no  = bool(re.search(r'\bno\b',  model_answer.lower()))
-            if has_yes and not has_no:
-                model_has_yes = True
-                resolution_type = "bare_word"
-            elif has_no and not has_yes:
-                model_has_yes = False
-                resolution_type = "bare_word"
-            else:
-                # Ambiguous or empty — use last occurrence as tiebreaker
-                last_yes = model_answer.lower().rfind("yes")
-                last_no  = model_answer.lower().rfind("no")
-                model_has_yes = last_yes > last_no
-                resolution_type = "tiebreak_default_no" if (last_yes == -1 and last_no == -1) else "tiebreak"
+        model_has_yes, resolution_type = _resolve_yes_no_answer(
+            model_answer, require_explicit=require_explicit_answer)
 
         resolution_counts[resolution_type] += 1
 
@@ -1864,14 +2051,17 @@ def evaluate_model(
     # 6. Diagnostics before computing metrics
     # ------------------------------------------------------------------
     n_eval = len(y_true)
-    pred_yes = sum(y_pred)
-    pred_no  = n_eval - pred_yes
+    pred_yes = sum(value == 1 for value in y_pred)
+    pred_no = sum(value == 0 for value in y_pred)
+    unresolved = sum(value == -1 for value in y_pred)
     true_yes = sum(y_true)
     true_no  = n_eval - true_yes
 
     print(f"\n  Evaluation summary ({n_eval} samples evaluated):")
     print(f"    Ground truth  — yes: {true_yes}, no: {true_no}")
     print(f"    Predictions   — yes: {pred_yes}, no: {pred_no}")
+    if unresolved:
+        print(f"    Unresolved: {unresolved} (counted as incorrect, never guessed as 'no')")
     print(f"    Resolution types — explicit: {resolution_counts['explicit']}, "
           f"bare_word: {resolution_counts['bare_word']}, "
           f"tiebreak: {resolution_counts['tiebreak']}, "
@@ -1904,15 +2094,19 @@ def evaluate_model(
         }
 
     accuracy  = accuracy_score(y_true, y_pred)
-    f1        = f1_score(y_true, y_pred, pos_label=True, zero_division=0)
-    precision = precision_score(y_true, y_pred, pos_label=True, zero_division=0)
-    recall    = recall_score(y_true, y_pred, pos_label=True, zero_division=0)
+    f1 = f1_score(y_true, y_pred, labels=[1], average="macro", zero_division=0)
+    precision = precision_score(y_true, y_pred, labels=[1], average="macro", zero_division=0)
+    recall = recall_score(y_true, y_pred, labels=[1], average="macro", zero_division=0)
 
     return {
         "accuracy": accuracy,
         "f1_score": f1,
         "precision": precision,
         "recall": recall,
+        "macro_f1": f1_score(y_true, y_pred, labels=[0, 1], average="macro", zero_division=0),
+        "no_recall": recall_score(y_true, y_pred, labels=[0], average="macro", zero_division=0),
+        "answer_coverage": (n_eval - unresolved) / n_eval,
+        "unresolved": unresolved,
         "y_true": y_true,
         "y_pred": y_pred,
         "resolution_counts": resolution_counts,
@@ -1924,7 +2118,7 @@ def evaluate_model(
 # ---------------------------------------------------------------------------
 
 def fine_tune_model(model, tokenizer, train_dataset, output_dir: str,
-                    cfg: dict, sampler=None):
+                    cfg: dict, sampler=None, validation_dataset=None):
     """Fine-tune a model with LoRA + QLoRA. Returns the fine-tuned model.
 
     Args:
@@ -1935,9 +2129,13 @@ def fine_tune_model(model, tokenizer, train_dataset, output_dir: str,
     _check_ml_available()
     tcfg = cfg.get("training", {})
     lcfg = cfg.get("lora", {})
+    use_validation = validation_dataset is not None
+    if tcfg.get("load_best_model_at_end", False) and not use_validation:
+        raise ValueError("Best-checkpoint selection requires a separate validation dataset")
 
-    model.gradient_checkpointing_enable()
-    model = prepare_model_for_kbit_training(model)
+    model = prepare_model_for_kbit_training(
+        model, gradient_checkpointing_kwargs={"use_reentrant": False},
+    )
 
     modules = find_all_linear_names(model)
     peft_config = LoraConfig(
@@ -1961,15 +2159,43 @@ def fine_tune_model(model, tokenizer, train_dataset, output_dir: str,
         gradient_accumulation_steps=tcfg.get("gradient_accumulation_steps", 4),
         warmup_steps=tcfg.get("warmup_steps", 10),
         max_steps=tcfg.get("num_steps", 500),
+        num_train_epochs=tcfg.get("num_train_epochs", 3),
         learning_rate=tcfg.get("learning_rate", 2e-4),
         fp16=tcfg.get("fp16", True),
+        bf16=tcfg.get("bf16", False),
+        warmup_ratio=tcfg.get("warmup_ratio", 0.0),
+        weight_decay=tcfg.get("weight_decay", 0.0),
+        max_grad_norm=tcfg.get("max_grad_norm", 1.0),
         logging_steps=tcfg.get("logging_steps", 50),
         output_dir=output_dir,
         optim="paged_adamw_8bit",
-        save_strategy="steps",
+        save_strategy=tcfg.get("save_strategy", "steps"),
         save_steps=tcfg.get("save_steps", 100),
+        save_total_limit=tcfg.get("save_total_limit", 2),
+        eval_strategy=tcfg.get("eval_strategy", "epoch") if use_validation else "no",
+        per_device_eval_batch_size=tcfg.get("per_device_eval_batch_size", 1),
+        prediction_loss_only=True,
+        eval_accumulation_steps=1,
+        load_best_model_at_end=tcfg.get("load_best_model_at_end", False),
+        metric_for_best_model="eval_loss" if use_validation else None,
+        greater_is_better=False if use_validation else None,
+        restore_callback_states_from_checkpoint=use_validation,
+        dataloader_drop_last=False,
+        seed=cfg.get("seed", 42),
+        data_seed=cfg.get("seed", 42),
+        report_to="none",
     )
 
+    callbacks = []
+    if use_validation and tcfg.get("early_stopping_patience"):
+        callbacks.append(EarlyStoppingCallback(
+            early_stopping_patience=tcfg["early_stopping_patience"],
+            early_stopping_threshold=tcfg.get("early_stopping_threshold", 0.0)))
+    collator = (DataCollatorForSeq2Seq(tokenizer, label_pad_token_id=-100, pad_to_multiple_of=8)
+                if tcfg.get("response_only_loss", False)
+                else DataCollatorForLanguageModeling(tokenizer, mlm=False))
+    validation_kwargs = ({"eval_dataset": validation_dataset, "callbacks": callbacks}
+                         if use_validation else {})
     if sampler is not None:
         _sampler = sampler
 
@@ -1984,21 +2210,25 @@ def fine_tune_model(model, tokenizer, train_dataset, output_dir: str,
             model=model,
             train_dataset=train_dataset,
             args=training_args,
-            data_collator=DataCollatorForLanguageModeling(tokenizer, mlm=False),
+            data_collator=collator,
+            **validation_kwargs,
         )
     else:
         trainer = Trainer(
             model=model,
             train_dataset=train_dataset,
             args=training_args,
-            data_collator=DataCollatorForLanguageModeling(tokenizer, mlm=False),
+            data_collator=collator,
+            **validation_kwargs,
         )
 
     model.config.use_cache = False
 
-    # Resume from the latest checkpoint in output_dir if one exists (e.g. after
-    # a stopped/interrupted run) — otherwise this is None and training starts fresh.
-    last_checkpoint = get_last_checkpoint(output_dir) if os.path.isdir(output_dir) else None
+    # Resume interrupted runs by default. Smoke configs can opt out so repeated
+    # invocations always perform the configured number of fresh training steps.
+    resume = tcfg.get("resume_from_checkpoint", True)
+    last_checkpoint = (get_last_checkpoint(output_dir)
+                       if resume and os.path.isdir(output_dir) else None)
     if last_checkpoint:
         print(f"Found existing checkpoint — resuming training from {last_checkpoint}")
     else:
@@ -2008,6 +2238,7 @@ def fine_tune_model(model, tokenizer, train_dataset, output_dir: str,
     print(f"Saving model to {output_dir}...")
     os.makedirs(output_dir, exist_ok=True)
     trainer.model.save_pretrained(output_dir)
+    tokenizer.save_pretrained(output_dir)
 
     return model
 
@@ -2019,6 +2250,10 @@ def print_results(label: str, results: dict):
     print(f"   F1 Score:  {results['f1_score']:.3f}")
     print(f"   Precision: {results['precision']:.3f}")
     print(f"   Recall:    {results['recall']:.3f}")
+    if "macro_f1" in results:
+        print(f"   Macro F1 (yes/no): {results['macro_f1']:.3f}")
+        print(f"   No recall: {results['no_recall']:.3f}")
+        print(f"   Answer coverage: {results['answer_coverage']:.1%}")
 
 
 def save_results_json(path: str, results: dict):

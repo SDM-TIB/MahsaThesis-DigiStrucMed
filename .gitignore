@@ -36,6 +36,11 @@ _netrc
 # training logs are, so treat the whole tree as local-only.
 /NeSy-CoT/interface/runs/
 
+# GAAPO run logs (gen_XX.jsonl, plots) and the LLM response cache --
+# regenerated per run, not source.
+/GAAPO/runs/
+/GAAPO/.cache/
+
 # Generated datasets and local archive (too large for regular Git uploads).
 # Keep generated data ignored, but allow final adapter packages below.
 /NeSy-CoT/outputs/**
@@ -76,6 +81,16 @@ rng_state*.pth
 
 # Generated guideline knowledge graph exceeds GitHub's file size limit.
 /GuideLineKG/kg_build/output/knowledge_graph.nt
+
+# Generated university handover/build artifacts stay local. These include
+# packaged runtimes and model weights that exceed GitHub's regular file limit.
+/_university_build/
+/_poster_edit/
+/University-Handover/
+/University-Handover.zip
+/University-Handover.zip.sha256
+/University-GuidelineQA/models/*.gguf
+/University-GuidelineQA/runtime/*.tar
 
 # Local Python environments, caches, and logs.
 .venv*/

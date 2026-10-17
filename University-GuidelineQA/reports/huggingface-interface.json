@@ -1,0 +1,18 @@
+{
+  "model_initialization": true,
+  "http_page": 200,
+  "modes": {
+    "gaapo": {
+      "streamed_generation": true,
+      "message_contract_verified": true
+    },
+    "plain": {
+      "streamed_generation": true,
+      "message_contract_verified": true
+    }
+  },
+  "local_device": "cuda",
+  "max_new_tokens": 32,
+  "default_mode": "gaapo",
+  "note": "Validated locally with cached weights; actual HF ZeroGPU allocation and upload not tested."
+}

@@ -16,6 +16,10 @@ from functools import partial
 import pandas as pd
 import torch
 from datasets import Dataset
+from transformers import AutoTokenizer
+from dataset_io import audit_dataset_csv
+from finetune_data import (audit_frame, assert_disjoint, stratified_group_split,
+                           tokenize_responses, audit_token_budgets, write_audit)
 
 from utils import (
     load_config,
@@ -73,6 +77,28 @@ def main():
     print(f"Loading test data:     {test_path}")
     test_df = pd.read_csv(test_path)
     print(f"Train samples: {len(train_df)}, Test samples: {len(test_df)}")
+    validation_df = None
+    audit = {}
+    if tcfg.get("strict_data_checks", False):
+        audit_dataset_csv(train_path)
+        audit_dataset_csv(test_path)
+        audit["source_train"] = audit_frame(train_df, "Baseline source", require_targets=True)
+        audit["test"] = audit_frame(test_df, "Baseline test")
+        assert_disjoint(training=train_df, test=test_df)
+    if tcfg.get("validation_fraction", 0):
+        train_df, validation_df = stratified_group_split(
+            train_df, tcfg["validation_fraction"], seed=cfg.get("seed", 42))
+        assert_disjoint(training=train_df, validation=validation_df, test=test_df)
+        audit["train"] = audit_frame(train_df, "Baseline training", require_targets=True)
+        audit["validation"] = audit_frame(validation_df, "Baseline validation", require_targets=True)
+    if tcfg.get("fail_on_truncation", False):
+        if validation_df is None:
+            raise ValueError("Strict token audit requires a validation split")
+        audit_tokenizer = AutoTokenizer.from_pretrained(cfg["model_name"], use_fast=True)
+        audit["token_budgets"] = audit_token_budgets(
+            audit_tokenizer, cfg, train_df, validation_df, test_df, test_df)
+        write_audit(os.path.join(output_dir, "data_audit_Baseline.json"), audit)
+        del audit_tokenizer
 
     # ------------------------------------------------------------------
     # Load model
@@ -90,18 +116,23 @@ def main():
     # ------------------------------------------------------------------
     # Prepare dataset
     # ------------------------------------------------------------------
-    train_dataset = Dataset.from_pandas(train_df)
     max_length = tcfg.get("max_length", 512)
-    train_dataset = train_dataset.map(
-        lambda batch: preprocess_batch(batch, tokenizer, max_length=max_length),
-        batched=True,
-    )
+    def make_dataset(frame):
+        dataset = Dataset.from_pandas(frame, preserve_index=False)
+        return dataset.map(
+            lambda batch: (tokenize_responses(batch, tokenizer, max_length)
+                           if tcfg.get("response_only_loss", False)
+                           else preprocess_batch(batch, tokenizer, max_length=max_length)),
+            batched=True, remove_columns=dataset.column_names)
+    train_dataset = make_dataset(train_df)
+    validation_dataset = make_dataset(validation_df) if validation_df is not None else None
 
     # ------------------------------------------------------------------
     # Fine-tune
     # ------------------------------------------------------------------
     model_output_dir = os.path.join(output_dir, f"finetuned_{model_tag}_baseline")
-    model = fine_tune_model(model, tokenizer, train_dataset, model_output_dir, cfg)
+    model = fine_tune_model(model, tokenizer, train_dataset, model_output_dir, cfg,
+                            validation_dataset=validation_dataset)
 
     # ------------------------------------------------------------------
     # Evaluate
@@ -114,6 +145,10 @@ def main():
         max_samples=eval_cfg.get("max_samples", 2000),
         max_new_tokens=eval_cfg.get("max_new_tokens", 150),
         max_input_tokens=eval_cfg.get("max_input_tokens", 2048),
+        sampling=eval_cfg.get("sampling", "head"),
+        seed=cfg.get("seed", 42),
+        require_explicit_answer=eval_cfg.get("require_explicit_answer", False),
+        fail_on_truncation=eval_cfg.get("fail_on_truncation", False),
     )
     print_results("FINE-TUNED MODEL (WITHOUT RULES) RESULTS:", results)
 
@@ -126,6 +161,7 @@ def main():
         "model_name": cfg["model_name"],
         "step": "finetune_without_rules",
         "model_saved_to": model_output_dir,
+        "data_audit": audit,
         "metrics": results,
     })
 

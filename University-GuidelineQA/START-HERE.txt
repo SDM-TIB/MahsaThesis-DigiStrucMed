@@ -1,0 +1,40 @@
+GAAPO + GUIDELINEKG - UNIVERSITY HANDOVER
+=======================================
+
+This folder includes the trained model. No GPU, Python installation, Hugging
+Face token, model download, or inference subscription is needed on Windows.
+
+WINDOWS (recommended)
+1. Extract the COMPLETE folder to a local drive.
+2. Double-click start.cmd.
+3. The webpage opens at http://localhost:7860. Wait for Model ready.
+4. GAAPO best prompt is selected by default. Enter a storyboard request and
+   click Generate storyboard. For example: Create one patient-education scene
+   explaining heart failure. Highlight Heart failure on screen.
+   For an ordinary question, select Plain GuidelineKG Q&A and click Ask model.
+5. Double-click stop.cmd when finished.
+
+LINUX / macOS / DOCKER
+1. Install and start Docker with the Compose plugin.
+2. Open a terminal in this folder and run: sh start.sh
+3. Open http://localhost:7860.
+4. Run: sh stop.sh
+
+The Linux x86_64 Docker runtime image is bundled for offline use. Apple Silicon
+and other architectures require internet for the first matching image download.
+The model is always included locally.
+
+The exact saved GAAPO winner from the previous interface is bundled in
+web/gaapo/best_prompt.txt. You can inspect it in the page's prompt details.
+One local generation uses this prompt; no optimization search or external
+editing service is needed. The requested storyboard format is JSON.
+
+If the launcher reports that the Microsoft C++ runtime is missing, run the
+included runtime/windows/VC_redist.x64.exe once, then start.cmd again.
+The official Microsoft installer is included so this can be done offline.
+
+Read README.md for hardware requirements, Docker commands, performance results,
+optional Hugging Face hosting, and reproducibility notes.
+
+Research demonstration. Model outputs have not been clinically validated.
+Built with Llama.

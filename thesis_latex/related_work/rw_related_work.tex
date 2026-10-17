@@ -1,0 +1,376 @@
+% =====================================================================
+%  rw_related_work.tex  --  Chapter 3: Related Work
+%  WHERE:  replaces the current content of Chapter 3 (the old three-line
+%          paragraph about sentiment analysis / Word2Vec / GloVe / FastText,
+%          which belongs to the previous template, not to this thesis).
+%          Use:   \input{related_work/rw_related_work}
+%  NEEDS:  bg_preamble.tex, rw_preamble.tex, bg_references.bib,
+%          rw_references.bib
+% =====================================================================
+
+\chapter{Related Work}
+\label{chap:related-work}
+
+This chapter reviews the research that this thesis builds on and
+distinguishes it from existing approaches. The thesis lies at the
+intersection of three research areas (Figure~\ref{fig:rw-positioning}):
+(i)~large language models for medicine and patient education,
+(ii)~knowledge graphs and neuro-symbolic reasoning for LLMs, and
+(iii)~automatic prompt optimisation and the automatic generation of
+educational videos. Section~\ref{sec:rw-medical-llm} discusses medical LLMs
+and their limitations for patient education.
+Section~\ref{sec:rw-kg-llm} reviews approaches that ground medical LLMs in
+knowledge graphs, and Section~\ref{sec:rw-nesy} reviews methods that combine
+symbolic rules with LLM reasoning. Section~\ref{sec:rw-prompt} covers
+automatic prompt optimisation, and Section~\ref{sec:rw-video} covers the
+generation of educational videos. Section~\ref{sec:rw-summary} compares all
+approaches and summarises the research gap addressed by this thesis.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[font=\footnotesize]
+    \def\r{3.0}
+    \begin{scope}[blend group=multiply]
+      \fill[bgOrangeLight] (0,0) circle (\r);
+      \fill[bgBlueLight]   (3.4,0) circle (\r);
+      \fill[bgPurpleLight] (1.7,-3.0) circle (\r);
+    \end{scope}
+    \draw[bgOrange, thick] (0,0) circle (\r);
+    \draw[bgBlue, thick]   (3.4,0) circle (\r);
+    \draw[bgPurple, thick] (1.7,-3.0) circle (\r);
+    % area titles (outside the circles)
+    \node[align=center, text=bgOrange, font=\footnotesize\bfseries] at (-1.4,3.45) {LLMs for medicine\\\& patient education};
+    \node[align=center, text=bgBlue, font=\footnotesize\bfseries]   at (4.8,3.45) {Knowledge graphs \&\\neuro-symbolic AI};
+    \node[align=center, text=bgPurple, font=\footnotesize\bfseries] at (1.7,-6.5) {Prompt optimisation \&\\educational video generation};
+    % works that belong to one area only
+    \node[align=center, font=\scriptsize] at (-1.25,0.1) {Med-PaLM~\cite{singhal2023large}\\Med-HALT~\cite{pal2023medhalt}\\King et al.~\cite{king2025improving}};
+    \node[align=center, font=\scriptsize] at (4.65,0.1) {AMIE~3~\cite{lajus2020fast}\\RoG~\cite{luo2024reasoning}\\ChatRule~\cite{luo2025chatrule}\\BRINK~\cite{zhou2026breaks}};
+    \node[align=center, font=\scriptsize] at (1.7,-4.35) {GAAPO~\cite{secheresse2025gaapo}\\OPRO~\cite{yang2024large}\\Code2Video~\cite{chen2026code2video}};
+    % overlaps
+    \node[align=center, font=\tiny] at (1.7,0.85) {KG-RAG~\cite{soman2024biomedical}\\MedGraphRAG~\cite{wu2025medical}\\DR.KNOWS~\cite{gao2025leveraging}};
+    \node[align=center, font=\tiny] at (-0.1,-2.05) {Medprompt\\\cite{nori2023can}};
+    % centre
+    \node[draw=black, thick, fill=white, rounded corners=3pt, align=center,
+          font=\scriptsize\bfseries, inner sep=3pt] at (1.7,-0.95) {This\\thesis};
+  \end{tikzpicture}
+  \caption[Positioning of this thesis within related research areas]{Positioning
+  of this thesis. Existing work covers one or two of the three research areas;
+  this thesis combines guideline-based knowledge graphs, rule-guided
+  reasoning, prompt optimisation and patient-oriented storyboards for
+  educational videos.}
+  \label{fig:rw-positioning}
+\end{figure}
+
+% ---------------------------------------------------------------------
+\section{Large Language Models in Medicine and Patient Education}
+\label{sec:rw-medical-llm}
+% ---------------------------------------------------------------------
+
+\paragraph{Medical question answering.}
+Singhal et al.~\cite{singhal2023large} introduced MultiMedQA, a benchmark that
+combines professional medical exams, research questions and consumer health
+questions, and adapted the general-purpose model Flan-PaLM to the medical
+domain through instruction prompt tuning. In a human evaluation, 92.6\,\% of
+the long-form answers of the resulting model, Med-PaLM, were judged to be in
+line with scientific consensus, compared with 92.9\,\% of clinician answers;
+nevertheless, the model remained inferior to clinicians on several other
+evaluation axes. Its successor
+Med-PaLM~2~\cite{singhal2025toward} further narrowed this gap. Nori et
+al.~\cite{nori2023can} showed that a general model (GPT-4) can reach similar
+results without any medical fine-tuning when it is combined with a carefully
+designed prompting strategy (Section~\ref{sec:rw-prompt}). Surveys of the
+field~\cite{thirunavukarasu2023large} conclude that LLMs are promising for
+clinical documentation, education and patient communication, but that their
+reliability, transparency and accountability are not yet sufficient for
+unsupervised use.
+
+\paragraph{Patient communication and patient education.}
+LLMs have also been evaluated directly on patient-facing tasks. Ayers et
+al.~\cite{ayers2023comparing} compared answers by physicians and by ChatGPT to
+195 patient questions from a public online forum; in 78.6\,\% of 585
+evaluations, healthcare professionals preferred the chatbot answer, which was
+rated higher for both quality and empathy. In cardiology, King et
+al.~\cite{king2025improving} used GPT-4 to simplify 143 heart-failure patient
+education materials from leading US cardiology institutions. The median
+reading level decreased from grade~10.3 to grade~7.3, and a cardiologist rated
+all simplified texts as equally accurate as the originals. These studies show
+that LLMs can make medical information more accessible. However, they rely
+on general-purpose models without explicit medical knowledge, they evaluate
+plain text only, and correctness is checked manually after generation.
+
+\paragraph{Hallucinations in medical LLMs.}
+The main obstacle to the safe use of LLMs for patients is hallucination
+(Section~\ref{sec:bg-hallucination}). Pal et al.~\cite{pal2023medhalt}
+proposed Med-HALT, a benchmark that tests both reasoning hallucinations (e.g.\
+choosing an answer to a question with a false premise) and memory-based
+hallucinations (e.g.\ inventing references), and found that all evaluated
+LLMs were affected. Kim et al.~\cite{kim2025medicalhallucinationsfoundationmodels}
+analysed eleven foundation models on seven medical tasks and, together with a
+survey of clinicians, concluded that medical hallucinations are frequent in
+practice. Interestingly, they also observed that chain-of-thought prompting
+reduced hallucinations in most comparisons, which supports the idea of making
+the reasoning of a model explicit.
+
+\begin{rwgap}
+Medical LLMs can produce fluent and empathetic answers, but they are not
+explicitly grounded in clinical guidelines, their reasoning is not
+verifiable, and existing patient-education studies focus on text.
+Approaches are needed that connect patient-oriented generation with
+explicit, guideline-based medical knowledge.
+\end{rwgap}
+
+% ---------------------------------------------------------------------
+\section{Knowledge-Graph-Enhanced LLMs in the Biomedical Domain}
+\label{sec:rw-kg-llm}
+% ---------------------------------------------------------------------
+
+A common way to reduce hallucinations is to supply LLMs with external
+knowledge at inference time (Section~\ref{sec:bg-rag}). Xiong et
+al.~\cite{xiong2024benchmarking} systematically benchmarked
+retrieval-augmented generation for medicine on MIRAGE, a collection of 7,663
+questions from five medical QA datasets. Their MedRAG toolkit improved the
+accuracy of six LLMs by up to 18\,\% compared with chain-of-thought prompting.
+These systems retrieve unstructured text passages, for example from PubMed or
+textbooks.
+
+Several works retrieve structured knowledge from \emph{knowledge graphs}
+instead. Soman et al.~\cite{soman2024biomedical} proposed KG-RAG, which
+extracts disease-specific context from SPOKE, a large biomedical knowledge
+graph, and adds it to the prompt. By pruning the retrieved context with
+embeddings, they reduced the number of prompt tokens by more than 50\,\%
+while improving the answers of models such as Llama-2 and GPT-4. Gao et
+al.~\cite{gao2025leveraging} presented DR.KNOWS, which selects paths from a
+UMLS-based knowledge graph that are relevant to a patient's electronic health
+record and uses them to support diagnosis prediction; clinicians judged the
+resulting diagnostic rationales to be clinically sound. Wu et
+al.~\cite{wu2025medical} proposed MedGraphRAG, which links private medical
+documents to trusted medical sources and vocabularies in a three-level graph,
+and retrieves from this graph so that answers are supported by evidence.
+Outside medicine, Think-on-Graph~\cite{sun2024thinkongraph} lets an LLM
+explore a knowledge graph step by step with beam search, and Microsoft's
+GraphRAG~\cite{edge2024local} builds a graph of entities and communities from
+text to answer global questions about a document collection.
+
+All of these approaches use the knowledge graph only at \emph{inference
+time} and assume that the facts needed to answer a question are present in
+the graph. Zhou et al.~\cite{zhou2026breaks} questioned this assumption with
+the BRINK benchmark (Section~\ref{sec:bg-rag}): when the triple that directly
+supports an answer is removed, current KG-RAG methods show limited reasoning
+ability, often fall back on knowledge memorised during pre-training, and
+generalise differently depending on their design. This finding is highly
+relevant for medical knowledge graphs, which are incomplete by nature
+(Section~\ref{sec:bg-owa}).
+
+\begin{bgexample}[Retrieval versus learnt reasoning under missing knowledge]
+Assume the guideline knowledge graph contains the facts
+\emph{(Drug~X, belongsToClass, MRA)} and
+\emph{(MRA, recommendedFor, HFrEF)}, but \emph{not} the direct fact
+\emph{(Drug~X, recommendedFor, HFrEF)}. A patient asks:
+\emph{``Is Drug~X recommended for my type of heart failure?''}
+\begin{itemize}
+  \item A \textbf{retrieval-only} system searches for the direct triple, does
+        not find it, and either answers ``no information'' or falls back on
+        what the LLM memorised during pre-training.
+  \item A model that was \textbf{fine-tuned on rule-based reasoning chains},
+        e.g.\ derived from the rule
+        $\mathit{belongsToClass}(x,c) \wedge \mathit{recommendedFor}(c,d)
+        \Rightarrow \mathit{recommendedFor}(x,d)$,
+        has learnt to combine the two remaining facts and can answer:
+        \emph{``Drug~X is an MRA, and MRAs are recommended for HFrEF;
+        therefore \ldots''}, while showing the facts it used.
+\end{itemize}
+This illustrates why this thesis combines knowledge-graph context at
+inference time with reasoning patterns learnt from symbolic rules.
+\end{bgexample}
+
+\begin{rwgap}
+Biomedical KG-enhanced LLMs ground answers in retrieved facts but do not
+teach the model how to \emph{reason} over the graph when facts are missing.
+Moreover, they target clinicians or benchmark questions, not patient
+education based on clinical practice guidelines and patient questionnaires.
+\end{rwgap}
+
+% ---------------------------------------------------------------------
+\section{Symbolic Rules and Neuro-Symbolic Reasoning with LLMs}
+\label{sec:rw-nesy}
+% ---------------------------------------------------------------------
+
+\paragraph{Rule learning over knowledge graphs.}
+Learning logical rules from knowledge graphs has a long tradition. The AMIE
+family~\cite{galarraga2013amie,galarraga2015fast,lajus2020fast} mines closed
+Horn rules under the Partial Completeness Assumption and is the rule miner
+used in this thesis (Section~\ref{sec:bg-rule-mining}). AnyBURL~\cite{meilicke2019anytime}
+learns rules bottom-up by sampling paths from the graph and generalising them,
+which makes it efficient for knowledge-graph completion. Neural approaches
+such as Neural~LP~\cite{yang2017differentiable} learn rules in a
+differentiable way, trading some interpretability for end-to-end training.
+In all of these works, rules are used to \emph{complete} the knowledge graph,
+not to train a language model.
+
+\paragraph{LLMs and rules.}
+More recent work connects rules with LLMs. ChatRule~\cite{luo2025chatrule}
+uses an LLM to \emph{generate} candidate rules from the semantic and
+structural information of a knowledge graph and ranks them with
+measures computed on the existing facts. Reasoning on Graphs
+(RoG)~\cite{luo2024reasoning} fine-tunes an LLM to first generate relation
+paths that are grounded in the knowledge graph (``planning'') and then to
+reason over the retrieved paths, producing faithful and interpretable
+answers. Closest to this thesis is Chain-of-Knowledge~\cite{zhang2024chain},
+which mines rules from knowledge graphs, turns them into a knowledge-reasoning
+dataset (KnowReason), and fine-tunes LLMs on it; to prevent the model from
+simply memorising the rules, the authors add a trial-and-error mechanism.
+
+\paragraph{Reasoning chains as training data.}
+Training models on explicit reasoning chains has been shown to be
+effective in general. Hsieh et al.~\cite{hsieh2023distilling} demonstrated
+that smaller models fine-tuned on rationales extracted from a large LLM can
+outperform much larger models while using less training data. Rule
+groundings from a knowledge graph provide such rationales without a teacher
+LLM, and their correctness can be traced back to explicit facts
+(Section~\ref{sec:bg-rules-to-cot}).
+
+\begin{rwgap}
+Neuro-symbolic approaches that combine rules and LLMs have so far been
+evaluated on open-domain benchmark knowledge graphs (e.g.\ Freebase-based
+question-answering datasets).
+It is unclear whether rule-guided chain-of-thought fine-tuning improves LLM
+performance in the medical domain, where knowledge comes from heterogeneous
+sources (guidelines, terminologies and patient questionnaires) and where
+rules must be filtered by confidence before they are used.
+\end{rwgap}
+
+% ---------------------------------------------------------------------
+\section{Automatic Prompt Optimisation}
+\label{sec:rw-prompt}
+% ---------------------------------------------------------------------
+
+Since the quality of LLM outputs depends strongly on the prompt, several
+methods search for better prompts automatically. Automatic Prompt Engineer
+(APE)~\cite{zhou2023large} lets an LLM propose candidate instructions from
+input--output examples and selects the best one by its score. ProTeGi
+(APO)~\cite{pryzant2023automatic} improves prompts with natural-language
+``gradients'', and OPRO~\cite{yang2024large} uses an LLM as an optimiser that
+sees the history of previous prompts and their scores. Evolutionary
+approaches maintain a population of prompts: EvoPrompt~\cite{guo2024connecting}
+uses an LLM to perform mutation and crossover and improved over
+human-written prompts on 31 datasets, and Promptbreeder~\cite{fernando2024promptbreeder}
+additionally evolves the mutation prompts themselves. GAAPO~\cite{secheresse2025gaapo}
+combines mutation, crossover, few-shot augmentation, APO and OPRO in a single
+genetic algorithm and records which generator produced each improvement
+(Section~\ref{sec:bg-apo}).
+
+In medicine, Medprompt~\cite{nori2023can} combined dynamic few-shot
+selection, self-generated chain-of-thought explanations and choice-shuffle
+ensembling, which allowed GPT-4 to reach 90.2\,\% accuracy on the MedQA
+benchmark without any domain-specific fine-tuning. Medprompt is a fixed
+composition of prompting techniques, not a search over prompts, and like most
+prompt-optimisation methods it was evaluated on multiple-choice questions.
+
+\begin{rwgap}
+Prompt-optimisation methods are mostly evaluated on classification and
+multiple-choice tasks with very large models. They have not been studied for
+generating \emph{structured} patient-education content, such as video
+storyboards, with a small, domain-fine-tuned model whose medical content must
+not be changed by the optimised prompt.
+\end{rwgap}
+
+% ---------------------------------------------------------------------
+\section{Automatic Generation of Educational Videos}
+\label{sec:rw-video}
+% ---------------------------------------------------------------------
+
+Video is an effective format for patient education: a systematic review
+found strong evidence that video-based interventions improve the knowledge
+of patients with chronic illnesses~\cite{deshpande2023video}. Producing such
+videos, however, requires medical experts, script writers and designers.
+Recent work therefore investigates how LLMs can automate parts of this
+process. TheoremExplainAgent~\cite{ku2025theoremexplainagent} uses LLM agents
+to plan and write Manim animation code for explanation videos of
+mathematical and scientific theorems; the best configuration produced
+videos for 93.8\,\% of 240 theorems, although most videos still contained
+minor visual layout problems. Code2Video~\cite{chen2026code2video} also
+generates educational videos as executable code, using a planner, a coder and
+a critic agent, and reports a 40\,\% improvement over direct code generation.
+In healthcare, Haider et al.~\cite{haider2026ai} compared AI-generated avatar
+videos with text handouts for postoperative education in a pilot randomised
+trial. Knowledge scores did not differ significantly, but participants rated
+the videos as clearer and more engaging.
+
+These systems focus on the \emph{production} of a video from a given topic
+and rely on the general knowledge of the LLM for its content. They do not
+verify the medical statements against a trusted knowledge source, and they do
+not adapt the content to the needs of a specific patient population.
+
+\begin{rwgap}
+LLM-based video generation has been studied mainly for STEM topics, while
+medical studies use generic AI tools without knowledge grounding. A method is
+missing that produces patient-oriented video storyboards whose medical
+content is derived from guideline-based knowledge and whose structure can be
+validated before production.
+\end{rwgap}
+
+% ---------------------------------------------------------------------
+\section{Summary and Research Gap}
+\label{sec:rw-summary}
+% ---------------------------------------------------------------------
+
+Table~\ref{tab:rw-comparison} compares representative approaches along the
+dimensions that are relevant for this thesis. Each line of research covers
+only part of the problem: medical LLMs and patient-education studies provide
+patient-oriented language but no explicit knowledge; biomedical KG-RAG
+systems ground answers in knowledge graphs but only at inference time;
+neuro-symbolic methods learn from rules but have not been applied to
+medicine; prompt optimisation and video generation have not been combined
+with knowledge-grounded medical content.
+
+\begin{table}[tbp]
+  \centering
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{@{}lccccccc@{}}
+    \toprule
+    \textbf{Approach} & \textbf{Med.} & \textbf{KG} & \textbf{Rules}
+      & \textbf{CoT-FT} & \textbf{P-Opt} & \textbf{Patient} & \textbf{Video} \\
+    \midrule
+    Med-PaLM~\cite{singhal2023large}                 & \rwyes & \rwno  & \rwno  & \rwno  & \rwno  & \rwpart & \rwno \\
+    King et al.~\cite{king2025improving}             & \rwyes & \rwno  & \rwno  & \rwno  & \rwno  & \rwyes  & \rwno \\
+    MedRAG~\cite{xiong2024benchmarking}              & \rwyes & \rwno  & \rwno  & \rwno  & \rwno  & \rwno   & \rwno \\
+    KG-RAG~\cite{soman2024biomedical}                & \rwyes & \rwyes & \rwno  & \rwno  & \rwno  & \rwno   & \rwno \\
+    DR.KNOWS~\cite{gao2025leveraging}                & \rwyes & \rwyes & \rwno  & \rwno  & \rwno  & \rwno   & \rwno \\
+    MedGraphRAG~\cite{wu2025medical}                 & \rwyes & \rwyes & \rwno  & \rwno  & \rwno  & \rwno   & \rwno \\
+    RoG~\cite{luo2024reasoning}                      & \rwno  & \rwyes & \rwpart& \rwpart& \rwno  & \rwno   & \rwno \\
+    ChatRule~\cite{luo2025chatrule}                  & \rwno  & \rwyes & \rwyes & \rwno  & \rwno  & \rwno   & \rwno \\
+    Chain-of-Knowledge~\cite{zhang2024chain}         & \rwno  & \rwyes & \rwyes & \rwyes & \rwno  & \rwno   & \rwno \\
+    Medprompt~\cite{nori2023can}                     & \rwyes & \rwno  & \rwno  & \rwno  & \rwpart& \rwno   & \rwno \\
+    GAAPO~\cite{secheresse2025gaapo}                 & \rwno  & \rwno  & \rwno  & \rwno  & \rwyes & \rwno   & \rwno \\
+    TheoremExplainAgent~\cite{ku2025theoremexplainagent} & \rwno & \rwno & \rwno & \rwno & \rwno & \rwno   & \rwyes \\
+    Code2Video~\cite{chen2026code2video}             & \rwno  & \rwno  & \rwno  & \rwno  & \rwno  & \rwno   & \rwyes \\
+    \midrule
+    \textbf{This thesis}                             & \rwyes & \rwyes & \rwyes & \rwyes & \rwyes & \rwyes  & \rwyes \\
+    \bottomrule
+  \end{tabular}
+  \caption[Comparison of related approaches]{Comparison of related
+  approaches. \textbf{Med.}: medical domain; \textbf{KG}: uses a knowledge
+  graph; \textbf{Rules}: uses symbolic rules; \textbf{CoT-FT}: fine-tunes the
+  LLM on (rule-based) reasoning chains; \textbf{P-Opt}: automatic prompt
+  optimisation; \textbf{Patient}: patient-oriented output; \textbf{Video}:
+  educational video or storyboard generation. \rwyes~=~yes,
+  \rwpart~=~partially, \rwno~=~no. For this thesis, \textbf{Video} refers to
+  storyboard scripts as input for video production.}
+  \label{tab:rw-comparison}
+\end{table}
+
+Based on this analysis, the research gap addressed in this thesis can be
+summarised as follows.
+
+\begin{rwgap}[Research Gap of this Thesis]
+There is no approach that (i)~represents clinical guidelines and patient
+questionnaires about cardiovascular disease as knowledge graphs,
+(ii)~turns symbolic rules mined from these graphs into chain-of-thought
+training data for a medical LLM, (iii)~evaluates whether this improves
+reasoning when knowledge is incomplete, and (iv)~uses the resulting model,
+together with an automatically optimised prompt, to generate
+patient-oriented storyboards for educational videos. This thesis addresses
+this gap with the semantic-driven approach presented in
+Chapter~4.
+\end{rwgap}

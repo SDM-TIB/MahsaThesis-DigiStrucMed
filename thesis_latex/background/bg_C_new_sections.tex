@@ -1,0 +1,696 @@
+% =====================================================================
+%  bg_C_new_sections.tex
+%  WHERE:  at the END of Chapter 2 "Background", i.e. after everything
+%          from bg_B_language_models.tex and BEFORE \chapter{Related Work}.
+%  ADDS:   2.4 Neuro-Symbolic Artificial Intelligence
+%          2.5 Knowledge-Enhanced Large Language Models
+%          2.6 Automatic Prompt Optimization
+%          2.7 Cardiovascular Disease and Patient Education
+%          2.8 Summary
+% =====================================================================
+
+% ---------------------------------------------------------------------
+\section{Neuro-Symbolic Artificial Intelligence}
+\label{sec:bg-nesy}
+% ---------------------------------------------------------------------
+
+Artificial intelligence has developed along two traditions. \emph{Symbolic}
+approaches represent knowledge explicitly, for example as ontologies, logical
+rules or Knowledge Graphs, and derive conclusions by transparent reasoning.
+They are interpretable and precise, but they are expensive to build and
+struggle with noisy, unstructured input such as free text.
+\emph{Neural} (sub-symbolic) approaches, including LLMs, learn statistical
+patterns from large amounts of data. They are robust to noise and very good
+at producing language, but their knowledge is stored implicitly in millions
+of parameters and their conclusions are difficult to verify.
+
+\emph{Neuro-symbolic AI} (NeSy) aims to combine both traditions so that
+each compensates for the weaknesses of the other~\cite{garcez2023neurosymbolic,kautz2022third}.
+Kautz~\cite{kautz2022third} distinguishes several integration patterns,
+ranging from neural models that call a symbolic solver, to symbolic knowledge
+that is \emph{compiled into} the training data or the loss function of a
+neural network. This thesis follows the latter pattern: symbolic rules learnt
+from a Knowledge Graph are translated into natural-language training
+examples, so that the neural model internalises the explicit knowledge
+during fine-tuning.
+
+\subsection{Rule Mining over Knowledge Graphs}
+\label{sec:bg-rule-mining}
+
+A Knowledge Graph contains many regularities that are not stated as rules
+but can be learnt from the data, for example ``if two patients answered the
+same question, then \ldots''. \emph{Rule mining} discovers such regularities
+automatically and expresses them as logical rules.
+
+\begin{bgdefinition}{Horn Rule}
+An \emph{atom} is an expression $p(X,Y)$ where $p \in L$ is an edge label
+(predicate) and $X, Y$ are variables or constants. A \emph{Horn rule} has the
+form
+\[
+  \underbrace{B_1 \wedge B_2 \wedge \dots \wedge B_n}_{\text{body}}
+  \;\Rightarrow\;
+  \underbrace{r(x,y)}_{\text{head}},
+\]
+where the body is a conjunction of atoms and the head is a single atom. A rule
+is \emph{closed} if every variable appears at least twice, which ensures
+that it makes concrete predictions. Replacing all variables by constants such
+that every body atom is a triple in $E$ is called an \emph{instantiation} of
+the rule; the instantiated head is a \emph{prediction}~\cite{galarraga2013amie,galarraga2015fast}.
+\end{bgdefinition}
+
+Not every rule that can be formed is useful, so candidate rules are ranked
+by quality measures. Under the Open-World Assumption, a prediction that is
+missing from the graph cannot simply be counted as an error
+(Section~\ref{sec:bg-owa}). The AMIE family of rule miners therefore
+introduced the \emph{Partial Completeness Assumption} (PCA): if the graph
+knows \emph{at least one} object $y'$ for a subject $x$ and relation $r$,
+it is assumed to know \emph{all} of them; only in this case is a missing
+prediction $r(x,y)$ treated as a counter-example~\cite{galarraga2013amie}.
+
+\begin{bgdefinition}{Rule Quality Measures}
+Let $\vec{B} \Rightarrow r(x,y)$ be a closed Horn rule and let
+$\vec{z}$ denote the variables of the body other than $x$ and $y$.
+\begin{align*}
+  \mathit{supp}(\vec{B} \Rightarrow r(x,y)) &=
+     \#\,(x,y) : \exists \vec{z} : \vec{B} \wedge r(x,y)\\[2pt]
+  \mathit{hc}(\vec{B} \Rightarrow r(x,y)) &=
+     \frac{\mathit{supp}(\vec{B} \Rightarrow r(x,y))}{\#\,(x',y') : r(x',y')}\\[2pt]
+  \mathit{conf}(\vec{B} \Rightarrow r(x,y)) &=
+     \frac{\mathit{supp}(\vec{B} \Rightarrow r(x,y))}{\#\,(x,y) : \exists \vec{z} : \vec{B}}\\[2pt]
+  \mathit{conf}_{\mathit{PCA}}(\vec{B} \Rightarrow r(x,y)) &=
+     \frac{\mathit{supp}(\vec{B} \Rightarrow r(x,y))}{\#\,(x,y) : \exists \vec{z}, y' : \vec{B} \wedge r(x,y')}
+\end{align*}
+The \emph{support} counts correct predictions, the \emph{head coverage}
+(\textit{hc}) normalises the support by the size of the head relation, the
+\emph{standard confidence} treats every missing prediction as false, and the
+\emph{PCA confidence} only counts predictions as false if the graph knows
+another object for the same subject~\cite{galarraga2013amie,galarraga2015fast}.
+\end{bgdefinition}
+
+AMIE~3~\cite{lajus2020fast} is the current version of this rule miner. It
+explores the space of closed Horn rules with a refinement strategy, prunes
+rules whose head coverage falls below a threshold, and computes all measures
+exactly while scaling to graphs with millions of facts. Figure~\ref{fig:bg-rule-mining}
+illustrates how a rule is supported by a Knowledge Graph and how it predicts
+a missing fact.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+      font=\small, >={Stealth[length=2.2mm]},
+      dis/.style={draw=bgBlue, thick, fill=bgBlueLight, rounded corners=3pt,
+                  minimum width=3.1cm, minimum height=0.8cm, align=center},
+      drug/.style={draw=bgGreen, thick, fill=bgGreenLight, ellipse,
+                   minimum width=1.9cm, minimum height=0.8cm},
+      edge/.style={->, thick, bgGrey},
+      pred/.style={->, very thick, dashed, bgOrange},
+      lab/.style={font=\scriptsize, fill=white, inner sep=1pt}]
+    \node[dis] (chf) at (0,3.2) {Congestive\\heart failure};
+    \node[dis] (ah)  at (0,-0.4) {Arterial\\hypertension};
+    \node[drug] (d1) at (-4.2,1.4) {Drug 1};
+    \node[drug] (d2) at (-1.4,1.4) {Drug 2};
+    \node[drug] (d3) at (1.4,1.4)  {Drug 3};
+    \node[drug] (d4) at (4.2,1.4)  {Drug 4};
+    \foreach \d in {d1,d2,d3,d4} \draw[edge] (chf) -- (\d);
+    \draw[edge] (ah) -- (d1);
+    \draw[edge] (ah) -- (d2);
+    \draw[edge] (ah) -- (d3);
+    \draw[pred] (ah) -- (d4) node[midway, below right, lab, text=bgOrange] {predicted};
+    % legend / rule
+    \node[draw=bgGrey, rounded corners=3pt, fill=bgGreyLight, align=left,
+          font=\footnotesize, text width=12.2cm, anchor=north] at (0,-1.35)
+      {\textbf{Rule:}\;
+       $\mathit{treatedBy}(\textit{CHF}, b) \;\Rightarrow\; \mathit{treatedBy}(\textit{AH}, b)$\\[2pt]
+       Solid edges: facts in the graph (\textit{treatedBy}). Drugs~1--3 satisfy
+       body \emph{and} head (support $=3$); Drug~4 satisfies only the body.\\
+       $\mathit{conf} = 3/4 = 0.75$. The dashed edge is the rule's
+       prediction for the missing fact.};
+  \end{tikzpicture}
+  \caption[Rule mining over a Knowledge Graph]{Rule mining over a toy
+  Knowledge Graph. The rule is learnt from drugs that treat both diseases and
+  is then used to predict a missing link (dashed). \textit{treatedBy}
+  abbreviates the Wikidata-derived relation
+  \textit{drug\_or\_therapy\_used\_for\_treatment}.}
+  \label{fig:bg-rule-mining}
+\end{figure}
+
+\begin{bgexample}[A rule mined from the guideline Knowledge Graph]
+Running AMIE~3 on the guideline Knowledge Graph of this thesis (enriched with
+Wikidata) produces, among others, the rule
+\begin{align*}
+  &\mathit{drug\_or\_therapy\_used\_for\_treatment}(\textit{congestive\_heart\_failure},\, b)\\
+  \Rightarrow\; &\mathit{drug\_or\_therapy\_used\_for\_treatment}(\textit{arterial\_hypertension},\, b)
+\end{align*}
+with $\mathit{supp}=52$, a body size of $65$, and therefore
+$\mathit{conf} = \mathit{conf}_{\mathit{PCA}} = 52/65 = 0.80$; its head
+coverage is $0.032$. In words: \emph{80\,\% of the drugs that the graph
+lists for congestive heart failure are also listed for arterial
+hypertension.} This reflects a real pharmacological overlap (e.g.\
+diuretics, ACE inhibitors and beta-blockers are used for both conditions).
+However, a mined rule is a \emph{statistical regularity of the graph}, not a
+clinical recommendation: the remaining 20\,\% of drugs show that the rule
+does not hold in general, and its predictions must not be presented to
+patients without verification.
+\end{bgexample}
+
+\subsection{From Symbolic Rules to Chain-of-Thought Training Data}
+\label{sec:bg-rules-to-cot}
+
+Mined rules are formulated in the vocabulary of the Knowledge Graph and
+cannot be used directly to train a language model. They are therefore
+\emph{grounded} in concrete entities and \emph{verbalised} as natural
+language.
+
+\begin{bgdefinition}{Rule Grounding}
+Let $\rho: \vec{B} \Rightarrow r(x,y)$ be a Horn rule. A \emph{grounding} of
+$\rho$ is a substitution $\theta$ that maps every variable of $\rho$ to a
+constant in $N$ such that every grounded body atom $\theta(B_i)$ is a
+triple in $E$. The grounded head $\theta(r(x,y))$ is the conclusion
+supported by the grounded body, which serves as its evidence or
+\emph{reasoning path}~\cite{galarraga2015fast,zhou2026breaks}.
+\end{bgdefinition}
+
+A grounding provides exactly the ingredients of a chain-of-thought
+demonstration (Definition of Chain-of-Thought in
+Section~\ref{sec:bg-prompting}): the grounded body atoms are the
+intermediate reasoning steps, the rule is the justification that connects
+them, and the grounded head is the answer. Rules with low PCA confidence can
+be excluded or presented as uncertain, so that the model only learns
+reasoning patterns that are well supported by the data.
+
+\begin{bgexample}[From a rule to a chain-of-thought training instance (simplified)]
+\textbf{Rule} (guideline KG, $\mathit{conf}_{\mathit{PCA}} = 1.0$):
+\begin{align*}
+  &\mathit{gradingSystemName}(a, \textit{``ESC class of recommendation''})\\
+  \Rightarrow\; &\mathit{gradeDimension}(a, \textit{CLASS\_OF\_RECOMMENDATION})
+\end{align*}
+\textbf{Grounding:} $a \mapsto g_{17}$, a grade record attached to one
+guideline recommendation.\par\smallskip
+\textbf{Generated training instance:}\\
+\emph{Question:} Which grade dimension does grade record $g_{17}$ describe?\\
+\emph{Reasoning:} (1)~The knowledge graph states that $g_{17}$ uses the
+grading system ``ESC class of recommendation''. (2)~Records graded with this
+system describe the dimension \emph{class of recommendation} (rule
+confidence 1.0). (3)~Therefore, $g_{17}$ describes a class of
+recommendation.\\
+\emph{Answer:} CLASS\_OF\_RECOMMENDATION
+\end{bgexample}
+
+% ---------------------------------------------------------------------
+\section{Knowledge-Enhanced Large Language Models}
+\label{sec:bg-kg-llm}
+% ---------------------------------------------------------------------
+
+Knowledge Graphs and LLMs have complementary strengths: Knowledge Graphs are
+explicit, verifiable and easy to update, while LLMs are flexible and
+produce fluent language. Pan et al.~\cite{pan2024unifying} distinguish three
+ways of combining them: (i)~\emph{KG-enhanced LLMs}, which use a Knowledge
+Graph during pre-training, fine-tuning or inference to improve the factual
+quality of the model; (ii)~\emph{LLM-augmented KGs}, which use LLMs to build,
+complete or query Knowledge Graphs; and (iii)~\emph{synergised} approaches,
+in which both components improve each other. This thesis belongs mainly to
+the first category: rules from the Knowledge Graph shape the fine-tuning data,
+and facts from the Knowledge Graph are given to the model as context at
+inference time.
+
+\subsection{Retrieval-Augmented Generation}
+\label{sec:bg-rag}
+
+The most common way of providing knowledge at inference time is
+\emph{Retrieval-Augmented Generation} (RAG)~\cite{lewis2020retrieval}.
+
+\begin{bgdefinition}{Retrieval-Augmented Generation}
+Given an input $x$ and a knowledge source $\mathcal{D}$, a retriever selects
+a set of relevant items $Z = \{z_1, \dots, z_k\} \subseteq \mathcal{D}$, and
+a generator produces the output conditioned on both:
+\[
+  p(y \mid x) \;\approx\; \sum_{z \in Z} p_{\eta}(z \mid x)\; p_{\theta}(y \mid x, z),
+\]
+where $p_{\eta}$ is the retrieval model and $p_{\theta}$ the language
+model~\cite{lewis2020retrieval}. In \emph{KG-RAG}, $\mathcal{D}$ is a
+Knowledge Graph and the retrieved items are triples, paths or sub-graphs that
+are serialised as text before being added to the prompt.
+\end{bgdefinition}
+
+Because the knowledge is kept outside of the model, RAG allows updates
+without re-training, for example when a new version of a guideline is
+published, and the retrieved items can be shown to the user as evidence.
+However, KG-RAG implicitly assumes that the answer can be found in the graph.
+As discussed in Section~\ref{sec:bg-owa}, this is rarely true. Zhou et
+al.~\cite{zhou2026breaks} therefore proposed BRINK, a benchmark in which the
+triple that directly answers a question is \emph{removed}, while an
+alternative reasoning path remains. A system can only answer correctly if it
+\emph{reasons} over the remaining facts instead of simply looking up the
+answer (Figure~\ref{fig:bg-kgrag}).
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+      font=\small, >={Stealth[length=2.2mm]},
+      box/.style={draw, thick, rounded corners=3pt, minimum height=1.1cm,
+                  align=center, text width=2.4cm},
+      ent/.style={draw=bgBlue, thick, fill=white, circle, minimum size=0.75cm,
+                  inner sep=0pt, font=\footnotesize},
+      lab/.style={font=\scriptsize, inner sep=1.5pt}]
+    % top row
+    \node[box, fill=bgGreyLight] (q) at (0,0) {\textbf{Question}\\\footnotesize ``Which grade\\dimension does $g$\\describe?''};
+    \node[box, fill=bgPurpleLight, draw=bgPurple] (r) at (3.75,0) {\textbf{Retriever}};
+    \node[box, fill=bgOrangeLight, draw=bgOrange] (llm) at (8.0,0) {\textbf{LLM}\\\footnotesize reasons over\\the evidence};
+    \node[box, fill=bgGreenLight, draw=bgGreen] (ans) at (11.6,0) {\textbf{Answer} $c$\\\footnotesize + evidence\\path};
+    % incomplete KG below the retriever
+    \begin{scope}[shift={(3.75,-3.6)}]
+      \node[ent] (g) at (-1.9,0.55) {$g$};
+      \node[ent] (s) at (1.9,0.55)  {$s$};
+      \node[ent] (c) at (0,-1.05)   {$c$};
+      \draw[->, thick] (g) -- node[lab, above] {gradingSystem} (s);
+      \draw[->, thick] (s) -- node[lab, below right] {describes} (c);
+      \draw[->, thick, dashed, red!70!black] (g) -- node[lab, below left, text=red!70!black] {removed} (c);
+    \end{scope}
+    \begin{scope}[on background layer]
+      \node[draw=bgBlue, fill=bgBlueLight, rounded corners=6pt, fit=(g)(s)(c),
+            inner xsep=22pt, inner ysep=12pt] (kg) {};
+    \end{scope}
+    \node[font=\footnotesize\bfseries, text=bgBlue, anchor=north east] at (kg.south east) {Incomplete KG\ };
+    % arrows
+    \draw[->, thick] (q) -- (r);
+    \draw[->, thick] ([xshift=-4mm]r.south) -- node[lab, left] {query} ([xshift=-4mm]r.south |- kg.north);
+    \draw[<-, thick] ([xshift=4mm]r.south) -- node[lab, right, align=left] {path\\$g \rightarrow s \rightarrow c$} ([xshift=4mm]r.south |- kg.north);
+    \draw[->, thick] (r) -- node[lab, above, align=center] {question\\+ path} (llm);
+    \draw[->, thick] (llm) -- (ans);
+  \end{tikzpicture}
+  \caption[KG-based Retrieval-Augmented Generation under incomplete knowledge]{
+  KG-based Retrieval-Augmented Generation under incomplete knowledge. The
+  directly supporting triple ($g \rightarrow c$, red) is missing, so the LLM
+  must infer the answer from the alternative path $g \rightarrow s \rightarrow c$.
+  This is the evaluation setting of the BRINK benchmark~\cite{zhou2026breaks}.}
+  \label{fig:bg-kgrag}
+\end{figure}
+
+\subsection{Evaluating Answers against Answer Sets}
+\label{sec:bg-metrics}
+
+Many questions over a Knowledge Graph have more than one correct answer
+(e.g.\ ``Which drugs are recommended for HFrEF?''). Model outputs are
+therefore compared with a \emph{set} of gold answers rather than with a single
+string.
+
+\begin{bgdefinition}{Answer-Set Metrics}
+For a question $q$, let $A_q$ be the set of gold answers and $P_q$ the set
+of answers extracted from the model output after normalisation. Then
+\[
+  \mathit{Hits@Any}(q) = \mathbb{1}\left[P_q \cap A_q \neq \emptyset\right], \quad
+  \mathit{Prec}(q) = \frac{|P_q \cap A_q|}{|P_q|}, \quad
+  \mathit{Rec}(q) = \frac{|P_q \cap A_q|}{|A_q|},
+\]
+\[
+  F_1(q) = \frac{2\cdot \mathit{Prec}(q)\cdot \mathit{Rec}(q)}{\mathit{Prec}(q)+\mathit{Rec}(q)} .
+\]
+\emph{Hits@Hard} additionally checks whether $P_q$ contains the specific
+\emph{hard} answer whose supporting triple was removed. All metrics are
+averaged over the questions of a test set~\cite{zhou2026breaks}.
+\end{bgdefinition}
+
+\begin{bgexample}[Computing the answer-set metrics]
+Let $A_q = \{\text{ACE inhibitor}, \text{ARNI}, \text{beta-blocker}, \text{MRA}\}$
+and suppose the model answers ``beta-blocker, MRA, digoxin'', i.e.\
+$P_q = \{\text{beta-blocker}, \text{MRA}, \text{digoxin}\}$. Then
+$|P_q \cap A_q| = 2$, so $\mathit{Hits@Any}=1$,
+$\mathit{Prec} = 2/3 \approx 0.67$, $\mathit{Rec} = 2/4 = 0.50$ and
+$F_1 = (2 \cdot 0.67 \cdot 0.50)/(0.67+0.50) \approx 0.57$. The model found
+some correct answers (high Hits@Any), but it missed half of them and added
+one that is not in the gold set.
+\end{bgexample}
+
+% ---------------------------------------------------------------------
+\section{Automatic Prompt Optimization}
+\label{sec:bg-apo}
+% ---------------------------------------------------------------------
+
+The output of an LLM depends strongly on the wording of its prompt
+(Section~\ref{sec:bg-prompting}). Writing good prompts by hand is a
+trial-and-error process that does not scale and is hard to reproduce.
+\emph{Automatic prompt optimization} treats the prompt itself as the object
+that is optimised, while the model stays fixed.
+
+\begin{bgdefinition}{Prompt Optimization Problem}
+Let $\mathcal{M}$ be a fixed language model, $\mathcal{P}$ the space of
+possible prompts, $D_{\mathit{val}}$ a set of examples $(x, y^{*})$ and
+$f(\cdot) \in [0,1]$ a task-specific scoring function. Prompt optimization
+searches for
+\[
+  p^{*} \;=\; \arg\max_{p \in \mathcal{P}} \;
+  \frac{1}{|D_{\mathit{val}}|} \sum_{(x,y^{*}) \in D_{\mathit{val}}}
+  f\big(\mathcal{M}(p, x),\, y^{*}\big).
+\]
+Because $\mathcal{P}$ is discrete and $\mathcal{M}$ is used as a black box,
+gradient-based optimisation is not possible, and search heuristics are
+used instead~\cite{pryzant2023automatic,yang2024large,secheresse2025gaapo}.
+\end{bgdefinition}
+
+Several strategies for this search have been proposed:
+
+\begin{itemize}
+  \item \textbf{Automatic Prompt Optimization (APO/ProTeGi)}~\cite{pryzant2023automatic}
+        evaluates a prompt on a mini-batch, asks an LLM to write a
+        natural-language critique of the errors (a ``textual gradient''), and
+        then asks it to edit the prompt in the opposite direction of this
+        critique.
+  \item \textbf{Optimization by PROmpting (OPRO)}~\cite{yang2024large} shows an
+        optimiser LLM a list of previous prompts together with their scores
+        and asks it to propose a new prompt that is expected to score higher.
+  \item \textbf{Genetic algorithms}~\cite{holland1975adaptation,goldberg1989genetic}
+        maintain a \emph{population} of candidate solutions and improve it over
+        \emph{generations} by \emph{mutation} (random changes),
+        \emph{crossover} (combining two parents) and \emph{selection}
+        (keeping the fittest candidates).
+\end{itemize}
+
+\emph{GAAPO} (Genetic Algorithmic Applied to Prompt
+Optimization)~\cite{secheresse2025gaapo} combines these ideas. It is a
+genetic algorithm whose new candidates are produced by several different
+generators: LLM-based mutation with different strategies (e.g.\ adding an
+expert persona, decomposing the task, making the prompt more concise),
+crossover of two parent prompts, few-shot augmentation with training
+examples, APO and OPRO. All candidates are scored on the same validation
+set, and the best ones are kept as parents for the next generation
+(Figure~\ref{fig:bg-gaapo}). Since every candidate records which generator
+produced it, GAAPO also reveals which optimisation strategy works best for a
+given task.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+      font=\small, >={Stealth[length=2.2mm]},
+      stage/.style={draw, thick, rounded corners=4pt, minimum height=1.1cm,
+                    text width=2.9cm, align=center},
+      op/.style={draw=bgOrange, fill=bgOrangeLight, rounded corners=2pt,
+                 minimum width=2.3cm, minimum height=0.5cm, font=\footnotesize}]
+    \node[stage, fill=bgGreyLight] (init) at (0,0) {\textbf{Initial prompt(s)}\\\footnotesize population $P_0$};
+    \node[stage, fill=bgBlueLight, draw=bgBlue] (pop) at (0,-2.4) {\textbf{Population} $P_{g-1}$\\\footnotesize best $N$ prompts};
+    % operators
+    \node[op] (o1) at (5.0,0.2)  {Mutation};
+    \node[op] (o2) at (5.0,-0.5) {Crossover};
+    \node[op] (o3) at (5.0,-1.2) {Few-shot};
+    \node[op] (o4) at (5.0,-1.9) {APO};
+    \node[op] (o5) at (5.0,-2.6) {OPRO};
+    \node[draw=bgOrange, dashed, rounded corners=4pt, fit=(o1)(o5), inner sep=6pt,
+          label={[font=\footnotesize\bfseries, text=bgOrange]above:1. Generation}] (gen) {};
+    \node[stage, fill=bgPurpleLight, draw=bgPurple] (eval) at (5.0,-5.0)
+        {\textbf{2. Evaluation}\\\footnotesize score $f$ on $D_{\mathit{val}}$\\with fixed LLM $\mathcal{M}$};
+    \node[stage, fill=bgGreenLight, draw=bgGreen] (sel) at (0,-5.0)
+        {\textbf{3. Selection}\\\footnotesize keep top-$N$\\(elitism)};
+    \node[stage, fill=white] (best) at (-4.2,-5.0) {\textbf{Best prompt} $p^{*}$\\\footnotesize after $G$ generations};
+    \draw[->, thick] (init) -- (pop);
+    \draw[->, thick] (pop.east) -- node[above, font=\scriptsize] {parents} (gen.west|-pop.east);
+    \draw[->, thick] (gen.south) -- node[right, font=\scriptsize] {new candidates} (eval.north);
+    \draw[->, thick] (eval) -- (sel);
+    \draw[->, thick] (sel) -- node[left, font=\scriptsize, align=right] {next\\generation} (pop);
+    \draw[->, thick] (sel) -- node[above, font=\scriptsize] {$g = G$} (best);
+  \end{tikzpicture}
+  \caption[The GAAPO optimisation loop]{The GAAPO optimisation loop. In each
+  generation, five generators create new prompt candidates from the current
+  parents; all candidates are scored with the same fixed model and
+  validation set, and the best $N$ are kept. Based on Sécheresse et
+  al.~\cite{secheresse2025gaapo}.}
+  \label{fig:bg-gaapo}
+\end{figure}
+
+\begin{bgexample}[Crossover and mutation of two prompts]
+\textbf{Parent A:} \emph{``You are a cardiology nurse. Write one short video
+scene for patients. Use simple words.''}\\
+\textbf{Parent B:} \emph{``Create a storyboard scene in JSON. Explain
+abbreviations at first mention.''}\par\smallskip
+\textbf{Crossover} (first half of A + second half of B):
+\emph{``You are a cardiology nurse. Write one short video scene. Explain
+abbreviations at first mention.''}\\
+\textbf{Mutation} (strategy ``constraint addition''):
+\emph{``\ldots\ Keep the narration under 35 words.''}\par\smallskip
+Both children are then scored, and they replace weaker members of the
+population only if they achieve a higher score.
+\end{bgexample}
+
+% ---------------------------------------------------------------------
+\section{Cardiovascular Disease and Patient Education}
+\label{sec:bg-medical}
+% ---------------------------------------------------------------------
+
+This section introduces the medical application domain of the thesis. It is
+written for readers with a computer-science background and only covers the
+concepts needed to understand the data and the evaluation.
+
+\subsection{Cardiovascular Disease and Heart Failure}
+\label{sec:bg-cvd}
+
+\emph{Cardiovascular diseases} (CVDs) are a group of disorders of the heart
+and blood vessels, including coronary heart disease, cerebrovascular
+disease and heart failure. According to the World Health Organization, an
+estimated 19.8~million people died from CVDs in 2022, which corresponds to
+approximately 32\,\% of all global deaths~\cite{who2025cvd}. Many of these
+deaths are related to modifiable risk factors such as high blood pressure,
+tobacco use, unhealthy diet and physical inactivity, which makes patient
+education an important part of prevention and long-term care.
+
+\emph{Heart failure} (HF) is not a single disease but a clinical syndrome
+with typical symptoms such as breathlessness, ankle swelling and fatigue. It is
+caused by a structural and/or functional abnormality of the heart, which
+leads to increased pressures inside the heart and/or an insufficient output of
+blood~\cite{mcdonagh2021esc}.
+An important measurement is the \emph{left-ventricular ejection fraction}
+(LVEF), the percentage of blood that the left ventricle ejects with each
+contraction. The European Society of Cardiology (ESC) uses the LVEF to
+distinguish three types of heart failure (Table~\ref{tab:bg-hf-types}).
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    \textbf{Abbreviation} & \textbf{Type of heart failure} & \textbf{LVEF} \\
+    \midrule
+    HFrEF  & HF with reduced ejection fraction       & $\leq 40\,\%$ \\
+    HFmrEF & HF with mildly reduced ejection fraction & $41$--$49\,\%$ \\
+    HFpEF  & HF with preserved ejection fraction      & $\geq 50\,\%$ \\
+    \bottomrule
+  \end{tabular}
+  \caption{Types of heart failure according to the 2021 ESC
+  guidelines~\cite{mcdonagh2021esc}. Additional criteria (symptoms, signs and
+  further findings) are required for a diagnosis.}
+  \label{tab:bg-hf-types}
+\end{table}
+
+Patients with heart failure often have several co-morbidities, such as
+hypertension, diabetes or atrial fibrillation, and take several drugs at the
+same time. Their questions (``What does an ejection fraction of 25\,\% mean
+for me?'') therefore require answers that are correct, personalised and
+understandable at the same time, which is the motivating scenario of this
+thesis (see the motivating example in Chapter~1).
+
+\subsection{Clinical Practice Guidelines and Recommendation Grading}
+\label{sec:bg-guidelines}
+
+\emph{Clinical practice guidelines} are documents in which expert panels
+summarise the available evidence and formulate recommendations for diagnosis
+and treatment. For heart failure in Europe, the main reference is the 2021
+ESC guideline~\cite{mcdonagh2021esc} together with its 2023 focused
+update~\cite{mcdonagh2023focused}. Each recommendation is graded along two
+dimensions (Table~\ref{tab:bg-grades}): the \emph{class of recommendation}
+expresses how strongly an action is recommended, and the \emph{level of
+evidence} expresses how strong the underlying scientific evidence is.
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \begin{tabular}{@{}p{2.9cm}p{1.9cm}p{7.6cm}@{}}
+    \toprule
+    \textbf{Dimension} & \textbf{Grade} & \textbf{Meaning / wording} \\
+    \midrule
+    Class of        & Class I   & Is recommended or indicated \\
+    recommendation  & Class IIa & Should be considered \\
+                    & Class IIb & May be considered \\
+                    & Class III & Is not recommended \\
+    \midrule
+    Level of        & Level A & Data from multiple randomised clinical trials or meta-analyses \\
+    evidence        & Level B & Data from a single randomised trial or large non-randomised studies \\
+                    & Level C & Consensus of experts and/or small studies, retrospective studies, registries \\
+    \bottomrule
+  \end{tabular}
+  \caption{Grading of recommendations in ESC guidelines~\cite{mcdonagh2021esc}.}
+  \label{tab:bg-grades}
+\end{table}
+
+\begin{bgexample}[A graded recommendation as a Knowledge Graph]
+The guideline sentence \emph{``An MRA is recommended for patients with HFrEF
+to reduce the risk of HF hospitalisation and death (Class~I, Level~A)''}
+(paraphrased from~\cite{mcdonagh2021esc}) can be represented as a small
+graph: a node for the recommendation with edges to the drug class
+(\textit{MRA}), the patient group (\textit{HFrEF}), the outcome
+(\textit{HF hospitalisation and death}), the source document, and a grade
+record that has a \textit{classOfRecommendation} (\textit{I}) and a
+\textit{levelOfEvidence} (\textit{A}). Keeping the grade and the source as
+explicit nodes allows a generated answer to state not only \emph{what} is
+recommended, but also \emph{how strongly} and \emph{according to which
+guideline}.
+\end{bgexample}
+
+\subsection{Health Literacy and Readability}
+\label{sec:bg-readability}
+
+Medical correctness alone is not enough; patients must also be able to
+understand and use the information.
+
+\begin{bgdefinition}{Health Literacy}
+\emph{Health literacy} ``entails people's knowledge, motivation and
+competences to access, understand, appraise, and apply health information in
+order to make judgments and take decisions in everyday life concerning
+healthcare, disease prevention and health promotion to maintain or improve
+quality of life during the life course''~\cite{sorensen2012health}.
+\end{bgdefinition}
+
+A simple, widely used proxy for how understandable a text is, is a
+\emph{readability formula}. The best known is the Flesch Reading Ease
+score~\cite{flesch1948new}; Amstad~\cite{amstad1978verstandlich} adapted it to
+German, which is the language of the DigiLearnHF platform.
+
+\begin{bgdefinition}{Flesch Reading Ease}
+Let $\mathit{ASL}$ be the average sentence length (words per sentence) and
+$\mathit{ASW}$ the average number of syllables per word. Then
+\begin{align*}
+  \mathit{FRE}_{\mathit{en}} &= 206.835 - 1.015 \cdot \mathit{ASL} - 84.6 \cdot \mathit{ASW}
+     &&\text{(English,~\cite{flesch1948new})}\\
+  \mathit{FRE}_{\mathit{de}} &= 180 - \mathit{ASL} - 58.5 \cdot \mathit{ASW}
+     &&\text{(German,~\cite{amstad1978verstandlich})}
+\end{align*}
+Higher values indicate easier texts; scores of 60--70 correspond to plain
+language and scores above 80 to easy texts~\cite{flesch1948new}.
+\end{bgdefinition}
+
+\begin{bgexample}[Same content, different readability]
+\textbf{Technical:} \emph{``Pharmacological therapy with mineralocorticoid
+receptor antagonists reduces hospitalisation in patients with reduced
+ejection fraction.''} (14 words, 44 syllables) \\
+$\mathit{FRE}_{\mathit{en}} = 206.835 - 1.015\cdot 14 - 84.6\cdot\frac{44}{14} \approx -73$
+\;(extremely difficult)\par\smallskip
+\textbf{Plain:} \emph{``Some heart medicines lower the risk that you have to
+go to the hospital.''} (14 words, 19 syllables) \\
+$\mathit{FRE}_{\mathit{en}} = 206.835 - 1.015\cdot 14 - 84.6\cdot\frac{19}{14} \approx 78$
+\;(fairly easy)\par\smallskip
+Both sentences have the same length; the difference comes entirely from long,
+technical words. Readability formulas do not measure correctness, so a
+simplified text must still be checked against the original guideline.
+\end{bgexample}
+
+\subsection{Educational Videos and Multimedia Learning}
+\label{sec:bg-video}
+
+Short educational videos are a popular format for patient education. A
+systematic review of video-based interventions for patients with chronic
+illnesses found strong evidence that videos improve patients' knowledge of
+their condition, whereas effects on clinical outcomes were less
+consistent~\cite{deshpande2023video}. The design of such videos can be
+guided by the \emph{cognitive theory of multimedia learning}~\cite{mayer2020multimedia},
+which assumes that people process information through two channels (visual
+and auditory), that each channel has a limited capacity, and that learning
+requires active processing. From this theory, Mayer derives design principles
+such as:
+\begin{itemize}
+  \item \textbf{Multimedia principle:} people learn better from words and
+        pictures than from words alone.
+  \item \textbf{Coherence principle:} extraneous material (decorative
+        pictures, unnecessary details) should be excluded.
+  \item \textbf{Signalling principle:} key information should be highlighted,
+        e.g.\ with short on-screen text.
+  \item \textbf{Segmenting principle:} complex content should be presented in
+        short, learner-paced segments (scenes).
+  \item \textbf{Modality principle:} graphics are better explained with spoken
+        narration than with long printed text.
+\end{itemize}
+
+Before a video is produced, its content is planned in a \emph{storyboard}.
+
+\begin{bgdefinition}{Storyboard}
+A \emph{storyboard} is an ordered sequence of scenes $S = (s_1, \dots, s_n)$
+that specifies an educational video before production. Each scene
+$s_i = (\mathit{narration}_i, \mathit{visual}_i, \mathit{text}_i)$ consists of
+the spoken narration, a description of the visual content, and short
+on-screen text that signals the key message.
+\end{bgdefinition}
+
+\begin{bgexample}[A one-scene storyboard]
+The following storyboard, taken from the dataset used in this thesis, answers
+the request \emph{``Create a short patient-education scene that explains the
+NYHA classification of heart failure and how it relates to symptom
+severity.''}
+\begin{lstlisting}[style=bgcode]
+{ "title": "Understanding NYHA Heart Failure Classes",
+  "scenes": [ {
+    "scene_number": 1,
+    "narration": "Heart failure is grouped into NYHA Classes I to IV,
+                  reflecting how symptoms limit daily activities and
+                  guide treatment decisions.",
+    "visual_description": "Simple chart showing four icons representing
+                           increasing activity limitation.",
+    "on_screen_text": "NYHA I-IV: Symptom Levels" } ] }
+\end{lstlisting}
+The narration carries the explanation (modality principle), the visual
+illustrates it (multimedia principle), and the on-screen text highlights the
+key term (signalling principle).
+\end{bgexample}
+
+A structured storyboard format has two advantages for LLM-based generation:
+it can be validated automatically (e.g.\ whether all fields are present and
+the narration is short enough), and its medical statements can be checked
+scene by scene against the Knowledge Graph before the video is produced.
+
+% ---------------------------------------------------------------------
+\section{Summary}
+\label{sec:bg-summary}
+% ---------------------------------------------------------------------
+
+Figure~\ref{fig:bg-overview} summarises how the concepts introduced in this
+chapter relate to each other. Semantic data modelling and RML mappings turn
+questionnaires and clinical guidelines into Knowledge Graphs
+(Sections~\ref{sec:bg-sparql}--\ref{sec:bg-enrichment}). Rule mining extracts
+symbolic regularities from these graphs, which are grounded and verbalised
+as chain-of-thought training data for parameter-efficient fine-tuning
+(Sections~\ref{sec:bg-peft}, \ref{sec:bg-nesy}). At inference time, the
+fine-tuned model receives Knowledge Graph context (Section~\ref{sec:bg-kg-llm})
+and a prompt that is optimised automatically (Section~\ref{sec:bg-apo}) to
+produce patient-oriented storyboards for educational videos
+(Section~\ref{sec:bg-medical}).
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+      font=\footnotesize, >={Stealth[length=2mm]},
+      blk/.style={draw, thick, rounded corners=3pt, minimum height=1.05cm,
+                  text width=2.15cm, align=center},
+      sec/.style={font=\scriptsize\itshape, text=bgGrey, inner sep=2pt}]
+    % row 1: symbolic side
+    \node[blk, fill=bgGreyLight] (src) at (0,0) {Questionnaires\\\& clinical\\guidelines};
+    \node[blk, fill=bgBlueLight, draw=bgBlue] (kg) at (3.85,0) {Knowledge\\Graph (RDF)};
+    \node[blk, fill=bgBlueLight, draw=bgBlue] (rules) at (7.7,0) {Symbolic rules\\(AMIE)};
+    \node[blk, fill=bgBlueLight, draw=bgBlue] (cot) at (11.55,0) {CoT training\\examples};
+    % row 2: neural side
+    \node[blk, fill=bgOrangeLight, draw=bgOrange] (ft) at (11.55,-2.9) {LoRA fine-tuned\\LLM};
+    \node[blk, fill=bgPurpleLight, draw=bgPurple] (prompt) at (7.7,-2.9) {Optimised\\prompt (GAAPO)};
+    \node[blk, fill=bgGreenLight, draw=bgGreen] (story) at (3.85,-2.9) {Storyboard\\script};
+    \node[blk, fill=bgGreenLight, draw=bgGreen] (video) at (0,-2.9) {Educational\\video};
+    % arrows row 1
+    \draw[->, thick] (src) -- node[above, sec] {RML} (kg);
+    \draw[->, thick] (kg) -- node[above, sec] {mining} (rules);
+    \draw[->, thick] (rules) -- node[above, sec] {grounding} (cot);
+    \draw[->, thick] (cot) -- node[right, sec] {fine-tuning} (ft);
+    % KG context at inference time
+    \draw[->, thick, dashed, bgBlue] (kg.south) -- ++(0,-0.75) -| node[pos=0.25, above, sec, text=bgBlue] {KG context at inference time (RAG)} ([xshift=-6mm]ft.north);
+    % arrows row 2
+    \draw[->, thick] (prompt) -- node[above, sec] {prompt} (ft);
+    \draw[->, thick] (ft.south) -- ++(0,-0.5) -| node[pos=0.25, below, sec] {generation} (story.south);
+    \draw[->, thick] (story) -- node[above, sec] {production} (video);
+    % layer labels
+    \node[anchor=south west, font=\scriptsize\bfseries, text=bgBlue] at ($(src.north west)+(0,0.08)$) {Symbolic knowledge};
+    \node[anchor=north west, font=\scriptsize\bfseries, text=bgOrange] at ($(video.south west)+(0,-0.08)$) {Neural generation};
+  \end{tikzpicture}
+  \caption[Overview of the background concepts]{Overview of how the
+  background concepts of this chapter are connected in the
+  neuro-symbolic pipeline of this thesis.}
+  \label{fig:bg-overview}
+\end{figure}

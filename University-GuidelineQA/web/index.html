@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Semantic-Driven Techniques for Enhancing the Quality of LLM-Generated Educational Videos for Cardiovascular Diseases. A DigiStrucMed research prototype with GAAPO and GuidelineKG.">
+  <title>Cardiovascular Education | DigiStrucMed · GAAPO · GuidelineKG</title>
+  <link rel="icon" type="image/png" href="/assets/digistrucmed-logo.png">
+  <link rel="stylesheet" href="/style.css?v=cardiology1">
+  <script src="/app.js?v=cardiology1" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="DigiStrucMed cardiovascular education home"><img class="brand-logo" src="/assets/digistrucmed-logo.png" alt="DigiStrucMed" width="147" height="118"><span class="brand-copy"><strong>Cardiovascular Education</strong><span>GAAPO · GuidelineKG</span></span></a>
+    <span class="status" id="status" role="status"><span class="dot"></span><span id="status-text">Connecting to model</span></span>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="project-title">
+      <div class="intro-copy">
+        <p class="eyebrow">DIGISTRUCMED · MASTER’S THESIS RESEARCH</p>
+        <h1 id="project-title">Semantic-Driven Techniques for Enhancing the Quality of <span>LLM-Generated Educational Videos</span> for Cardiovascular Diseases</h1>
+        <p class="intro-text">Explore cardiovascular questions and create patient-education storyboards with medical knowledge, semantic methods and the saved GAAPO prompt.</p>
+        <p class="researcher">Mahsa Forghani Tehrani <span>·</span> Research demonstration</p>
+      </div>
+      <figure class="hero-art">
+        <div class="art-backdrop"><img src="/assets/heart-knowledge-graph.png" alt="Conceptual illustration of a human heart connected to a network of knowledge graph nodes" width="1448" height="1086" fetchpriority="high"></div>
+        <figcaption>Cardiology <span>·</span> Knowledge graphs <span>·</span> Patient education</figcaption>
+      </figure>
+    </section>
+    <div class="workspace-heading"><div><p class="eyebrow">EXPLORE THE MODEL</p><h2>Create a storyboard or ask a question.</h2></div><p>Use the selected GAAPO prompt<br>or explore the guideline model directly.</p></div>
+    <section class="workspace" aria-label="Question and answer">
+      <form id="question-form" class="question-card">
+        <div class="mode-field"><label for="generation-mode">Mode</label><select id="generation-mode"><option value="gaapo" selected>GAAPO best prompt · storyboard</option><option value="plain">Plain GuidelineKG Q&A</option></select></div>
+        <p id="mode-help" class="mode-help">Uses the saved GAAPO prompt to request storyboard JSON. Start with one scene for a short response.</p>
+        <div class="card-heading"><span class="step">01</span><label for="question" id="question-label">Describe your storyboard</label></div>
+        <textarea id="question" name="question" maxlength="12000" rows="5" placeholder="Create one patient-education scene explaining what heart failure is. Highlight Heart failure on screen." required></textarea>
+        <div class="suggestions" aria-label="Example requests">
+          <button type="button" class="suggestion" data-mode="gaapo" data-question="Create one patient-education scene explaining what heart failure is. Keep the narration simple and highlight Heart failure on screen.">Heart failure scene</button>
+          <button type="button" class="suggestion" data-mode="gaapo" data-question="Create one patient-education scene about asking your medical team for support when living with heart failure. Highlight Ask for support on screen.">Patient support scene</button>
+          <button type="button" class="suggestion" data-mode="plain" data-question="What is heart failure?" hidden>Heart failure</button>
+          <button type="button" class="suggestion" data-mode="plain" data-question="What does a Class I recommendation mean?" hidden>Recommendation classes</button>
+          <button type="button" class="suggestion" data-mode="plain" data-question="What is the difference between HFrEF and HFpEF?" hidden>HFrEF and HFpEF</button>
+        </div>
+        <div class="form-bottom">
+          <div class="length"><label for="answer-length">Answer length</label><select id="answer-length"><option value="128">Short</option><option value="256" selected>Standard</option><option value="512">Extended</option></select></div>
+          <div class="actions"><button type="button" id="stop-button" class="secondary" hidden>Stop</button><button type="submit" id="ask-button" class="primary" disabled>Generate storyboard</button></div>
+        </div>
+      </form>
+      <section class="answer-card" aria-labelledby="answer-title">
+        <div class="card-heading"><span class="step">02</span><h2 id="answer-title">Generated storyboard</h2><button type="button" id="copy-button" class="text-button" hidden>Copy answer</button></div>
+        <div id="answer" class="answer empty" role="log" aria-live="polite" aria-relevant="text">Your answer will appear here.</div>
+        <p id="error" class="error" role="alert" hidden></p>
+        <div class="answer-footer"><span id="timing" role="status">Ready when you are.</span><button type="button" id="download-button" class="text-button" hidden>Download .txt</button></div>
+      </section>
+    </section>
+    <details class="about" id="prompt-details"><summary>GAAPO-selected prompt and provenance</summary><p id="prompt-provenance">Loading the saved prompt…</p><pre id="selected-prompt" class="prompt-text"></pre><details><summary>Original target-model output requirements</summary><pre id="output-requirements" class="prompt-text"></pre></details><p>Reuses the winner from the completed GAAPO run. The saved prompt requests storyboard JSON; the model may still produce incomplete or incorrect output. This page makes one local generation per request.</p></details>
+    <details class="about"><summary>About this model</summary><p>This is Llama 3.2 1B Instruct with the GuidelineKG <code>with_rules_CoT2</code> adapter. GAAPO mode supplies the saved best prompt and its original output requirements as the system message. Plain Q&A sends your question directly. Each request is independent. The model does not browse or retrieve documents. Quantized CPU inference can differ from the original research runtime.</p><p>Research demonstration. Outputs have not been clinically validated. Questions and answers are kept in this page’s memory and are not saved by the application.</p></details>
+  </main>
+  <footer>
+    <div class="affiliations"><span class="affiliation-label">Research affiliations</span><div class="institution-logos"><img class="tib-logo" src="/assets/tib-logo.png" alt="TIB — Leibniz Information Centre for Science and Technology and University Library" width="345" height="101" loading="lazy"><img class="l3s-logo" src="/assets/l3s-logo.png" alt="L3S Research Center" width="2048" height="1261" loading="lazy"><img class="mhh-logo" src="/assets/mhh-logo.png" alt="Medizinische Hochschule Hannover" width="2048" height="516" loading="lazy"></div></div>
+    <div class="footer-meta"><span>Mahsa Forghani Tehrani · DigiStrucMed</span><span>Built with Llama</span></div>
+  </footer>
+</body>
+</html>
